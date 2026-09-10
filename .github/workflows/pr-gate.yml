@@ -1,0 +1,15 @@
+name: pr-gate
+on:
+  pull_request:
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - run: npm ci --no-audit --no-fund || npm i --no-audit --no-fund
+      - run: npx playwright install chromium --with-deps
+      - name: spec + privacy + smoke gates
+        run: node scripts/validate.mjs --base ${{ github.event.pull_request.base.sha }}

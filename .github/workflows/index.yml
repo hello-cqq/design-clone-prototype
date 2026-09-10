@@ -1,0 +1,23 @@
+name: index
+on:
+  push:
+    branches: [main]
+jobs:
+  rebuild:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0, token: ${{ secrets.GITHUB_TOKEN }} }
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - run: npm ci --no-audit --no-fund || npm i --no-audit --no-fund
+      - run: npx playwright install chromium --with-deps
+      - run: node scripts/thumb.mjs
+      - run: node scripts/index.mjs
+      - name: commit back index + thumbs
+        run: |
+          git config user.name "dc-index-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.json '**/thumb.png' 2>/dev/null || git add index.json
+          git diff --cached --quiet || git commit -m "chore(index): rebuild index.json + thumbnails"
+          git diff --cached --quiet || git push
