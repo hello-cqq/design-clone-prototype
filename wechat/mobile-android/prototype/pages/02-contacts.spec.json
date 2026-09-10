@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "page_id": "02-contacts",
+    "page_name": "通讯录",
+    "surface": "c_mobile",
+    "page_type": "c_list",
+    "canvas": {
+      "width": 390,
+      "height": 844
+    },
+    "evidence": [
+      "capture/screens/02-contacts.png"
+    ],
+    "fidelity": "high",
+    "product": {
+      "function": "（克隆时按 vlm-analysis 补 product 三要素）",
+      "goals": [],
+      "page_prompt": "",
+      "element_prompts": {}
+    },
+    "spec_version": 1,
+    "change_log": [
+      {
+        "at": "2026-09-10T10:20:15.744Z",
+        "by": "clone",
+        "note": "collect-design 初始/重采集（computed 真值）"
+      }
+    ]
+  },
+  "regions": [
+    {
+      "id": "r_wx_search",
+      "type": "search_bar",
+      "label": ""
+    },
+    {
+      "id": "r_wx_plus",
+      "type": "custom",
+      "label": ""
+    },
+    {
+      "id": "r_wx_macbar",
+      "type": "toolbar",
+      "label": "Mac 微信已登录"
+    },
+    {
+      "id": "r_wx_row",
+      "type": "custom",
+      "label": "文件传输助手这版原型控件都是真的11:55",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_wx_row",
+      "type": "custom",
+      "label": "阿澜照片收到，拍得真好昨天",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_wx_row",
+      "type": "custom",
+      "label": "家妈: 周末回来吃饭吗昨天",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_wx_row",
+      "type": "custom",
+      "label": "公众号[7条] 快讯14:21",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_wx_row",
+      "type": "custom",
+      "label": "服务号[1条通知] 交易完成通知11:27",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    }
+  ]
+}

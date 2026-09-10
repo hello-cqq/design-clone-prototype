@@ -1,0 +1,4155 @@
+{
+  "meta": {
+    "generator": "design-clone collect-design",
+    "generated_at": "2026-09-10T10:20:15.744Z",
+    "source_run": "wechat-full",
+    "schema": "figma-source/v1"
+  },
+  "variables": {
+    "color-primary": "#2a7f4f",
+    "color-accent": "#2a7f4f",
+    "color-bg": "#ededed",
+    "color-surface": "#ffffff",
+    "color-surface-dim": "#f7f7f7",
+    "color-text-primary": "#1a1a1a",
+    "color-text-secondary": "#767676",
+    "color-border": "#d9d9d9",
+    "color-pay-green": "#1f7a48",
+    "color-warn-orange": "#c24e00",
+    "font-display": "system-ui, \"PingFang SC\", sans-serif",
+    "font-body": "system-ui, \"PingFang SC\", sans-serif",
+    "radius-card": "12px"
+  },
+  "pages": [
+    {
+      "id": "01-chatlist",
+      "name": "会话列表",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "wx/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgb(237, 237, 237)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "wx/search",
+          "kind": "button",
+          "rect": {
+            "x": 318,
+            "y": 17,
+            "w": 20,
+            "h": 20
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "wx/plus",
+          "kind": "button",
+          "rect": {
+            "x": 354,
+            "y": 17,
+            "w": 20,
+            "h": 20
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "wx/macbar",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 50,
+            "w": 390,
+            "h": 39
+          },
+          "fill": "rgb(251, 251, 251)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "wx/row-文件传输助手",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 89,
+            "w": 390,
+            "h": 72
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "wx/row-阿澜",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 161,
+            "w": 390,
+            "h": 73
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "wx/row-家",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 234,
+            "w": 390,
+            "h": 73
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "wx/row-公众号",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 307,
+            "w": 390,
+            "h": 73
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "wx/row-服务号",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 380,
+            "w": 390,
+            "h": 73
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "02-contacts",
+      "name": "通讯录",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "wx/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgb(237, 237, 237)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "wx/search",
+          "kind": "button",
+          "rect": {
+            "x": 318,
+            "y": 17,
+            "w": 20,
+            "h": 20
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "wx/plus",
+          "kind": "button",
+          "rect": {
+            "x": 354,
+            "y": 17,
+            "w": 20,
+            "h": 20
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "wx/macbar",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 50,
+            "w": 390,
+            "h": 39
+          },
+          "fill": "rgb(251, 251, 251)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "wx/row-文件传输助手",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 89,
+            "w": 390,
+            "h": 72
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "wx/row-阿澜",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 161,
+            "w": 390,
+            "h": 73
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "wx/row-家",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 234,
+            "w": 390,
+            "h": 73
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "wx/row-公众号",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 307,
+            "w": 390,
+            "h": 73
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "wx/row-服务号",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 380,
+            "w": 390,
+            "h": 73
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "03-discover",
+      "name": "发现",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "dc/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgb(237, 237, 237)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dc/search",
+          "kind": "button",
+          "rect": {
+            "x": 318,
+            "y": 17,
+            "w": 20,
+            "h": 20
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dc/plus",
+          "kind": "button",
+          "rect": {
+            "x": 354,
+            "y": 17,
+            "w": 20,
+            "h": 20
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dc/row-朋友圈",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 50,
+            "w": 390,
+            "h": 52
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dc/row-视频号",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 102,
+            "w": 390,
+            "h": 72
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dc/row-直播",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 173,
+            "w": 390,
+            "h": 72
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dc/row-扫一扫",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 245,
+            "w": 390,
+            "h": 53
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dc/row-听一听",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 298,
+            "w": 390,
+            "h": 53
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dc/row-看一看",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 351,
+            "w": 390,
+            "h": 53
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dc/row-搜一搜",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 404,
+            "w": 390,
+            "h": 53
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dc/row-附近的人",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 457,
+            "w": 390,
+            "h": 53
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dc/row-游戏",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 510,
+            "w": 390,
+            "h": 72
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dc/row-小程序",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 581,
+            "w": 390,
+            "h": 53
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "04-me",
+      "name": "我",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "me/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgb(237, 237, 237)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/card",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 120
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/qr",
+          "kind": "button",
+          "rect": {
+            "x": 248,
+            "y": 51,
+            "w": 18,
+            "h": 18
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-服务",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 128,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-收藏",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 187,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-朋友圈",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 246,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-作品",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 305,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-小店与卡包",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 364,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-表情",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 423,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-设置",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 482,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "05-services",
+      "name": "服务",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "me/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgb(237, 237, 237)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/card",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 120
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/qr",
+          "kind": "button",
+          "rect": {
+            "x": 248,
+            "y": 51,
+            "w": 18,
+            "h": 18
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-服务",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 128,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-收藏",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 187,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-朋友圈",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 246,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-作品",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 305,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-小店与卡包",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 364,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-表情",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 423,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-设置",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 482,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "06-moments",
+      "name": "朋友圈",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "me/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgb(237, 237, 237)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/card",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 120
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/qr",
+          "kind": "button",
+          "rect": {
+            "x": 248,
+            "y": 51,
+            "w": 18,
+            "h": 18
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-服务",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 128,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-收藏",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 187,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-朋友圈",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 246,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-作品",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 305,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-小店与卡包",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 364,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-表情",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 423,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-设置",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 482,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "07-plus",
+      "name": "加号菜单",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "me/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgb(237, 237, 237)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/card",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 120
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/qr",
+          "kind": "button",
+          "rect": {
+            "x": 248,
+            "y": 51,
+            "w": 18,
+            "h": 18
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-服务",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 128,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-收藏",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 187,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-朋友圈",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 246,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-作品",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 305,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-小店与卡包",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 364,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-表情",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 423,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-设置",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 482,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "08-search",
+      "name": "搜索",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "me/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgb(237, 237, 237)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/card",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 120
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/qr",
+          "kind": "button",
+          "rect": {
+            "x": 248,
+            "y": 51,
+            "w": 18,
+            "h": 18
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-服务",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 128,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-收藏",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 187,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-朋友圈",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 246,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-作品",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 305,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-小店与卡包",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 364,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-表情",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 423,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-设置",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 482,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "09-chat",
+      "name": "单聊·小陈",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "me/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgb(237, 237, 237)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/card",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 120
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/qr",
+          "kind": "button",
+          "rect": {
+            "x": 248,
+            "y": 51,
+            "w": 18,
+            "h": 18
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-服务",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 128,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-收藏",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 187,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-朋友圈",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 246,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-作品",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 305,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-小店与卡包",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 364,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-表情",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 423,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-设置",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 482,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "10-wallet",
+      "name": "钱包",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "me/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgb(237, 237, 237)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/card",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 120
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/qr",
+          "kind": "button",
+          "rect": {
+            "x": 248,
+            "y": 51,
+            "w": 18,
+            "h": 18
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-服务",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 128,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-收藏",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 187,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-朋友圈",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 246,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-作品",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 305,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-小店与卡包",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 364,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-表情",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 423,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-设置",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 482,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "11-single-chat",
+      "name": "单聊·文件传输助手",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "me/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgb(237, 237, 237)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/card",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 120
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/qr",
+          "kind": "button",
+          "rect": {
+            "x": 248,
+            "y": 51,
+            "w": 18,
+            "h": 18
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-服务",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 128,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-收藏",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 187,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-朋友圈",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 246,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-作品",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 305,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-小店与卡包",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 364,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-表情",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 423,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-设置",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 482,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "12-group-chat",
+      "name": "群聊·家",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "me/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgb(237, 237, 237)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/card",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 120
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/qr",
+          "kind": "button",
+          "rect": {
+            "x": 248,
+            "y": 51,
+            "w": 18,
+            "h": 18
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-服务",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 128,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-收藏",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 187,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-朋友圈",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 246,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-作品",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 305,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-小店与卡包",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 364,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-表情",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 423,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-设置",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 482,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "13-group-settings",
+      "name": "群设置",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "me/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgb(237, 237, 237)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/card",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 120
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/qr",
+          "kind": "button",
+          "rect": {
+            "x": 248,
+            "y": 51,
+            "w": 18,
+            "h": 18
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-服务",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 128,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-收藏",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 187,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-朋友圈",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 246,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-作品",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 305,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-小店与卡包",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 364,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-表情",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 423,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-设置",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 482,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "14-friend-settings",
+      "name": "好友资料",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "me/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgb(237, 237, 237)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/card",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 120
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/qr",
+          "kind": "button",
+          "rect": {
+            "x": 248,
+            "y": 51,
+            "w": 18,
+            "h": 18
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-服务",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 128,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-收藏",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 187,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-朋友圈",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 246,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-作品",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 305,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-小店与卡包",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 364,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-表情",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 423,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-设置",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 482,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "15-longpress",
+      "name": "长按菜单",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "me/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgb(237, 237, 237)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/card",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 120
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/qr",
+          "kind": "button",
+          "rect": {
+            "x": 248,
+            "y": 51,
+            "w": 18,
+            "h": 18
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-服务",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 128,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-收藏",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 187,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-朋友圈",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 246,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-作品",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 305,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-小店与卡包",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 364,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-表情",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 423,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-设置",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 482,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "16-miniprogram-tray",
+      "name": "小程序托盘",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "me/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgb(237, 237, 237)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/card",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 120
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/qr",
+          "kind": "button",
+          "rect": {
+            "x": 248,
+            "y": 51,
+            "w": 18,
+            "h": 18
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-服务",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 128,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-收藏",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 187,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-朋友圈",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 246,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-作品",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 305,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-小店与卡包",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 364,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-表情",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 423,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "me/cell-设置",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 482,
+            "w": 390,
+            "h": 59
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "17-miniprogram",
+      "name": "小程序",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "mp/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgb(246, 244, 239)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/title",
+          "kind": "button",
+          "rect": {
+            "x": 16,
+            "y": 16,
+            "w": 158,
+            "h": 24
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(25, 25, 25)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 600,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/sub",
+          "kind": "button",
+          "rect": {
+            "x": 221,
+            "y": 12,
+            "w": 68,
+            "h": 32
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(25, 25, 25)",
+          "cornerRadius": 9999,
+          "font": {
+            "family": "system-ui",
+            "size": 13,
+            "weight": 400,
+            "lineHeight": 20
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/capsule",
+          "kind": "button",
+          "rect": {
+            "x": 297,
+            "y": 14,
+            "w": 77,
+            "h": 28
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 9999,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/searchbar",
+          "kind": "frame",
+          "rect": {
+            "x": 12,
+            "y": 56,
+            "w": 366,
+            "h": 55
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 9999,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/search",
+          "kind": "frame",
+          "rect": {
+            "x": 56,
+            "y": 72,
+            "w": 226,
+            "h": 23
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(25, 25, 25)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 15,
+            "weight": 400,
+            "lineHeight": 23
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/searchbtn",
+          "kind": "button",
+          "rect": {
+            "x": 290,
+            "y": 66,
+            "w": 70,
+            "h": 35
+          },
+          "fill": "rgb(255, 106, 0)",
+          "color": "rgb(255, 255, 255)",
+          "cornerRadius": 9999,
+          "font": {
+            "family": "system-ui",
+            "size": 15,
+            "weight": 400,
+            "lineHeight": 23
+          },
+          "text": "搜索"
+        },
+        {
+          "dc": "mp/icons",
+          "kind": "image",
+          "rect": {
+            "x": 0,
+            "y": 118,
+            "w": 390,
+            "h": 149
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/ranks",
+          "kind": "image",
+          "rect": {
+            "x": 0,
+            "y": 275,
+            "w": 390,
+            "h": 65
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/card1",
+          "kind": "button",
+          "rect": {
+            "x": 8,
+            "y": 349,
+            "w": 183,
+            "h": 276
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 8,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/card2",
+          "kind": "button",
+          "rect": {
+            "x": 199,
+            "y": 349,
+            "w": 183,
+            "h": 276
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 8,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/coupon",
+          "kind": "button",
+          "rect": {
+            "x": 8,
+            "y": 633,
+            "w": 374,
+            "h": 52
+          },
+          "fill": "rgb(253, 243, 231)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 9999,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "18-search",
+      "name": "搜索流",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "mp/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgb(246, 244, 239)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/title",
+          "kind": "button",
+          "rect": {
+            "x": 16,
+            "y": 16,
+            "w": 158,
+            "h": 24
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(25, 25, 25)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 600,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/sub",
+          "kind": "button",
+          "rect": {
+            "x": 221,
+            "y": 12,
+            "w": 68,
+            "h": 32
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(25, 25, 25)",
+          "cornerRadius": 9999,
+          "font": {
+            "family": "system-ui",
+            "size": 13,
+            "weight": 400,
+            "lineHeight": 20
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/capsule",
+          "kind": "button",
+          "rect": {
+            "x": 297,
+            "y": 14,
+            "w": 77,
+            "h": 28
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 9999,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/searchbar",
+          "kind": "frame",
+          "rect": {
+            "x": 12,
+            "y": 56,
+            "w": 366,
+            "h": 55
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 9999,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/search",
+          "kind": "frame",
+          "rect": {
+            "x": 56,
+            "y": 72,
+            "w": 226,
+            "h": 23
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(25, 25, 25)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 15,
+            "weight": 400,
+            "lineHeight": 23
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/searchbtn",
+          "kind": "button",
+          "rect": {
+            "x": 290,
+            "y": 66,
+            "w": 70,
+            "h": 35
+          },
+          "fill": "rgb(255, 106, 0)",
+          "color": "rgb(255, 255, 255)",
+          "cornerRadius": 9999,
+          "font": {
+            "family": "system-ui",
+            "size": 15,
+            "weight": 400,
+            "lineHeight": 23
+          },
+          "text": "搜索"
+        },
+        {
+          "dc": "mp/icons",
+          "kind": "image",
+          "rect": {
+            "x": 0,
+            "y": 118,
+            "w": 390,
+            "h": 149
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/ranks",
+          "kind": "image",
+          "rect": {
+            "x": 0,
+            "y": 275,
+            "w": 390,
+            "h": 65
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/card1",
+          "kind": "button",
+          "rect": {
+            "x": 8,
+            "y": 349,
+            "w": 183,
+            "h": 276
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 8,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/card2",
+          "kind": "button",
+          "rect": {
+            "x": 199,
+            "y": 349,
+            "w": 183,
+            "h": 276
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 8,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/coupon",
+          "kind": "button",
+          "rect": {
+            "x": 8,
+            "y": 633,
+            "w": 374,
+            "h": 52
+          },
+          "fill": "rgb(253, 243, 231)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 9999,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "19-loading",
+      "name": "加载态",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "mp/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgb(246, 244, 239)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/title",
+          "kind": "button",
+          "rect": {
+            "x": 16,
+            "y": 16,
+            "w": 158,
+            "h": 24
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(25, 25, 25)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 600,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/sub",
+          "kind": "button",
+          "rect": {
+            "x": 221,
+            "y": 12,
+            "w": 68,
+            "h": 32
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(25, 25, 25)",
+          "cornerRadius": 9999,
+          "font": {
+            "family": "system-ui",
+            "size": 13,
+            "weight": 400,
+            "lineHeight": 20
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/capsule",
+          "kind": "button",
+          "rect": {
+            "x": 297,
+            "y": 14,
+            "w": 77,
+            "h": 28
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 9999,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/searchbar",
+          "kind": "frame",
+          "rect": {
+            "x": 12,
+            "y": 56,
+            "w": 366,
+            "h": 55
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 9999,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/search",
+          "kind": "frame",
+          "rect": {
+            "x": 56,
+            "y": 72,
+            "w": 226,
+            "h": 23
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(25, 25, 25)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 15,
+            "weight": 400,
+            "lineHeight": 23
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/searchbtn",
+          "kind": "button",
+          "rect": {
+            "x": 290,
+            "y": 66,
+            "w": 70,
+            "h": 35
+          },
+          "fill": "rgb(255, 106, 0)",
+          "color": "rgb(255, 255, 255)",
+          "cornerRadius": 9999,
+          "font": {
+            "family": "system-ui",
+            "size": 15,
+            "weight": 400,
+            "lineHeight": 23
+          },
+          "text": "搜索"
+        },
+        {
+          "dc": "mp/icons",
+          "kind": "image",
+          "rect": {
+            "x": 0,
+            "y": 118,
+            "w": 390,
+            "h": 149
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/ranks",
+          "kind": "image",
+          "rect": {
+            "x": 0,
+            "y": 275,
+            "w": 390,
+            "h": 65
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/card1",
+          "kind": "button",
+          "rect": {
+            "x": 8,
+            "y": 349,
+            "w": 183,
+            "h": 276
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 8,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/card2",
+          "kind": "button",
+          "rect": {
+            "x": 199,
+            "y": 349,
+            "w": 183,
+            "h": 276
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 8,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "mp/coupon",
+          "kind": "button",
+          "rect": {
+            "x": 8,
+            "y": 633,
+            "w": 374,
+            "h": 52
+          },
+          "fill": "rgb(253, 243, 231)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 9999,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    }
+  ]
+}

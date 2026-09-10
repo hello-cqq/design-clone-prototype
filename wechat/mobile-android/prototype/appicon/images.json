@@ -1,0 +1,10 @@
+[
+  {
+    "at": "2026-09-06T05:33:52.576Z",
+    "prompt": "WeChat-style messenger app icon: green rounded square with two overlapping white speech-bubble glyphs, single centered emblem on solid brand-color rounded-square background, minimal geometric glyph, no text, no letters",
+    "style": "clay-icon",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "_base.png"
+  }
+]

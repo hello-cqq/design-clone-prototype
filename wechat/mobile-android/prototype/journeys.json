@@ -1,0 +1,11 @@
+[
+  { "id": "j1", "name": "我→服务→返回", "steps": [
+    { "view": "01-chatlist", "target": "wx/tab-me", "result": { "kind": "navigate", "to": "04-me" } },
+    { "view": "04-me", "target": "me/services", "result": { "kind": "navigate", "to": "05-services" } },
+    { "view": "05-services", "target": "sv/back", "result": { "kind": "navigate", "to": "04-me" } }
+  ]},
+  { "id": "j2", "name": "发现→朋友圈", "steps": [
+    { "view": "01-chatlist", "target": "wx/tab-dis", "result": { "kind": "navigate", "to": "03-discover" } },
+    { "view": "03-discover", "target": "dis/moments", "result": { "kind": "navigate", "to": "06-moments" } }
+  ]}
+]
