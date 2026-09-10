@@ -1,0 +1,13 @@
+{
+ "shell": "c_desktop",
+ "platform": "desktop",
+ "source": {
+  "kind": "original",
+  "ref": "lark"
+ },
+ "license": "CC-BY-4.0",
+ "ip_attestation": "public-material",
+ "attestation_note": "Desktop client study replica; conversations fictional; icons self-drawn",
+ "version": "1.0.0",
+ "created_at": "2026-09-10T16:41:50.318Z"
+}

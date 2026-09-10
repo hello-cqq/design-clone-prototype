@@ -1,0 +1,94 @@
+<style>
+  .mt-col{width:340px;flex:none;display:flex;flex-direction:column;background:#f7f8fa;border-right:1px solid #e5e6e8;min-height:0;overflow:auto;padding:16px}
+  .mt-col .hd{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:600;color:#1f2329;margin-bottom:14px}
+  .mt-promo{background:#fff;border-radius:12px;padding:16px;position:relative;box-shadow:0 1px 3px rgba(20,24,40,.05)}
+  .mt-promo .t{font-size:14px;font-weight:600;color:#1f2329}
+  .mt-promo .s{font-size:12px;color:#8f959e;margin-top:6px;line-height:1.6}
+  .mt-promo .lk{font-size:13px;color:#3370ff;margin-top:10px;cursor:pointer}
+  .mt-promo img{position:absolute;right:10px;top:34px;width:96px;object-fit:contain}
+  .mt-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+  .mt-card{border-radius:12px;padding:16px;cursor:pointer;background:#e8ecf8}
+  .mt-card img{width:34px;height:34px;border-radius:9px;background:#fff;padding:5px;box-sizing:content-box}
+  .mt-card .nm{font-size:13px;color:#1f2329;margin-top:12px}
+  .mt-card.orange{background:#fbe8d4}.mt-card.green{background:#d9f2dd}.mt-card.purple{background:#e8e4f6}
+  .mt-right{flex:1;min-width:0;overflow:auto;padding:16px 20px;background:#f2f3f5}
+  .mt-banner{background:#fff;border-radius:12px;padding:16px 18px;display:flex;align-items:center;gap:14px}
+  .mt-banner .ic{width:38px;height:38px;border-radius:50%;background:#e8ecf8;display:grid;place-items:center;color:#3370ff;flex:none}
+  .mt-banner .t{font-size:14px;font-weight:600;color:#1f2329}
+  .mt-banner .s{font-size:12px;color:#8f959e;margin-top:4px}
+  .mt-banner .btns{margin-left:auto;display:flex;gap:10px}
+  .mt-hd{font-size:13px;color:#1f2329;font-weight:600;margin:18px 0 10px}
+  .mt-row{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid #e5e6e8;cursor:pointer}
+  .mt-row .th{width:118px;height:74px;border-radius:8px;background:#dfe4f4;display:grid;place-items:center;color:#fff;flex:none}
+  .mt-row .t{font-size:14px;color:#1f2329;font-weight:500;display:flex;align-items:center;gap:8px}
+  .mt-row .bd{font-size:10px;background:#e8f0ff;color:#3370ff;border-radius:4px;padding:1px 6px}
+  .mt-row .d{font-size:12px;color:#8f959e;margin-top:6px}
+  .mt-row .ai{font-size:12px;color:#3370ff;margin-top:6px;display:flex;gap:6px;align-items:center}
+</style>
+<div data-dc="mt/root" class="da-root">
+  <aside data-dc="mt/side" class="da-side wb-side">
+    <div class="top">
+      <img class="ava" src="assets/chen.png" alt="">
+      <svg width="18" height="18" viewBox="0 0 24 24" style="fill:none;stroke:#646a73;stroke-width:2;cursor:pointer" data-act="toast" data-msg="添加（演示）"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v8M8 12h8"></path></svg>
+    </div>
+    <div class="search" data-act="toast" data-msg="搜索（演示）">搜索 (⌘K)</div>
+    <div style="overflow:auto;padding:4px 0 12px">
+      <div class="da-item" data-dc="mt/n-msg" data-goto="01-messages"><img class="ic" src="assets/nav-01.png" alt="">消息</div>
+      <div class="da-item" data-dc="mt/n-doubao" data-act="toast" data-msg="豆包工作（演示）"><img class="ic" src="assets/nav-02.png" alt="">豆包工作</div>
+      <div class="da-item" data-dc="mt/n-cal" data-goto="02-calendar"><img class="ic" src="assets/nav-03.png" alt="">日历</div>
+      <div class="da-item" data-dc="mt/n-docs" data-goto="03-docs"><img class="ic" src="assets/nav-04.png" alt="">云文档</div>
+      <div class="da-item" data-dc="mt/n-bitable" data-goto="09-bitable"><img class="ic" src="assets/nav-05.png" alt="">多维表格</div>
+      <div class="da-item on" data-dc="mt/n-meet" data-act="toast" data-msg="（演示）"><img class="ic" src="assets/nav-06.png" alt="">视频会议</div>
+      <div class="da-item" data-dc="mt/n-fly" data-act="toast" data-msg="飞行社（演示）"><img class="ic" src="assets/nav-07.png" alt="">飞行社</div>
+      <div class="da-item" data-dc="mt/n-wb" data-goto="05-workbench"><img class="ic" src="assets/nav-08.png" alt="">工作台</div>
+      <div class="da-item" data-dc="mt/n-appc" data-goto="10-appcenter"><img class="ic" src="assets/nav-13.png" alt="">应用中心</div>
+      <div class="da-item" data-dc="mt/n-contacts" data-goto="06-contacts"><img class="ic" src="assets/nav-14.png" alt="">通讯录</div>
+      <div class="da-item" data-dc="mt/n-vip" data-act="toast" data-msg="权益升级（演示）"><img class="ic" src="assets/nav-09.png" alt="">权益升级</div>
+      <div style="font-size:12px;color:#8f959e;padding:10px 22px 4px">更多</div>
+      <div class="da-item" data-dc="mt/n-task" data-goto="07-tasks"><img class="ic" src="assets/nav-10.png" alt="">任务</div>
+      <div class="da-item" data-dc="mt/n-star" data-act="toast" data-msg="收藏（演示）"><img class="ic" src="assets/nav-11.png" alt="">收藏</div>
+      <div class="da-item" data-dc="mt/n-kb" data-goto="08-kb"><img class="ic" src="assets/nav-12.png" alt="">知识库</div>
+    </div>
+  </aside>
+  <div class="mt-col" data-dc="mt/col">
+    <div class="hd">视频会议
+      <span style="margin-left:auto;display:flex;gap:12px;color:#646a73">
+        <svg width="16" height="16" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2;cursor:pointer" data-act="toast" data-msg="搜索（演示）"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2;cursor:pointer" data-act="toast" data-msg="设置（演示）"><circle cx="12" cy="12" r="3"></circle><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"></path></svg>
+      </span>
+    </div>
+    <div class="mt-promo" data-dc="mt/promo">
+      <div class="t">入会时，同步开启录音转写</div>
+      <div class="s">生成智能纪要，沉淀个人工作上下文</div>
+      <div class="lk" data-act="toast" data-msg="开启设置（演示）">开启设置</div>
+      <img src="assets/mt-wave.png" alt="">
+    </div>
+    <div class="mt-grid">
+      <div class="mt-card" data-dc="mt/c1" data-act="toast" data-msg="发起会议（演示）"><img src="assets/mt-ic-1.png" alt=""><div class="nm">发起会议</div></div>
+      <div class="mt-card" data-dc="mt/c2" data-act="toast" data-msg="加入会议（演示）"><img src="assets/mt-ic-2.png" alt=""><div class="nm">加入会议</div></div>
+      <div class="mt-card orange" data-dc="mt/c3" data-act="toast" data-msg="预约会议（演示）"><img src="assets/mt-ic-3.png" alt=""><div class="nm">预约会议</div></div>
+      <div class="mt-card green" data-dc="mt/c4" data-act="toast" data-msg="会议室投屏（演示）"><img src="assets/mt-ic-4.png" alt=""><div class="nm">会议室投屏</div></div>
+      <div class="mt-card purple" data-dc="mt/c5" data-act="toast" data-msg="妙记（演示）"><img src="assets/mt-ic-5.png" alt=""><div class="nm">妙记</div></div>
+      <div class="mt-card" data-dc="mt/c6" data-act="toast" data-msg="智能纪要（演示）"><img src="assets/mt-ic-6.png" alt=""><div class="nm">智能纪要</div></div>
+      <div class="mt-card" data-dc="mt/c7" data-act="toast" data-msg="直播（演示）"><img src="assets/mt-ic-7.png" alt=""><div class="nm">直播</div></div>
+      <div class="mt-card" data-dc="mt/c8" data-act="toast" data-msg="电话（演示）"><img src="assets/mt-ic-8.png" alt=""><div class="nm">电话</div></div>
+    </div>
+  </div>
+  <main class="mt-right" data-dc="mt/right">
+    <div class="mt-banner">
+      <span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2"><path d="M4 7h16M4 12h10M4 17h7"></path></svg></span>
+      <span><span class="t">线下聊天也能自动记要点</span><span class="s" style="display:block">线下交谈实时收录，历史音视频一键上传，AI 帮你整理归纳成智能纪要</span></span>
+      <span class="btns">
+        <span class="da-btn" style="border:1px solid #3370ff;color:#3370ff;border-radius:8px;padding:7px 14px;font-size:13px;cursor:pointer" data-act="toast" data-msg="上传（演示）">上传</span>
+        <span style="border:1px solid #3370ff;background:#3370ff;color:#fff;border-radius:8px;padding:7px 14px;font-size:13px;cursor:pointer" data-act="toast" data-msg="录音（演示）">录音</span>
+      </span>
+    </div>
+    <div class="mt-hd">历史记录</div>
+    <div class="mt-row" data-dc="mt/h1" data-act="toast" data-msg="（演示）"><span class="th" data-placeholder-ok><svg width="22" height="22" viewBox="0 0 24 24" style="fill:currentColor"><path d="M4 6h11v12H4z M15 10l5-3v10l-5-3z"></path></svg></span><span><span class="t">视频面试-复试-阿Q-AIOS架构师<span class="bd">外部</span></span><span class="d" style="display:block">4月13日 20:31</span><span class="ai"><svg width="13" height="13" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2"><rect x="4" y="4" width="16" height="16" rx="2"></rect><path d="M8 9h8M8 13h6"></path></svg>智能纪要：视频面试-复试-阿Q-AIOS架构师 2026年4月13日</span></span></div>
+    <div class="mt-row" data-dc="mt/h2" data-act="toast" data-msg="（演示）"><span class="th" data-placeholder-ok><svg width="22" height="22" viewBox="0 0 24 24" style="fill:currentColor"><path d="M4 6h11v12H4z M15 10l5-3v10l-5-3z"></path></svg></span><span><span class="t">视频面试-复试-阿Q-AIOS架构师</span><span class="d" style="display:block">4月13日 20:30</span></span></div>
+    <div class="mt-row" data-dc="mt/h3" data-act="toast" data-msg="（演示）"><span class="th" data-placeholder-ok><svg width="22" height="22" viewBox="0 0 24 24" style="fill:currentColor"><path d="M4 6h11v12H4z M15 10l5-3v10l-5-3z"></path></svg></span><span><span class="t">视频面试-复试-阿Q-AIOS架构师<span class="bd">外部</span></span><span class="d" style="display:block">4月8日 18:58</span><span class="ai"><svg width="13" height="13" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2"><rect x="4" y="4" width="16" height="16" rx="2"></rect><path d="M8 9h8M8 13h6"></path></svg>智能纪要：视频面试-复试-阿Q-AIOS架构师 2026年4月8日</span></span></div>
+    <div class="mt-row" data-dc="mt/h4" data-act="toast" data-msg="（演示）"><span class="th" data-placeholder-ok><svg width="22" height="22" viewBox="0 0 24 24" style="fill:currentColor"><path d="M4 6h11v12H4z M15 10l5-3v10l-5-3z"></path></svg></span><span><span class="t">视频面试-复试-阿Q-AIOS架构师</span><span class="d" style="display:block">4月8日 18:18</span></span></div>
+    <div class="mt-row" data-dc="mt/h5" data-act="toast" data-msg="（演示）"><span class="th" data-placeholder-ok><svg width="22" height="22" viewBox="0 0 24 24" style="fill:currentColor"><path d="M4 6h11v12H4z M15 10l5-3v10l-5-3z"></path></svg></span><span><span class="t">视频面试-初试-阿Q-AIOS架构师<span class="bd">外部</span></span><span class="d" style="display:block">4月2日 18:58</span><span class="ai"><svg width="13" height="13" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2"><rect x="4" y="4" width="16" height="16" rx="2"></rect><path d="M8 9h8M8 13h6"></path></svg>智能纪要：视频面试-初试-阿Q-AIOS架构师 2026年4月2日</span></span></div>
+    <div class="mt-row" data-dc="mt/h6" data-act="toast" data-msg="（演示）"><span class="th" data-placeholder-ok><svg width="22" height="22" viewBox="0 0 24 24" style="fill:currentColor"><path d="M4 6h11v12H4z M15 10l5-3v10l-5-3z"></path></svg></span><span><span class="t">视频面试-初试-阿Q-AIOS架构师</span><span class="d" style="display:block">4月2日 18:30</span></span></div>
+  </main>
+</div>
