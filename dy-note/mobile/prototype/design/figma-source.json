@@ -1,0 +1,512 @@
+{
+  "meta": {
+    "generator": "design-clone collect-design",
+    "generated_at": "2026-09-10T16:39:53.241Z",
+    "source_run": "link-dy4",
+    "schema": "figma-source/v1"
+  },
+  "variables": {
+    "color-primary": "#000010",
+    "color-accent": "#100010",
+    "color-bg": "#000010",
+    "color-surface": "#000000",
+    "color-text-primary": "#000000",
+    "color-text-secondary": "#5c5c5c",
+    "color-border": "#e5e5e5",
+    "font-display": "system-ui, sans-serif",
+    "font-body": "system-ui, sans-serif",
+    "radius-card": "12px"
+  },
+  "pages": [
+    {
+      "id": "01-note",
+      "name": "图文笔记",
+      "frame": {
+        "width": 390,
+        "height": 1329
+      },
+      "nodes": [
+        {
+          "dc": "dy/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 1329
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(23, 24, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dy/top",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 44,
+            "w": 390,
+            "h": 48
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(23, 24, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dy/car",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 140,
+            "w": 390,
+            "h": 787
+          },
+          "fill": "rgb(246, 247, 249)",
+          "color": "rgb(23, 24, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dy/dots",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 937,
+            "w": 390,
+            "h": 6
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(23, 24, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dy/cap",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 955,
+            "w": 390,
+            "h": 76
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(23, 24, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dy/stats",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 1031,
+            "w": 390,
+            "h": 42
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(87, 96, 102)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 12,
+            "weight": 400,
+            "lineHeight": 18
+          },
+          "text": ""
+        },
+        {
+          "dc": "dy/cmt",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 1079,
+            "w": 390,
+            "h": 146
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(23, 24, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dy/bar",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 1263,
+            "w": 390,
+            "h": 40
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(23, 24, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "02-comments",
+      "name": "评论列表",
+      "frame": {
+        "width": 390,
+        "height": 1329
+      },
+      "nodes": [
+        {
+          "dc": "dy/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 1329
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(23, 24, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dy/top",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 44,
+            "w": 390,
+            "h": 48
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(23, 24, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dy/car",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 140,
+            "w": 390,
+            "h": 787
+          },
+          "fill": "rgb(246, 247, 249)",
+          "color": "rgb(23, 24, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dy/dots",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 937,
+            "w": 390,
+            "h": 6
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(23, 24, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dy/cap",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 955,
+            "w": 390,
+            "h": 76
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(23, 24, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dy/stats",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 1031,
+            "w": 390,
+            "h": 42
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(87, 96, 102)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 12,
+            "weight": 400,
+            "lineHeight": 18
+          },
+          "text": ""
+        },
+        {
+          "dc": "dy/cmt",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 1079,
+            "w": 390,
+            "h": 146
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(23, 24, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dy/bar",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 1263,
+            "w": 390,
+            "h": 40
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(23, 24, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "03-author",
+      "name": "作者主页",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "dy/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(23, 24, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dy/top",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 44,
+            "w": 390,
+            "h": 30
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(23, 24, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dy/prof",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 44,
+            "w": 390,
+            "h": 178
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(23, 24, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dy/nums",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 222,
+            "w": 390,
+            "h": 56
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(87, 96, 102)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 12,
+            "weight": 400,
+            "lineHeight": 18
+          },
+          "text": ""
+        },
+        {
+          "dc": "dy/bio",
+          "kind": "text",
+          "rect": {
+            "x": 0,
+            "y": 278,
+            "w": 390,
+            "h": 35
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(87, 96, 102)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 13,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": "把每天的天空存成色板。调色参数无偿分享，转载注明出处。"
+        },
+        {
+          "dc": "dy/grid",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 313,
+            "w": 390,
+            "h": 339
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(23, 24, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dy/tabs",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 771,
+            "w": 390,
+            "h": 47
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(154, 160, 166)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 12,
+            "weight": 400,
+            "lineHeight": 18
+          },
+          "text": ""
+        }
+      ]
+    }
+  ]
+}

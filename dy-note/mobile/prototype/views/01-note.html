@@ -1,0 +1,62 @@
+<style>
+  .dy-root{font-family:-apple-system,"PingFang SC","Segoe UI",sans-serif;color:#17181a;background:#fff;min-height:100%;position:relative;padding:44px 0 92px;box-sizing:border-box}
+  .dy-top{position:absolute;left:0;right:0;top:44px;display:flex;align-items:center;gap:10px;padding:0 14px;z-index:6}
+  .dy-top .back{width:30px;height:30px;display:grid;place-items:center;cursor:pointer}
+  .dy-top .ava{width:34px;height:34px;border-radius:50%;background:linear-gradient(140deg,#ffd7a8,#ff9d6b);display:grid;place-items:center;color:#fff;font-size:13px;font-weight:600}
+  .dy-top .nm{font-size:13px;font-weight:600}
+  .dy-top .sub{font-size:10px;color:#9aa0a6}
+  .dy-top .follow{margin-left:auto;border:none;border-radius:999px;padding:7px 16px;font-size:12px;font-weight:600;color:#fff;background:#ff4f64;cursor:pointer;font-family:inherit}
+  .dy-top .follow.on{background:#f1f2f4;color:#576066}
+  .dy-car{position:relative;margin:96px 0 0;height:52%;background:#f6f7f9;overflow:hidden}
+  .dy-car .track{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;height:100%;padding:0 14px;box-sizing:border-box}
+  .dy-car .track::-webkit-scrollbar{display:none}
+  .dy-car img{flex:none;height:100%;border-radius:14px;object-fit:cover;scroll-snap-align:center;box-shadow:0 6px 18px rgba(20,24,40,.12)}
+  .dy-dots{display:flex;gap:5px;justify-content:center;margin:10px 0 12px}
+  .dy-dots i{width:6px;height:6px;border-radius:50%;background:#d8dce2}
+  .dy-dots i.on{background:#ff4f64;width:14px;border-radius:999px}
+  .dy-cap{padding:0 16px;font-size:14px;line-height:1.7}
+  .dy-cap .tags{color:#3f7fd8;font-size:13px;margin-top:6px}
+  .dy-stats{display:flex;gap:22px;padding:12px 16px;color:#576066;font-size:12px;align-items:center}
+  .dy-stats span{display:flex;gap:6px;align-items:center;cursor:pointer}
+  .dy-stats span.on{color:#ff4f64;font-weight:600}
+  .dy-cmt{padding:6px 16px 0;border-top:1px solid #f1f2f4;margin-top:6px}
+  .dy-cmt .hd{font-size:12px;color:#9aa0a6;margin:10px 0 8px}
+  .dy-cmt .row{display:flex;gap:10px;margin-bottom:12px;cursor:pointer}
+  .dy-cmt .row .ava{width:28px;height:28px;border-radius:50%;flex:none;display:grid;place-items:center;color:#fff;font-size:11px;font-weight:600}
+  .dy-cmt .row .nm{font-size:11px;color:#9aa0a6}
+  .dy-cmt .row .tx{font-size:13px;margin-top:2px;line-height:1.5}
+  .dy-bar{position:absolute;left:0;right:0;bottom:26px;display:flex;gap:12px;align-items:center;padding:0 14px}
+  .dy-bar .inp{flex:1;background:#f1f2f4;border-radius:999px;padding:11px 16px;font-size:12px;color:#9aa0a6;cursor:pointer}
+</style><div data-dc="dy/root" class="dy-root">
+  <div class="dy-top" data-dc="dy/top">
+    <span class="back" data-act="back"><svg width="18" height="18" viewBox="0 0 24 24" style="fill:none;stroke:#17181a;stroke-width:2"><path d="m15 6-6 6 6 6"></path></svg></span>
+    <span class="ava" data-goto="03-author">沫</span>
+    <span><span class="nm" data-goto="03-author">沫沫的调色盘</span><br><span class="sub">抖音号：momomo.palette</span></span>
+    <button class="follow" data-act="toggle">关注</button>
+  </div>
+  <div class="dy-car" data-dc="dy/car" data-scroll-ok><div class="track">
+    <img src="assets/n1.jpg" alt="">
+    <img src="assets/n2.jpg" alt="">
+    <img src="assets/n3.jpg" alt="">
+    <img src="assets/n4.jpg" alt="">
+    <img src="assets/n5.jpg" alt="">
+  </div></div>
+  <div class="dy-dots" data-dc="dy/dots"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+  <div class="dy-cap" data-dc="dy/cap">VibeCoding 大赏投稿：把一周的晚霞调成了同一套色板，附完整参数与三步复现流程，拿去直接用。
+    <div class="tags">#VibeCoding大赏 #调色思路 #晚霞色板</div></div>
+  <div class="dy-stats" data-dc="dy/stats">
+    <span data-act="toggle"><svg width="16" height="16" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"></path></svg>2.4w</span>
+    <span data-goto="02-comments"><svg width="16" height="16" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2"><path d="M21 12a8 8 0 0 1-8 8H5l-2 2V12a8 8 0 0 1 8-8h2a8 8 0 0 1 8 8z"></path></svg>863</span>
+    <span data-act="toast" data-msg="已收藏到「调色灵感」（演示）"><svg width="16" height="16" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2"><path d="M12 3l2.4 5 5.6.7-4 3.9 1 5.4-5-2.7-5 2.7 1-5.4-4-3.9 5.6-.7z"></path></svg>5121</span>
+    <span data-act="toast" data-msg="分享链接已复制（演示）"><svg width="16" height="16" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2"><path d="M4 12v7h16v-7M12 3v12M8 7l4-4 4 4"></path></svg>分享</span>
+  </div>
+  <div class="dy-cmt" data-dc="dy/cmt">
+    <div class="hd">共 863 条评论 · 查看全部</div>
+    <div class="row" data-goto="02-comments"><span class="ava" style="background:#7fd8be">阿</span><span><span class="nm">阿栗不说话</span><div class="tx">第三张的橙紫过渡绝了，参数抄走了！</div></span></div>
+    <div class="row" data-goto="02-comments"><span class="ava" style="background:#8ecdf0">白</span><span><span class="nm">白昼飞行</span><div class="tx">求原图练习，已关注等更新。</div></span></div>
+  </div>
+  <div class="dy-bar" data-dc="dy/bar"><span class="inp" data-act="input" data-msg="说点什么…">说点什么…</span>
+    <span data-act="toast" data-msg="表情面板（演示）"><svg width="20" height="20" viewBox="0 0 24 24" style="fill:none;stroke:#576066;stroke-width:2"><circle cx="12" cy="12" r="9"></circle><path d="M9 10h.01M15 10h.01M8.5 14a4 4 0 0 0 7 0"></path></svg></span>
+    <span data-act="toast" data-msg="已@好友（演示）"><svg width="20" height="20" viewBox="0 0 24 24" style="fill:none;stroke:#576066;stroke-width:2"><circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8"></path></svg></span>
+  </div>
+</div>
