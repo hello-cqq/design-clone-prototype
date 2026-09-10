@@ -1,0 +1,186 @@
+{
+  "meta": {
+    "page_id": "03-map",
+    "page_name": "乐园地图",
+    "surface": "c_mobile",
+    "page_type": "c_list",
+    "canvas": {
+      "width": 390,
+      "height": 844
+    },
+    "evidence": [],
+    "fidelity": "high",
+    "product": {
+      "function": "查看园区分区并预约入园时段",
+      "goals": [
+        "转化：分区余位+时段单选直达预约",
+        "降低决策成本：地图 pin 即点即说明"
+      ],
+      "page_prompt": "乐园地图页：SVG 分区地图（草坪/戏水/猫爬架/咖啡四色块+白路网）+ 白圆 pin + 底部预约 sheet（分区胶囊+时段单选+渐变确认钮）",
+      "element_prompts": {
+        "pp/map": "2.5D 园区地图：奶油底+四色圆角分区+白色路网",
+        "pp/sheet": "预约 sheet：grab 条+分区胶囊 radio+时段 radio+蜜桃渐变 CTA"
+      }
+    },
+    "spec_version": 1,
+    "change_log": [
+      {
+        "at": "2026-09-10T09:48:27.325Z",
+        "by": "clone",
+        "note": "collect-design 初始/重采集（computed 真值）"
+      }
+    ]
+  },
+  "regions": [
+    {
+      "id": "r_pp_head",
+      "type": "custom",
+      "label": "宠物乐园晴 26° · 优",
+      "components": [
+        {
+          "kind": "button",
+          "label": "晴 26° · 优",
+          "interaction": {
+            "act": "toast",
+            "msg": "今日晴朗 · 适宜出游（演示）"
+          },
+          "sample_value": "晴 26° · 优"
+        }
+      ]
+    },
+    {
+      "id": "r_pp_hero",
+      "type": "banner",
+      "label": "营业中 · 09-21 点\n    乐园地图",
+      "components": [
+        {
+          "kind": "image",
+          "label": "",
+          "interaction": {
+            "act": "toast",
+            "msg": "旺财：汪！今天去草坪区玩（演示）"
+          }
+        },
+        {
+          "kind": "button",
+          "label": "营业中 · 09-21 点",
+          "interaction": {
+            "act": "toast",
+            "msg": "园区营业中 09:00-21:00（演示）"
+          },
+          "sample_value": "营业中 · 09-21 点"
+        },
+        {
+          "kind": "button",
+          "label": "乐园地图",
+          "interaction": {
+            "act": "goto",
+            "to": "03-map"
+          },
+          "sample_value": "乐园地图"
+        }
+      ]
+    },
+    {
+      "id": "r_pp_acts",
+      "type": "custom",
+      "label": "预约今日余 12 位\n    遛伴附近 8 只\n    打卡连打 3 天",
+      "components": [
+        {
+          "kind": "sheet",
+          "label": "预约今日余 12 位",
+          "interaction": {
+            "act": "sheet"
+          },
+          "sample_value": "预约今日余 12 位"
+        },
+        {
+          "kind": "button",
+          "label": "遛伴附近 8 只",
+          "interaction": {
+            "act": "toast",
+            "msg": "已为你匹配遛伴：豆豆（柯基 · 2 岁）（演示）"
+          },
+          "sample_value": "遛伴附近 8 只"
+        },
+        {
+          "kind": "button",
+          "label": "打卡连打 3 天",
+          "interaction": {
+            "act": "toast",
+            "msg": "打卡成功：草坪区 +5 积分（演示）"
+          },
+          "sample_value": "打卡连打 3 天"
+        }
+      ]
+    },
+    {
+      "id": "r_pp_pass",
+      "type": "custom",
+      "label": "今日入园通行证旺财 · 柯基 | 草坪区 + 戏水区"
+    },
+    {
+      "id": "r_pp_feed",
+      "type": "list",
+      "label": "团子的乐园日记今天在猫爬架区征服了最高层…去围观",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_pp_tabs",
+      "type": "tab_bar",
+      "label": "首页档案地图社区我的",
+      "components": [
+        {
+          "kind": "button",
+          "label": "首页",
+          "interaction": {
+            "act": "goto",
+            "to": "01-home"
+          },
+          "sample_value": "首页"
+        },
+        {
+          "kind": "button",
+          "label": "档案",
+          "interaction": {
+            "act": "goto",
+            "to": "02-pets"
+          },
+          "sample_value": "档案"
+        },
+        {
+          "kind": "button",
+          "label": "地图",
+          "interaction": {
+            "act": "goto",
+            "to": "03-map"
+          },
+          "sample_value": "地图"
+        },
+        {
+          "kind": "button",
+          "label": "社区",
+          "interaction": {
+            "act": "goto",
+            "to": "04-community"
+          },
+          "sample_value": "社区"
+        },
+        {
+          "kind": "button",
+          "label": "我的",
+          "interaction": {
+            "act": "goto",
+            "to": "05-me"
+          },
+          "sample_value": "我的"
+        }
+      ]
+    }
+  ]
+}
