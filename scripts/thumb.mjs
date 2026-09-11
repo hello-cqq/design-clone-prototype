@@ -24,7 +24,7 @@ for (const t of targets) {
   const { srv, base } = await serve(path.join(t.dir, "prototype"));
   const page = await browser.newPage({ viewport: { width: w, height: h } });
   try {
-    await page.goto(base + "/index.html", { waitUntil: "networkidle", timeout: 30000 });
+    await page.goto(base + "/index.html?chrome=0", { waitUntil: "networkidle", timeout: 30000 });
     await page.waitForTimeout(1500);
     const el = page.locator("#dc-stage");
     await (await el.count() ? el : page.locator("body")).screenshot({ path: path.join(t.dir, "cover.png") });
