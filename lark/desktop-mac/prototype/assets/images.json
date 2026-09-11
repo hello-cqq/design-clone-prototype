@@ -1,0 +1,10 @@
+[
+  {
+    "at": "2026-09-06T04:17:26.402Z",
+    "prompt": "friendly 3d cartoon girl mascot wearing a red crab claw headband and round glasses, green hoodie, warm smile, soft studio light, plain light background",
+    "style": "pixar-3d",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "lk-mascot.png"
+  }
+]

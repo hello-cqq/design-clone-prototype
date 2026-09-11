@@ -1,0 +1,66 @@
+<style>
+  .dcx-col{width:250px;flex:none;background:#f7f8fa;border-right:1px solid #e5e6e8;padding:26px 12px;min-height:0;overflow:auto}
+  .dcx-item{display:flex;align-items:center;gap:10px;padding:10px;border-radius:8px;font-size:13px;color:#1f2329;cursor:pointer;margin-bottom:4px}
+  .dcx-item.on{background:#dce5fb;color:#3370ff;font-weight:500}
+  .dcx-item svg{width:16px;height:16px;flex:none;color:currentColor;opacity:.75}
+  .dcx-main{flex:1;min-width:0;overflow:auto;background:#f7f8fa;padding:26px 30px}
+  .dcx-main h2{font-size:20px;font-weight:600;color:#1f2329;margin:0 0 22px}
+  .dcx-banners{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:30px}
+  .dcx-banners i{display:block;height:88px;border-radius:10px;background:#e8eaed}
+  .dcx-sec{font-size:15px;font-weight:600;color:#1f2329;margin:0 0 14px}
+  .dcx-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:34px}
+  .dcx-cards.four{grid-template-columns:repeat(4,1fr)}
+  .dcx-card{background:#fbfbfc;border:1px solid #eef0f2;border-radius:10px;height:230px;padding:16px}
+  .dcx-card b{display:block;height:16px;border-radius:6px;background:#e8eaed;width:70%;margin-bottom:12px}
+  .dcx-card s{display:block;height:10px;border-radius:5px;background:#eceef0;width:74%;text-decoration:none}
+  .dcx-bar{height:26px;border-radius:8px;background:#e8eaed;width:220px;margin-left:auto}
+</style>
+<div data-dc="doc/root" class="da-root">
+  <aside data-dc="doc/side" class="da-side wb-side">
+    <div class="top">
+      <img class="ava" src="assets/chen.png" alt="">
+      <svg width="18" height="18" viewBox="0 0 24 24" style="fill:none;stroke:#646a73;stroke-width:2;cursor:pointer" data-act="toast" data-msg="添加（演示）"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v8M8 12h8"></path></svg>
+    </div>
+    <div class="search" data-act="toast" data-msg="搜索（演示）">搜索 (⌘K)</div>
+    <div style="overflow:auto;padding:4px 0 12px">
+      <div class="da-item" data-dc="doc/n-msg" data-goto="01-messages"><img class="ic" src="assets/nav-01.png" alt="">消息</div>
+      <div class="da-item" data-dc="doc/n-doubao" data-act="toast" data-msg="豆包工作（演示）"><img class="ic" src="assets/nav-02.png" alt="">豆包工作</div>
+      <div class="da-item" data-dc="doc/n-cal" data-goto="02-calendar"><img class="ic" src="assets/nav-03.png" alt="">日历</div>
+      <div class="da-item on" data-dc="doc/n-docs" data-act="toast" data-msg="（演示）"><img class="ic" src="assets/nav-04.png" alt="">云文档</div>
+      <div class="da-item" data-dc="doc/n-bitable" data-goto="09-bitable"><img class="ic" src="assets/nav-05.png" alt="">多维表格</div>
+      <div class="da-item" data-dc="doc/n-meet" data-goto="04-meeting"><img class="ic" src="assets/nav-06.png" alt="">视频会议</div>
+      <div class="da-item" data-dc="doc/n-fly" data-act="toast" data-msg="飞行社（演示）"><img class="ic" src="assets/nav-07.png" alt="">飞行社</div>
+      <div class="da-item" data-dc="doc/n-wb" data-goto="05-workbench"><img class="ic" src="assets/nav-08.png" alt="">工作台</div>
+      <div class="da-item" data-dc="doc/n-appc" data-goto="10-appcenter"><img class="ic" src="assets/nav-13.png" alt="">应用中心</div>
+      <div class="da-item" data-dc="doc/n-contacts" data-goto="06-contacts"><img class="ic" src="assets/nav-14.png" alt="">通讯录</div>
+      <div class="da-item" data-dc="doc/n-vip" data-act="toast" data-msg="权益升级（演示）"><img class="ic" src="assets/nav-09.png" alt="">权益升级</div>
+      <div style="font-size:12px;color:#8f959e;padding:10px 22px 4px">更多</div>
+      <div class="da-item" data-dc="doc/n-task" data-goto="07-tasks"><img class="ic" src="assets/nav-10.png" alt="">任务</div>
+      <div class="da-item" data-dc="doc/n-star" data-act="toast" data-msg="收藏（演示）"><img class="ic" src="assets/nav-11.png" alt="">收藏</div>
+      <div class="da-item" data-dc="doc/n-kb" data-goto="08-kb"><img class="ic" src="assets/nav-12.png" alt="">知识库</div>
+    </div>
+  </aside>
+  <div class="dcx-col" data-dc="doc/col">
+    <div class="dcx-item" data-dc="doc/i-home" data-act="toast" data-msg="主页（演示）"><svg viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2"><path d="M12 3 3 10v11h7v-7h4v7h7V10z"></path></svg>主页</div>
+    <div class="dcx-item" data-dc="doc/i-drive" data-act="toast" data-msg="云盘（演示）"><svg viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2"><circle cx="12" cy="12" r="9"></circle><path d="m9 12 2 2 4-5"></path></svg>云盘</div>
+    <div class="dcx-item on" data-dc="doc/i-kb" data-goto="08-kb"><svg viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2"><rect x="4" y="4" width="16" height="16" rx="2"></rect><path d="M8 4v16M4 9h4"></path></svg>知识库</div>
+    <div class="dcx-item" data-dc="doc/i-off" data-act="toast" data-msg="离线（演示）"><svg viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2"><path d="M12 3v10m0 0 3-3m-3 3-3-3"></path><path d="M4 17h16v4H4z"></path></svg>离线</div>
+  </div>
+  <main class="dcx-main" data-dc="doc/main">
+    <h2>知识库</h2>
+    <div class="dcx-banners" data-state="loading" data-placeholder-ok><i></i><i></i><i></i></div>
+    <div class="dcx-sec">置顶知识库</div>
+    <div class="dcx-cards" data-state="loading" data-placeholder-ok>
+      <div class="dcx-card"><b></b><s></s></div>
+      <div class="dcx-card"><b></b><s></s></div>
+      <div class="dcx-card"><b></b><s></s></div>
+    </div>
+    <div style="display:flex;align-items:center"><div class="dcx-sec" style="margin:0">全部知识库</div><div class="dcx-bar" data-state="loading" data-placeholder-ok></div></div>
+    <div class="dcx-cards four" style="margin-top:14px" data-state="loading" data-placeholder-ok>
+      <div class="dcx-card"><b></b><s></s></div>
+      <div class="dcx-card"><b></b><s></s></div>
+      <div class="dcx-card"><b></b><s></s></div>
+      <div class="dcx-card"><b></b><s></s></div>
+    </div>
+  </main>
+</div>
