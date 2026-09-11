@@ -1,0 +1,116 @@
+{
+  "generated_at": "2026-09-10T16:35:45.779Z",
+  "version": 3,
+  "flowsUsed": false,
+  "nodes": {
+    "01-note": {
+      "title": "图文笔记",
+      "index": "01"
+    },
+    "02-comments": {
+      "title": "评论列表",
+      "index": "02"
+    },
+    "03-author": {
+      "title": "作者主页",
+      "index": "03"
+    }
+  },
+  "edges": [
+    {
+      "i": 0,
+      "from": "01-note",
+      "to": "03-author",
+      "label": "tap · 03-author",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 1,
+      "from": "01-note",
+      "to": "02-comments",
+      "label": "tap · 02-comments",
+      "kind": "navigate",
+      "role": "task"
+    },
+    {
+      "i": 2,
+      "from": "03-author",
+      "to": "01-note",
+      "label": "tap · 01-note",
+      "kind": "navigate",
+      "role": "drill"
+    },
+    {
+      "i": 3,
+      "from": "03-author",
+      "to": "03-author",
+      "label": "tap · 03-author",
+      "kind": "navigate",
+      "role": "module"
+    }
+  ],
+  "roots": [
+    "01-note"
+  ],
+  "depths": {
+    "01-note": 0,
+    "02-comments": 1
+  },
+  "perNode": {
+    "01-note": {
+      "paths": [
+        [
+          1
+        ]
+      ],
+      "pathInfo": [
+        {
+          "source": "derived"
+        }
+      ],
+      "tree": {
+        "node": "01-note",
+        "children": [
+          {
+            "edge": 1,
+            "child": {
+              "node": "02-comments",
+              "children": []
+            }
+          }
+        ]
+      },
+      "nav": []
+    },
+    "02-comments": {
+      "paths": [],
+      "pathInfo": [],
+      "tree": {
+        "node": "02-comments",
+        "children": []
+      },
+      "nav": []
+    },
+    "03-author": {
+      "paths": [
+        [
+          2,
+          1
+        ]
+      ],
+      "pathInfo": [
+        {
+          "source": "derived"
+        }
+      ],
+      "tree": {
+        "node": "03-author",
+        "children": []
+      },
+      "nav": [
+        "03-author"
+      ]
+    }
+  }
+}

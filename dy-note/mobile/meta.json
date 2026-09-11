@@ -1,0 +1,13 @@
+{
+ "shell": "c_mobile",
+ "platform": "mobile",
+ "source": {
+  "kind": "link",
+  "ref": "dy-note"
+ },
+ "license": "CC-BY-4.0",
+ "ip_attestation": "public-material",
+ "attestation_note": "Douyin image-note replica; author nickname anonymized; comments fictional; note images public material (source URL in PROVENANCE)",
+ "version": "1.0.0",
+ "created_at": "2026-09-10T16:42:07.400Z"
+}
