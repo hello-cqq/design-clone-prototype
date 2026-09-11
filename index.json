@@ -1,6 +1,6 @@
 {
  "version": 3,
- "updated_at": "2026-09-11T06:10:00.193Z",
+ "updated_at": "2026-09-11T11:52:55.485Z",
  "apps": [
   {
    "app": "aliyun-console",
@@ -156,6 +156,59 @@
    "updated": "2026-09-11T12:01:46+08:00"
   },
   {
+   "app": "petpark",
+   "name": {
+    "en": "PetPark · 3D plush pet park",
+    "zh": "宠物乐园 · 3D 萌宠公园"
+   },
+   "description": {
+    "en": "A 3D plush-cute pet park: booking, walk-buddy, check-ins, pet profiles with tri-ring stats, a four-zone park map with reservations, community feed and membership — pixar-fluffy renders on clay-candy materials with soft idle motion.",
+    "zh": "3D 萌宠质感乐园：预约/遛伴/打卡、萌宠档案三环状态、园区四分区地图与预约、社区 feed 与会员卡——皮克斯式蓬松渲染+粘土糖果材质+软影微动。"
+   },
+   "tags": [
+    "pets",
+    "travel",
+    "community",
+    "booking",
+    "mobile",
+    "original"
+   ],
+   "category": "travel",
+   "shell": "c_mobile",
+   "version": "2.0.0",
+   "license": "CC-BY-4.0",
+   "source": {
+    "kind": "original",
+    "ref": "demo-petpark"
+   },
+   "ip_attestation": "original",
+   "brand_disclaimer": null,
+   "icon": "petpark/icon.png",
+   "cover": "petpark/cover.png",
+   "url": "https://hello-cqq.github.io/design-clone-prototype/petpark/prototype/",
+   "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/petpark",
+   "downloads": 1,
+   "contributors": [
+    {
+     "name": "cqq",
+     "login": null,
+     "commits": 5
+    },
+    {
+     "name": "AhahahQ",
+     "login": null,
+     "commits": 2
+    },
+    {
+     "name": "dc-index-bot",
+     "login": "github-actions[bot]",
+     "commits": 1
+    }
+   ],
+   "commits": 8,
+   "updated": "2026-09-11T19:52:14+08:00"
+  },
+  {
    "app": "lark",
    "name": {
     "en": "Lark · desktop mac (study replica)",
@@ -203,58 +256,6 @@
     }
    ],
    "commits": 6,
-   "updated": "2026-09-11T12:01:46+08:00"
-  },
-  {
-   "app": "petpark",
-   "name": {
-    "en": "PetPark · 2.5D clay pet park",
-    "zh": "宠物乐园 · 2.5D 粘土萌宠"
-   },
-   "description": {
-    "en": "Original 2.5D clay-textured pet park app: isometric park hero, pet profiles with stat rings, zone map with booking sheet, community feed, membership card.",
-    "zh": "原创 2.5D 粘土质感宠物乐园：等距公园首页、萌宠档案三环状态、分区地图+预约 sheet、社区 feed、会员卡。"
-   },
-   "tags": [
-    "original",
-    "2.5d",
-    "clay",
-    "pets",
-    "mobile"
-   ],
-   "category": "",
-   "shell": "c_mobile",
-   "version": "1.1.0",
-   "license": "CC-BY-4.0",
-   "source": {
-    "kind": "original",
-    "ref": "design-clone demo"
-   },
-   "ip_attestation": "original",
-   "brand_disclaimer": null,
-   "icon": null,
-   "cover": "petpark/cover.png",
-   "url": "https://hello-cqq.github.io/design-clone-prototype/petpark/prototype/",
-   "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/petpark",
-   "downloads": 1,
-   "contributors": [
-    {
-     "name": "cqq",
-     "login": null,
-     "commits": 5
-    },
-    {
-     "name": "AhahahQ",
-     "login": null,
-     "commits": 1
-    },
-    {
-     "name": "dc-index-bot",
-     "login": "github-actions[bot]",
-     "commits": 1
-    }
-   ],
-   "commits": 7,
    "updated": "2026-09-11T12:01:46+08:00"
   }
  ]
