@@ -1,59 +1,50 @@
 {
  "version": 3,
- "updated_at": "2026-09-11T13:18:18.666Z",
+ "updated_at": "2026-09-11T13:22:41.519Z",
  "apps": [
   {
-   "app": "petpark",
+   "app": "dy-note",
    "name": {
-    "en": "PetPark · 3D plush pet park",
-    "zh": "宠物乐园 · 3D 萌宠公园"
+    "en": "Douyin Note · mobile (study replica)",
+    "zh": "抖音图文 · 手机版（学习复刻）"
    },
    "description": {
-    "en": "A 3D plush-cute pet park: booking, walk-buddy, check-ins, pet profiles with tri-ring stats, a four-zone park map with reservations, community feed and membership — pixar-fluffy renders on clay-candy materials with soft idle motion.",
-    "zh": "3D 萌宠质感乐园：预约/遛伴/打卡、萌宠档案三环状态、园区四分区地图与预约、社区 feed 与会员卡——皮克斯式蓬松渲染+粘土糖果材质+软影微动。"
+    "en": "Study replica of a Douyin photo-note flow: feed, note detail, author page — fictional text.",
+    "zh": "抖音图文流学习复刻：feed、图文详情、作者页——文本全虚构。"
    },
    "tags": [
-    "pets",
-    "travel",
-    "community",
-    "booking",
+    "short-video",
+    "social",
     "mobile",
-    "original"
+    "study",
+    "feed"
    ],
-   "category": "travel",
+   "category": "short-video",
    "shell": "c_mobile",
-   "version": "2.0.0",
+   "version": "1.2.0",
    "license": "CC-BY-4.0",
    "source": {
-    "kind": "original",
-    "ref": "demo-petpark"
+    "kind": "link",
+    "ref": "dy-note"
    },
-   "ip_attestation": "original",
-   "brand_disclaimer": null,
-   "icon": "petpark/prototype/appicon/icon-256.png",
-   "cover": "petpark/cover.png",
-   "url": "https://hello-cqq.github.io/design-clone-prototype/petpark/prototype/",
-   "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/petpark",
+   "ip_attestation": "public-material",
+   "brand_disclaimer": "Unofficial study replica of Douyin Note · mobile (study replica); trademarks belong to their owners; no affiliation or endorsement implied.",
+   "icon": "dy-note/prototype/appicon/icon-256.png",
+   "cover": "dy-note/cover.png",
+   "url": "https://hello-cqq.github.io/design-clone-prototype/dy-note/prototype/",
+   "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/dy-note",
    "pages": [
     {
-     "id": "01-home",
-     "name": "乐园首页"
+     "id": "01-note",
+     "name": "图文笔记"
     },
     {
-     "id": "02-pets",
-     "name": "萌宠档案"
+     "id": "02-comments",
+     "name": "评论列表"
     },
     {
-     "id": "03-map",
-     "name": "乐园地图"
-    },
-    {
-     "id": "04-community",
-     "name": "乐园社区"
-    },
-    {
-     "id": "05-me",
-     "name": "我的"
+     "id": "03-author",
+     "name": "作者主页"
     }
    ],
    "downloads": 2,
@@ -62,7 +53,7 @@
     {
      "name": "cqq",
      "login": "hello-cqq",
-     "commits": 8
+     "commits": 6
     },
     {
      "name": "AhahahQ",
@@ -70,8 +61,8 @@
      "commits": 2
     }
    ],
-   "commits": 11,
-   "updated": "2026-09-11T21:17:30+08:00"
+   "commits": 9,
+   "updated": "2026-09-11T21:22:04+08:00"
   },
   {
    "app": "aliyun-console",
@@ -81,7 +72,7 @@
    },
    "description": {
     "en": "Study replica of Aliyun marketing/console pages: hub navigation, ECS product pages, pricing tables.",
-    "zh": "阿里云官网/控制台学习复刻：hub 导航、ECS 产品页、价格表。"
+    "zh": "阿里云官网/控制台学习复刻：枢纽导航、ECS 产品页、价格表。"
    },
    "tags": [
     "cloud",
@@ -89,16 +80,16 @@
     "web",
     "study"
    ],
-   "category": "",
+   "category": "cloud",
    "shell": "c_browser",
-   "version": "1.1.0",
+   "version": "1.2.0",
    "license": "CC-BY-4.0",
    "source": {
-    "kind": "web",
-    "ref": "aliyun.com (study)"
+    "kind": "original",
+    "ref": "web-aliyun"
    },
    "ip_attestation": "public-material",
-   "brand_disclaimer": "Unofficial study replica of Aliyun pages; trademarks belong to Alibaba Group; no affiliation or endorsement implied.",
+   "brand_disclaimer": "Unofficial study replica of Aliyun Console · web (study replica); trademarks belong to their owners; no affiliation or endorsement implied.",
    "icon": "aliyun-console/prototype/appicon/icon-256.png",
    "cover": "aliyun-console/cover.png",
    "url": "https://hello-cqq.github.io/design-clone-prototype/aliyun-console/prototype/",
@@ -144,72 +135,11 @@
     {
      "name": "AhahahQ",
      "login": "AhahahQ",
-     "commits": 1
+     "commits": 2
     }
    ],
-   "commits": 8,
-   "updated": "2026-09-11T21:11:45+08:00"
-  },
-  {
-   "app": "dy-note",
-   "name": {
-    "en": "Douyin color-palette note (study replica)",
-    "zh": "抖音调色笔记（学习复刻）"
-   },
-   "description": {
-    "en": "Study replica of a Douyin image note: carousel, caption, stats, comments, author page — nickname anonymized, comments fictional.",
-    "zh": "抖音图文笔记学习复刻：轮播、文案、数据、评论、作者页——昵称匿名、评论虚构。"
-   },
-   "tags": [
-    "social",
-    "note",
-    "study",
-    "mobile"
-   ],
-   "category": "",
-   "shell": "c_mobile",
-   "version": "1.1.0",
-   "license": "CC-BY-4.0",
-   "source": {
-    "kind": "link",
-    "ref": "douyin.com/note/7639423340646296174"
-   },
-   "ip_attestation": "public-material",
-   "brand_disclaimer": "Unofficial study replica of a public Douyin note; note images are public material (source URL in PROVENANCE); trademarks belong to ByteDance.",
-   "icon": "dy-note/prototype/appicon/icon-256.png",
-   "cover": "dy-note/cover.png",
-   "url": "https://hello-cqq.github.io/design-clone-prototype/dy-note/prototype/",
-   "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/dy-note",
-   "pages": [
-    {
-     "id": "01-note",
-     "name": "图文笔记"
-    },
-    {
-     "id": "02-comments",
-     "name": "评论列表"
-    },
-    {
-     "id": "03-author",
-     "name": "作者主页"
-    }
-   ],
-   "downloads": 2,
-   "creator": "hello-cqq",
-   "contributors": [
-    {
-     "name": "cqq",
-     "login": "hello-cqq",
-     "commits": 6
-    },
-    {
-     "name": "AhahahQ",
-     "login": "AhahahQ",
-     "commits": 1
-    }
-   ],
-   "commits": 8,
-   "updated": "2026-09-11T21:11:45+08:00"
+   "commits": 9,
+   "updated": "2026-09-11T21:21:57+08:00"
   },
   {
    "app": "wechat",
@@ -227,16 +157,16 @@
     "study",
     "mobile"
    ],
-   "category": "",
+   "category": "social",
    "shell": "c_mobile",
-   "version": "1.1.0",
+   "version": "1.2.0",
    "license": "CC-BY-4.0",
    "source": {
-    "kind": "app",
-    "ref": "WeChat android (study)"
+    "kind": "device",
+    "ref": "wechat-full"
    },
    "ip_attestation": "public-material",
-   "brand_disclaimer": "Unofficial study replica of WeChat; trademarks belong to Tencent; no affiliation or endorsement implied.",
+   "brand_disclaimer": "Unofficial study replica of WeChat · phone (study replica); trademarks belong to their owners; no affiliation or endorsement implied.",
    "icon": "wechat/prototype/appicon/icon-256.png",
    "cover": "wechat/cover.png",
    "url": "https://hello-cqq.github.io/design-clone-prototype/wechat/prototype/",
@@ -330,11 +260,82 @@
     {
      "name": "AhahahQ",
      "login": "AhahahQ",
-     "commits": 1
+     "commits": 2
     }
    ],
-   "commits": 8,
-   "updated": "2026-09-11T21:11:45+08:00"
+   "commits": 9,
+   "updated": "2026-09-11T21:21:53+08:00"
+  },
+  {
+   "app": "petpark",
+   "name": {
+    "en": "PetPark · 3D plush pet park",
+    "zh": "宠物乐园 · 3D 萌宠公园"
+   },
+   "description": {
+    "en": "A 3D plush-cute pet park: booking, walk-buddy, check-ins, pet profiles with tri-ring stats, a four-zone park map with reservations, community feed and membership — pixar-fluffy renders on clay-candy materials with soft idle motion.",
+    "zh": "3D 萌宠质感乐园：预约/遛伴/打卡、萌宠档案三环状态、园区四分区地图与预约、社区 feed 与会员卡——皮克斯式蓬松渲染+粘土糖果材质+软影微动。"
+   },
+   "tags": [
+    "pets",
+    "travel",
+    "community",
+    "booking",
+    "mobile",
+    "original"
+   ],
+   "category": "travel",
+   "shell": "c_mobile",
+   "version": "2.0.0",
+   "license": "CC-BY-4.0",
+   "source": {
+    "kind": "original",
+    "ref": "demo-petpark"
+   },
+   "ip_attestation": "original",
+   "brand_disclaimer": null,
+   "icon": "petpark/prototype/appicon/icon-256.png",
+   "cover": "petpark/cover.png",
+   "url": "https://hello-cqq.github.io/design-clone-prototype/petpark/prototype/",
+   "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/petpark",
+   "pages": [
+    {
+     "id": "01-home",
+     "name": "乐园首页"
+    },
+    {
+     "id": "02-pets",
+     "name": "萌宠档案"
+    },
+    {
+     "id": "03-map",
+     "name": "乐园地图"
+    },
+    {
+     "id": "04-community",
+     "name": "乐园社区"
+    },
+    {
+     "id": "05-me",
+     "name": "我的"
+    }
+   ],
+   "downloads": 2,
+   "creator": "hello-cqq",
+   "contributors": [
+    {
+     "name": "cqq",
+     "login": "hello-cqq",
+     "commits": 8
+    },
+    {
+     "name": "AhahahQ",
+     "login": "AhahahQ",
+     "commits": 2
+    }
+   ],
+   "commits": 11,
+   "updated": "2026-09-11T21:17:30+08:00"
   },
   {
    "app": "lark",
@@ -343,24 +344,26 @@
     "zh": "飞书 · 桌面 Mac 版（学习复刻）"
    },
    "description": {
-    "en": "Study replica of Lark desktop mac: messages, calendar, docs, meetings, app center — conversations fictional.",
-    "zh": "飞书桌面 Mac 版学习复刻：消息、日历、云文档、会议、应用中心——会话全虚构。"
+    "en": "Study replica of Lark desktop: messages, calendar, docs, app center — fictional text.",
+    "zh": "飞书桌面端学习复刻：消息、日历、文档、应用中心——文本全虚构。"
    },
    "tags": [
+    "office",
     "collab",
     "desktop",
-    "study"
+    "study",
+    "messenger"
    ],
-   "category": "",
+   "category": "office",
    "shell": "c_desktop",
-   "version": "1.1.0",
+   "version": "1.2.0",
    "license": "CC-BY-4.0",
    "source": {
-    "kind": "app",
-    "ref": "Lark mac (study)"
+    "kind": "original",
+    "ref": "mac-lark"
    },
    "ip_attestation": "public-material",
-   "brand_disclaimer": "Unofficial study replica of Lark/Feishu desktop; trademarks belong to ByteDance; no affiliation or endorsement implied.",
+   "brand_disclaimer": "Unofficial study replica of Lark · desktop mac (study replica); trademarks belong to their owners; no affiliation or endorsement implied.",
    "icon": "lark/prototype/appicon/icon-256.png",
    "cover": "lark/cover.png",
    "url": "https://hello-cqq.github.io/design-clone-prototype/lark/prototype/",
@@ -434,11 +437,11 @@
     {
      "name": "AhahahQ",
      "login": "AhahahQ",
-     "commits": 1
+     "commits": 2
     }
    ],
-   "commits": 8,
-   "updated": "2026-09-11T21:11:45+08:00"
+   "commits": 9,
+   "updated": "2026-09-11T21:22:01+08:00"
   }
  ]
 }
