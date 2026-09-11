@@ -1,0 +1,162 @@
+[
+  {
+    "at": "2026-09-05T16:31:04.028Z",
+    "prompt": "friendly young woman portrait, warm smile, soft studio lighting, head and shoulders, plain pastel background, high quality 3d pixar style character, fictional person",
+    "style": "pixar-3d",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "mem-1.png"
+  },
+  {
+    "at": "2026-09-05T16:31:50.014Z",
+    "prompt": "kind middle-aged man portrait, short grey-flecked hair, gentle smile, head and shoulders, plain pastel background, high quality 3d pixar style character, fictional person",
+    "style": "pixar-3d",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "mem-2.png"
+  },
+  {
+    "at": "2026-09-05T16:32:34.545Z",
+    "prompt": "young woman portrait, shoulder-length dark hair, cheerful smile, head and shoulders, plain pastel background, high quality 3d pixar style character, fictional person",
+    "style": "pixar-3d",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "mem-3.png"
+  },
+  {
+    "at": "2026-09-05T16:33:25.291Z",
+    "prompt": "warm middle-aged woman portrait, soft curly hair, caring smile, head and shoulders, plain pastel background, high quality 3d pixar style character, fictional person",
+    "style": "pixar-3d",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "mem-4.png"
+  },
+  {
+    "at": "2026-09-05T16:34:10.888Z",
+    "prompt": "young man portrait, casual hoodie, friendly grin, head and shoulders, plain pastel background, high quality 3d pixar style character, fictional person",
+    "style": "pixar-3d",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "mem-5.png"
+  },
+  {
+    "at": "2026-09-05T16:34:55.762Z",
+    "prompt": "young woman portrait, short bob haircut, artistic creative vibe, head and shoulders, plain pastel background, high quality 3d pixar style character, fictional person",
+    "style": "pixar-3d",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "ava-duan.png"
+  },
+  {
+    "at": "2026-09-05T16:34:58.806Z",
+    "prompt": "cozy family living room illustration, warm lamp light, sofa and green plants, photo frame on wall, no people, high quality 3d pixar style, square composition",
+    "style": "pixar-3d",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "ava-jia.png"
+  },
+  {
+    "at": "2026-09-05T17:22:55.263Z",
+    "prompt": "single person head-and-shoulders portrait avatar, a friendly young woman with shoulder-length hair, centered, clean solid background in a warm harmonious brand tone (not gray), square crop, friendly approachable expression",
+    "style": "illustration",
+    "seed": 57,
+    "engine": "pollinations",
+    "out": ".genloop-mem-1.png-r1.png"
+  },
+  {
+    "at": "2026-09-05T17:24:08.398Z",
+    "prompt": "single person head-and-shoulders portrait avatar, a friendly young woman with shoulder-length hair, centered, clean solid background in a warm harmonious brand tone (not gray), square crop, friendly approachable expression",
+    "style": "illustration",
+    "seed": 57,
+    "engine": "pollinations",
+    "out": ".genloop-mem-1.png-r1.png"
+  },
+  {
+    "at": "2026-09-05T17:25:06.640Z",
+    "prompt": "single person head-and-shoulders portrait avatar, a friendly young woman with shoulder-length hair, centered, clean solid background in a warm harmonious brand tone (not gray), square crop, friendly approachable expression",
+    "style": "anime",
+    "seed": 57,
+    "engine": "pollinations",
+    "out": ".genloop-mem-1.png-r1.png"
+  },
+  {
+    "at": "2026-09-05T17:25:50.570Z",
+    "prompt": "single person head-and-shoulders portrait avatar, a friendly young woman with shoulder-length hair, centered, clean solid background in a warm harmonious brand tone (not gray), square crop, friendly approachable expression, single centered subject, uncluttered clean composition",
+    "style": "anime",
+    "seed": 74,
+    "engine": "pollinations",
+    "out": ".genloop-mem-1.png-r2.png"
+  },
+  {
+    "at": "2026-09-05T17:27:05.721Z",
+    "prompt": "single person head-and-shoulders portrait avatar, a friendly young woman with shoulder-length hair, centered, flat solid SATURATED background color (warm terracotta / teal / mustard / dusty blue — never white, never gray), square crop, friendly approachable expression, bold simple shapes",
+    "style": "anime",
+    "seed": 57,
+    "engine": "pollinations",
+    "out": ".genloop-mem-1.png-r1.png"
+  },
+  {
+    "at": "2026-09-05T17:27:45.194Z",
+    "prompt": "single person head-and-shoulders portrait avatar, a kind middle-aged man with short graying hair, centered, flat solid SATURATED background color (warm terracotta / teal / mustard / dusty blue — never white, never gray), square crop, friendly approachable expression, bold simple shapes",
+    "style": "anime",
+    "seed": 57,
+    "engine": "pollinations",
+    "out": ".genloop-mem-2.png-r1.png"
+  },
+  {
+    "at": "2026-09-05T17:27:51.503Z",
+    "prompt": "single person head-and-shoulders portrait avatar, a cheerful young woman with a ponytail, centered, flat solid SATURATED background color (warm terracotta / teal / mustard / dusty blue — never white, never gray), square crop, friendly approachable expression, bold simple shapes",
+    "style": "anime",
+    "seed": 57,
+    "engine": "pollinations",
+    "out": ".genloop-mem-3.png-r1.png"
+  },
+  {
+    "at": "2026-09-05T17:28:36.750Z",
+    "prompt": "single person head-and-shoulders portrait avatar, a warm middle-aged woman with soft curly hair, centered, flat solid SATURATED background color (warm terracotta / teal / mustard / dusty blue — never white, never gray), square crop, friendly approachable expression, bold simple shapes",
+    "style": "anime",
+    "seed": 57,
+    "engine": "pollinations",
+    "out": ".genloop-mem-4.png-r1.png"
+  },
+  {
+    "at": "2026-09-05T17:29:21.522Z",
+    "prompt": "single person head-and-shoulders portrait avatar, a young man in a casual hoodie with a friendly grin, centered, flat solid SATURATED background color (warm terracotta / teal / mustard / dusty blue — never white, never gray), square crop, friendly approachable expression, bold simple shapes",
+    "style": "anime",
+    "seed": 57,
+    "engine": "pollinations",
+    "out": ".genloop-mem-5.png-r1.png"
+  },
+  {
+    "at": "2026-09-05T17:29:25.030Z",
+    "prompt": "single person head-and-shoulders portrait avatar, an artistic young woman with a short bob and round glasses, centered, flat solid SATURATED background color (warm terracotta / teal / mustard / dusty blue — never white, never gray), square crop, friendly approachable expression, bold simple shapes",
+    "style": "anime",
+    "seed": 57,
+    "engine": "pollinations",
+    "out": ".genloop-ava-duan.png-r1.png"
+  },
+  {
+    "at": "2026-09-05T17:30:11.302Z",
+    "prompt": "environmental scene illustration, cozy family living room with warm lamp light and plants, no people, storytelling details, coherent light source, no readable text",
+    "style": "illustration",
+    "seed": 57,
+    "engine": "pollinations",
+    "out": ".genloop-ava-jia.png-r1.png"
+  },
+  {
+    "at": "2026-09-05T17:30:19.170Z",
+    "prompt": "wide banner cover image, misty mountain ridge sunrise with layered valleys, landscape composition, atmospheric depth, no readable text, no watermark",
+    "style": "photographic",
+    "seed": 57,
+    "engine": "pollinations",
+    "out": ".genloop-mm-cover.jpg-r1.png"
+  },
+  {
+    "at": "2026-09-05T17:31:00.412Z",
+    "prompt": "environmental scene illustration, elegant chinese restaurant interior with round table and tea sets, no people, storytelling details, coherent light source, no readable text",
+    "style": "illustration",
+    "seed": 57,
+    "engine": "pollinations",
+    "out": ".genloop-mp-feed2.jpg-r1.png"
+  }
+]

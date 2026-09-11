@@ -1,0 +1,22 @@
+<div data-dc="fs/root" class="mi-root" style="background:#ededed">
+  <header class="mi-nav"><svg data-dc="fs/back" data-goto="02-contacts" viewBox="0 0 24 24" style="width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2"><path d="m14 6-6 6 6 6"></path></svg><span class="t"></span><span data-dc="fs/more" data-act="sheet" data-title="更多" data-items="设置备注和标签|名片|投诉|删除" style="font-size:18px" role="button" tabindex="0">⋯</span></header>
+  <div data-dc="fs/profile" class="flex gap-4 px-5 py-5" style="background:#fff">
+    <img data-dc="fs/ava" data-act="sheet" data-title="头像" data-items="查看大图|保存到手机" src="assets/ava-duan.png" style="width:64px;height:64px;border-radius:8px;object-fit:cover;flex:none" alt="" role="button" tabindex="0">
+    <div><div class="text-[19px] font-semibold">阿蓝</div><div class="mt-1 text-[14px]" style="color:var(--color-text-secondary)">昵称：阿蓝 · 地区：上海</div><div data-dc="fs/remark" data-act="sheet" data-title="设置备注和标签" data-items="备注名|标签|电话|描述" class="mt-2 inline-block rounded px-2 py-1 text-[12px]" style="background:#f2f2f2;color:#767676" role="button" tabindex="0">设置备注和标签</div></div>
+  </div>
+  <div style="height:8px;background:#ededed"></div>
+  <div data-dc="fs/perm" class="px-4 py-3" style="background:#fff">
+    <div class="text-[15px]" style="color:#191919">朋友权限</div>
+    <div data-radio-group="" class="mt-3 flex flex-col gap-3">
+      <label data-dc="fs/perm-chat" class="flex items-center justify-between"><span class="text-[15px]">仅聊天</span><span class="dc-radio on" data-act="radio" data-group="perm" role="radio" aria-checked="true" tabindex="0"></span></label>
+      <label data-dc="fs/perm-mm" class="flex items-center justify-between"><span class="text-[15px]">聊天、朋友圈、状态</span><span class="dc-radio" data-act="radio" data-group="perm" role="radio" aria-checked="false" tabindex="0"></span></label>
+      <label data-dc="fs/perm-none" class="flex items-center justify-between"><span class="text-[15px]">不让他看我的朋友圈</span><span class="dc-radio" data-act="radio" data-group="perm" role="radio" aria-checked="false" tabindex="0"></span></label>
+    </div>
+  </div>
+  <div style="height:8px;background:#ededed"></div>
+  <div data-dc="fs/mute" class="mi-cell" style="background:#fff"><span class="lb" data-act="toast" data-msg="消息免打扰（演示）">消息免打扰</span><span class="dc-sw" data-act="toggle" role="switch" aria-checked="false" tabindex="0"><i></i></span></div>
+  <div data-dc="fs/pin" class="mi-cell" style="background:#fff"><span class="lb" data-act="toast" data-msg="置顶聊天（演示）">置顶聊天</span><span class="dc-sw" data-act="toggle" role="switch" aria-checked="false" tabindex="0"><i></i></span></div>
+  <a data-dc="fs/mm" data-goto="06-moments" class="mi-cell mt-2" style="background:#fff"><span class="lb" style="color:var(--color-text-primary)">朋友圈</span><svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:none;stroke:#c8c8c8;stroke-width:2"><path d="m9 6 6 6-6 6"></path></svg></a>
+  <a data-dc="fs/msg" data-goto="11-single-chat" class="mx-5 my-4 grid place-items-center rounded-lg py-3 text-[15px] text-white" style="background:#2a7f4f">发消息</a>
+  <a data-dc="fs/del" data-act="dialog" data-title="删除好友" data-body="删除后你们将不再是好友，确定删除？" data-ok="删除" data-ok-toast="已删除（演示）" class="mx-5 mb-4 grid place-items-center rounded-lg py-3 text-[15px]" style="background:#fff;color:#fa5151" role="button">删除</a>
+</div>
