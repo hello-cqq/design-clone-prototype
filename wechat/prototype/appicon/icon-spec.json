@@ -1,9 +1,8 @@
 {
- "style": "clay-icon",
- "prompt": "app icon / feature glyph, wechat-full app icon glyph, simple bold silhouette, centered, square, minimal background",
- "source": "generated",
- "mode": "generated",
+ "source": "cloned",
+ "icon_how": "cloned:autocrop",
+ "mode": "auto",
  "base": "/Users/cqq/Project/design-clone/design-clone-runs/wechat-full/prototype/appicon/_base.png",
  "radius": 0.22,
- "generated_at": "2026-09-06T05:33:52.593Z"
+ "generated_at": "2026-09-11T11:48:55.608Z"
 }
