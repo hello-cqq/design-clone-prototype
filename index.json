@@ -1,6 +1,6 @@
 {
  "version": 3,
- "updated_at": "2026-09-11T12:41:55.293Z",
+ "updated_at": "2026-09-11T13:11:45.542Z",
  "apps": [
   {
    "app": "aliyun-console",
@@ -32,17 +32,47 @@
    "cover": "aliyun-console/cover.png",
    "url": "https://hello-cqq.github.io/design-clone-prototype/aliyun-console/prototype/",
    "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/aliyun-console",
+   "pages": [
+    {
+     "id": "01-home",
+     "name": "首页"
+    },
+    {
+     "id": "02-ecs",
+     "name": "ECS"
+    },
+    {
+     "id": "03-price",
+     "name": "定价"
+    },
+    {
+     "id": "04-docs",
+     "name": "文档"
+    },
+    {
+     "id": "05-ecs-features",
+     "name": "ECS 特性"
+    },
+    {
+     "id": "06-ecs-pricing",
+     "name": "ECS 价格"
+    },
+    {
+     "id": "07-price-strategy",
+     "name": "定价详情"
+    }
+   ],
    "downloads": 2,
    "creator": "hello-cqq",
    "contributors": [
     {
      "name": "cqq",
-     "login": "hello-cqq",
+     "login": null,
      "commits": 5
     },
     {
      "name": "AhahahQ",
-     "login": "AhahahQ",
+     "login": null,
      "commits": 1
     }
    ],
@@ -79,17 +109,31 @@
    "cover": "dy-note/cover.png",
    "url": "https://hello-cqq.github.io/design-clone-prototype/dy-note/prototype/",
    "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/dy-note",
+   "pages": [
+    {
+     "id": "01-note",
+     "name": "图文笔记"
+    },
+    {
+     "id": "02-comments",
+     "name": "评论列表"
+    },
+    {
+     "id": "03-author",
+     "name": "作者主页"
+    }
+   ],
    "downloads": 2,
    "creator": "hello-cqq",
    "contributors": [
     {
      "name": "cqq",
-     "login": "hello-cqq",
+     "login": null,
      "commits": 5
     },
     {
      "name": "AhahahQ",
-     "login": "AhahahQ",
+     "login": null,
      "commits": 1
     }
    ],
@@ -128,17 +172,39 @@
    "cover": "petpark/cover.png",
    "url": "https://hello-cqq.github.io/design-clone-prototype/petpark/prototype/",
    "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/petpark",
+   "pages": [
+    {
+     "id": "01-home",
+     "name": "乐园首页"
+    },
+    {
+     "id": "02-pets",
+     "name": "萌宠档案"
+    },
+    {
+     "id": "03-map",
+     "name": "乐园地图"
+    },
+    {
+     "id": "04-community",
+     "name": "乐园社区"
+    },
+    {
+     "id": "05-me",
+     "name": "我的"
+    }
+   ],
    "downloads": 2,
    "creator": "hello-cqq",
    "contributors": [
     {
      "name": "cqq",
-     "login": "hello-cqq",
+     "login": null,
      "commits": 6
     },
     {
      "name": "AhahahQ",
-     "login": "AhahahQ",
+     "login": null,
      "commits": 2
     }
    ],
@@ -175,17 +241,95 @@
    "cover": "wechat/cover.png",
    "url": "https://hello-cqq.github.io/design-clone-prototype/wechat/prototype/",
    "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/wechat",
+   "pages": [
+    {
+     "id": "01-chatlist",
+     "name": "会话列表"
+    },
+    {
+     "id": "02-contacts",
+     "name": "通讯录"
+    },
+    {
+     "id": "03-discover",
+     "name": "发现"
+    },
+    {
+     "id": "04-me",
+     "name": "我"
+    },
+    {
+     "id": "05-services",
+     "name": "服务"
+    },
+    {
+     "id": "06-moments",
+     "name": "朋友圈"
+    },
+    {
+     "id": "07-plus",
+     "name": "加号菜单"
+    },
+    {
+     "id": "08-search",
+     "name": "搜索"
+    },
+    {
+     "id": "09-chat",
+     "name": "单聊·小陈"
+    },
+    {
+     "id": "10-wallet",
+     "name": "钱包"
+    },
+    {
+     "id": "11-single-chat",
+     "name": "单聊·文件传输助手"
+    },
+    {
+     "id": "12-group-chat",
+     "name": "群聊·家"
+    },
+    {
+     "id": "13-group-settings",
+     "name": "群设置"
+    },
+    {
+     "id": "14-friend-settings",
+     "name": "好友资料"
+    },
+    {
+     "id": "15-longpress",
+     "name": "长按菜单"
+    },
+    {
+     "id": "16-miniprogram-tray",
+     "name": "小程序托盘"
+    },
+    {
+     "id": "17-miniprogram",
+     "name": "小程序"
+    },
+    {
+     "id": "18-search",
+     "name": "搜索流"
+    },
+    {
+     "id": "19-loading",
+     "name": "加载态"
+    }
+   ],
    "downloads": 2,
    "creator": "hello-cqq",
    "contributors": [
     {
      "name": "cqq",
-     "login": "hello-cqq",
+     "login": null,
      "commits": 5
     },
     {
      "name": "AhahahQ",
-     "login": "AhahahQ",
+     "login": null,
      "commits": 1
     }
    ],
@@ -221,17 +365,75 @@
    "cover": "lark/cover.png",
    "url": "https://hello-cqq.github.io/design-clone-prototype/lark/prototype/",
    "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/lark",
+   "pages": [
+    {
+     "id": "01-messages",
+     "name": "消息"
+    },
+    {
+     "id": "02-calendar",
+     "name": "日历"
+    },
+    {
+     "id": "03-docs",
+     "name": "云文档"
+    },
+    {
+     "id": "04-meeting",
+     "name": "视频会议"
+    },
+    {
+     "id": "05-workbench",
+     "name": "工作台"
+    },
+    {
+     "id": "06-contacts",
+     "name": "通讯录"
+    },
+    {
+     "id": "07-tasks",
+     "name": "任务"
+    },
+    {
+     "id": "08-kb",
+     "name": "知识库"
+    },
+    {
+     "id": "09-bitable",
+     "name": "多维表格"
+    },
+    {
+     "id": "10-appcenter",
+     "name": "应用中心"
+    },
+    {
+     "id": "11-chat",
+     "name": "聊天窗"
+    },
+    {
+     "id": "14-group-chat",
+     "name": "群聊"
+    },
+    {
+     "id": "15-group-settings",
+     "name": "群设置"
+    },
+    {
+     "id": "16-contact",
+     "name": "联系人卡片"
+    }
+   ],
    "downloads": 1,
    "creator": "hello-cqq",
    "contributors": [
     {
      "name": "cqq",
-     "login": "hello-cqq",
+     "login": null,
      "commits": 5
     },
     {
      "name": "AhahahQ",
-     "login": "AhahahQ",
+     "login": null,
      "commits": 1
     }
    ],
