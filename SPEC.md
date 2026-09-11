@@ -19,6 +19,13 @@ Machine-checkable rules are enforced by CI (`pr-gate.yml`); the rest by maintain
   `wechat` (phone), `wechat-pad`, `wechat-desktop`, `wechat-ios`, …
 - One current version per app. No multi-version directories — history = git + Releases.
 
+## 1b. Gallery assets (hard-enforced by CI)
+
+Every app MUST carry, at app root:
+- `cover.png` — 1200×800 (strict 3:2), ≤300KB, scene-matched composite (category palette + device frame + real first-view screenshot + icon + bilingual name + tags). Generate with the skill: `node <skill>/scripts/gen/cover.mjs --run <run> --base <url>`.
+- `icon.png` — ≥256px square; real app icon when obtainable (input / web favicon+manifest / mac icns), else generated (`gen/appicon.mjs`).
+- `meta.json` — bilingual `name`/`description`, 3–6 `tags` (CI `pr-gate` fails otherwise).
+
 ## 2. `prototype/` content whitelist
 
 Allowed: `index.html`, `views/`, `assets/`, `inspector.*`, `runtime.*`, `zipstore.*`,

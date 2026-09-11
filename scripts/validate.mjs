@@ -17,6 +17,29 @@ const root = path.resolve(process.argv[2] && !process.argv[2].startsWith("--") ?
 const baseIdx = process.argv.indexOf("--base");
 const base = baseIdx > 0 ? process.argv[baseIdx + 1] : null;
 
+// M63: 画廊资源硬验——变更 app 必含 3:2 cover(<=300KB, 宽>=900) + icon(>=256) + meta 双语非空
+function pngDims(file) {
+  try {
+    const b = fs.readFileSync(file);
+    if (b.length < 24 || b.readUInt32BE(0) !== 0x89504e47) return null;
+    return { w: b.readUInt32BE(16), h: b.readUInt32BE(20), kb: Math.round(b.length / 1024) };
+  } catch { return null; }
+}
+function checkGalleryAssets(t) {
+  const meta = readMeta(t.dir);
+  const cover = pngDims(path.join(t.dir, "cover.png"));
+  const icon = pngDims(path.join(t.dir, "icon.png"));
+  if (!cover) fail(`${t.app}: 缺 cover.png（画廊封面必需，1200x800 3:2 <=300KB）`);
+  else {
+    if (cover.w < 900 || cover.w * 2 !== cover.h * 3) fail(`${t.app}: cover 非 3:2 或宽<900（${cover.w}x${cover.h}）`);
+    if (cover.kb > 300) fail(`${t.app}: cover ${cover.kb}KB > 300KB`);
+  }
+  if (!icon) fail(`${t.app}: 缺 icon.png（>=256px，真图标或生成）`);
+  else if (Math.min(icon.w, icon.h) < 256) fail(`${t.app}: icon 过小 ${icon.w}x${icon.h}`);
+  if (!meta.name || !meta.name.zh || !meta.name.en) fail(`${t.app}: meta.name 缺双语`);
+  if (!meta.description || !meta.description.zh || !meta.description.en) fail(`${t.app}: meta.description 缺双语`);
+  if (!Array.isArray(meta.tags) || meta.tags.length < 3 || meta.tags.length > 6) fail(`${t.app}: meta.tags 需 3-6 个`);
+}
 const fails = [];
 const warns = [];
 const fail = (m) => fails.push(m);
@@ -34,6 +57,7 @@ const PII = [/1[3-9]\d{9}/, /\b\d{6}(19|20)\d{2}(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[
 const bi = (v) => v && typeof v === "object" && String(v.en || "").trim() && String(v.zh || "").trim();
 
 for (const t of targets) {
+  checkGalleryAssets(t);
   const tag = t.app;
   if (!APP_RE.test(t.app)) fail(`${tag}: app 名不合 ^[a-z0-9][a-z0-9-]{1,39}$`);
   const meta = readMeta(t.dir);
