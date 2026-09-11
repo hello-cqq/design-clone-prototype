@@ -4,6 +4,7 @@ v2 变化：**取消 flavor 子目录**。每个应用一个平铺目录；微�
 
 1. **目录与命名**：`<app>/{meta.json,icon,cover.png,prototype/,PROVENANCE.md}`；app kebab-case；
    变体独立应用（wechat / wechat-pad / wechat-desktop / wechat-ios）；每 app 只存当前版，历史=git+Release。
+1b. **画廊资源（CI 硬验）**：`cover.png` 1200×800 严格 3:2、≤300KB、场景匹配合成封面（category 色板+设备框+首视图真截图+图标+中英名+tags，skill `gen/cover.mjs` 生成）；`icon.png` ≥256px（真图标优先：输入/web favicon+manifest/mac icns，否则 `gen/appicon.mjs` 生成）；`meta.json` 双语 name/description + tags 3-6。pr-gate 不过即拒。
 2. **prototype 白名单**：index.html/views/assets/inspector.*/runtime.*/zipstore.*/utilities.css/paths.json/
    products.json/annotations.json/variants/design/pages/version.json/appicon；
    禁 node_modules/export/qa/capture/视频/.cache/字体二进制/第三方运行时 CDN（必须全离线可玩）。
