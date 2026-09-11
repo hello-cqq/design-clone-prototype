@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "page_id": "03-author",
+    "page_name": "作者主页",
+    "surface": "c_mobile",
+    "page_type": "c_list",
+    "canvas": {
+      "width": 390,
+      "height": 844
+    },
+    "evidence": [],
+    "fidelity": "high",
+    "product": {
+      "function": "（克隆时按 vlm-analysis 补 product 三要素）",
+      "goals": [],
+      "page_prompt": "",
+      "element_prompts": {}
+    },
+    "spec_version": 1,
+    "change_log": [
+      {
+        "at": "2026-09-10T16:39:53.241Z",
+        "by": "clone",
+        "note": "collect-design 初始/重采集（computed 真值）"
+      }
+    ]
+  },
+  "regions": [
+    {
+      "id": "r_dy_top",
+      "type": "nav_bar",
+      "label": "主播主页",
+      "components": [
+        {
+          "kind": "button",
+          "label": "",
+          "interaction": {
+            "act": "back"
+          }
+        }
+      ]
+    },
+    {
+      "id": "r_dy_prof",
+      "type": "custom",
+      "label": "沫\n    沫沫的调色盘抖音号：momomo.palette · IP：浙江\n ",
+      "components": [
+        {
+          "kind": "switch",
+          "label": "关注",
+          "interaction": {
+            "act": "toggle"
+          },
+          "sample_value": "关注"
+        }
+      ]
+    },
+    {
+      "id": "r_dy_nums",
+      "type": "custom",
+      "label": "128作品36.5w获赞4.2w粉丝219关注"
+    },
+    {
+      "id": "r_dy_bio",
+      "type": "custom",
+      "label": "把每天的天空存成色板。调色参数无偿分享，转载注明出处。"
+    },
+    {
+      "id": "r_dy_grid",
+      "type": "grid",
+      "label": "",
+      "components": [
+        {
+          "kind": "image",
+          "label": "",
+          "interaction": {
+            "act": "goto",
+            "to": "01-note"
+          }
+        },
+        {
+          "kind": "image",
+          "label": "",
+          "interaction": {
+            "act": "goto",
+            "to": "01-note"
+          }
+        },
+        {
+          "kind": "image",
+          "label": "",
+          "interaction": {
+            "act": "goto",
+            "to": "01-note"
+          }
+        },
+        {
+          "kind": "image",
+          "label": "",
+          "interaction": {
+            "act": "goto",
+            "to": "01-note"
+          }
+        },
+        {
+          "kind": "image",
+          "label": "",
+          "interaction": {
+            "act": "goto",
+            "to": "01-note"
+          }
+        },
+        {
+          "kind": "image",
+          "label": "",
+          "interaction": {
+            "act": "goto",
+            "to": "01-note"
+          }
+        }
+      ]
+    },
+    {
+      "id": "r_dy_tabs",
+      "type": "tab_bar",
+      "label": "作品喜欢图文",
+      "components": [
+        {
+          "kind": "button",
+          "label": "作品",
+          "interaction": {
+            "act": "goto",
+            "to": "03-author"
+          },
+          "sample_value": "作品"
+        },
+        {
+          "kind": "button",
+          "label": "喜欢",
+          "interaction": {
+            "act": "toast",
+            "msg": "喜欢列表仅自己可见（演示）"
+          },
+          "sample_value": "喜欢"
+        },
+        {
+          "kind": "button",
+          "label": "图文",
+          "interaction": {
+            "act": "goto",
+            "to": "01-note"
+          },
+          "sample_value": "图文"
+        }
+      ]
+    }
+  ]
+}
