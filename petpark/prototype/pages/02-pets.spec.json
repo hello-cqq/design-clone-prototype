@@ -11,20 +11,23 @@
     "evidence": [],
     "fidelity": "high",
     "product": {
-      "function": "管理毛孩档案与健康数据",
+      "function": "管理毛孩档案：三维状态环、健康行、次要宠物磁贴",
       "goals": [
+        "信任：疫苗/体重/提醒数据磁贴化",
         "留存：健康提醒制造回访理由",
-        "信任：疫苗/体重数据可视化"
+        "收集欲：多宠物磁贴墙"
       ],
-      "page_prompt": "萌宠档案页：粘土宠物卡微倾斜+三环状态（体力/心情/社交）+健康行列表+次要宠物小卡",
+      "page_prompt": "萌宠档案页：宠物大粘土卡微倾斜 -2°，内嵌 pixar-3d 全身 render 立基座（接触影+光晕）；三环仪表=果冻轨 rgba(色,.35)+1px 内 rim+糖果针 round cap+tabular 数字（体力 mint/心情 peach/社交 lilac）；健康行磁贴三枚（mint 疫苗勾/peach 体重曲线/lilac 提醒钟，stroke2.2）；次要宠物 mini squircle 磁贴 ×2 微旋转+饼干边；奶油底+可可墨+字重≤600",
       "element_prompts": {
-        "pp/petcard": "粘土质感宠物主卡：角色图带落地椭圆投影，卡面微旋转 -1.6deg"
+        "pp/petcard": "微倾斜 -2° 粘土卡：hero 态 render+椭圆基座+接触影；卡面颗粒 .04+顶高光",
+        "pp/rings": "三环仪表：果冻轨+糖果针+tabular 数字+点按 toast 弹簧",
+        "pp/minis": "mini 磁贴：squircle+微旋转 ±2°+饼干边+光泽点"
       }
     },
     "spec_version": 1,
     "change_log": [
       {
-        "at": "2026-09-10T09:48:27.325Z",
+        "at": "2026-09-11T11:42:06.035Z",
         "by": "clone",
         "note": "collect-design 初始/重采集（computed 真值）"
       }
@@ -41,7 +44,7 @@
           "label": "晴 26° · 优",
           "interaction": {
             "act": "toast",
-            "msg": "今日晴朗 · 适宜出游（演示）"
+            "msg": "今日晴朗 26° · 适宜出游（演示）"
           },
           "sample_value": "晴 26° · 优"
         }
