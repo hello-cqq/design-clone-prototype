@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "page_id": "12-group-chat",
+    "page_name": "群聊·家",
+    "surface": "c_mobile",
+    "page_type": "c_chat",
+    "canvas": {
+      "width": 390,
+      "height": 844
+    },
+    "evidence": [
+      "capture/screens/12-group-chat.png"
+    ],
+    "fidelity": "high",
+    "product": {
+      "function": "（克隆时按 vlm-analysis 补 product 三要素）",
+      "goals": [],
+      "page_prompt": "",
+      "element_prompts": {}
+    },
+    "spec_version": 1,
+    "change_log": [
+      {
+        "at": "2026-09-10T10:20:15.744Z",
+        "by": "clone",
+        "note": "collect-design 初始/重采集（computed 真值）"
+      }
+    ]
+  },
+  "regions": [
+    {
+      "id": "r_me_card",
+      "type": "custom",
+      "label": "Q阿Q微信号: demo_001",
+      "components": [
+        {
+          "kind": "sheet",
+          "label": "",
+          "interaction": {
+            "act": "sheet"
+          }
+        }
+      ]
+    },
+    {
+      "id": "r_me_qr",
+      "type": "custom",
+      "label": ""
+    },
+    {
+      "id": "r_me_cell",
+      "type": "custom",
+      "label": "服务"
+    },
+    {
+      "id": "r_me_cell",
+      "type": "custom",
+      "label": "收藏"
+    },
+    {
+      "id": "r_me_cell",
+      "type": "custom",
+      "label": "朋友圈"
+    },
+    {
+      "id": "r_me_cell",
+      "type": "custom",
+      "label": "作品"
+    },
+    {
+      "id": "r_me_cell",
+      "type": "custom",
+      "label": "小店与卡包"
+    },
+    {
+      "id": "r_me_cell",
+      "type": "custom",
+      "label": "表情"
+    },
+    {
+      "id": "r_me_cell",
+      "type": "custom",
+      "label": "设置"
+    }
+  ]
+}
