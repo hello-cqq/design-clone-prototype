@@ -1,7 +1,78 @@
 {
  "version": 3,
- "updated_at": "2026-09-11T13:13:49.582Z",
+ "updated_at": "2026-09-11T13:18:18.666Z",
  "apps": [
+  {
+   "app": "petpark",
+   "name": {
+    "en": "PetPark · 3D plush pet park",
+    "zh": "宠物乐园 · 3D 萌宠公园"
+   },
+   "description": {
+    "en": "A 3D plush-cute pet park: booking, walk-buddy, check-ins, pet profiles with tri-ring stats, a four-zone park map with reservations, community feed and membership — pixar-fluffy renders on clay-candy materials with soft idle motion.",
+    "zh": "3D 萌宠质感乐园：预约/遛伴/打卡、萌宠档案三环状态、园区四分区地图与预约、社区 feed 与会员卡——皮克斯式蓬松渲染+粘土糖果材质+软影微动。"
+   },
+   "tags": [
+    "pets",
+    "travel",
+    "community",
+    "booking",
+    "mobile",
+    "original"
+   ],
+   "category": "travel",
+   "shell": "c_mobile",
+   "version": "2.0.0",
+   "license": "CC-BY-4.0",
+   "source": {
+    "kind": "original",
+    "ref": "demo-petpark"
+   },
+   "ip_attestation": "original",
+   "brand_disclaimer": null,
+   "icon": "petpark/prototype/appicon/icon-256.png",
+   "cover": "petpark/cover.png",
+   "url": "https://hello-cqq.github.io/design-clone-prototype/petpark/prototype/",
+   "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/petpark",
+   "pages": [
+    {
+     "id": "01-home",
+     "name": "乐园首页"
+    },
+    {
+     "id": "02-pets",
+     "name": "萌宠档案"
+    },
+    {
+     "id": "03-map",
+     "name": "乐园地图"
+    },
+    {
+     "id": "04-community",
+     "name": "乐园社区"
+    },
+    {
+     "id": "05-me",
+     "name": "我的"
+    }
+   ],
+   "downloads": 2,
+   "creator": "hello-cqq",
+   "contributors": [
+    {
+     "name": "cqq",
+     "login": "hello-cqq",
+     "commits": 8
+    },
+    {
+     "name": "AhahahQ",
+     "login": "AhahahQ",
+     "commits": 2
+    }
+   ],
+   "commits": 11,
+   "updated": "2026-09-11T21:17:30+08:00"
+  },
   {
    "app": "aliyun-console",
    "name": {
@@ -138,77 +209,6 @@
     }
    ],
    "commits": 8,
-   "updated": "2026-09-11T21:11:45+08:00"
-  },
-  {
-   "app": "petpark",
-   "name": {
-    "en": "PetPark · 3D plush pet park",
-    "zh": "宠物乐园 · 3D 萌宠公园"
-   },
-   "description": {
-    "en": "A 3D plush-cute pet park: booking, walk-buddy, check-ins, pet profiles with tri-ring stats, a four-zone park map with reservations, community feed and membership — pixar-fluffy renders on clay-candy materials with soft idle motion.",
-    "zh": "3D 萌宠质感乐园：预约/遛伴/打卡、萌宠档案三环状态、园区四分区地图与预约、社区 feed 与会员卡——皮克斯式蓬松渲染+粘土糖果材质+软影微动。"
-   },
-   "tags": [
-    "pets",
-    "travel",
-    "community",
-    "booking",
-    "mobile",
-    "original"
-   ],
-   "category": "travel",
-   "shell": "c_mobile",
-   "version": "2.0.0",
-   "license": "CC-BY-4.0",
-   "source": {
-    "kind": "original",
-    "ref": "demo-petpark"
-   },
-   "ip_attestation": "original",
-   "brand_disclaimer": null,
-   "icon": "petpark/prototype/appicon/icon-256.png",
-   "cover": "petpark/cover.png",
-   "url": "https://hello-cqq.github.io/design-clone-prototype/petpark/prototype/",
-   "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/petpark",
-   "pages": [
-    {
-     "id": "01-home",
-     "name": "乐园首页"
-    },
-    {
-     "id": "02-pets",
-     "name": "萌宠档案"
-    },
-    {
-     "id": "03-map",
-     "name": "乐园地图"
-    },
-    {
-     "id": "04-community",
-     "name": "乐园社区"
-    },
-    {
-     "id": "05-me",
-     "name": "我的"
-    }
-   ],
-   "downloads": 2,
-   "creator": "hello-cqq",
-   "contributors": [
-    {
-     "name": "cqq",
-     "login": "hello-cqq",
-     "commits": 7
-    },
-    {
-     "name": "AhahahQ",
-     "login": "AhahahQ",
-     "commits": 2
-    }
-   ],
-   "commits": 10,
    "updated": "2026-09-11T21:11:45+08:00"
   },
   {
