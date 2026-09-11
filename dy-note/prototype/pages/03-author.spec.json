@@ -6,7 +6,7 @@
     "page_type": "c_list",
     "canvas": {
       "width": 390,
-      "height": 844
+      "height": 1329
     },
     "evidence": [],
     "fidelity": "high",
@@ -19,7 +19,7 @@
     "spec_version": 1,
     "change_log": [
       {
-        "at": "2026-09-10T16:39:53.241Z",
+        "at": "2026-09-11T12:06:45.205Z",
         "by": "clone",
         "note": "collect-design 初始/重采集（computed 真值）"
       }
@@ -29,7 +29,7 @@
     {
       "id": "r_dy_top",
       "type": "nav_bar",
-      "label": "主播主页",
+      "label": "沫\n    沫沫的调色盘抖音号：momomo.palette\n    关注",
       "components": [
         {
           "kind": "button",
@@ -37,14 +37,25 @@
           "interaction": {
             "act": "back"
           }
-        }
-      ]
-    },
-    {
-      "id": "r_dy_prof",
-      "type": "custom",
-      "label": "沫\n    沫沫的调色盘抖音号：momomo.palette · IP：浙江\n ",
-      "components": [
+        },
+        {
+          "kind": "button",
+          "label": "沫",
+          "interaction": {
+            "act": "goto",
+            "to": "03-author"
+          },
+          "sample_value": "沫"
+        },
+        {
+          "kind": "button",
+          "label": "沫沫的调色盘",
+          "interaction": {
+            "act": "goto",
+            "to": "03-author"
+          },
+          "sample_value": "沫沫的调色盘"
+        },
         {
           "kind": "switch",
           "label": "关注",
@@ -56,101 +67,138 @@
       ]
     },
     {
-      "id": "r_dy_nums",
+      "id": "r_dy_car",
       "type": "custom",
-      "label": "128作品36.5w获赞4.2w粉丝219关注"
-    },
-    {
-      "id": "r_dy_bio",
-      "type": "custom",
-      "label": "把每天的天空存成色板。调色参数无偿分享，转载注明出处。"
-    },
-    {
-      "id": "r_dy_grid",
-      "type": "grid",
       "label": "",
       "components": [
         {
           "kind": "image",
-          "label": "",
-          "interaction": {
-            "act": "goto",
-            "to": "01-note"
-          }
+          "label": ""
         },
         {
           "kind": "image",
-          "label": "",
-          "interaction": {
-            "act": "goto",
-            "to": "01-note"
-          }
+          "label": ""
         },
         {
           "kind": "image",
-          "label": "",
-          "interaction": {
-            "act": "goto",
-            "to": "01-note"
-          }
+          "label": ""
         },
         {
           "kind": "image",
-          "label": "",
-          "interaction": {
-            "act": "goto",
-            "to": "01-note"
-          }
+          "label": ""
         },
         {
           "kind": "image",
-          "label": "",
-          "interaction": {
-            "act": "goto",
-            "to": "01-note"
-          }
-        },
-        {
-          "kind": "image",
-          "label": "",
-          "interaction": {
-            "act": "goto",
-            "to": "01-note"
-          }
+          "label": ""
         }
       ]
     },
     {
-      "id": "r_dy_tabs",
-      "type": "tab_bar",
-      "label": "作品喜欢图文",
+      "id": "r_dy_dots",
+      "type": "custom",
+      "label": ""
+    },
+    {
+      "id": "r_dy_cap",
+      "type": "custom",
+      "label": "VibeCoding 大赏投稿：把一周的晚霞调成了同一套色板，附完整参数与三步复"
+    },
+    {
+      "id": "r_dy_stats",
+      "type": "custom",
+      "label": "2.4w\n    863\n    5121\n    分享",
+      "components": [
+        {
+          "kind": "switch",
+          "label": "2.4w",
+          "interaction": {
+            "act": "toggle"
+          },
+          "sample_value": "2.4w"
+        },
+        {
+          "kind": "button",
+          "label": "863",
+          "interaction": {
+            "act": "goto",
+            "to": "02-comments"
+          },
+          "sample_value": "863"
+        },
+        {
+          "kind": "button",
+          "label": "5121",
+          "interaction": {
+            "act": "toast",
+            "msg": "已收藏到「调色灵感」（演示）"
+          },
+          "sample_value": "5121"
+        },
+        {
+          "kind": "button",
+          "label": "分享",
+          "interaction": {
+            "act": "toast",
+            "msg": "分享链接已复制（演示）"
+          },
+          "sample_value": "分享"
+        }
+      ]
+    },
+    {
+      "id": "r_dy_cmt",
+      "type": "custom",
+      "label": "共 863 条评论 · 查看全部\n    阿阿栗不说话第三张的橙紫过渡绝了，参数",
       "components": [
         {
           "kind": "button",
-          "label": "作品",
+          "label": "阿阿栗不说话第三张的橙紫过渡绝了，参数抄走了！",
           "interaction": {
             "act": "goto",
-            "to": "03-author"
+            "to": "02-comments"
           },
-          "sample_value": "作品"
+          "sample_value": "阿阿栗不说话第三张的橙紫过渡绝了，参数抄走了！"
         },
         {
           "kind": "button",
-          "label": "喜欢",
+          "label": "白白昼飞行求原图练习，已关注等更新。",
+          "interaction": {
+            "act": "goto",
+            "to": "02-comments"
+          },
+          "sample_value": "白白昼飞行求原图练习，已关注等更新。"
+        }
+      ]
+    },
+    {
+      "id": "r_dy_bar",
+      "type": "toolbar",
+      "label": "说点什么…",
+      "components": [
+        {
+          "kind": "input",
+          "label": "说点什么…",
+          "interaction": {
+            "act": "input",
+            "msg": "说点什么…"
+          },
+          "sample_value": "说点什么…"
+        },
+        {
+          "kind": "button",
+          "label": "",
           "interaction": {
             "act": "toast",
-            "msg": "喜欢列表仅自己可见（演示）"
-          },
-          "sample_value": "喜欢"
+            "msg": "表情面板（演示）"
+          }
         },
         {
           "kind": "button",
-          "label": "图文",
+          "label": "",
           "interaction": {
-            "act": "goto",
-            "to": "01-note"
-          },
-          "sample_value": "图文"
+            "act": "toast",
+            "msg": "已@好友（演示）"
+          }
         }
       ]
     }
