@@ -2,6 +2,8 @@ name: index
 on:
   push:
     branches: [main]
+permissions:
+  contents: write
 jobs:
   rebuild:
     runs-on: ubuntu-24.04
