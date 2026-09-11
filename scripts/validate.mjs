@@ -102,7 +102,7 @@ if (targets.length) {
       const pages = await page.evaluate(() => ((window.DC && window.DC.pages) || []).length);
       if (!pages) fail(`${tag}: 冒烟失败 window.DC.pages 为空`);
       const reacted = await page.evaluate(async () => {
-        const el = document.querySelector("#dc-stage [data-act],#dc-stage [data-goto]");
+        const el = document.querySelector("#dc-stage [data-act=\"toast\"],#dc-stage [data-act=\"toggle\"],#dc-stage [data-act=\"sheet\"],#dc-stage [data-act=\"dialog\"],#dc-stage [data-act=\"radio\"],#dc-stage [data-act=\"checkbox\"],#dc-stage [data-goto]"); // 排除 back（history.back 会毁执行上下文）
         if (!el) return false;
         const before = document.body.innerHTML.length;
         el.dispatchEvent(new MouseEvent("click", { bubbles: true, cancelable: true })); // SVG 元素无 .click()
