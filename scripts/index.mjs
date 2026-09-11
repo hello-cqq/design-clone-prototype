@@ -35,6 +35,10 @@ const apps = [];
 for (const t of listApps(root)) {
   const meta = readMeta(t.dir);
   const contrib = contributors(root, t.app);
+  {
+    const rel = (d, base) => fs.readdirSync(d, { withFileTypes: true }).flatMap((e) => e.isDirectory() ? rel(path.join(d, e.name), base) : [path.relative(base, path.join(d, e.name)).split(path.sep).join("/")]);
+    fs.writeFileSync(path.join(t.dir, "files.json"), JSON.stringify(rel(t.dir, t.dir)));
+  }
   apps.push({
     app: t.app,
     name: meta.name || { en: meta.title || t.app, zh: meta.title || t.app },
@@ -52,7 +56,20 @@ for (const t of listApps(root)) {
     url: `${PAGES}/${t.app}/prototype/`,
     repo_dir: `https://github.com/hello-cqq/design-clone-prototype/tree/main/${t.app}`,
     downloads: dl.get(t.app) || 0,
-    contributors: contrib,
+    creator: await (async () => {
+      try {
+        const r0 = await fetch(`https://api.github.com/repos/hello-cqq/design-clone-prototype/commits?path=${encodeURIComponent(t.app)}&per_page=100`, { headers: { "user-agent": "dc-index", accept: "application/vnd.github+json" } });
+        if (r0.ok) { const cs0 = await r0.json(); const lastc = cs0[cs0.length - 1]; if (lastc && lastc.author && lastc.author.login) return lastc.author.login; }
+      } catch {}
+      try {
+        const first = execSync(`git -C "${root}" log --reverse --format=%ae -- "${t.app}" | head -1`, { encoding: "utf8" }).trim();
+        if (first.includes("@users.noreply.github.com")) return first.split("@")[0].replace(/^\d+\+/, "");
+      } catch {}
+      return null;
+    })(),
+    icon: fs.existsSync(path.join(t.dir, "prototype", "appicon", "icon-256.png")) ? `${t.app}/prototype/appicon/icon-256.png`
+      : (fs.existsSync(path.join(t.dir, "icon.png")) ? `${t.app}/icon.png` : (fs.existsSync(path.join(t.dir, "cover.png")) ? `${t.app}/cover.png` : null)),
+    contributors: contrib.filter((c) => !(c.login || "").includes("[")),
     commits: contrib.reduce((a, b) => a + b.commits, 0),
     updated: lastCommitInfo(root, t.app),
   });

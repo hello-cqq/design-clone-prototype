@@ -1,7 +1,56 @@
 {
  "version": 3,
- "updated_at": "2026-09-11T11:52:55.485Z",
+ "updated_at": "2026-09-11T12:34:28.271Z",
  "apps": [
+  {
+   "app": "petpark",
+   "name": {
+    "en": "PetPark · 3D plush pet park",
+    "zh": "宠物乐园 · 3D 萌宠公园"
+   },
+   "description": {
+    "en": "A 3D plush-cute pet park: booking, walk-buddy, check-ins, pet profiles with tri-ring stats, a four-zone park map with reservations, community feed and membership — pixar-fluffy renders on clay-candy materials with soft idle motion.",
+    "zh": "3D 萌宠质感乐园：预约/遛伴/打卡、萌宠档案三环状态、园区四分区地图与预约、社区 feed 与会员卡——皮克斯式蓬松渲染+粘土糖果材质+软影微动。"
+   },
+   "tags": [
+    "pets",
+    "travel",
+    "community",
+    "booking",
+    "mobile",
+    "original"
+   ],
+   "category": "travel",
+   "shell": "c_mobile",
+   "version": "2.0.0",
+   "license": "CC-BY-4.0",
+   "source": {
+    "kind": "original",
+    "ref": "demo-petpark"
+   },
+   "ip_attestation": "original",
+   "brand_disclaimer": null,
+   "icon": "petpark/prototype/appicon/icon-256.png",
+   "cover": "petpark/cover.png",
+   "url": "https://hello-cqq.github.io/design-clone-prototype/petpark/prototype/",
+   "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/petpark",
+   "downloads": 2,
+   "creator": "hello-cqq",
+   "contributors": [
+    {
+     "name": "cqq",
+     "login": null,
+     "commits": 5
+    },
+    {
+     "name": "AhahahQ",
+     "login": null,
+     "commits": 2
+    }
+   ],
+   "commits": 8,
+   "updated": "2026-09-11T19:52:14+08:00"
+  },
   {
    "app": "aliyun-console",
    "name": {
@@ -28,11 +77,12 @@
    },
    "ip_attestation": "public-material",
    "brand_disclaimer": "Unofficial study replica of Aliyun pages; trademarks belong to Alibaba Group; no affiliation or endorsement implied.",
-   "icon": null,
+   "icon": "aliyun-console/prototype/appicon/icon-256.png",
    "cover": "aliyun-console/cover.png",
    "url": "https://hello-cqq.github.io/design-clone-prototype/aliyun-console/prototype/",
    "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/aliyun-console",
    "downloads": 2,
+   "creator": "hello-cqq",
    "contributors": [
     {
      "name": "cqq",
@@ -42,11 +92,6 @@
     {
      "name": "AhahahQ",
      "login": null,
-     "commits": 1
-    },
-    {
-     "name": "dc-index-bot",
-     "login": "github-actions[bot]",
      "commits": 1
     }
    ],
@@ -79,11 +124,12 @@
    },
    "ip_attestation": "public-material",
    "brand_disclaimer": "Unofficial study replica of a public Douyin note; note images are public material (source URL in PROVENANCE); trademarks belong to ByteDance.",
-   "icon": null,
+   "icon": "dy-note/prototype/appicon/icon-256.png",
    "cover": "dy-note/cover.png",
    "url": "https://hello-cqq.github.io/design-clone-prototype/dy-note/prototype/",
    "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/dy-note",
    "downloads": 2,
+   "creator": "hello-cqq",
    "contributors": [
     {
      "name": "cqq",
@@ -93,11 +139,6 @@
     {
      "name": "AhahahQ",
      "login": null,
-     "commits": 1
-    },
-    {
-     "name": "dc-index-bot",
-     "login": "github-actions[bot]",
      "commits": 1
     }
    ],
@@ -130,11 +171,12 @@
    },
    "ip_attestation": "public-material",
    "brand_disclaimer": "Unofficial study replica of WeChat; trademarks belong to Tencent; no affiliation or endorsement implied.",
-   "icon": null,
+   "icon": "wechat/prototype/appicon/icon-256.png",
    "cover": "wechat/cover.png",
    "url": "https://hello-cqq.github.io/design-clone-prototype/wechat/prototype/",
    "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/wechat",
    "downloads": 2,
+   "creator": "hello-cqq",
    "contributors": [
     {
      "name": "cqq",
@@ -145,68 +187,10 @@
      "name": "AhahahQ",
      "login": null,
      "commits": 1
-    },
-    {
-     "name": "dc-index-bot",
-     "login": "github-actions[bot]",
-     "commits": 1
     }
    ],
    "commits": 6,
    "updated": "2026-09-11T12:01:46+08:00"
-  },
-  {
-   "app": "petpark",
-   "name": {
-    "en": "PetPark · 3D plush pet park",
-    "zh": "宠物乐园 · 3D 萌宠公园"
-   },
-   "description": {
-    "en": "A 3D plush-cute pet park: booking, walk-buddy, check-ins, pet profiles with tri-ring stats, a four-zone park map with reservations, community feed and membership — pixar-fluffy renders on clay-candy materials with soft idle motion.",
-    "zh": "3D 萌宠质感乐园：预约/遛伴/打卡、萌宠档案三环状态、园区四分区地图与预约、社区 feed 与会员卡——皮克斯式蓬松渲染+粘土糖果材质+软影微动。"
-   },
-   "tags": [
-    "pets",
-    "travel",
-    "community",
-    "booking",
-    "mobile",
-    "original"
-   ],
-   "category": "travel",
-   "shell": "c_mobile",
-   "version": "2.0.0",
-   "license": "CC-BY-4.0",
-   "source": {
-    "kind": "original",
-    "ref": "demo-petpark"
-   },
-   "ip_attestation": "original",
-   "brand_disclaimer": null,
-   "icon": "petpark/icon.png",
-   "cover": "petpark/cover.png",
-   "url": "https://hello-cqq.github.io/design-clone-prototype/petpark/prototype/",
-   "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/petpark",
-   "downloads": 1,
-   "contributors": [
-    {
-     "name": "cqq",
-     "login": null,
-     "commits": 5
-    },
-    {
-     "name": "AhahahQ",
-     "login": null,
-     "commits": 2
-    },
-    {
-     "name": "dc-index-bot",
-     "login": "github-actions[bot]",
-     "commits": 1
-    }
-   ],
-   "commits": 8,
-   "updated": "2026-09-11T19:52:14+08:00"
   },
   {
    "app": "lark",
@@ -233,11 +217,12 @@
    },
    "ip_attestation": "public-material",
    "brand_disclaimer": "Unofficial study replica of Lark/Feishu desktop; trademarks belong to ByteDance; no affiliation or endorsement implied.",
-   "icon": null,
+   "icon": "lark/prototype/appicon/icon-256.png",
    "cover": "lark/cover.png",
    "url": "https://hello-cqq.github.io/design-clone-prototype/lark/prototype/",
    "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/lark",
    "downloads": 1,
+   "creator": "hello-cqq",
    "contributors": [
     {
      "name": "cqq",
@@ -247,11 +232,6 @@
     {
      "name": "AhahahQ",
      "login": null,
-     "commits": 1
-    },
-    {
-     "name": "dc-index-bot",
-     "login": "github-actions[bot]",
      "commits": 1
     }
    ],
