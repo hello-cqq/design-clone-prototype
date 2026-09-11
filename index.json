@@ -1,7 +1,101 @@
 {
  "version": 3,
- "updated_at": "2026-09-11T12:34:28.271Z",
+ "updated_at": "2026-09-11T12:35:08.374Z",
  "apps": [
+  {
+   "app": "aliyun-console",
+   "name": {
+    "en": "Aliyun Console · web (study replica)",
+    "zh": "阿里云控制台 · 网页版（学习复刻）"
+   },
+   "description": {
+    "en": "Study replica of Aliyun marketing/console pages: hub navigation, ECS product pages, pricing tables.",
+    "zh": "阿里云官网/控制台学习复刻：hub 导航、ECS 产品页、价格表。"
+   },
+   "tags": [
+    "cloud",
+    "console",
+    "web",
+    "study"
+   ],
+   "category": "",
+   "shell": "c_browser",
+   "version": "1.1.0",
+   "license": "CC-BY-4.0",
+   "source": {
+    "kind": "web",
+    "ref": "aliyun.com (study)"
+   },
+   "ip_attestation": "public-material",
+   "brand_disclaimer": "Unofficial study replica of Aliyun pages; trademarks belong to Alibaba Group; no affiliation or endorsement implied.",
+   "icon": "aliyun-console/prototype/appicon/icon-256.png",
+   "cover": "aliyun-console/cover.png",
+   "url": "https://hello-cqq.github.io/design-clone-prototype/aliyun-console/prototype/",
+   "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/aliyun-console",
+   "downloads": 2,
+   "creator": "hello-cqq",
+   "contributors": [
+    {
+     "name": "cqq",
+     "login": null,
+     "commits": 5
+    },
+    {
+     "name": "AhahahQ",
+     "login": null,
+     "commits": 1
+    }
+   ],
+   "commits": 7,
+   "updated": "2026-09-11T20:34:28+08:00"
+  },
+  {
+   "app": "dy-note",
+   "name": {
+    "en": "Douyin color-palette note (study replica)",
+    "zh": "抖音调色笔记（学习复刻）"
+   },
+   "description": {
+    "en": "Study replica of a Douyin image note: carousel, caption, stats, comments, author page — nickname anonymized, comments fictional.",
+    "zh": "抖音图文笔记学习复刻：轮播、文案、数据、评论、作者页——昵称匿名、评论虚构。"
+   },
+   "tags": [
+    "social",
+    "note",
+    "study",
+    "mobile"
+   ],
+   "category": "",
+   "shell": "c_mobile",
+   "version": "1.1.0",
+   "license": "CC-BY-4.0",
+   "source": {
+    "kind": "link",
+    "ref": "douyin.com/note/7639423340646296174"
+   },
+   "ip_attestation": "public-material",
+   "brand_disclaimer": "Unofficial study replica of a public Douyin note; note images are public material (source URL in PROVENANCE); trademarks belong to ByteDance.",
+   "icon": "dy-note/prototype/appicon/icon-256.png",
+   "cover": "dy-note/cover.png",
+   "url": "https://hello-cqq.github.io/design-clone-prototype/dy-note/prototype/",
+   "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/dy-note",
+   "downloads": 2,
+   "creator": "hello-cqq",
+   "contributors": [
+    {
+     "name": "cqq",
+     "login": null,
+     "commits": 5
+    },
+    {
+     "name": "AhahahQ",
+     "login": null,
+     "commits": 1
+    }
+   ],
+   "commits": 7,
+   "updated": "2026-09-11T20:34:28+08:00"
+  },
   {
    "app": "petpark",
    "name": {
@@ -40,7 +134,7 @@
     {
      "name": "cqq",
      "login": null,
-     "commits": 5
+     "commits": 6
     },
     {
      "name": "AhahahQ",
@@ -48,102 +142,8 @@
      "commits": 2
     }
    ],
-   "commits": 8,
-   "updated": "2026-09-11T19:52:14+08:00"
-  },
-  {
-   "app": "aliyun-console",
-   "name": {
-    "en": "Aliyun Console · web (study replica)",
-    "zh": "阿里云控制台 · 网页版（学习复刻）"
-   },
-   "description": {
-    "en": "Study replica of Aliyun marketing/console pages: hub navigation, ECS product pages, pricing tables.",
-    "zh": "阿里云官网/控制台学习复刻：hub 导航、ECS 产品页、价格表。"
-   },
-   "tags": [
-    "cloud",
-    "console",
-    "web",
-    "study"
-   ],
-   "category": "",
-   "shell": "c_browser",
-   "version": "1.1.0",
-   "license": "CC-BY-4.0",
-   "source": {
-    "kind": "web",
-    "ref": "aliyun.com (study)"
-   },
-   "ip_attestation": "public-material",
-   "brand_disclaimer": "Unofficial study replica of Aliyun pages; trademarks belong to Alibaba Group; no affiliation or endorsement implied.",
-   "icon": "aliyun-console/prototype/appicon/icon-256.png",
-   "cover": "aliyun-console/cover.png",
-   "url": "https://hello-cqq.github.io/design-clone-prototype/aliyun-console/prototype/",
-   "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/aliyun-console",
-   "downloads": 2,
-   "creator": "hello-cqq",
-   "contributors": [
-    {
-     "name": "cqq",
-     "login": null,
-     "commits": 4
-    },
-    {
-     "name": "AhahahQ",
-     "login": null,
-     "commits": 1
-    }
-   ],
-   "commits": 6,
-   "updated": "2026-09-11T12:01:46+08:00"
-  },
-  {
-   "app": "dy-note",
-   "name": {
-    "en": "Douyin color-palette note (study replica)",
-    "zh": "抖音调色笔记（学习复刻）"
-   },
-   "description": {
-    "en": "Study replica of a Douyin image note: carousel, caption, stats, comments, author page — nickname anonymized, comments fictional.",
-    "zh": "抖音图文笔记学习复刻：轮播、文案、数据、评论、作者页——昵称匿名、评论虚构。"
-   },
-   "tags": [
-    "social",
-    "note",
-    "study",
-    "mobile"
-   ],
-   "category": "",
-   "shell": "c_mobile",
-   "version": "1.1.0",
-   "license": "CC-BY-4.0",
-   "source": {
-    "kind": "link",
-    "ref": "douyin.com/note/7639423340646296174"
-   },
-   "ip_attestation": "public-material",
-   "brand_disclaimer": "Unofficial study replica of a public Douyin note; note images are public material (source URL in PROVENANCE); trademarks belong to ByteDance.",
-   "icon": "dy-note/prototype/appicon/icon-256.png",
-   "cover": "dy-note/cover.png",
-   "url": "https://hello-cqq.github.io/design-clone-prototype/dy-note/prototype/",
-   "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/dy-note",
-   "downloads": 2,
-   "creator": "hello-cqq",
-   "contributors": [
-    {
-     "name": "cqq",
-     "login": null,
-     "commits": 4
-    },
-    {
-     "name": "AhahahQ",
-     "login": null,
-     "commits": 1
-    }
-   ],
-   "commits": 6,
-   "updated": "2026-09-11T12:01:46+08:00"
+   "commits": 9,
+   "updated": "2026-09-11T20:34:28+08:00"
   },
   {
    "app": "wechat",
@@ -181,7 +181,7 @@
     {
      "name": "cqq",
      "login": null,
-     "commits": 4
+     "commits": 5
     },
     {
      "name": "AhahahQ",
@@ -189,8 +189,8 @@
      "commits": 1
     }
    ],
-   "commits": 6,
-   "updated": "2026-09-11T12:01:46+08:00"
+   "commits": 7,
+   "updated": "2026-09-11T20:34:28+08:00"
   },
   {
    "app": "lark",
@@ -227,7 +227,7 @@
     {
      "name": "cqq",
      "login": null,
-     "commits": 4
+     "commits": 5
     },
     {
      "name": "AhahahQ",
@@ -235,8 +235,8 @@
      "commits": 1
     }
    ],
-   "commits": 6,
-   "updated": "2026-09-11T12:01:46+08:00"
+   "commits": 7,
+   "updated": "2026-09-11T20:34:28+08:00"
   }
  ]
 }
