@@ -1,27 +1,30 @@
 {
  "name": {
-  "en": "Douyin color-palette note (study replica)",
-  "zh": "抖音调色笔记（学习复刻）"
+  "en": "Douyin Note · mobile (study replica)",
+  "zh": "抖音图文 · 手机版（学习复刻）"
  },
  "description": {
-  "en": "Study replica of a Douyin image note: carousel, caption, stats, comments, author page — nickname anonymized, comments fictional.",
-  "zh": "抖音图文笔记学习复刻：轮播、文案、数据、评论、作者页——昵称匿名、评论虚构。"
+  "en": "Study replica of a Douyin photo-note flow: feed, note detail, author page — fictional text.",
+  "zh": "抖音图文流学习复刻：feed、图文详情、作者页——文本全虚构。"
  },
  "tags": [
+  "short-video",
   "social",
-  "note",
+  "mobile",
   "study",
-  "mobile"
+  "feed"
  ],
+ "category": "short-video",
  "shell": "c_mobile",
  "source": {
   "kind": "link",
-  "ref": "douyin.com/note/7639423340646296174"
+  "ref": "dy-note"
  },
  "license": "CC-BY-4.0",
  "ip_attestation": "public-material",
- "attestation_note": "",
- "version": "1.1.0",
- "created_at": "2026-09-10T16:40:00Z",
- "brand_disclaimer": "Unofficial study replica of a public Douyin note; note images are public material (source URL in PROVENANCE); trademarks belong to ByteDance."
+ "attestation_note": "M63: gallery trio refresh (3:2 cover + icon + meta scoring)",
+ "version": "1.2.0",
+ "created_at": "2026-09-11T13:19:49.518Z",
+ "brand_disclaimer": "Unofficial study replica of Douyin Note · mobile (study replica); trademarks belong to their owners; no affiliation or endorsement implied.",
+ "platform": "mobile"
 }

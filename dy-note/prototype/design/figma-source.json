@@ -1,7 +1,7 @@
 {
   "meta": {
     "generator": "design-clone collect-design",
-    "generated_at": "2026-09-10T16:39:53.241Z",
+    "generated_at": "2026-09-11T12:06:45.205Z",
     "source_run": "link-dy4",
     "schema": "figma-source/v1"
   },
@@ -363,7 +363,7 @@
       "name": "作者主页",
       "frame": {
         "width": 390,
-        "height": 844
+        "height": 1329
       },
       "nodes": [
         {
@@ -373,7 +373,7 @@
             "x": 0,
             "y": 0,
             "w": 390,
-            "h": 844
+            "h": 1329
           },
           "fill": "rgb(255, 255, 255)",
           "color": "rgb(23, 24, 26)",
@@ -393,7 +393,7 @@
             "x": 0,
             "y": 44,
             "w": 390,
-            "h": 30
+            "h": 48
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(23, 24, 26)",
@@ -407,13 +407,33 @@
           "text": ""
         },
         {
-          "dc": "dy/prof",
+          "dc": "dy/car",
           "kind": "frame",
           "rect": {
             "x": 0,
-            "y": 44,
+            "y": 140,
             "w": 390,
-            "h": 178
+            "h": 787
+          },
+          "fill": "rgb(246, 247, 249)",
+          "color": "rgb(23, 24, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dy/dots",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 937,
+            "w": 390,
+            "h": 6
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(23, 24, 26)",
@@ -427,13 +447,33 @@
           "text": ""
         },
         {
-          "dc": "dy/nums",
+          "dc": "dy/cap",
           "kind": "frame",
           "rect": {
             "x": 0,
-            "y": 222,
+            "y": 955,
             "w": 390,
-            "h": 56
+            "h": 76
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(23, 24, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "dy/stats",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 1031,
+            "w": 390,
+            "h": 42
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(87, 96, 102)",
@@ -447,33 +487,13 @@
           "text": ""
         },
         {
-          "dc": "dy/bio",
-          "kind": "text",
-          "rect": {
-            "x": 0,
-            "y": 278,
-            "w": 390,
-            "h": 35
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(87, 96, 102)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "-apple-system",
-            "size": 13,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": "把每天的天空存成色板。调色参数无偿分享，转载注明出处。"
-        },
-        {
-          "dc": "dy/grid",
+          "dc": "dy/cmt",
           "kind": "frame",
           "rect": {
             "x": 0,
-            "y": 313,
+            "y": 1079,
             "w": 390,
-            "h": 339
+            "h": 146
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(23, 24, 26)",
@@ -487,22 +507,22 @@
           "text": ""
         },
         {
-          "dc": "dy/tabs",
+          "dc": "dy/bar",
           "kind": "frame",
           "rect": {
             "x": 0,
-            "y": 771,
+            "y": 1263,
             "w": 390,
-            "h": 47
+            "h": 40
           },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(154, 160, 166)",
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(23, 24, 26)",
           "cornerRadius": 0,
           "font": {
             "family": "-apple-system",
-            "size": 12,
+            "size": 16,
             "weight": 400,
-            "lineHeight": 18
+            "lineHeight": 24
           },
           "text": ""
         }
