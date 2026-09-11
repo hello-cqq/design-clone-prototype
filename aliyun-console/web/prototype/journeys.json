@@ -1,0 +1,1 @@
+[ { "id": "j1", "name": "首页→ECS→价格", "steps": [ { "view": "01-home", "target": "home/cta-ecs", "result": { "kind": "navigate", "to": "02-ecs" } }, { "view": "02-ecs", "target": "nav/2", "result": { "kind": "navigate", "to": "04-docs" } } ] } ]
