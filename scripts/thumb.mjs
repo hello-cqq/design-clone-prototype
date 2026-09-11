@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * thumb.mjs —— 为缺缩略图的 flavor 生成 thumb.png（playwright 截 #dc-stage 首屏）。
+ * thumb.mjs —— 为缺缩略图的 flavor 生成 cover.png（playwright 截 #dc-stage 首屏）。
  * 用法: node scripts/thumb.mjs [app/flavor ...]（无参=全部缺失者）
  */
 import fs from "node:fs";
@@ -13,8 +13,8 @@ const root = path.resolve(".");
 const args = process.argv.slice(2).filter((a) => a.includes("/"));
 let targets = listFlavors(root);
 if (args.length) targets = targets.filter((t) => args.includes(t.app + "/" + t.flavor));
-else targets = targets.filter((t) => !fs.existsSync(path.join(t.dir, "thumb.png")));
-if (!targets.length) { console.log("thumb: 无缺失"); process.exit(0); }
+else targets = targets.filter((t) => !fs.existsSync(path.join(t.dir, "cover.png")));
+if (!targets.length) { console.log("cover: 无缺失"); process.exit(0); }
 
 const { chromium } = require("playwright");
 const browser = await chromium.launch();
@@ -27,8 +27,8 @@ for (const t of targets) {
     await page.goto(base + "/index.html", { waitUntil: "networkidle", timeout: 30000 });
     await page.waitForTimeout(1500);
     const el = page.locator("#dc-stage");
-    await (await el.count() ? el : page.locator("body")).screenshot({ path: path.join(t.dir, "thumb.png") });
-    console.log("thumb:", t.app + "/" + t.flavor);
+    await (await el.count() ? el : page.locator("body")).screenshot({ path: path.join(t.dir, "cover.png") });
+    console.log("cover:", t.app + "/" + t.flavor);
   } catch (e) {
     console.log("thumb FAIL:", t.app + "/" + t.flavor, String(e.message).slice(0, 80));
   }
