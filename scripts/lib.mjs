@@ -20,21 +20,18 @@ export const FORBIDDEN = [
 ];
 export const MAX_BYTES = 80 * 1024 * 1024;
 
-export function listFlavors(root) {
+export function listApps(root) {
   const out = [];
   for (const app of fs.readdirSync(root, { withFileTypes: true })) {
-    if (!app.isDirectory() || app.name.startsWith(".") || app.name === "scripts" || app.name === "node_modules") continue;
+    if (!app.isDirectory() || app.name.startsWith(".") || ["scripts", "node_modules", ".github"].includes(app.name)) continue;
     const ad = path.join(root, app.name);
-    for (const fl of fs.readdirSync(ad, { withFileTypes: true })) {
-      if (!fl.isDirectory()) continue;
-      const fd = path.join(ad, fl.name);
-      if (fs.existsSync(path.join(fd, "meta.json")) && fs.existsSync(path.join(fd, "prototype", "index.html"))) {
-        out.push({ app: app.name, flavor: fl.name, dir: fd });
-      }
+    if (fs.existsSync(path.join(ad, "meta.json")) && fs.existsSync(path.join(ad, "prototype", "index.html"))) {
+      out.push({ app: app.name, dir: ad });
     }
   }
   return out;
 }
+export const listFlavors = listApps; // v2: flat apps（旧名兼容）
 
 export const readMeta = (dir) => JSON.parse(fs.readFileSync(path.join(dir, "meta.json"), "utf8"));
 export const readAppMeta = (root, app) => {

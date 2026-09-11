@@ -1,12 +1,27 @@
 {
- "title": "Aliyun Console · web (study replica)",
- "description": "Aliyun Console · web (study replica) — interactive prototype generated with design-clone",
+ "name": {
+  "en": "Aliyun Console · web (study replica)",
+  "zh": "阿里云控制台 · 网页版（学习复刻）"
+ },
+ "description": {
+  "en": "Study replica of Aliyun marketing/console pages: hub navigation, ECS product pages, pricing tables.",
+  "zh": "阿里云官网/控制台学习复刻：hub 导航、ECS 产品页、价格表。"
+ },
  "tags": [
   "cloud",
   "console",
   "web",
   "study"
  ],
- "category": "app",
- "brand_disclaimer": "Unofficial study replica; trademarks belong to their owners."
+ "shell": "c_browser",
+ "source": {
+  "kind": "web",
+  "ref": "aliyun.com (study)"
+ },
+ "license": "CC-BY-4.0",
+ "ip_attestation": "public-material",
+ "attestation_note": "",
+ "version": "1.1.0",
+ "created_at": "2026-09-10T16:40:00Z",
+ "brand_disclaimer": "Unofficial study replica of Aliyun pages; trademarks belong to Alibaba Group; no affiliation or endorsement implied."
 }

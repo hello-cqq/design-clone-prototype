@@ -1,83 +1,77 @@
-# Submission SPEC (v1)
+# Submission SPEC (v2)
 
-Every prototype in this repository MUST follow this spec. CI (`pr-gate.yml`) enforces the
-machine-checkable rules; maintainers enforce the rest during review. **No auto-merge: a
-maintainer approves every PR.**
+v2 changes: **flavor sub-directories are gone**. Every app is a flat directory; variants
+(WeChat pad / WeChat desktop / …) are separate apps. Heat = release download counts.
+Machine-checkable rules are enforced by CI (`pr-gate.yml`); the rest by maintainer review.
+**No auto-merge: a maintainer approves every PR.** 中文版：[SPEC.zh.md](SPEC.zh.md)
 
 ## 1. Directory & naming
 
 ```
-<app_name>/meta.json
-<app_name>/<flavor>/meta.json
-<app_name>/<flavor>/thumb.png        (CI generates if missing)
-<app_name>/<flavor>/prototype/       (standard design-clone output)
-<app_name>/<flavor>/PROVENANCE.md
+<app_name>/meta.json        app meta (bilingual name/description, tags, shell, license, version…)
+<app_name>/icon.png|svg     app icon (optional, 256px+; CI falls back to the site mark)
+<app_name>/cover.png        gallery cover (CI generates from the prototype if missing)
+<app_name>/prototype/       the standard design-clone prototype output (playable on Pages)
+<app_name>/PROVENANCE.md    source & change log
 ```
 
-- `app_name`: kebab-case, `^[a-z0-9][a-z0-9-]{1,39}$`.
-- `flavor`: controlled vocabulary, CI-validated:
-  `^(mobile|tablet|desktop|web)(-(android|ios|ipad|mac|win|linux))?(-(cn|global))?$`
-  Bare forms (`mobile`, `web`, …) only when the platform is irrelevant.
-  Examples: `wechat/mobile-android`, `wechat/desktop-mac`, `wechat/mobile-android-global`,
-  `aliyun-console/web`, `lark/desktop-mac`, `petpark/mobile`.
-- One current version per flavor. **No multi-version directories** — history = git + Releases.
+- `app_name`: kebab-case `^[a-z0-9][a-z0-9-]{1,39}$`. Variants are separate apps:
+  `wechat` (phone), `wechat-pad`, `wechat-desktop`, `wechat-ios`, …
+- One current version per app. No multi-version directories — history = git + Releases.
 
 ## 2. `prototype/` content whitelist
 
 Allowed: `index.html`, `views/`, `assets/`, `inspector.*`, `runtime.*`, `zipstore.*`,
 `utilities.css`, `paths.json`, `journeys.json`, `products.json`, `annotations.json`,
 `variants/`, `design/`, `pages/`, `version.json`, `appicon/`.
-Forbidden (CI fails): `node_modules/`, `export/`, `qa/`, `capture/`, videos (`*.mp4|webm|mov`),
-`.cache/`, `*.map`, font binaries (`*.ttf|otf|woff2?`), any third-party runtime CDN reference
-(the prototype must work fully offline).
+Forbidden (CI fails): `node_modules/`, `export/`, `qa/`, `capture/`, videos, `.cache/`,
+`*.map`, font binaries, any third-party runtime CDN reference (must work fully offline).
 
-## 3. `meta.json` schema
+## 3. `meta.json` schema (v2)
 
-App level: `title` (required), `description`, `tags[]`, `category`, `brand_disclaimer`
-(required when `ip_attestation != original` for any flavor).
-Flavor level: `shell` ∈ {c_mobile, c_tablet, c_desktop, c_browser} — must match the flavor
-form (mobile*→c_mobile, tablet*→c_tablet, desktop*→c_desktop, web→c_browser);
-`platform`, `source {kind: app|web|video|link|original, ref}`, `license` (default CC-BY-4.0),
-`ip_attestation` ∈ {original, licensed, public-material} + `attestation_note`,
+Required: `name {en, zh}`, `description {en, zh}`, `tags[]` (≥1, lowercase kebab; used by
+gallery search & filters), `shell` ∈ {c_mobile, c_tablet, c_desktop, c_browser},
+`source {kind: app|web|video|link|original, ref}`, `license` (default CC-BY-4.0),
+`ip_attestation` ∈ {original, licensed, public-material} (+ `attestation_note`),
 `version` (SemVer), `created_at`.
+Optional: `category`, `icon`, `cover`, `brand_disclaimer` (required when any
+`ip_attestation != original`).
+Bilingual text is displayed by the official site per visitor language — write both, well.
 
-## 4. Quality gates BEFORE submitting (publish.mjs enforces, PR body embeds the summary)
+## 4. Quality gates BEFORE submitting (publish.mjs enforces; PR body embeds the summary)
 
-`interact` dead=0 · `inspect` fail=0 · `ui-smoke` fail=0 · `privacy` green, on the source run.
-CI additionally runs a static smoke (boot, pages>0, no page errors, one control reacts).
+`interact` dead=0 · `inspect` fail=0 · `ui-smoke` fail=0 · `privacy` green on the source run.
+CI adds a static smoke (boot, pages>0, no page errors, one non-nav control reacts).
 
 ## 5. Privacy red lines
 
-No real personal names, phone numbers, IDs, licenses plates, or real human faces.
-Chat/sample text must be fictional; uploader/creator nicknames anonymized.
-Enforced by the skill's `privacy.mjs` + PII grep before publish; CI re-greps phone/ID patterns.
+No real personal names, phones, IDs, plates, or real human faces. Chat/sample text fictional;
+uploader/creator nicknames anonymized. Enforced by skill `privacy.mjs` + CI PII grep.
 
 ## 6. IP rules
 
-Three-way attestation (§3). Brand clones MUST carry the app-level `brand_disclaimer`
-(auto-inserted by publish.mjs): unofficial study replica, trademarks belong to owners,
-no affiliation. No full official asset packs (font binaries, icon packs); icons must be
-self-drawn SVG or small crops with source noted in PROVENANCE.md.
+Three-way attestation (§3). Non-original apps MUST carry `brand_disclaimer` (auto-inserted by
+publish.mjs): unofficial study replica, trademarks belong to owners. No official asset packs;
+icons self-drawn SVG or small sourced crops noted in PROVENANCE.md.
 
 ## 7. Size & assets
 
-≤ 80 MB per flavor (CI fails). Images: jpg/png/webp/svg only. System font stacks only.
+≤ 80 MB per app. Images jpg/png/webp/svg only. System font stacks only.
 
 ## 8. Licensing
 
-Prototype code: MIT. Assets & design: per flavor `license` (default CC-BY-4.0).
-Repository infrastructure: MIT.
+Prototype code MIT; assets & design per `license` (default CC-BY-4.0); repo infrastructure MIT.
 
-## 9. PR flow
+## 9. PR flow & releases
 
-Branch `publish/<app>-<flavor>-<timestamp>`; title `publish(<app>/<flavor>): <title>`.
-One PR may carry several flavors of the same app. CI gates must be green; a maintainer
-approves and merges (never auto-merge). After merge: `index.yml` rebuilds `index.json`
-(contributors via `git log -- <app>/<flavor>`) and generates missing thumbnails;
-`release.yml` tags `<app>-<flavor>-<version>` and publishes a Release with an offline zip.
+Branch `publish/<app>-<timestamp>`; title `publish(<app>): <name.en>`. CI gates green →
+maintainer merges (never auto-merge). On merge: `index.yml` rebuilds `index.json`
+(contributors via `git log -- <app>`, cover if missing, **download counts from Release
+assets**) and `release.yml` tags `<app>-<version>` publishing a Release with the offline zip.
 
-## 10. Updates, versions & takedown
+## 10. Heat, updates & takedown
 
-Updating a flavor = PR overwriting the same directory; `PROVENANCE.md` gains a change line;
-changing `prototype/**` without bumping `meta.version` fails CI (silent overwrite ban).
-Takedown: file the issue template; maintainers respond within 48 h.
+Heat = sum of GitHub Release zip `download_count` for the app's tags (the only honest signal
+available on a static platform); gallery cards show it, Home Top-4 sorts by it, the detail
+download button carries it. Updating an app = PR overwriting the directory + PROVENANCE line;
+changing `prototype/**` without bumping `version` fails CI. Takedown: issue template, 48 h.
