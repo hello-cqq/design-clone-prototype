@@ -1,11 +1,27 @@
 {
- "title": "WeChat · mobile Android (study replica)",
- "description": "WeChat · mobile Android (study replica) — interactive prototype generated with design-clone",
+ "name": {
+  "en": "WeChat · phone (study replica)",
+  "zh": "微信 · 手机版（学习复刻）"
+ },
+ "description": {
+  "en": "Study replica of WeChat mobile: chat list, conversations, contacts, discover, group settings — all text fictional.",
+  "zh": "微信手机版学习复刻：会话列表、单聊/群聊、通讯录、发现、群设置——文本全虚构。"
+ },
  "tags": [
   "chat",
   "social",
-  "study"
+  "study",
+  "mobile"
  ],
- "category": "app",
- "brand_disclaimer": "Unofficial study replica; trademarks belong to their owners."
+ "shell": "c_mobile",
+ "source": {
+  "kind": "app",
+  "ref": "WeChat android (study)"
+ },
+ "license": "CC-BY-4.0",
+ "ip_attestation": "public-material",
+ "attestation_note": "",
+ "version": "1.1.0",
+ "created_at": "2026-09-10T16:40:00Z",
+ "brand_disclaimer": "Unofficial study replica of WeChat; trademarks belong to Tencent; no affiliation or endorsement implied."
 }
