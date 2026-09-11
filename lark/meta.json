@@ -4,23 +4,27 @@
   "zh": "飞书 · 桌面 Mac 版（学习复刻）"
  },
  "description": {
-  "en": "Study replica of Lark desktop mac: messages, calendar, docs, meetings, app center — conversations fictional.",
-  "zh": "飞书桌面 Mac 版学习复刻：消息、日历、云文档、会议、应用中心——会话全虚构。"
+  "en": "Study replica of Lark desktop: messages, calendar, docs, app center — fictional text.",
+  "zh": "飞书桌面端学习复刻：消息、日历、文档、应用中心——文本全虚构。"
  },
  "tags": [
+  "office",
   "collab",
   "desktop",
-  "study"
+  "study",
+  "messenger"
  ],
+ "category": "office",
  "shell": "c_desktop",
  "source": {
-  "kind": "app",
-  "ref": "Lark mac (study)"
+  "kind": "original",
+  "ref": "mac-lark"
  },
  "license": "CC-BY-4.0",
  "ip_attestation": "public-material",
- "attestation_note": "",
- "version": "1.1.0",
- "created_at": "2026-09-10T16:40:00Z",
- "brand_disclaimer": "Unofficial study replica of Lark/Feishu desktop; trademarks belong to ByteDance; no affiliation or endorsement implied."
+ "attestation_note": "M63: gallery trio refresh (3:2 cover + icon + meta scoring)",
+ "version": "1.2.0",
+ "created_at": "2026-09-11T13:19:34.156Z",
+ "brand_disclaimer": "Unofficial study replica of Lark · desktop mac (study replica); trademarks belong to their owners; no affiliation or endorsement implied.",
+ "platform": ""
 }
