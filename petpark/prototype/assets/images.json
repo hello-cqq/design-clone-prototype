@@ -78,5 +78,29 @@
     "seed": 99,
     "engine": "pollinations",
     "out": "pet-bunny.png"
+  },
+  {
+    "at": "2026-09-11T11:24:57.785Z",
+    "prompt": "fluffy corgi puppy sitting full body, plush pixar 3d render, big round head, tiny legs, tongue out, blush cheeks, soft volumetric lighting, solid plain background color #FFF6E9, no human, no text",
+    "style": "pixar-3d",
+    "seed": 5,
+    "engine": "pollinations",
+    "out": "pet-corgi.png"
+  },
+  {
+    "at": "2026-09-11T11:25:44.847Z",
+    "prompt": "grey british shorthair cat sitting full body, plush pixar 3d render, round cheeks, sleepy smile, soft volumetric lighting, solid plain background color #FFF6E9, no human, no text",
+    "style": "pixar-3d",
+    "seed": 9,
+    "engine": "pollinations",
+    "out": "pet-cat.png"
+  },
+  {
+    "at": "2026-09-11T11:26:29.292Z",
+    "prompt": "white lop-eared bunny sitting full body, plush pixar 3d render, long floppy ears, blush cheeks, soft volumetric lighting, solid plain background color #FFF6E9, no human, no text",
+    "style": "pixar-3d",
+    "seed": 14,
+    "engine": "pollinations",
+    "out": "pet-bunny.png"
   }
 ]
