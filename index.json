@@ -1,6 +1,6 @@
 {
  "version": 3,
- "updated_at": "2026-09-11T12:35:08.374Z",
+ "updated_at": "2026-09-11T12:41:55.293Z",
  "apps": [
   {
    "app": "aliyun-console",
@@ -37,12 +37,12 @@
    "contributors": [
     {
      "name": "cqq",
-     "login": null,
+     "login": "hello-cqq",
      "commits": 5
     },
     {
      "name": "AhahahQ",
-     "login": null,
+     "login": "AhahahQ",
      "commits": 1
     }
    ],
@@ -84,12 +84,12 @@
    "contributors": [
     {
      "name": "cqq",
-     "login": null,
+     "login": "hello-cqq",
      "commits": 5
     },
     {
      "name": "AhahahQ",
-     "login": null,
+     "login": "AhahahQ",
      "commits": 1
     }
    ],
@@ -133,12 +133,12 @@
    "contributors": [
     {
      "name": "cqq",
-     "login": null,
+     "login": "hello-cqq",
      "commits": 6
     },
     {
      "name": "AhahahQ",
-     "login": null,
+     "login": "AhahahQ",
      "commits": 2
     }
    ],
@@ -180,12 +180,12 @@
    "contributors": [
     {
      "name": "cqq",
-     "login": null,
+     "login": "hello-cqq",
      "commits": 5
     },
     {
      "name": "AhahahQ",
-     "login": null,
+     "login": "AhahahQ",
      "commits": 1
     }
    ],
@@ -226,12 +226,12 @@
    "contributors": [
     {
      "name": "cqq",
-     "login": null,
+     "login": "hello-cqq",
      "commits": 5
     },
     {
      "name": "AhahahQ",
-     "login": null,
+     "login": "AhahahQ",
      "commits": 1
     }
    ],
