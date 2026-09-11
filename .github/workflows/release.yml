@@ -12,5 +12,6 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: "22" }
       - name: tag + release changed flavors
-        env: { GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} }
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/release.mjs --from ${{ github.event.before }}
