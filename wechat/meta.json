@@ -13,15 +13,17 @@
   "study",
   "mobile"
  ],
+ "category": "social",
  "shell": "c_mobile",
  "source": {
-  "kind": "app",
-  "ref": "WeChat android (study)"
+  "kind": "device",
+  "ref": "wechat-full"
  },
  "license": "CC-BY-4.0",
  "ip_attestation": "public-material",
- "attestation_note": "",
- "version": "1.1.0",
- "created_at": "2026-09-10T16:40:00Z",
- "brand_disclaimer": "Unofficial study replica of WeChat; trademarks belong to Tencent; no affiliation or endorsement implied."
+ "attestation_note": "M63: gallery trio refresh (3:2 cover + icon + meta scoring)",
+ "version": "1.2.0",
+ "created_at": "2026-09-11T13:19:04.014Z",
+ "brand_disclaimer": "Unofficial study replica of WeChat · phone (study replica); trademarks belong to their owners; no affiliation or endorsement implied.",
+ "platform": "android"
 }
