@@ -1,6 +1,6 @@
 {
  "version": 3,
- "updated_at": "2026-09-11T03:56:22.491Z",
+ "updated_at": "2026-09-11T04:03:00.869Z",
  "apps": [
   {
    "app": "aliyun-console",
@@ -32,12 +32,12 @@
    "cover": "aliyun-console/cover.png",
    "url": "https://hello-cqq.github.io/design-clone-prototype/aliyun-console/prototype/",
    "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/aliyun-console",
-   "downloads": 1,
+   "downloads": 2,
    "contributors": [
     {
      "name": "cqq",
      "login": null,
-     "commits": 3
+     "commits": 4
     },
     {
      "name": "AhahahQ",
@@ -50,8 +50,8 @@
      "commits": 1
     }
    ],
-   "commits": 5,
-   "updated": "2026-09-11T11:55:42+08:00"
+   "commits": 6,
+   "updated": "2026-09-11T12:01:46+08:00"
   },
   {
    "app": "dy-note",
@@ -83,12 +83,12 @@
    "cover": "dy-note/cover.png",
    "url": "https://hello-cqq.github.io/design-clone-prototype/dy-note/prototype/",
    "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/dy-note",
-   "downloads": 1,
+   "downloads": 2,
    "contributors": [
     {
      "name": "cqq",
      "login": null,
-     "commits": 3
+     "commits": 4
     },
     {
      "name": "AhahahQ",
@@ -101,8 +101,59 @@
      "commits": 1
     }
    ],
-   "commits": 5,
-   "updated": "2026-09-11T11:55:42+08:00"
+   "commits": 6,
+   "updated": "2026-09-11T12:01:46+08:00"
+  },
+  {
+   "app": "wechat",
+   "name": {
+    "en": "WeChat · phone (study replica)",
+    "zh": "微信 · 手机版（学习复刻）"
+   },
+   "description": {
+    "en": "Study replica of WeChat mobile: chat list, conversations, contacts, discover, group settings — all text fictional.",
+    "zh": "微信手机版学习复刻：会话列表、单聊/群聊、通讯录、发现、群设置——文本全虚构。"
+   },
+   "tags": [
+    "chat",
+    "social",
+    "study",
+    "mobile"
+   ],
+   "category": "",
+   "shell": "c_mobile",
+   "version": "1.1.0",
+   "license": "CC-BY-4.0",
+   "source": {
+    "kind": "app",
+    "ref": "WeChat android (study)"
+   },
+   "ip_attestation": "public-material",
+   "brand_disclaimer": "Unofficial study replica of WeChat; trademarks belong to Tencent; no affiliation or endorsement implied.",
+   "icon": null,
+   "cover": "wechat/cover.png",
+   "url": "https://hello-cqq.github.io/design-clone-prototype/wechat/prototype/",
+   "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/wechat",
+   "downloads": 2,
+   "contributors": [
+    {
+     "name": "cqq",
+     "login": null,
+     "commits": 4
+    },
+    {
+     "name": "AhahahQ",
+     "login": null,
+     "commits": 1
+    },
+    {
+     "name": "dc-index-bot",
+     "login": "github-actions[bot]",
+     "commits": 1
+    }
+   ],
+   "commits": 6,
+   "updated": "2026-09-11T12:01:46+08:00"
   },
   {
    "app": "lark",
@@ -138,7 +189,7 @@
     {
      "name": "cqq",
      "login": null,
-     "commits": 3
+     "commits": 4
     },
     {
      "name": "AhahahQ",
@@ -151,59 +202,8 @@
      "commits": 1
     }
    ],
-   "commits": 5,
-   "updated": "2026-09-11T11:55:42+08:00"
-  },
-  {
-   "app": "wechat",
-   "name": {
-    "en": "WeChat · phone (study replica)",
-    "zh": "微信 · 手机版（学习复刻）"
-   },
-   "description": {
-    "en": "Study replica of WeChat mobile: chat list, conversations, contacts, discover, group settings — all text fictional.",
-    "zh": "微信手机版学习复刻：会话列表、单聊/群聊、通讯录、发现、群设置——文本全虚构。"
-   },
-   "tags": [
-    "chat",
-    "social",
-    "study",
-    "mobile"
-   ],
-   "category": "",
-   "shell": "c_mobile",
-   "version": "1.1.0",
-   "license": "CC-BY-4.0",
-   "source": {
-    "kind": "app",
-    "ref": "WeChat android (study)"
-   },
-   "ip_attestation": "public-material",
-   "brand_disclaimer": "Unofficial study replica of WeChat; trademarks belong to Tencent; no affiliation or endorsement implied.",
-   "icon": null,
-   "cover": "wechat/cover.png",
-   "url": "https://hello-cqq.github.io/design-clone-prototype/wechat/prototype/",
-   "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/wechat",
-   "downloads": 1,
-   "contributors": [
-    {
-     "name": "cqq",
-     "login": null,
-     "commits": 3
-    },
-    {
-     "name": "AhahahQ",
-     "login": null,
-     "commits": 1
-    },
-    {
-     "name": "dc-index-bot",
-     "login": "github-actions[bot]",
-     "commits": 1
-    }
-   ],
-   "commits": 5,
-   "updated": "2026-09-11T11:55:42+08:00"
+   "commits": 6,
+   "updated": "2026-09-11T12:01:46+08:00"
   },
   {
    "app": "petpark",
@@ -236,12 +236,12 @@
    "cover": "petpark/cover.png",
    "url": "https://hello-cqq.github.io/design-clone-prototype/petpark/prototype/",
    "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/petpark",
-   "downloads": 0,
+   "downloads": 1,
    "contributors": [
     {
      "name": "cqq",
      "login": null,
-     "commits": 4
+     "commits": 5
     },
     {
      "name": "AhahahQ",
@@ -254,8 +254,8 @@
      "commits": 1
     }
    ],
-   "commits": 6,
-   "updated": "2026-09-11T11:55:17+08:00"
+   "commits": 7,
+   "updated": "2026-09-11T12:01:46+08:00"
   }
  ]
 }
