@@ -55,6 +55,14 @@ for (const t of listApps(root)) {
     cover: fs.existsSync(path.join(t.dir, "cover.png")) ? `${t.app}/cover.png` : null,
     url: `${PAGES}/${t.app}/prototype/`,
     repo_dir: `https://github.com/hello-cqq/design-clone-prototype/tree/main/${t.app}`,
+    pages: (() => {
+      try {
+        const hh = fs.readFileSync(path.join(t.dir, "prototype", "index.html"), "utf8");
+        const m = hh.match(/window\.DC = (\{[\s\S]*?\});<\/script>/);
+        if (m) return (JSON.parse(m[1]).pages || []).map((p) => ({ id: p.id, name: p.name || p.id }));
+      } catch {}
+      return [];
+    })(),
     downloads: dl.get(t.app) || 0,
     creator: await (async () => {
       try {
