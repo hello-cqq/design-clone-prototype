@@ -11,21 +11,21 @@
     "evidence": [],
     "fidelity": "high",
     "product": {
-      "function": "查看园区分区并预约入园时段",
+      "function": "查看园区四分区地图并预约入园时段",
       "goals": [
-        "转化：分区余位+时段单选直达预约",
-        "降低决策成本：地图 pin 即点即说明"
+        "转化：分区余位+时段单选直达预约 CTA",
+        "降低决策成本：pin 磁贴点按即说明"
       ],
-      "page_prompt": "乐园地图页：SVG 分区地图（草坪/戏水/猫爬架/咖啡四色块+白路网）+ 白圆 pin + 底部预约 sheet（分区胶囊+时段单选+渐变确认钮）",
+      "page_prompt": "乐园地图页：奶油底 SVG 园区=四色果冻分区（草坪 mint/戏水 sky/猫爬架 lilac/咖啡 peach，各带 1px 内 rim）+白路网 stroke7/1.1 两层+路名浅灰；pin=白圆磁贴+彩色胖图标+标签，弹跳落位 stagger .08s；底部预约 sheet=grab 条+分区胶囊 radio（选中=mint 渐变+投影）+时段胶囊弹簧选中（cream 底+peach 内 rim）+peach 渐变 CTA 饼干边；右上定位胶囊；字重≤600",
       "element_prompts": {
-        "pp/map": "2.5D 园区地图：奶油底+四色圆角分区+白色路网",
-        "pp/sheet": "预约 sheet：grab 条+分区胶囊 radio+时段 radio+蜜桃渐变 CTA"
+        "pp/map": "SVG 园区：果冻四分区+白路网+pin 磁贴弹跳落位+水洼反光弧",
+        "pp/sheet": "预约 sheet：grab+分区胶囊 radio+时段胶囊弹簧+peach 渐变 CTA 饼干边"
       }
     },
     "spec_version": 1,
     "change_log": [
       {
-        "at": "2026-09-10T09:48:27.325Z",
+        "at": "2026-09-11T11:42:06.035Z",
         "by": "clone",
         "note": "collect-design 初始/重采集（computed 真值）"
       }
@@ -35,98 +35,215 @@
     {
       "id": "r_pp_head",
       "type": "custom",
-      "label": "宠物乐园晴 26° · 优",
+      "label": "乐园地图定位 · 1 号门",
       "components": [
         {
           "kind": "button",
-          "label": "晴 26° · 优",
+          "label": "定位 · 1 号门",
           "interaction": {
             "act": "toast",
-            "msg": "今日晴朗 · 适宜出游（演示）"
+            "msg": "已定位：云朵宠物乐园 · 1 号门（演示）"
           },
-          "sample_value": "晴 26° · 优"
+          "sample_value": "定位 · 1 号门"
         }
       ]
     },
     {
-      "id": "r_pp_hero",
-      "type": "banner",
-      "label": "营业中 · 09-21 点\n    乐园地图",
-      "components": [
-        {
-          "kind": "image",
-          "label": "",
-          "interaction": {
-            "act": "toast",
-            "msg": "旺财：汪！今天去草坪区玩（演示）"
-          }
-        },
-        {
-          "kind": "button",
-          "label": "营业中 · 09-21 点",
-          "interaction": {
-            "act": "toast",
-            "msg": "园区营业中 09:00-21:00（演示）"
-          },
-          "sample_value": "营业中 · 09-21 点"
-        },
-        {
-          "kind": "button",
-          "label": "乐园地图",
-          "interaction": {
-            "act": "goto",
-            "to": "03-map"
-          },
-          "sample_value": "乐园地图"
-        }
-      ]
-    },
-    {
-      "id": "r_pp_acts",
+      "id": "r_pp_map",
       "type": "custom",
-      "label": "预约今日余 12 位\n    遛伴附近 8 只\n    打卡连打 3 天",
+      "label": "草坪区\n    戏水区\n    猫爬架区\n    咖啡区",
       "components": [
         {
-          "kind": "sheet",
-          "label": "预约今日余 12 位",
+          "kind": "button",
+          "label": "草坪区",
           "interaction": {
-            "act": "sheet"
+            "act": "toast",
+            "msg": "草坪区：开放中 · 当前 12 只（演示）"
           },
-          "sample_value": "预约今日余 12 位"
+          "sample_value": "草坪区"
         },
         {
           "kind": "button",
-          "label": "遛伴附近 8 只",
+          "label": "戏水区",
           "interaction": {
             "act": "toast",
-            "msg": "已为你匹配遛伴：豆豆（柯基 · 2 岁）（演示）"
+            "msg": "戏水区：水温 28° · 需穿救生衣（演示）"
           },
-          "sample_value": "遛伴附近 8 只"
+          "sample_value": "戏水区"
         },
         {
           "kind": "button",
-          "label": "打卡连打 3 天",
+          "label": "猫爬架区",
           "interaction": {
             "act": "toast",
-            "msg": "打卡成功：草坪区 +5 积分（演示）"
+            "msg": "猫爬架区：限猫咪 · 3 层攀爬（演示）"
           },
-          "sample_value": "打卡连打 3 天"
+          "sample_value": "猫爬架区"
+        },
+        {
+          "kind": "button",
+          "label": "咖啡区",
+          "interaction": {
+            "act": "toast",
+            "msg": "宠物咖啡区：人宠共餐 · 有低敏菜单（演示）"
+          },
+          "sample_value": "咖啡区"
         }
       ]
     },
     {
-      "id": "r_pp_pass",
-      "type": "custom",
-      "label": "今日入园通行证旺财 · 柯基 | 草坪区 + 戏水区"
-    },
-    {
-      "id": "r_pp_feed",
-      "type": "list",
-      "label": "团子的乐园日记今天在猫爬架区征服了最高层…去围观",
+      "id": "r_pp_sheet",
+      "type": "modal",
+      "label": "预约入园\n    草坪区戏水区猫爬架区咖啡区\n    今天 14:00今天 16",
       "components": [
         {
-          "kind": "image",
-          "label": ""
+          "kind": "radio",
+          "label": "草坪区",
+          "interaction": {
+            "act": "radio",
+            "group": "zone"
+          },
+          "sample_value": "草坪区"
+        },
+        {
+          "kind": "radio",
+          "label": "戏水区",
+          "interaction": {
+            "act": "radio",
+            "group": "zone"
+          },
+          "sample_value": "戏水区"
+        },
+        {
+          "kind": "radio",
+          "label": "猫爬架区",
+          "interaction": {
+            "act": "radio",
+            "group": "zone"
+          },
+          "sample_value": "猫爬架区"
+        },
+        {
+          "kind": "radio",
+          "label": "咖啡区",
+          "interaction": {
+            "act": "radio",
+            "group": "zone"
+          },
+          "sample_value": "咖啡区"
+        },
+        {
+          "kind": "radio",
+          "label": "今天 14:00",
+          "interaction": {
+            "act": "radio",
+            "group": "slot"
+          },
+          "sample_value": "今天 14:00"
+        },
+        {
+          "kind": "radio",
+          "label": "今天 16:00",
+          "interaction": {
+            "act": "radio",
+            "group": "slot"
+          },
+          "sample_value": "今天 16:00"
+        },
+        {
+          "kind": "radio",
+          "label": "明天 10:00",
+          "interaction": {
+            "act": "radio",
+            "group": "slot"
+          },
+          "sample_value": "明天 10:00"
+        },
+        {
+          "kind": "button",
+          "label": "确认预约",
+          "interaction": {
+            "act": "toast",
+            "msg": "预约成功：草坪区 今天 14:00（演示）"
+          },
+          "sample_value": "确认预约"
+        }
+      ]
+    },
+    {
+      "id": "r_pp_zones",
+      "type": "custom",
+      "label": "草坪区戏水区猫爬架区咖啡区",
+      "components": [
+        {
+          "kind": "radio",
+          "label": "草坪区",
+          "interaction": {
+            "act": "radio",
+            "group": "zone"
+          },
+          "sample_value": "草坪区"
+        },
+        {
+          "kind": "radio",
+          "label": "戏水区",
+          "interaction": {
+            "act": "radio",
+            "group": "zone"
+          },
+          "sample_value": "戏水区"
+        },
+        {
+          "kind": "radio",
+          "label": "猫爬架区",
+          "interaction": {
+            "act": "radio",
+            "group": "zone"
+          },
+          "sample_value": "猫爬架区"
+        },
+        {
+          "kind": "radio",
+          "label": "咖啡区",
+          "interaction": {
+            "act": "radio",
+            "group": "zone"
+          },
+          "sample_value": "咖啡区"
+        }
+      ]
+    },
+    {
+      "id": "r_pp_slots",
+      "type": "custom",
+      "label": "今天 14:00今天 16:00明天 10:00",
+      "components": [
+        {
+          "kind": "radio",
+          "label": "今天 14:00",
+          "interaction": {
+            "act": "radio",
+            "group": "slot"
+          },
+          "sample_value": "今天 14:00"
+        },
+        {
+          "kind": "radio",
+          "label": "今天 16:00",
+          "interaction": {
+            "act": "radio",
+            "group": "slot"
+          },
+          "sample_value": "今天 16:00"
+        },
+        {
+          "kind": "radio",
+          "label": "明天 10:00",
+          "interaction": {
+            "act": "radio",
+            "group": "slot"
+          },
+          "sample_value": "明天 10:00"
         }
       ]
     },

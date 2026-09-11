@@ -1,27 +1,30 @@
 {
  "name": {
-  "en": "PetPark · 2.5D clay pet park",
-  "zh": "宠物乐园 · 2.5D 粘土萌宠"
+  "en": "PetPark · 3D plush pet park",
+  "zh": "宠物乐园 · 3D 萌宠公园"
  },
  "description": {
-  "en": "Original 2.5D clay-textured pet park app: isometric park hero, pet profiles with stat rings, zone map with booking sheet, community feed, membership card.",
-  "zh": "原创 2.5D 粘土质感宠物乐园：等距公园首页、萌宠档案三环状态、分区地图+预约 sheet、社区 feed、会员卡。"
+  "en": "A 3D plush-cute pet park: booking, walk-buddy, check-ins, pet profiles with tri-ring stats, a four-zone park map with reservations, community feed and membership — pixar-fluffy renders on clay-candy materials with soft idle motion.",
+  "zh": "3D 萌宠质感乐园：预约/遛伴/打卡、萌宠档案三环状态、园区四分区地图与预约、社区 feed 与会员卡——皮克斯式蓬松渲染+粘土糖果材质+软影微动。"
  },
  "tags": [
-  "original",
-  "2.5d",
-  "clay",
   "pets",
-  "mobile"
+  "travel",
+  "community",
+  "booking",
+  "mobile",
+  "original"
  ],
+ "category": "travel",
  "shell": "c_mobile",
  "source": {
   "kind": "original",
-  "ref": "design-clone demo"
+  "ref": "demo-petpark"
  },
  "license": "CC-BY-4.0",
  "ip_attestation": "original",
- "attestation_note": "",
- "version": "1.1.0",
- "created_at": "2026-09-10T16:40:00Z"
+ "attestation_note": "M62-E: 3D plush-cute rebuild per docs/petpark-design-brief.md; new 3:2 cover + gallery trio.",
+ "version": "2.0.0",
+ "created_at": "2026-09-11T11:51:41.750Z",
+ "platform": "mobile"
 }

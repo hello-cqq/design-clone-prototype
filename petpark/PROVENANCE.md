@@ -1,8 +1,8 @@
-# PetPark · 2.5D clay pet park (petpark/mobile)
+# PetPark · 3D plush pet park (petpark/undefined)
 
 - source: original / demo-petpark
-- skill version: 0.5.0
+- skill version: 0.6.0-snapshot.20260911
 - gates: interact dead=undefined | inspect fail=undefined pass=undefined | ui-smoke fail=undefined pass=undefined
 
 ## Changes
-- v1.0.0: initial publish
+- v2.0.0: initial publish
