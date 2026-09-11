@@ -1,6 +1,6 @@
 {
  "version": 3,
- "updated_at": "2026-09-11T13:11:45.542Z",
+ "updated_at": "2026-09-11T13:13:09.897Z",
  "apps": [
   {
    "app": "aliyun-console",
@@ -67,17 +67,17 @@
    "contributors": [
     {
      "name": "cqq",
-     "login": null,
-     "commits": 5
+     "login": "hello-cqq",
+     "commits": 6
     },
     {
      "name": "AhahahQ",
-     "login": null,
+     "login": "AhahahQ",
      "commits": 1
     }
    ],
-   "commits": 7,
-   "updated": "2026-09-11T20:34:28+08:00"
+   "commits": 8,
+   "updated": "2026-09-11T21:11:45+08:00"
   },
   {
    "app": "dy-note",
@@ -128,17 +128,17 @@
    "contributors": [
     {
      "name": "cqq",
-     "login": null,
-     "commits": 5
+     "login": "hello-cqq",
+     "commits": 6
     },
     {
      "name": "AhahahQ",
-     "login": null,
+     "login": "AhahahQ",
      "commits": 1
     }
    ],
-   "commits": 7,
-   "updated": "2026-09-11T20:34:28+08:00"
+   "commits": 8,
+   "updated": "2026-09-11T21:11:45+08:00"
   },
   {
    "app": "petpark",
@@ -199,17 +199,17 @@
    "contributors": [
     {
      "name": "cqq",
-     "login": null,
-     "commits": 6
+     "login": "hello-cqq",
+     "commits": 7
     },
     {
      "name": "AhahahQ",
-     "login": null,
+     "login": "AhahahQ",
      "commits": 2
     }
    ],
-   "commits": 9,
-   "updated": "2026-09-11T20:34:28+08:00"
+   "commits": 10,
+   "updated": "2026-09-11T21:11:45+08:00"
   },
   {
    "app": "wechat",
@@ -324,17 +324,17 @@
    "contributors": [
     {
      "name": "cqq",
-     "login": null,
-     "commits": 5
+     "login": "hello-cqq",
+     "commits": 6
     },
     {
      "name": "AhahahQ",
-     "login": null,
+     "login": "AhahahQ",
      "commits": 1
     }
    ],
-   "commits": 7,
-   "updated": "2026-09-11T20:34:28+08:00"
+   "commits": 8,
+   "updated": "2026-09-11T21:11:45+08:00"
   },
   {
    "app": "lark",
@@ -428,17 +428,17 @@
    "contributors": [
     {
      "name": "cqq",
-     "login": null,
-     "commits": 5
+     "login": "hello-cqq",
+     "commits": 6
     },
     {
      "name": "AhahahQ",
-     "login": null,
+     "login": "AhahahQ",
      "commits": 1
     }
    ],
-   "commits": 7,
-   "updated": "2026-09-11T20:34:28+08:00"
+   "commits": 8,
+   "updated": "2026-09-11T21:11:45+08:00"
   }
  ]
 }
