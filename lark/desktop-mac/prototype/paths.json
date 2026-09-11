@@ -1,0 +1,1564 @@
+{
+  "generated_at": "2026-09-10T06:06:24.734Z",
+  "version": 3,
+  "flowsUsed": true,
+  "nodes": {
+    "01-messages": {
+      "title": "消息·会话列表",
+      "index": "01"
+    },
+    "02-calendar": {
+      "title": "日历·日视图",
+      "index": "02"
+    },
+    "03-docs": {
+      "title": "云文档·知识库首页",
+      "index": "03"
+    },
+    "04-meeting": {
+      "title": "视频会议·发起/历史",
+      "index": "04"
+    },
+    "05-workbench": {
+      "title": "工作台",
+      "index": "05"
+    },
+    "06-contacts": {
+      "title": "通讯录·组织架构",
+      "index": "06"
+    },
+    "07-tasks": {
+      "title": "任务·我负责的",
+      "index": "07"
+    },
+    "08-kb": {
+      "title": "知识库·全部",
+      "index": "08"
+    },
+    "09-bitable": {
+      "title": "多维表格",
+      "index": "09"
+    },
+    "10-appcenter": {
+      "title": "应用中心",
+      "index": "10"
+    },
+    "11-chat": {
+      "title": "消息·聊天窗",
+      "index": "11"
+    },
+    "14-group-chat": {
+      "title": "群聊·自动化测试",
+      "index": "14"
+    },
+    "15-group-settings": {
+      "title": "群设置菜单",
+      "index": "15"
+    },
+    "16-contact": {
+      "title": "联系人卡片",
+      "index": "16"
+    }
+  },
+  "edges": [
+    {
+      "i": 0,
+      "from": "01-messages",
+      "to": "02-calendar",
+      "label": "tap · 侧栏 日历",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 1,
+      "from": "01-messages",
+      "to": "03-docs",
+      "label": "tap · 侧栏 云文档",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 2,
+      "from": "01-messages",
+      "to": "04-meeting",
+      "label": "tap · 侧栏 视频会议",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 3,
+      "from": "01-messages",
+      "to": "05-workbench",
+      "label": "tap · 侧栏 工作台",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 4,
+      "from": "01-messages",
+      "to": "06-contacts",
+      "label": "tap · 侧栏 通讯录",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 5,
+      "from": "01-messages",
+      "to": "07-tasks",
+      "label": "tap · 侧栏 任务",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 6,
+      "from": "01-messages",
+      "to": "08-kb",
+      "label": "tap · 侧栏 知识库",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 7,
+      "from": "02-calendar",
+      "to": "01-messages",
+      "label": "tap · 侧栏 消息",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 8,
+      "from": "02-calendar",
+      "to": "03-docs",
+      "label": "tap · 侧栏 云文档",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 9,
+      "from": "02-calendar",
+      "to": "04-meeting",
+      "label": "tap · 侧栏 视频会议",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 10,
+      "from": "03-docs",
+      "to": "01-messages",
+      "label": "tap · 侧栏 消息",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 11,
+      "from": "03-docs",
+      "to": "08-kb",
+      "label": "tap · 侧栏 知识库",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 12,
+      "from": "03-docs",
+      "to": "05-workbench",
+      "label": "tap · 侧栏 工作台",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 13,
+      "from": "04-meeting",
+      "to": "01-messages",
+      "label": "tap · 侧栏 消息",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 14,
+      "from": "04-meeting",
+      "to": "02-calendar",
+      "label": "tap · 侧栏 日历",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 15,
+      "from": "04-meeting",
+      "to": "05-workbench",
+      "label": "tap · 侧栏 工作台",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 16,
+      "from": "05-workbench",
+      "to": "01-messages",
+      "label": "tap · 侧栏 消息",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 17,
+      "from": "05-workbench",
+      "to": "03-docs",
+      "label": "tap · 侧栏 云文档",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 18,
+      "from": "05-workbench",
+      "to": "10-appcenter",
+      "label": "tap · 侧栏 应用中心",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 19,
+      "from": "06-contacts",
+      "to": "01-messages",
+      "label": "tap · 侧栏 消息",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 20,
+      "from": "06-contacts",
+      "to": "07-tasks",
+      "label": "tap · 侧栏 任务",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 21,
+      "from": "07-tasks",
+      "to": "01-messages",
+      "label": "tap · 侧栏 消息",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 22,
+      "from": "07-tasks",
+      "to": "02-calendar",
+      "label": "tap · 侧栏 日历",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 23,
+      "from": "08-kb",
+      "to": "03-docs",
+      "label": "tap · 侧栏 云文档",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 24,
+      "from": "08-kb",
+      "to": "01-messages",
+      "label": "tap · 侧栏 消息",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 25,
+      "from": "09-bitable",
+      "to": "01-messages",
+      "label": "tap · 侧栏 消息",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 26,
+      "from": "09-bitable",
+      "to": "03-docs",
+      "label": "tap · 侧栏 云文档",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 27,
+      "from": "10-appcenter",
+      "to": "05-workbench",
+      "label": "tap · 侧栏 工作台",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 28,
+      "from": "10-appcenter",
+      "to": "01-messages",
+      "label": "tap · 侧栏 消息",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 29,
+      "from": "01-messages",
+      "to": "11-chat",
+      "label": "tap · 会话行",
+      "kind": "navigate",
+      "role": "drill"
+    },
+    {
+      "i": 30,
+      "from": "11-chat",
+      "to": "01-messages",
+      "label": "tap · 返回",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 31,
+      "from": "11-chat",
+      "to": "14-group-chat",
+      "label": "tap · 群会话行",
+      "kind": "navigate",
+      "role": "task"
+    },
+    {
+      "i": 32,
+      "from": "14-group-chat",
+      "to": "15-group-settings",
+      "label": "tap · ⋯",
+      "kind": "navigate",
+      "role": "task"
+    },
+    {
+      "i": 33,
+      "from": "14-group-chat",
+      "to": "16-contact",
+      "label": "tap · 成员头像",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 34,
+      "from": "15-group-settings",
+      "to": "14-group-chat",
+      "label": "tap · 关闭",
+      "kind": "navigate",
+      "role": "task"
+    },
+    {
+      "i": 35,
+      "from": "16-contact",
+      "to": "14-group-chat",
+      "label": "tap · 关闭",
+      "kind": "navigate",
+      "role": "task"
+    },
+    {
+      "i": 36,
+      "from": "01-messages",
+      "to": "09-bitable",
+      "label": "tap · 09-bitable",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 37,
+      "from": "01-messages",
+      "to": "10-appcenter",
+      "label": "tap · 10-appcenter",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 38,
+      "from": "02-calendar",
+      "to": "02-calendar",
+      "label": "tap · 02-calendar",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 39,
+      "from": "02-calendar",
+      "to": "09-bitable",
+      "label": "tap · 09-bitable",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 40,
+      "from": "02-calendar",
+      "to": "05-workbench",
+      "label": "tap · 05-workbench",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 41,
+      "from": "02-calendar",
+      "to": "10-appcenter",
+      "label": "tap · 10-appcenter",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 42,
+      "from": "02-calendar",
+      "to": "06-contacts",
+      "label": "tap · 06-contacts",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 43,
+      "from": "02-calendar",
+      "to": "07-tasks",
+      "label": "tap · 07-tasks",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 44,
+      "from": "02-calendar",
+      "to": "08-kb",
+      "label": "tap · 08-kb",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 45,
+      "from": "02-calendar",
+      "to": "14-group-chat",
+      "label": "tap · 14-group-chat",
+      "kind": "navigate",
+      "role": "task"
+    },
+    {
+      "i": 46,
+      "from": "02-calendar",
+      "to": "11-chat",
+      "label": "tap · 11-chat",
+      "kind": "navigate",
+      "role": "task"
+    },
+    {
+      "i": 47,
+      "from": "03-docs",
+      "to": "02-calendar",
+      "label": "tap · 02-calendar",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 48,
+      "from": "03-docs",
+      "to": "09-bitable",
+      "label": "tap · 09-bitable",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 49,
+      "from": "03-docs",
+      "to": "04-meeting",
+      "label": "tap · 04-meeting",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 50,
+      "from": "03-docs",
+      "to": "10-appcenter",
+      "label": "tap · 10-appcenter",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 51,
+      "from": "03-docs",
+      "to": "06-contacts",
+      "label": "tap · 06-contacts",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 52,
+      "from": "03-docs",
+      "to": "07-tasks",
+      "label": "tap · 07-tasks",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 53,
+      "from": "04-meeting",
+      "to": "03-docs",
+      "label": "tap · 03-docs",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 54,
+      "from": "04-meeting",
+      "to": "09-bitable",
+      "label": "tap · 09-bitable",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 55,
+      "from": "04-meeting",
+      "to": "10-appcenter",
+      "label": "tap · 10-appcenter",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 56,
+      "from": "04-meeting",
+      "to": "06-contacts",
+      "label": "tap · 06-contacts",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 57,
+      "from": "04-meeting",
+      "to": "07-tasks",
+      "label": "tap · 07-tasks",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 58,
+      "from": "04-meeting",
+      "to": "08-kb",
+      "label": "tap · 08-kb",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 59,
+      "from": "05-workbench",
+      "to": "02-calendar",
+      "label": "tap · 02-calendar",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 60,
+      "from": "05-workbench",
+      "to": "09-bitable",
+      "label": "tap · 09-bitable",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 61,
+      "from": "05-workbench",
+      "to": "04-meeting",
+      "label": "tap · 04-meeting",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 62,
+      "from": "05-workbench",
+      "to": "06-contacts",
+      "label": "tap · 06-contacts",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 63,
+      "from": "05-workbench",
+      "to": "07-tasks",
+      "label": "tap · 07-tasks",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 64,
+      "from": "05-workbench",
+      "to": "08-kb",
+      "label": "tap · 08-kb",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 65,
+      "from": "06-contacts",
+      "to": "02-calendar",
+      "label": "tap · 02-calendar",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 66,
+      "from": "06-contacts",
+      "to": "03-docs",
+      "label": "tap · 03-docs",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 67,
+      "from": "06-contacts",
+      "to": "09-bitable",
+      "label": "tap · 09-bitable",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 68,
+      "from": "06-contacts",
+      "to": "04-meeting",
+      "label": "tap · 04-meeting",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 69,
+      "from": "06-contacts",
+      "to": "05-workbench",
+      "label": "tap · 05-workbench",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 70,
+      "from": "06-contacts",
+      "to": "10-appcenter",
+      "label": "tap · 10-appcenter",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 71,
+      "from": "06-contacts",
+      "to": "06-contacts",
+      "label": "tap · 06-contacts",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 72,
+      "from": "06-contacts",
+      "to": "08-kb",
+      "label": "tap · 08-kb",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 73,
+      "from": "06-contacts",
+      "to": "16-contact",
+      "label": "tap · 16-contact",
+      "kind": "navigate",
+      "role": "task"
+    },
+    {
+      "i": 74,
+      "from": "07-tasks",
+      "to": "03-docs",
+      "label": "tap · 03-docs",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 75,
+      "from": "07-tasks",
+      "to": "09-bitable",
+      "label": "tap · 09-bitable",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 76,
+      "from": "07-tasks",
+      "to": "04-meeting",
+      "label": "tap · 04-meeting",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 77,
+      "from": "07-tasks",
+      "to": "05-workbench",
+      "label": "tap · 05-workbench",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 78,
+      "from": "07-tasks",
+      "to": "10-appcenter",
+      "label": "tap · 10-appcenter",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 79,
+      "from": "07-tasks",
+      "to": "06-contacts",
+      "label": "tap · 06-contacts",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 80,
+      "from": "07-tasks",
+      "to": "08-kb",
+      "label": "tap · 08-kb",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 81,
+      "from": "08-kb",
+      "to": "02-calendar",
+      "label": "tap · 02-calendar",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 82,
+      "from": "08-kb",
+      "to": "09-bitable",
+      "label": "tap · 09-bitable",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 83,
+      "from": "08-kb",
+      "to": "04-meeting",
+      "label": "tap · 04-meeting",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 84,
+      "from": "08-kb",
+      "to": "05-workbench",
+      "label": "tap · 05-workbench",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 85,
+      "from": "08-kb",
+      "to": "10-appcenter",
+      "label": "tap · 10-appcenter",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 86,
+      "from": "08-kb",
+      "to": "06-contacts",
+      "label": "tap · 06-contacts",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 87,
+      "from": "08-kb",
+      "to": "07-tasks",
+      "label": "tap · 07-tasks",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 88,
+      "from": "09-bitable",
+      "to": "02-calendar",
+      "label": "tap · 02-calendar",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 89,
+      "from": "09-bitable",
+      "to": "04-meeting",
+      "label": "tap · 04-meeting",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 90,
+      "from": "09-bitable",
+      "to": "05-workbench",
+      "label": "tap · 05-workbench",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 91,
+      "from": "09-bitable",
+      "to": "10-appcenter",
+      "label": "tap · 10-appcenter",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 92,
+      "from": "09-bitable",
+      "to": "06-contacts",
+      "label": "tap · 06-contacts",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 93,
+      "from": "09-bitable",
+      "to": "07-tasks",
+      "label": "tap · 07-tasks",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 94,
+      "from": "09-bitable",
+      "to": "08-kb",
+      "label": "tap · 08-kb",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 95,
+      "from": "10-appcenter",
+      "to": "02-calendar",
+      "label": "tap · 02-calendar",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 96,
+      "from": "10-appcenter",
+      "to": "03-docs",
+      "label": "tap · 03-docs",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 97,
+      "from": "10-appcenter",
+      "to": "09-bitable",
+      "label": "tap · 09-bitable",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 98,
+      "from": "10-appcenter",
+      "to": "04-meeting",
+      "label": "tap · 04-meeting",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 99,
+      "from": "10-appcenter",
+      "to": "06-contacts",
+      "label": "tap · 06-contacts",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 100,
+      "from": "10-appcenter",
+      "to": "07-tasks",
+      "label": "tap · 07-tasks",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 101,
+      "from": "10-appcenter",
+      "to": "08-kb",
+      "label": "tap · 08-kb",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 102,
+      "from": "11-chat",
+      "to": "02-calendar",
+      "label": "tap · 02-calendar",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 103,
+      "from": "11-chat",
+      "to": "03-docs",
+      "label": "tap · 03-docs",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 104,
+      "from": "11-chat",
+      "to": "09-bitable",
+      "label": "tap · 09-bitable",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 105,
+      "from": "11-chat",
+      "to": "04-meeting",
+      "label": "tap · 04-meeting",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 106,
+      "from": "11-chat",
+      "to": "05-workbench",
+      "label": "tap · 05-workbench",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 107,
+      "from": "11-chat",
+      "to": "10-appcenter",
+      "label": "tap · 10-appcenter",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 108,
+      "from": "11-chat",
+      "to": "06-contacts",
+      "label": "tap · 06-contacts",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 109,
+      "from": "11-chat",
+      "to": "07-tasks",
+      "label": "tap · 07-tasks",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 110,
+      "from": "11-chat",
+      "to": "08-kb",
+      "label": "tap · 08-kb",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 111,
+      "from": "11-chat",
+      "to": "11-chat",
+      "label": "tap · 11-chat",
+      "kind": "navigate",
+      "role": "task"
+    },
+    {
+      "i": 112,
+      "from": "11-chat",
+      "to": "15-group-settings",
+      "label": "tap · 15-group-settings",
+      "kind": "navigate",
+      "role": "task"
+    },
+    {
+      "i": 113,
+      "from": "14-group-chat",
+      "to": "01-messages",
+      "label": "tap · 01-messages",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 114,
+      "from": "14-group-chat",
+      "to": "02-calendar",
+      "label": "tap · 02-calendar",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 115,
+      "from": "14-group-chat",
+      "to": "03-docs",
+      "label": "tap · 03-docs",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 116,
+      "from": "14-group-chat",
+      "to": "09-bitable",
+      "label": "tap · 09-bitable",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 117,
+      "from": "14-group-chat",
+      "to": "04-meeting",
+      "label": "tap · 04-meeting",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 118,
+      "from": "14-group-chat",
+      "to": "05-workbench",
+      "label": "tap · 05-workbench",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 119,
+      "from": "14-group-chat",
+      "to": "10-appcenter",
+      "label": "tap · 10-appcenter",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 120,
+      "from": "14-group-chat",
+      "to": "06-contacts",
+      "label": "tap · 06-contacts",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 121,
+      "from": "14-group-chat",
+      "to": "07-tasks",
+      "label": "tap · 07-tasks",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 122,
+      "from": "14-group-chat",
+      "to": "08-kb",
+      "label": "tap · 08-kb",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 123,
+      "from": "14-group-chat",
+      "to": "11-chat",
+      "label": "tap · 11-chat",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 124,
+      "from": "15-group-settings",
+      "to": "01-messages",
+      "label": "tap · 01-messages",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 125,
+      "from": "15-group-settings",
+      "to": "02-calendar",
+      "label": "tap · 02-calendar",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 126,
+      "from": "15-group-settings",
+      "to": "03-docs",
+      "label": "tap · 03-docs",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 127,
+      "from": "15-group-settings",
+      "to": "09-bitable",
+      "label": "tap · 09-bitable",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 128,
+      "from": "15-group-settings",
+      "to": "04-meeting",
+      "label": "tap · 04-meeting",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 129,
+      "from": "15-group-settings",
+      "to": "05-workbench",
+      "label": "tap · 05-workbench",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 130,
+      "from": "15-group-settings",
+      "to": "10-appcenter",
+      "label": "tap · 10-appcenter",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 131,
+      "from": "15-group-settings",
+      "to": "06-contacts",
+      "label": "tap · 06-contacts",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 132,
+      "from": "15-group-settings",
+      "to": "07-tasks",
+      "label": "tap · 07-tasks",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 133,
+      "from": "15-group-settings",
+      "to": "08-kb",
+      "label": "tap · 08-kb",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 134,
+      "from": "15-group-settings",
+      "to": "11-chat",
+      "label": "tap · 11-chat",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 135,
+      "from": "15-group-settings",
+      "to": "16-contact",
+      "label": "tap · 16-contact",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 136,
+      "from": "16-contact",
+      "to": "01-messages",
+      "label": "tap · 01-messages",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 137,
+      "from": "16-contact",
+      "to": "02-calendar",
+      "label": "tap · 02-calendar",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 138,
+      "from": "16-contact",
+      "to": "03-docs",
+      "label": "tap · 03-docs",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 139,
+      "from": "16-contact",
+      "to": "09-bitable",
+      "label": "tap · 09-bitable",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 140,
+      "from": "16-contact",
+      "to": "04-meeting",
+      "label": "tap · 04-meeting",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 141,
+      "from": "16-contact",
+      "to": "05-workbench",
+      "label": "tap · 05-workbench",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 142,
+      "from": "16-contact",
+      "to": "10-appcenter",
+      "label": "tap · 10-appcenter",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 143,
+      "from": "16-contact",
+      "to": "06-contacts",
+      "label": "tap · 06-contacts",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 144,
+      "from": "16-contact",
+      "to": "07-tasks",
+      "label": "tap · 07-tasks",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 145,
+      "from": "16-contact",
+      "to": "08-kb",
+      "label": "tap · 08-kb",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 146,
+      "from": "16-contact",
+      "to": "11-chat",
+      "label": "tap · 11-chat",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 147,
+      "from": "01-messages",
+      "to": "14-group-chat",
+      "label": "tap",
+      "kind": "navigate",
+      "role": "drill",
+      "flow": "f2"
+    }
+  ],
+  "roots": [
+    "01-messages",
+    "05-workbench",
+    "06-contacts"
+  ],
+  "depths": {
+    "01-messages": 0,
+    "05-workbench": 0,
+    "06-contacts": 0,
+    "02-calendar": 1,
+    "03-docs": 1,
+    "04-meeting": 1,
+    "07-tasks": 1,
+    "08-kb": 1,
+    "11-chat": 1,
+    "09-bitable": 1,
+    "10-appcenter": 1,
+    "16-contact": 1,
+    "14-group-chat": 2,
+    "15-group-settings": 2
+  },
+  "perNode": {
+    "01-messages": {
+      "paths": [
+        [
+          29
+        ],
+        [
+          147,
+          32
+        ]
+      ],
+      "pathInfo": [
+        {
+          "source": "flow",
+          "flow": "f1",
+          "name": "会话→聊天窗"
+        },
+        {
+          "source": "flow",
+          "flow": "f2",
+          "name": "群聊→群设置→联系人"
+        }
+      ],
+      "tree": {
+        "node": "01-messages",
+        "children": [
+          {
+            "edge": 29,
+            "child": {
+              "node": "11-chat",
+              "children": []
+            }
+          },
+          {
+            "edge": 147,
+            "child": {
+              "node": "14-group-chat",
+              "children": [
+                {
+                  "edge": 32,
+                  "child": {
+                    "node": "15-group-settings",
+                    "children": []
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "nav": [
+        "02-calendar",
+        "03-docs",
+        "04-meeting",
+        "05-workbench",
+        "06-contacts",
+        "07-tasks",
+        "08-kb",
+        "09-bitable",
+        "10-appcenter"
+      ]
+    },
+    "02-calendar": {
+      "paths": [],
+      "pathInfo": [],
+      "tree": {
+        "node": "02-calendar",
+        "children": []
+      },
+      "nav": [
+        "03-docs",
+        "04-meeting",
+        "02-calendar",
+        "09-bitable",
+        "10-appcenter",
+        "07-tasks",
+        "08-kb"
+      ]
+    },
+    "03-docs": {
+      "paths": [],
+      "pathInfo": [],
+      "tree": {
+        "node": "03-docs",
+        "children": []
+      },
+      "nav": [
+        "08-kb",
+        "02-calendar",
+        "09-bitable",
+        "04-meeting",
+        "10-appcenter",
+        "07-tasks"
+      ]
+    },
+    "04-meeting": {
+      "paths": [],
+      "pathInfo": [],
+      "tree": {
+        "node": "04-meeting",
+        "children": []
+      },
+      "nav": [
+        "02-calendar",
+        "03-docs",
+        "09-bitable",
+        "10-appcenter",
+        "07-tasks",
+        "08-kb"
+      ]
+    },
+    "05-workbench": {
+      "paths": [
+        [
+          18
+        ]
+      ],
+      "pathInfo": [
+        {
+          "source": "flow",
+          "flow": "f4",
+          "name": "工作台→应用中心"
+        }
+      ],
+      "tree": {
+        "node": "05-workbench",
+        "children": [
+          {
+            "edge": 18,
+            "child": {
+              "node": "10-appcenter",
+              "children": []
+            }
+          }
+        ]
+      },
+      "nav": [
+        "03-docs",
+        "10-appcenter",
+        "02-calendar",
+        "09-bitable",
+        "04-meeting",
+        "06-contacts",
+        "07-tasks",
+        "08-kb"
+      ]
+    },
+    "06-contacts": {
+      "paths": [
+        [
+          73
+        ]
+      ],
+      "pathInfo": [
+        {
+          "source": "flow",
+          "flow": "f3",
+          "name": "组织架构→联系人卡片"
+        }
+      ],
+      "tree": {
+        "node": "06-contacts",
+        "children": [
+          {
+            "edge": 73,
+            "child": {
+              "node": "16-contact",
+              "children": []
+            }
+          }
+        ]
+      },
+      "nav": [
+        "07-tasks",
+        "02-calendar",
+        "03-docs",
+        "09-bitable",
+        "04-meeting",
+        "05-workbench",
+        "10-appcenter",
+        "06-contacts",
+        "08-kb"
+      ]
+    },
+    "07-tasks": {
+      "paths": [],
+      "pathInfo": [],
+      "tree": {
+        "node": "07-tasks",
+        "children": []
+      },
+      "nav": [
+        "02-calendar",
+        "03-docs",
+        "09-bitable",
+        "04-meeting",
+        "10-appcenter",
+        "08-kb"
+      ]
+    },
+    "08-kb": {
+      "paths": [],
+      "pathInfo": [],
+      "tree": {
+        "node": "08-kb",
+        "children": []
+      },
+      "nav": [
+        "03-docs",
+        "02-calendar",
+        "09-bitable",
+        "04-meeting",
+        "10-appcenter",
+        "07-tasks"
+      ]
+    },
+    "09-bitable": {
+      "paths": [],
+      "pathInfo": [],
+      "tree": {
+        "node": "09-bitable",
+        "children": []
+      },
+      "nav": [
+        "03-docs",
+        "02-calendar",
+        "04-meeting",
+        "10-appcenter",
+        "07-tasks",
+        "08-kb"
+      ]
+    },
+    "10-appcenter": {
+      "paths": [],
+      "pathInfo": [],
+      "tree": {
+        "node": "10-appcenter",
+        "children": []
+      },
+      "nav": [
+        "02-calendar",
+        "03-docs",
+        "09-bitable",
+        "04-meeting",
+        "07-tasks",
+        "08-kb"
+      ]
+    },
+    "11-chat": {
+      "paths": [],
+      "pathInfo": [],
+      "tree": {
+        "node": "11-chat",
+        "children": []
+      },
+      "nav": [
+        "02-calendar",
+        "03-docs",
+        "09-bitable",
+        "04-meeting",
+        "10-appcenter",
+        "07-tasks",
+        "08-kb"
+      ]
+    },
+    "14-group-chat": {
+      "paths": [],
+      "pathInfo": [],
+      "tree": {
+        "node": "14-group-chat",
+        "children": []
+      },
+      "nav": []
+    },
+    "15-group-settings": {
+      "paths": [],
+      "pathInfo": [],
+      "tree": {
+        "node": "15-group-settings",
+        "children": []
+      },
+      "nav": []
+    },
+    "16-contact": {
+      "paths": [],
+      "pathInfo": [],
+      "tree": {
+        "node": "16-contact",
+        "children": []
+      },
+      "nav": []
+    }
+  }
+}

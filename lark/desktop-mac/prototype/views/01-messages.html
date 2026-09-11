@@ -1,0 +1,57 @@
+<style>
+  .msg-list{width:340px;flex:none;display:flex;flex-direction:column;background:#f7f8fa;border-right:1px solid #e5e6e8;min-height:0}
+  .msg-list .hd{display:flex;align-items:center;gap:8px;padding:14px 16px 10px;font-size:15px;font-weight:600;color:#1f2329}
+  .msg-list .rows{overflow:auto;padding:0 8px 12px}
+  .mrow{display:flex;gap:10px;padding:10px;border-radius:10px;cursor:pointer;align-items:flex-start}
+  .mrow.on{background:#e3ebff}
+  .mrow img.ava{width:40px;height:40px;border-radius:50%;flex:none;object-fit:cover;background:#fff}
+  .mrow .mid{flex:1;min-width:0}
+  .mrow .nm{display:flex;align-items:center;gap:6px;font-size:14px;color:#1f2329;font-weight:500}
+  .mrow .bd{font-size:10px;padding:1px 6px;border-radius:4px;flex:none}
+  .mrow .bd.off{background:#e8f0ff;color:#3370ff}
+  .mrow .bd.bot{background:#fdf5e5;color:#b07a1f}
+  .mrow .bd.ai{background:#f1e8ff;color:#7a4fd0}
+  .mrow .sub{display:block;margin-top:3px;font-size:12px;color:#8f959e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .mrow .dt{font-size:11px;color:#8f959e;flex:none;margin-top:2px}
+  .mrow .ck{flex:none;color:#3370ff;margin-top:10px}
+</style>
+<div data-dc="msg/root" class="da-root">
+  <aside data-dc="msg/side" class="da-side wb-side">
+    <div class="top">
+      <img class="ava" src="assets/chen.png" alt="">
+      <svg width="18" height="18" viewBox="0 0 24 24" style="fill:none;stroke:#646a73;stroke-width:2;cursor:pointer" data-act="toast" data-msg="添加（演示）"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v8M8 12h8"></path></svg>
+    </div>
+    <div class="search" data-act="toast" data-msg="搜索（演示）">搜索 (⌘K)</div>
+    <div style="overflow:auto;padding:4px 0 12px">
+      <div class="da-item on" data-dc="msg/n-msg" data-act="toast" data-msg="（演示）"><img class="ic" src="assets/nav-01.png" alt="">消息</div>
+      <div class="da-item" data-dc="msg/n-doubao" data-act="toast" data-msg="豆包工作（演示）"><img class="ic" src="assets/nav-02.png" alt="">豆包工作</div>
+      <div class="da-item" data-dc="msg/n-cal" data-goto="02-calendar"><img class="ic" src="assets/nav-03.png" alt="">日历</div>
+      <div class="da-item" data-dc="msg/n-docs" data-goto="03-docs"><img class="ic" src="assets/nav-04.png" alt="">云文档</div>
+      <div class="da-item" data-dc="msg/n-bitable" data-goto="09-bitable"><img class="ic" src="assets/nav-05.png" alt="">多维表格</div>
+      <div class="da-item" data-dc="msg/n-meet" data-goto="04-meeting"><img class="ic" src="assets/nav-06.png" alt="">视频会议</div>
+      <div class="da-item" data-dc="msg/n-fly" data-act="toast" data-msg="飞行社（演示）"><img class="ic" src="assets/nav-07.png" alt="">飞行社</div>
+      <div class="da-item" data-dc="msg/n-wb" data-goto="05-workbench"><img class="ic" src="assets/nav-08.png" alt="">工作台</div>
+      <div class="da-item" data-dc="msg/n-appc" data-goto="10-appcenter"><img class="ic" src="assets/nav-13.png" alt="">应用中心</div>
+      <div class="da-item" data-dc="msg/n-contacts" data-goto="06-contacts"><img class="ic" src="assets/nav-14.png" alt="">通讯录</div>
+      <div class="da-item" data-dc="msg/n-vip" data-act="toast" data-msg="权益升级（演示）"><img class="ic" src="assets/nav-09.png" alt="">权益升级</div>
+      <div style="font-size:12px;color:#8f959e;padding:10px 22px 4px">更多</div>
+      <div class="da-item" data-dc="msg/n-task" data-goto="07-tasks"><img class="ic" src="assets/nav-10.png" alt="">任务</div>
+      <div class="da-item" data-dc="msg/n-star" data-act="toast" data-msg="收藏（演示）"><img class="ic" src="assets/nav-11.png" alt="">收藏</div>
+      <div class="da-item" data-dc="msg/n-kb" data-goto="08-kb"><img class="ic" src="assets/nav-12.png" alt="">知识库</div>
+    </div>
+  </aside>
+  <div class="msg-list" data-dc="msg/list">
+    <div class="hd"><svg width="16" height="16" viewBox="0 0 24 24" style="fill:none;stroke:#1f2329;stroke-width:2"><path d="M4 6h16M4 12h10M4 18h7"></path></svg>消息</div>
+    <div class="rows">
+      <div class="mrow" data-dc="msg/r1" data-goto="11-chat"><img class="ava" src="assets/msg-ava-1.png" alt=""><span class="mid"><span class="nm">豆包</span><span class="sub">帮我总结一下今天的会议纪要</span></span><span class="dt">8月18日</span></div>
+      <div class="mrow on" data-dc="msg/r2" data-goto="11-chat"><img class="ava" src="assets/msg-ava-2.png" alt=""><span class="mid"><span class="nm">桃桃的飞书助手<span class="bd off">官方</span></span><span class="sub">飞书助手：用 豆包 + 飞书，把 AI 真正变为工作生产力</span></span><span class="ck"><svg width="16" height="16" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2"><path d="m5 13 4 4L19 7"></path></svg></span></div>
+      <div class="mrow" data-dc="msg/r3" data-act="toast" data-msg="管理员小助手（演示）"><img class="ava" src="assets/msg-ava-3.png" alt=""><span class="mid"><span class="nm">管理员小助手<span class="bd bot">机器人</span></span><span class="sub">你已安装豆包</span></span><span class="dt">8月5日</span></div>
+      <div class="mrow" data-dc="msg/r4" data-act="toast" data-msg="Q的智能伙伴（演示）"><img class="ava" src="assets/msg-ava-4.png" alt=""><span class="mid"><span class="nm">Q的智能伙伴<span class="bd ai">智能体</span></span><span class="sub">真懂工作、主动帮忙：你的 ally 智能伙伴已上线</span></span><span class="dt">6月29日</span></div>
+      <div class="mrow" data-dc="msg/r5" data-goto="11-chat"><img class="ava" src="assets/msg-ava-5.png" alt=""><span class="mid"><span class="nm">桃桃</span><span class="sub">你好</span></span><span class="dt">6月28日</span></div>
+      <div class="mrow" data-dc="msg/r6" data-act="toast" data-msg="账号安全中心（演示）"><img class="ava" src="assets/msg-ava-6.png" alt=""><span class="mid"><span class="nm">账号安全中心<span class="bd bot">机器人</span></span><span class="sub">授权操作通知</span></span><span class="dt">6月22日</span></div>
+      <div class="mrow" data-dc="msg/r7" data-act="toast" data-msg="大耳朵阿Q（演示）"><img class="ava" src="assets/msg-ava-7.png" alt=""><span class="mid"><span class="nm">大耳朵阿Q<span class="bd bot">机器人</span></span><span class="sub">[链接]西区精品公寓转租（个人再减免150元）</span></span><span class="dt">6月18日</span></div>
+      <div class="mrow" data-dc="msg/r8" data-goto="03-docs"><img class="ava" src="assets/msg-ava-8.png" alt=""><span class="mid"><span class="nm">云文档助手<span class="bd bot">机器人</span></span><span class="sub">点赞提醒</span></span><span class="dt">5月6日</span></div>
+    </div>
+  </div>
+  <main class="da-main" data-placeholder-ok style="background:#f2f3f5"></main>
+</div>

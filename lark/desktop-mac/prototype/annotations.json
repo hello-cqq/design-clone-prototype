@@ -1,0 +1,1 @@
+{"14-group-chat": [{"target": "lk/head", "label": "群设置入口", "notes": [{"event": "tap", "response": "打开群设置模态"}]}]}

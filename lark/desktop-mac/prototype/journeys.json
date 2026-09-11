@@ -1,0 +1,1 @@
+[{"id": "j1", "name": "消息→群聊→群设置→成员", "steps": [{"view": "01-messages", "target": "lk/i1", "result": {"kind": "navigate", "to": "14-group-chat"}}, {"view": "14-group-chat", "target": "lk/head", "result": {"kind": "navigate", "to": "15-group-settings"}}, {"view": "15-group-settings", "target": "da-item", "result": {"kind": "navigate", "to": "16-contact"}}]}]
