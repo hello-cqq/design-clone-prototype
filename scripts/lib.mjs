@@ -78,7 +78,8 @@ export function contributors(root, rel) {
   for (const line of log.split("\n")) {
     if (!line.trim()) continue;
     const [name, email] = line.split("\t");
-    const m = /@users\.noreply\.github\.com$/.test(email || "") ? (email || "").split("@")[0].replace(/^\d+\+/, "") : null;
+    const LOGIN_OVERRIDE = { cqq: "hello-cqq", AhahahQ: "AhahahQ" }; // M62: 本地 git 身份非 noreply 时的 login 映射
+    const m = /@users\.noreply\.github\.com$/.test(email || "") ? (email || "").split("@")[0].replace(/^\d+\+/, "") : (LOGIN_OVERRIDE[(name || "").trim()] || null);
     const k = name || email;
     const e = map.get(k) || { name, login: m, commits: 0 };
     e.commits++; e.login = e.login || m;
