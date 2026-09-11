@@ -1,22 +1,23 @@
-# 提交规范（v1 中文摘要，权威英文版见 SPEC.md）
+# 提交规范（v2 中文摘要，权威英文版见 SPEC.md）
 
-1. **目录与命名**：`<app>/meta.json` + `<app>/<flavor>/{meta.json,thumb.png,prototype/,PROVENANCE.md}`；
-   app 用 kebab-case；flavor 受控词表 `^(mobile|tablet|desktop|web)(-(android|ios|ipad|mac|win|linux))?(-(cn|global))?$`
-   （如 wechat/mobile-android、wechat/desktop-mac、aliyun-console/web）；**每个 flavor 只存当前版**，历史走 git+Release。
+v2 变化：**取消 flavor 子目录**。每个应用一个平铺目录；微信平板/桌面等变体=独立应用；热度=Release 下载量。
+
+1. **目录与命名**：`<app>/{meta.json,icon,cover.png,prototype/,PROVENANCE.md}`；app kebab-case；
+   变体独立应用（wechat / wechat-pad / wechat-desktop / wechat-ios）；每 app 只存当前版，历史=git+Release。
 2. **prototype 白名单**：index.html/views/assets/inspector.*/runtime.*/zipstore.*/utilities.css/paths.json/
    products.json/annotations.json/variants/design/pages/version.json/appicon；
    禁 node_modules/export/qa/capture/视频/.cache/字体二进制/第三方运行时 CDN（必须全离线可玩）。
-3. **meta.json**：app 级 title 必填+brand_disclaimer（非原创时必填）；flavor 级 shell 必须与 flavor 形态映射
-   （mobile*→c_mobile、tablet*→c_tablet、desktop*→c_desktop、web→c_browser）、source/license（默认 CC-BY-4.0）/
-   ip_attestation∈{original,licensed,public-material}+说明/version（SemVer）。
-4. **门前置**：源 run 的 interact dead=0、inspect 0 fail、ui-smoke 0 fail、privacy 绿；publish.mjs 强验并写入 PR body；
-   CI 另跑静态冒烟（启动、pages>0、无 page error、一个控件有反应）。
-5. **隐私红线**：真名/电话/证件/车牌/真人脸一律不得出现；聊天与示例文本虚构；上传者昵称匿名化。
-6. **IP**：三选一自律声明；品牌克隆必须带免责声明（publish 自动插）：非官方学习复刻、商标归原主；
-   禁整包官方素材（字体/图标包），图标自绘 SVG 或注明来源的小裁切。
-7. **体积**：单 flavor ≤80MB；图片仅 jpg/png/webp/svg；系统字体栈。
-8. **许可**：原型代码 MIT；资产按 flavor license；仓基础设施 MIT。
-9. **PR 流程**：分支 publish/<app>-<flavor>-<ts>；标题 publish(<app>/<flavor>): <title>；同 app 多 flavor 可一 PR；
-   CI 绿后由 maintainer 人工审批合并（禁 automerge）；合并后 index.yml 重建索引+缩略图，release.yml 打
-   tag <app>-<flavor>-<version> 并发布离线 zip Release。
-10. **更新与下架**：覆盖同目录 PR+PROVENANCE 记账；改 prototype/** 不 bump version = CI 红；下架走 issue 模板，48h 响应。
+3. **meta.json v2**：必填 `name{en,zh}`、`description{en,zh}`、`tags[]`（≥1，供画廊搜索/筛选）、
+   `shell`∈{c_mobile,c_tablet,c_desktop,c_browser}、`source{kind,ref}`、`license`（默认 CC-BY-4.0）、
+   `ip_attestation`∈{original,licensed,public-material}+说明、`version`（SemVer）、`created_at`；
+   非原创必填 `brand_disclaimer`。双语供官网按访客语言展示，请认真写两版。
+4. **门前置**：源 run interact dead=0 / inspect 0 fail / ui-smoke 0 fail / privacy 绿；publish.mjs 强验写进 PR body；
+   CI 另跑静态冒烟（启动、pages>0、无 page error、一个非导航控件有反应）。
+5. **隐私红线**：真名/电话/证件/车牌/真人脸零容忍；聊天与示例文本虚构；上传者昵称匿名。
+6. **IP**：三选一自律；非原创必须 brand_disclaimer（publish 自动插免责声明）；禁整包官方素材。
+7. **体积**：单 app ≤80MB；图片仅 jpg/png/webp/svg；系统字体栈。
+8. **许可**：原型代码 MIT；资产按 license；仓基础设施 MIT。
+9. **PR 与发版**：分支 publish/<app>-<ts>；标题 publish(<app>): <name.en>；CI 绿后 maintainer 人工合并（禁 automerge）；
+   合并后 index.yml 重建索引（贡献者 git 聚合+补 cover+**Release 下载量**），release.yml 打 tag `<app>-<version>` 发离线 zip Release。
+10. **热度/更新/下架**：热度=该 app 各 Release zip 的 download_count 之和（静态平台唯一真实信号）；画廊卡片展示、
+    首页 Top4 排序、详情下载按钮带数量；改 prototype/** 必须 bump version（CI 红防静默覆盖）；下架 issue 模板 48h 响应。
