@@ -105,7 +105,7 @@ if (targets.length) {
         const el = document.querySelector("#dc-stage [data-act],#dc-stage [data-goto]");
         if (!el) return false;
         const before = document.body.innerHTML.length;
-        el.click();
+        el.dispatchEvent(new MouseEvent("click", { bubbles: true, cancelable: true })); // SVG 元素无 .click()
         await new Promise((r) => setTimeout(r, 600));
         return document.body.innerHTML.length !== before || !!document.querySelector("#dc-rt-toast,[role=dialog],.dc-rt-sheet");
       });
