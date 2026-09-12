@@ -1,0 +1,30 @@
+{
+ "name": {
+  "en": "AI Assistant",
+  "zh": "智能助理"
+ },
+ "description": {
+  "en": "An AI assistant: switchable persona and voice, text chat, voice dialogue, video calls and reminders — site-theme generated characters on clay-candy UI with soft idle motion.",
+  "zh": "智能助理：形象/音色可切换，文字聊天、语音对话、视频通话与日程提醒——官网主题生图形象+粘土糖果 UI+软影微动。"
+ },
+ "tags": [
+  "assistant",
+  "ai",
+  "chat",
+  "voice",
+  "mobile",
+  "original"
+ ],
+ "category": "tools",
+ "shell": "c_mobile",
+ "source": {
+  "kind": "original",
+  "ref": "demo-assistant"
+ },
+ "license": "CC-BY-4.0",
+ "ip_attestation": "original",
+ "attestation_note": "M75-W3: 智能助理 demo（形象/音色切换+聊天/通话）",
+ "version": "1.0.0",
+ "created_at": "2026-09-12T15:58:57.936Z",
+ "platform": "mobile"
+}

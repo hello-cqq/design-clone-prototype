@@ -1,0 +1,661 @@
+{
+  "meta": {
+    "generator": "design-clone collect-design",
+    "generated_at": "2026-09-12T15:56:52.557Z",
+    "source_run": "demo-assistant",
+    "schema": "figma-source/v1"
+  },
+  "variables": {},
+  "pages": [
+    {
+      "id": "01-home",
+      "name": "助理首页",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "as/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/hero",
+          "kind": "frame",
+          "rect": {
+            "x": 16,
+            "y": 52,
+            "w": 358,
+            "h": 227
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 24,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/acts",
+          "kind": "frame",
+          "rect": {
+            "x": 16,
+            "y": 293,
+            "w": 358,
+            "h": 232
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/sum",
+          "kind": "frame",
+          "rect": {
+            "x": 16,
+            "y": 539,
+            "w": 358,
+            "h": 127
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 24,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/input",
+          "kind": "frame",
+          "rect": {
+            "x": 16,
+            "y": 680,
+            "w": 358,
+            "h": 56
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 24,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/tabs",
+          "kind": "frame",
+          "rect": {
+            "x": 14,
+            "y": 768,
+            "w": 362,
+            "h": 50
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 999,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "02-chat",
+      "name": "文字聊天",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "as/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/hero",
+          "kind": "frame",
+          "rect": {
+            "x": 16,
+            "y": 52,
+            "w": 358,
+            "h": 227
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 24,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/acts",
+          "kind": "frame",
+          "rect": {
+            "x": 16,
+            "y": 293,
+            "w": 358,
+            "h": 232
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/sum",
+          "kind": "frame",
+          "rect": {
+            "x": 16,
+            "y": 539,
+            "w": 358,
+            "h": 127
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 24,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/input",
+          "kind": "frame",
+          "rect": {
+            "x": 16,
+            "y": 680,
+            "w": 358,
+            "h": 56
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 24,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/tabs",
+          "kind": "frame",
+          "rect": {
+            "x": 14,
+            "y": 768,
+            "w": 362,
+            "h": 50
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 999,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "03-call",
+      "name": "视频通话",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "as/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/hero",
+          "kind": "frame",
+          "rect": {
+            "x": 16,
+            "y": 52,
+            "w": 358,
+            "h": 227
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 24,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/acts",
+          "kind": "frame",
+          "rect": {
+            "x": 16,
+            "y": 293,
+            "w": 358,
+            "h": 232
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/sum",
+          "kind": "frame",
+          "rect": {
+            "x": 16,
+            "y": 539,
+            "w": 358,
+            "h": 127
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 24,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/input",
+          "kind": "frame",
+          "rect": {
+            "x": 16,
+            "y": 680,
+            "w": 358,
+            "h": 56
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 24,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/tabs",
+          "kind": "frame",
+          "rect": {
+            "x": 14,
+            "y": 768,
+            "w": 362,
+            "h": 50
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 999,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "04-persona",
+      "name": "形象与音色",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "as/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/hero",
+          "kind": "frame",
+          "rect": {
+            "x": 16,
+            "y": 52,
+            "w": 358,
+            "h": 227
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 24,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/acts",
+          "kind": "frame",
+          "rect": {
+            "x": 16,
+            "y": 293,
+            "w": 358,
+            "h": 232
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/sum",
+          "kind": "frame",
+          "rect": {
+            "x": 16,
+            "y": 539,
+            "w": 358,
+            "h": 127
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 24,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/input",
+          "kind": "frame",
+          "rect": {
+            "x": 16,
+            "y": 680,
+            "w": 358,
+            "h": 56
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 24,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/tabs",
+          "kind": "frame",
+          "rect": {
+            "x": 14,
+            "y": 768,
+            "w": 362,
+            "h": 50
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 999,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "05-me",
+      "name": "我的",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "as/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/hero",
+          "kind": "frame",
+          "rect": {
+            "x": 16,
+            "y": 52,
+            "w": 358,
+            "h": 227
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 24,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/acts",
+          "kind": "frame",
+          "rect": {
+            "x": 16,
+            "y": 293,
+            "w": 358,
+            "h": 232
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/sum",
+          "kind": "frame",
+          "rect": {
+            "x": 16,
+            "y": 539,
+            "w": 358,
+            "h": 127
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 24,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/input",
+          "kind": "frame",
+          "rect": {
+            "x": 16,
+            "y": 680,
+            "w": 358,
+            "h": 56
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 24,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/tabs",
+          "kind": "frame",
+          "rect": {
+            "x": 14,
+            "y": 768,
+            "w": 362,
+            "h": 50
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 999,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    }
+  ]
+}

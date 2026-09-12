@@ -1,0 +1,48 @@
+<style>
+  .as-root{font-family:ui-rounded,-apple-system,"PingFang SC","Segoe UI",sans-serif;color:#4a3b2e;background:
+    radial-gradient(120% 60% at 50% -10%, #fff6e9 0%, #f3eefc 60%, #ece4f8 100%);min-height:100%;position:relative;padding:52px 16px 108px;box-sizing:border-box}
+  .as-clay{background:#fffdf8;border-radius:24px;box-shadow:0 12px 24px rgba(74,59,46,.14), inset 0 2px 0 rgba(255,255,255,.85), inset 0 -4px 0 rgba(74,59,46,.10);border:1px solid rgba(74,59,46,.08);position:relative}
+  .as-h{font-size:18px;font-weight:600;margin:0 2px 12px}
+  .as-personas{display:flex;gap:12px;margin-bottom:16px}
+  .as-persona{flex:1;padding:14px 10px;text-align:center;cursor:pointer;transition:transform .18s cubic-bezier(.34,1.56,.64,1)}
+  .as-persona:active{transform:scale(.96)}
+  .as-persona img{width:76px;height:76px;border-radius:50%;object-fit:cover;border:3px solid #fff6e9;box-shadow:0 8px 16px rgba(74,59,46,.2)}
+  .as-persona .nm{font-size:13px;font-weight:600;margin-top:8px}
+  .as-persona .bd{font-size:10px;color:#8a7660;margin-top:2px}
+  .as-persona.on{box-shadow:0 12px 24px rgba(74,59,46,.14), inset 0 0 0 2px #7edcc3, inset 0 2px 0 rgba(255,255,255,.85)}
+  .as-persona.on .nm::after{content:" ✓";color:#3fae83}
+  .as-sec{font-size:13px;font-weight:600;margin:0 2px 8px}
+  .as-voices{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+  .as-voice{border-radius:999px;padding:9px 14px;font-size:12px;font-weight:500;cursor:pointer;background:rgba(201,182,242,.18);color:#6b5b8b;box-shadow:inset 0 0 0 1px rgba(255,255,255,.6);display:flex;gap:6px;align-items:center;transition:all .2s cubic-bezier(.34,1.56,.64,1)}
+  .as-voice svg{opacity:.7}
+  .as-voice.on{background:linear-gradient(140deg,#d9c8f7,#b79ded);color:#fff;font-weight:600;box-shadow:0 6px 12px rgba(183,157,237,.4), inset 0 2px 0 rgba(255,255,255,.4)}
+  .as-voice.on svg{opacity:1}
+  .as-row{display:flex;align-items:center;gap:10px;padding:13px 16px;margin-bottom:10px;cursor:pointer}
+  .as-row .lb{font-size:13px;font-weight:500}
+  .as-row .mt{margin-left:auto;font-size:11px;color:#8a7660;display:flex;align-items:center;gap:6px}
+  .as-sw{display:inline-block;vertical-align:middle;width:40px;height:24px;border-radius:999px;background:rgba(126,220,195,.3);position:relative;box-shadow:inset 0 0 0 1px rgba(255,255,255,.6)}
+  .as-sw::after{content:"";position:absolute;top:2px;left:2px;width:20px;height:20px;border-radius:50%;background:#fffdf8;box-shadow:0 2px 4px rgba(74,59,46,.25);transition:left .25s cubic-bezier(.34,1.56,.64,1)}
+  .as-sw.on{background:linear-gradient(140deg,#8fe0cb,#5cc9ab)}
+  .as-sw.on::after{left:18px}
+  .as-prev{width:100%;border:none;border-radius:999px;padding:13px 0;font-size:13px;font-weight:600;color:#fff;background:linear-gradient(140deg,#d9c8f7,#b79ded);box-shadow:0 4px 0 rgba(74,59,46,.12), 0 10px 20px rgba(183,157,237,.4), inset 0 2px 0 rgba(255,255,255,.4);cursor:pointer;font-family:inherit}
+  .as-tabs{position:absolute;left:14px;right:14px;bottom:26px;background:#fffdf8;border-radius:999px;display:flex;justify-content:space-around;padding:10px 6px;box-shadow:0 4px 0 rgba(74,59,46,.10), 0 12px 24px rgba(74,59,46,.16), inset 0 2px 0 rgba(255,255,255,.9);z-index:8}
+  .as-tabs span{font-size:12px;color:#a08d76;cursor:pointer;padding:6px 12px;border-radius:999px}
+  .as-tabs span.on{background:linear-gradient(140deg,#ffd9c2,#ffc9a8);color:#c05e2a;font-weight:600;box-shadow:inset 0 2px 0 rgba(255,255,255,.7)}
+</style><div data-dc="as/root" class="as-root">
+  <div class="as-h">形象与音色</div>
+  <div class="as-personas" data-dc="as/personas">
+    <div class="as-persona as-clay on" data-act="radio" data-group="persona"><img src="assets/assistant-girl.png" alt=""><div class="nm">小昼</div><div class="bd">昼 · 海空</div></div>
+    <div class="as-persona as-clay" data-act="radio" data-group="persona"><img src="assets/assistant-boy.png" alt=""><div class="nm">小夜</div><div class="bd">夜 · 星月</div></div>
+  </div>
+  <div class="as-sec">音色</div>
+  <div class="as-voices" data-dc="as/voices">
+    <span class="as-voice on" data-act="radio" data-group="voice"><svg width="12" height="12" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2"><path d="M4 10v4M8 7v10M12 4v16M16 7v10M20 10v4"/></svg>清亮</span>
+    <span class="as-voice" data-act="radio" data-group="voice"><svg width="12" height="12" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2"><path d="M4 11v2M8 9v6M12 6v12M16 9v6M20 11v2"/></svg>温柔</span>
+    <span class="as-voice" data-act="radio" data-group="voice"><svg width="12" height="12" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2"><path d="M4 12h2M8 10v4M12 8v8M16 10v4M20 12h2"/></svg>沉稳</span>
+    <span class="as-voice" data-act="radio" data-group="voice"><svg width="12" height="12" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2"><path d="M4 9v6M8 5v14M12 9v6M16 5v14M20 9v6"/></svg>活泼</span>
+  </div>
+  <div class="as-row as-clay" data-dc="as/speed" data-act="slider" data-target="[data-dc='as/speedval']"><span class="lb">语速</span><span class="mt"><b data-dc="as/speedval">1.0×</b></span></div>
+  <div class="as-row as-clay" style="cursor:default"><span class="lb">开场问候</span><span class="mt"><span class="as-sw on" data-act="toggle"></span></span></div>
+  <div style="padding:0 2px"><button class="as-prev" data-act="toast" data-msg="用当前音色朗读：你好，我是小昼（演示）">预览音色</button></div>
+  <div class="as-tabs" data-dc="as/tabs"><span data-goto="01-home">首页</span><span data-act="goto" data-goto="02-chat">聊天</span><span data-goto="03-call">通话</span><span class="on" data-goto="04-persona">形象</span><span data-goto="05-me">我的</span></div>
+</div>
