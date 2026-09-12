@@ -26,7 +26,7 @@
     "spec_version": 1,
     "change_log": [
       {
-        "at": "2026-09-11T11:42:06.035Z",
+        "at": "2026-09-11T13:26:46.723Z",
         "by": "clone",
         "note": "collect-design 初始/重采集（computed 真值）"
       }
@@ -36,215 +36,98 @@
     {
       "id": "r_pp_head",
       "type": "custom",
-      "label": "乐园地图定位 · 1 号门",
+      "label": "宠物乐园晴 26° · 优",
       "components": [
         {
           "kind": "button",
-          "label": "定位 · 1 号门",
+          "label": "晴 26° · 优",
           "interaction": {
             "act": "toast",
-            "msg": "已定位：云朵宠物乐园 · 1 号门（演示）"
+            "msg": "今日晴朗 26° · 适宜出游（演示）"
           },
-          "sample_value": "定位 · 1 号门"
+          "sample_value": "晴 26° · 优"
         }
       ]
     },
     {
-      "id": "r_pp_map",
+      "id": "r_pp_hero",
+      "type": "banner",
+      "label": "营业中 · 09-21 点\n    乐园地图",
+      "components": [
+        {
+          "kind": "image",
+          "label": "",
+          "interaction": {
+            "act": "toast",
+            "msg": "旺财：汪！今天去草坪区玩（演示）"
+          }
+        },
+        {
+          "kind": "button",
+          "label": "营业中 · 09-21 点",
+          "interaction": {
+            "act": "toast",
+            "msg": "园区营业中 09:00-21:00（演示）"
+          },
+          "sample_value": "营业中 · 09-21 点"
+        },
+        {
+          "kind": "button",
+          "label": "乐园地图",
+          "interaction": {
+            "act": "goto",
+            "to": "03-map"
+          },
+          "sample_value": "乐园地图"
+        }
+      ]
+    },
+    {
+      "id": "r_pp_acts",
       "type": "custom",
-      "label": "草坪区\n    戏水区\n    猫爬架区\n    咖啡区",
+      "label": "预约今日余 12 位\n    遛伴附近 8 只\n    打卡连打 3 天",
       "components": [
         {
-          "kind": "button",
-          "label": "草坪区",
+          "kind": "sheet",
+          "label": "预约今日余 12 位",
           "interaction": {
-            "act": "toast",
-            "msg": "草坪区：开放中 · 当前 12 只（演示）"
+            "act": "sheet"
           },
-          "sample_value": "草坪区"
+          "sample_value": "预约今日余 12 位"
         },
         {
           "kind": "button",
-          "label": "戏水区",
+          "label": "遛伴附近 8 只",
           "interaction": {
             "act": "toast",
-            "msg": "戏水区：水温 28° · 需穿救生衣（演示）"
+            "msg": "已为你匹配遛伴：豆豆（柯基 · 2 岁）（演示）"
           },
-          "sample_value": "戏水区"
+          "sample_value": "遛伴附近 8 只"
         },
         {
           "kind": "button",
-          "label": "猫爬架区",
+          "label": "打卡连打 3 天",
           "interaction": {
             "act": "toast",
-            "msg": "猫爬架区：限猫咪 · 3 层攀爬（演示）"
+            "msg": "打卡成功：草坪区 +5 积分（演示）"
           },
-          "sample_value": "猫爬架区"
-        },
-        {
-          "kind": "button",
-          "label": "咖啡区",
-          "interaction": {
-            "act": "toast",
-            "msg": "宠物咖啡区：人宠共餐 · 有低敏菜单（演示）"
-          },
-          "sample_value": "咖啡区"
+          "sample_value": "打卡连打 3 天"
         }
       ]
     },
     {
-      "id": "r_pp_sheet",
-      "type": "modal",
-      "label": "预约入园\n    草坪区戏水区猫爬架区咖啡区\n    今天 14:00今天 16",
-      "components": [
-        {
-          "kind": "radio",
-          "label": "草坪区",
-          "interaction": {
-            "act": "radio",
-            "group": "zone"
-          },
-          "sample_value": "草坪区"
-        },
-        {
-          "kind": "radio",
-          "label": "戏水区",
-          "interaction": {
-            "act": "radio",
-            "group": "zone"
-          },
-          "sample_value": "戏水区"
-        },
-        {
-          "kind": "radio",
-          "label": "猫爬架区",
-          "interaction": {
-            "act": "radio",
-            "group": "zone"
-          },
-          "sample_value": "猫爬架区"
-        },
-        {
-          "kind": "radio",
-          "label": "咖啡区",
-          "interaction": {
-            "act": "radio",
-            "group": "zone"
-          },
-          "sample_value": "咖啡区"
-        },
-        {
-          "kind": "radio",
-          "label": "今天 14:00",
-          "interaction": {
-            "act": "radio",
-            "group": "slot"
-          },
-          "sample_value": "今天 14:00"
-        },
-        {
-          "kind": "radio",
-          "label": "今天 16:00",
-          "interaction": {
-            "act": "radio",
-            "group": "slot"
-          },
-          "sample_value": "今天 16:00"
-        },
-        {
-          "kind": "radio",
-          "label": "明天 10:00",
-          "interaction": {
-            "act": "radio",
-            "group": "slot"
-          },
-          "sample_value": "明天 10:00"
-        },
-        {
-          "kind": "button",
-          "label": "确认预约",
-          "interaction": {
-            "act": "toast",
-            "msg": "预约成功：草坪区 今天 14:00（演示）"
-          },
-          "sample_value": "确认预约"
-        }
-      ]
-    },
-    {
-      "id": "r_pp_zones",
+      "id": "r_pp_pass",
       "type": "custom",
-      "label": "草坪区戏水区猫爬架区咖啡区",
-      "components": [
-        {
-          "kind": "radio",
-          "label": "草坪区",
-          "interaction": {
-            "act": "radio",
-            "group": "zone"
-          },
-          "sample_value": "草坪区"
-        },
-        {
-          "kind": "radio",
-          "label": "戏水区",
-          "interaction": {
-            "act": "radio",
-            "group": "zone"
-          },
-          "sample_value": "戏水区"
-        },
-        {
-          "kind": "radio",
-          "label": "猫爬架区",
-          "interaction": {
-            "act": "radio",
-            "group": "zone"
-          },
-          "sample_value": "猫爬架区"
-        },
-        {
-          "kind": "radio",
-          "label": "咖啡区",
-          "interaction": {
-            "act": "radio",
-            "group": "zone"
-          },
-          "sample_value": "咖啡区"
-        }
-      ]
+      "label": "今日入园通行证旺财 · 柯基 | 草坪区 + 戏水区"
     },
     {
-      "id": "r_pp_slots",
-      "type": "custom",
-      "label": "今天 14:00今天 16:00明天 10:00",
+      "id": "r_pp_feed",
+      "type": "list",
+      "label": "团子的乐园日记今天在猫爬架区征服了最高层…去围观",
       "components": [
         {
-          "kind": "radio",
-          "label": "今天 14:00",
-          "interaction": {
-            "act": "radio",
-            "group": "slot"
-          },
-          "sample_value": "今天 14:00"
-        },
-        {
-          "kind": "radio",
-          "label": "今天 16:00",
-          "interaction": {
-            "act": "radio",
-            "group": "slot"
-          },
-          "sample_value": "今天 16:00"
-        },
-        {
-          "kind": "radio",
-          "label": "明天 10:00",
-          "interaction": {
-            "act": "radio",
-            "group": "slot"
-          },
-          "sample_value": "明天 10:00"
+          "kind": "image",
+          "label": ""
         }
       ]
     },
