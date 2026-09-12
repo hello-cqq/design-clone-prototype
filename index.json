@@ -1,6 +1,6 @@
 {
  "version": 3,
- "updated_at": "2026-09-12T15:28:06.960Z",
+ "updated_at": "2026-09-12T16:01:04.532Z",
  "apps": [
   {
    "app": "dy-note",
@@ -442,6 +442,72 @@
    ],
    "commits": 12,
    "updated": "2026-09-12T23:27:34+08:00"
+  },
+  {
+   "app": "ai-assistant",
+   "name": {
+    "en": "AI Assistant",
+    "zh": "智能助理"
+   },
+   "description": {
+    "en": "An AI assistant: switchable persona and voice, text chat, voice dialogue, video calls and reminders — site-theme generated characters on clay-candy UI with soft idle motion.",
+    "zh": "智能助理：形象/音色可切换，文字聊天、语音对话、视频通话与日程提醒——官网主题生图形象+粘土糖果 UI+软影微动。"
+   },
+   "tags": [
+    "assistant",
+    "ai",
+    "chat",
+    "voice",
+    "mobile",
+    "original"
+   ],
+   "category": "tools",
+   "shell": "c_mobile",
+   "version": "1.0.0",
+   "license": "CC-BY-4.0",
+   "source": {
+    "kind": "original",
+    "ref": "demo-assistant"
+   },
+   "ip_attestation": "original",
+   "brand_disclaimer": null,
+   "icon": "ai-assistant/prototype/appicon/icon-256.png",
+   "cover": "ai-assistant/cover.png",
+   "url": "https://hello-cqq.github.io/design-clone-prototype/ai-assistant/prototype/",
+   "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/ai-assistant",
+   "pages": [
+    {
+     "id": "01-home",
+     "name": "助理首页"
+    },
+    {
+     "id": "02-chat",
+     "name": "文字聊天"
+    },
+    {
+     "id": "03-call",
+     "name": "视频通话"
+    },
+    {
+     "id": "04-persona",
+     "name": "形象与音色"
+    },
+    {
+     "id": "05-me",
+     "name": "我的"
+    }
+   ],
+   "downloads": 0,
+   "creator": "hello-cqq",
+   "contributors": [
+    {
+     "name": "AhahahQ",
+     "login": "AhahahQ",
+     "commits": 1
+    }
+   ],
+   "commits": 1,
+   "updated": "2026-09-13T00:00:33+08:00"
   }
  ]
 }
