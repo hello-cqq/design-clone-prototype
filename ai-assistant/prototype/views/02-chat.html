@@ -1,0 +1,44 @@
+<style>
+  .as-root{font-family:ui-rounded,-apple-system,"PingFang SC","Segoe UI",sans-serif;color:#4a3b2e;background:
+    radial-gradient(120% 60% at 50% -10%, #fff6e9 0%, #ffeeda 60%, #ffe4cc 100%);min-height:100%;position:relative;padding:52px 14px 108px;box-sizing:border-box}
+  .as-top{display:flex;gap:10px;align-items:center;margin:0 2px 12px}
+  .as-top img{width:38px;height:38px;border-radius:50%;object-fit:cover;border:3px solid #fffdf8;box-shadow:0 4px 10px rgba(74,59,46,.2)}
+  .as-top .nm{font-size:15px;font-weight:600}
+  .as-top .sub{font-size:10px;color:#8a7660}
+  .as-top .voice{margin-left:auto;font-size:11px;color:#8a63d2;background:rgba(201,182,242,.2);border-radius:999px;padding:6px 12px;cursor:pointer;box-shadow:inset 0 0 0 1px rgba(255,255,255,.6)}
+  .as-flow{display:flex;flex-direction:column;gap:10px}
+  .as-msg{max-width:78%;padding:10px 14px;border-radius:18px;font-size:13px;line-height:1.7;position:relative;box-shadow:0 6px 14px rgba(74,59,46,.10), inset 0 2px 0 rgba(255,255,255,.6)}
+  .as-msg.ai{align-self:flex-start;background:#f3eefc;color:#4a3b2e;border-bottom-left-radius:6px}
+  .as-msg.me{align-self:flex-end;background:linear-gradient(140deg,#d9f5ea,#bfeadb);border-bottom-right-radius:6px}
+  .as-msg .tm{display:block;font-size:9px;color:#a08d76;margin-top:4px}
+  .as-typing{align-self:flex-start;display:flex;gap:5px;padding:12px 16px;background:#f3eefc;border-radius:18px;border-bottom-left-radius:6px}
+  .as-typing i{width:7px;height:7px;border-radius:50%;background:#b79ded;animation:blink 1.2s infinite}
+  .as-typing i:nth-child(2){animation-delay:.2s}.as-typing i:nth-child(3){animation-delay:.4s}
+  @keyframes blink{0%,100%{opacity:.3;transform:translateY(0)}50%{opacity:1;transform:translateY(-2px)}}
+  .as-input{position:absolute;left:14px;right:14px;bottom:84px;display:flex;gap:8px;align-items:center;padding:8px 8px 8px 16px;background:#fffdf8;border-radius:999px;box-shadow:0 4px 0 rgba(74,59,46,.10), 0 12px 24px rgba(74,59,46,.16), inset 0 2px 0 rgba(255,255,255,.9)}
+  .as-input .ph{flex:1;font-size:12px;color:#a08d76}
+  .as-input .send{width:38px;height:38px;border-radius:50%;background:linear-gradient(140deg,#8fe0cb,#5cc9ab);display:grid;place-items:center;cursor:pointer;box-shadow:0 6px 12px rgba(127,219,196,.4), inset 0 2px 0 rgba(255,255,255,.5)}
+  .as-tabs{position:absolute;left:14px;right:14px;bottom:26px;background:#fffdf8;border-radius:999px;display:flex;justify-content:space-around;padding:10px 6px;box-shadow:0 4px 0 rgba(74,59,46,.10), 0 12px 24px rgba(74,59,46,.16), inset 0 2px 0 rgba(255,255,255,.9);z-index:8}
+  .as-tabs span{font-size:12px;color:#a08d76;cursor:pointer;padding:6px 12px;border-radius:999px}
+  .as-tabs span.on{background:linear-gradient(140deg,#ffd9c2,#ffc9a8);color:#c05e2a;font-weight:600;box-shadow:inset 0 2px 0 rgba(255,255,255,.7)}
+  @media (prefers-reduced-motion: reduce){.as-typing i{animation:none}}
+</style><div data-dc="as/root" class="as-root">
+  <div class="as-top" data-dc="as/top">
+    <img src="assets/assistant-girl.png" alt="">
+    <div><div class="nm">小昼</div><div class="sub">正在输入…</div></div>
+    <span class="voice" data-goto="04-persona">温柔音色</span>
+  </div>
+  <div class="as-flow" data-dc="as/flow">
+    <div class="as-msg ai">早上好！今天 14:00 的产品评审我已备好纪要模板，需要现在过一遍议程吗？<span class="tm">09:12</span></div>
+    <div class="as-msg me">好，先把议程发我，再帮我约 30 分钟预演。<span class="tm">09:14</span></div>
+    <div class="as-msg ai">已发送议程并创建 13:00-13:30 预演邀请，参会人：设计组 4 人。<span class="tm">09:14</span></div>
+    <div class="as-msg me">图标选型给我三个方向？<span class="tm">09:20</span></div>
+    <div class="as-msg ai">三个方向：粘土糖果、扁平几何、线描手绘。首推粘土糖果——与官网主题同源。<span class="tm">09:21</span></div>
+    <div class="as-typing" data-act="toast" data-msg="小昼正在输入（演示）"><i></i><i></i><i></i></div>
+  </div>
+  <div class="as-input" data-dc="as/input">
+    <span class="ph">继续对话…</span>
+    <span class="send" data-act="toast" data-msg="小昼：收到！（演示）"><svg width="16" height="16" viewBox="0 0 24 24" style="fill:none;stroke:#fff;stroke-width:2.4;stroke-linecap:round"><path d="M4 12 20 4l-6 16-3-7z"/></svg></span>
+  </div>
+  <div class="as-tabs" data-dc="as/tabs"><span data-goto="01-home">首页</span><span class="on" data-goto="02-chat">聊天</span><span data-goto="03-call">通话</span><span data-goto="04-persona">形象</span><span data-goto="05-me">我的</span></div>
+</div>

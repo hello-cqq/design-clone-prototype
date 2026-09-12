@@ -1,0 +1,45 @@
+<style>
+  .as-root{font-family:ui-rounded,-apple-system,"PingFang SC","Segoe UI",sans-serif;color:#4a3b2e;background:
+    radial-gradient(120% 60% at 50% -10%, #fff6e9 0%, #ffeeda 55%, #ffe4cc 100%);min-height:100%;position:relative;padding:52px 16px 108px;box-sizing:border-box}
+  .as-clay{background:#fffdf8;border-radius:24px;box-shadow:0 12px 24px rgba(74,59,46,.14), inset 0 2px 0 rgba(255,255,255,.85), inset 0 -4px 0 rgba(74,59,46,.10);border:1px solid rgba(74,59,46,.08);position:relative}
+  .as-me{display:flex;gap:12px;align-items:center;margin:0 2px 14px}
+  .as-me img{width:58px;height:58px;border-radius:21px;object-fit:cover;border:3px solid #fffdf8;box-shadow:0 6px 12px rgba(74,59,46,.22);cursor:pointer}
+  .as-me .nm{font-size:17px;font-weight:600}
+  .as-me .bd{font-size:11px;color:#8a7660;margin-top:3px}
+  .as-me .vip{margin-left:auto;font-size:11px;color:#8a63d2;background:rgba(201,182,242,.22);border-radius:999px;padding:6px 12px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.6)}
+  .as-stats{display:flex;justify-content:space-around;padding:16px 10px;margin-bottom:14px;text-align:center}
+  .as-stats b{display:block;font-size:19px;font-weight:600;font-variant-numeric:tabular-nums}
+  .as-stats span{font-size:10px;color:#8a7660}
+  .as-row{display:flex;align-items:center;gap:10px;padding:13px 16px;cursor:pointer;transition:transform .18s cubic-bezier(.34,1.56,.64,1)}
+  .as-row:active{transform:scale(.98)}
+  .as-row + .as-row{border-top:1px dashed #eadbc4}
+  .as-rows{padding:6px 0;margin-bottom:14px}
+  .as-row .ic{width:32px;height:32px;border-radius:12px;display:grid;place-items:center;flex:none;box-shadow:inset 0 2px 0 rgba(255,255,255,.7), 0 4px 8px rgba(74,59,46,.12)}
+  .as-row .lb{font-size:13px;font-weight:500}
+  .as-row .mt{margin-left:auto;font-size:11px;color:#8a7660;display:flex;align-items:center;gap:6px}
+  .as-sw{display:inline-block;vertical-align:middle;width:40px;height:24px;border-radius:999px;background:rgba(126,220,195,.3);position:relative;box-shadow:inset 0 0 0 1px rgba(255,255,255,.6)}
+  .as-sw::after{content:"";position:absolute;top:2px;left:2px;width:20px;height:20px;border-radius:50%;background:#fffdf8;box-shadow:0 2px 4px rgba(74,59,46,.25);transition:left .25s cubic-bezier(.34,1.56,.64,1)}
+  .as-sw.on{background:linear-gradient(140deg,#8fe0cb,#5cc9ab)}
+  .as-sw.on::after{left:18px}
+  .as-tabs{position:absolute;left:14px;right:14px;bottom:26px;background:#fffdf8;border-radius:999px;display:flex;justify-content:space-around;padding:10px 6px;box-shadow:0 4px 0 rgba(74,59,46,.10), 0 12px 24px rgba(74,59,46,.16), inset 0 2px 0 rgba(255,255,255,.9);z-index:8}
+  .as-tabs span{font-size:12px;color:#a08d76;cursor:pointer;padding:6px 12px;border-radius:999px}
+  .as-tabs span.on{background:linear-gradient(140deg,#ffd9c2,#ffc9a8);color:#c05e2a;font-weight:600;box-shadow:inset 0 2px 0 rgba(255,255,255,.7)}
+</style><div data-dc="as/root" class="as-root">
+  <div class="as-me" data-dc="as/me">
+    <img src="assets/assistant-girl.png" alt="" data-act="toast" data-msg="头像：小昼（演示）">
+    <div><div class="nm">鹿非与小昼</div><div class="bd">相伴 218 天 · 对话 1,286 次</div></div>
+    <span class="vip">PRO</span>
+  </div>
+  <div class="as-stats as-clay" data-dc="as/stats">
+    <div><b>1286</b><span>对话</span></div>
+    <div><b>96</b><span>通话</span></div>
+    <div><b>342</b><span>提醒</span></div>
+  </div>
+  <div class="as-rows as-clay" data-dc="as/rows">
+    <div class="as-row" data-act="toggle" data-target="[data-dc='as/sw1']"><span class="ic" style="background:#d9f5ea"><svg width="15" height="15" viewBox="0 0 24 24" style="fill:none;stroke:#3fae83;stroke-width:2.2;stroke-linecap:round"><path d="M21 12a8 8 0 0 1-8 8H5l-2 2V12a8 8 0 0 1 8-8h2a8 8 0 0 1 8 8z"/></svg></span><span class="lb">开场问候</span><span class="mt"><span class="as-sw on" data-dc="as/sw1"></span></span></div>
+    <div class="as-row" data-act="toggle" data-target="[data-dc='as/sw2']"><span class="ic" style="background:#e3f0fa"><svg width="15" height="15" viewBox="0 0 24 24" style="fill:none;stroke:#4aa3e8;stroke-width:2.2;stroke-linecap:round"><rect x="3" y="6" width="13" height="12" rx="3"/><path d="m16 10 5-3v10l-5-3"/></svg></span><span class="lb">通话自动接听</span><span class="mt"><span class="as-sw" data-dc="as/sw2"></span></span></div>
+    <div class="as-row" data-act="toggle" data-target="[data-dc='as/sw3']"><span class="ic" style="background:#efe7fb"><svg width="15" height="15" viewBox="0 0 24 24" style="fill:none;stroke:#8a63d2;stroke-width:2.2;stroke-linecap:round"><rect x="4" y="10" width="16" height="10" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></span><span class="lb">数据本地化</span><span class="mt"><span class="as-sw on" data-dc="as/sw3"></span></span></div>
+    <div class="as-row" data-act="toast" data-msg="帮助与客服：09:00-21:00 在线（演示）"><span class="ic" style="background:#ffe9dc"><svg width="15" height="15" viewBox="0 0 24 24" style="fill:none;stroke:#e07b39;stroke-width:2.2;stroke-linecap:round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 1.7-2.5 2-2.5 4"/><circle cx="12" cy="17" r=".7" fill="#e07b39"/></svg></span><span class="lb">帮助与客服</span><span class="mt">在线</span></div>
+  </div>
+  <div class="as-tabs" data-dc="as/tabs"><span data-goto="01-home">首页</span><span data-goto="02-chat">聊天</span><span data-goto="03-call">通话</span><span data-goto="04-persona">形象</span><span class="on" data-goto="05-me">我的</span></div>
+</div>
