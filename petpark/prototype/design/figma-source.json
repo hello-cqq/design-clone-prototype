@@ -1,7 +1,7 @@
 {
   "meta": {
     "generator": "design-clone collect-design",
-    "generated_at": "2026-09-11T11:42:06.035Z",
+    "generated_at": "2026-09-11T13:26:46.723Z",
     "source_run": "demo-petpark",
     "schema": "figma-source/v1"
   },
@@ -360,66 +360,6 @@
             "x": 18,
             "y": 50,
             "w": 354,
-            "h": 29
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(74, 59, 46)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/map",
-          "kind": "frame",
-          "rect": {
-            "x": 0,
-            "y": 87,
-            "w": 390,
-            "h": 300
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(74, 59, 46)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/sheet",
-          "kind": "frame",
-          "rect": {
-            "x": 0,
-            "y": 456,
-            "w": 390,
-            "h": 388
-          },
-          "fill": "rgb(255, 253, 248)",
-          "color": "rgb(74, 59, 46)",
-          "cornerRadius": 26,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/zones",
-          "kind": "frame",
-          "rect": {
-            "x": 18,
-            "y": 519,
-            "w": 354,
             "h": 36
           },
           "fill": "rgba(0, 0, 0, 0)",
@@ -434,17 +374,77 @@
           "text": ""
         },
         {
-          "dc": "pp/slots",
+          "dc": "pp/hero",
           "kind": "frame",
           "rect": {
-            "x": 18,
-            "y": 567,
-            "w": 354,
-            "h": 40
+            "x": 16,
+            "y": 98,
+            "w": 358,
+            "h": 208
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 24,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/acts",
+          "kind": "frame",
+          "rect": {
+            "x": 16,
+            "y": 320,
+            "w": 358,
+            "h": 107
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(74, 59, 46)",
           "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/pass",
+          "kind": "button",
+          "rect": {
+            "x": 16,
+            "y": 441,
+            "w": 358,
+            "h": 86
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 24,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/feed",
+          "kind": "button",
+          "rect": {
+            "x": 16,
+            "y": 541,
+            "w": 358,
+            "h": 68
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 24,
           "font": {
             "family": "ui-rounded",
             "size": 16,
@@ -510,66 +510,6 @@
             "x": 18,
             "y": 50,
             "w": 354,
-            "h": 29
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(74, 59, 46)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/map",
-          "kind": "frame",
-          "rect": {
-            "x": 0,
-            "y": 87,
-            "w": 390,
-            "h": 300
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(74, 59, 46)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/sheet",
-          "kind": "frame",
-          "rect": {
-            "x": 0,
-            "y": 456,
-            "w": 390,
-            "h": 388
-          },
-          "fill": "rgb(255, 253, 248)",
-          "color": "rgb(74, 59, 46)",
-          "cornerRadius": 26,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/zones",
-          "kind": "frame",
-          "rect": {
-            "x": 18,
-            "y": 519,
-            "w": 354,
             "h": 36
           },
           "fill": "rgba(0, 0, 0, 0)",
@@ -584,17 +524,77 @@
           "text": ""
         },
         {
-          "dc": "pp/slots",
+          "dc": "pp/hero",
           "kind": "frame",
           "rect": {
-            "x": 18,
-            "y": 567,
-            "w": 354,
-            "h": 40
+            "x": 16,
+            "y": 98,
+            "w": 358,
+            "h": 208
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 24,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/acts",
+          "kind": "frame",
+          "rect": {
+            "x": 16,
+            "y": 320,
+            "w": 358,
+            "h": 107
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(74, 59, 46)",
           "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/pass",
+          "kind": "button",
+          "rect": {
+            "x": 16,
+            "y": 441,
+            "w": 358,
+            "h": 86
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 24,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/feed",
+          "kind": "button",
+          "rect": {
+            "x": 16,
+            "y": 541,
+            "w": 358,
+            "h": 68
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 24,
           "font": {
             "family": "ui-rounded",
             "size": 16,
@@ -660,66 +660,6 @@
             "x": 18,
             "y": 50,
             "w": 354,
-            "h": 29
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(74, 59, 46)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/map",
-          "kind": "frame",
-          "rect": {
-            "x": 0,
-            "y": 87,
-            "w": 390,
-            "h": 300
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(74, 59, 46)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/sheet",
-          "kind": "frame",
-          "rect": {
-            "x": 0,
-            "y": 456,
-            "w": 390,
-            "h": 388
-          },
-          "fill": "rgb(255, 253, 248)",
-          "color": "rgb(74, 59, 46)",
-          "cornerRadius": 26,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/zones",
-          "kind": "frame",
-          "rect": {
-            "x": 18,
-            "y": 519,
-            "w": 354,
             "h": 36
           },
           "fill": "rgba(0, 0, 0, 0)",
@@ -734,17 +674,77 @@
           "text": ""
         },
         {
-          "dc": "pp/slots",
+          "dc": "pp/hero",
           "kind": "frame",
           "rect": {
-            "x": 18,
-            "y": 567,
-            "w": 354,
-            "h": 40
+            "x": 16,
+            "y": 98,
+            "w": 358,
+            "h": 208
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 24,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/acts",
+          "kind": "frame",
+          "rect": {
+            "x": 16,
+            "y": 320,
+            "w": 358,
+            "h": 107
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(74, 59, 46)",
           "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/pass",
+          "kind": "button",
+          "rect": {
+            "x": 16,
+            "y": 441,
+            "w": 358,
+            "h": 86
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 24,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/feed",
+          "kind": "button",
+          "rect": {
+            "x": 16,
+            "y": 541,
+            "w": 358,
+            "h": 68
+          },
+          "fill": "rgb(255, 253, 248)",
+          "color": "rgb(74, 59, 46)",
+          "cornerRadius": 24,
           "font": {
             "family": "ui-rounded",
             "size": 16,

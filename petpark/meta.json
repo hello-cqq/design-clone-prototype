@@ -1,7 +1,7 @@
 {
  "name": {
-  "en": "PetPark · 3D plush pet park",
-  "zh": "宠物乐园 · 3D 萌宠公园"
+  "en": "PetPark",
+  "zh": "宠物乐园"
  },
  "description": {
   "en": "A 3D plush-cute pet park: booking, walk-buddy, check-ins, pet profiles with tri-ring stats, a four-zone park map with reservations, community feed and membership — pixar-fluffy renders on clay-candy materials with soft idle motion.",
@@ -23,8 +23,8 @@
  },
  "license": "CC-BY-4.0",
  "ip_attestation": "original",
- "attestation_note": "M62-E: 3D plush-cute rebuild per docs/petpark-design-brief.md; new 3:2 cover + gallery trio.",
- "version": "2.0.0",
- "created_at": "2026-09-11T11:51:41.750Z",
+ "attestation_note": "M75-W4: official short name + auto-fit cover",
+ "version": "2.1.0",
+ "created_at": "2026-09-12T15:20:24.382Z",
  "platform": "mobile"
 }
