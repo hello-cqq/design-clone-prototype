@@ -1,6 +1,6 @@
 {
  "version": 3,
- "updated_at": "2026-09-12T16:01:04.532Z",
+ "updated_at": "2026-09-12T16:41:18.550Z",
  "apps": [
   {
    "app": "dy-note",
@@ -463,7 +463,7 @@
    ],
    "category": "tools",
    "shell": "c_mobile",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -503,11 +503,11 @@
     {
      "name": "AhahahQ",
      "login": "AhahahQ",
-     "commits": 1
+     "commits": 2
     }
    ],
-   "commits": 1,
-   "updated": "2026-09-13T00:00:33+08:00"
+   "commits": 2,
+   "updated": "2026-09-13T00:40:48+08:00"
   }
  ]
 }
