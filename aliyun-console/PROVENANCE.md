@@ -1,4 +1,4 @@
-# Aliyun Console · web (study replica) (aliyun-console/undefined)
+# Aliyun (aliyun-console/undefined)
 
 > Unofficial study replica generated with design-clone. All trademarks and brand assets belong to their respective owners; no affiliation or endorsement implied.
 
@@ -7,4 +7,4 @@
 - gates: interact dead=undefined | inspect fail=undefined pass=undefined | ui-smoke fail=undefined pass=undefined
 
 ## Changes
-- v1.2.0: initial publish
+- v1.3.0: initial publish
