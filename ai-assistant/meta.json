@@ -23,8 +23,8 @@
  },
  "license": "CC-BY-4.0",
  "ip_attestation": "original",
- "attestation_note": "M75-W3: 智能助理 demo（形象/音色切换+聊天/通话）",
- "version": "1.0.0",
- "created_at": "2026-09-12T15:58:57.936Z",
+ "attestation_note": "M75-W7: products.json 三要素补齐",
+ "version": "1.1.0",
+ "created_at": "2026-09-12T16:38:32.476Z",
  "platform": "mobile"
 }
