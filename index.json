@@ -1,6 +1,6 @@
 {
  "version": 3,
- "updated_at": "2026-09-12T05:46:00.327Z",
+ "updated_at": "2026-09-12T15:28:06.960Z",
  "apps": [
   {
    "app": "dy-note",
@@ -47,7 +47,7 @@
      "name": "作者主页"
     }
    ],
-   "downloads": 3,
+   "downloads": 4,
    "creator": "hello-cqq",
    "contributors": [
     {
@@ -153,7 +153,7 @@
      "name": "联系人卡片"
     }
    ],
-   "downloads": 2,
+   "downloads": 3,
    "creator": "hello-cqq",
    "contributors": [
     {
@@ -278,7 +278,7 @@
      "name": "加载态"
     }
    ],
-   "downloads": 2,
+   "downloads": 3,
    "creator": "hello-cqq",
    "contributors": [
     {
@@ -355,7 +355,7 @@
      "name": "定价详情"
     }
    ],
-   "downloads": 2,
+   "downloads": 3,
    "creator": "hello-cqq",
    "contributors": [
     {
@@ -375,8 +375,8 @@
   {
    "app": "petpark",
    "name": {
-    "en": "PetPark · 3D plush pet park",
-    "zh": "宠物乐园 · 3D 萌宠公园"
+    "en": "PetPark",
+    "zh": "宠物乐园"
    },
    "description": {
     "en": "A 3D plush-cute pet park: booking, walk-buddy, check-ins, pet profiles with tri-ring stats, a four-zone park map with reservations, community feed and membership — pixar-fluffy renders on clay-candy materials with soft idle motion.",
@@ -392,7 +392,7 @@
    ],
    "category": "travel",
    "shell": "c_mobile",
-   "version": "2.0.0",
+   "version": "2.1.0",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -437,11 +437,11 @@
     {
      "name": "AhahahQ",
      "login": "AhahahQ",
-     "commits": 2
+     "commits": 3
     }
    ],
-   "commits": 11,
-   "updated": "2026-09-11T21:17:30+08:00"
+   "commits": 12,
+   "updated": "2026-09-12T23:27:34+08:00"
   }
  ]
 }
