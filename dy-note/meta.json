@@ -1,18 +1,18 @@
 {
  "name": {
-  "en": "Douyin Note · mobile (study replica)",
-  "zh": "抖音图文 · 手机版（学习复刻）"
+  "en": "Douyin",
+  "zh": "抖音"
  },
  "description": {
-  "en": "Study replica of a Douyin photo-note flow: feed, note detail, author page — fictional text.",
+  "en": "Study replica of a Douyin photo-note flow: feed, detail, author page — fictional text.",
   "zh": "抖音图文流学习复刻：feed、图文详情、作者页——文本全虚构。"
  },
  "tags": [
   "short-video",
   "social",
   "mobile",
-  "study",
-  "feed"
+  "feed",
+  "study"
  ],
  "category": "short-video",
  "shell": "c_mobile",
@@ -22,9 +22,9 @@
  },
  "license": "CC-BY-4.0",
  "ip_attestation": "public-material",
- "attestation_note": "M63: gallery trio refresh (3:2 cover + icon + meta scoring)",
- "version": "1.2.0",
- "created_at": "2026-09-11T13:19:49.518Z",
- "brand_disclaimer": "Unofficial study replica of Douyin Note · mobile (study replica); trademarks belong to their owners; no affiliation or endorsement implied.",
+ "attestation_note": "M75-W4: official name + official-form icon + auto-fit 3:2 cover",
+ "version": "1.3.0",
+ "created_at": "2026-09-12T05:29:16.357Z",
+ "brand_disclaimer": "Unofficial study replica of Douyin; trademarks belong to their owners; no affiliation or endorsement implied.",
  "platform": "mobile"
 }
