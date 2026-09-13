@@ -1,6 +1,6 @@
 {
  "version": 3,
- "updated_at": "2026-09-13T01:46:36.736Z",
+ "updated_at": "2026-09-13T02:30:54.888Z",
  "apps": [
   {
    "app": "wechat",
@@ -110,7 +110,7 @@
      "name": "加载态"
     }
    ],
-   "downloads": 3,
+   "downloads": 4,
    "creator": "hello-cqq",
    "contributors": [
     {
@@ -216,7 +216,7 @@
      "name": "联系人卡片"
     }
    ],
-   "downloads": 3,
+   "downloads": 4,
    "creator": "hello-cqq",
    "contributors": [
     {
@@ -330,7 +330,7 @@
    ],
    "category": "travel",
    "shell": "c_mobile",
-   "version": "2.1.0",
+   "version": "2.0.0",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -375,11 +375,11 @@
     {
      "name": "AhahahQ",
      "login": "AhahahQ",
-     "commits": 3
+     "commits": 4
     }
    ],
-   "commits": 12,
-   "updated": "2026-09-12T23:27:34+08:00"
+   "commits": 13,
+   "updated": "2026-09-13T10:30:13+08:00"
   },
   {
    "app": "ai-assistant",
@@ -401,7 +401,7 @@
    ],
    "category": "tools",
    "shell": "c_mobile",
-   "version": "1.2.0",
+   "version": "2.0.0",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -435,17 +435,17 @@
      "name": "我的"
     }
    ],
-   "downloads": 0,
+   "downloads": 1,
    "creator": "hello-cqq",
    "contributors": [
     {
      "name": "AhahahQ",
      "login": "AhahahQ",
-     "commits": 3
+     "commits": 4
     }
    ],
-   "commits": 3,
-   "updated": "2026-09-13T09:43:24+08:00"
+   "commits": 4,
+   "updated": "2026-09-13T10:30:17+08:00"
   },
   {
    "app": "pet-health-note",
@@ -492,7 +492,7 @@
      "name": "作者主页"
     }
    ],
-   "downloads": 0,
+   "downloads": 1,
    "creator": "hello-cqq",
    "contributors": [
     {
