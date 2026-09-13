@@ -1,0 +1,18 @@
+[
+  {
+    "at": "2026-09-13T13:16:23.592Z",
+    "prompt": "圆角方形 app 图标，国风茶灵头部特写，Chinese guofeng ink-wash illustration, xuan paper texture, flowing brush lines, subtle mineral pigments, 留白 negative space，居中，纯色底取 palette[1]，光泽顶高光，无文字, single centered emblem on solid brand-color rounded-square background, minimal geometric glyph, no text, no letters",
+    "style": "clay-icon",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "_base.png"
+  },
+  {
+    "at": "2026-09-13T13:26:06.748Z",
+    "prompt": "圆角方形 app 图标，国风茶灵头部特写，Chinese guofeng ink-wash illustration, xuan paper texture, flowing brush lines, subtle mineral pigments, 留白 negative space，居中，纯色底取 palette[1]，光泽顶高光，无文字, single centered emblem on solid brand-color rounded-square background, minimal geometric glyph, no text, no letters",
+    "style": "clay-icon",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "_base.png"
+  }
+]

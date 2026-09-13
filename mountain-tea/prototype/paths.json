@@ -1,0 +1,226 @@
+{
+  "generated_at": "2026-09-13T07:39:03.795Z",
+  "version": 3,
+  "flowsUsed": true,
+  "nodes": {
+    "01-home": {
+      "title": "今日茶单"
+    },
+    "02-brew": {
+      "title": "冲泡"
+    },
+    "03-story": {
+      "title": "茶史卷"
+    },
+    "04-mine": {
+      "title": "茶仓"
+    }
+  },
+  "edges": [
+    {
+      "from": "01-home",
+      "to": "02-brew",
+      "kind": "flow",
+      "label": "今日茶单 → 冲泡：三步水温/时间/"
+    },
+    {
+      "from": "01-home",
+      "to": "03-story",
+      "kind": "flow",
+      "label": "今日茶单 → 茶史卷：长卷横向阅读"
+    },
+    {
+      "from": "01-home",
+      "to": "04-mine",
+      "kind": "flow",
+      "label": "今日茶单 → 茶仓：藏茶格+品鉴记录"
+    },
+    {
+      "from": "02-brew",
+      "to": "03-story",
+      "kind": "flow",
+      "label": "冲泡 → 茶史卷 主链路"
+    },
+    {
+      "from": "03-story",
+      "to": "04-mine",
+      "kind": "flow",
+      "label": "茶史卷 → 茶仓 主链路"
+    }
+  ],
+  "roots": [
+    "01-home"
+  ],
+  "depths": {
+    "01-home": 0,
+    "02-brew": 1,
+    "03-story": 1,
+    "04-mine": 1
+  },
+  "perNode": {
+    "01-home": {
+      "paths": [
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2
+        ]
+      ],
+      "pathInfo": [
+        {
+          "source": "brief",
+          "flow": "b1",
+          "name": "今日茶单 链路 1"
+        },
+        {
+          "source": "brief",
+          "flow": "b2",
+          "name": "今日茶单 链路 2"
+        },
+        {
+          "source": "brief",
+          "flow": "b3",
+          "name": "今日茶单 链路 3"
+        }
+      ],
+      "nav": [
+        "02-brew",
+        "03-story",
+        "04-mine"
+      ],
+      "tree": {
+        "node": "01-home",
+        "children": [
+          {
+            "edge": 0,
+            "child": {
+              "node": "02-brew",
+              "children": [
+                {
+                  "edge": 3,
+                  "child": {
+                    "node": "03-story",
+                    "children": [
+                      {
+                        "edge": 4,
+                        "child": {
+                          "node": "04-mine",
+                          "children": []
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "edge": 1,
+            "child": {
+              "node": "03-story",
+              "children": [
+                {
+                  "edge": 4,
+                  "child": {
+                    "node": "04-mine",
+                    "children": []
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "edge": 2,
+            "child": {
+              "node": "04-mine",
+              "children": []
+            }
+          }
+        ]
+      }
+    },
+    "02-brew": {
+      "paths": [
+        [
+          3,
+          4
+        ]
+      ],
+      "pathInfo": [
+        {
+          "source": "brief",
+          "flow": "b1",
+          "name": "冲泡 链路 1"
+        }
+      ],
+      "nav": [
+        "03-story"
+      ],
+      "tree": {
+        "node": "02-brew",
+        "children": [
+          {
+            "edge": 3,
+            "child": {
+              "node": "03-story",
+              "children": [
+                {
+                  "edge": 4,
+                  "child": {
+                    "node": "04-mine",
+                    "children": []
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "03-story": {
+      "paths": [
+        [
+          4
+        ]
+      ],
+      "pathInfo": [
+        {
+          "source": "brief",
+          "flow": "b1",
+          "name": "茶史卷 链路 1"
+        }
+      ],
+      "nav": [
+        "04-mine"
+      ],
+      "tree": {
+        "node": "03-story",
+        "children": [
+          {
+            "edge": 4,
+            "child": {
+              "node": "04-mine",
+              "children": []
+            }
+          }
+        ]
+      }
+    },
+    "04-mine": {
+      "paths": [],
+      "pathInfo": [],
+      "nav": [],
+      "tree": {
+        "node": "04-mine",
+        "children": []
+      }
+    }
+  }
+}
