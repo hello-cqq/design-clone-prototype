@@ -6,4 +6,4 @@
 - gates: interact dead=undefined | inspect fail=undefined pass=undefined | ui-smoke fail=undefined pass=undefined
 
 ## Changes
-- v1.2.0: initial publish
+- v2.0.0: initial publish
