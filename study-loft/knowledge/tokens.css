@@ -1,0 +1,12 @@
+:root {
+  --c-bg: #f4efe4;
+  --c-primary: #3f7f6a;
+  --c-accent: #e8a53c;
+  --c-warn: #5a8fd8;
+  --c-ink: #1c2b33;
+  --glass: rgba(255,255,255,.6);
+  --radius: 22px;
+  --blur: 14px;
+  --font-view: ui-rounded, -apple-system, "PingFang SC", "Segoe UI", sans-serif;
+  --w-view-max: 600;
+}
