@@ -1,67 +1,41 @@
 <style>
-  .asx{position:relative;min-height:100%;overflow:hidden;font-family:ui-rounded,-apple-system,"PingFang SC","Segoe UI",sans-serif;color:#12333f;background:#bfe3ef}
-  .asx .L{position:absolute;inset:0;pointer-events:none;overflow:hidden}
-  .asx .L-far{width:100%;height:100%;animation:kb 34s ease-in-out infinite alternate}
+  .xh{position:relative;min-height:100%;overflow:hidden;font-family:ui-rounded,-apple-system,"PingFang SC","Segoe UI",sans-serif;color:#17364f;background:linear-gradient(180deg,#eaf4ff,#f6fbff)}
+  .xh.night{color:#eaf4ff;background:linear-gradient(180deg,#0e2a4a,#123c66)}
+  .xh .far{position:absolute;inset:0;background:url(assets/xh-bg-day.png) center/cover;opacity:.35;animation:kb 36s ease-in-out infinite alternate}
+  .xh.night .far{background-image:url(assets/xh-bg-night.png);opacity:.4}
   @keyframes kb{from{transform:scale(1.12)}to{transform:scale(1.04)}}
-  .asx .L-mid .orb{position:absolute;border-radius:50%;filter:blur(2px);opacity:.75;animation:bob 6s ease-in-out infinite}
-  .asx .L-mid .o1{left:8%;top:12%;width:120px;height:120px;background:radial-gradient(circle at 35% 35%,rgba(255,255,255,.95),rgba(140,230,220,.25) 70%)}
-  .asx .L-mid .o2{right:10%;top:30%;width:80px;height:80px;background:radial-gradient(circle at 35% 35%,rgba(255,255,255,.9),rgba(255,214,107,.28) 70%);animation-delay:-2.4s}
-  .asx .L-mid .o3{left:20%;bottom:22%;width:60px;height:60px;background:radial-gradient(circle at 35% 35%,rgba(255,255,255,.85),rgba(142,205,240,.3) 70%);animation-delay:-4s}
-  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
-  .asx .scroll{position:relative;z-index:4;padding:52px 16px 110px;box-sizing:border-box}
-  .glass{background:rgba(255,255,255,.58);backdrop-filter:blur(14px) saturate(1.25);-webkit-backdrop-filter:blur(14px) saturate(1.25);border:1px solid rgba(255,255,255,.7);border-radius:22px;box-shadow:0 14px 34px rgba(18,60,80,.16), inset 0 1px 0 rgba(255,255,255,.85)}
-  .asx-hero{position:relative;padding:14px;margin-bottom:14px;overflow:hidden}
-  .asx-hero .pic{position:relative;border-radius:18px;overflow:hidden;box-shadow:0 10px 26px rgba(18,60,80,.22)}
-  .asx-hero .pic img{display:block;width:100%;height:250px;object-fit:cover;object-position:50% 32%;animation:breathe 4.2s ease-in-out infinite}
-  @keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.015)}}
-  .asx-hero .pic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(18,51,63,.35));pointer-events:none}
-  .asx-hero .nm{position:absolute;left:22px;bottom:52px;color:#fff;font-size:22px;font-weight:600;text-shadow:0 2px 10px rgba(10,40,55,.55)}
-  .asx-hero .st{position:absolute;right:16px;bottom:54px;background:rgba(126,220,195,.9);color:#0c4a3c;font-size:11px;font-weight:600;border-radius:999px;padding:5px 12px;box-shadow:0 4px 12px rgba(12,74,60,.3)}
-  .asx-acts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
-  .asx-act{padding:13px 10px;text-align:center;cursor:pointer;transition:transform .18s cubic-bezier(.34,1.56,.64,1)}
-  .asx-act:active{transform:scale(.96)}
-  .asx-act .ic{width:40px;height:40px;margin:0 auto 6px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(145deg,rgba(255,255,255,.95),rgba(255,255,255,.6));box-shadow:0 6px 14px rgba(18,60,80,.16), inset 0 1px 0 #fff}
-  .asx-act .lb{font-size:12.5px;font-weight:600}
-  .asx-act .sb{font-size:10px;color:#4a6b78;margin-top:2px}
-  .asx-sum{padding:14px 16px;margin-bottom:14px}
-  .asx-sum .t{font-size:14px;font-weight:600;margin-bottom:8px}
-  .asx-sum li{list-style:none;font-size:12px;color:#33525f;line-height:1.95;display:flex;gap:8px;align-items:baseline}
-  .asx-sum li b{font-variant-numeric:tabular-nums;color:#12333f}
-  .asx-sum li i{font-style:normal;width:6px;height:6px;border-radius:50%;flex:none;transform:translateY(-1px);box-shadow:0 0 8px currentColor}
-  .asx-input{display:flex;gap:8px;align-items:center;padding:8px 8px 8px 16px}
-  .asx-input .ph{flex:1;font-size:12px;color:#5c7a86}
-  .asx-input .send{width:38px;height:38px;border-radius:14px;background:linear-gradient(140deg,#8fe0cb,#3fb899);display:grid;place-items:center;cursor:pointer;box-shadow:0 8px 18px rgba(63,184,153,.42), inset 0 2px 0 rgba(255,255,255,.6)}
-  .asx-tabs{position:absolute;left:14px;right:14px;bottom:24px;z-index:8;display:flex;justify-content:space-around;padding:9px 6px}
-  .asx-tabs span{font-size:12px;color:#4a6b78;cursor:pointer;padding:6px 13px;border-radius:999px}
-  .asx-tabs span.on{background:linear-gradient(140deg,#ffd9c2,#ff9d68);color:#8a3a12;font-weight:600;box-shadow:0 6px 14px rgba(255,157,104,.4), inset 0 1px 0 rgba(255,255,255,.7)}
-  @media (prefers-reduced-motion: reduce){.asx .L-far,.asx-hero .pic img,.asx .L-mid .orb{animation:none}}
+  .xh .scroll{position:relative;z-index:4;padding:52px 16px 112px;box-sizing:border-box}
+  .xh .top{display:flex;align-items:center;gap:8px;margin-bottom:14px}
+  .xh .top .back{width:30px;height:30px;display:grid;place-items:center;cursor:pointer}
+  .xh .top h1{font-size:19px;font-weight:600;margin:0;flex:1}
+  .xh .top .ic{width:30px;height:30px;display:grid;place-items:center;cursor:pointer}
+  .xh .cards{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .xh .pc{position:relative;border-radius:22px;overflow:hidden;cursor:pointer;background:rgba(255,255,255,.66);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.8);box-shadow:0 16px 38px rgba(23,54,79,.16);transition:transform .2s cubic-bezier(.34,1.56,.64,1)}
+  .xh.night .pc{background:rgba(14,42,74,.5);border-color:rgba(143,208,255,.3)}
+  .xh .pc:active{transform:scale(.97)}
+  .xh .pc img{display:block;width:100%;height:250px;object-fit:cover;object-position:50% 24%}
+  .xh .pc .meta{padding:12px 14px 14px}
+  .xh .pc .nm{font-size:17px;font-weight:600}
+  .xh .pc .sb{font-size:10.5px;opacity:.62;margin-top:4px}
+  .xh .pc .tick{position:absolute;top:10px;right:10px;width:22px;height:22px;border-radius:50%;display:none;place-items:center;background:linear-gradient(140deg,#6db5f0,#3f86d6);box-shadow:0 6px 14px rgba(63,134,214,.45)}
+  .xh .pc.on{box-shadow:0 0 0 2.5px #3f86d6, 0 16px 38px rgba(23,54,79,.2)}
+  .xh .pc.on .tick{display:grid}
+  .xh .nav{position:absolute;left:14px;right:14px;bottom:22px;z-index:8;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+  .xh .nav span{background:rgba(255,255,255,.82);backdrop-filter:blur(10px);border-radius:18px;padding:10px 4px 9px;display:grid;place-items:center;gap:4px;font-size:11px;color:#3f6c8f;cursor:pointer;box-shadow:0 10px 24px rgba(23,54,79,.14)}
+  .xh.night .nav span{background:rgba(14,42,74,.6);color:#bcd8f2}
+  .xh .nav span.on{color:#2b76c8;font-weight:600}
+  .xh.night .nav span.on{color:#8fd0ff}
+  @media (prefers-reduced-motion: reduce){.xh .far{animation:none}}
 </style>
-<div data-dc="as/root" class="asx">
-  <div class="L L-far" data-fx-parallax="0.4" style="background:url(assets/as-bg-day.png) center/cover no-repeat"></div>
-  <div class="L L-mid" data-fx-parallax="0.9"><span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span></div>
-  <canvas data-fx="particles" data-fx-kind="motes" data-fx-n="20" data-fx-colors="#ffffff,#a5ecdc,#ffd66b"></canvas>
+<div data-dc="as/root" class="xh night">
+  <div class="far" data-fx-parallax="0.4"></div>
+  <canvas data-fx="particles" data-fx-kind="sparkles" data-fx-n="18" data-fx-colors="#ffffff,#8fd0ff"></canvas>
   <div class="scroll">
-    <div class="asx-hero glass" data-dc="as/hero" data-fx-parallax="1.2">
-      <div class="pic"><img src="assets/as-home.png" alt="" data-act="toast" data-msg="小昼：你好，今天想聊点什么？（演示）"></div>
-      <div class="nm">小昼</div><span class="st">在线 · 语音就绪</span>
+    <div class="top"><span class="back" data-goto="00-launch"><svg width="16" height="16" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round"><path d="m14 6-6 6 6 6"/></svg></span><h1>星海对话</h1><span class="ic" data-act="toast" data-msg="搜索：找找话题或角色（演示）"><svg width="16" height="16" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round"><circle cx="11" cy="11" r="6"/><path d="m20 20-4.5-4.5"/></svg></span></div>
+    <div class="cards" data-dc="as/personas">
+      <div class="pc on" data-act="radio" data-group="persona" data-char="xinghai"><span class="tick"><svg width="12" height="12" viewBox="0 0 24 24" style="fill:none;stroke:#fff;stroke-width:3.2;stroke-linecap:round"><path d="m5 13 4 4 10-10"/></svg></span><img src="assets/xh-xinghai.png" alt=""><div class="meta"><div class="nm">星海</div><div class="sb">当前角色 ｜ 切换音色</div></div></div>
+      <div class="pc" data-act="radio" data-group="persona" data-char="haixi"><span class="tick"><svg width="12" height="12" viewBox="0 0 24 24" style="fill:none;stroke:#fff;stroke-width:3.2;stroke-linecap:round"><path d="m5 13 4 4 10-10"/></svg></span><img src="assets/xh-haixi.png" alt=""><div class="meta"><div class="nm">海汐</div><div class="sb">当前角色 ｜ 切换音色</div></div></div>
     </div>
-    <div class="asx-acts" data-dc="as/acts">
-      <div class="asx-act glass" data-goto="02-chat"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" style="fill:none;stroke:#1fa083;stroke-width:2.2;stroke-linecap:round"><path d="M21 12a8 8 0 0 1-8 8H5l-2 2V12a8 8 0 0 1 8-8h2a8 8 0 0 1 8 8z"/></svg></span><div class="lb">聊天</div><div class="sb">12 条未读</div></div>
-      <div class="asx-act glass" data-act="toast" data-msg="语音对话：请说出你的问题（演示）"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" style="fill:none;stroke:#7a52c7;stroke-width:2.2;stroke-linecap:round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></span><div class="lb">语音对话</div><div class="sb">温柔音色</div></div>
-      <div class="asx-act glass" data-goto="03-call"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" style="fill:none;stroke:#2b83c9;stroke-width:2.2;stroke-linecap:round"><rect x="3" y="6" width="13" height="12" rx="3"/><path d="m16 10 5-3v10l-5-3"/></svg></span><div class="lb">视频通话</div><div class="sb">高清就绪</div></div>
-      <div class="asx-act glass" data-act="toast" data-msg="今日 3 条提醒已按优先级排好（演示）"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" style="fill:none;stroke:#d96f32;stroke-width:2.2;stroke-linecap:round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span><div class="lb">日程提醒</div><div class="sb">3 条待办</div></div>
-    </div>
-    <div class="asx-sum glass" data-dc="as/sum">
-      <div class="t">今日摘要</div>
-      <ul>
-        <li><i style="background:#2fbf9f;color:#2fbf9f"></i>日程：<b>14:00</b> 产品评审 · 已备会议纪要模板</li>
-        <li><i style="background:#4aa3e8;color:#4aa3e8"></i>天气：<b>26°</b> 晴 · 适宜外出拍摄</li>
-        <li><i style="background:#ff8f5a;color:#ff8f5a"></i>待办：<b>2</b> 项高优 · 设计稿走查、图标选型</li>
-      </ul>
-    </div>
-    <div class="asx-input glass" data-act="toast" data-msg="输入框：说出想法即可（演示）"><span class="ph">问问小昼…</span><span class="send" data-act="toast" data-msg="小昼：收到！（演示）"><svg width="16" height="16" viewBox="0 0 24 24" style="fill:none;stroke:#fff;stroke-width:2.4;stroke-linecap:round"><path d="m4 12 16-8-6 16-2-6z"/></svg></span></div>
   </div>
-  <div class="asx-tabs glass" data-dc="as/tabs">
-    <span class="on" data-goto="01-home">首页</span><span data-goto="02-chat">聊天</span><span data-goto="03-call">通话</span><span data-goto="04-persona">形象</span><span data-goto="05-me">我的</span>
-  </div>
+  <div class="nav" data-dc="as/tabs"><span class="on" data-goto="01-home"><svg width="17" height="17" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2.1;stroke-linecap:round"><path d="m4 11 8-7 8 7v9a1 1 0 0 1-1 1h-5v-6h-4v6H5a1 1 0 0 1-1-1z"/></svg>首页</span><span data-goto="02-chat"><svg width="17" height="17" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2.1;stroke-linecap:round"><rect x="4" y="4" width="16" height="13" rx="3"/><path d="M9 21l3-4 3 4"/></svg>对话</span><span data-goto="03-call"><svg width="17" height="17" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2.1;stroke-linecap:round"><rect x="3" y="6" width="13" height="12" rx="3"/><path d="m16 10 5-3v10l-5-3"/></svg>视频</span><span data-dc="as/voice-entry" data-goto="04-settings"><svg width="17" height="17" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2.1;stroke-linecap:round"><circle cx="12" cy="12" r="3.2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/></svg>设置</span></div>
 </div>

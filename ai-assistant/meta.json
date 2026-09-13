@@ -1,21 +1,21 @@
 {
  "name": {
-  "en": "AI Assistant",
-  "zh": "智能助理"
+  "en": "Starsea Talk",
+  "zh": "星海对话"
  },
  "description": {
-  "en": "An AI assistant: switchable persona and voice, text chat, voice dialogue, video calls and reminders — site-theme generated characters on clay-candy UI with soft idle motion.",
-  "zh": "智能助理：形象/音色可切换，文字聊天、语音对话、视频通话与日程提醒——官网主题生图形象+粘土糖果 UI+软影微动。"
+  "en": "Interactive social prototype (mobile): full UI flows, live controls, design specs and user paths — cloned from a real source by design-clone.",
+  "zh": "社交类应用原型：世界观第一印象：双角色隔海相望+标题+开始按钮。由 design-clone 自真实来源克隆，全控件可交互、含设计规格与路径。"
  },
  "tags": [
+  "ai-companion",
   "assistant",
-  "ai",
-  "chat",
+  "anime",
   "voice",
-  "mobile",
-  "original"
+  "original",
+  "chat"
  ],
- "category": "tools",
+ "category": "social",
  "shell": "c_mobile",
  "source": {
   "kind": "original",
@@ -23,8 +23,8 @@
  },
  "license": "CC-BY-4.0",
  "ip_attestation": "original",
- "attestation_note": "M76-W3c: 原神级 2.5D 重做（分层视差+粒子+玻璃 HUD+anime-cel 渲染）",
- "version": "2.0.0",
- "created_at": "2026-09-13T02:29:21.456Z",
+ "attestation_note": "M77-W2: 新海诚 2.5D 重构（豆包对标brief管线：双角色立绘/昼夜主题/5视图）",
+ "version": "3.0.0",
+ "created_at": "2026-09-13T07:05:41.586Z",
  "platform": "mobile"
 }

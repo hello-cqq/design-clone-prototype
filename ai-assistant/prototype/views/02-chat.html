@@ -1,55 +1,41 @@
 <style>
-  .asx{position:relative;min-height:100%;overflow:hidden;font-family:ui-rounded,-apple-system,"PingFang SC","Segoe UI",sans-serif;color:#12333f;background:#bfe3ef}
-  .asx .L{position:absolute;inset:0;pointer-events:none;overflow:hidden}
-  .asx .L-far{width:100%;height:100%;filter:saturate(1.05);animation:kb 34s ease-in-out infinite alternate}
+  .xh{position:relative;min-height:100%;overflow:hidden;font-family:ui-rounded,-apple-system,"PingFang SC","Segoe UI",sans-serif;color:#17364f;background:linear-gradient(180deg,#eaf4ff,#f6fbff)}
+  .xh .far{position:absolute;inset:0;background:url(assets/xh-bg-night.png) center/cover;opacity:.22;filter:blur(2px);animation:kb 36s ease-in-out infinite alternate}
   @keyframes kb{from{transform:scale(1.12)}to{transform:scale(1.04)}}
-  .asx .L-mid{background:linear-gradient(180deg,rgba(191,227,239,.25),rgba(255,255,255,.5) 40%,rgba(191,227,239,.35))}
-  .asx .scroll{position:relative;z-index:4;padding:0 14px 110px;box-sizing:border-box;display:flex;flex-direction:column;min-height:100%}
-  .glass{background:rgba(255,255,255,.58);backdrop-filter:blur(14px) saturate(1.25);-webkit-backdrop-filter:blur(14px) saturate(1.25);border:1px solid rgba(255,255,255,.7);border-radius:22px;box-shadow:0 14px 34px rgba(18,60,80,.16), inset 0 1px 0 rgba(255,255,255,.85)}
-  .asx-top{position:sticky;top:0;z-index:6;margin:0 -14px 12px;padding:46px 16px 10px;display:flex;gap:10px;align-items:center;background:linear-gradient(180deg,rgba(255,255,255,.72),rgba(255,255,255,.35));backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:0 0 18px 18px}
-  .asx-top .ava{width:38px;height:38px;border-radius:50%;object-fit:cover;object-position:50% 30%;box-shadow:0 4px 12px rgba(18,60,80,.25), 0 0 0 2px rgba(255,255,255,.9)}
-  .asx-top .nm{font-size:15px;font-weight:600}
-  .asx-top .st{font-size:10.5px;color:#1fa083}
-  .asx-top .sp{flex:1}
-  .asx-top .ib{width:32px;height:32px;border-radius:12px;display:grid;place-items:center;background:rgba(255,255,255,.7);cursor:pointer;box-shadow:0 4px 10px rgba(18,60,80,.14)}
-  .asx-flow{flex:1;display:flex;flex-direction:column;gap:10px;padding:4px 2px}
-  .msg{max-width:78%;padding:10px 14px;font-size:12.5px;line-height:1.7;border-radius:18px;box-shadow:0 8px 20px rgba(18,60,80,.14)}
-  .msg.ai{align-self:flex-start;background:rgba(255,255,255,.78);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.8);border-bottom-left-radius:6px}
-  .msg.me{align-self:flex-end;background:linear-gradient(140deg,#5ad0b4,#2ba98c);color:#fff;border-bottom-right-radius:6px;box-shadow:0 8px 20px rgba(43,169,140,.35)}
-  .msg .tm{display:block;font-size:9.5px;opacity:.55;margin-top:4px}
-  .typing{align-self:flex-start;display:flex;gap:5px;padding:12px 16px}
-  .typing i{width:7px;height:7px;border-radius:50%;background:#7fa8b5;animation:tp 1.1s ease-in-out infinite}
-  .typing i:nth-child(2){animation-delay:.18s}.typing i:nth-child(3){animation-delay:.36s}
+  .xh .scroll{position:relative;z-index:4;display:flex;flex-direction:column;min-height:100%;padding:0 14px 108px;box-sizing:border-box}
+  .xh .top{position:sticky;top:0;z-index:6;display:flex;gap:10px;align-items:center;padding:46px 4px 10px;background:linear-gradient(180deg,rgba(246,251,255,.9),rgba(246,251,255,.5));backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:0 0 16px 16px}
+  .xh .top img{width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:50% 22%;box-shadow:0 4px 12px rgba(23,54,79,.25), 0 0 0 2px #fff}
+  .xh .top .nm{font-size:14.5px;font-weight:600;flex:1}
+  .xh .top .vs{font-size:10.5px;color:#2b76c8;background:rgba(255,255,255,.8);border-radius:999px;padding:6px 11px;cursor:pointer;box-shadow:0 4px 10px rgba(23,54,79,.12)}
+  .xh .flow{flex:1;display:flex;flex-direction:column;gap:10px;padding:6px 2px}
+  .xh .msg{max-width:80%;padding:10px 13px;font-size:12.5px;line-height:1.75;border-radius:16px;display:flex;gap:8px;align-items:flex-end}
+  .xh .msg img{width:22px;height:22px;border-radius:50%;object-fit:cover;object-position:50% 22%;flex:none}
+  .xh .msg.ai{align-self:flex-start;background:rgba(255,255,255,.85);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.9);border-bottom-left-radius:5px;box-shadow:0 8px 20px rgba(23,54,79,.12)}
+  .xh .msg.me{align-self:flex-end;background:linear-gradient(140deg,#6db5f0,#3f86d6);color:#fff;border-bottom-right-radius:5px;box-shadow:0 8px 20px rgba(63,134,214,.35)}
+  .xh .typing{align-self:flex-start;display:flex;gap:5px;padding:12px 16px;background:rgba(255,255,255,.85);border-radius:16px}
+  .xh .typing i{width:7px;height:7px;border-radius:50%;background:#7fa8c5;animation:tp 1.1s ease-in-out infinite}
+  .xh .typing i:nth-child(2){animation-delay:.18s}.xh .typing i:nth-child(3){animation-delay:.36s}
   @keyframes tp{0%,100%{transform:translateY(0);opacity:.5}50%{transform:translateY(-4px);opacity:1}}
-  .asx-input{position:sticky;bottom:88px;display:flex;gap:8px;align-items:center;padding:8px 8px 8px 16px}
-  .asx-input .ph{flex:1;font-size:12px;color:#5c7a86}
-  .asx-input .send{width:38px;height:38px;border-radius:14px;background:linear-gradient(140deg,#8fe0cb,#3fb899);display:grid;place-items:center;cursor:pointer;box-shadow:0 8px 18px rgba(63,184,153,.42), inset 0 2px 0 rgba(255,255,255,.6)}
-  .asx-tabs{position:absolute;left:14px;right:14px;bottom:24px;z-index:8;display:flex;justify-content:space-around;padding:9px 6px}
-  .asx-tabs span{font-size:12px;color:#4a6b78;cursor:pointer;padding:6px 13px;border-radius:999px}
-  .asx-tabs span.on{background:linear-gradient(140deg,#ffd9c2,#ff9d68);color:#8a3a12;font-weight:600;box-shadow:0 6px 14px rgba(255,157,104,.4), inset 0 1px 0 rgba(255,255,255,.7)}
-  @media (prefers-reduced-motion: reduce){.asx .L-far,.typing i{animation:none}}
+  .xh .input{position:sticky;bottom:86px;display:flex;gap:8px;align-items:center;padding:8px 8px 8px 16px;background:rgba(255,255,255,.85);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.9);border-radius:999px;box-shadow:0 10px 26px rgba(23,54,79,.14)}
+  .xh .input .ph{flex:1;font-size:12px;color:#6d8ba3}
+  .xh .input .send{width:36px;height:36px;border-radius:50%;background:linear-gradient(140deg,#6db5f0,#3f86d6);display:grid;place-items:center;cursor:pointer;box-shadow:0 8px 18px rgba(63,134,214,.4)}
+  .xh .nav{position:absolute;left:14px;right:14px;bottom:22px;z-index:8;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+  .xh .nav span{background:rgba(255,255,255,.85);backdrop-filter:blur(10px);border-radius:18px;padding:10px 4px 9px;display:grid;place-items:center;gap:4px;font-size:11px;color:#3f6c8f;cursor:pointer;box-shadow:0 10px 24px rgba(23,54,79,.14)}
+  .xh .nav span.on{color:#2b76c8;font-weight:600}
+  @media (prefers-reduced-motion: reduce){.xh .far,.xh .typing i{animation:none}}
 </style>
-<div data-dc="as/root" class="asx">
-  <div class="L L-far" data-fx-parallax="0.4" style="background:url(assets/as-bg-day.png) center/cover no-repeat"></div>
-  <div class="L L-mid" data-fx-parallax="0.8"></div>
-  <canvas data-fx="particles" data-fx-kind="sparkles" data-fx-n="14" data-fx-colors="#ffffff,#ffe9a8"></canvas>
+<div data-dc="as/root" class="xh">
+  <div class="far" data-fx-parallax="0.4"></div>
+  <canvas data-fx="particles" data-fx-kind="motes" data-fx-n="14" data-fx-colors="#ffffff,#bcd8f2"></canvas>
   <div class="scroll">
-    <div class="asx-top" data-dc="as/top">
-      <img class="ava" src="assets/as-me.png" alt="" data-goto="04-persona">
-      <div><div class="nm">小昼</div><div class="st">正在倾听…</div></div>
-      <div class="sp"></div>
-      <span class="ib" data-act="toast" data-msg="通话记录（演示）"><svg width="15" height="15" viewBox="0 0 24 24" style="fill:none;stroke:#33525f;stroke-width:2.2;stroke-linecap:round"><path d="M4 6h16M4 12h16M4 18h10"/></svg></span>
+    <div class="top" data-dc="as/top"><img src="assets/xh-xinghai.png" alt="" data-goto="01-home"><span class="nm">星海 · 正在倾听</span><span class="vs" data-dc="as/voice-entry" data-goto="04-settings">音色 · 清冷</span></div>
+    <div class="flow" data-dc="as/flow">
+      <div class="msg ai"><img src="assets/xh-xinghai.png" alt="">夜了。今天的评审要点我按三条线理好了，先听哪一条？</div>
+      <div class="msg me">先看设计走查部分</div>
+      <div class="msg ai"><img src="assets/xh-xinghai.png" alt="">走查 7 条，高优 2：图标对比度、空态插画统一。已排进 14:00 评审。</div>
+      <div class="typing" data-act="toast" data-msg="星海正在输入（演示）"><i></i><i></i><i></i></div>
     </div>
-    <div class="asx-flow" data-dc="as/flow">
-      <div class="msg ai">早上好！今天的评审材料我按三条主线整理好了，要先过哪一条？<span class="tm">09:12</span></div>
-      <div class="msg me">先看设计走查的那部分<span class="tm">09:14</span></div>
-      <div class="msg ai">好，走查项共 7 条，其中 2 条高优：图标对比度与空态插画风格统一。<span class="tm">09:14</span></div>
-      <div class="msg me">帮我把高优两条排进今天下午<span class="tm">09:15</span></div>
-      <div class="typing glass" data-act="toast" data-msg="小昼正在输入（演示）"><i></i><i></i><i></i></div>
-    </div>
-    <div class="asx-input glass" data-dc="as/input"><span class="ph">继续对话…</span><span class="send" data-act="toast" data-msg="小昼：收到！（演示）"><svg width="16" height="16" viewBox="0 0 24 24" style="fill:none;stroke:#fff;stroke-width:2.4;stroke-linecap:round"><path d="m4 12 16-8-6 16-2-6z"/></svg></span></div>
+    <div class="input" data-dc="as/input"><span class="ph">继续对话…</span><span class="send" data-dc="as/send" data-act="toast" data-msg="星海：收到，我想想（演示）"><svg width="15" height="15" viewBox="0 0 24 24" style="fill:none;stroke:#fff;stroke-width:2.4;stroke-linecap:round"><path d="m4 12 16-8-6 16-2-6z"/></svg></span></div>
   </div>
-  <div class="asx-tabs glass" data-dc="as/tabs">
-    <span data-goto="01-home">首页</span><span class="on" data-goto="02-chat">聊天</span><span data-goto="03-call">通话</span><span data-goto="04-persona">形象</span><span data-goto="05-me">我的</span>
-  </div>
+  <div class="nav" data-dc="as/tabs"><span data-goto="01-home"><svg width="17" height="17" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2.1;stroke-linecap:round"><path d="m4 11 8-7 8 7v9a1 1 0 0 1-1 1h-5v-6h-4v6H5a1 1 0 0 1-1-1z"/></svg>首页</span><span class="on" data-goto="02-chat"><svg width="17" height="17" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2.1;stroke-linecap:round"><rect x="4" y="4" width="16" height="13" rx="3"/><path d="M9 21l3-4 3 4"/></svg>对话</span><span data-goto="03-call"><svg width="17" height="17" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2.1;stroke-linecap:round"><rect x="3" y="6" width="13" height="12" rx="3"/><path d="m16 10 5-3v10l-5-3"/></svg>视频</span><span data-goto="04-settings"><svg width="17" height="17" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2.1;stroke-linecap:round"><circle cx="12" cy="12" r="3.2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/></svg>设置</span></div>
 </div>
