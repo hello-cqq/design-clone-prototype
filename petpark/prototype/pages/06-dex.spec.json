@@ -23,7 +23,7 @@
     "spec_version": 1,
     "change_log": [
       {
-        "at": "2026-09-13T07:19:33.391Z",
+        "at": "2026-09-13T13:55:05.708Z",
         "by": "clone",
         "note": "collect-design 初始/重采集（computed 真值）"
       }
@@ -31,100 +31,34 @@
   },
   "regions": [
     {
-      "id": "r_pp_mats",
+      "id": "r_pp_petstage",
       "type": "custom",
-      "label": "房屋\n      植物\n      家具\n      装饰",
+      "label": "",
       "components": [
         {
-          "kind": "radio",
-          "label": "房屋",
+          "kind": "image",
+          "label": "",
           "interaction": {
-            "act": "radio",
-            "group": "mat"
-          },
-          "sample_value": "房屋"
-        },
-        {
-          "kind": "radio",
-          "label": "植物",
-          "interaction": {
-            "act": "radio",
-            "group": "mat"
-          },
-          "sample_value": "植物"
-        },
-        {
-          "kind": "radio",
-          "label": "家具",
-          "interaction": {
-            "act": "radio",
-            "group": "mat"
-          },
-          "sample_value": "家具"
-        },
-        {
-          "kind": "radio",
-          "label": "装饰",
-          "interaction": {
-            "act": "radio",
-            "group": "mat"
-          },
-          "sample_value": "装饰"
+            "act": "toast",
+            "msg": "耳廓狐蹭了蹭你的手（演示）"
+          }
         }
       ]
     },
     {
-      "id": "r_pp_hint",
+      "id": "r_pp_pet",
       "type": "custom",
-      "label": "拖拽素材到地块放置 · 双指旋转/缩放 · 小动物会自己来玩"
+      "label": "抚摸"
     },
     {
-      "id": "r_pp_ops",
-      "type": "custom",
-      "label": "放置\n    旋转\n    撤销\n    保存",
-      "components": [
-        {
-          "kind": "button",
-          "label": "放置",
-          "interaction": {
-            "act": "toast",
-            "msg": "放置：小木屋 ×1（演示）"
-          },
-          "sample_value": "放置"
-        },
-        {
-          "kind": "button",
-          "label": "旋转",
-          "interaction": {
-            "act": "toast",
-            "msg": "旋转 45°（演示）"
-          },
-          "sample_value": "旋转"
-        },
-        {
-          "kind": "button",
-          "label": "撤销",
-          "interaction": {
-            "act": "toast",
-            "msg": "已撤销上一步（演示）"
-          },
-          "sample_value": "撤销"
-        },
-        {
-          "kind": "button",
-          "label": "保存",
-          "interaction": {
-            "act": "toast",
-            "msg": "家园已保存（演示）"
-          },
-          "sample_value": "保存"
-        }
-      ]
+      "id": "r_pp_feed",
+      "type": "list",
+      "label": "喂食"
     },
     {
-      "id": "r_pp_place",
+      "id": "r_pp_sing",
       "type": "custom",
-      "label": "放置"
+      "label": "唱歌"
     },
     {
       "id": "r_pp_tabs",
