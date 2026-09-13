@@ -1,51 +1,57 @@
 <style>
-  .as-root{font-family:ui-rounded,-apple-system,"PingFang SC","Segoe UI",sans-serif;color:#eef4fb;background:
-    radial-gradient(120% 80% at 50% 0%, #16324a 0%, #0e2233 55%, #0a1a28 100%);min-height:100%;position:relative;padding:52px 16px 120px;box-sizing:border-box;overflow:hidden}
-  .as-root::before{content:"";position:absolute;inset:0;background:
-    radial-gradient(2px 2px at 18% 22%, rgba(255,255,255,.7), transparent 60%),
-    radial-gradient(1.6px 1.6px at 72% 14%, rgba(255,255,255,.55), transparent 60%),
-    radial-gradient(1.4px 1.4px at 42% 8%, rgba(255,255,255,.5), transparent 60%),
-    radial-gradient(1.8px 1.8px at 86% 34%, rgba(255,255,255,.45), transparent 60%);pointer-events:none}
-  .as-call{display:flex;flex-direction:column;align-items:center;padding-top:8px}
-  .as-big{position:relative;width:168px;height:168px;margin-bottom:14px}
-  .as-big img{width:168px;height:168px;border-radius:50%;object-fit:cover;border:4px solid rgba(255,253,248,.9);box-shadow:0 18px 40px rgba(0,0,0,.45);animation:float 3.2s ease-in-out infinite}
-  .as-big::before{content:"";position:absolute;inset:-14px;border-radius:50%;border:2px solid rgba(126,220,195,.5);animation:pulse 2.6s ease-out infinite}
-  .as-big::after{content:"";position:absolute;inset:-26px;border-radius:50%;border:1.6px solid rgba(201,182,242,.35);animation:pulse 2.6s .6s ease-out infinite}
-  @keyframes pulse{0%{transform:scale(.92);opacity:.8}70%{transform:scale(1.12);opacity:0}100%{opacity:0}}
-  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
-  .as-call .nm{font-size:19px;font-weight:600;color:#f4f8fc}
-  .as-call .timer{margin-top:6px;font-size:12px;color:#9fc3da;font-variant-numeric:tabular-nums}
-  .as-wave{display:flex;gap:4px;align-items:flex-end;height:34px;margin:16px 0 6px}
-  .as-wave i{display:block;width:4px;border-radius:2px;background:linear-gradient(180deg,#8fe0cb,#5cc9ab);animation:wv 1.1s ease-in-out infinite}
-  .as-wave i:nth-child(2){animation-delay:.1s}.as-wave i:nth-child(3){animation-delay:.2s}.as-wave i:nth-child(4){animation-delay:.3s}
-  .as-wave i:nth-child(5){animation-delay:.4s}.as-wave i:nth-child(6){animation-delay:.5s}.as-wave i:nth-child(7){animation-delay:.6s}
-  .as-wave i:nth-child(8){animation-delay:.7s}.as-wave i:nth-child(9){animation-delay:.8s}.as-wave i:nth-child(10){animation-delay:.9s}
-  .as-wave i:nth-child(11){animation-delay:1s}.as-wave i:nth-child(12){animation-delay:1.1s}
-  @keyframes wv{0%,100%{height:8px}50%{height:30px}}
-  .as-wave.on i{animation:none;height:6px;opacity:.5}
-  .as-ctrls{position:absolute;left:0;right:0;bottom:96px;display:flex;justify-content:center;gap:14px}
-  .as-ctrl{width:52px;height:52px;border-radius:50%;background:rgba(255,253,248,.14);backdrop-filter:blur(6px);display:grid;place-items:center;cursor:pointer;box-shadow:inset 0 1px 0 rgba(255,255,255,.25), 0 8px 18px rgba(0,0,0,.35);transition:transform .18s cubic-bezier(.34,1.56,.64,1)}
-  .as-ctrl:active{transform:scale(.92)}
-  .as-ctrl.on{background:rgba(126,220,195,.3)}
-  .as-ctrl.hang{background:linear-gradient(140deg,#ff9d8a,#e0705e);width:60px;height:60px}
-  .as-self{position:absolute;right:16px;top:64px;width:86px;height:118px;border-radius:18px;background:rgba(255,246,233,.16);border:1px solid rgba(255,246,233,.35);display:grid;place-items:center;box-shadow:0 10px 22px rgba(0,0,0,.4)}
-  .as-tabs{position:absolute;left:14px;right:14px;bottom:26px;background:rgba(255,253,248,.12);backdrop-filter:blur(8px);border-radius:999px;display:flex;justify-content:space-around;padding:10px 6px;box-shadow:inset 0 1px 0 rgba(255,255,255,.2);z-index:8}
-  .as-tabs span{font-size:12px;color:#b9cfdd;cursor:pointer;padding:6px 12px;border-radius:999px}
-  .as-tabs span.on{background:rgba(255,217,194,.25);color:#ffd9c2;font-weight:600}
-  @media (prefers-reduced-motion: reduce){.as-big img,.as-big::before,.as-big::after,.as-wave i{animation:none}}
-</style><div data-dc="as/root" class="as-root">
-  <div class="as-self" data-dc="as/self" data-act="toast" data-msg="切换前后摄像头（演示）"><svg width="30" height="30" viewBox="0 0 24 24" style="fill:none;stroke:rgba(255,246,233,.8);stroke-width:2;stroke-linecap:round"><circle cx="12" cy="9" r="4"/><path d="M4 20c1.5-4 5-5 8-5s6.5 1 8 5"/></svg></div>
-  <div class="as-call" data-dc="as/call">
-    <div class="as-big"><img src="assets/assistant-girl.png" alt=""></div>
-    <div class="nm">小昼</div>
-    <div class="timer">12:36 · 高清</div>
-    <div class="as-wave" data-dc="as/wave" id="as-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  .asx{position:relative;min-height:100%;overflow:hidden;font-family:ui-rounded,-apple-system,"PingFang SC","Segoe UI",sans-serif;color:#eaf6ff;background:#0a1c2c}
+  .asx .L{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+  .asx .L-far{width:100%;height:100%;animation:kb 40s ease-in-out infinite alternate}
+  @keyframes kb{from{transform:scale(1.12)}to{transform:scale(1.04)}}
+  .asx .L-mid .glow{position:absolute;left:50%;top:34%;width:340px;height:340px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(110,231,255,.28),rgba(110,231,255,0) 68%);animation:pulse 4.5s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:.7;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.06)}}
+  .asx .stage{position:relative;z-index:4;display:flex;flex-direction:column;align-items:center;padding:56px 18px 120px;box-sizing:border-box;min-height:100%}
+  .glass{background:rgba(16,38,56,.5);backdrop-filter:blur(16px) saturate(1.2);-webkit-backdrop-filter:blur(16px) saturate(1.2);border:1px solid rgba(140,220,255,.28);border-radius:22px;box-shadow:0 16px 40px rgba(2,12,22,.5), inset 0 1px 0 rgba(180,240,255,.22)}
+  .asx-self{position:absolute;top:52px;right:16px;z-index:6;width:86px;height:120px;border-radius:16px;overflow:hidden;box-shadow:0 10px 24px rgba(2,12,22,.55), 0 0 0 1.5px rgba(140,220,255,.4)}
+  .asx-self img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+  .asx-call{position:relative;width:min(300px,72%);margin:26px 0 10px;border-radius:26px;overflow:hidden;box-shadow:0 20px 50px rgba(2,12,22,.6), 0 0 0 2px rgba(140,220,255,.35), 0 0 44px rgba(110,231,255,.25)}
+  .asx-call img{display:block;width:100%;height:300px;object-fit:cover;object-position:50% 30%;animation:breathe 4.2s ease-in-out infinite}
+  @keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.015)}}
+  .asx-call .ring{position:absolute;inset:-6px;border-radius:30px;border:2px solid rgba(110,231,255,.5);animation:ring 2.8s ease-out infinite;pointer-events:none}
+  @keyframes ring{0%{opacity:.8;transform:scale(.98)}100%{opacity:0;transform:scale(1.08)}}
+  .asx-nm{font-size:19px;font-weight:600;text-shadow:0 2px 12px rgba(2,12,22,.7)}
+  .asx-tm{font-size:11px;color:#9fd8ef;font-variant-numeric:tabular-nums;margin-top:4px}
+  .asx-wave{display:flex;gap:4px;align-items:flex-end;height:34px;margin:16px 0 18px}
+  .asx-wave i{width:4px;border-radius:2px;background:linear-gradient(180deg,#6ee7ff,#3fb899);animation:wv 1s ease-in-out infinite}
+  .asx-wave i:nth-child(1){height:30%}.asx-wave i:nth-child(2){height:60%;animation-delay:.1s}.asx-wave i:nth-child(3){height:90%;animation-delay:.2s}.asx-wave i:nth-child(4){height:50%;animation-delay:.3s}.asx-wave i:nth-child(5){height:75%;animation-delay:.15s}.asx-wave i:nth-child(6){height:100%;animation-delay:.05s}.asx-wave i:nth-child(7){height:65%;animation-delay:.25s}.asx-wave i:nth-child(8){height:85%;animation-delay:.35s}.asx-wave i:nth-child(9){height:45%;animation-delay:.12s}.asx-wave i:nth-child(10){height:70%;animation-delay:.28s}.asx-wave i:nth-child(11){height:55%;animation-delay:.08s}.asx-wave i:nth-child(12){height:35%;animation-delay:.22s}
+  @keyframes wv{0%,100%{transform:scaleY(.55)}50%{transform:scaleY(1)}}
+  .asx-wave.off i{animation:none;transform:scaleY(.3);opacity:.4}
+  .asx-ctrls{display:flex;gap:12px;padding:12px 16px}
+  .asx-ctrls .c{width:50px;height:50px;border-radius:18px;display:grid;place-items:center;cursor:pointer;background:rgba(255,255,255,.12);border:1px solid rgba(140,220,255,.3);transition:transform .16s ease}
+  .asx-ctrls .c:active{transform:scale(.93)}
+  .asx-ctrls .c.on{background:rgba(110,231,255,.25)}
+  .asx-ctrls .c.end{background:linear-gradient(140deg,#ff7a68,#e0483a);border-color:rgba(255,180,170,.5);box-shadow:0 10px 24px rgba(224,72,58,.45)}
+  .asx-tabs{position:absolute;left:14px;right:14px;bottom:24px;z-index:8;display:flex;justify-content:space-around;padding:9px 6px;background:rgba(16,38,56,.55);border:1px solid rgba(140,220,255,.25)}
+  .asx-tabs span{font-size:12px;color:#9fc3d6;cursor:pointer;padding:6px 13px;border-radius:999px}
+  .asx-tabs span.on{background:linear-gradient(140deg,#6ee7ff,#3fb899);color:#06303a;font-weight:600;box-shadow:0 6px 14px rgba(63,184,153,.4)}
+  @media (prefers-reduced-motion: reduce){.asx .L-far,.asx-call img,.asx-wave i,.asx-call .ring,.asx .L-mid .glow{animation:none}}
+</style>
+<div data-dc="as/root" class="asx">
+  <div class="L L-far" data-fx-parallax="0.4" style="background:url(assets/as-bg-night.png) center/cover no-repeat"></div>
+  <div class="L L-mid" data-fx-parallax="0.9"><span class="glow"></span></div>
+  <canvas data-fx="particles" data-fx-kind="sparkles" data-fx-n="26" data-fx-colors="#ffffff,#6ee7ff,#c792ff"></canvas>
+  <div class="asx-self glass" data-dc="as/self" data-act="toast" data-msg="切换前后摄像头（演示）"><img src="assets/assistant-boy.png" alt=""></div>
+  <div class="stage">
+    <div class="asx-call" data-dc="as/call" data-fx-parallax="1.2">
+      <img src="assets/as-call.png" alt="">
+      <span class="ring"></span>
+    </div>
+    <div class="asx-nm">小昼</div>
+    <div class="asx-tm">12:36 · 高清</div>
+    <div class="asx-wave" data-dc="as/wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="asx-ctrls glass" data-dc="as/ctrls">
+      <span class="c" data-act="toggle" data-target="#as-wave" title="静音"><svg width="19" height="19" viewBox="0 0 24 24" style="fill:none;stroke:#eaf6ff;stroke-width:2.2;stroke-linecap:round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></span>
+      <span class="c" data-act="toast" data-msg="已切换摄像头（演示）"><svg width="19" height="19" viewBox="0 0 24 24" style="fill:none;stroke:#eaf6ff;stroke-width:2.2;stroke-linecap:round"><rect x="3" y="6" width="13" height="12" rx="3"/><path d="m16 10 5-3v10l-5-3"/></svg></span>
+      <span class="c" data-goto="04-persona"><svg width="19" height="19" viewBox="0 0 24 24" style="fill:none;stroke:#eaf6ff;stroke-width:2.2;stroke-linecap:round"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.5-4 5-5 8-5s6.5 1 8 5"/></svg></span>
+      <span class="c end" data-act="toast" data-msg="通话已结束 12:36（演示）"><svg width="19" height="19" viewBox="0 0 24 24" style="fill:none;stroke:#fff;stroke-width:2.4;stroke-linecap:round"><path d="M4 13c5-5 11-5 16 0l-3 3-3-2v-3c-2-.6-4-.6-6 0v3l-3 2z"/></svg></span>
+    </div>
   </div>
-  <div class="as-ctrls" data-dc="as/ctrls">
-    <span class="as-ctrl" data-act="toggle" data-target="#as-wave" title="静音"><svg width="20" height="20" viewBox="0 0 24 24" style="fill:none;stroke:#eef4fb;stroke-width:2.2;stroke-linecap:round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></span>
-    <span class="as-ctrl" data-act="toast" data-msg="已切换摄像头（演示）"><svg width="20" height="20" viewBox="0 0 24 24" style="fill:none;stroke:#eef4fb;stroke-width:2.2;stroke-linecap:round"><rect x="3" y="6" width="13" height="12" rx="3"/><path d="m16 10 5-3v10l-5-3"/></svg></span>
-    <span class="as-ctrl" data-goto="04-persona" title="切换形象"><svg width="20" height="20" viewBox="0 0 24 24" style="fill:none;stroke:#eef4fb;stroke-width:2.2;stroke-linecap:round"><circle cx="9" cy="9" r="3.4"/><circle cx="16" cy="10" r="2.6"/><path d="M3 20c1.2-3.4 3.6-4.6 6-4.6s4.8 1.2 6 4.6M14.5 15.6c1.8.3 3.4 1.4 4.5 4"/></svg></span>
-    <span class="as-ctrl hang" data-act="toast" data-msg="通话已结束 12:36（演示）"><svg width="22" height="22" viewBox="0 0 24 24" style="fill:none;stroke:#fff;stroke-width:2.4;stroke-linecap:round"><path d="M4 14c5-5 11-5 16 0l-2.5 2.5-3-2v-2c-2-.8-4-.8-6 0v2l-3 2z"/></svg></span>
+  <div class="asx-tabs" data-dc="as/tabs">
+    <span data-goto="01-home">首页</span><span data-goto="02-chat">聊天</span><span class="on" data-goto="03-call">通话</span><span data-goto="04-persona">形象</span><span data-goto="05-me">我的</span>
   </div>
-  <div class="as-tabs" data-dc="as/tabs"><span data-goto="01-home">首页</span><span data-goto="02-chat">聊天</span><span class="on" data-goto="03-call">通话</span><span data-goto="04-persona">形象</span><span data-goto="05-me">我的</span></div>
 </div>
