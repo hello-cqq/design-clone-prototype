@@ -1,0 +1,30 @@
+{
+ "name": {
+  "en": "Pet Health Notes",
+  "zh": "萌宠健康笔记"
+ },
+ "description": {
+  "en": "Inspired by a shared short-video: a white pup's health-score / weight / check-in photo-note flow — feed, note detail, author page; fictional text.",
+  "zh": "源自分享短视频内容的灵感复刻：白色小狗的健康分/体重/打卡图文笔记流——feed、笔记详情、作者页，文本全虚构。"
+ },
+ "tags": [
+  "pet",
+  "health",
+  "notes",
+  "short-video",
+  "study"
+ ],
+ "category": "lifestyle",
+ "shell": "c_mobile",
+ "source": {
+  "kind": "link",
+  "ref": "dy-note"
+ },
+ "license": "CC-BY-4.0",
+ "ip_attestation": "public-material",
+ "attestation_note": "M76-W2a: 抖音分享链接内容克隆更名为内容名+内容图标/封面",
+ "version": "1.0.0",
+ "created_at": "2026-09-13T01:39:46.739Z",
+ "brand_disclaimer": "Unofficial study replica of Pet Health Notes; trademarks belong to their owners; no affiliation or endorsement implied.",
+ "platform": "mobile"
+}
