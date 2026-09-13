@@ -1,0 +1,30 @@
+{
+ "name": {
+  "en": "Study Loft",
+  "zh": "拾光书房"
+ },
+ "description": {
+  "en": "Interactive education prototype (mobile): full UI flows, live controls, design specs and user paths — cloned from a real source by design-clone.",
+  "zh": "学习教育类应用原型：今日目标+连续天数+开始学习。由 design-clone 自真实来源克隆，全控件可交互、含设计规格与路径。"
+ },
+ "tags": [
+  "focus",
+  "interactive",
+  "education",
+  "original",
+  "stats",
+  "cards"
+ ],
+ "category": "education",
+ "shell": "c_mobile",
+ "source": {
+  "kind": "original",
+  "ref": "gen-study"
+ },
+ "license": "CC-BY-4.0",
+ "ip_attestation": "original",
+ "attestation_note": "M77-W4 稀薄输入实测",
+ "version": "1.0.0",
+ "created_at": "2026-09-13T13:35:20.675Z",
+ "platform": "mobile"
+}
