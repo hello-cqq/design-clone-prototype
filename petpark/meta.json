@@ -1,21 +1,21 @@
 {
  "name": {
-  "en": "PetPark",
-  "zh": "宠物乐园"
+  "en": "Animal Paradise",
+  "zh": "动物乐园"
  },
  "description": {
-  "en": "A 3D plush-cute pet park: booking, walk-buddy, check-ins, pet profiles with tri-ring stats, a four-zone park map with reservations, community feed and membership — pixar-fluffy renders on clay-candy materials with soft idle motion.",
-  "zh": "3D 萌宠质感乐园：预约/遛伴/打卡、萌宠档案三环状态、园区四分区地图与预约、社区 feed 与会员卡——皮克斯式蓬松渲染+粘土糖果材质+软影微动。"
+  "en": "Interactive game prototype (mobile): full UI flows, live controls, design specs and user paths — cloned from a real source by design-clone.",
+  "zh": "游戏类应用原型：动物城全景+群像挥手+开始冒险。由 design-clone 自真实来源克隆，全控件可交互、含设计规格与路径。"
  },
  "tags": [
-  "pets",
-  "travel",
-  "community",
-  "booking",
+  "3d",
   "mobile",
-  "original"
+  "original",
+  "build",
+  "dashboard",
+  "player"
  ],
- "category": "travel",
+ "category": "game",
  "shell": "c_mobile",
  "source": {
   "kind": "original",
@@ -23,8 +23,8 @@
  },
  "license": "CC-BY-4.0",
  "ip_attestation": "original",
- "attestation_note": "M76-W3d: 2.5D 森林乐园重做",
- "version": "2.0.0",
- "created_at": "2026-09-13T02:29:37.019Z",
+ "attestation_note": "M77-W3: 疯狂动物城 3D 重构（brief 管线 8 视图 7 角色裁切资产）",
+ "version": "3.0.0",
+ "created_at": "2026-09-13T07:20:35.656Z",
  "platform": "mobile"
 }

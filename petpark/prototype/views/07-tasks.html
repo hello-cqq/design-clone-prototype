@@ -1,0 +1,34 @@
+<style>
+  .pz{position:relative;min-height:100%;overflow:hidden;font-family:ui-rounded,-apple-system,"PingFang SC","Segoe UI",sans-serif;color:#5b3a1e;background:linear-gradient(180deg,#ffe9cf,#fff6e9)}
+  .pz .far{position:absolute;inset:0;background:url(assets/pp-map.png) center/cover;opacity:.22;filter:blur(3px)}
+  .pz .scroll{position:relative;z-index:4;padding:50px 14px 108px;box-sizing:border-box}
+  .pz .top{display:flex;align-items:center;margin-bottom:12px}
+  .pz .top h1{font-size:17px;font-weight:600;margin:0;flex:1}
+  .pz .top .cal{background:rgba(255,255,255,.88);border-radius:999px;padding:6px 12px;font-size:10.5px;font-weight:600;cursor:pointer}
+  .pz .tk{display:flex;gap:10px;align-items:center;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);border-radius:18px;padding:12px;margin-bottom:10px;box-shadow:0 10px 24px rgba(91,58,30,.14)}
+  .pz .tk img{width:44px;height:44px;border-radius:12px;object-fit:cover;object-position:50% 30%}
+  .pz .tk .mid{flex:1}
+  .pz .tk .t{font-size:12px;font-weight:600}
+  .pz .tk .pg{height:5px;border-radius:3px;background:rgba(91,58,30,.12);margin-top:6px;position:relative}
+  .pz .tk .pg i{position:absolute;left:0;top:0;bottom:0;border-radius:3px;background:linear-gradient(90deg,#7edcc3,#2fbf9f)}
+  .pz .tk .rw{font-size:10px;color:#b0552f;font-weight:600}
+  .pz .tk .go{background:linear-gradient(140deg,#ffb35c,#f28c2e);color:#fff;border-radius:999px;padding:7px 13px;font-size:10.5px;font-weight:600;cursor:pointer;box-shadow:0 8px 16px rgba(242,140,46,.4)}
+  .pz .ev{background:linear-gradient(140deg,#ffd66b,#ffb35c);border-radius:20px;padding:14px 16px;color:#6b4409;box-shadow:0 12px 26px rgba(255,179,92,.4)}
+  .pz .ev .t{font-size:13px;font-weight:600}
+  .pz .ev .s{font-size:10.5px;margin-top:4px}
+  .pz .nav{position:absolute;left:12px;right:12px;bottom:20px;z-index:8;display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+  .pz .nav span{background:rgba(255,255,255,.9);border-radius:16px;padding:9px 2px 8px;display:grid;place-items:center;font-size:10.5px;color:#8a6440;cursor:pointer;box-shadow:0 8px 20px rgba(91,58,30,.14)}
+  .pz .nav span.on{color:#e8862f;font-weight:600}
+</style>
+<div data-dc="pp/root" class="pz">
+  <div class="far" data-fx-parallax="0.4"></div>
+  <canvas data-fx="particles" data-fx-kind="motes" data-fx-n="12" data-fx-colors="#ffffff,#ffd66b"></canvas>
+  <div class="scroll">
+    <div class="top"><h1>今日任务</h1><span class="cal" data-act="toast" data-msg="活动日历：周末音乐节（演示）">活动</span></div>
+    <div class="tk" data-dc="pp/tk1"><img src="assets/pp-fox.png" alt=""><div class="mid"><div class="t">和耳廓狐唱歌</div><div class="pg"><i style="width:40%"></i></div><div class="rw">奖励 120 金币</div></div><span class="go" data-dc="pp/go" data-act="toast" data-msg="进度 +10%（演示）">去完成</span></div>
+    <div class="tk" data-dc="pp/tk2"><img src="assets/pp-stage.png" alt=""><div class="mid"><div class="t">组建 3 人乐队</div><div class="pg"><i style="width:66%"></i></div><div class="rw">奖励 80 钻石</div></div><span class="go" data-goto="03-band">去完成</span></div>
+    <div class="tk" data-dc="pp/tk3"><img src="assets/pp-grass.png" alt=""><div class="mid"><div class="t">装饰家园</div><div class="pg"><i style="width:20%"></i></div><div class="rw">奖励 家具券</div></div><span class="go" data-goto="05-build">去完成</span></div>
+    <div class="ev" data-dc="pp/ev"><div class="t">周末音乐节</div><div class="s">完成乐队表演，得限定舞台皮肤</div></div>
+  </div>
+  <div class="nav" data-dc="pp/tabs"><span data-goto="01-home">乐园</span><span data-goto="02-interact">动物</span><span data-goto="03-band">乐队</span><span data-goto="05-build">家园</span><span class="on" data-goto="07-tasks">任务</span></div>
+</div>

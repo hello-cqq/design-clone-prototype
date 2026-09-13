@@ -1,31 +1,79 @@
 {
   "meta": {
     "generator": "design-clone collect-design",
-    "generated_at": "2026-09-13T02:27:07.274Z",
+    "generated_at": "2026-09-13T07:19:33.391Z",
     "source_run": "demo-petpark",
     "schema": "figma-source/v1"
   },
   "variables": {
-    "pp-leaf": "#2f9e63",
-    "pp-moss": "#7edcc3",
-    "pp-sun": "#ffd66b",
-    "pp-bark": "#8a5a34",
-    "pp-sky": "#8ecdf0",
-    "pp-cream": "#fff6e9",
-    "pp-ink": "#24402e",
-    "pp-paper": "rgba(255, 255, 255, .6)",
-    "pp-radius": "22px",
-    "pp-blur": "14px",
+    "c-bg": "#7edcc3",
+    "c-primary": "#ffd66b",
+    "c-accent": "#8ecdf0",
+    "c-warn": "#f2a65a",
+    "c-ink": "#1c2b33",
+    "glass": "rgba(255,255,255,.6)",
+    "radius": "22px",
+    "blur": "14px",
     "font-view": "ui-rounded, -apple-system, \"PingFang SC\", \"Segoe UI\", sans-serif",
     "w-view-max": "600"
   },
   "pages": [
     {
+      "id": "00-launch",
+      "name": "启动页",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "pp/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgb(255, 246, 233)",
+          "color": "rgb(91, 58, 30)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/start",
+          "kind": "button",
+          "rect": {
+            "x": 109,
+            "y": 709,
+            "w": 172,
+            "h": 51
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "cornerRadius": 999,
+          "font": {
+            "family": "ui-rounded",
+            "size": 15,
+            "weight": 600,
+            "lineHeight": 23
+          },
+          "text": "开始冒险"
+        }
+      ]
+    },
+    {
       "id": "01-home",
-      "name": "乐园首页",
+      "name": "首页·大世界",
       "frame": {
         "width": 390,
-        "height": 1002
+        "height": 844
       },
       "nodes": [
         {
@@ -35,10 +83,10 @@
             "x": 0,
             "y": 0,
             "w": 390,
-            "h": 1002
+            "h": 844
           },
-          "fill": "rgb(220, 239, 216)",
-          "color": "rgb(36, 64, 46)",
+          "fill": "rgb(255, 246, 233)",
+          "color": "rgb(91, 58, 30)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -49,102 +97,132 @@
           "text": ""
         },
         {
-          "dc": "pp/head",
-          "kind": "frame",
-          "rect": {
-            "x": 16,
-            "y": 202,
-            "w": 358,
-            "h": 40
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(36, 64, 46)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/hero",
-          "kind": "frame",
-          "rect": {
-            "x": 16,
-            "y": 254,
-            "w": 358,
-            "h": 230
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(36, 64, 46)",
-          "cornerRadius": 24,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/acts",
-          "kind": "frame",
-          "rect": {
-            "x": 16,
-            "y": 496,
-            "w": 358,
-            "h": 104
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(36, 64, 46)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/pass",
+          "dc": "pp/start",
           "kind": "button",
           "rect": {
-            "x": 16,
-            "y": 612,
-            "w": 358,
-            "h": 70
+            "x": 109,
+            "y": 709,
+            "w": 172,
+            "h": 51
           },
-          "fill": "rgba(255, 255, 255, 0.6)",
-          "color": "rgb(36, 64, 46)",
-          "cornerRadius": 22,
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "cornerRadius": 999,
+          "font": {
+            "family": "ui-rounded",
+            "size": 15,
+            "weight": 600,
+            "lineHeight": 23
+          },
+          "text": "开始冒险"
+        }
+      ]
+    },
+    {
+      "id": "02-interact",
+      "name": "单动物互动",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "pp/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(91, 58, 30)",
+          "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
             "size": 16,
             "weight": 400,
             "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/petstage",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 214,
+            "w": 300,
+            "h": 434
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(91, 58, 30)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/pet",
+          "kind": "button",
+          "rect": {
+            "x": 324,
+            "y": 321,
+            "w": 52,
+            "h": 52
+          },
+          "fill": "rgba(255, 255, 255, 0.92)",
+          "color": "rgb(176, 85, 47)",
+          "cornerRadius": 50,
+          "font": {
+            "family": "ui-rounded",
+            "size": 10,
+            "weight": 600,
+            "lineHeight": 14
           },
           "text": ""
         },
         {
           "dc": "pp/feed",
-          "kind": "frame",
+          "kind": "button",
           "rect": {
-            "x": 16,
-            "y": 694,
-            "w": 358,
-            "h": 200
+            "x": 324,
+            "y": 383,
+            "w": 52,
+            "h": 52
           },
-          "fill": "rgba(255, 255, 255, 0.6)",
-          "color": "rgb(36, 64, 46)",
-          "cornerRadius": 22,
+          "fill": "rgba(255, 255, 255, 0.92)",
+          "color": "rgb(176, 85, 47)",
+          "cornerRadius": 50,
           "font": {
             "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
+            "size": 10,
+            "weight": 600,
+            "lineHeight": 14
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/sing",
+          "kind": "button",
+          "rect": {
+            "x": 324,
+            "y": 445,
+            "w": 52,
+            "h": 52
+          },
+          "fill": "rgba(255, 255, 255, 0.92)",
+          "color": "rgb(176, 85, 47)",
+          "cornerRadius": 50,
+          "font": {
+            "family": "ui-rounded",
+            "size": 10,
+            "weight": 600,
+            "lineHeight": 14
           },
           "text": ""
         },
@@ -152,14 +230,14 @@
           "dc": "pp/tabs",
           "kind": "frame",
           "rect": {
-            "x": 14,
-            "y": 930,
-            "w": 362,
-            "h": 50
+            "x": 12,
+            "y": 791,
+            "w": 366,
+            "h": 33
           },
-          "fill": "rgba(255, 255, 255, 0.6)",
-          "color": "rgb(36, 64, 46)",
-          "cornerRadius": 22,
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(91, 58, 30)",
+          "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
             "size": 16,
@@ -171,11 +249,11 @@
       ]
     },
     {
-      "id": "02-pets",
-      "name": "萌宠档案",
+      "id": "03-band",
+      "name": "动物乐队",
       "frame": {
         "width": 390,
-        "height": 1002
+        "height": 844
       },
       "nodes": [
         {
@@ -185,10 +263,10 @@
             "x": 0,
             "y": 0,
             "w": 390,
-            "h": 1002
+            "h": 844
           },
-          "fill": "rgb(220, 239, 216)",
-          "color": "rgb(36, 64, 46)",
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(91, 58, 30)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -199,16 +277,16 @@
           "text": ""
         },
         {
-          "dc": "pp/head",
+          "dc": "pp/petstage",
           "kind": "frame",
           "rect": {
-            "x": 16,
-            "y": 202,
-            "w": 358,
-            "h": 40
+            "x": 0,
+            "y": 214,
+            "w": 300,
+            "h": 434
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(36, 64, 46)",
+          "color": "rgb(91, 58, 30)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -219,82 +297,62 @@
           "text": ""
         },
         {
-          "dc": "pp/hero",
-          "kind": "frame",
-          "rect": {
-            "x": 16,
-            "y": 254,
-            "w": 358,
-            "h": 230
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(36, 64, 46)",
-          "cornerRadius": 24,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/acts",
-          "kind": "frame",
-          "rect": {
-            "x": 16,
-            "y": 496,
-            "w": 358,
-            "h": 104
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(36, 64, 46)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/pass",
+          "dc": "pp/pet",
           "kind": "button",
           "rect": {
-            "x": 16,
-            "y": 612,
-            "w": 358,
-            "h": 70
+            "x": 324,
+            "y": 321,
+            "w": 52,
+            "h": 52
           },
-          "fill": "rgba(255, 255, 255, 0.6)",
-          "color": "rgb(36, 64, 46)",
-          "cornerRadius": 22,
+          "fill": "rgba(255, 255, 255, 0.92)",
+          "color": "rgb(176, 85, 47)",
+          "cornerRadius": 50,
           "font": {
             "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
+            "size": 10,
+            "weight": 600,
+            "lineHeight": 14
           },
           "text": ""
         },
         {
           "dc": "pp/feed",
-          "kind": "frame",
+          "kind": "button",
           "rect": {
-            "x": 16,
-            "y": 694,
-            "w": 358,
-            "h": 200
+            "x": 324,
+            "y": 383,
+            "w": 52,
+            "h": 52
           },
-          "fill": "rgba(255, 255, 255, 0.6)",
-          "color": "rgb(36, 64, 46)",
-          "cornerRadius": 22,
+          "fill": "rgba(255, 255, 255, 0.92)",
+          "color": "rgb(176, 85, 47)",
+          "cornerRadius": 50,
           "font": {
             "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
+            "size": 10,
+            "weight": 600,
+            "lineHeight": 14
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/sing",
+          "kind": "button",
+          "rect": {
+            "x": 324,
+            "y": 445,
+            "w": 52,
+            "h": 52
+          },
+          "fill": "rgba(255, 255, 255, 0.92)",
+          "color": "rgb(176, 85, 47)",
+          "cornerRadius": 50,
+          "font": {
+            "family": "ui-rounded",
+            "size": 10,
+            "weight": 600,
+            "lineHeight": 14
           },
           "text": ""
         },
@@ -302,14 +360,14 @@
           "dc": "pp/tabs",
           "kind": "frame",
           "rect": {
-            "x": 14,
-            "y": 930,
-            "w": 362,
-            "h": 50
+            "x": 12,
+            "y": 791,
+            "w": 366,
+            "h": 33
           },
-          "fill": "rgba(255, 255, 255, 0.6)",
-          "color": "rgb(36, 64, 46)",
-          "cornerRadius": 22,
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(91, 58, 30)",
+          "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
             "size": 16,
@@ -321,11 +379,11 @@
       ]
     },
     {
-      "id": "03-map",
-      "name": "乐园地图",
+      "id": "04-map",
+      "name": "地图导游",
       "frame": {
         "width": 390,
-        "height": 1002
+        "height": 844
       },
       "nodes": [
         {
@@ -335,10 +393,10 @@
             "x": 0,
             "y": 0,
             "w": 390,
-            "h": 1002
+            "h": 844
           },
-          "fill": "rgb(220, 239, 216)",
-          "color": "rgb(36, 64, 46)",
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(91, 58, 30)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -349,16 +407,16 @@
           "text": ""
         },
         {
-          "dc": "pp/head",
+          "dc": "pp/petstage",
           "kind": "frame",
           "rect": {
-            "x": 16,
-            "y": 202,
-            "w": 358,
-            "h": 40
+            "x": 0,
+            "y": 214,
+            "w": 300,
+            "h": 434
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(36, 64, 46)",
+          "color": "rgb(91, 58, 30)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -369,82 +427,62 @@
           "text": ""
         },
         {
-          "dc": "pp/hero",
-          "kind": "frame",
-          "rect": {
-            "x": 16,
-            "y": 254,
-            "w": 358,
-            "h": 230
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(36, 64, 46)",
-          "cornerRadius": 24,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/acts",
-          "kind": "frame",
-          "rect": {
-            "x": 16,
-            "y": 496,
-            "w": 358,
-            "h": 104
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(36, 64, 46)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/pass",
+          "dc": "pp/pet",
           "kind": "button",
           "rect": {
-            "x": 16,
-            "y": 612,
-            "w": 358,
-            "h": 70
+            "x": 324,
+            "y": 321,
+            "w": 52,
+            "h": 52
           },
-          "fill": "rgba(255, 255, 255, 0.6)",
-          "color": "rgb(36, 64, 46)",
-          "cornerRadius": 22,
+          "fill": "rgba(255, 255, 255, 0.92)",
+          "color": "rgb(176, 85, 47)",
+          "cornerRadius": 50,
           "font": {
             "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
+            "size": 10,
+            "weight": 600,
+            "lineHeight": 14
           },
           "text": ""
         },
         {
           "dc": "pp/feed",
-          "kind": "frame",
+          "kind": "button",
           "rect": {
-            "x": 16,
-            "y": 694,
-            "w": 358,
-            "h": 200
+            "x": 324,
+            "y": 383,
+            "w": 52,
+            "h": 52
           },
-          "fill": "rgba(255, 255, 255, 0.6)",
-          "color": "rgb(36, 64, 46)",
-          "cornerRadius": 22,
+          "fill": "rgba(255, 255, 255, 0.92)",
+          "color": "rgb(176, 85, 47)",
+          "cornerRadius": 50,
           "font": {
             "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
+            "size": 10,
+            "weight": 600,
+            "lineHeight": 14
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/sing",
+          "kind": "button",
+          "rect": {
+            "x": 324,
+            "y": 445,
+            "w": 52,
+            "h": 52
+          },
+          "fill": "rgba(255, 255, 255, 0.92)",
+          "color": "rgb(176, 85, 47)",
+          "cornerRadius": 50,
+          "font": {
+            "family": "ui-rounded",
+            "size": 10,
+            "weight": 600,
+            "lineHeight": 14
           },
           "text": ""
         },
@@ -452,14 +490,14 @@
           "dc": "pp/tabs",
           "kind": "frame",
           "rect": {
-            "x": 14,
-            "y": 930,
-            "w": 362,
-            "h": 50
+            "x": 12,
+            "y": 791,
+            "w": 366,
+            "h": 33
           },
-          "fill": "rgba(255, 255, 255, 0.6)",
-          "color": "rgb(36, 64, 46)",
-          "cornerRadius": 22,
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(91, 58, 30)",
+          "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
             "size": 16,
@@ -471,11 +509,11 @@
       ]
     },
     {
-      "id": "04-community",
-      "name": "乐园社区",
+      "id": "05-build",
+      "name": "家园搭建",
       "frame": {
         "width": 390,
-        "height": 1002
+        "height": 844
       },
       "nodes": [
         {
@@ -485,10 +523,10 @@
             "x": 0,
             "y": 0,
             "w": 390,
-            "h": 1002
+            "h": 844
           },
-          "fill": "rgb(220, 239, 216)",
-          "color": "rgb(36, 64, 46)",
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(91, 58, 30)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -499,16 +537,16 @@
           "text": ""
         },
         {
-          "dc": "pp/head",
+          "dc": "pp/mats",
           "kind": "frame",
           "rect": {
-            "x": 16,
-            "y": 202,
-            "w": 358,
-            "h": 40
+            "x": 14,
+            "y": 238,
+            "w": 362,
+            "h": 35
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(36, 64, 46)",
+          "color": "rgb(91, 58, 30)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -519,36 +557,36 @@
           "text": ""
         },
         {
-          "dc": "pp/hero",
-          "kind": "frame",
+          "dc": "pp/hint",
+          "kind": "text",
           "rect": {
-            "x": 16,
-            "y": 254,
-            "w": 358,
-            "h": 230
+            "x": 14,
+            "y": 282,
+            "w": 362,
+            "h": 37
           },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(36, 64, 46)",
-          "cornerRadius": 24,
+          "fill": "rgba(255, 255, 255, 0.88)",
+          "color": "rgb(138, 100, 64)",
+          "cornerRadius": 16,
           "font": {
             "family": "ui-rounded",
-            "size": 16,
+            "size": 11,
             "weight": 400,
-            "lineHeight": 24
+            "lineHeight": 17
           },
-          "text": ""
+          "text": "拖拽素材到地块放置 · 双指旋转/缩放 · 小动物会自己来玩"
         },
         {
-          "dc": "pp/acts",
+          "dc": "pp/ops",
           "kind": "frame",
           "rect": {
-            "x": 16,
-            "y": 496,
-            "w": 358,
-            "h": 104
+            "x": 14,
+            "y": 741,
+            "w": 362,
+            "h": 39
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(36, 64, 46)",
+          "color": "rgb(91, 58, 30)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -559,57 +597,37 @@
           "text": ""
         },
         {
-          "dc": "pp/pass",
+          "dc": "pp/place",
           "kind": "button",
           "rect": {
-            "x": 16,
-            "y": 612,
-            "w": 358,
-            "h": 70
+            "x": 14,
+            "y": 741,
+            "w": 85,
+            "h": 39
           },
-          "fill": "rgba(255, 255, 255, 0.6)",
-          "color": "rgb(36, 64, 46)",
-          "cornerRadius": 22,
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "cornerRadius": 999,
           "font": {
             "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
+            "size": 12,
+            "weight": 600,
+            "lineHeight": 17
           },
-          "text": ""
-        },
-        {
-          "dc": "pp/feed",
-          "kind": "frame",
-          "rect": {
-            "x": 16,
-            "y": 694,
-            "w": 358,
-            "h": 200
-          },
-          "fill": "rgba(255, 255, 255, 0.6)",
-          "color": "rgb(36, 64, 46)",
-          "cornerRadius": 22,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
+          "text": "放置"
         },
         {
           "dc": "pp/tabs",
           "kind": "frame",
           "rect": {
-            "x": 14,
-            "y": 930,
-            "w": 362,
-            "h": 50
+            "x": 12,
+            "y": 795,
+            "w": 366,
+            "h": 31
           },
-          "fill": "rgba(255, 255, 255, 0.6)",
-          "color": "rgb(36, 64, 46)",
-          "cornerRadius": 22,
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(91, 58, 30)",
+          "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
             "size": 16,
@@ -621,11 +639,11 @@
       ]
     },
     {
-      "id": "05-me",
-      "name": "我的",
+      "id": "06-dex",
+      "name": "动物图鉴",
       "frame": {
         "width": 390,
-        "height": 1002
+        "height": 844
       },
       "nodes": [
         {
@@ -635,10 +653,10 @@
             "x": 0,
             "y": 0,
             "w": 390,
-            "h": 1002
+            "h": 844
           },
-          "fill": "rgb(220, 239, 216)",
-          "color": "rgb(36, 64, 46)",
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(91, 58, 30)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -649,16 +667,16 @@
           "text": ""
         },
         {
-          "dc": "pp/head",
+          "dc": "pp/mats",
           "kind": "frame",
           "rect": {
-            "x": 16,
-            "y": 202,
-            "w": 358,
-            "h": 40
+            "x": 14,
+            "y": 238,
+            "w": 362,
+            "h": 35
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(36, 64, 46)",
+          "color": "rgb(91, 58, 30)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -669,36 +687,36 @@
           "text": ""
         },
         {
-          "dc": "pp/hero",
-          "kind": "frame",
+          "dc": "pp/hint",
+          "kind": "text",
           "rect": {
-            "x": 16,
-            "y": 254,
-            "w": 358,
-            "h": 230
+            "x": 14,
+            "y": 282,
+            "w": 362,
+            "h": 37
           },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(36, 64, 46)",
-          "cornerRadius": 24,
+          "fill": "rgba(255, 255, 255, 0.88)",
+          "color": "rgb(138, 100, 64)",
+          "cornerRadius": 16,
           "font": {
             "family": "ui-rounded",
-            "size": 16,
+            "size": 11,
             "weight": 400,
-            "lineHeight": 24
+            "lineHeight": 17
           },
-          "text": ""
+          "text": "拖拽素材到地块放置 · 双指旋转/缩放 · 小动物会自己来玩"
         },
         {
-          "dc": "pp/acts",
+          "dc": "pp/ops",
           "kind": "frame",
           "rect": {
-            "x": 16,
-            "y": 496,
-            "w": 358,
-            "h": 104
+            "x": 14,
+            "y": 741,
+            "w": 362,
+            "h": 39
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(36, 64, 46)",
+          "color": "rgb(91, 58, 30)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -709,57 +727,167 @@
           "text": ""
         },
         {
-          "dc": "pp/pass",
+          "dc": "pp/place",
           "kind": "button",
           "rect": {
-            "x": 16,
-            "y": 612,
-            "w": 358,
-            "h": 70
+            "x": 14,
+            "y": 741,
+            "w": 85,
+            "h": 39
           },
-          "fill": "rgba(255, 255, 255, 0.6)",
-          "color": "rgb(36, 64, 46)",
-          "cornerRadius": 22,
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "cornerRadius": 999,
           "font": {
             "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
+            "size": 12,
+            "weight": 600,
+            "lineHeight": 17
           },
-          "text": ""
-        },
-        {
-          "dc": "pp/feed",
-          "kind": "frame",
-          "rect": {
-            "x": 16,
-            "y": 694,
-            "w": 358,
-            "h": 200
-          },
-          "fill": "rgba(255, 255, 255, 0.6)",
-          "color": "rgb(36, 64, 46)",
-          "cornerRadius": 22,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
+          "text": "放置"
         },
         {
           "dc": "pp/tabs",
           "kind": "frame",
           "rect": {
-            "x": 14,
-            "y": 930,
-            "w": 362,
-            "h": 50
+            "x": 12,
+            "y": 795,
+            "w": 366,
+            "h": 31
           },
-          "fill": "rgba(255, 255, 255, 0.6)",
-          "color": "rgb(36, 64, 46)",
-          "cornerRadius": 22,
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(91, 58, 30)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "07-tasks",
+      "name": "任务与活动",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "pp/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(91, 58, 30)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/mats",
+          "kind": "frame",
+          "rect": {
+            "x": 14,
+            "y": 238,
+            "w": 362,
+            "h": 35
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(91, 58, 30)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/hint",
+          "kind": "text",
+          "rect": {
+            "x": 14,
+            "y": 282,
+            "w": 362,
+            "h": 37
+          },
+          "fill": "rgba(255, 255, 255, 0.88)",
+          "color": "rgb(138, 100, 64)",
+          "cornerRadius": 16,
+          "font": {
+            "family": "ui-rounded",
+            "size": 11,
+            "weight": 400,
+            "lineHeight": 17
+          },
+          "text": "拖拽素材到地块放置 · 双指旋转/缩放 · 小动物会自己来玩"
+        },
+        {
+          "dc": "pp/ops",
+          "kind": "frame",
+          "rect": {
+            "x": 14,
+            "y": 741,
+            "w": 362,
+            "h": 39
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(91, 58, 30)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/place",
+          "kind": "button",
+          "rect": {
+            "x": 14,
+            "y": 741,
+            "w": 85,
+            "h": 39
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "cornerRadius": 999,
+          "font": {
+            "family": "ui-rounded",
+            "size": 12,
+            "weight": 600,
+            "lineHeight": 17
+          },
+          "text": "放置"
+        },
+        {
+          "dc": "pp/tabs",
+          "kind": "frame",
+          "rect": {
+            "x": 12,
+            "y": 795,
+            "w": 366,
+            "h": 31
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(91, 58, 30)",
+          "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
             "size": 16,

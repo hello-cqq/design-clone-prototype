@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "page_id": "06-dex",
+    "page_name": "动物图鉴",
+    "surface": "c_mobile",
+    "page_type": "c_list",
+    "canvas": {
+      "width": 390,
+      "height": 844
+    },
+    "evidence": [],
+    "fidelity": "high",
+    "product": {
+      "function": "三列卡片网格：解锁/锁",
+      "goals": [
+        "三列卡片网格：解锁/锁"
+      ],
+      "page_prompt": "一张高品质手机竖屏 APP UI 原型设计稿，动物乐园动物图鉴页面，三列卡片网格：解锁/锁；布局：顶标题+筛选 按性格/按乐器；3 列卡网格；底导；控件：pp/dexcard(dialog)；Disney Zootopia-grade cinematic 3D cartoon render, PBR fur and fabric materials, soft natural light and volumetrics, juicy macaron palette, anthropomorphic characters, rounded modern game UI, OC render 8k, clean background；圆角玻璃卡片+半透明磨砂控件+柔和阴影+清晰信息层级+手机竖屏；统一视觉系统：背景沿用「动物城中央广场+喷泉电车」母题；角色为第一视觉，UI 半透明轻量低干扰；界面分层清晰，柔和阴影，精致图标，圆润字体，可直接用于产品原型评审，无水印",
+      "element_prompts": {
+        "pp/dexcard": "dialog 控件：动物简介弹窗"
+      }
+    },
+    "spec_version": 1,
+    "change_log": [
+      {
+        "at": "2026-09-13T07:19:33.391Z",
+        "by": "clone",
+        "note": "collect-design 初始/重采集（computed 真值）"
+      }
+    ]
+  },
+  "regions": [
+    {
+      "id": "r_pp_mats",
+      "type": "custom",
+      "label": "房屋\n      植物\n      家具\n      装饰",
+      "components": [
+        {
+          "kind": "radio",
+          "label": "房屋",
+          "interaction": {
+            "act": "radio",
+            "group": "mat"
+          },
+          "sample_value": "房屋"
+        },
+        {
+          "kind": "radio",
+          "label": "植物",
+          "interaction": {
+            "act": "radio",
+            "group": "mat"
+          },
+          "sample_value": "植物"
+        },
+        {
+          "kind": "radio",
+          "label": "家具",
+          "interaction": {
+            "act": "radio",
+            "group": "mat"
+          },
+          "sample_value": "家具"
+        },
+        {
+          "kind": "radio",
+          "label": "装饰",
+          "interaction": {
+            "act": "radio",
+            "group": "mat"
+          },
+          "sample_value": "装饰"
+        }
+      ]
+    },
+    {
+      "id": "r_pp_hint",
+      "type": "custom",
+      "label": "拖拽素材到地块放置 · 双指旋转/缩放 · 小动物会自己来玩"
+    },
+    {
+      "id": "r_pp_ops",
+      "type": "custom",
+      "label": "放置\n    旋转\n    撤销\n    保存",
+      "components": [
+        {
+          "kind": "button",
+          "label": "放置",
+          "interaction": {
+            "act": "toast",
+            "msg": "放置：小木屋 ×1（演示）"
+          },
+          "sample_value": "放置"
+        },
+        {
+          "kind": "button",
+          "label": "旋转",
+          "interaction": {
+            "act": "toast",
+            "msg": "旋转 45°（演示）"
+          },
+          "sample_value": "旋转"
+        },
+        {
+          "kind": "button",
+          "label": "撤销",
+          "interaction": {
+            "act": "toast",
+            "msg": "已撤销上一步（演示）"
+          },
+          "sample_value": "撤销"
+        },
+        {
+          "kind": "button",
+          "label": "保存",
+          "interaction": {
+            "act": "toast",
+            "msg": "家园已保存（演示）"
+          },
+          "sample_value": "保存"
+        }
+      ]
+    },
+    {
+      "id": "r_pp_place",
+      "type": "custom",
+      "label": "放置"
+    },
+    {
+      "id": "r_pp_tabs",
+      "type": "tab_bar",
+      "label": "乐园动物乐队家园任务",
+      "components": [
+        {
+          "kind": "button",
+          "label": "乐园",
+          "interaction": {
+            "act": "goto",
+            "to": "01-home"
+          },
+          "sample_value": "乐园"
+        },
+        {
+          "kind": "button",
+          "label": "动物",
+          "interaction": {
+            "act": "goto",
+            "to": "02-interact"
+          },
+          "sample_value": "动物"
+        },
+        {
+          "kind": "button",
+          "label": "乐队",
+          "interaction": {
+            "act": "goto",
+            "to": "03-band"
+          },
+          "sample_value": "乐队"
+        },
+        {
+          "kind": "button",
+          "label": "家园",
+          "interaction": {
+            "act": "goto",
+            "to": "05-build"
+          },
+          "sample_value": "家园"
+        },
+        {
+          "kind": "button",
+          "label": "任务",
+          "interaction": {
+            "act": "goto",
+            "to": "07-tasks"
+          },
+          "sample_value": "任务"
+        }
+      ]
+    }
+  ]
+}
