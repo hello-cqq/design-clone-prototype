@@ -1,31 +1,30 @@
 {
   "meta": {
     "page_id": "01-home",
-    "page_name": "助理首页",
+    "page_name": "首页·角色选择",
     "surface": "c_mobile",
     "page_type": "c_home",
     "canvas": {
       "width": 390,
-      "height": 1049
+      "height": 844
     },
     "evidence": [],
     "fidelity": "high",
     "product": {
-      "function": "冒烟：产品说明可写",
+      "function": "双角色大卡切换+音色入口+底部导航",
       "goals": [
-        "留存：每日摘要制造回访",
-        "转化：能力磁贴直达聊天/通话"
+        "双角色大卡切换+音色入口+底部导航"
       ],
-      "page_prompt": "智能助理首页：呼吸光环头像+四粘土磁贴能力+摘要卡+输入条，奶油底糖果色",
+      "page_prompt": "一张高品质手机竖屏 APP UI 原型设计稿，星海对话首页·角色选择页面，双角色大卡切换+音色入口+底部导航；布局：左右两张竖立绘大卡（夜/昼）；卡下小字：切换角色/更换音色；底部导航 首页|对话|视频|设置；控件：as/personas(radio)、as/voice-entry(goto)；Makoto Shinkai film style 2.5D anime, clean transparent cinematic light, tyndall beams, luminous sky and sea reflections, delicate hair strands, emotional color script, 8k key visual, NOT photoreal；圆角玻璃卡片+半透明磨砂控件+柔和阴影+清晰信息层级+手机竖屏；统一视觉系统：背景沿用「夜海+银河+月光倒影」母题；角色为第一视觉，UI 半透明轻量低干扰；界面分层清晰，柔和阴影，精致图标，圆润字体，可直接用于产品原型评审，无水印",
       "element_prompts": {
-        "as/hero": "呼吸光环+奶油环头像",
-        "as/acts": "四饼干边能力磁贴"
+        "as/personas": "radio 控件：切换昼夜主题令牌+背景层",
+        "as/voice-entry": "goto 控件：跳设置音色"
       }
     },
     "spec_version": 1,
     "change_log": [
       {
-        "at": "2026-09-13T02:28:25.634Z",
+        "at": "2026-09-13T07:05:27.446Z",
         "by": "clone",
         "note": "collect-design 初始/重采集（computed 真值）"
       }
@@ -33,72 +32,42 @@
   },
   "regions": [
     {
-      "id": "r_as_hero",
-      "type": "banner",
-      "label": "小昼在线 · 语音就绪",
+      "id": "r_as_personas",
+      "type": "grid",
+      "label": "星海当前角色 ｜ 切换音色\n      海汐当前角色 ｜ 切换音色",
       "components": [
+        {
+          "kind": "radio",
+          "label": "星海当前角色 ｜ 切换音色",
+          "interaction": {
+            "act": "radio",
+            "group": "persona"
+          },
+          "sample_value": "星海当前角色 ｜ 切换音色"
+        },
         {
           "kind": "image",
-          "label": "",
+          "label": ""
+        },
+        {
+          "kind": "radio",
+          "label": "海汐当前角色 ｜ 切换音色",
           "interaction": {
-            "act": "toast",
-            "msg": "小昼：你好，今天想聊点什么？（演示）"
-          }
+            "act": "radio",
+            "group": "persona"
+          },
+          "sample_value": "海汐当前角色 ｜ 切换音色"
+        },
+        {
+          "kind": "image",
+          "label": ""
         }
       ]
-    },
-    {
-      "id": "r_as_acts",
-      "type": "custom",
-      "label": "聊天12 条未读\n      语音对话温柔音色\n      视频通话高清就绪\n ",
-      "components": [
-        {
-          "kind": "button",
-          "label": "聊天12 条未读",
-          "interaction": {
-            "act": "goto",
-            "to": "02-chat"
-          },
-          "sample_value": "聊天12 条未读"
-        },
-        {
-          "kind": "button",
-          "label": "语音对话温柔音色",
-          "interaction": {
-            "act": "toast",
-            "msg": "语音对话：请说出你的问题（演示）"
-          },
-          "sample_value": "语音对话温柔音色"
-        },
-        {
-          "kind": "button",
-          "label": "视频通话高清就绪",
-          "interaction": {
-            "act": "goto",
-            "to": "03-call"
-          },
-          "sample_value": "视频通话高清就绪"
-        },
-        {
-          "kind": "button",
-          "label": "日程提醒3 条待办",
-          "interaction": {
-            "act": "toast",
-            "msg": "今日 3 条提醒已按优先级排好（演示）"
-          },
-          "sample_value": "日程提醒3 条待办"
-        }
-      ]
-    },
-    {
-      "id": "r_as_sum",
-      "type": "custom",
-      "label": "今日摘要\n      \n        日程：14:00 产品评审 · 已备会议"
     },
     {
       "id": "r_as_tabs",
       "type": "tab_bar",
-      "label": "首页聊天通话形象我的",
+      "label": "首页对话视频设置",
       "components": [
         {
           "kind": "button",
@@ -111,41 +80,37 @@
         },
         {
           "kind": "button",
-          "label": "聊天",
+          "label": "对话",
           "interaction": {
             "act": "goto",
             "to": "02-chat"
           },
-          "sample_value": "聊天"
+          "sample_value": "对话"
         },
         {
           "kind": "button",
-          "label": "通话",
+          "label": "视频",
           "interaction": {
             "act": "goto",
             "to": "03-call"
           },
-          "sample_value": "通话"
+          "sample_value": "视频"
         },
         {
           "kind": "button",
-          "label": "形象",
+          "label": "设置",
           "interaction": {
             "act": "goto",
-            "to": "04-persona"
+            "to": "04-settings"
           },
-          "sample_value": "形象"
-        },
-        {
-          "kind": "button",
-          "label": "我的",
-          "interaction": {
-            "act": "goto",
-            "to": "05-me"
-          },
-          "sample_value": "我的"
+          "sample_value": "设置"
         }
       ]
+    },
+    {
+      "id": "r_as_voice_entry",
+      "type": "custom",
+      "label": "设置"
     }
   ]
 }
