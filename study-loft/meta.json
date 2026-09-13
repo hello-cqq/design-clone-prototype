@@ -23,8 +23,8 @@
  },
  "license": "CC-BY-4.0",
  "ip_attestation": "original",
- "attestation_note": "M77-W4 稀薄输入实测",
- "version": "1.0.0",
- "created_at": "2026-09-13T13:35:20.675Z",
+ "attestation_note": "M76-W8c: 补 tokens.css",
+ "version": "1.0.1",
+ "created_at": "2026-09-13T17:33:53.404Z",
  "platform": "mobile"
 }
