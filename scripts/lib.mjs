@@ -85,6 +85,12 @@ export function contributors(root, rel) {
     e.commits++; e.login = e.login || m;
     map.set(k, e);
   }
+  // M76-W2c: 仓库 owner 恒为贡献者（ squash-merge 只记 author，owner 无 path commit 也要展示）
+  try {
+    const remote = execSync(`git -C "${root}" remote get-url origin`, { encoding: "utf8" }).trim();
+    const owner = (remote.match(/[:/]([^/]+)\/[^/]+?\.git$/) || [])[1];
+    if (owner && ![...map.values()].some((c) => c.login === owner)) map.set("owner:" + owner, { name: owner, login: owner, commits: 0 });
+  } catch {}
   return [...map.values()].sort((a, b) => b.commits - a.commits);
 }
 
