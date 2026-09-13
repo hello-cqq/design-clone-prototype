@@ -1,0 +1,226 @@
+{
+  "generated_at": "2026-09-13T07:42:48.288Z",
+  "version": 3,
+  "flowsUsed": true,
+  "nodes": {
+    "01-home": {
+      "title": "秒杀主场"
+    },
+    "02-detail": {
+      "title": "商品详情"
+    },
+    "03-cart": {
+      "title": "购物车"
+    },
+    "04-pay": {
+      "title": "收银台"
+    }
+  },
+  "edges": [
+    {
+      "from": "01-home",
+      "to": "02-detail",
+      "kind": "flow",
+      "label": "秒杀主场 → 商品详情：轮播+规格+"
+    },
+    {
+      "from": "01-home",
+      "to": "03-cart",
+      "kind": "flow",
+      "label": "秒杀主场 → 购物车：勾选+凑单"
+    },
+    {
+      "from": "01-home",
+      "to": "04-pay",
+      "kind": "flow",
+      "label": "秒杀主场 → 收银台：支付方式+提交"
+    },
+    {
+      "from": "02-detail",
+      "to": "03-cart",
+      "kind": "flow",
+      "label": "商品详情 → 购物车 主链路"
+    },
+    {
+      "from": "03-cart",
+      "to": "04-pay",
+      "kind": "flow",
+      "label": "购物车 → 收银台 主链路"
+    }
+  ],
+  "roots": [
+    "01-home"
+  ],
+  "depths": {
+    "01-home": 0,
+    "02-detail": 1,
+    "03-cart": 1,
+    "04-pay": 1
+  },
+  "perNode": {
+    "01-home": {
+      "paths": [
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2
+        ]
+      ],
+      "pathInfo": [
+        {
+          "source": "brief",
+          "flow": "b1",
+          "name": "秒杀主场 链路 1"
+        },
+        {
+          "source": "brief",
+          "flow": "b2",
+          "name": "秒杀主场 链路 2"
+        },
+        {
+          "source": "brief",
+          "flow": "b3",
+          "name": "秒杀主场 链路 3"
+        }
+      ],
+      "nav": [
+        "02-detail",
+        "03-cart",
+        "04-pay"
+      ],
+      "tree": {
+        "node": "01-home",
+        "children": [
+          {
+            "edge": 0,
+            "child": {
+              "node": "02-detail",
+              "children": [
+                {
+                  "edge": 3,
+                  "child": {
+                    "node": "03-cart",
+                    "children": [
+                      {
+                        "edge": 4,
+                        "child": {
+                          "node": "04-pay",
+                          "children": []
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "edge": 1,
+            "child": {
+              "node": "03-cart",
+              "children": [
+                {
+                  "edge": 4,
+                  "child": {
+                    "node": "04-pay",
+                    "children": []
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "edge": 2,
+            "child": {
+              "node": "04-pay",
+              "children": []
+            }
+          }
+        ]
+      }
+    },
+    "02-detail": {
+      "paths": [
+        [
+          3,
+          4
+        ]
+      ],
+      "pathInfo": [
+        {
+          "source": "brief",
+          "flow": "b1",
+          "name": "商品详情 链路 1"
+        }
+      ],
+      "nav": [
+        "03-cart"
+      ],
+      "tree": {
+        "node": "02-detail",
+        "children": [
+          {
+            "edge": 3,
+            "child": {
+              "node": "03-cart",
+              "children": [
+                {
+                  "edge": 4,
+                  "child": {
+                    "node": "04-pay",
+                    "children": []
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "03-cart": {
+      "paths": [
+        [
+          4
+        ]
+      ],
+      "pathInfo": [
+        {
+          "source": "brief",
+          "flow": "b1",
+          "name": "购物车 链路 1"
+        }
+      ],
+      "nav": [
+        "04-pay"
+      ],
+      "tree": {
+        "node": "03-cart",
+        "children": [
+          {
+            "edge": 4,
+            "child": {
+              "node": "04-pay",
+              "children": []
+            }
+          }
+        ]
+      }
+    },
+    "04-pay": {
+      "paths": [],
+      "pathInfo": [],
+      "nav": [],
+      "tree": {
+        "node": "04-pay",
+        "children": []
+      }
+    }
+  }
+}
