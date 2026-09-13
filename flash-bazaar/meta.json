@@ -1,0 +1,30 @@
+{
+ "name": {
+  "en": "Flash Bazaar",
+  "zh": "闪购集市"
+ },
+ "description": {
+  "en": "Interactive commerce prototype (mobile): full UI flows, live controls, design specs and user paths — cloned from a real source by design-clone.",
+  "zh": "电商购物类应用原型：倒计时+场次 tab+商品瀑。由 design-clone 自真实来源克隆，全控件可交互、含设计规格与路径。"
+ },
+ "tags": [
+  "interactive",
+  "coupon",
+  "original",
+  "mobile",
+  "flash-sale",
+  "cart"
+ ],
+ "category": "commerce",
+ "shell": "c_mobile",
+ "source": {
+  "kind": "original",
+  "ref": "gen-shop"
+ },
+ "license": "CC-BY-4.0",
+ "ip_attestation": "original",
+ "attestation_note": "M77-W4 稀薄输入实测",
+ "version": "1.0.0",
+ "created_at": "2026-09-13T13:49:39.931Z",
+ "platform": "mobile"
+}
