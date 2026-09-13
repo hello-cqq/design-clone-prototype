@@ -23,8 +23,8 @@
  },
  "license": "CC-BY-4.0",
  "ip_attestation": "original",
- "attestation_note": "M76-W2b: 图标=官网双主字标",
- "version": "1.2.0",
- "created_at": "2026-09-13T01:41:57.844Z",
+ "attestation_note": "M76-W3c: 原神级 2.5D 重做（分层视差+粒子+玻璃 HUD+anime-cel 渲染）",
+ "version": "2.0.0",
+ "created_at": "2026-09-13T02:29:21.456Z",
  "platform": "mobile"
 }
