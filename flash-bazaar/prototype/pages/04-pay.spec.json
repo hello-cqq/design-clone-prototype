@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "page_id": "04-pay",
+    "page_name": "收银台",
+    "surface": "c_mobile",
+    "page_type": "c_list",
+    "canvas": {
+      "width": 390,
+      "height": 844
+    },
+    "evidence": [],
+    "fidelity": "high",
+    "product": {
+      "function": "支付方式+提交",
+      "goals": [
+        "支付方式+提交"
+      ],
+      "page_prompt": "一张高品质手机竖屏 APP UI 原型设计稿，闪购集市收银台页面，支付方式+提交；布局：金额大字；支付 radio；提交钮；控件：co/pay(radio)；premium anime key visual, crisp cel shading 2-3 tone steps, strong rim light, volumetric god rays, layered atmospheric depth, saturated-yet-soft palette, studio key art quality, NOT photoreal；圆角玻璃卡片+半透明磨砂控件+柔和阴影+清晰信息层级+手机竖屏；统一视觉系统：背景沿用「暖光集市摊位」母题；角色为第一视觉，UI 半透明轻量低干扰；界面分层清晰，柔和阴影，精致图标，圆润字体，可直接用于产品原型评审，无水印",
+      "element_prompts": {
+        "co/pay": "radio 控件：方式高亮"
+      }
+    },
+    "spec_version": 1,
+    "change_log": [
+      {
+        "at": "2026-09-13T13:27:44.545Z",
+        "by": "clone",
+        "note": "collect-design 初始/重采集（computed 真值）"
+      }
+    ]
+  },
+  "regions": [
+    {
+      "id": "r_co_tab",
+      "type": "custom",
+      "label": "tab"
+    },
+    {
+      "id": "r_co_grab",
+      "type": "custom",
+      "label": "grab"
+    }
+  ]
+}
