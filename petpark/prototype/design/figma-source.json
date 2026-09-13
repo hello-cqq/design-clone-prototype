@@ -1,28 +1,23 @@
 {
   "meta": {
     "generator": "design-clone collect-design",
-    "generated_at": "2026-09-11T13:26:46.723Z",
+    "generated_at": "2026-09-13T02:27:07.274Z",
     "source_run": "demo-petpark",
     "schema": "figma-source/v1"
   },
   "variables": {
-    "color-bg": "#fdf3e3",
-    "color-surface": "#fffdf8",
-    "color-ink": "#4a3f35",
-    "color-mut": "#a08d76",
-    "color-line": "#eadbc4",
-    "color-mint": "#7fd8be",
-    "color-mint-deep": "#3fae83",
-    "color-peach": "#ffb38a",
-    "color-peach-deep": "#ff9d6b",
-    "color-lilac": "#c9b6f2",
-    "color-lilac-deep": "#8a63d2",
-    "color-sky": "#8ecdf0",
-    "color-sky-deep": "#4aa3e8",
-    "color-danger": "#e05a4e",
-    "radius-card": "24px",
-    "radius-pill": "999px",
-    "shadow-clay": "0 10px 24px rgba(180, 140, 90, .16)"
+    "pp-leaf": "#2f9e63",
+    "pp-moss": "#7edcc3",
+    "pp-sun": "#ffd66b",
+    "pp-bark": "#8a5a34",
+    "pp-sky": "#8ecdf0",
+    "pp-cream": "#fff6e9",
+    "pp-ink": "#24402e",
+    "pp-paper": "rgba(255, 255, 255, .6)",
+    "pp-radius": "22px",
+    "pp-blur": "14px",
+    "font-view": "ui-rounded, -apple-system, \"PingFang SC\", \"Segoe UI\", sans-serif",
+    "w-view-max": "600"
   },
   "pages": [
     {
@@ -30,7 +25,7 @@
       "name": "乐园首页",
       "frame": {
         "width": 390,
-        "height": 844
+        "height": 1002
       },
       "nodes": [
         {
@@ -40,10 +35,10 @@
             "x": 0,
             "y": 0,
             "w": 390,
-            "h": 844
+            "h": 1002
           },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(74, 59, 46)",
+          "fill": "rgb(220, 239, 216)",
+          "color": "rgb(36, 64, 46)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -57,13 +52,13 @@
           "dc": "pp/head",
           "kind": "frame",
           "rect": {
-            "x": 18,
-            "y": 50,
-            "w": 354,
-            "h": 36
+            "x": 16,
+            "y": 202,
+            "w": 358,
+            "h": 40
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(74, 59, 46)",
+          "color": "rgb(36, 64, 46)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -78,12 +73,12 @@
           "kind": "frame",
           "rect": {
             "x": 16,
-            "y": 98,
+            "y": 254,
             "w": 358,
-            "h": 208
+            "h": 230
           },
-          "fill": "rgb(255, 253, 248)",
-          "color": "rgb(74, 59, 46)",
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(36, 64, 46)",
           "cornerRadius": 24,
           "font": {
             "family": "ui-rounded",
@@ -98,12 +93,12 @@
           "kind": "frame",
           "rect": {
             "x": 16,
-            "y": 320,
+            "y": 496,
             "w": 358,
-            "h": 107
+            "h": 104
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(74, 59, 46)",
+          "color": "rgb(36, 64, 46)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -118,13 +113,13 @@
           "kind": "button",
           "rect": {
             "x": 16,
-            "y": 441,
+            "y": 612,
             "w": 358,
-            "h": 86
+            "h": 70
           },
-          "fill": "rgb(255, 253, 248)",
-          "color": "rgb(74, 59, 46)",
-          "cornerRadius": 24,
+          "fill": "rgba(255, 255, 255, 0.6)",
+          "color": "rgb(36, 64, 46)",
+          "cornerRadius": 22,
           "font": {
             "family": "ui-rounded",
             "size": 16,
@@ -135,16 +130,16 @@
         },
         {
           "dc": "pp/feed",
-          "kind": "button",
+          "kind": "frame",
           "rect": {
             "x": 16,
-            "y": 541,
+            "y": 694,
             "w": 358,
-            "h": 68
+            "h": 200
           },
-          "fill": "rgb(255, 253, 248)",
-          "color": "rgb(74, 59, 46)",
-          "cornerRadius": 24,
+          "fill": "rgba(255, 255, 255, 0.6)",
+          "color": "rgb(36, 64, 46)",
+          "cornerRadius": 22,
           "font": {
             "family": "ui-rounded",
             "size": 16,
@@ -158,13 +153,13 @@
           "kind": "frame",
           "rect": {
             "x": 14,
-            "y": 768,
+            "y": 930,
             "w": 362,
             "h": 50
           },
-          "fill": "rgb(255, 253, 248)",
-          "color": "rgb(74, 59, 46)",
-          "cornerRadius": 999,
+          "fill": "rgba(255, 255, 255, 0.6)",
+          "color": "rgb(36, 64, 46)",
+          "cornerRadius": 22,
           "font": {
             "family": "ui-rounded",
             "size": 16,
@@ -180,7 +175,7 @@
       "name": "萌宠档案",
       "frame": {
         "width": 390,
-        "height": 844
+        "height": 1002
       },
       "nodes": [
         {
@@ -190,10 +185,10 @@
             "x": 0,
             "y": 0,
             "w": 390,
-            "h": 844
+            "h": 1002
           },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(74, 59, 46)",
+          "fill": "rgb(220, 239, 216)",
+          "color": "rgb(36, 64, 46)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -207,13 +202,13 @@
           "dc": "pp/head",
           "kind": "frame",
           "rect": {
-            "x": 18,
-            "y": 50,
-            "w": 354,
-            "h": 36
+            "x": 16,
+            "y": 202,
+            "w": 358,
+            "h": 40
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(74, 59, 46)",
+          "color": "rgb(36, 64, 46)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -228,12 +223,12 @@
           "kind": "frame",
           "rect": {
             "x": 16,
-            "y": 98,
+            "y": 254,
             "w": 358,
-            "h": 208
+            "h": 230
           },
-          "fill": "rgb(255, 253, 248)",
-          "color": "rgb(74, 59, 46)",
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(36, 64, 46)",
           "cornerRadius": 24,
           "font": {
             "family": "ui-rounded",
@@ -248,12 +243,12 @@
           "kind": "frame",
           "rect": {
             "x": 16,
-            "y": 320,
+            "y": 496,
             "w": 358,
-            "h": 107
+            "h": 104
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(74, 59, 46)",
+          "color": "rgb(36, 64, 46)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -268,13 +263,13 @@
           "kind": "button",
           "rect": {
             "x": 16,
-            "y": 441,
+            "y": 612,
             "w": 358,
-            "h": 86
+            "h": 70
           },
-          "fill": "rgb(255, 253, 248)",
-          "color": "rgb(74, 59, 46)",
-          "cornerRadius": 24,
+          "fill": "rgba(255, 255, 255, 0.6)",
+          "color": "rgb(36, 64, 46)",
+          "cornerRadius": 22,
           "font": {
             "family": "ui-rounded",
             "size": 16,
@@ -285,16 +280,16 @@
         },
         {
           "dc": "pp/feed",
-          "kind": "button",
+          "kind": "frame",
           "rect": {
             "x": 16,
-            "y": 541,
+            "y": 694,
             "w": 358,
-            "h": 68
+            "h": 200
           },
-          "fill": "rgb(255, 253, 248)",
-          "color": "rgb(74, 59, 46)",
-          "cornerRadius": 24,
+          "fill": "rgba(255, 255, 255, 0.6)",
+          "color": "rgb(36, 64, 46)",
+          "cornerRadius": 22,
           "font": {
             "family": "ui-rounded",
             "size": 16,
@@ -308,13 +303,13 @@
           "kind": "frame",
           "rect": {
             "x": 14,
-            "y": 768,
+            "y": 930,
             "w": 362,
             "h": 50
           },
-          "fill": "rgb(255, 253, 248)",
-          "color": "rgb(74, 59, 46)",
-          "cornerRadius": 999,
+          "fill": "rgba(255, 255, 255, 0.6)",
+          "color": "rgb(36, 64, 46)",
+          "cornerRadius": 22,
           "font": {
             "family": "ui-rounded",
             "size": 16,
@@ -330,7 +325,7 @@
       "name": "乐园地图",
       "frame": {
         "width": 390,
-        "height": 844
+        "height": 1002
       },
       "nodes": [
         {
@@ -340,10 +335,10 @@
             "x": 0,
             "y": 0,
             "w": 390,
-            "h": 844
+            "h": 1002
           },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(74, 59, 46)",
+          "fill": "rgb(220, 239, 216)",
+          "color": "rgb(36, 64, 46)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -357,13 +352,13 @@
           "dc": "pp/head",
           "kind": "frame",
           "rect": {
-            "x": 18,
-            "y": 50,
-            "w": 354,
-            "h": 36
+            "x": 16,
+            "y": 202,
+            "w": 358,
+            "h": 40
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(74, 59, 46)",
+          "color": "rgb(36, 64, 46)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -378,12 +373,12 @@
           "kind": "frame",
           "rect": {
             "x": 16,
-            "y": 98,
+            "y": 254,
             "w": 358,
-            "h": 208
+            "h": 230
           },
-          "fill": "rgb(255, 253, 248)",
-          "color": "rgb(74, 59, 46)",
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(36, 64, 46)",
           "cornerRadius": 24,
           "font": {
             "family": "ui-rounded",
@@ -398,12 +393,12 @@
           "kind": "frame",
           "rect": {
             "x": 16,
-            "y": 320,
+            "y": 496,
             "w": 358,
-            "h": 107
+            "h": 104
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(74, 59, 46)",
+          "color": "rgb(36, 64, 46)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -418,13 +413,13 @@
           "kind": "button",
           "rect": {
             "x": 16,
-            "y": 441,
+            "y": 612,
             "w": 358,
-            "h": 86
+            "h": 70
           },
-          "fill": "rgb(255, 253, 248)",
-          "color": "rgb(74, 59, 46)",
-          "cornerRadius": 24,
+          "fill": "rgba(255, 255, 255, 0.6)",
+          "color": "rgb(36, 64, 46)",
+          "cornerRadius": 22,
           "font": {
             "family": "ui-rounded",
             "size": 16,
@@ -435,16 +430,16 @@
         },
         {
           "dc": "pp/feed",
-          "kind": "button",
+          "kind": "frame",
           "rect": {
             "x": 16,
-            "y": 541,
+            "y": 694,
             "w": 358,
-            "h": 68
+            "h": 200
           },
-          "fill": "rgb(255, 253, 248)",
-          "color": "rgb(74, 59, 46)",
-          "cornerRadius": 24,
+          "fill": "rgba(255, 255, 255, 0.6)",
+          "color": "rgb(36, 64, 46)",
+          "cornerRadius": 22,
           "font": {
             "family": "ui-rounded",
             "size": 16,
@@ -458,13 +453,13 @@
           "kind": "frame",
           "rect": {
             "x": 14,
-            "y": 768,
+            "y": 930,
             "w": 362,
             "h": 50
           },
-          "fill": "rgb(255, 253, 248)",
-          "color": "rgb(74, 59, 46)",
-          "cornerRadius": 999,
+          "fill": "rgba(255, 255, 255, 0.6)",
+          "color": "rgb(36, 64, 46)",
+          "cornerRadius": 22,
           "font": {
             "family": "ui-rounded",
             "size": 16,
@@ -480,7 +475,7 @@
       "name": "乐园社区",
       "frame": {
         "width": 390,
-        "height": 844
+        "height": 1002
       },
       "nodes": [
         {
@@ -490,10 +485,10 @@
             "x": 0,
             "y": 0,
             "w": 390,
-            "h": 844
+            "h": 1002
           },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(74, 59, 46)",
+          "fill": "rgb(220, 239, 216)",
+          "color": "rgb(36, 64, 46)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -507,13 +502,13 @@
           "dc": "pp/head",
           "kind": "frame",
           "rect": {
-            "x": 18,
-            "y": 50,
-            "w": 354,
-            "h": 36
+            "x": 16,
+            "y": 202,
+            "w": 358,
+            "h": 40
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(74, 59, 46)",
+          "color": "rgb(36, 64, 46)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -528,12 +523,12 @@
           "kind": "frame",
           "rect": {
             "x": 16,
-            "y": 98,
+            "y": 254,
             "w": 358,
-            "h": 208
+            "h": 230
           },
-          "fill": "rgb(255, 253, 248)",
-          "color": "rgb(74, 59, 46)",
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(36, 64, 46)",
           "cornerRadius": 24,
           "font": {
             "family": "ui-rounded",
@@ -548,12 +543,12 @@
           "kind": "frame",
           "rect": {
             "x": 16,
-            "y": 320,
+            "y": 496,
             "w": 358,
-            "h": 107
+            "h": 104
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(74, 59, 46)",
+          "color": "rgb(36, 64, 46)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -568,13 +563,13 @@
           "kind": "button",
           "rect": {
             "x": 16,
-            "y": 441,
+            "y": 612,
             "w": 358,
-            "h": 86
+            "h": 70
           },
-          "fill": "rgb(255, 253, 248)",
-          "color": "rgb(74, 59, 46)",
-          "cornerRadius": 24,
+          "fill": "rgba(255, 255, 255, 0.6)",
+          "color": "rgb(36, 64, 46)",
+          "cornerRadius": 22,
           "font": {
             "family": "ui-rounded",
             "size": 16,
@@ -585,16 +580,16 @@
         },
         {
           "dc": "pp/feed",
-          "kind": "button",
+          "kind": "frame",
           "rect": {
             "x": 16,
-            "y": 541,
+            "y": 694,
             "w": 358,
-            "h": 68
+            "h": 200
           },
-          "fill": "rgb(255, 253, 248)",
-          "color": "rgb(74, 59, 46)",
-          "cornerRadius": 24,
+          "fill": "rgba(255, 255, 255, 0.6)",
+          "color": "rgb(36, 64, 46)",
+          "cornerRadius": 22,
           "font": {
             "family": "ui-rounded",
             "size": 16,
@@ -608,13 +603,13 @@
           "kind": "frame",
           "rect": {
             "x": 14,
-            "y": 768,
+            "y": 930,
             "w": 362,
             "h": 50
           },
-          "fill": "rgb(255, 253, 248)",
-          "color": "rgb(74, 59, 46)",
-          "cornerRadius": 999,
+          "fill": "rgba(255, 255, 255, 0.6)",
+          "color": "rgb(36, 64, 46)",
+          "cornerRadius": 22,
           "font": {
             "family": "ui-rounded",
             "size": 16,
@@ -630,7 +625,7 @@
       "name": "我的",
       "frame": {
         "width": 390,
-        "height": 844
+        "height": 1002
       },
       "nodes": [
         {
@@ -640,10 +635,10 @@
             "x": 0,
             "y": 0,
             "w": 390,
-            "h": 844
+            "h": 1002
           },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(74, 59, 46)",
+          "fill": "rgb(220, 239, 216)",
+          "color": "rgb(36, 64, 46)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -657,13 +652,13 @@
           "dc": "pp/head",
           "kind": "frame",
           "rect": {
-            "x": 18,
-            "y": 50,
-            "w": 354,
-            "h": 36
+            "x": 16,
+            "y": 202,
+            "w": 358,
+            "h": 40
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(74, 59, 46)",
+          "color": "rgb(36, 64, 46)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -678,12 +673,12 @@
           "kind": "frame",
           "rect": {
             "x": 16,
-            "y": 98,
+            "y": 254,
             "w": 358,
-            "h": 208
+            "h": 230
           },
-          "fill": "rgb(255, 253, 248)",
-          "color": "rgb(74, 59, 46)",
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(36, 64, 46)",
           "cornerRadius": 24,
           "font": {
             "family": "ui-rounded",
@@ -698,12 +693,12 @@
           "kind": "frame",
           "rect": {
             "x": 16,
-            "y": 320,
+            "y": 496,
             "w": 358,
-            "h": 107
+            "h": 104
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(74, 59, 46)",
+          "color": "rgb(36, 64, 46)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -718,13 +713,13 @@
           "kind": "button",
           "rect": {
             "x": 16,
-            "y": 441,
+            "y": 612,
             "w": 358,
-            "h": 86
+            "h": 70
           },
-          "fill": "rgb(255, 253, 248)",
-          "color": "rgb(74, 59, 46)",
-          "cornerRadius": 24,
+          "fill": "rgba(255, 255, 255, 0.6)",
+          "color": "rgb(36, 64, 46)",
+          "cornerRadius": 22,
           "font": {
             "family": "ui-rounded",
             "size": 16,
@@ -735,16 +730,16 @@
         },
         {
           "dc": "pp/feed",
-          "kind": "button",
+          "kind": "frame",
           "rect": {
             "x": 16,
-            "y": 541,
+            "y": 694,
             "w": 358,
-            "h": 68
+            "h": 200
           },
-          "fill": "rgb(255, 253, 248)",
-          "color": "rgb(74, 59, 46)",
-          "cornerRadius": 24,
+          "fill": "rgba(255, 255, 255, 0.6)",
+          "color": "rgb(36, 64, 46)",
+          "cornerRadius": 22,
           "font": {
             "family": "ui-rounded",
             "size": 16,
@@ -758,13 +753,13 @@
           "kind": "frame",
           "rect": {
             "x": 14,
-            "y": 768,
+            "y": 930,
             "w": 362,
             "h": 50
           },
-          "fill": "rgb(255, 253, 248)",
-          "color": "rgb(74, 59, 46)",
-          "cornerRadius": 999,
+          "fill": "rgba(255, 255, 255, 0.6)",
+          "color": "rgb(36, 64, 46)",
+          "cornerRadius": 22,
           "font": {
             "family": "ui-rounded",
             "size": 16,
