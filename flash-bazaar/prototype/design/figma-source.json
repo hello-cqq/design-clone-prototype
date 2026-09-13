@@ -1,7 +1,7 @@
 {
   "meta": {
     "generator": "design-clone collect-design",
-    "generated_at": "2026-09-13T13:27:44.545Z",
+    "generated_at": "2026-09-13T14:03:26.321Z",
     "source_run": "gen-shop",
     "schema": "figma-source/v1"
   },
@@ -257,13 +257,13 @@
           "text": ""
         },
         {
-          "dc": "co/tab",
+          "dc": "co/pay",
           "kind": "button",
           "rect": {
             "x": 31,
             "y": 359,
-            "w": 48,
-            "h": 42
+            "w": 50,
+            "h": 35
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(255, 255, 255)",
@@ -274,27 +274,7 @@
             "weight": 600,
             "lineHeight": 17
           },
-          "text": "tab"
-        },
-        {
-          "dc": "co/grab",
-          "kind": "button",
-          "rect": {
-            "x": 87,
-            "y": 363,
-            "w": 62,
-            "h": 38
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(255, 255, 255)",
-          "cornerRadius": 999,
-          "font": {
-            "family": "ui-rounded",
-            "size": 12,
-            "weight": 600,
-            "lineHeight": 18
-          },
-          "text": "grab"
+          "text": "pay"
         }
       ]
     }
