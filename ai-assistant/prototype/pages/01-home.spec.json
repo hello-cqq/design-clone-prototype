@@ -12,14 +12,20 @@
     "fidelity": "high",
     "product": {
       "function": "冒烟：产品说明可写",
-      "goals": [],
-      "page_prompt": "",
-      "element_prompts": {}
+      "goals": [
+        "留存：每日摘要制造回访",
+        "转化：能力磁贴直达聊天/通话"
+      ],
+      "page_prompt": "智能助理首页：呼吸光环头像+四粘土磁贴能力+摘要卡+输入条，奶油底糖果色",
+      "element_prompts": {
+        "as/hero": "呼吸光环+奶油环头像",
+        "as/acts": "四饼干边能力磁贴"
+      }
     },
     "spec_version": 1,
     "change_log": [
       {
-        "at": "2026-09-12T15:56:52.557Z",
+        "at": "2026-09-12T16:52:24.172Z",
         "by": "clone",
         "note": "collect-design 初始/重采集（computed 真值）"
       }

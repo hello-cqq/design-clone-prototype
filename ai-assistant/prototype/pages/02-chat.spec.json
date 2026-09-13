@@ -11,15 +11,20 @@
     "evidence": [],
     "fidelity": "high",
     "product": {
-      "function": "（克隆时按 vlm-analysis 补 product 三要素）",
-      "goals": [],
-      "page_prompt": "",
-      "element_prompts": {}
+      "function": "文字聊天：AI/用户双色气泡+打字指示+输入发送",
+      "goals": [
+        "留存：对话连续",
+        "信任：即时响应可视化"
+      ],
+      "page_prompt": "聊天页：丁香 AI 气泡/薄荷用户气泡/三点打字动画/圆角输入条",
+      "element_prompts": {
+        "as/flow": "双色气泡流+打字点"
+      }
     },
     "spec_version": 1,
     "change_log": [
       {
-        "at": "2026-09-12T15:56:52.557Z",
+        "at": "2026-09-12T16:52:24.172Z",
         "by": "clone",
         "note": "collect-design 初始/重采集（computed 真值）"
       }
@@ -27,79 +32,51 @@
   },
   "regions": [
     {
-      "id": "r_as_hero",
-      "type": "banner",
-      "label": "小昼\n    在线 · 语音就绪",
+      "id": "r_as_top",
+      "type": "nav_bar",
+      "label": "小昼正在输入…\n    温柔音色",
       "components": [
         {
           "kind": "image",
+          "label": ""
+        },
+        {
+          "kind": "button",
+          "label": "温柔音色",
+          "interaction": {
+            "act": "goto",
+            "to": "04-persona"
+          },
+          "sample_value": "温柔音色"
+        }
+      ]
+    },
+    {
+      "id": "r_as_flow",
+      "type": "custom",
+      "label": "早上好！今天 14:00 的产品评审我已备好纪要模板，需要现在过一遍议程吗？09",
+      "components": [
+        {
+          "kind": "button",
           "label": "",
           "interaction": {
             "act": "toast",
-            "msg": "小昼：你好，今天想聊点什么？（演示）"
+            "msg": "小昼正在输入（演示）"
           }
         }
       ]
     },
     {
-      "id": "r_as_acts",
-      "type": "custom",
-      "label": "聊天12 条未读\n    语音对话温柔音色\n    视频通话高清就绪\n    日",
-      "components": [
-        {
-          "kind": "button",
-          "label": "聊天12 条未读",
-          "interaction": {
-            "act": "goto",
-            "to": "02-chat"
-          },
-          "sample_value": "聊天12 条未读"
-        },
-        {
-          "kind": "button",
-          "label": "语音对话温柔音色",
-          "interaction": {
-            "act": "toast",
-            "msg": "语音对话：请说出你的问题（演示）"
-          },
-          "sample_value": "语音对话温柔音色"
-        },
-        {
-          "kind": "button",
-          "label": "视频通话高清就绪",
-          "interaction": {
-            "act": "goto",
-            "to": "03-call"
-          },
-          "sample_value": "视频通话高清就绪"
-        },
-        {
-          "kind": "button",
-          "label": "日程提醒3 条待办",
-          "interaction": {
-            "act": "toast",
-            "msg": "今日 3 条提醒已按优先级排好（演示）"
-          },
-          "sample_value": "日程提醒3 条待办"
-        }
-      ]
-    },
-    {
-      "id": "r_as_sum",
-      "type": "custom",
-      "label": "今日摘要\n    \n      日程：14:00 产品评审 · 已备会议纪要模板"
-    },
-    {
       "id": "r_as_input",
       "type": "custom",
-      "label": "问问小昼…",
+      "label": "继续对话…",
       "components": [
         {
           "kind": "button",
           "label": "",
           "interaction": {
             "act": "toast",
-            "msg": "小昼：收到！正在思考（演示）"
+            "msg": "小昼：收到！（演示）"
           }
         }
       ]
