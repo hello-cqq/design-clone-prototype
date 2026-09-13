@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "page_id": "01-home",
+    "page_name": "今夜电台",
+    "surface": "c_mobile",
+    "page_type": "c_home",
+    "canvas": {
+      "width": 390,
+      "height": 844
+    },
+    "evidence": [],
+    "fidelity": "high",
+    "product": {
+      "function": "冒烟：产品说明可写",
+      "goals": [
+        "推荐歌单瀑布+播放条"
+      ],
+      "page_prompt": "一张高品质手机竖屏 APP UI 原型设计稿，霓虹磁带今夜电台页面，推荐歌单瀑布+播放条；布局：霓虹城市背景；歌单双列卡；底迷你播放条；控件：mu/play(toggle)；cyberpunk neon art, rain-slick reflections, magenta-cyan rim light, holographic ui glow, moody night atmosphere；圆角玻璃卡片+半透明磨砂控件+柔和阴影+清晰信息层级+手机竖屏；统一视觉系统：背景沿用「雨夜霓虹街」母题；角色为第一视觉，UI 半透明轻量低干扰；界面分层清晰，柔和阴影，精致图标，圆润字体，可直接用于产品原型评审，无水印",
+      "element_prompts": {
+        "mu/play": "toggle 控件：播放条波形动"
+      }
+    },
+    "spec_version": 1,
+    "change_log": [
+      {
+        "at": "2026-09-13T13:24:07.945Z",
+        "by": "clone",
+        "note": "collect-design 初始/重采集（computed 真值）"
+      }
+    ]
+  },
+  "regions": [
+    {
+      "id": "r_mu_play",
+      "type": "custom",
+      "label": "play",
+      "components": [
+        {
+          "kind": "switch",
+          "label": "",
+          "interaction": {
+            "act": "toggle",
+            "target": "[data-dc='mu/play-sw']"
+          }
+        }
+      ]
+    },
+    {
+      "id": "r_mu_play_sw",
+      "type": "custom",
+      "label": ""
+    }
+  ]
+}
