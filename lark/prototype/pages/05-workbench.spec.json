@@ -6,7 +6,7 @@
     "page_type": "b_dashboard",
     "canvas": {
       "width": 1280,
-      "height": 827
+      "height": 800
     },
     "evidence": [
       "capture/screens/05-workbench.png"
@@ -23,7 +23,7 @@
     "spec_version": 1,
     "change_log": [
       {
-        "at": "2026-09-11T12:13:46.629Z",
+        "at": "2026-09-12T17:12:14.714Z",
         "by": "clone",
         "note": "collect-design 初始/重采集（computed 真值）"
       }
@@ -31,7 +31,7 @@
   },
   "regions": [
     {
-      "id": "r_doc_side",
+      "id": "r_wk_side",
       "type": "sidebar",
       "label": "搜索 (⌘K)\n    \n      消息\n      豆包工作\n      日",
       "components": [
@@ -99,8 +99,8 @@
           "kind": "button",
           "label": "云文档",
           "interaction": {
-            "act": "toast",
-            "msg": "（演示）"
+            "act": "goto",
+            "to": "03-docs"
           },
           "sample_value": "云文档"
         },
@@ -151,8 +151,8 @@
           "kind": "button",
           "label": "工作台",
           "interaction": {
-            "act": "goto",
-            "to": "05-workbench"
+            "act": "toast",
+            "msg": "（演示）"
           },
           "sample_value": "工作台"
         },
@@ -241,7 +241,7 @@
       ]
     },
     {
-      "id": "r_doc_n_msg",
+      "id": "r_wk_n_msg",
       "type": "custom",
       "label": "消息",
       "components": [
@@ -252,7 +252,7 @@
       ]
     },
     {
-      "id": "r_doc_n_doubao",
+      "id": "r_wk_n_doubao",
       "type": "custom",
       "label": "豆包工作",
       "components": [
@@ -263,7 +263,7 @@
       ]
     },
     {
-      "id": "r_doc_n_cal",
+      "id": "r_wk_n_cal",
       "type": "custom",
       "label": "日历",
       "components": [
@@ -274,7 +274,7 @@
       ]
     },
     {
-      "id": "r_doc_n_docs",
+      "id": "r_wk_n_docs",
       "type": "custom",
       "label": "云文档",
       "components": [
@@ -285,7 +285,7 @@
       ]
     },
     {
-      "id": "r_doc_n_bitable",
+      "id": "r_wk_n_bitable",
       "type": "custom",
       "label": "多维表格",
       "components": [
@@ -296,7 +296,7 @@
       ]
     },
     {
-      "id": "r_doc_n_meet",
+      "id": "r_wk_n_meet",
       "type": "custom",
       "label": "视频会议",
       "components": [
@@ -307,7 +307,7 @@
       ]
     },
     {
-      "id": "r_doc_n_fly",
+      "id": "r_wk_n_fly",
       "type": "custom",
       "label": "飞行社",
       "components": [
@@ -318,7 +318,7 @@
       ]
     },
     {
-      "id": "r_doc_n_wb",
+      "id": "r_wk_n_wb",
       "type": "custom",
       "label": "工作台",
       "components": [
@@ -329,7 +329,7 @@
       ]
     },
     {
-      "id": "r_doc_n_appc",
+      "id": "r_wk_n_appc",
       "type": "custom",
       "label": "应用中心",
       "components": [
@@ -340,7 +340,7 @@
       ]
     },
     {
-      "id": "r_doc_n_contacts",
+      "id": "r_wk_n_contacts",
       "type": "custom",
       "label": "通讯录",
       "components": [
@@ -351,7 +351,7 @@
       ]
     },
     {
-      "id": "r_doc_n_vip",
+      "id": "r_wk_n_vip",
       "type": "custom",
       "label": "权益升级",
       "components": [
@@ -362,7 +362,7 @@
       ]
     },
     {
-      "id": "r_doc_n_task",
+      "id": "r_wk_n_task",
       "type": "custom",
       "label": "任务",
       "components": [
@@ -373,7 +373,7 @@
       ]
     },
     {
-      "id": "r_doc_n_star",
+      "id": "r_wk_n_star",
       "type": "custom",
       "label": "收藏",
       "components": [
@@ -384,7 +384,7 @@
       ]
     },
     {
-      "id": "r_doc_n_kb",
+      "id": "r_wk_n_kb",
       "type": "custom",
       "label": "知识库",
       "components": [
@@ -395,72 +395,225 @@
       ]
     },
     {
-      "id": "r_doc_col",
+      "id": "r_wk_act_appc",
       "type": "custom",
-      "label": "主页\n    云盘\n    知识库\n    离线",
+      "label": "应用中心"
+    },
+    {
+      "id": "r_wk_act_new",
+      "type": "custom",
+      "label": "创建应用"
+    },
+    {
+      "id": "r_wk_act_set",
+      "type": "custom",
+      "label": "设置"
+    },
+    {
+      "id": "r_wk_banner",
+      "type": "banner",
+      "label": "轻松打造企业专属工作台\n          Build Your Custom ",
       "components": [
         {
-          "kind": "button",
-          "label": "主页",
-          "interaction": {
-            "act": "toast",
-            "msg": "主页（演示）"
-          },
-          "sample_value": "主页"
-        },
-        {
-          "kind": "button",
-          "label": "云盘",
-          "interaction": {
-            "act": "toast",
-            "msg": "云盘（演示）"
-          },
-          "sample_value": "云盘"
-        },
-        {
-          "kind": "button",
-          "label": "知识库",
-          "interaction": {
-            "act": "goto",
-            "to": "08-kb"
-          },
-          "sample_value": "知识库"
-        },
-        {
-          "kind": "button",
-          "label": "离线",
-          "interaction": {
-            "act": "toast",
-            "msg": "离线（演示）"
-          },
-          "sample_value": "离线"
+          "kind": "image",
+          "label": ""
         }
       ]
     },
     {
-      "id": "r_doc_i_home",
+      "id": "r_wk_a1",
       "type": "custom",
-      "label": "主页"
+      "label": "多维表格",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
     },
     {
-      "id": "r_doc_i_drive",
+      "id": "r_wk_a2",
       "type": "custom",
-      "label": "云盘"
+      "label": "飞书问卷",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
     },
     {
-      "id": "r_doc_i_kb",
+      "id": "r_wk_a3",
       "type": "custom",
-      "label": "知识库"
+      "label": "假勤",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
     },
     {
-      "id": "r_doc_i_off",
+      "id": "r_wk_a4",
       "type": "custom",
-      "label": "离线"
+      "label": "审批",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
     },
     {
-      "id": "r_doc_main",
+      "id": "r_wk_a5",
       "type": "custom",
-      "label": "知识库\n    \n    置顶知识库\n    \n      \n      \n  "
+      "label": "数字总部",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_wk_a6",
+      "type": "custom",
+      "label": "周报",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_wk_a7",
+      "type": "custom",
+      "label": "飞书OKR",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_wk_a8",
+      "type": "custom",
+      "label": "飞书人事",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_wk_b1",
+      "type": "custom",
+      "label": "工资单",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_wk_b2",
+      "type": "custom",
+      "label": "飞书帮助中心",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_wk_b3",
+      "type": "custom",
+      "label": "企业管理",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_wk_b4",
+      "type": "custom",
+      "label": "＋添加常用"
+    },
+    {
+      "id": "r_wk_tab_hot",
+      "type": "custom",
+      "label": "热门推荐"
+    },
+    {
+      "id": "r_wk_tab_team",
+      "type": "custom",
+      "label": "团队管理"
+    },
+    {
+      "id": "r_wk_feat",
+      "type": "custom",
+      "label": "个人任务管理轻松规划每日任务，让生活井井…\n          个人 OKR 执",
+      "components": [
+        {
+          "kind": "button",
+          "label": "个人任务管理轻松规划每日任务，让生活井井…",
+          "interaction": {
+            "act": "toast",
+            "msg": "个人任务管理（演示）"
+          },
+          "sample_value": "个人任务管理轻松规划每日任务，让生活井井…"
+        },
+        {
+          "kind": "image",
+          "label": ""
+        },
+        {
+          "kind": "button",
+          "label": "个人 OKR 执行与复盘科学制定跟踪目标，助力个人高…",
+          "interaction": {
+            "act": "toast",
+            "msg": "个人 OKR 执行与复盘（演示）"
+          },
+          "sample_value": "个人 OKR 执行与复盘科学制定跟踪目标，助力个人高…"
+        },
+        {
+          "kind": "image",
+          "label": ""
+        },
+        {
+          "kind": "button",
+          "label": "月度计划管理统筹月度要事，清晰规划未来每…",
+          "interaction": {
+            "act": "toast",
+            "msg": "月度计划管理（演示）"
+          },
+          "sample_value": "月度计划管理统筹月度要事，清晰规划未来每…"
+        },
+        {
+          "kind": "image",
+          "label": ""
+        },
+        {
+          "kind": "button",
+          "label": "即梦 AI 百宝箱集成AI创意提示词，激发无限创…",
+          "interaction": {
+            "act": "toast",
+            "msg": "即梦 AI 百宝箱（演示）"
+          },
+          "sample_value": "即梦 AI 百宝箱集成AI创意提示词，激发无限创…"
+        },
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
     }
   ]
 }
