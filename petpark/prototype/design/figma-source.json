@@ -1,7 +1,7 @@
 {
   "meta": {
     "generator": "design-clone collect-design",
-    "generated_at": "2026-09-13T07:19:33.391Z",
+    "generated_at": "2026-09-13T13:55:05.708Z",
     "source_run": "demo-petpark",
     "schema": "figma-source/v1"
   },
@@ -537,13 +537,13 @@
           "text": ""
         },
         {
-          "dc": "pp/mats",
+          "dc": "pp/petstage",
           "kind": "frame",
           "rect": {
-            "x": 14,
-            "y": 238,
-            "w": 362,
-            "h": 35
+            "x": 0,
+            "y": 214,
+            "w": 300,
+            "h": 434
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(91, 58, 30)",
@@ -557,73 +557,73 @@
           "text": ""
         },
         {
-          "dc": "pp/hint",
-          "kind": "text",
-          "rect": {
-            "x": 14,
-            "y": 282,
-            "w": 362,
-            "h": 37
-          },
-          "fill": "rgba(255, 255, 255, 0.88)",
-          "color": "rgb(138, 100, 64)",
-          "cornerRadius": 16,
-          "font": {
-            "family": "ui-rounded",
-            "size": 11,
-            "weight": 400,
-            "lineHeight": 17
-          },
-          "text": "拖拽素材到地块放置 · 双指旋转/缩放 · 小动物会自己来玩"
-        },
-        {
-          "dc": "pp/ops",
-          "kind": "frame",
-          "rect": {
-            "x": 14,
-            "y": 741,
-            "w": 362,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(91, 58, 30)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/place",
+          "dc": "pp/pet",
           "kind": "button",
           "rect": {
-            "x": 14,
-            "y": 741,
-            "w": 85,
-            "h": 39
+            "x": 324,
+            "y": 321,
+            "w": 52,
+            "h": 52
           },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(255, 255, 255)",
-          "cornerRadius": 999,
+          "fill": "rgba(255, 255, 255, 0.92)",
+          "color": "rgb(176, 85, 47)",
+          "cornerRadius": 50,
           "font": {
             "family": "ui-rounded",
-            "size": 12,
+            "size": 10,
             "weight": 600,
-            "lineHeight": 17
+            "lineHeight": 14
           },
-          "text": "放置"
+          "text": ""
+        },
+        {
+          "dc": "pp/feed",
+          "kind": "button",
+          "rect": {
+            "x": 324,
+            "y": 383,
+            "w": 52,
+            "h": 52
+          },
+          "fill": "rgba(255, 255, 255, 0.92)",
+          "color": "rgb(176, 85, 47)",
+          "cornerRadius": 50,
+          "font": {
+            "family": "ui-rounded",
+            "size": 10,
+            "weight": 600,
+            "lineHeight": 14
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/sing",
+          "kind": "button",
+          "rect": {
+            "x": 324,
+            "y": 445,
+            "w": 52,
+            "h": 52
+          },
+          "fill": "rgba(255, 255, 255, 0.92)",
+          "color": "rgb(176, 85, 47)",
+          "cornerRadius": 50,
+          "font": {
+            "family": "ui-rounded",
+            "size": 10,
+            "weight": 600,
+            "lineHeight": 14
+          },
+          "text": ""
         },
         {
           "dc": "pp/tabs",
           "kind": "frame",
           "rect": {
             "x": 12,
-            "y": 795,
+            "y": 791,
             "w": 366,
-            "h": 31
+            "h": 33
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(91, 58, 30)",
@@ -667,13 +667,13 @@
           "text": ""
         },
         {
-          "dc": "pp/mats",
+          "dc": "pp/petstage",
           "kind": "frame",
           "rect": {
-            "x": 14,
-            "y": 238,
-            "w": 362,
-            "h": 35
+            "x": 0,
+            "y": 214,
+            "w": 300,
+            "h": 434
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(91, 58, 30)",
@@ -687,73 +687,73 @@
           "text": ""
         },
         {
-          "dc": "pp/hint",
-          "kind": "text",
-          "rect": {
-            "x": 14,
-            "y": 282,
-            "w": 362,
-            "h": 37
-          },
-          "fill": "rgba(255, 255, 255, 0.88)",
-          "color": "rgb(138, 100, 64)",
-          "cornerRadius": 16,
-          "font": {
-            "family": "ui-rounded",
-            "size": 11,
-            "weight": 400,
-            "lineHeight": 17
-          },
-          "text": "拖拽素材到地块放置 · 双指旋转/缩放 · 小动物会自己来玩"
-        },
-        {
-          "dc": "pp/ops",
-          "kind": "frame",
-          "rect": {
-            "x": 14,
-            "y": 741,
-            "w": 362,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(91, 58, 30)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/place",
+          "dc": "pp/pet",
           "kind": "button",
           "rect": {
-            "x": 14,
-            "y": 741,
-            "w": 85,
-            "h": 39
+            "x": 324,
+            "y": 321,
+            "w": 52,
+            "h": 52
           },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(255, 255, 255)",
-          "cornerRadius": 999,
+          "fill": "rgba(255, 255, 255, 0.92)",
+          "color": "rgb(176, 85, 47)",
+          "cornerRadius": 50,
           "font": {
             "family": "ui-rounded",
-            "size": 12,
+            "size": 10,
             "weight": 600,
-            "lineHeight": 17
+            "lineHeight": 14
           },
-          "text": "放置"
+          "text": ""
+        },
+        {
+          "dc": "pp/feed",
+          "kind": "button",
+          "rect": {
+            "x": 324,
+            "y": 383,
+            "w": 52,
+            "h": 52
+          },
+          "fill": "rgba(255, 255, 255, 0.92)",
+          "color": "rgb(176, 85, 47)",
+          "cornerRadius": 50,
+          "font": {
+            "family": "ui-rounded",
+            "size": 10,
+            "weight": 600,
+            "lineHeight": 14
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/sing",
+          "kind": "button",
+          "rect": {
+            "x": 324,
+            "y": 445,
+            "w": 52,
+            "h": 52
+          },
+          "fill": "rgba(255, 255, 255, 0.92)",
+          "color": "rgb(176, 85, 47)",
+          "cornerRadius": 50,
+          "font": {
+            "family": "ui-rounded",
+            "size": 10,
+            "weight": 600,
+            "lineHeight": 14
+          },
+          "text": ""
         },
         {
           "dc": "pp/tabs",
           "kind": "frame",
           "rect": {
             "x": 12,
-            "y": 795,
+            "y": 791,
             "w": 366,
-            "h": 31
+            "h": 33
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(91, 58, 30)",
@@ -797,13 +797,13 @@
           "text": ""
         },
         {
-          "dc": "pp/mats",
+          "dc": "pp/petstage",
           "kind": "frame",
           "rect": {
-            "x": 14,
-            "y": 238,
-            "w": 362,
-            "h": 35
+            "x": 0,
+            "y": 214,
+            "w": 300,
+            "h": 434
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(91, 58, 30)",
@@ -817,73 +817,73 @@
           "text": ""
         },
         {
-          "dc": "pp/hint",
-          "kind": "text",
-          "rect": {
-            "x": 14,
-            "y": 282,
-            "w": 362,
-            "h": 37
-          },
-          "fill": "rgba(255, 255, 255, 0.88)",
-          "color": "rgb(138, 100, 64)",
-          "cornerRadius": 16,
-          "font": {
-            "family": "ui-rounded",
-            "size": 11,
-            "weight": 400,
-            "lineHeight": 17
-          },
-          "text": "拖拽素材到地块放置 · 双指旋转/缩放 · 小动物会自己来玩"
-        },
-        {
-          "dc": "pp/ops",
-          "kind": "frame",
-          "rect": {
-            "x": 14,
-            "y": 741,
-            "w": 362,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(91, 58, 30)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/place",
+          "dc": "pp/pet",
           "kind": "button",
           "rect": {
-            "x": 14,
-            "y": 741,
-            "w": 85,
-            "h": 39
+            "x": 324,
+            "y": 321,
+            "w": 52,
+            "h": 52
           },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(255, 255, 255)",
-          "cornerRadius": 999,
+          "fill": "rgba(255, 255, 255, 0.92)",
+          "color": "rgb(176, 85, 47)",
+          "cornerRadius": 50,
           "font": {
             "family": "ui-rounded",
-            "size": 12,
+            "size": 10,
             "weight": 600,
-            "lineHeight": 17
+            "lineHeight": 14
           },
-          "text": "放置"
+          "text": ""
+        },
+        {
+          "dc": "pp/feed",
+          "kind": "button",
+          "rect": {
+            "x": 324,
+            "y": 383,
+            "w": 52,
+            "h": 52
+          },
+          "fill": "rgba(255, 255, 255, 0.92)",
+          "color": "rgb(176, 85, 47)",
+          "cornerRadius": 50,
+          "font": {
+            "family": "ui-rounded",
+            "size": 10,
+            "weight": 600,
+            "lineHeight": 14
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/sing",
+          "kind": "button",
+          "rect": {
+            "x": 324,
+            "y": 445,
+            "w": 52,
+            "h": 52
+          },
+          "fill": "rgba(255, 255, 255, 0.92)",
+          "color": "rgb(176, 85, 47)",
+          "cornerRadius": 50,
+          "font": {
+            "family": "ui-rounded",
+            "size": 10,
+            "weight": 600,
+            "lineHeight": 14
+          },
+          "text": ""
         },
         {
           "dc": "pp/tabs",
           "kind": "frame",
           "rect": {
             "x": 12,
-            "y": 795,
+            "y": 791,
             "w": 366,
-            "h": 31
+            "h": 33
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(91, 58, 30)",
