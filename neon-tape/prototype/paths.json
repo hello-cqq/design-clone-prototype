@@ -1,0 +1,226 @@
+{
+  "generated_at": "2026-09-13T07:35:20.199Z",
+  "version": 3,
+  "flowsUsed": true,
+  "nodes": {
+    "01-home": {
+      "title": "今夜电台"
+    },
+    "02-player": {
+      "title": "播放器"
+    },
+    "03-eq": {
+      "title": "均衡器"
+    },
+    "04-live": {
+      "title": "live 房"
+    }
+  },
+  "edges": [
+    {
+      "from": "01-home",
+      "to": "02-player",
+      "kind": "flow",
+      "label": "今夜电台 → 播放器：旋转磁带+歌词"
+    },
+    {
+      "from": "01-home",
+      "to": "03-eq",
+      "kind": "flow",
+      "label": "今夜电台 → 均衡器：八段推杆+预设"
+    },
+    {
+      "from": "01-home",
+      "to": "04-live",
+      "kind": "flow",
+      "label": "今夜电台 → live 房：弹幕+礼"
+    },
+    {
+      "from": "02-player",
+      "to": "03-eq",
+      "kind": "flow",
+      "label": "播放器 → 均衡器 主链路"
+    },
+    {
+      "from": "03-eq",
+      "to": "04-live",
+      "kind": "flow",
+      "label": "均衡器 → live 房 主链路"
+    }
+  ],
+  "roots": [
+    "01-home"
+  ],
+  "depths": {
+    "01-home": 0,
+    "02-player": 1,
+    "03-eq": 1,
+    "04-live": 1
+  },
+  "perNode": {
+    "01-home": {
+      "paths": [
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2
+        ]
+      ],
+      "pathInfo": [
+        {
+          "source": "brief",
+          "flow": "b1",
+          "name": "今夜电台 链路 1"
+        },
+        {
+          "source": "brief",
+          "flow": "b2",
+          "name": "今夜电台 链路 2"
+        },
+        {
+          "source": "brief",
+          "flow": "b3",
+          "name": "今夜电台 链路 3"
+        }
+      ],
+      "nav": [
+        "02-player",
+        "03-eq",
+        "04-live"
+      ],
+      "tree": {
+        "node": "01-home",
+        "children": [
+          {
+            "edge": 0,
+            "child": {
+              "node": "02-player",
+              "children": [
+                {
+                  "edge": 3,
+                  "child": {
+                    "node": "03-eq",
+                    "children": [
+                      {
+                        "edge": 4,
+                        "child": {
+                          "node": "04-live",
+                          "children": []
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "edge": 1,
+            "child": {
+              "node": "03-eq",
+              "children": [
+                {
+                  "edge": 4,
+                  "child": {
+                    "node": "04-live",
+                    "children": []
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "edge": 2,
+            "child": {
+              "node": "04-live",
+              "children": []
+            }
+          }
+        ]
+      }
+    },
+    "02-player": {
+      "paths": [
+        [
+          3,
+          4
+        ]
+      ],
+      "pathInfo": [
+        {
+          "source": "brief",
+          "flow": "b1",
+          "name": "播放器 链路 1"
+        }
+      ],
+      "nav": [
+        "03-eq"
+      ],
+      "tree": {
+        "node": "02-player",
+        "children": [
+          {
+            "edge": 3,
+            "child": {
+              "node": "03-eq",
+              "children": [
+                {
+                  "edge": 4,
+                  "child": {
+                    "node": "04-live",
+                    "children": []
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "03-eq": {
+      "paths": [
+        [
+          4
+        ]
+      ],
+      "pathInfo": [
+        {
+          "source": "brief",
+          "flow": "b1",
+          "name": "均衡器 链路 1"
+        }
+      ],
+      "nav": [
+        "04-live"
+      ],
+      "tree": {
+        "node": "03-eq",
+        "children": [
+          {
+            "edge": 4,
+            "child": {
+              "node": "04-live",
+              "children": []
+            }
+          }
+        ]
+      }
+    },
+    "04-live": {
+      "paths": [],
+      "pathInfo": [],
+      "nav": [],
+      "tree": {
+        "node": "04-live",
+        "children": []
+      }
+    }
+  }
+}
