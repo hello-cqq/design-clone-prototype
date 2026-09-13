@@ -1,0 +1,32 @@
+<style>
+  .pz{position:relative;min-height:100%;overflow:hidden;font-family:ui-rounded,-apple-system,"PingFang SC","Segoe UI",sans-serif;color:#5b3a1e;background:#fff6e9}
+  .pz .far{position:absolute;inset:0;background:url(assets/pp-map.png) center/cover;animation:drift 30s ease-in-out infinite alternate}
+  @keyframes drift{from{transform:scale(1.06) translate(0,0)}to{transform:scale(1.12) translate(-2%,1.5%)}}
+  .pz .top{position:absolute;left:14px;right:14px;top:48px;z-index:6;display:flex;gap:8px}
+  .pz .top .q{flex:1;background:rgba(255,255,255,.9);border-radius:999px;padding:10px 16px;font-size:12px;color:#8a6440;box-shadow:0 8px 18px rgba(91,58,30,.16)}
+  .pz .top .nv{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(140deg,#ffb35c,#f28c2e);color:#fff;font-size:11px;font-weight:600;cursor:pointer;box-shadow:0 8px 18px rgba(242,140,46,.4)}
+  .pz .zone{position:absolute;z-index:6;background:linear-gradient(140deg,#ffb35c,#f28c2e);color:#fff;border-radius:12px;padding:6px 11px;font-size:10.5px;font-weight:600;cursor:pointer;box-shadow:0 8px 16px rgba(242,140,46,.4);transition:transform .16s ease}
+  .pz .zone:active{transform:scale(.92)}
+  .pz .zone.on{background:linear-gradient(140deg,#7edcc3,#2fbf9f);box-shadow:0 8px 16px rgba(47,191,159,.45)}
+  .pz .guide{position:absolute;left:12px;right:12px;bottom:20px;z-index:8;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-radius:20px;padding:12px 14px;box-shadow:0 14px 30px rgba(91,58,30,.2)}
+  .pz .guide .row{display:flex;gap:10px;align-items:center;font-size:12px;font-weight:600}
+  .pz .guide .row img{width:34px;height:34px;border-radius:10px;object-fit:cover}
+  .pz .guide .btns{display:flex;gap:8px;margin-top:10px}
+  .pz .guide .btns span{flex:1;text-align:center;border-radius:999px;padding:9px 4px;font-size:11px;font-weight:600;cursor:pointer;background:rgba(255,246,233,.9);color:#b0552f;box-shadow:inset 0 0 0 1px rgba(242,140,46,.35)}
+  .pz .guide .btns span.on{background:linear-gradient(140deg,#ffb35c,#f28c2e);color:#fff}
+  @media (prefers-reduced-motion: reduce){.pz .far{animation:none}}
+</style>
+<div data-dc="pp/root" class="pz">
+  <div class="far" data-fx-parallax="0.5"></div>
+  <canvas data-fx="particles" data-fx-kind="motes" data-fx-n="12" data-fx-colors="#ffffff,#ffd66b"></canvas>
+  <div class="top"><span class="q">想去哪里？</span><span class="nv" data-act="toast" data-msg="导航到：音乐剧场（演示）">导航</span></div>
+  <span class="zone on" style="left:12%;top:30%" data-dc="pp/zones" data-act="radio" data-group="zone">中央广场</span>
+  <span class="zone" style="right:14%;top:26%" data-act="radio" data-group="zone">音乐剧场</span>
+  <span class="zone" style="right:10%;top:44%" data-act="radio" data-group="zone">家园山丘</span>
+  <span class="zone" style="left:14%;top:60%" data-act="radio" data-group="zone">森林车站</span>
+  <span class="zone" style="right:12%;top:66%" data-act="radio" data-group="zone">河岸咖啡街</span>
+  <div class="guide" data-dc="pp/guide">
+    <div class="row"><img src="assets/pp-fox.png" alt="">狐狸向导：下一站，音乐剧场！</div>
+    <div class="btns"><span class="on" data-goto="04-map">地图</span><span data-act="toast" data-msg="收藏：3 个地点（演示）">收藏</span><span data-goto="07-tasks">任务</span></div>
+  </div>
+</div>
