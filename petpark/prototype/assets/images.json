@@ -102,5 +102,101 @@
     "seed": 14,
     "engine": "pollinations",
     "out": "pet-bunny.png"
+  },
+  {
+    "at": "2026-09-13T01:55:15.858Z",
+    "prompt": "wide empty background band only, sunlit forest meadow park, tall trees bokeh, light shafts through leaves, floating pollen motes, layered depth, no animals, no people, no text",
+    "style": "anime-cel",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "pp-bg.png"
+  },
+  {
+    "at": "2026-09-13T01:55:18.874Z",
+    "prompt": "happy corgi puppy sitting on grass hill in sunlit park, butterflies around, strong rim light, cel shading with soft fur tones, vertical composition, studio key visual, no text",
+    "style": "anime-cel",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "pp-home.png"
+  },
+  {
+    "at": "2026-09-13T01:56:03.584Z",
+    "prompt": "three pets lineup on a fallen log: corgi, shiba inu, lop rabbit, sunlit meadow, cel shading, rim light, playful expressions, horizontal composition, no text",
+    "style": "anime-cel",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "pp-pets.png"
+  },
+  {
+    "at": "2026-09-13T01:56:06.723Z",
+    "prompt": "stylized illustrated island park map top-down, winding paths, pond, flower beds, tiny trees, soft painterly colors, game map quality, no text, no labels",
+    "style": "anime-cel",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "pp-map.png"
+  },
+  {
+    "at": "2026-09-13T01:56:51.918Z",
+    "prompt": "park scene with pets playing frisbee on lawn, corgi mid-jump, shiba watching, golden hour light shafts, cel shading, vertical composition, no text",
+    "style": "anime-cel",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "pp-community.png"
+  },
+  {
+    "at": "2026-09-13T01:56:54.876Z",
+    "prompt": "close-up corgi head portrait, warm golden light, tongue out smile, soft bokeh meadow behind, cel shading with fur strand highlights, square crop",
+    "style": "anime-cel",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "pp-me.png"
+  },
+  {
+    "at": "2026-09-13T02:16:15.980Z",
+    "prompt": "wide empty background band only, sunlit forest meadow park, tall trees bokeh, light shafts through leaves, floating pollen motes, layered depth, no animals, no people, no text",
+    "style": "anime-cel",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "pp-bg.png"
+  },
+  {
+    "at": "2026-09-13T02:17:00.469Z",
+    "prompt": "happy corgi puppy sitting on grass hill in sunlit park, butterflies around, strong rim light, cel shading with soft fur tones, vertical composition, studio key visual, no text",
+    "style": "anime-cel",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "pp-home.png"
+  },
+  {
+    "at": "2026-09-13T02:17:45.803Z",
+    "prompt": "three pets lineup on a fallen log: corgi, shiba inu, lop rabbit, sunlit meadow, cel shading, rim light, playful expressions, horizontal composition, no text",
+    "style": "anime-cel",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "pp-pets.png"
+  },
+  {
+    "at": "2026-09-13T02:17:49.128Z",
+    "prompt": "stylized illustrated island park map top-down, winding paths, pond, flower beds, tiny trees, soft painterly colors, game map quality, no text, no labels",
+    "style": "anime-cel",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "pp-map.png"
+  },
+  {
+    "at": "2026-09-13T02:18:33.785Z",
+    "prompt": "park scene with pets playing frisbee on lawn, corgi mid-jump, shiba watching, golden hour light shafts, cel shading, vertical composition, no text",
+    "style": "anime-cel",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "pp-community.png"
+  },
+  {
+    "at": "2026-09-13T02:18:34.901Z",
+    "prompt": "close-up corgi head portrait, warm golden light, tongue out smile, soft bokeh meadow behind, cel shading with fur strand highlights, square crop",
+    "style": "anime-cel",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "pp-me.png"
   }
 ]
