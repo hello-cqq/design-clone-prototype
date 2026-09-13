@@ -1,0 +1,18 @@
+[
+  {
+    "at": "2026-09-13T11:10:41.333Z",
+    "prompt": "圆角方形 app 图标，赛博猫 DJ头部特写，cyberpunk neon art, rain-slick reflections, magenta-cyan rim light, holographic ui glow, moody night atmosphere，居中，纯色底取 palette[1]，光泽顶高光，无文字, single centered emblem on solid brand-color rounded-square background, minimal geometric glyph, no text, no letters",
+    "style": "clay-icon",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "_base.png"
+  },
+  {
+    "at": "2026-09-13T13:24:18.227Z",
+    "prompt": "圆角方形 app 图标，赛博猫 DJ头部特写，cyberpunk neon art, rain-slick reflections, magenta-cyan rim light, holographic ui glow, moody night atmosphere，居中，纯色底取 palette[1]，光泽顶高光，无文字, single centered emblem on solid brand-color rounded-square background, minimal geometric glyph, no text, no letters",
+    "style": "clay-icon",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "_base.png"
+  }
+]
