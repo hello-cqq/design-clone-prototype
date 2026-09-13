@@ -23,7 +23,7 @@
     "spec_version": 1,
     "change_log": [
       {
-        "at": "2026-09-11T13:27:38.101Z",
+        "at": "2026-09-12T17:27:29.363Z",
         "by": "clone",
         "note": "collect-design 初始/重采集（computed 真值）"
       }
