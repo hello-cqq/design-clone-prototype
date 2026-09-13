@@ -1,0 +1,25 @@
+<style>
+  .xh-l{position:relative;min-height:100%;overflow:hidden;font-family:ui-rounded,-apple-system,"PingFang SC","Segoe UI",sans-serif;color:#eaf4ff;background:linear-gradient(180deg,#0e2a4a,#123c66 55%,#1d4f80)}
+  .xh-l .split{position:absolute;inset:0;display:flex}
+  .xh-l .split .hf{flex:1;background-size:cover;background-position:50% 35%;opacity:.92}
+  .xh-l .split .hf.n{background-image:url(assets/xh-bg-night.png)}
+  .xh-l .split .hf.d{background-image:url(assets/xh-bg-day.png)}
+  .xh-l .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,26,44,.25),rgba(10,26,44,.72) 70%)}
+  .xh-l .chars{position:absolute;left:0;right:0;bottom:26%;display:flex;justify-content:center;gap:26px}
+  .xh-l .chars img{width:132px;height:176px;object-fit:cover;object-position:50% 22%;border-radius:20px;box-shadow:0 16px 40px rgba(4,16,30,.55), 0 0 0 2px rgba(255,255,255,.55);animation:bob 5.5s ease-in-out infinite}
+  .xh-l .chars img:last-child{animation-delay:-2.6s}
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+  .xh-l .tt{position:absolute;left:0;right:0;top:20%;text-align:center}
+  .xh-l .tt h1{font-size:34px;font-weight:600;letter-spacing:.14em;margin:0;text-shadow:0 4px 22px rgba(4,16,30,.7)}
+  .xh-l .tt p{font-size:12px;letter-spacing:.3em;color:#bcd8f2;margin:10px 0 0}
+  .xh-l .go{position:absolute;left:50%;transform:translateX(-50%);bottom:9%;padding:13px 52px;border:0;border-radius:999px;font-size:14px;font-weight:600;letter-spacing:.2em;color:#0e2a4a;background:linear-gradient(140deg,#fff,#cfe6ff);cursor:pointer;box-shadow:0 14px 34px rgba(120,180,255,.35), inset 0 1px 0 #fff}
+  @media (prefers-reduced-motion: reduce){.xh-l .chars img{animation:none}}
+</style>
+<div data-dc="as/root" class="xh-l">
+  <div class="split" data-fx-parallax="0.4"><span class="hf n"></span><span class="hf d"></span></div>
+  <div class="veil"></div>
+  <canvas data-fx="particles" data-fx-kind="sparkles" data-fx-n="24" data-fx-colors="#ffffff,#8fd0ff,#ffd166"></canvas>
+  <div class="tt"><h1>星海对话</h1><p>STARSEA TALK · 昼夜双角色陪伴</p></div>
+  <div class="chars" data-fx-parallax="1.2"><img src="assets/xh-xinghai.png" alt=""><img src="assets/xh-haixi.png" alt=""></div>
+  <button class="go" data-dc="as/start" data-goto="01-home">开始对话</button>
+</div>
