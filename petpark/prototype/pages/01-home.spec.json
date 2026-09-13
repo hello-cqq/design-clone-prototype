@@ -1,34 +1,30 @@
 {
   "meta": {
     "page_id": "01-home",
-    "page_name": "乐园首页",
+    "page_name": "首页·大世界",
     "surface": "c_mobile",
     "page_type": "c_home",
     "canvas": {
       "width": 390,
-      "height": 1002
+      "height": 844
     },
     "evidence": [],
     "fidelity": "high",
     "product": {
-      "function": "冒烟：产品说明可写",
+      "function": "开放场景总入口：资源栏+任务气泡+双入口",
       "goals": [
-        "提升次日回访：通行证进度与连打天数制造连续动机",
-        "转化预约：余位信息+饼干边一键预约钮",
-        "情感连接：3D 萌宠 hero 立基座呼吸浮沉"
+        "开放场景总入口：资源栏+任务气泡+双入口"
       ],
-      "page_prompt": "设计一个 3D 萌宠乐园首页（盲盒diorma感）：奶油底 #FFF6E9 + 糖果色板（mint #7EDCC3 / peach #FFB38A / lilac #C9B6F2 / sky #8ECDF0）；场景四层=天空渐变+三层云团 parallax→中景岛（草台 squircle+树团+蜜桃滑梯+水洼反光）→前景 pixar-3d 蓬松柯基立椭圆基座（接触影 rgba(74,59,46,.18) blur8）→浮动磁贴 chips；三饼干边快捷钮（预约 mint/遛伴 peach/打卡 lilac，图标磁贴 stroke2.2 round cap）；通行证卡=可可磁贴二维码块+薄荷果冻进度条；粘土卡材质=顶高光 inset 0 2px 0 rgba(255,255,255,.85)+底托 inset 0 -4px 0 rgba(74,59,46,.10)+落影 0 12px 24px rgba(74,59,46,.14)+颗粒 .04；微动效=idle 呼吸 ±3px squash1.02、press squish .96 弹簧、reduced-motion 静止；字 ui-rounded、可可墨 #4A3B2E 禁纯黑、字重≤600",
+      "page_prompt": "一张高品质手机竖屏 APP UI 原型设计稿，动物乐园首页·大世界页面，开放场景总入口：资源栏+任务气泡+双入口；布局：3D 城市公园全景；顶资源栏 金币/钻石/体力；任务气泡；左下家园/右下舞台入口；底导 乐园|动物|乐队|家园|任务；控件：pp/entry-home(goto)、pp/entry-stage(goto)；Disney Zootopia-grade cinematic 3D cartoon render, PBR fur and fabric materials, soft natural light and volumetrics, juicy macaron palette, anthropomorphic characters, rounded modern game UI, OC render 8k, clean background；圆角玻璃卡片+半透明磨砂控件+柔和阴影+清晰信息层级+手机竖屏；统一视觉系统：背景沿用「动物城中央广场+喷泉电车」母题；角色为第一视觉，UI 半透明轻量低干扰；界面分层清晰，柔和阴影，精致图标，圆润字体，可直接用于产品原型评审，无水印",
       "element_prompts": {
-        "pp/hero": "四层场景：云团 parallax→草台岛（mint 双层 radial+噪点+蜜桃滑梯木纹条纹+sky 水洼白高光弧）→柯基 pixar-3d 立基座（平台+接触影+honey 光晕）→浮动 chips 饼干边+光泽点",
-        "pp/acts": "三饼干边快捷钮：图标磁贴（mint/peach/lilac 底+stroke2.2 round cap 胖图标）+底托 4px 厚度+press squish .96",
-        "pp/pass": "入园通行证粘土卡：可可磁贴二维码块（白码点）+薄荷果冻进度轨+tabular 数字",
-        "pp/feed": "社区预览磁贴：avatar 圆环 3px cream+光泽点+微旋转 ±2°"
+        "pp/entry-home": "goto 控件：跳家园",
+        "pp/entry-stage": "goto 控件：跳乐队"
       }
     },
     "spec_version": 1,
     "change_log": [
       {
-        "at": "2026-09-13T02:27:07.274Z",
+        "at": "2026-09-13T07:19:33.391Z",
         "by": "clone",
         "note": "collect-design 初始/重采集（computed 真值）"
       }
@@ -36,167 +32,9 @@
   },
   "regions": [
     {
-      "id": "r_pp_head",
+      "id": "r_pp_start",
       "type": "custom",
-      "label": "云朵宠物乐园\n      晴 26° · 优",
-      "components": [
-        {
-          "kind": "button",
-          "label": "晴 26° · 优",
-          "interaction": {
-            "act": "toast",
-            "msg": "今日晴朗 26° · 适宜出游（演示）"
-          },
-          "sample_value": "晴 26° · 优"
-        }
-      ]
-    },
-    {
-      "id": "r_pp_hero",
-      "type": "banner",
-      "label": "营业中 · 09–21 点\n      查看乐园地图 →",
-      "components": [
-        {
-          "kind": "image",
-          "label": "",
-          "interaction": {
-            "act": "toast",
-            "msg": "旺财：汪！今天去草坪区玩（演示）"
-          }
-        },
-        {
-          "kind": "button",
-          "label": "营业中 · 09–21 点",
-          "interaction": {
-            "act": "toast",
-            "msg": "园区营业中 09:00-21:00（演示）"
-          },
-          "sample_value": "营业中 · 09–21 点"
-        },
-        {
-          "kind": "button",
-          "label": "查看乐园地图 →",
-          "interaction": {
-            "act": "goto",
-            "to": "03-map"
-          },
-          "sample_value": "查看乐园地图 →"
-        }
-      ]
-    },
-    {
-      "id": "r_pp_acts",
-      "type": "custom",
-      "label": "预约入园今日 6 席\n      找遛伴在线 12 位\n      打卡积分+5",
-      "components": [
-        {
-          "kind": "sheet",
-          "label": "预约入园今日 6 席",
-          "interaction": {
-            "act": "sheet"
-          },
-          "sample_value": "预约入园今日 6 席"
-        },
-        {
-          "kind": "button",
-          "label": "找遛伴在线 12 位",
-          "interaction": {
-            "act": "toast",
-            "msg": "已为你匹配遛伴：豆豆（柯基 · 2 岁）（演示）"
-          },
-          "sample_value": "找遛伴在线 12 位"
-        },
-        {
-          "kind": "button",
-          "label": "打卡积分+5 / 次",
-          "interaction": {
-            "act": "toast",
-            "msg": "打卡成功：草坪区 +5 积分（演示）"
-          },
-          "sample_value": "打卡积分+5 / 次"
-        }
-      ]
-    },
-    {
-      "id": "r_pp_pass",
-      "type": "custom",
-      "label": "我的入园码旺财 + 1 位同伴 · 有效至今日 21:00\n      ›"
-    },
-    {
-      "id": "r_pp_feed",
-      "type": "list",
-      "label": "乐园此刻\n      草坪区 · 飞盘局进行中8 只毛孩子 · 3 位主人\n  ",
-      "components": [
-        {
-          "kind": "image",
-          "label": ""
-        },
-        {
-          "kind": "image",
-          "label": ""
-        },
-        {
-          "kind": "button",
-          "label": "去社区看更多 →",
-          "interaction": {
-            "act": "goto",
-            "to": "04-community"
-          },
-          "sample_value": "去社区看更多 →"
-        }
-      ]
-    },
-    {
-      "id": "r_pp_tabs",
-      "type": "tab_bar",
-      "label": "首页档案地图社区我的",
-      "components": [
-        {
-          "kind": "button",
-          "label": "首页",
-          "interaction": {
-            "act": "goto",
-            "to": "01-home"
-          },
-          "sample_value": "首页"
-        },
-        {
-          "kind": "button",
-          "label": "档案",
-          "interaction": {
-            "act": "goto",
-            "to": "02-pets"
-          },
-          "sample_value": "档案"
-        },
-        {
-          "kind": "button",
-          "label": "地图",
-          "interaction": {
-            "act": "goto",
-            "to": "03-map"
-          },
-          "sample_value": "地图"
-        },
-        {
-          "kind": "button",
-          "label": "社区",
-          "interaction": {
-            "act": "goto",
-            "to": "04-community"
-          },
-          "sample_value": "社区"
-        },
-        {
-          "kind": "button",
-          "label": "我的",
-          "interaction": {
-            "act": "goto",
-            "to": "05-me"
-          },
-          "sample_value": "我的"
-        }
-      ]
+      "label": "开始冒险"
     }
   ]
 }

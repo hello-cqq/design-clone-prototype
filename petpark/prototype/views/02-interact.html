@@ -1,0 +1,36 @@
+<style>
+  .pz{position:relative;min-height:100%;overflow:hidden;font-family:ui-rounded,-apple-system,"PingFang SC","Segoe UI",sans-serif;color:#5b3a1e;background:linear-gradient(180deg,#dff0c9,#fff6e9)}
+  .pz .far{position:absolute;inset:0;background:url(assets/pp-grass.png) center 70%/cover;opacity:.5}
+  .pz .scroll{position:relative;z-index:4;padding:50px 16px 108px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center}
+  .pz .top{position:absolute;left:16px;right:16px;top:48px;display:flex;gap:8px;align-items:center;z-index:6}
+  .pz .top .back{background:rgba(255,255,255,.85);border-radius:999px;padding:6px 12px;font-size:11px;font-weight:600;cursor:pointer}
+  .pz .top .sp{flex:1}
+  .pz .top .res{background:rgba(255,255,255,.85);border-radius:999px;padding:6px 12px;font-size:11px;font-weight:600}
+  .pz .stage{position:relative;width:min(300px,80%);margin:64px 0 14px}
+  .pz .stage img{display:block;width:100%;border-radius:26px;box-shadow:0 20px 44px rgba(91,58,30,.24), 0 0 0 4px rgba(255,255,255,.8);animation:breathe 4.4s ease-in-out infinite}
+  @keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.014)}}
+  .pz .stage .disc{position:absolute;left:50%;transform:translateX(-50%);bottom:-16px;width:78%;height:34px;border-radius:50%;background:radial-gradient(ellipse at 50% 40%,rgba(255,214,107,.85),rgba(255,214,107,0) 70%)}
+  .pz .acts{position:absolute;right:14px;top:38%;display:flex;flex-direction:column;gap:10px;z-index:6}
+  .pz .acts .a{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;gap:2px;background:rgba(255,255,255,.92);cursor:pointer;box-shadow:0 8px 18px rgba(91,58,30,.18);font-size:9.5px;font-weight:600;color:#b0552f;transition:transform .16s ease}
+  .pz .acts .a:active{transform:scale(.9)}
+  .pz .panel{display:flex;gap:10px;width:100%}
+  .pz .panel .main{flex:1;padding:13px;border:0;border-radius:999px;font-size:14px;font-weight:600;color:#fff;background:linear-gradient(140deg,#ffb35c,#f28c2e);cursor:pointer;box-shadow:0 12px 26px rgba(242,140,46,.42), inset 0 2px 0 rgba(255,255,255,.5)}
+  .pz .panel .sub{padding:13px 18px;border-radius:999px;font-size:12px;font-weight:600;color:#b0552f;background:rgba(255,255,255,.9);cursor:pointer;box-shadow:0 8px 18px rgba(91,58,30,.15)}
+  .pz .nav{position:absolute;left:12px;right:12px;bottom:20px;z-index:8;display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+  .pz .nav span{background:rgba(255,255,255,.9);border-radius:16px;padding:9px 2px 8px;display:grid;place-items:center;font-size:10.5px;color:#8a6440;cursor:pointer;box-shadow:0 8px 20px rgba(91,58,30,.14)}
+  .pz .nav span.on{color:#e8862f;font-weight:600}
+  @media (prefers-reduced-motion: reduce){.pz .stage img{animation:none}}
+</style>
+<div data-dc="pp/root" class="pz">
+  <div class="far" data-fx-parallax="0.4"></div>
+  <canvas data-fx="particles" data-fx-kind="petals" data-fx-n="14" data-fx-colors="#ffd6e2,#ffffff,#ffe9a8"></canvas>
+  <div class="top"><span class="back" data-goto="01-home">‹ 返回</span><span class="sp"></span><span class="res">金币 1280</span></div>
+  <div class="stage" data-dc="pp/petstage" data-fx-parallax="1.2"><img src="assets/pp-fox.png" alt="" data-act="toast" data-msg="耳廓狐蹭了蹭你的手（演示）"><span class="disc"></span></div>
+  <div class="acts">
+    <span class="a" data-dc="pp/pet" data-act="toast" data-msg="抚摸：好感 +2，尾巴摇起来了（演示）"><svg width="16" height="16" viewBox="0 0 24 24" style="fill:none;stroke:#b0552f;stroke-width:2.1;stroke-linecap:round"><path d="M12 21s-7-4.6-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.4-7 10-7 10z"/></svg>抚摸</span>
+    <span class="a" data-dc="pp/feed" data-act="toast" data-msg="喂食：冻干一枚，好感 +1（演示）"><svg width="16" height="16" viewBox="0 0 24 24" style="fill:none;stroke:#b0552f;stroke-width:2.1;stroke-linecap:round"><path d="M4 12h16M6 12c0 4 3 7 6 7s6-3 6-7M9 8c0-2 1.4-3 3-3s3 1 3 3"/></svg>喂食</span>
+    <span class="a" data-dc="pp/sing" data-act="toast" data-msg="唱歌：耳廓狐清了清嗓子♪（演示）"><svg width="16" height="16" viewBox="0 0 24 24" style="fill:none;stroke:#b0552f;stroke-width:2.1;stroke-linecap:round"><path d="M9 18V6l8-2v12"/><circle cx="7" cy="18" r="2.4"/><circle cx="15" cy="16" r="2.4"/></svg>唱歌</span>
+  </div>
+  <div class="panel"><button class="main" data-act="toast" data-msg="开始互动：摸摸头→击掌→转圈（演示）">开始互动</button><span class="sub" data-act="toast" data-msg="好感 Lv.4：72/100（演示）">查看好感</span></div>
+  <div class="nav" data-dc="pp/tabs"><span data-goto="01-home">乐园</span><span class="on" data-goto="02-interact">动物</span><span data-goto="03-band">乐队</span><span data-goto="05-build">家园</span><span data-goto="07-tasks">任务</span></div>
+</div>

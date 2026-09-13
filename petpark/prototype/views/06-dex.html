@@ -1,0 +1,33 @@
+<style>
+  .pz{position:relative;min-height:100%;overflow:hidden;font-family:ui-rounded,-apple-system,"PingFang SC","Segoe UI",sans-serif;color:#5b3a1e;background:linear-gradient(180deg,#e8f4d9,#fff6e9)}
+  .pz .scroll{position:relative;z-index:4;padding:50px 14px 108px;box-sizing:border-box}
+  .pz .top{display:flex;align-items:center;gap:8px;margin-bottom:12px}
+  .pz .top h1{font-size:17px;font-weight:600;margin:0;flex:1}
+  .pz .top .f{background:rgba(255,255,255,.88);border-radius:999px;padding:6px 12px;font-size:10.5px;font-weight:600;cursor:pointer}
+  .pz .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+  .pz .cd{background:rgba(255,255,255,.9);backdrop-filter:blur(8px);border-radius:18px;padding:8px;text-align:center;cursor:pointer;box-shadow:0 10px 22px rgba(91,58,30,.14);transition:transform .18s cubic-bezier(.34,1.56,.64,1)}
+  .pz .cd:active{transform:scale(.94)}
+  .pz .cd img{width:100%;height:96px;object-fit:cover;object-position:50% 30%;border-radius:12px}
+  .pz .cd .n{font-size:11px;font-weight:600;margin-top:5px}
+  .pz .cd .s{font-size:9px;color:#8a6440}
+  .pz .cd.lock img{filter:grayscale(1) brightness(1.1);opacity:.5}
+  .pz .cd.lock .n{color:#a89880}
+  .pz .nav{position:absolute;left:12px;right:12px;bottom:20px;z-index:8;display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+  .pz .nav span{background:rgba(255,255,255,.9);border-radius:16px;padding:9px 2px 8px;display:grid;place-items:center;font-size:10.5px;color:#8a6440;cursor:pointer;box-shadow:0 8px 20px rgba(91,58,30,.14)}
+  .pz .nav span.on{color:#e8862f;font-weight:600}
+</style>
+<div data-dc="pp/root" class="pz">
+  <canvas data-fx="particles" data-fx-kind="motes" data-fx-n="12" data-fx-colors="#ffffff,#c9f2d6"></canvas>
+  <div class="scroll">
+    <div class="top"><h1>动物图鉴</h1><span class="f" data-act="toast" data-msg="筛选：按性格（演示）">按性格</span><span class="f" data-act="toast" data-msg="筛选：按乐器（演示）">按乐器</span></div>
+    <div class="grid" data-dc="pp/dex">
+      <div class="cd" data-dc="pp/dexcard" data-act="dialog" data-title="耳廓狐" data-body="主唱担当 · 喜好：星光糖 · 擅长：吉他"><img src="assets/pp-fox.png" alt=""><div class="n">耳廓狐</div><div class="s">主唱担当</div></div>
+      <div class="cd" data-act="dialog" data-title="布偶猫" data-body="治愈互动 · 喜好：围巾 · 擅长：键盘"><img src="assets/pp-ragdoll.png" alt=""><div class="n">布偶猫</div><div class="s">键盘精灵</div></div>
+      <div class="cd" data-act="dialog" data-title="金渐层" data-body="跳舞担当 · 喜好：领结 · 擅长：主唱"><img src="assets/pp-golden.png" alt=""><div class="n">金渐层</div><div class="s">节奏王者</div></div>
+      <div class="cd" data-act="dialog" data-title="田园犬" data-body="舞蹈/陪伴 · 喜好：骨头 · 擅长：沙锤"><img src="assets/pp-dog.png" alt=""><div class="n">田园犬</div><div class="s">沙锤手</div></div>
+      <div class="cd" data-act="dialog" data-title="巴西龟" data-body="节奏演奏 · 喜好：沙锤 · 擅长：鼓"><img src="assets/pp-slider.png" alt=""><div class="n">巴西龟</div><div class="s">鼓手爷爷</div></div>
+      <div class="cd lock" data-act="dialog" data-title="未解锁" data-body="完成周末音乐节任务即可解锁草龟"><img src="assets/pp-slider.png" alt=""><div class="n">草龟 🔒</div><div class="s">木琴手</div></div>
+    </div>
+  </div>
+  <div class="nav" data-dc="pp/tabs"><span data-goto="01-home">乐园</span><span class="on" data-goto="06-dex">动物</span><span data-goto="03-band">乐队</span><span data-goto="05-build">家园</span><span data-goto="07-tasks">任务</span></div>
+</div>

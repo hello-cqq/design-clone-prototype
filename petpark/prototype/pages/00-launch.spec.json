@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "page_id": "00-launch",
+    "page_name": "启动页",
+    "surface": "c_mobile",
+    "page_type": "c_list",
+    "canvas": {
+      "width": 390,
+      "height": 844
+    },
+    "evidence": [],
+    "fidelity": "high",
+    "product": {
+      "function": "冒烟：产品说明可写",
+      "goals": [
+        "动物城全景+群像挥手+开始冒险"
+      ],
+      "page_prompt": "一张高品质手机竖屏 APP UI 原型设计稿，动物乐园启动页页面，动物城全景+群像挥手+开始冒险；布局：城门口群像挥手；大标题+副标题；底部开始按钮；控件：pp/start(goto)；Disney Zootopia-grade cinematic 3D cartoon render, PBR fur and fabric materials, soft natural light and volumetrics, juicy macaron palette, anthropomorphic characters, rounded modern game UI, OC render 8k, clean background；圆角玻璃卡片+半透明磨砂控件+柔和阴影+清晰信息层级+手机竖屏；统一视觉系统：背景沿用「动物城中央广场+喷泉电车」母题；角色为第一视觉，UI 半透明轻量低干扰；界面分层清晰，柔和阴影，精致图标，圆润字体，可直接用于产品原型评审，无水印",
+      "element_prompts": {
+        "pp/start": "goto 控件：进首页"
+      }
+    },
+    "spec_version": 1,
+    "change_log": [
+      {
+        "at": "2026-09-13T07:19:33.391Z",
+        "by": "clone",
+        "note": "collect-design 初始/重采集（computed 真值）"
+      }
+    ]
+  },
+  "regions": [
+    {
+      "id": "r_pp_start",
+      "type": "custom",
+      "label": "开始冒险"
+    }
+  ]
+}
