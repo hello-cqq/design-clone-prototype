@@ -1,7 +1,7 @@
 {
   "meta": {
     "generator": "design-clone collect-design",
-    "generated_at": "2026-09-13T14:01:49.292Z",
+    "generated_at": "2026-09-14T08:19:44.462Z",
     "source_run": "gen-music",
     "schema": "figma-source/v1"
   },
@@ -187,13 +187,13 @@
           "text": ""
         },
         {
-          "dc": "mu/eq",
+          "dc": "mu/play",
           "kind": "frame",
           "rect": {
             "x": 31,
             "y": 359,
-            "w": 172,
-            "h": 38
+            "w": 87,
+            "h": 45
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(34, 52, 60)",
@@ -207,24 +207,24 @@
           "text": ""
         },
         {
-          "dc": "mu/eq-v",
-          "kind": "text",
+          "dc": "mu/play-sw",
+          "kind": "frame",
           "rect": {
-            "x": 187,
-            "y": 369,
-            "w": 14,
-            "h": 18
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(34, 52, 60)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
-            "size": 12,
-            "weight": 600,
-            "lineHeight": 18
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
           },
-          "text": "55"
+          "text": ""
         }
       ]
     },
@@ -257,24 +257,44 @@
           "text": ""
         },
         {
-          "dc": "mu/gift",
-          "kind": "button",
+          "dc": "mu/play",
+          "kind": "frame",
           "rect": {
             "x": 31,
-            "y": 363,
-            "w": 55,
-            "h": 38
+            "y": 359,
+            "w": 87,
+            "h": 45
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(255, 255, 255)",
-          "cornerRadius": 999,
+          "color": "rgb(34, 52, 60)",
+          "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
             "size": 12,
             "weight": 600,
             "lineHeight": 18
           },
-          "text": "gift"
+          "text": ""
+        },
+        {
+          "dc": "mu/play-sw",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(34, 52, 60)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
         }
       ]
     }
