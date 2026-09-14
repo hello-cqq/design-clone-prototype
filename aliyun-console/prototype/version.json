@@ -1,7 +1,7 @@
 {
  "app": "aliyun-console",
- "version": "1.5.0",
- "published_at": "2026-09-14T06:07:29.548Z",
- "skill_version": "0.6.0-snapshot.20260914",
+ "version": "1.6.0",
+ "published_at": "2026-09-14T12:28:33.698Z",
+ "skill_version": "0.6.0-snapshot.20260914.5",
  "skill_channel": "snapshot"
 }
