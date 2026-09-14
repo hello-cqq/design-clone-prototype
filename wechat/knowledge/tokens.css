@@ -1,0 +1,31 @@
+/* design-clone tokens —— 微信 wechat-full（M16 手工校准） */
+:root {
+  --color-primary: #2a7f4f;
+  --color-accent: #2a7f4f;
+  --color-bg: #ededed;
+  --color-surface: #ffffff;
+  --color-surface-dim: #f7f7f7;
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #767676;
+  --color-border: #d9d9d9;
+  --color-pay-green: #1f7a48;
+  --color-warn-orange: #c24e00;
+  --font-display: system-ui, "PingFang SC", sans-serif;
+  --font-body: system-ui, "PingFang SC", sans-serif;
+  --radius-card: 12px;
+}
+@theme {
+  --color-primary: #2a7f4f;
+  --color-accent: #2a7f4f;
+  --color-bg: #ededed;
+  --color-surface: #ffffff;
+  --color-surface-dim: #f7f7f7;
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #767676;
+  --color-border: #d9d9d9;
+  --color-pay-green: #1f7a48;
+  --color-warn-orange: #c24e00;
+  --font-display: system-ui, "PingFang SC", sans-serif;
+  --font-body: system-ui, "PingFang SC", sans-serif;
+  --radius-card: 12px;
+}
