@@ -1,7 +1,7 @@
 {
   "meta": {
     "generator": "design-clone collect-design",
-    "generated_at": "2026-09-14T08:12:58.800Z",
+    "generated_at": "2026-09-14T12:24:10.015Z",
     "source_run": "demo-petpark",
     "schema": "figma-source/v1"
   },
@@ -245,6 +245,26 @@
             "lineHeight": 24
           },
           "text": ""
+        },
+        {
+          "dc": "pp/tab-home",
+          "kind": "button",
+          "rect": {
+            "x": 12,
+            "y": 791,
+            "w": 67,
+            "h": 33
+          },
+          "fill": "rgba(255, 255, 255, 0.9)",
+          "color": "rgb(138, 100, 64)",
+          "cornerRadius": 16,
+          "font": {
+            "family": "ui-rounded",
+            "size": 11,
+            "weight": 400,
+            "lineHeight": 16
+          },
+          "text": "乐园"
         }
       ]
     },
@@ -375,6 +395,26 @@
             "lineHeight": 24
           },
           "text": ""
+        },
+        {
+          "dc": "pp/tab-home",
+          "kind": "button",
+          "rect": {
+            "x": 12,
+            "y": 791,
+            "w": 67,
+            "h": 33
+          },
+          "fill": "rgba(255, 255, 255, 0.9)",
+          "color": "rgb(138, 100, 64)",
+          "cornerRadius": 16,
+          "font": {
+            "family": "ui-rounded",
+            "size": 11,
+            "weight": 400,
+            "lineHeight": 16
+          },
+          "text": "乐园"
         }
       ]
     },
@@ -505,6 +545,26 @@
             "lineHeight": 24
           },
           "text": ""
+        },
+        {
+          "dc": "pp/tab-home",
+          "kind": "button",
+          "rect": {
+            "x": 12,
+            "y": 791,
+            "w": 67,
+            "h": 33
+          },
+          "fill": "rgba(255, 255, 255, 0.9)",
+          "color": "rgb(138, 100, 64)",
+          "cornerRadius": 16,
+          "font": {
+            "family": "ui-rounded",
+            "size": 11,
+            "weight": 400,
+            "lineHeight": 16
+          },
+          "text": "乐园"
         }
       ]
     },
@@ -635,6 +695,26 @@
             "lineHeight": 24
           },
           "text": ""
+        },
+        {
+          "dc": "pp/tab-home",
+          "kind": "button",
+          "rect": {
+            "x": 12,
+            "y": 791,
+            "w": 67,
+            "h": 33
+          },
+          "fill": "rgba(255, 255, 255, 0.9)",
+          "color": "rgb(138, 100, 64)",
+          "cornerRadius": 16,
+          "font": {
+            "family": "ui-rounded",
+            "size": 11,
+            "weight": 400,
+            "lineHeight": 16
+          },
+          "text": "乐园"
         }
       ]
     },
@@ -765,6 +845,26 @@
             "lineHeight": 24
           },
           "text": ""
+        },
+        {
+          "dc": "pp/tab-home",
+          "kind": "button",
+          "rect": {
+            "x": 12,
+            "y": 791,
+            "w": 67,
+            "h": 33
+          },
+          "fill": "rgba(255, 255, 255, 0.9)",
+          "color": "rgb(138, 100, 64)",
+          "cornerRadius": 16,
+          "font": {
+            "family": "ui-rounded",
+            "size": 11,
+            "weight": 400,
+            "lineHeight": 16
+          },
+          "text": "乐园"
         }
       ]
     },
@@ -895,6 +995,26 @@
             "lineHeight": 24
           },
           "text": ""
+        },
+        {
+          "dc": "pp/tab-home",
+          "kind": "button",
+          "rect": {
+            "x": 12,
+            "y": 791,
+            "w": 67,
+            "h": 33
+          },
+          "fill": "rgba(255, 255, 255, 0.9)",
+          "color": "rgb(138, 100, 64)",
+          "cornerRadius": 16,
+          "font": {
+            "family": "ui-rounded",
+            "size": 11,
+            "weight": 400,
+            "lineHeight": 16
+          },
+          "text": "乐园"
         }
       ]
     }
