@@ -22,9 +22,9 @@
  },
  "license": "CC-BY-4.0",
  "ip_attestation": "public-material",
- "attestation_note": "M76-W2a: 抖音分享链接内容克隆更名为内容名+内容图标/封面",
- "version": "1.0.0",
- "created_at": "2026-09-13T01:39:46.739Z",
+ "attestation_note": "M81-W1: 概念图标(爪印心形笔记)+封面重生成",
+ "version": "1.1.0",
+ "created_at": "2026-09-14T09:29:55.554Z",
  "brand_disclaimer": "Unofficial study replica of Pet Health Notes; trademarks belong to their owners; no affiliation or endorsement implied.",
  "platform": "mobile"
 }
