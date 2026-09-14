@@ -1,7 +1,7 @@
 {
  "app": "wechat",
- "version": "1.4.0",
- "published_at": "2026-09-13T01:42:46.297Z",
- "skill_version": "0.6.0-snapshot.20260912",
+ "version": "1.5.0",
+ "published_at": "2026-09-14T06:07:42.180Z",
+ "skill_version": "0.6.0-snapshot.20260914",
  "skill_channel": "snapshot"
 }
