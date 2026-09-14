@@ -19,7 +19,7 @@
     "spec_version": 1,
     "change_log": [
       {
-        "at": "2026-09-14T13:09:33.433Z",
+        "at": "2026-09-14T15:44:20.162Z",
         "by": "clone",
         "note": "collect-design 初始/重采集（computed 真值）"
       }
@@ -27,125 +27,150 @@
   },
   "regions": [
     {
-      "id": "r_fs_back",
+      "id": "r_gs_back",
       "type": "custom",
       "label": ""
     },
     {
-      "id": "r_fs_more",
-      "type": "custom",
-      "label": "⋯"
+      "id": "r_gs_search",
+      "type": "search_bar",
+      "label": ""
     },
     {
-      "id": "r_fs_profile",
+      "id": "r_gs_members",
       "type": "custom",
-      "label": "阿蓝昵称：阿蓝 · 地区：上海设置备注和标签",
+      "label": "桃桃\n  爸\n  姐\n  妈妈\n  柚子\n  ＋\n  －",
       "components": [
         {
-          "kind": "image",
-          "label": "",
+          "kind": "button",
+          "label": "桃桃",
           "interaction": {
-            "act": "sheet"
-          }
+            "act": "goto",
+            "to": "14-friend-settings"
+          },
+          "sample_value": "桃桃"
+        },
+        {
+          "kind": "button",
+          "label": "爸",
+          "interaction": {
+            "act": "goto",
+            "to": "14-friend-settings"
+          },
+          "sample_value": "爸"
+        },
+        {
+          "kind": "button",
+          "label": "姐",
+          "interaction": {
+            "act": "goto",
+            "to": "14-friend-settings"
+          },
+          "sample_value": "姐"
+        },
+        {
+          "kind": "button",
+          "label": "妈妈",
+          "interaction": {
+            "act": "goto",
+            "to": "14-friend-settings"
+          },
+          "sample_value": "妈妈"
+        },
+        {
+          "kind": "button",
+          "label": "柚子",
+          "interaction": {
+            "act": "goto",
+            "to": "14-friend-settings"
+          },
+          "sample_value": "柚子"
         },
         {
           "kind": "sheet",
-          "label": "设置备注和标签",
+          "label": "＋",
           "interaction": {
             "act": "sheet"
           },
-          "sample_value": "设置备注和标签"
-        }
-      ]
-    },
-    {
-      "id": "r_fs_ava",
-      "type": "custom",
-      "label": ""
-    },
-    {
-      "id": "r_fs_remark",
-      "type": "custom",
-      "label": "设置备注和标签"
-    },
-    {
-      "id": "r_fs_perm",
-      "type": "custom",
-      "label": "朋友权限\n    \n      仅聊天\n      聊天、朋友圈、状态\n    ",
-      "components": [
-        {
-          "kind": "radio",
-          "label": "",
-          "interaction": {
-            "act": "radio",
-            "group": "perm"
-          }
+          "sample_value": "＋"
         },
         {
-          "kind": "radio",
-          "label": "",
+          "kind": "sheet",
+          "label": "－",
           "interaction": {
-            "act": "radio",
-            "group": "perm"
-          }
-        },
-        {
-          "kind": "radio",
-          "label": "",
-          "interaction": {
-            "act": "radio",
-            "group": "perm"
-          }
+            "act": "sheet"
+          },
+          "sample_value": "－"
         }
       ]
     },
     {
-      "id": "r_fs_perm_chat",
+      "id": "r_gs_m_lu",
       "type": "custom",
-      "label": "仅聊天",
-      "components": [
-        {
-          "kind": "radio",
-          "label": "",
-          "interaction": {
-            "act": "radio",
-            "group": "perm"
-          }
-        }
-      ]
+      "label": "桃桃"
     },
     {
-      "id": "r_fs_perm_mm",
+      "id": "r_gs_m_ba",
       "type": "custom",
-      "label": "聊天、朋友圈、状态",
-      "components": [
-        {
-          "kind": "radio",
-          "label": "",
-          "interaction": {
-            "act": "radio",
-            "group": "perm"
-          }
-        }
-      ]
+      "label": "爸"
     },
     {
-      "id": "r_fs_perm_none",
+      "id": "r_gs_m_jie",
       "type": "custom",
-      "label": "不让他看我的朋友圈",
-      "components": [
-        {
-          "kind": "radio",
-          "label": "",
-          "interaction": {
-            "act": "radio",
-            "group": "perm"
-          }
-        }
-      ]
+      "label": "姐"
     },
     {
-      "id": "r_fs_mute",
+      "id": "r_gs_m_ma",
+      "type": "custom",
+      "label": "妈妈"
+    },
+    {
+      "id": "r_gs_m_sun",
+      "type": "custom",
+      "label": "柚子"
+    },
+    {
+      "id": "r_gs_m_add",
+      "type": "custom",
+      "label": "＋"
+    },
+    {
+      "id": "r_gs_m_del",
+      "type": "custom",
+      "label": "－"
+    },
+    {
+      "id": "r_gs_name",
+      "type": "custom",
+      "label": "群聊名称家"
+    },
+    {
+      "id": "r_gs_qr",
+      "type": "custom",
+      "label": "群二维码"
+    },
+    {
+      "id": "r_gs_notice",
+      "type": "custom",
+      "label": "群公告"
+    },
+    {
+      "id": "r_gs_admin",
+      "type": "custom",
+      "label": "群管理"
+    },
+    {
+      "id": "r_gs_remark",
+      "type": "custom",
+      "label": "备注"
+    },
+    {
+      "id": "r_gs_history",
+      "type": "custom",
+      "label": "查找聊天记录"
+    },
+    {
+      "id": "r_gs_mute",
       "type": "custom",
       "label": "消息免打扰",
       "components": [
@@ -168,7 +193,7 @@
       ]
     },
     {
-      "id": "r_fs_pin",
+      "id": "r_gs_pin",
       "type": "custom",
       "label": "置顶聊天",
       "components": [
@@ -191,19 +216,27 @@
       ]
     },
     {
-      "id": "r_fs_mm",
+      "id": "r_gs_save",
       "type": "custom",
-      "label": "朋友圈"
-    },
-    {
-      "id": "r_fs_msg",
-      "type": "grid",
-      "label": "发消息"
-    },
-    {
-      "id": "r_fs_del",
-      "type": "grid",
-      "label": "删除"
+      "label": "保存到通讯录",
+      "components": [
+        {
+          "kind": "button",
+          "label": "保存到通讯录",
+          "interaction": {
+            "act": "toast",
+            "msg": "保存到通讯录（演示）"
+          },
+          "sample_value": "保存到通讯录"
+        },
+        {
+          "kind": "switch",
+          "label": "",
+          "interaction": {
+            "act": "toggle"
+          }
+        }
+      ]
     }
   ]
 }
