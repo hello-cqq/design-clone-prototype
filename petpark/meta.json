@@ -1,6 +1,6 @@
 {
  "name": {
-  "en": "Animal Paradise",
+  "en": "PetPark",
   "zh": "动物乐园"
  },
  "description": {
@@ -23,8 +23,8 @@
  },
  "license": "CC-BY-4.0",
  "ip_attestation": "original",
- "attestation_note": "M76-W8c: 补 knowledge/tokens.css",
- "version": "3.0.1",
- "created_at": "2026-09-13T17:33:41.479Z",
+ "attestation_note": "M81-W1: 概念图标(旋转木马爪印)+封面重生成",
+ "version": "2.1.0",
+ "created_at": "2026-09-14T09:29:41.979Z",
  "platform": "mobile"
 }
