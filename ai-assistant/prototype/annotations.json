@@ -1,0 +1,15 @@
+{
+  "00-launch": [
+    {
+      "target": "as/root",
+      "label": "冒烟标注",
+      "note": "",
+      "notes": [
+        {
+          "event": "点击",
+          "response": "跳转到详情"
+        }
+      ]
+    }
+  ]
+}
