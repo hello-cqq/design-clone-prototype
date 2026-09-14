@@ -1,0 +1,20 @@
+[
+  { "id": "j1", "name": "主循环：启动→首页→聊天→通话", "steps": [
+    { "page": "00-launch", "target": "as/start", "result": { "kind": "navigate", "to": "01-home" } },
+    { "page": "01-home", "target": "as/tab-chat", "result": { "kind": "navigate", "to": "02-chat" } },
+    { "page": "02-chat", "target": "as/send", "result": { "kind": "toast", "note": "小昼：收到！今日摘要已整理好" } },
+    { "page": "02-chat", "target": "as/tab-call", "result": { "kind": "navigate", "to": "03-call" } },
+    { "page": "03-call", "target": "as/tab-home", "result": { "kind": "navigate", "to": "01-home" } }
+  ]},
+  { "id": "j2", "name": "通话控制：静音→挂断", "steps": [
+    { "page": "01-home", "target": "as/tab-call", "result": { "kind": "navigate", "to": "03-call" } },
+    { "page": "03-call", "target": "as/mic", "result": { "kind": "toast", "note": "已静音 · 波形静止" } },
+    { "page": "03-call", "target": "as/end", "result": { "kind": "toast", "note": "通话已结束 12:36" } }
+  ]},
+  { "id": "j3", "name": "形象与音色：切换夜形象/清冷音色/星空背景", "steps": [
+    { "page": "01-home", "target": "as/voice-entry", "result": { "kind": "navigate", "to": "04-settings" } },
+    { "page": "04-settings", "target": "as/personas", "result": { "kind": "toast", "note": "已切换：小夜 · 夜形象" } },
+    { "page": "04-settings", "target": "as/voices", "result": { "kind": "toast", "note": "音色：清冷 已应用" } },
+    { "page": "04-settings", "target": "as/bgs", "result": { "kind": "toast", "note": "背景：星空 已应用" } }
+  ]}
+]
