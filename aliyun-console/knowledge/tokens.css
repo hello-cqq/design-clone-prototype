@@ -1,0 +1,2 @@
+:root { --color-primary: #ff6a00; --color-blue: #1366ec; --color-bg: #ffffff; --color-bg-dim: #f4f5f7; --color-ink: #181818; --color-text-secondary: #6e6e73; --color-border: #e0e0e0; --font-body: system-ui, "PingFang SC", sans-serif; --radius-card: 8px; }
+@theme { --color-primary: #ff6a00; --color-blue: #1366ec; --color-bg: #ffffff; --color-bg-dim: #f4f5f7; --color-ink: #181818; --color-text-secondary: #6e6e73; --color-border: #e0e0e0; --font-body: system-ui, "PingFang SC", sans-serif; --radius-card: 8px; }
