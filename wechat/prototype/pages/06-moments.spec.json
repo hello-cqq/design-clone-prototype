@@ -21,7 +21,7 @@
     "spec_version": 1,
     "change_log": [
       {
-        "at": "2026-09-14T03:52:04.763Z",
+        "at": "2026-09-14T12:26:14.844Z",
         "by": "clone",
         "note": "collect-design 初始/重采集（computed 真值）"
       }
@@ -29,167 +29,24 @@
   },
   "regions": [
     {
-      "id": "r_mm_cover",
-      "type": "custom",
-      "label": "",
-      "components": [
-        {
-          "kind": "button",
-          "label": "",
-          "interaction": {
-            "act": "goto",
-            "to": "03-discover"
-          }
-        },
-        {
-          "kind": "sheet",
-          "label": "",
-          "interaction": {
-            "act": "sheet"
-          }
-        }
-      ]
-    },
-    {
-      "id": "r_mm_back",
+      "id": "r_sv_back",
       "type": "custom",
       "label": ""
     },
     {
-      "id": "r_mm_camera",
+      "id": "r_sv_more",
       "type": "custom",
-      "label": ""
+      "label": "⋯"
     },
     {
-      "id": "r_mm_selfrow",
+      "id": "r_sv_pay",
       "type": "custom",
-      "label": "桃桃",
-      "components": [
-        {
-          "kind": "image",
-          "label": "",
-          "interaction": {
-            "act": "goto",
-            "to": "14-friend-settings"
-          }
-        }
-      ]
+      "label": "收付款"
     },
     {
-      "id": "r_mm_selfava",
+      "id": "r_sv_wallet",
       "type": "custom",
-      "label": ""
-    },
-    {
-      "id": "r_mm_p1",
-      "type": "custom",
-      "label": "阿蓝\n        周末爬山，山顶的风特别舒服\n        \n      ",
-      "components": [
-        {
-          "kind": "image",
-          "label": "",
-          "interaction": {
-            "act": "goto",
-            "to": "14-friend-settings"
-          }
-        },
-        {
-          "kind": "button",
-          "label": "阿蓝",
-          "interaction": {
-            "act": "goto",
-            "to": "14-friend-settings"
-          },
-          "sample_value": "阿蓝"
-        },
-        {
-          "kind": "image",
-          "label": "",
-          "interaction": {
-            "act": "sheet"
-          }
-        },
-        {
-          "kind": "sheet",
-          "label": "···",
-          "interaction": {
-            "act": "sheet"
-          },
-          "sample_value": "···"
-        },
-        {
-          "kind": "sheet",
-          "label": "白舟：风景真好",
-          "interaction": {
-            "act": "sheet"
-          },
-          "sample_value": "白舟：风景真好"
-        }
-      ]
-    },
-    {
-      "id": "r_mm_p1img",
-      "type": "custom",
-      "label": ""
-    },
-    {
-      "id": "r_mm_p1act",
-      "type": "custom",
-      "label": "···"
-    },
-    {
-      "id": "r_mm_p1cmt",
-      "type": "custom",
-      "label": "白舟：风景真好"
-    },
-    {
-      "id": "r_mm_p2",
-      "type": "custom",
-      "label": "白舟\n        新入的手冲壶，第一支豆选耶加\n        \n     ",
-      "components": [
-        {
-          "kind": "image",
-          "label": "",
-          "interaction": {
-            "act": "goto",
-            "to": "14-friend-settings"
-          }
-        },
-        {
-          "kind": "button",
-          "label": "白舟",
-          "interaction": {
-            "act": "goto",
-            "to": "14-friend-settings"
-          },
-          "sample_value": "白舟"
-        },
-        {
-          "kind": "image",
-          "label": "",
-          "interaction": {
-            "act": "sheet"
-          }
-        },
-        {
-          "kind": "sheet",
-          "label": "···",
-          "interaction": {
-            "act": "sheet"
-          },
-          "sample_value": "···"
-        }
-      ]
-    },
-    {
-      "id": "r_mm_p2img",
-      "type": "custom",
-      "label": ""
-    },
-    {
-      "id": "r_mm_p2act",
-      "type": "custom",
-      "label": "···"
+      "label": "钱包"
     }
   ]
 }
