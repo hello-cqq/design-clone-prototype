@@ -1,7 +1,7 @@
 {
   "meta": {
     "generator": "design-clone collect-design",
-    "generated_at": "2026-09-14T13:07:59.176Z",
+    "generated_at": "2026-09-14T14:57:50.033Z",
     "source_run": "demo-petpark",
     "schema": "figma-source/v1"
   },
@@ -747,13 +747,13 @@
           "text": ""
         },
         {
-          "dc": "pp/dex",
+          "dc": "pp/petstage",
           "kind": "frame",
           "rect": {
-            "x": 14,
-            "y": 90,
-            "w": 362,
-            "h": 304
+            "x": 0,
+            "y": 64,
+            "w": 300,
+            "h": 434
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(91, 58, 30)",
@@ -767,22 +767,62 @@
           "text": ""
         },
         {
-          "dc": "pp/dexcard",
+          "dc": "pp/pet",
           "kind": "button",
           "rect": {
-            "x": 14,
-            "y": 90,
-            "w": 114,
-            "h": 147
+            "x": 324,
+            "y": 321,
+            "w": 52,
+            "h": 52
           },
-          "fill": "rgba(255, 255, 255, 0.9)",
-          "color": "rgb(91, 58, 30)",
-          "cornerRadius": 18,
+          "fill": "rgba(255, 255, 255, 0.92)",
+          "color": "rgb(176, 85, 47)",
+          "cornerRadius": 50,
           "font": {
             "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
+            "size": 10,
+            "weight": 600,
+            "lineHeight": 14
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/feed",
+          "kind": "button",
+          "rect": {
+            "x": 324,
+            "y": 383,
+            "w": 52,
+            "h": 52
+          },
+          "fill": "rgba(255, 255, 255, 0.92)",
+          "color": "rgb(176, 85, 47)",
+          "cornerRadius": 50,
+          "font": {
+            "family": "ui-rounded",
+            "size": 10,
+            "weight": 600,
+            "lineHeight": 14
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/sing",
+          "kind": "button",
+          "rect": {
+            "x": 324,
+            "y": 445,
+            "w": 52,
+            "h": 52
+          },
+          "fill": "rgba(255, 255, 255, 0.92)",
+          "color": "rgb(176, 85, 47)",
+          "cornerRadius": 50,
+          "font": {
+            "family": "ui-rounded",
+            "size": 10,
+            "weight": 600,
+            "lineHeight": 14
           },
           "text": ""
         },
@@ -857,13 +897,13 @@
           "text": ""
         },
         {
-          "dc": "pp/dex",
+          "dc": "pp/petstage",
           "kind": "frame",
           "rect": {
-            "x": 14,
-            "y": 90,
-            "w": 362,
-            "h": 304
+            "x": 0,
+            "y": 64,
+            "w": 300,
+            "h": 434
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(91, 58, 30)",
@@ -877,22 +917,62 @@
           "text": ""
         },
         {
-          "dc": "pp/dexcard",
+          "dc": "pp/pet",
           "kind": "button",
           "rect": {
-            "x": 14,
-            "y": 90,
-            "w": 114,
-            "h": 147
+            "x": 324,
+            "y": 321,
+            "w": 52,
+            "h": 52
           },
-          "fill": "rgba(255, 255, 255, 0.9)",
-          "color": "rgb(91, 58, 30)",
-          "cornerRadius": 18,
+          "fill": "rgba(255, 255, 255, 0.92)",
+          "color": "rgb(176, 85, 47)",
+          "cornerRadius": 50,
           "font": {
             "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
+            "size": 10,
+            "weight": 600,
+            "lineHeight": 14
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/feed",
+          "kind": "button",
+          "rect": {
+            "x": 324,
+            "y": 383,
+            "w": 52,
+            "h": 52
+          },
+          "fill": "rgba(255, 255, 255, 0.92)",
+          "color": "rgb(176, 85, 47)",
+          "cornerRadius": 50,
+          "font": {
+            "family": "ui-rounded",
+            "size": 10,
+            "weight": 600,
+            "lineHeight": 14
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/sing",
+          "kind": "button",
+          "rect": {
+            "x": 324,
+            "y": 445,
+            "w": 52,
+            "h": 52
+          },
+          "fill": "rgba(255, 255, 255, 0.92)",
+          "color": "rgb(176, 85, 47)",
+          "cornerRadius": 50,
+          "font": {
+            "family": "ui-rounded",
+            "size": 10,
+            "weight": 600,
+            "lineHeight": 14
           },
           "text": ""
         },
