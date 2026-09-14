@@ -21,7 +21,7 @@
     "spec_version": 1,
     "change_log": [
       {
-        "at": "2026-09-14T12:27:35.537Z",
+        "at": "2026-09-14T15:27:54.305Z",
         "by": "clone",
         "note": "collect-design 初始/重采集（computed 真值）"
       }
@@ -29,7 +29,7 @@
   },
   "regions": [
     {
-      "id": "r_ct_side",
+      "id": "r_tk_side",
       "type": "sidebar",
       "label": "搜索 (⌘K)\n    \n      消息\n      豆包工作\n      日",
       "components": [
@@ -201,8 +201,8 @@
           "kind": "button",
           "label": "任务",
           "interaction": {
-            "act": "goto",
-            "to": "07-tasks"
+            "act": "toast",
+            "msg": "（演示）"
           },
           "sample_value": "任务"
         },
@@ -239,7 +239,7 @@
       ]
     },
     {
-      "id": "r_ct_n_msg",
+      "id": "r_tk_n_msg",
       "type": "custom",
       "label": "消息",
       "components": [
@@ -250,7 +250,7 @@
       ]
     },
     {
-      "id": "r_ct_n_doubao",
+      "id": "r_tk_n_doubao",
       "type": "custom",
       "label": "豆包工作",
       "components": [
@@ -261,7 +261,7 @@
       ]
     },
     {
-      "id": "r_ct_n_cal",
+      "id": "r_tk_n_cal",
       "type": "custom",
       "label": "日历",
       "components": [
@@ -272,7 +272,7 @@
       ]
     },
     {
-      "id": "r_ct_n_docs",
+      "id": "r_tk_n_docs",
       "type": "custom",
       "label": "云文档",
       "components": [
@@ -283,7 +283,7 @@
       ]
     },
     {
-      "id": "r_ct_n_bitable",
+      "id": "r_tk_n_bitable",
       "type": "custom",
       "label": "多维表格",
       "components": [
@@ -294,7 +294,7 @@
       ]
     },
     {
-      "id": "r_ct_n_meet",
+      "id": "r_tk_n_meet",
       "type": "custom",
       "label": "视频会议",
       "components": [
@@ -305,7 +305,7 @@
       ]
     },
     {
-      "id": "r_ct_n_fly",
+      "id": "r_tk_n_fly",
       "type": "custom",
       "label": "飞行社",
       "components": [
@@ -316,7 +316,7 @@
       ]
     },
     {
-      "id": "r_ct_n_wb",
+      "id": "r_tk_n_wb",
       "type": "custom",
       "label": "工作台",
       "components": [
@@ -327,7 +327,7 @@
       ]
     },
     {
-      "id": "r_ct_n_appc",
+      "id": "r_tk_n_appc",
       "type": "custom",
       "label": "应用中心",
       "components": [
@@ -338,7 +338,7 @@
       ]
     },
     {
-      "id": "r_ct_n_contacts",
+      "id": "r_tk_n_contacts",
       "type": "custom",
       "label": "通讯录",
       "components": [
@@ -349,7 +349,7 @@
       ]
     },
     {
-      "id": "r_ct_n_vip",
+      "id": "r_tk_n_vip",
       "type": "custom",
       "label": "权益升级",
       "components": [
@@ -360,7 +360,7 @@
       ]
     },
     {
-      "id": "r_ct_n_task",
+      "id": "r_tk_n_task",
       "type": "custom",
       "label": "任务",
       "components": [
@@ -371,7 +371,7 @@
       ]
     },
     {
-      "id": "r_ct_n_star",
+      "id": "r_tk_n_star",
       "type": "custom",
       "label": "收藏",
       "components": [
@@ -382,13 +382,236 @@
       ]
     },
     {
-      "id": "r_ct_n_kb",
+      "id": "r_tk_n_kb",
       "type": "custom",
       "label": "知识库",
       "components": [
         {
           "kind": "image",
           "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_tk_col",
+      "type": "custom",
+      "label": "任务⋯\n    我负责的\n    我关注的\n    动态\n    \n    快速",
+      "components": [
+        {
+          "kind": "button",
+          "label": "⋯",
+          "interaction": {
+            "act": "toast",
+            "msg": "更多（演示）"
+          },
+          "sample_value": "⋯"
+        },
+        {
+          "kind": "button",
+          "label": "我负责的",
+          "interaction": {
+            "act": "toast",
+            "msg": "（演示）"
+          },
+          "sample_value": "我负责的"
+        },
+        {
+          "kind": "button",
+          "label": "我关注的",
+          "interaction": {
+            "act": "toast",
+            "msg": "我关注的（演示）"
+          },
+          "sample_value": "我关注的"
+        },
+        {
+          "kind": "button",
+          "label": "动态",
+          "interaction": {
+            "act": "toast",
+            "msg": "动态（演示）"
+          },
+          "sample_value": "动态"
+        },
+        {
+          "kind": "button",
+          "label": "全部任务",
+          "interaction": {
+            "act": "toast",
+            "msg": "全部任务（演示）"
+          },
+          "sample_value": "全部任务"
+        },
+        {
+          "kind": "button",
+          "label": "我创建的",
+          "interaction": {
+            "act": "toast",
+            "msg": "我创建的（演示）"
+          },
+          "sample_value": "我创建的"
+        },
+        {
+          "kind": "button",
+          "label": "我分配的",
+          "interaction": {
+            "act": "toast",
+            "msg": "我分配的（演示）"
+          },
+          "sample_value": "我分配的"
+        },
+        {
+          "kind": "button",
+          "label": "已完成",
+          "interaction": {
+            "act": "toast",
+            "msg": "已完成（演示）"
+          },
+          "sample_value": "已完成"
+        },
+        {
+          "kind": "button",
+          "label": "＋",
+          "interaction": {
+            "act": "toast",
+            "msg": "添加清单（演示）"
+          },
+          "sample_value": "＋"
+        },
+        {
+          "kind": "button",
+          "label": "＋ 新建分组",
+          "interaction": {
+            "act": "toast",
+            "msg": "新建分组（演示）"
+          },
+          "sample_value": "＋ 新建分组"
+        }
+      ]
+    },
+    {
+      "id": "r_tk_i_mine",
+      "type": "custom",
+      "label": "我负责的"
+    },
+    {
+      "id": "r_tk_i_star",
+      "type": "custom",
+      "label": "我关注的"
+    },
+    {
+      "id": "r_tk_i_feed",
+      "type": "list",
+      "label": "动态"
+    },
+    {
+      "id": "r_tk_main",
+      "type": "custom",
+      "label": "我负责的新建 ⌄\n    列表看板仪表盘\n    \n      ＋ 新建任务 ⌄",
+      "components": [
+        {
+          "kind": "button",
+          "label": "新建 ⌄",
+          "interaction": {
+            "act": "toast",
+            "msg": "新建任务（演示）"
+          },
+          "sample_value": "新建 ⌄"
+        },
+        {
+          "kind": "button",
+          "label": "",
+          "interaction": {
+            "act": "toast",
+            "msg": "分栏（演示）"
+          }
+        },
+        {
+          "kind": "tab",
+          "label": "列表",
+          "interaction": {
+            "act": "tab"
+          },
+          "sample_value": "列表"
+        },
+        {
+          "kind": "tab",
+          "label": "看板",
+          "interaction": {
+            "act": "tab"
+          },
+          "sample_value": "看板"
+        },
+        {
+          "kind": "tab",
+          "label": "仪表盘",
+          "interaction": {
+            "act": "tab"
+          },
+          "sample_value": "仪表盘"
+        },
+        {
+          "kind": "button",
+          "label": "＋ 新建任务 ⌄",
+          "interaction": {
+            "act": "toast",
+            "msg": "新建任务（演示）"
+          },
+          "sample_value": "＋ 新建任务 ⌄"
+        },
+        {
+          "kind": "button",
+          "label": "⇄ 未完成",
+          "interaction": {
+            "act": "toast",
+            "msg": "未完成（演示）"
+          },
+          "sample_value": "⇄ 未完成"
+        },
+        {
+          "kind": "button",
+          "label": "⏳ 筛选 1",
+          "interaction": {
+            "act": "toast",
+            "msg": "筛选（演示）"
+          },
+          "sample_value": "⏳ 筛选 1"
+        },
+        {
+          "kind": "button",
+          "label": "⇅ 排序：拖拽自定义",
+          "interaction": {
+            "act": "toast",
+            "msg": "排序（演示）"
+          },
+          "sample_value": "⇅ 排序：拖拽自定义"
+        },
+        {
+          "kind": "button",
+          "label": "⊞ 分组：自定义分组",
+          "interaction": {
+            "act": "toast",
+            "msg": "分组（演示）"
+          },
+          "sample_value": "⊞ 分组：自定义分组"
+        },
+        {
+          "kind": "button",
+          "label": "⇄ 字段配置",
+          "interaction": {
+            "act": "toast",
+            "msg": "字段配置（演示）"
+          },
+          "sample_value": "⇄ 字段配置"
+        },
+        {
+          "kind": "button",
+          "label": "＋ 新建分组",
+          "interaction": {
+            "act": "toast",
+            "msg": "新建分组（演示）"
+          },
+          "sample_value": "＋ 新建分组"
         }
       ]
     }
