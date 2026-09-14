@@ -1,0 +1,21 @@
+[
+  { "id": "j1", "name": "乐园巡演：启动→首页→舞台演播", "steps": [
+    { "page": "00-launch", "target": "pp/start", "result": { "kind": "navigate", "to": "01-home" } },
+    { "page": "01-home", "target": "pp/entry-stage", "result": { "kind": "navigate", "to": "03-band" } },
+    { "page": "03-band", "target": "pp/play", "result": { "kind": "toast", "note": "演播开始 · 灯光同步闪烁" } },
+    { "page": "03-band", "target": "pp/lights", "result": { "kind": "toast", "note": "灯效：极光 已应用" } }
+  ]},
+  { "id": "j2", "name": "建造：放木桥→选樱花木", "steps": [
+    { "page": "01-home", "target": "pp/entry-home", "result": { "kind": "navigate", "to": "05-build" } },
+    { "page": "05-build", "target": "pp/place", "result": { "kind": "toast", "note": "已放置 木桥 · 建造点 +2" } },
+    { "page": "05-build", "target": "pp/mats", "result": { "kind": "toast", "note": "材料：樱花木 ×3" } },
+    { "page": "05-build", "target": "pp/tab-home", "result": { "kind": "navigate", "to": "01-home" } }
+  ]},
+  { "id": "j3", "name": "互动→图鉴：唱歌/喂食/开图鉴卡", "steps": [
+    { "page": "01-home", "target": "", "result": { "kind": "navigate", "to": "02-interact" } },
+    { "page": "02-interact", "target": "pp/sing", "result": { "kind": "toast", "note": "沫沫唱了一小段歌" } },
+    { "page": "02-interact", "target": "pp/feed", "result": { "kind": "toast", "note": "喂食：冻干零食" } },
+    { "page": "02-interact", "target": "", "result": { "kind": "navigate", "to": "06-dex" } },
+    { "page": "06-dex", "target": "pp/dexcard", "result": { "kind": "dialog", "note": "图鉴：柯基 · 牧羊组 · 信任 82" } }
+  ]}
+]

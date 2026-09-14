@@ -1,7 +1,7 @@
 {
  "app": "petpark",
- "version": "2.1.0",
- "published_at": "2026-09-14T09:29:41.977Z",
- "skill_version": "0.6.0-snapshot.20260914.2",
+ "version": "2.2.0",
+ "published_at": "2026-09-14T12:24:16.532Z",
+ "skill_version": "0.6.0-snapshot.20260914.5",
  "skill_channel": "snapshot"
 }
