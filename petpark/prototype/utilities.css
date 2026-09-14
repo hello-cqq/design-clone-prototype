@@ -16,4 +16,4 @@
 :where(#dc-stage) :where(a){color:inherit;text-decoration:inherit}
 :where(#dc-stage) :where(table){text-indent:0;border-color:inherit;border-collapse:collapse}
 :where(#dc-stage) :where(hr){height:0;color:inherit;border-top-width:1px}
-
+.grid{display:grid}
