@@ -1,6 +1,6 @@
 {
  "version": 3,
- "updated_at": "2026-09-14T06:08:33.744Z",
+ "updated_at": "2026-09-14T09:31:55.949Z",
  "apps": [
   {
    "app": "wechat",
@@ -379,7 +379,7 @@
   {
    "app": "petpark",
    "name": {
-    "en": "Animal Paradise",
+    "en": "PetPark",
     "zh": "动物乐园"
    },
    "description": {
@@ -396,7 +396,7 @@
    ],
    "category": "game",
    "shell": "c_mobile",
-   "version": "3.0.1",
+   "version": "2.1.0",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -453,11 +453,11 @@
     {
      "name": "AhahahQ",
      "login": "AhahahQ",
-     "commits": 6
+     "commits": 7
     }
    ],
-   "commits": 15,
-   "updated": "2026-09-14T01:35:34+08:00"
+   "commits": 16,
+   "updated": "2026-09-14T17:31:22+08:00"
   },
   {
    "app": "study-loft",
@@ -479,7 +479,7 @@
    ],
    "category": "education",
    "shell": "c_mobile",
-   "version": "1.0.1",
+   "version": "1.1.0",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -515,11 +515,68 @@
     {
      "name": "AhahahQ",
      "login": "AhahahQ",
+     "commits": 3
+    }
+   ],
+   "commits": 3,
+   "updated": "2026-09-14T17:31:14+08:00"
+  },
+  {
+   "app": "pet-health-note",
+   "name": {
+    "en": "Pet Health Notes",
+    "zh": "萌宠健康笔记"
+   },
+   "description": {
+    "en": "Inspired by a shared short-video: a white pup's health-score / weight / check-in photo-note flow — feed, note detail, author page; fictional text.",
+    "zh": "源自分享短视频内容的灵感复刻：白色小狗的健康分/体重/打卡图文笔记流——feed、笔记详情、作者页，文本全虚构。"
+   },
+   "tags": [
+    "pet",
+    "health",
+    "notes",
+    "short-video",
+    "study"
+   ],
+   "category": "lifestyle",
+   "shell": "c_mobile",
+   "version": "1.1.0",
+   "license": "CC-BY-4.0",
+   "source": {
+    "kind": "link",
+    "ref": "dy-note"
+   },
+   "ip_attestation": "public-material",
+   "brand_disclaimer": "Unofficial study replica of Pet Health Notes; trademarks belong to their owners; no affiliation or endorsement implied.",
+   "icon": "pet-health-note/prototype/appicon/icon-256.png",
+   "cover": "pet-health-note/cover.png",
+   "url": "https://hello-cqq.github.io/design-clone-prototype/pet-health-note/prototype/",
+   "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/pet-health-note",
+   "pages": [
+    {
+     "id": "01-note",
+     "name": "图文笔记"
+    },
+    {
+     "id": "02-comments",
+     "name": "评论列表"
+    },
+    {
+     "id": "03-author",
+     "name": "作者主页"
+    }
+   ],
+   "downloads": 1,
+   "creator": "hello-cqq",
+   "contributors": [
+    {
+     "name": "AhahahQ",
+     "login": "AhahahQ",
      "commits": 2
     }
    ],
    "commits": 2,
-   "updated": "2026-09-14T01:35:30+08:00"
+   "updated": "2026-09-14T17:31:18+08:00"
   },
   {
    "app": "neon-tape",
@@ -541,7 +598,7 @@
    ],
    "category": "game",
    "shell": "c_mobile",
-   "version": "1.0.1",
+   "version": "1.1.0",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -577,11 +634,11 @@
     {
      "name": "AhahahQ",
      "login": "AhahahQ",
-     "commits": 2
+     "commits": 3
     }
    ],
-   "commits": 2,
-   "updated": "2026-09-14T01:35:25+08:00"
+   "commits": 3,
+   "updated": "2026-09-14T17:31:06+08:00"
   },
   {
    "app": "mountain-tea",
@@ -603,7 +660,7 @@
    ],
    "category": "lifestyle",
    "shell": "c_mobile",
-   "version": "1.0.1",
+   "version": "1.1.0",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -639,68 +696,11 @@
     {
      "name": "AhahahQ",
      "login": "AhahahQ",
-     "commits": 2
+     "commits": 3
     }
    ],
-   "commits": 2,
-   "updated": "2026-09-14T01:35:22+08:00"
-  },
-  {
-   "app": "pet-health-note",
-   "name": {
-    "en": "Pet Health Notes",
-    "zh": "萌宠健康笔记"
-   },
-   "description": {
-    "en": "Inspired by a shared short-video: a white pup's health-score / weight / check-in photo-note flow — feed, note detail, author page; fictional text.",
-    "zh": "源自分享短视频内容的灵感复刻：白色小狗的健康分/体重/打卡图文笔记流——feed、笔记详情、作者页，文本全虚构。"
-   },
-   "tags": [
-    "pet",
-    "health",
-    "notes",
-    "short-video",
-    "study"
-   ],
-   "category": "lifestyle",
-   "shell": "c_mobile",
-   "version": "1.0.0",
-   "license": "CC-BY-4.0",
-   "source": {
-    "kind": "link",
-    "ref": "dy-note"
-   },
-   "ip_attestation": "public-material",
-   "brand_disclaimer": "Unofficial study replica of Pet Health Notes; trademarks belong to their owners; no affiliation or endorsement implied.",
-   "icon": "pet-health-note/prototype/appicon/icon-256.png",
-   "cover": "pet-health-note/cover.png",
-   "url": "https://hello-cqq.github.io/design-clone-prototype/pet-health-note/prototype/",
-   "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/pet-health-note",
-   "pages": [
-    {
-     "id": "01-note",
-     "name": "图文笔记"
-    },
-    {
-     "id": "02-comments",
-     "name": "评论列表"
-    },
-    {
-     "id": "03-author",
-     "name": "作者主页"
-    }
-   ],
-   "downloads": 1,
-   "creator": "hello-cqq",
-   "contributors": [
-    {
-     "name": "AhahahQ",
-     "login": "AhahahQ",
-     "commits": 1
-    }
-   ],
-   "commits": 1,
-   "updated": "2026-09-13T09:40:23+08:00"
+   "commits": 3,
+   "updated": "2026-09-14T17:31:03+08:00"
   },
   {
    "app": "flash-bazaar",
@@ -722,7 +722,7 @@
    ],
    "category": "commerce",
    "shell": "c_mobile",
-   "version": "1.0.1",
+   "version": "1.1.0",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -758,11 +758,11 @@
     {
      "name": "AhahahQ",
      "login": "AhahahQ",
-     "commits": 2
+     "commits": 3
     }
    ],
-   "commits": 2,
-   "updated": "2026-09-14T01:35:18+08:00"
+   "commits": 3,
+   "updated": "2026-09-14T17:31:10+08:00"
   }
  ]
 }
