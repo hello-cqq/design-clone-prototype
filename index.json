@@ -1,6 +1,6 @@
 {
  "version": 3,
- "updated_at": "2026-09-14T13:12:25.307Z",
+ "updated_at": "2026-09-14T15:49:43.441Z",
  "apps": [
   {
    "app": "wechat",
@@ -20,7 +20,7 @@
    ],
    "category": "social",
    "shell": "c_mobile",
-   "version": "1.6.1",
+   "version": "1.6.2",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "device",
@@ -116,7 +116,7 @@
     {
      "name": "AhahahQ",
      "login": "AhahahQ",
-     "commits": 7
+     "commits": 8
     },
     {
      "name": "cqq",
@@ -124,8 +124,8 @@
      "commits": 6
     }
    ],
-   "commits": 14,
-   "updated": "2026-09-14T21:11:43+08:00"
+   "commits": 15,
+   "updated": "2026-09-14T23:48:54+08:00"
   },
   {
    "app": "ai-assistant",
@@ -147,7 +147,7 @@
    ],
    "category": "social",
    "shell": "c_mobile",
-   "version": "2.1.1",
+   "version": "2.1.2",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -187,11 +187,11 @@
     {
      "name": "AhahahQ",
      "login": "AhahahQ",
-     "commits": 8
+     "commits": 9
     }
    ],
-   "commits": 8,
-   "updated": "2026-09-14T21:11:52+08:00"
+   "commits": 9,
+   "updated": "2026-09-14T23:49:03+08:00"
   },
   {
    "app": "lark",
@@ -212,7 +212,7 @@
    ],
    "category": "office",
    "shell": "c_desktop",
-   "version": "1.6.1",
+   "version": "1.6.2",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -288,7 +288,7 @@
     {
      "name": "AhahahQ",
      "login": "AhahahQ",
-     "commits": 7
+     "commits": 8
     },
     {
      "name": "cqq",
@@ -296,8 +296,8 @@
      "commits": 6
     }
    ],
-   "commits": 14,
-   "updated": "2026-09-14T21:11:40+08:00"
+   "commits": 15,
+   "updated": "2026-09-14T23:48:50+08:00"
   },
   {
    "app": "aliyun-console",
@@ -317,7 +317,7 @@
    ],
    "category": "cloud",
    "shell": "c_browser",
-   "version": "1.6.1",
+   "version": "1.6.2",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -365,7 +365,7 @@
     {
      "name": "AhahahQ",
      "login": "AhahahQ",
-     "commits": 6
+     "commits": 7
     },
     {
      "name": "cqq",
@@ -373,8 +373,8 @@
      "commits": 6
     }
    ],
-   "commits": 13,
-   "updated": "2026-09-14T21:11:36+08:00"
+   "commits": 14,
+   "updated": "2026-09-14T23:48:47+08:00"
   },
   {
    "app": "petpark",
@@ -396,7 +396,7 @@
    ],
    "category": "game",
    "shell": "c_mobile",
-   "version": "2.2.1",
+   "version": "2.2.2",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -448,7 +448,7 @@
     {
      "name": "AhahahQ",
      "login": "AhahahQ",
-     "commits": 9
+     "commits": 10
     },
     {
      "name": "cqq",
@@ -456,8 +456,8 @@
      "commits": 8
     }
    ],
-   "commits": 18,
-   "updated": "2026-09-14T21:11:47+08:00"
+   "commits": 19,
+   "updated": "2026-09-14T23:48:58+08:00"
   }
  ]
 }
