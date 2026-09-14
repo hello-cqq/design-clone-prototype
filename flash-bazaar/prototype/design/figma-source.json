@@ -1,7 +1,7 @@
 {
   "meta": {
     "generator": "design-clone collect-design",
-    "generated_at": "2026-09-13T14:03:26.321Z",
+    "generated_at": "2026-09-14T08:21:21.755Z",
     "source_run": "gen-shop",
     "schema": "figma-source/v1"
   },
@@ -117,12 +117,12 @@
           "text": ""
         },
         {
-          "dc": "co/tab",
+          "dc": "co/spec",
           "kind": "button",
           "rect": {
             "x": 31,
             "y": 359,
-            "w": 48,
+            "w": 56,
             "h": 42
           },
           "fill": "rgba(0, 0, 0, 0)",
@@ -134,15 +134,15 @@
             "weight": 600,
             "lineHeight": 17
           },
-          "text": "tab"
+          "text": "spec"
         },
         {
-          "dc": "co/grab",
+          "dc": "co/coupon",
           "kind": "button",
           "rect": {
-            "x": 87,
+            "x": 95,
             "y": 363,
-            "w": 62,
+            "w": 78,
             "h": 38
           },
           "fill": "rgba(0, 0, 0, 0)",
@@ -154,7 +154,7 @@
             "weight": 600,
             "lineHeight": 18
           },
-          "text": "grab"
+          "text": "coupon"
         }
       ]
     },
@@ -187,12 +187,12 @@
           "text": ""
         },
         {
-          "dc": "co/tab",
+          "dc": "co/spec",
           "kind": "button",
           "rect": {
             "x": 31,
             "y": 359,
-            "w": 48,
+            "w": 56,
             "h": 42
           },
           "fill": "rgba(0, 0, 0, 0)",
@@ -204,15 +204,15 @@
             "weight": 600,
             "lineHeight": 17
           },
-          "text": "tab"
+          "text": "spec"
         },
         {
-          "dc": "co/grab",
+          "dc": "co/coupon",
           "kind": "button",
           "rect": {
-            "x": 87,
+            "x": 95,
             "y": 363,
-            "w": 62,
+            "w": 78,
             "h": 38
           },
           "fill": "rgba(0, 0, 0, 0)",
@@ -224,7 +224,7 @@
             "weight": 600,
             "lineHeight": 18
           },
-          "text": "grab"
+          "text": "coupon"
         }
       ]
     },
@@ -257,13 +257,13 @@
           "text": ""
         },
         {
-          "dc": "co/pay",
+          "dc": "co/spec",
           "kind": "button",
           "rect": {
             "x": 31,
             "y": 359,
-            "w": 50,
-            "h": 35
+            "w": 56,
+            "h": 42
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(255, 255, 255)",
@@ -274,7 +274,27 @@
             "weight": 600,
             "lineHeight": 17
           },
-          "text": "pay"
+          "text": "spec"
+        },
+        {
+          "dc": "co/coupon",
+          "kind": "button",
+          "rect": {
+            "x": 95,
+            "y": 363,
+            "w": 78,
+            "h": 38
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "cornerRadius": 999,
+          "font": {
+            "family": "ui-rounded",
+            "size": 12,
+            "weight": 600,
+            "lineHeight": 18
+          },
+          "text": "coupon"
         }
       ]
     }
