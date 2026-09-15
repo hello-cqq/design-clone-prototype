@@ -1,10 +1,8 @@
 {
- "style": "clay-icon",
- "prompt": "app icon / feature glyph, demo-assistant app icon glyph, simple bold silhouette, centered, square, minimal background",
- "source": "generated",
- "icon_how": "generated",
+ "source": "cloned",
+ "icon_how": "cloned:manual-src",
  "mode": "auto",
- "base": "/Users/cqq/Project/design-clone/design-clone-runs/demo-assistant/prototype/appicon/_base.png",
+ "base": "/Users/cqq/Project/design-clone/repo/design-clone-prototype/ai-assistant/icon.png",
  "radius": 0.22,
- "generated_at": "2026-09-12T15:54:46.801Z"
+ "generated_at": "2026-09-15T23:44:35.450Z"
 }

@@ -38,7 +38,7 @@ for (const t of listApps(root)) {
   const contrib = contributors(root, t.app);
   {
     const rel = (d, base) => fs.readdirSync(d, { withFileTypes: true }).flatMap((e) => e.isDirectory() ? rel(path.join(d, e.name), base) : [path.relative(base, path.join(d, e.name)).split(path.sep).join("/")]);
-    fs.writeFileSync(path.join(t.dir, "files.json"), JSON.stringify(rel(t.dir, t.dir)));
+    fs.writeFileSync(path.join(t.dir, "files.json"), JSON.stringify(rel(t.dir, t.dir).filter((x) => x !== "files.json")));
   }
   apps.push({
     app: t.app,
