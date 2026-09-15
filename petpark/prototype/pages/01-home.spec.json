@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "page_id": "01-home",
+    "page_name": "首页·大世界",
+    "surface": "c_mobile",
+    "page_type": "c_home",
+    "canvas": {
+      "width": 390,
+      "height": 844
+    },
+    "evidence": [],
+    "fidelity": "high",
+    "product": {
+      "function": "开放场景总入口：资源栏+任务气泡+双入口",
+      "goals": [
+        "开放场景总入口：资源栏+任务气泡+双入口"
+      ],
+      "page_prompt": "一张高品质手机竖屏 APP UI 原型设计稿，动物乐园首页·大世界页面，开放场景总入口：资源栏+任务气泡+双入口；布局：3D 城市公园全景；顶资源栏 金币/钻石/体力；任务气泡；左下家园/右下舞台入口；底导 乐园|动物|乐队|家园|任务；控件：pp/entry-home(goto)、pp/entry-stage(goto)；Disney Zootopia-grade cinematic 3D cartoon render, PBR fur and fabric materials, soft natural light and volumetrics, juicy macaron palette, anthropomorphic characters, rounded modern game UI, OC render 8k, clean background；圆角玻璃卡片+半透明磨砂控件+柔和阴影+清晰信息层级+手机竖屏；统一视觉系统：背景沿用「动物城中央广场+喷泉电车」母题；角色为第一视觉，UI 半透明轻量低干扰；界面分层清晰，柔和阴影，精致图标，圆润字体，可直接用于产品原型评审，无水印",
+      "element_prompts": {
+        "pp/entry-home": "goto 控件：跳家园",
+        "pp/entry-stage": "goto 控件：跳乐队"
+      }
+    },
+    "spec_version": 1,
+    "change_log": [
+      {
+        "at": "2026-09-14T14:57:50.033Z",
+        "by": "clone",
+        "note": "collect-design 初始/重采集（computed 真值）"
+      }
+    ]
+  },
+  "regions": [
+    {
+      "id": "r_pp_start",
+      "type": "custom",
+      "label": "开始冒险"
+    }
+  ]
+}

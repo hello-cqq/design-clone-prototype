@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "page_id": "03-call",
+    "page_name": "视频通话",
+    "surface": "c_mobile",
+    "page_type": "c_list",
+    "canvas": {
+      "width": 390,
+      "height": 844
+    },
+    "evidence": [],
+    "fidelity": "high",
+    "product": {
+      "function": "半身角色 70% 画面+磨砂控制栏",
+      "goals": [
+        "半身角色 70% 画面+磨砂控制栏"
+      ],
+      "page_prompt": "一张高品质手机竖屏 APP UI 原型设计稿，星海对话视频通话页面，半身角色 70% 画面+磨砂控制栏；布局：全屏角色半身+虚化海星背景；底部磨砂钮：麦克风/摄像头/挂断/表情；控件：as/mic(toggle)、as/end(toast)；Makoto Shinkai film style 2.5D anime, clean transparent cinematic light, tyndall beams, luminous sky and sea reflections, delicate hair strands, emotional color script, 8k key visual, NOT photoreal；圆角玻璃卡片+半透明磨砂控件+柔和阴影+清晰信息层级+手机竖屏；统一视觉系统：背景沿用「夜海+银河+月光倒影」母题；角色为第一视觉，UI 半透明轻量低干扰；界面分层清晰，柔和阴影，精致图标，圆润字体，可直接用于产品原型评审，无水印",
+      "element_prompts": {
+        "as/mic": "toggle 控件：波形静止",
+        "as/end": "toast 控件：计时结束"
+      }
+    },
+    "spec_version": 1,
+    "change_log": [
+      {
+        "at": "2026-09-14T15:47:13.967Z",
+        "by": "clone",
+        "note": "collect-design 初始/重采集（computed 真值）"
+      }
+    ]
+  },
+  "regions": [
+    {
+      "id": "r_as_personas",
+      "type": "grid",
+      "label": "星海当前角色 ｜ 切换音色\n      海汐当前角色 ｜ 切换音色",
+      "components": [
+        {
+          "kind": "radio",
+          "label": "星海当前角色 ｜ 切换音色",
+          "interaction": {
+            "act": "radio",
+            "group": "persona"
+          },
+          "sample_value": "星海当前角色 ｜ 切换音色"
+        },
+        {
+          "kind": "image",
+          "label": ""
+        },
+        {
+          "kind": "radio",
+          "label": "海汐当前角色 ｜ 切换音色",
+          "interaction": {
+            "act": "radio",
+            "group": "persona"
+          },
+          "sample_value": "海汐当前角色 ｜ 切换音色"
+        },
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_as_tabs",
+      "type": "tab_bar",
+      "label": "首页对话视频设置",
+      "components": [
+        {
+          "kind": "button",
+          "label": "首页",
+          "interaction": {
+            "act": "goto",
+            "to": "01-home"
+          },
+          "sample_value": "首页"
+        },
+        {
+          "kind": "button",
+          "label": "对话",
+          "interaction": {
+            "act": "goto",
+            "to": "02-chat"
+          },
+          "sample_value": "对话"
+        },
+        {
+          "kind": "button",
+          "label": "视频",
+          "interaction": {
+            "act": "goto",
+            "to": "03-call"
+          },
+          "sample_value": "视频"
+        },
+        {
+          "kind": "button",
+          "label": "设置",
+          "interaction": {
+            "act": "goto",
+            "to": "04-settings"
+          },
+          "sample_value": "设置"
+        }
+      ]
+    },
+    {
+      "id": "r_as_tab_home",
+      "type": "custom",
+      "label": "首页"
+    },
+    {
+      "id": "r_as_tab_chat",
+      "type": "custom",
+      "label": "对话"
+    },
+    {
+      "id": "r_as_tab_call",
+      "type": "custom",
+      "label": "视频"
+    },
+    {
+      "id": "r_as_voice_entry",
+      "type": "custom",
+      "label": "设置"
+    }
+  ]
+}

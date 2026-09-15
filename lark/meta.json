@@ -1,0 +1,30 @@
+{
+ "name": {
+  "en": "Lark",
+  "zh": "飞书"
+ },
+ "description": {
+  "en": "Study replica of Lark desktop: messages, calendar, docs, app center — fictional text.",
+  "zh": "飞书桌面端学习复刻：消息、日历、文档、应用中心——文本全虚构。"
+ },
+ "tags": [
+  "office",
+  "collab",
+  "desktop",
+  "messenger",
+  "study"
+ ],
+ "category": "office",
+ "shell": "c_desktop",
+ "source": {
+  "kind": "original",
+  "ref": "mac-lark"
+ },
+ "license": "CC-BY-4.0",
+ "ip_attestation": "public-material",
+ "attestation_note": "M86: 视图重渲染后选中框重画外壳",
+ "version": "1.6.2",
+ "created_at": "2026-09-14T15:48:11.203Z",
+ "brand_disclaimer": "Unofficial study replica of Lark; trademarks belong to their owners; no affiliation or endorsement implied.",
+ "platform": "macos"
+}

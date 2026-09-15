@@ -1,0 +1,931 @@
+{
+  "meta": {
+    "generator": "design-clone collect-design",
+    "generated_at": "2026-09-14T15:39:33.992Z",
+    "source_run": "web-aliyun",
+    "schema": "figma-source/v1"
+  },
+  "variables": {
+    "color-primary": "#ff6a00",
+    "color-blue": "#1366ec",
+    "color-bg": "#ffffff",
+    "color-bg-dim": "#f4f5f7",
+    "color-ink": "#181818",
+    "color-text-secondary": "#6e6e73",
+    "color-border": "#e0e0e0",
+    "font-body": "system-ui, \"PingFang SC\", sans-serif",
+    "radius-card": "8px"
+  },
+  "pages": [
+    {
+      "id": "01-home",
+      "name": "首页",
+      "frame": {
+        "width": 1280,
+        "height": 993
+      },
+      "nodes": [
+        {
+          "dc": "hm/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 1280,
+            "h": 993
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "al/nav",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 1280,
+            "h": 50
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "hm/hero",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 50,
+            "w": 1280,
+            "h": 259
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "hm/promos",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 309,
+            "w": 1280,
+            "h": 165
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "hm/models",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 474,
+            "w": 1280,
+            "h": 225
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "al/foot",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 739,
+            "w": 1280,
+            "h": 254
+          },
+          "fill": "rgb(247, 248, 250)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "02-ecs",
+      "name": "ECS",
+      "frame": {
+        "width": 1280,
+        "height": 993
+      },
+      "nodes": [
+        {
+          "dc": "hm/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 1280,
+            "h": 993
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "al/nav",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 1280,
+            "h": 50
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "hm/hero",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 50,
+            "w": 1280,
+            "h": 259
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "hm/promos",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 309,
+            "w": 1280,
+            "h": 165
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "hm/models",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 474,
+            "w": 1280,
+            "h": 225
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "al/foot",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 739,
+            "w": 1280,
+            "h": 254
+          },
+          "fill": "rgb(247, 248, 250)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "03-price",
+      "name": "定价",
+      "frame": {
+        "width": 1280,
+        "height": 993
+      },
+      "nodes": [
+        {
+          "dc": "hm/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 1280,
+            "h": 993
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "al/nav",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 1280,
+            "h": 50
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "hm/hero",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 50,
+            "w": 1280,
+            "h": 259
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "hm/promos",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 309,
+            "w": 1280,
+            "h": 165
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "hm/models",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 474,
+            "w": 1280,
+            "h": 225
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "al/foot",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 739,
+            "w": 1280,
+            "h": 254
+          },
+          "fill": "rgb(247, 248, 250)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "04-docs",
+      "name": "文档",
+      "frame": {
+        "width": 1280,
+        "height": 993
+      },
+      "nodes": [
+        {
+          "dc": "hm/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 1280,
+            "h": 993
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "al/nav",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 1280,
+            "h": 50
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "hm/hero",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 50,
+            "w": 1280,
+            "h": 259
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "hm/promos",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 309,
+            "w": 1280,
+            "h": 165
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "hm/models",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 474,
+            "w": 1280,
+            "h": 225
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "al/foot",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 739,
+            "w": 1280,
+            "h": 254
+          },
+          "fill": "rgb(247, 248, 250)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "05-ecs-features",
+      "name": "ECS 特性",
+      "frame": {
+        "width": 1280,
+        "height": 993
+      },
+      "nodes": [
+        {
+          "dc": "hm/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 1280,
+            "h": 993
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "al/nav",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 1280,
+            "h": 50
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "hm/hero",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 50,
+            "w": 1280,
+            "h": 259
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "hm/promos",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 309,
+            "w": 1280,
+            "h": 165
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "hm/models",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 474,
+            "w": 1280,
+            "h": 225
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "al/foot",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 739,
+            "w": 1280,
+            "h": 254
+          },
+          "fill": "rgb(247, 248, 250)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "06-ecs-pricing",
+      "name": "ECS 价格",
+      "frame": {
+        "width": 1280,
+        "height": 993
+      },
+      "nodes": [
+        {
+          "dc": "hm/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 1280,
+            "h": 993
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "al/nav",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 1280,
+            "h": 50
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "hm/hero",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 50,
+            "w": 1280,
+            "h": 259
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "hm/promos",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 309,
+            "w": 1280,
+            "h": 165
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "hm/models",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 474,
+            "w": 1280,
+            "h": 225
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "al/foot",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 739,
+            "w": 1280,
+            "h": 254
+          },
+          "fill": "rgb(247, 248, 250)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "07-price-strategy",
+      "name": "定价详情",
+      "frame": {
+        "width": 1280,
+        "height": 993
+      },
+      "nodes": [
+        {
+          "dc": "hm/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 1280,
+            "h": 993
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "al/nav",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 1280,
+            "h": 50
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "hm/hero",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 50,
+            "w": 1280,
+            "h": 259
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "hm/promos",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 309,
+            "w": 1280,
+            "h": 165
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "hm/models",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 474,
+            "w": 1280,
+            "h": 225
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "al/foot",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 739,
+            "w": 1280,
+            "h": 254
+          },
+          "fill": "rgb(247, 248, 250)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    }
+  ]
+}

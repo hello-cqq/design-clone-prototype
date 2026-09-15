@@ -1,0 +1,98 @@
+[
+  {
+    "at": "2026-09-13T01:51:28.830Z",
+    "prompt": "wide empty background band only, ghibli-grade day sea horizon, towering cumulus clouds, sun glitter path on water, volumetric god rays, layered atmospheric depth, no people, no text, no watermark",
+    "style": "anime-cel",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "as-bg-day.png"
+  },
+  {
+    "at": "2026-09-13T01:52:12.944Z",
+    "prompt": "wide empty background band only, night sea horizon, dense starfield and milky way, moon glitter path, deep indigo teal palette, layered atmospheric depth, no people, no text",
+    "style": "anime-cel",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "as-bg-night.png"
+  },
+  {
+    "at": "2026-09-13T01:52:57.871Z",
+    "prompt": "young woman with black bob hair and white shirt standing at day sea horizon, waving gently with warm smile, strong rim light, hair strand highlights, cel shading 2-3 tone steps, vertical composition, clouds behind, studio key visual",
+    "style": "anime-cel",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "as-home.png"
+  },
+  {
+    "at": "2026-09-13T01:53:43.082Z",
+    "prompt": "young woman with black bob hair inside a glowing holographic call ring at night sea, soft teal hologram light on face, sparkles floating, cel shading, rim light, vertical composition, studio key visual",
+    "style": "anime-cel",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "as-call.png"
+  },
+  {
+    "at": "2026-09-13T01:54:28.123Z",
+    "prompt": "two anime characters side by side, left young woman black bob hair day sky background, right young man black hair night starry background, split composition down middle, cel shading, rim light, studio key visual, no text",
+    "style": "anime-cel",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "as-persona.png"
+  },
+  {
+    "at": "2026-09-13T01:54:31.974Z",
+    "prompt": "bust portrait of young woman black bob hair white shirt, soft day light, sea bokeh behind, gentle confident expression, cel shading with subsurface glow, square crop",
+    "style": "anime-cel",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "as-me.png"
+  },
+  {
+    "at": "2026-09-13T02:12:30.412Z",
+    "prompt": "wide empty background band only, ghibli-grade day sea horizon, towering cumulus clouds, sun glitter path on water, volumetric god rays, layered atmospheric depth, no people, no text, no watermark",
+    "style": "anime-cel",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "as-bg-day.png"
+  },
+  {
+    "at": "2026-09-13T02:13:15.591Z",
+    "prompt": "wide empty background band only, night sea horizon, dense starfield and milky way, moon glitter path, deep indigo teal palette, layered atmospheric depth, no people, no text",
+    "style": "anime-cel",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "as-bg-night.png"
+  },
+  {
+    "at": "2026-09-13T02:14:00.750Z",
+    "prompt": "young woman with black bob hair and white shirt standing at day sea horizon, waving gently with warm smile, strong rim light, hair strand highlights, cel shading 2-3 tone steps, vertical composition, clouds behind, studio key visual",
+    "style": "anime-cel",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "as-home.png"
+  },
+  {
+    "at": "2026-09-13T02:14:03.657Z",
+    "prompt": "young woman with black bob hair inside a glowing holographic call ring at night sea, soft teal hologram light on face, sparkles floating, cel shading, rim light, vertical composition, studio key visual",
+    "style": "anime-cel",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "as-call.png"
+  },
+  {
+    "at": "2026-09-13T02:14:46.150Z",
+    "prompt": "two anime characters side by side, left young woman black bob hair day sky background, right young man black hair night starry background, split composition down middle, cel shading, rim light, studio key visual, no text",
+    "style": "anime-cel",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "as-persona.png"
+  },
+  {
+    "at": "2026-09-13T02:15:29.069Z",
+    "prompt": "bust portrait of young woman black bob hair white shirt, soft day light, sea bokeh behind, gentle confident expression, cel shading with subsurface glow, square crop",
+    "style": "anime-cel",
+    "seed": 42,
+    "engine": "pollinations",
+    "out": "as-me.png"
+  }
+]

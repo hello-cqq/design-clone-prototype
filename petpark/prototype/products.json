@@ -1,0 +1,87 @@
+{
+  "00-launch": {
+    "function": "动物城全景+群像挥手+开始冒险",
+    "goals": [
+      "动物城全景+群像挥手+开始冒险"
+    ],
+    "page_prompt": "一张高品质手机竖屏 APP UI 原型设计稿，动物乐园启动页页面，动物城全景+群像挥手+开始冒险；布局：城门口群像挥手；大标题+副标题；底部开始按钮；控件：pp/start(goto)；Disney Zootopia-grade cinematic 3D cartoon render, PBR fur and fabric materials, soft natural light and volumetrics, juicy macaron palette, anthropomorphic characters, rounded modern game UI, OC render 8k, clean background；圆角玻璃卡片+半透明磨砂控件+柔和阴影+清晰信息层级+手机竖屏；统一视觉系统：背景沿用「动物城中央广场+喷泉电车」母题；角色为第一视觉，UI 半透明轻量低干扰；界面分层清晰，柔和阴影，精致图标，圆润字体，可直接用于产品原型评审，无水印",
+    "element_prompts": {
+      "pp/start": "goto 控件：进首页"
+    }
+  },
+  "01-home": {
+    "function": "开放场景总入口：资源栏+任务气泡+双入口",
+    "goals": [
+      "开放场景总入口：资源栏+任务气泡+双入口"
+    ],
+    "page_prompt": "一张高品质手机竖屏 APP UI 原型设计稿，动物乐园首页·大世界页面，开放场景总入口：资源栏+任务气泡+双入口；布局：3D 城市公园全景；顶资源栏 金币/钻石/体力；任务气泡；左下家园/右下舞台入口；底导 乐园|动物|乐队|家园|任务；控件：pp/entry-home(goto)、pp/entry-stage(goto)；Disney Zootopia-grade cinematic 3D cartoon render, PBR fur and fabric materials, soft natural light and volumetrics, juicy macaron palette, anthropomorphic characters, rounded modern game UI, OC render 8k, clean background；圆角玻璃卡片+半透明磨砂控件+柔和阴影+清晰信息层级+手机竖屏；统一视觉系统：背景沿用「动物城中央广场+喷泉电车」母题；角色为第一视觉，UI 半透明轻量低干扰；界面分层清晰，柔和阴影，精致图标，圆润字体，可直接用于产品原型评审，无水印",
+    "element_prompts": {
+      "pp/entry-home": "goto 控件：跳家园",
+      "pp/entry-stage": "goto 控件：跳乐队"
+    }
+  },
+  "02-interact": {
+    "function": "圆形互动舞台+抚摸/喂食/唱歌+好感",
+    "goals": [
+      "圆形互动舞台+抚摸/喂食/唱歌+好感"
+    ],
+    "page_prompt": "一张高品质手机竖屏 APP UI 原型设计稿，动物乐园单动物互动页面，圆形互动舞台+抚摸/喂食/唱歌+好感；布局：角色居中圆形舞台+表情气泡爱心粒子；顶资源栏+返回；右三圆钮 抚摸/喂食/唱歌；底动作面板 主钮开始互动/副钮查看好感；控件：pp/pet(toast)、pp/feed(toast)、pp/sing(toast)；Disney Zootopia-grade cinematic 3D cartoon render, PBR fur and fabric materials, soft natural light and volumetrics, juicy macaron palette, anthropomorphic characters, rounded modern game UI, OC render 8k, clean background；圆角玻璃卡片+半透明磨砂控件+柔和阴影+清晰信息层级+手机竖屏；统一视觉系统：背景沿用「动物城中央广场+喷泉电车」母题；角色为第一视觉，UI 半透明轻量低干扰；界面分层清晰，柔和阴影，精致图标，圆润字体，可直接用于产品原型评审，无水印",
+    "element_prompts": {
+      "pp/pet": "toast 控件：爱心粒子+表情切换",
+      "pp/feed": "toast 控件：好感+1",
+      "pp/sing": "toast 控件：音符粒子"
+    }
+  },
+  "03-band": {
+    "function": "五人乐队舞台+卡槽+播放控制",
+    "goals": [
+      "五人乐队舞台+卡槽+播放控制"
+    ],
+    "page_prompt": "一张高品质手机竖屏 APP UI 原型设计稿，动物乐园动物乐队页面，五人乐队舞台+卡槽+播放控制；布局：森林露天舞台五动物持乐器；左队员卡槽 主唱/键盘/吉他/鼓/沙锤；底控制 播放/换歌/换装/保存；曲目标签；控件：pp/play(toggle)、pp/slots(radio)；Disney Zootopia-grade cinematic 3D cartoon render, PBR fur and fabric materials, soft natural light and volumetrics, juicy macaron palette, anthropomorphic characters, rounded modern game UI, OC render 8k, clean background；圆角玻璃卡片+半透明磨砂控件+柔和阴影+清晰信息层级+手机竖屏；统一视觉系统：背景沿用「动物城中央广场+喷泉电车」母题；角色为第一视觉，UI 半透明轻量低干扰；界面分层清晰，柔和阴影，精致图标，圆润字体，可直接用于产品原型评审，无水印",
+    "element_prompts": {
+      "pp/play": "toggle 控件：舞台灯光动画启停",
+      "pp/slots": "radio 控件：卡槽高亮"
+    }
+  },
+  "04-map": {
+    "function": "3D 城市地图+分区气泡+向导卡",
+    "goals": [
+      "3D 城市地图+分区气泡+向导卡"
+    ],
+    "page_prompt": "一张高品质手机竖屏 APP UI 原型设计稿，动物乐园地图导游页面，3D 城市地图+分区气泡+向导卡；布局：等距 3D 城地图；分区标签气泡；顶搜索+导航钮；底向导卡 狐狸向导+地图/收藏/任务；控件：pp/zones(radio)；Disney Zootopia-grade cinematic 3D cartoon render, PBR fur and fabric materials, soft natural light and volumetrics, juicy macaron palette, anthropomorphic characters, rounded modern game UI, OC render 8k, clean background；圆角玻璃卡片+半透明磨砂控件+柔和阴影+清晰信息层级+手机竖屏；统一视觉系统：背景沿用「动物城中央广场+喷泉电车」母题；角色为第一视觉，UI 半透明轻量低干扰；界面分层清晰，柔和阴影，精致图标，圆润字体，可直接用于产品原型评审，无水印",
+    "element_prompts": {
+      "pp/zones": "radio 控件：分区气泡高亮+向导语切换"
+    }
+  },
+  "05-build": {
+    "function": "素材栏+3D 地块+放置/旋转/撤销/保存",
+    "goals": [
+      "素材栏+3D 地块+放置/旋转/撤销/保存"
+    ],
+    "page_prompt": "一张高品质手机竖屏 APP UI 原型设计稿，动物乐园家园搭建页面，素材栏+3D 地块+放置/旋转/撤销/保存；布局：略俯 3D 草地地块；左素材栏 房屋/植物/家具/装饰；底操作栏四钮；控件：pp/mats(radio)、pp/place(toast)；Disney Zootopia-grade cinematic 3D cartoon render, PBR fur and fabric materials, soft natural light and volumetrics, juicy macaron palette, anthropomorphic characters, rounded modern game UI, OC render 8k, clean background；圆角玻璃卡片+半透明磨砂控件+柔和阴影+清晰信息层级+手机竖屏；统一视觉系统：背景沿用「动物城中央广场+喷泉电车」母题；角色为第一视觉，UI 半透明轻量低干扰；界面分层清晰，柔和阴影，精致图标，圆润字体，可直接用于产品原型评审，无水印",
+    "element_prompts": {
+      "pp/mats": "radio 控件：素材高亮",
+      "pp/place": "toast 控件：地块落物动画"
+    }
+  },
+  "06-dex": {
+    "function": "三列卡片网格：解锁/锁",
+    "goals": [
+      "三列卡片网格：解锁/锁"
+    ],
+    "page_prompt": "一张高品质手机竖屏 APP UI 原型设计稿，动物乐园动物图鉴页面，三列卡片网格：解锁/锁；布局：顶标题+筛选 按性格/按乐器；3 列卡网格；底导；控件：pp/dexcard(dialog)；Disney Zootopia-grade cinematic 3D cartoon render, PBR fur and fabric materials, soft natural light and volumetrics, juicy macaron palette, anthropomorphic characters, rounded modern game UI, OC render 8k, clean background；圆角玻璃卡片+半透明磨砂控件+柔和阴影+清晰信息层级+手机竖屏；统一视觉系统：背景沿用「动物城中央广场+喷泉电车」母题；角色为第一视觉，UI 半透明轻量低干扰；界面分层清晰，柔和阴影，精致图标，圆润字体，可直接用于产品原型评审，无水印",
+    "element_prompts": {
+      "pp/dexcard": "dialog 控件：动物简介弹窗"
+    }
+  },
+  "07-tasks": {
+    "function": "任务卡+进度+活动面板",
+    "goals": [
+      "任务卡+进度+活动面板"
+    ],
+    "page_prompt": "一张高品质手机竖屏 APP UI 原型设计稿，动物乐园任务与活动页面，任务卡+进度+活动面板；布局：三任务卡（头像+进度+去完成）；活动面板 周末音乐节；控件：pp/go(toast)；Disney Zootopia-grade cinematic 3D cartoon render, PBR fur and fabric materials, soft natural light and volumetrics, juicy macaron palette, anthropomorphic characters, rounded modern game UI, OC render 8k, clean background；圆角玻璃卡片+半透明磨砂控件+柔和阴影+清晰信息层级+手机竖屏；统一视觉系统：背景沿用「动物城中央广场+喷泉电车」母题；角色为第一视觉，UI 半透明轻量低干扰；界面分层清晰，柔和阴影，精致图标，圆润字体，可直接用于产品原型评审，无水印",
+    "element_prompts": {
+      "pp/go": "toast 控件：进度+10%"
+    }
+  }
+}

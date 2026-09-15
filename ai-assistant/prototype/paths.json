@@ -1,0 +1,332 @@
+{
+  "generated_at": "2026-09-13T06:39:44.348Z",
+  "version": 3,
+  "flowsUsed": true,
+  "nodes": {
+    "00-launch": {
+      "title": "启动页"
+    },
+    "01-home": {
+      "title": "首页·角色选择"
+    },
+    "02-chat": {
+      "title": "文字聊天"
+    },
+    "03-call": {
+      "title": "视频通话"
+    },
+    "04-settings": {
+      "title": "设置·形象音色"
+    }
+  },
+  "edges": [
+    {
+      "from": "00-launch",
+      "to": "01-home",
+      "kind": "flow",
+      "label": "启动页 → 首页·角色选择：双角色大"
+    },
+    {
+      "from": "00-launch",
+      "to": "02-chat",
+      "kind": "flow",
+      "label": "启动页 → 文字聊天：问答对话：气泡"
+    },
+    {
+      "from": "00-launch",
+      "to": "03-call",
+      "kind": "flow",
+      "label": "启动页 → 视频通话：半身角色 70"
+    },
+    {
+      "from": "00-launch",
+      "to": "04-settings",
+      "kind": "flow",
+      "label": "启动页 → 设置·形象音色：形象预览"
+    },
+    {
+      "from": "01-home",
+      "to": "02-chat",
+      "kind": "flow",
+      "label": "首页·角色选择 → 文字聊天 主链路"
+    },
+    {
+      "from": "02-chat",
+      "to": "03-call",
+      "kind": "flow",
+      "label": "文字聊天 → 视频通话 主链路"
+    },
+    {
+      "from": "03-call",
+      "to": "04-settings",
+      "kind": "flow",
+      "label": "视频通话 → 设置·形象音色 主链路"
+    }
+  ],
+  "roots": [
+    "00-launch"
+  ],
+  "depths": {
+    "00-launch": 0,
+    "01-home": 1,
+    "02-chat": 1,
+    "03-call": 1,
+    "04-settings": 1
+  },
+  "perNode": {
+    "00-launch": {
+      "paths": [
+        [
+          0,
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3
+        ]
+      ],
+      "pathInfo": [
+        {
+          "source": "brief",
+          "flow": "b1",
+          "name": "启动页 链路 1"
+        },
+        {
+          "source": "brief",
+          "flow": "b2",
+          "name": "启动页 链路 2"
+        },
+        {
+          "source": "brief",
+          "flow": "b3",
+          "name": "启动页 链路 3"
+        },
+        {
+          "source": "brief",
+          "flow": "b4",
+          "name": "启动页 链路 4"
+        }
+      ],
+      "nav": [
+        "01-home",
+        "02-chat",
+        "03-call",
+        "04-settings"
+      ],
+      "tree": {
+        "node": "00-launch",
+        "children": [
+          {
+            "edge": 0,
+            "child": {
+              "node": "01-home",
+              "children": [
+                {
+                  "edge": 4,
+                  "child": {
+                    "node": "02-chat",
+                    "children": [
+                      {
+                        "edge": 5,
+                        "child": {
+                          "node": "03-call",
+                          "children": [
+                            {
+                              "edge": 6,
+                              "child": {
+                                "node": "04-settings",
+                                "children": []
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "edge": 1,
+            "child": {
+              "node": "02-chat",
+              "children": [
+                {
+                  "edge": 5,
+                  "child": {
+                    "node": "03-call",
+                    "children": [
+                      {
+                        "edge": 6,
+                        "child": {
+                          "node": "04-settings",
+                          "children": []
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "edge": 2,
+            "child": {
+              "node": "03-call",
+              "children": [
+                {
+                  "edge": 6,
+                  "child": {
+                    "node": "04-settings",
+                    "children": []
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "edge": 3,
+            "child": {
+              "node": "04-settings",
+              "children": []
+            }
+          }
+        ]
+      }
+    },
+    "01-home": {
+      "paths": [
+        [
+          4,
+          5,
+          6
+        ]
+      ],
+      "pathInfo": [
+        {
+          "source": "brief",
+          "flow": "b1",
+          "name": "首页·角色选择 链路 1"
+        }
+      ],
+      "nav": [
+        "02-chat"
+      ],
+      "tree": {
+        "node": "01-home",
+        "children": [
+          {
+            "edge": 4,
+            "child": {
+              "node": "02-chat",
+              "children": [
+                {
+                  "edge": 5,
+                  "child": {
+                    "node": "03-call",
+                    "children": [
+                      {
+                        "edge": 6,
+                        "child": {
+                          "node": "04-settings",
+                          "children": []
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "02-chat": {
+      "paths": [
+        [
+          5,
+          6
+        ]
+      ],
+      "pathInfo": [
+        {
+          "source": "brief",
+          "flow": "b1",
+          "name": "文字聊天 链路 1"
+        }
+      ],
+      "nav": [
+        "03-call"
+      ],
+      "tree": {
+        "node": "02-chat",
+        "children": [
+          {
+            "edge": 5,
+            "child": {
+              "node": "03-call",
+              "children": [
+                {
+                  "edge": 6,
+                  "child": {
+                    "node": "04-settings",
+                    "children": []
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "03-call": {
+      "paths": [
+        [
+          6
+        ]
+      ],
+      "pathInfo": [
+        {
+          "source": "brief",
+          "flow": "b1",
+          "name": "视频通话 链路 1"
+        }
+      ],
+      "nav": [
+        "04-settings"
+      ],
+      "tree": {
+        "node": "03-call",
+        "children": [
+          {
+            "edge": 6,
+            "child": {
+              "node": "04-settings",
+              "children": []
+            }
+          }
+        ]
+      }
+    },
+    "04-settings": {
+      "paths": [],
+      "pathInfo": [],
+      "nav": [],
+      "tree": {
+        "node": "04-settings",
+        "children": []
+      }
+    }
+  }
+}

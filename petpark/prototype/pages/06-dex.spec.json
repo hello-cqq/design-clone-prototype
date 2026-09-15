@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "page_id": "06-dex",
+    "page_name": "动物图鉴",
+    "surface": "c_mobile",
+    "page_type": "c_list",
+    "canvas": {
+      "width": 390,
+      "height": 844
+    },
+    "evidence": [],
+    "fidelity": "high",
+    "product": {
+      "function": "三列卡片网格：解锁/锁",
+      "goals": [
+        "三列卡片网格：解锁/锁"
+      ],
+      "page_prompt": "一张高品质手机竖屏 APP UI 原型设计稿，动物乐园动物图鉴页面，三列卡片网格：解锁/锁；布局：顶标题+筛选 按性格/按乐器；3 列卡网格；底导；控件：pp/dexcard(dialog)；Disney Zootopia-grade cinematic 3D cartoon render, PBR fur and fabric materials, soft natural light and volumetrics, juicy macaron palette, anthropomorphic characters, rounded modern game UI, OC render 8k, clean background；圆角玻璃卡片+半透明磨砂控件+柔和阴影+清晰信息层级+手机竖屏；统一视觉系统：背景沿用「动物城中央广场+喷泉电车」母题；角色为第一视觉，UI 半透明轻量低干扰；界面分层清晰，柔和阴影，精致图标，圆润字体，可直接用于产品原型评审，无水印",
+      "element_prompts": {
+        "pp/dexcard": "dialog 控件：动物简介弹窗"
+      }
+    },
+    "spec_version": 1,
+    "change_log": [
+      {
+        "at": "2026-09-14T14:57:50.033Z",
+        "by": "clone",
+        "note": "collect-design 初始/重采集（computed 真值）"
+      }
+    ]
+  },
+  "regions": [
+    {
+      "id": "r_pp_petstage",
+      "type": "custom",
+      "label": "",
+      "components": [
+        {
+          "kind": "image",
+          "label": "",
+          "interaction": {
+            "act": "toast",
+            "msg": "耳廓狐蹭了蹭你的手（演示）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "r_pp_pet",
+      "type": "custom",
+      "label": "抚摸"
+    },
+    {
+      "id": "r_pp_feed",
+      "type": "list",
+      "label": "喂食"
+    },
+    {
+      "id": "r_pp_sing",
+      "type": "custom",
+      "label": "唱歌"
+    },
+    {
+      "id": "r_pp_tabs",
+      "type": "tab_bar",
+      "label": "乐园动物乐队家园任务",
+      "components": [
+        {
+          "kind": "button",
+          "label": "乐园",
+          "interaction": {
+            "act": "goto",
+            "to": "01-home"
+          },
+          "sample_value": "乐园"
+        },
+        {
+          "kind": "button",
+          "label": "动物",
+          "interaction": {
+            "act": "goto",
+            "to": "02-interact"
+          },
+          "sample_value": "动物"
+        },
+        {
+          "kind": "button",
+          "label": "乐队",
+          "interaction": {
+            "act": "goto",
+            "to": "03-band"
+          },
+          "sample_value": "乐队"
+        },
+        {
+          "kind": "button",
+          "label": "家园",
+          "interaction": {
+            "act": "goto",
+            "to": "05-build"
+          },
+          "sample_value": "家园"
+        },
+        {
+          "kind": "button",
+          "label": "任务",
+          "interaction": {
+            "act": "goto",
+            "to": "07-tasks"
+          },
+          "sample_value": "任务"
+        }
+      ]
+    },
+    {
+      "id": "r_pp_tab_home",
+      "type": "custom",
+      "label": "乐园"
+    }
+  ]
+}

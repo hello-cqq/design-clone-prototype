@@ -1,0 +1,27 @@
+{
+ "01-chatlist": [
+  {
+   "target": "wx/row-服务号",
+   "label": "服务号会话行",
+   "notes": [
+    {
+     "event": "tap",
+     "response": "进入会话"
+    }
+   ],
+   "note": "冒烟验证标注是否入图"
+  }
+ ],
+ "05-services": [
+  {
+   "target": "sv/paycode",
+   "label": "收付款（红线：演示不触发真实支付）",
+   "notes": [
+    {
+     "event": "tap",
+     "response": "原型中仅占位提示"
+    }
+   ]
+  }
+ ]
+}

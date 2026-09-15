@@ -1,0 +1,484 @@
+{
+  "meta": {
+    "page_id": "05-ecs-features",
+    "page_name": "ECS 特性",
+    "surface": "b_desktop",
+    "page_type": "web_other",
+    "canvas": {
+      "width": 1280,
+      "height": 993
+    },
+    "evidence": [],
+    "fidelity": "high",
+    "product": {
+      "function": "（克隆时按 vlm-analysis 补 product 三要素）",
+      "goals": [],
+      "page_prompt": "",
+      "element_prompts": {}
+    },
+    "spec_version": 1,
+    "change_log": [
+      {
+        "at": "2026-09-14T15:39:33.992Z",
+        "by": "clone",
+        "note": "collect-design 初始/重采集（computed 真值）"
+      }
+    ]
+  },
+  "regions": [
+    {
+      "id": "r_al_nav",
+      "type": "nav_bar",
+      "label": "大模型产品解决方案权益定价云市场伙伴服务了解阿里云\n    Agent \n   ",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        },
+        {
+          "kind": "button",
+          "label": "大模型",
+          "interaction": {
+            "act": "toast",
+            "msg": "大模型（演示）"
+          },
+          "sample_value": "大模型"
+        },
+        {
+          "kind": "button",
+          "label": "产品",
+          "interaction": {
+            "act": "goto",
+            "to": "02-ecs"
+          },
+          "sample_value": "产品"
+        },
+        {
+          "kind": "button",
+          "label": "解决方案",
+          "interaction": {
+            "act": "toast",
+            "msg": "解决方案（演示）"
+          },
+          "sample_value": "解决方案"
+        },
+        {
+          "kind": "button",
+          "label": "权益",
+          "interaction": {
+            "act": "toast",
+            "msg": "权益（演示）"
+          },
+          "sample_value": "权益"
+        },
+        {
+          "kind": "button",
+          "label": "定价",
+          "interaction": {
+            "act": "goto",
+            "to": "03-price"
+          },
+          "sample_value": "定价"
+        },
+        {
+          "kind": "button",
+          "label": "云市场",
+          "interaction": {
+            "act": "toast",
+            "msg": "云市场（演示）"
+          },
+          "sample_value": "云市场"
+        },
+        {
+          "kind": "button",
+          "label": "伙伴",
+          "interaction": {
+            "act": "toast",
+            "msg": "伙伴（演示）"
+          },
+          "sample_value": "伙伴"
+        },
+        {
+          "kind": "button",
+          "label": "服务",
+          "interaction": {
+            "act": "toast",
+            "msg": "服务（演示）"
+          },
+          "sample_value": "服务"
+        },
+        {
+          "kind": "button",
+          "label": "了解阿里云",
+          "interaction": {
+            "act": "toast",
+            "msg": "了解阿里云（演示）"
+          },
+          "sample_value": "了解阿里云"
+        },
+        {
+          "kind": "button",
+          "label": "Agent",
+          "interaction": {
+            "act": "toast",
+            "msg": "搜索（演示）"
+          },
+          "sample_value": "Agent"
+        },
+        {
+          "kind": "button",
+          "label": "",
+          "interaction": {
+            "act": "toast",
+            "msg": "AI 助理（演示）"
+          }
+        },
+        {
+          "kind": "button",
+          "label": "",
+          "interaction": {
+            "act": "toast",
+            "msg": "客服（演示）"
+          }
+        },
+        {
+          "kind": "button",
+          "label": "",
+          "interaction": {
+            "act": "toast",
+            "msg": "文档（演示）"
+          }
+        },
+        {
+          "kind": "button",
+          "label": "文档",
+          "interaction": {
+            "act": "goto",
+            "to": "04-docs"
+          },
+          "sample_value": "文档"
+        },
+        {
+          "kind": "button",
+          "label": "备案",
+          "interaction": {
+            "act": "toast",
+            "msg": "备案（演示）"
+          },
+          "sample_value": "备案"
+        },
+        {
+          "kind": "button",
+          "label": "控制台",
+          "interaction": {
+            "act": "toast",
+            "msg": "控制台（演示）"
+          },
+          "sample_value": "控制台"
+        },
+        {
+          "kind": "button",
+          "label": "注册",
+          "interaction": {
+            "act": "toast",
+            "msg": "注册（演示）"
+          },
+          "sample_value": "注册"
+        },
+        {
+          "kind": "button",
+          "label": "登录",
+          "interaction": {
+            "act": "toast",
+            "msg": "登录（演示）"
+          },
+          "sample_value": "登录"
+        }
+      ]
+    },
+    {
+      "id": "r_hm_hero",
+      "type": "banner",
+      "label": "Wan3.0 限时 7 折\n    生成时长、全能创作、全能参考与真实感上全面升",
+      "components": [
+        {
+          "kind": "button",
+          "label": "立即查看 ↗",
+          "interaction": {
+            "act": "toast",
+            "msg": "立即查看（演示）"
+          },
+          "sample_value": "立即查看 ↗"
+        },
+        {
+          "kind": "button",
+          "label": "在线咨询",
+          "interaction": {
+            "act": "toast",
+            "msg": "在线咨询（演示）"
+          },
+          "sample_value": "在线咨询"
+        }
+      ]
+    },
+    {
+      "id": "r_hm_promos",
+      "type": "custom",
+      "label": "AI多模态 MOE 模型 Qwen3.8-Flash支持百万级上下文窗口，能一次",
+      "components": [
+        {
+          "kind": "button",
+          "label": "AI多模态 MOE 模型 Qwen3.8-Flash支持百万级上下文窗口，能一次",
+          "interaction": {
+            "act": "toast",
+            "msg": "Qwen3.8-Flash（演示）"
+          },
+          "sample_value": "AI多模态 MOE 模型 Qwen3.8-Flash支持百万级上下文窗口，能一次"
+        },
+        {
+          "kind": "button",
+          "label": "AI万小智 AI 建站，首月低至 9.9 元配套三级域名、数据库和基础云资源，新",
+          "interaction": {
+            "act": "toast",
+            "msg": "AI 建站（演示）"
+          },
+          "sample_value": "AI万小智 AI 建站，首月低至 9.9 元配套三级域名、数据库和基础云资源，新"
+        },
+        {
+          "kind": "button",
+          "label": "AI云服务器 99 元/年，续费不涨价2 核 2G 3M不限流量，一口价锁至 2",
+          "interaction": {
+            "act": "toast",
+            "msg": "云服务器特惠（演示）"
+          },
+          "sample_value": "AI云服务器 99 元/年，续费不涨价2 核 2G 3M不限流量，一口价锁至 2"
+        },
+        {
+          "kind": "button",
+          "label": "TPToken Plan 订阅方案，全家桶个人版上线，团队版降价，一个 Key，",
+          "interaction": {
+            "act": "toast",
+            "msg": "Token Plan（演示）"
+          },
+          "sample_value": "TPToken Plan 订阅方案，全家桶个人版上线，团队版降价，一个 Key，"
+        }
+      ]
+    },
+    {
+      "id": "r_hm_models",
+      "type": "custom",
+      "label": "更强模型、更新能力、热门 AI 应用免费体验\n      ▣大语言模型千问大模型",
+      "components": [
+        {
+          "kind": "button",
+          "label": "▣大语言模型千问大模型｜达到领域SOTA水平",
+          "interaction": {
+            "act": "toast",
+            "msg": "（演示）"
+          },
+          "sample_value": "▣大语言模型千问大模型｜达到领域SOTA水平"
+        },
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_al_foot",
+      "type": "custom",
+      "label": "为什么选择阿里云什么是云计算全球基础设施技术领先稳定可靠\n      产品和定价",
+      "components": [
+        {
+          "kind": "button",
+          "label": "什么是云计算",
+          "interaction": {
+            "act": "toast",
+            "msg": "什么是云计算（演示）"
+          },
+          "sample_value": "什么是云计算"
+        },
+        {
+          "kind": "button",
+          "label": "全球基础设施",
+          "interaction": {
+            "act": "toast",
+            "msg": "全球基础设施（演示）"
+          },
+          "sample_value": "全球基础设施"
+        },
+        {
+          "kind": "button",
+          "label": "技术领先",
+          "interaction": {
+            "act": "toast",
+            "msg": "技术领先（演示）"
+          },
+          "sample_value": "技术领先"
+        },
+        {
+          "kind": "button",
+          "label": "稳定可靠",
+          "interaction": {
+            "act": "toast",
+            "msg": "稳定可靠（演示）"
+          },
+          "sample_value": "稳定可靠"
+        },
+        {
+          "kind": "button",
+          "label": "云服务器 ECS",
+          "interaction": {
+            "act": "goto",
+            "to": "02-ecs"
+          },
+          "sample_value": "云服务器 ECS"
+        },
+        {
+          "kind": "button",
+          "label": "选型与定价",
+          "interaction": {
+            "act": "goto",
+            "to": "06-ecs-pricing"
+          },
+          "sample_value": "选型与定价"
+        },
+        {
+          "kind": "button",
+          "label": "价格策略",
+          "interaction": {
+            "act": "goto",
+            "to": "07-price-strategy"
+          },
+          "sample_value": "价格策略"
+        },
+        {
+          "kind": "button",
+          "label": "价格计算器",
+          "interaction": {
+            "act": "toast",
+            "msg": "价格计算器（演示）"
+          },
+          "sample_value": "价格计算器"
+        },
+        {
+          "kind": "button",
+          "label": "文档中心",
+          "interaction": {
+            "act": "goto",
+            "to": "04-docs"
+          },
+          "sample_value": "文档中心"
+        },
+        {
+          "kind": "button",
+          "label": "开发者社区",
+          "interaction": {
+            "act": "toast",
+            "msg": "开发者社区（演示）"
+          },
+          "sample_value": "开发者社区"
+        },
+        {
+          "kind": "button",
+          "label": "解决方案库",
+          "interaction": {
+            "act": "toast",
+            "msg": "解决方案库（演示）"
+          },
+          "sample_value": "解决方案库"
+        },
+        {
+          "kind": "button",
+          "label": "认证培训",
+          "interaction": {
+            "act": "toast",
+            "msg": "认证培训（演示）"
+          },
+          "sample_value": "认证培训"
+        },
+        {
+          "kind": "button",
+          "label": "免费试用",
+          "interaction": {
+            "act": "toast",
+            "msg": "免费试用（演示）"
+          },
+          "sample_value": "免费试用"
+        },
+        {
+          "kind": "button",
+          "label": "高校计划",
+          "interaction": {
+            "act": "toast",
+            "msg": "高校计划（演示）"
+          },
+          "sample_value": "高校计划"
+        },
+        {
+          "kind": "button",
+          "label": "企业扶持",
+          "interaction": {
+            "act": "toast",
+            "msg": "企业扶持（演示）"
+          },
+          "sample_value": "企业扶持"
+        },
+        {
+          "kind": "button",
+          "label": "基础服务",
+          "interaction": {
+            "act": "toast",
+            "msg": "基础服务（演示）"
+          },
+          "sample_value": "基础服务"
+        },
+        {
+          "kind": "button",
+          "label": "企业增值",
+          "interaction": {
+            "act": "toast",
+            "msg": "企业增值（演示）"
+          },
+          "sample_value": "企业增值"
+        },
+        {
+          "kind": "button",
+          "label": "提交工单",
+          "interaction": {
+            "act": "toast",
+            "msg": "工单（演示）"
+          },
+          "sample_value": "提交工单"
+        },
+        {
+          "kind": "button",
+          "label": "法律声明",
+          "interaction": {
+            "act": "toast",
+            "msg": "法律声明（演示）"
+          },
+          "sample_value": "法律声明"
+        },
+        {
+          "kind": "button",
+          "label": "隐私政策",
+          "interaction": {
+            "act": "toast",
+            "msg": "隐私政策（演示）"
+          },
+          "sample_value": "隐私政策"
+        },
+        {
+          "kind": "button",
+          "label": "联系我们",
+          "interaction": {
+            "act": "toast",
+            "msg": "联系我们（演示）"
+          },
+          "sample_value": "联系我们"
+        }
+      ]
+    }
+  ]
+}

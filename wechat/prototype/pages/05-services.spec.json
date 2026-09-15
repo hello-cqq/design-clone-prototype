@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "page_id": "05-services",
+    "page_name": "服务",
+    "surface": "c_mobile",
+    "page_type": "c_list",
+    "canvas": {
+      "width": 390,
+      "height": 844
+    },
+    "evidence": [
+      "capture/screens/05-services.png"
+    ],
+    "fidelity": "high",
+    "product": {
+      "function": "服务页：支付+生活宫格（演示不触发真实支付）",
+      "goals": [
+        "展示支付与生活入口 IA"
+      ],
+      "page_prompt": "绿色 hero 卡（收付款/钱包）+三组白卡宫格（金融/生活/交通），图标双色底",
+      "element_prompts": {}
+    },
+    "spec_version": 1,
+    "change_log": [
+      {
+        "at": "2026-09-14T15:44:20.162Z",
+        "by": "clone",
+        "note": "collect-design 初始/重采集（computed 真值）"
+      }
+    ]
+  },
+  "regions": [
+    {
+      "id": "r_sv_back",
+      "type": "custom",
+      "label": ""
+    },
+    {
+      "id": "r_sv_more",
+      "type": "custom",
+      "label": "⋯"
+    },
+    {
+      "id": "r_sv_pay",
+      "type": "custom",
+      "label": "收付款"
+    },
+    {
+      "id": "r_sv_wallet",
+      "type": "custom",
+      "label": "钱包"
+    }
+  ]
+}

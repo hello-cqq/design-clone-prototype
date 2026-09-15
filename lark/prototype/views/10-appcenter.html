@@ -1,0 +1,104 @@
+<style>
+  .ac-wrap{flex:1;min-width:0;display:flex;flex-direction:column;background:#fff;min-height:0}
+  .ac-wv{display:flex;align-items:center;gap:14px;padding:8px 16px;border-bottom:1px solid #e5e6e8;color:#646a73;font-size:12px}
+  .ac-wv .t{flex:1;text-align:center;color:#1f2329;font-size:13px}
+  .ac-nav{display:flex;align-items:center;gap:26px;padding:14px 26px;border-bottom:1px solid #eef0f2}
+  .ac-nav .logo{display:flex;align-items:center;gap:8px;font-size:17px;font-weight:600;color:#1f2329}
+  .ac-nav .lk{font-size:14px;color:#1f2329;cursor:pointer;padding:4px 2px;position:relative}
+  .ac-nav .lk.on{color:#3370ff;font-weight:600;border-bottom:2px solid #3370ff}
+  .ac-nav .lk .bd{display:inline-block;vertical-align:top;margin:-6px 0 0 2px;background:#7a4fd0;color:#fff;font-size:9px;border-radius:4px;padding:1px 5px}
+  .ac-nav .rt{margin-left:auto;display:flex;gap:18px;font-size:13px;color:#1f2329}
+  .ac-hero{padding:44px 20px 26px;text-align:center}
+  .ac-hero .t{font-size:26px;font-weight:600;color:#1f2329}
+  .ac-hero .t b{color:#3370ff}
+  .ac-hero .search{margin:22px auto 0;width:520px;max-width:80%;display:flex;align-items:center;gap:8px;background:#f2f3f5;border-radius:10px;padding:10px 14px;color:#8f959e;font-size:13px}
+  .ac-chips{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;padding:10px 20px 26px}
+  .ac-chips span{border:1px solid #dee0e3;border-radius:8px;padding:7px 14px;font-size:13px;color:#1f2329;cursor:pointer}
+  .ac-chips span.on{border-color:#3370ff;color:#3370ff;background:#f0f6ff}
+  .ac-sec{display:flex;align-items:center;gap:10px;padding:0 30px 14px;font-size:16px;font-weight:600;color:#1f2329}
+  .ac-sec .s{font-size:12px;color:#8f959e;font-weight:400}
+  .ac-sec .all{margin-left:auto;font-size:13px;color:#3370ff;cursor:pointer}
+  .ac-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:0 30px 26px}
+  .ac-card{background:#f7f8fa;border-radius:12px;padding:16px;cursor:pointer}
+  .ac-card .hd{display:flex;align-items:center;gap:10px}
+  .ac-card .hd img{width:34px;height:34px;border-radius:8px}
+  .ac-card .hd .t{font-size:14px;font-weight:600;color:#1f2329;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .ac-card .hd .btn{flex:none;border:1px solid #3370ff;color:#3370ff;border-radius:7px;padding:5px 10px;font-size:12px}
+  .ac-card .q{margin:12px 0;background:#eef0f2;border-radius:8px;padding:12px;font-size:12px;color:#646a73;line-height:1.7}
+  .ac-card .co{display:flex;align-items:center;gap:7px;font-size:11px;color:#8f959e}
+  .ac-card .co i{width:14px;height:14px;border-radius:4px;background:#d8dce2;flex:none}
+  .ac-modal{position:absolute;inset:0;background:rgba(31,35,41,.14);display:grid;place-items:center;z-index:30}
+  .ac-modal .box{width:560px;max-width:92%;background:#fff;border-radius:14px;padding:24px 26px;box-shadow:0 12px 40px rgba(0,0,0,.18)}
+  .ac-modal .t{font-size:16px;font-weight:600;color:#1f2329;display:flex;align-items:center}
+  .ac-modal .t .x{margin-left:auto;color:#8f959e;cursor:pointer;font-size:16px}
+  .ac-modal .s{font-size:13px;color:#646a73;margin:10px 0 16px}
+  .ac-modal .tags{display:flex;gap:10px;flex-wrap:wrap}
+  .ac-modal .tags span{border:1px solid #dee0e3;border-radius:999px;padding:7px 16px;font-size:13px;color:#1f2329;cursor:pointer}
+  .ac-modal .ft{display:flex;justify-content:flex-end;gap:16px;align-items:center;margin-top:22px}
+</style>
+<div data-dc="ac/root" class="da-root" style="position:relative">
+  <aside data-dc="ac/side" class="da-side wb-side">
+    <div class="top">
+      <img class="ava" src="assets/chen.png" alt="">
+      <svg width="18" height="18" viewBox="0 0 24 24" style="fill:none;stroke:#646a73;stroke-width:2;cursor:pointer" data-act="toast" data-msg="添加（演示）"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v8M8 12h8"></path></svg>
+    </div>
+    <div class="search" data-act="toast" data-msg="搜索（演示）">搜索 (⌘K)</div>
+    <div style="overflow:auto;padding:4px 0 12px">
+      <div class="da-item" data-dc="ac/n-msg" data-goto="01-messages"><img class="ic" src="assets/nav-01.png" alt="">消息</div>
+      <div class="da-item" data-dc="ac/n-doubao" data-act="toast" data-msg="豆包工作（演示）"><img class="ic" src="assets/nav-02.png" alt="">豆包工作</div>
+      <div class="da-item" data-dc="ac/n-cal" data-goto="02-calendar"><img class="ic" src="assets/nav-03.png" alt="">日历</div>
+      <div class="da-item" data-dc="ac/n-docs" data-goto="03-docs"><img class="ic" src="assets/nav-04.png" alt="">云文档</div>
+      <div class="da-item" data-dc="ac/n-bitable" data-goto="09-bitable"><img class="ic" src="assets/nav-05.png" alt="">多维表格</div>
+      <div class="da-item" data-dc="ac/n-meet" data-goto="04-meeting"><img class="ic" src="assets/nav-06.png" alt="">视频会议</div>
+      <div class="da-item" data-dc="ac/n-fly" data-act="toast" data-msg="飞行社（演示）"><img class="ic" src="assets/nav-07.png" alt="">飞行社</div>
+      <div class="da-item" data-dc="ac/n-wb" data-goto="05-workbench"><img class="ic" src="assets/nav-08.png" alt="">工作台</div>
+      <div class="da-item on" data-dc="ac/n-appc" data-act="toast" data-msg="（演示）"><img class="ic" src="assets/nav-13.png" alt="">应用中心</div>
+      <div class="da-item" data-dc="ac/n-contacts" data-goto="06-contacts"><img class="ic" src="assets/nav-14.png" alt="">通讯录</div>
+      <div class="da-item" data-dc="ac/n-vip" data-act="toast" data-msg="权益升级（演示）"><img class="ic" src="assets/nav-09.png" alt="">权益升级</div>
+      <div style="font-size:12px;color:#8f959e;padding:10px 22px 4px">更多</div>
+      <div class="da-item" data-dc="ac/n-task" data-goto="07-tasks"><img class="ic" src="assets/nav-10.png" alt="">任务</div>
+      <div class="da-item" data-dc="ac/n-star" data-act="toast" data-msg="收藏（演示）"><img class="ic" src="assets/nav-11.png" alt="">收藏</div>
+      <div class="da-item" data-dc="ac/n-kb" data-goto="08-kb"><img class="ic" src="assets/nav-12.png" alt="">知识库</div>
+    </div>
+  </aside>
+  <div class="ac-wrap" data-dc="ac/wrap">
+    <div class="ac-wv"><span style="cursor:pointer" data-act="toast" data-msg="后退（演示）">‹</span><span style="cursor:pointer" data-act="toast" data-msg="前进（演示）">›</span><span style="cursor:pointer" data-act="toast" data-msg="刷新（演示）">⟳</span><span class="t">飞书应用中心 - 探索解决方案，激发团队灵感</span><span>☺</span><span>⊘</span><span>⧉</span><span>⋯</span><span style="cursor:pointer" data-act="toast" data-msg="关闭（演示）">✕</span></div>
+    <div class="ac-nav">
+      <span class="logo"><img src="assets/nav-13.png" alt="" style="width:22px;height:22px">飞书应用中心</span>
+      <span class="lk on" data-act="tab" role="tab" aria-selected="true">首页</span>
+      <span class="lk" data-act="tab" role="tab" aria-selected="false">应用</span>
+      <span class="lk" data-act="tab" role="tab" aria-selected="false">解决方案</span>
+      <span class="lk" data-act="tab" role="tab" aria-selected="false">AI 产品<span class="bd">推荐</span></span>
+      <span class="lk" data-act="tab" role="tab" aria-selected="false">模板</span>
+      <span class="rt"><span data-act="toast" data-msg="管理应用（演示）">⚙ 管理应用</span><span data-act="toast" data-msg="创建应用（演示）">✎ 创建应用</span><span data-act="toast" data-msg="偏好设置（演示）">⇄ 偏好设置</span></span>
+    </div>
+    <div style="overflow:auto">
+      <div class="ac-hero">
+        <div class="t">发现适合你的<b>应用或解决方案</b></div>
+        <div class="search" data-act="toast" data-msg="搜索（演示）"><svg width="14" height="14" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>搜索</div>
+      </div>
+      <div class="ac-chips">
+        <span class="on" data-act="toast" data-msg="为你推荐（演示）">为你推荐 ⓘ</span><span data-act="toast" data-msg="项目管理（演示）">项目管理</span><span data-act="toast" data-msg="敏捷研发（演示）">敏捷研发</span><span data-act="toast" data-msg="业财一体（演示）">业财一体</span><span data-act="toast" data-msg="综合人事（演示）">综合人事</span><span data-act="toast" data-msg="招聘管理（演示）">招聘管理</span><span data-act="toast" data-msg="更多筛选（演示）">更多筛选 ⌄</span>
+      </div>
+      <div class="ac-sec">解决方案<span class="s">量身定制，助力企业数字化转型</span><span class="all" data-act="toast" data-msg="查看全部（演示）">查看全部</span></div>
+      <div class="ac-grid">
+        <div class="ac-card" data-dc="ac/s1" data-act="toast" data-msg="AI驱动企业培训（演示）"><div class="hd"><img src="assets/ac-vendor-1.png" alt=""><span class="t">AI驱动企业培训与人才发展</span><span class="btn">免费咨询</span></div><div class="q">将AI培训能力嵌入飞书工作流，实现从课程生产到人才发展的全链路闭环</div><div class="co"><i></i>酷渲（北京）科技有限公司</div></div>
+        <div class="ac-card" data-dc="ac/s2" data-act="toast" data-msg="战略目标管理（演示）"><div class="hd"><img src="assets/ac-vendor-2.png" alt=""><span class="t">项目成本利润双管控方案</span><span class="btn">免费咨询</span></div><div class="q">AI 贯穿战略制定、目标管理、项目任务、绩效管理与组织经营全过程</div><div class="co"><i></i>北京黑镜科技有限公司</div></div>
+        <div class="ac-card" data-dc="ac/s3" data-act="toast" data-msg="项目成本管控（演示）"><div class="hd"><img src="assets/ac-vendor-3.png" alt=""><span class="t">项目成本利润双管控</span><span class="btn">免费咨询</span></div><div class="q">直击「项目成本算不清、跨区域管不住、财务效率低」的多项目痛点。</div><div class="co"><i></i>杭州光云科技股份有限公司</div></div>
+        <div class="ac-card" data-dc="ac/s4" data-act="toast" data-msg="HR 电子签约（演示）"><div class="hd"><img src="assets/ac-vendor-4.png" alt=""><span class="t">HR 全流程电子签约</span><span class="btn">免费咨询</span></div><div class="q">入职、合同、证明全线上签署，合规存证一键归档</div><div class="co"><i></i>上海某信息科技有限公司</div></div>
+        <div class="ac-card" data-dc="ac/s5" data-act="toast" data-msg="固定资产管理（演示）"><div class="hd"><img src="assets/ac-vendor-5.png" alt=""><span class="t">固定资产全生命周期管理</span><span class="btn">免费咨询</span></div><div class="q">采购、领用、盘点、报废全流程数字化，账实相符</div><div class="co"><i></i>深圳某物联科技有限公司</div></div>
+        <div class="ac-card" data-dc="ac/s6" data-act="toast" data-msg="AI无代码进销存（演示）"><div class="hd"><img src="assets/ac-vendor-6.png" alt=""><span class="t">AI无代码生产进销存</span><span class="btn">免费咨询</span></div><div class="q">轻流无代码搭建，业务人员自助配置进销存系统</div><div class="co"><i></i>上海易校信息科技有限公司</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="ac-modal" data-dc="ac/modal" role="dialog" aria-modal="true">
+    <div class="box">
+      <div class="t">👋 Hi Q，你想看到哪些应用和解决方案？<span class="x" data-act="dialog" data-msg="close">✕</span></div>
+      <div class="s">为了把最合适的内容推荐给你，请选择你感兴趣的标签：</div>
+      <div class="tags">
+        <span data-act="toast" data-msg="市场营销（演示）">市场营销</span><span data-act="toast" data-msg="电商经营（演示）">电商经营</span><span data-act="toast" data-msg="达人直播（演示）">达人直播</span><span data-act="toast" data-msg="财务费控（演示）">财务费控</span><span data-act="toast" data-msg="组织绩效（演示）">组织绩效</span><span data-act="toast" data-msg="人才发展（演示）">人才发展</span><span data-act="toast" data-msg="IT管理（演示）">IT管理</span><span data-act="toast" data-msg="效率工具（演示）">效率工具</span><span data-act="toast" data-msg="生产制造（演示）">生产制造</span><span data-act="toast" data-msg="行政差旅（演示）">行政差旅</span><span data-act="toast" data-msg="软件研发（演示）">软件研发</span>
+      </div>
+      <div class="ft"><span style="color:#3370ff;font-size:13px;cursor:pointer" data-act="dialog" data-msg="close">下次再说</span><span style="background:#c2c6cc;color:#fff;border-radius:8px;padding:8px 16px;font-size:13px;cursor:pointer" data-act="dialog" data-msg="close">完成配置</span></div>
+    </div>
+  </div>
+</div>

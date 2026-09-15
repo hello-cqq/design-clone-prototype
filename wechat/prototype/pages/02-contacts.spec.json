@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "page_id": "02-contacts",
+    "page_name": "通讯录",
+    "surface": "c_mobile",
+    "page_type": "c_list",
+    "canvas": {
+      "width": 390,
+      "height": 844
+    },
+    "evidence": [
+      "capture/screens/02-contacts.png"
+    ],
+    "fidelity": "high",
+    "product": {
+      "function": "（克隆时按 vlm-analysis 补 product 三要素）",
+      "goals": [],
+      "page_prompt": "",
+      "element_prompts": {}
+    },
+    "spec_version": 1,
+    "change_log": [
+      {
+        "at": "2026-09-14T15:44:20.162Z",
+        "by": "clone",
+        "note": "collect-design 初始/重采集（computed 真值）"
+      }
+    ]
+  },
+  "regions": [
+    {
+      "id": "r_ct_search",
+      "type": "search_bar",
+      "label": ""
+    },
+    {
+      "id": "r_ct_plus",
+      "type": "custom",
+      "label": ""
+    },
+    {
+      "id": "r_ct_row",
+      "type": "custom",
+      "label": "新的朋友"
+    },
+    {
+      "id": "r_ct_row",
+      "type": "custom",
+      "label": "群聊"
+    },
+    {
+      "id": "r_ct_row",
+      "type": "custom",
+      "label": "标签"
+    },
+    {
+      "id": "r_ct_row",
+      "type": "custom",
+      "label": "公众号"
+    },
+    {
+      "id": "r_ct_c",
+      "type": "custom",
+      "label": "阿澜",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_ct_c",
+      "type": "custom",
+      "label": "咖啡搭子群",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "page_id": "04-me",
+    "page_name": "我",
+    "surface": "c_mobile",
+    "page_type": "c_detail",
+    "canvas": {
+      "width": 390,
+      "height": 844
+    },
+    "evidence": [
+      "capture/screens/04-me.png"
+    ],
+    "fidelity": "high",
+    "product": {
+      "function": "（克隆时按 vlm-analysis 补 product 三要素）",
+      "goals": [],
+      "page_prompt": "",
+      "element_prompts": {}
+    },
+    "spec_version": 1,
+    "change_log": [
+      {
+        "at": "2026-09-14T15:44:20.162Z",
+        "by": "clone",
+        "note": "collect-design 初始/重采集（computed 真值）"
+      }
+    ]
+  },
+  "regions": [
+    {
+      "id": "r_dc_search",
+      "type": "search_bar",
+      "label": ""
+    },
+    {
+      "id": "r_dc_plus",
+      "type": "custom",
+      "label": ""
+    },
+    {
+      "id": "r_dc_row",
+      "type": "custom",
+      "label": "朋友圈"
+    },
+    {
+      "id": "r_dc_row",
+      "type": "custom",
+      "label": "视频号创业者复盘：一小时演讲只靠三句提词"
+    },
+    {
+      "id": "r_dc_row",
+      "type": "custom",
+      "label": "直播手作主理人直播中"
+    },
+    {
+      "id": "r_dc_row",
+      "type": "custom",
+      "label": "扫一扫"
+    },
+    {
+      "id": "r_dc_row",
+      "type": "custom",
+      "label": "听一听"
+    },
+    {
+      "id": "r_dc_row",
+      "type": "custom",
+      "label": "看一看"
+    },
+    {
+      "id": "r_dc_row",
+      "type": "custom",
+      "label": "搜一搜"
+    },
+    {
+      "id": "r_dc_row",
+      "type": "custom",
+      "label": "附近的人"
+    },
+    {
+      "id": "r_dc_row",
+      "type": "custom",
+      "label": "游戏你的最香队友"
+    },
+    {
+      "id": "r_dc_row",
+      "type": "custom",
+      "label": "小程序"
+    }
+  ]
+}

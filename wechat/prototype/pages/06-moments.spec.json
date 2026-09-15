@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "page_id": "06-moments",
+    "page_name": "朋友圈",
+    "surface": "c_mobile",
+    "page_type": "c_list",
+    "canvas": {
+      "width": 390,
+      "height": 844
+    },
+    "evidence": [
+      "capture/screens/06-moments.png"
+    ],
+    "fidelity": "high",
+    "product": {
+      "function": "（克隆时按 vlm-analysis 补 product 三要素）",
+      "goals": [],
+      "page_prompt": "",
+      "element_prompts": {}
+    },
+    "spec_version": 1,
+    "change_log": [
+      {
+        "at": "2026-09-14T15:44:20.162Z",
+        "by": "clone",
+        "note": "collect-design 初始/重采集（computed 真值）"
+      }
+    ]
+  },
+  "regions": [
+    {
+      "id": "r_sv_back",
+      "type": "custom",
+      "label": ""
+    },
+    {
+      "id": "r_sv_more",
+      "type": "custom",
+      "label": "⋯"
+    },
+    {
+      "id": "r_sv_pay",
+      "type": "custom",
+      "label": "收付款"
+    },
+    {
+      "id": "r_sv_wallet",
+      "type": "custom",
+      "label": "钱包"
+    }
+  ]
+}

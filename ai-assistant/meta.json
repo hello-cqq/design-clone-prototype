@@ -1,0 +1,30 @@
+{
+ "name": {
+  "en": "AI Assistant",
+  "zh": "星海对话"
+ },
+ "description": {
+  "en": "Xinghai Dialogue — an AI chat companion prototype: full conversation flows with live controls, design specs and user paths, cloned from a real source by design-clone.",
+  "zh": "星海对话——AI 聊天伙伴原型：完整会话流程、全控件可交互、含设计规格与用户路径，由 design-clone 自真实来源克隆。"
+ },
+ "tags": [
+  "ai-companion",
+  "assistant",
+  "anime",
+  "voice",
+  "original",
+  "chat"
+ ],
+ "category": "social",
+ "shell": "c_mobile",
+ "source": {
+  "kind": "original",
+  "ref": "demo-assistant"
+ },
+ "license": "CC-BY-4.0",
+ "ip_attestation": "original",
+ "attestation_note": "M86: 视图重渲染后选中框重画外壳",
+ "version": "2.1.2",
+ "created_at": "2026-09-14T15:47:19.868Z",
+ "platform": "mobile"
+}

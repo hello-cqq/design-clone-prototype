@@ -1,0 +1,21 @@
+name: release
+on:
+  push:
+    branches: [main]
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    permissions: { contents: write }
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - name: git identity for annotated tags
+        run: |
+          git config user.name "dc-release-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: tag + release changed flavors
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/release.mjs --from ${{ github.event.before }}

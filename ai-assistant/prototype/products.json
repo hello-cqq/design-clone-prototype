@@ -1,0 +1,56 @@
+{
+  "00-launch": {
+    "function": "冒烟：产品说明可写",
+    "goals": [
+      "世界观第一印象：双角色隔海相望+标题+开始按钮"
+    ],
+    "page_prompt": "一张高品质手机竖屏 APP UI 原型设计稿，星海对话启动页页面，世界观第一印象：双角色隔海相望+标题+开始按钮；布局：全屏隔海相望插画；中央大标题+副标题；底部圆角开始按钮；控件：as/start(goto)；Makoto Shinkai film style 2.5D anime, clean transparent cinematic light, tyndall beams, luminous sky and sea reflections, delicate hair strands, emotional color script, 8k key visual, NOT photoreal；圆角玻璃卡片+半透明磨砂控件+柔和阴影+清晰信息层级+手机竖屏；统一视觉系统：背景沿用「夜海+银河+月光倒影」母题；角色为第一视觉，UI 半透明轻量低干扰；界面分层清晰，柔和阴影，精致图标，圆润字体，可直接用于产品原型评审，无水印",
+    "element_prompts": {
+      "as/start": "goto 控件：进入首页"
+    }
+  },
+  "01-home": {
+    "function": "双角色大卡切换+音色入口+底部导航",
+    "goals": [
+      "双角色大卡切换+音色入口+底部导航"
+    ],
+    "page_prompt": "一张高品质手机竖屏 APP UI 原型设计稿，星海对话首页·角色选择页面，双角色大卡切换+音色入口+底部导航；布局：左右两张竖立绘大卡（夜/昼）；卡下小字：切换角色/更换音色；底部导航 首页|对话|视频|设置；控件：as/personas(radio)、as/voice-entry(goto)；Makoto Shinkai film style 2.5D anime, clean transparent cinematic light, tyndall beams, luminous sky and sea reflections, delicate hair strands, emotional color script, 8k key visual, NOT photoreal；圆角玻璃卡片+半透明磨砂控件+柔和阴影+清晰信息层级+手机竖屏；统一视觉系统：背景沿用「夜海+银河+月光倒影」母题；角色为第一视觉，UI 半透明轻量低干扰；界面分层清晰，柔和阴影，精致图标，圆润字体，可直接用于产品原型评审，无水印",
+    "element_prompts": {
+      "as/personas": "radio 控件：切换昼夜主题令牌+背景层",
+      "as/voice-entry": "goto 控件：跳设置音色"
+    }
+  },
+  "02-chat": {
+    "function": "问答对话：气泡+小头像+虚化海面背景",
+    "goals": [
+      "问答对话：气泡+小头像+虚化海面背景"
+    ],
+    "page_prompt": "一张高品质手机竖屏 APP UI 原型设计稿，星海对话文字聊天页面，问答对话：气泡+小头像+虚化海面背景；布局：顶栏角色头像+名+音色切换钮；左 AI 右用户气泡带小头像；底部输入框+发送；控件：as/flow(toast)、as/send(toast)；Makoto Shinkai film style 2.5D anime, clean transparent cinematic light, tyndall beams, luminous sky and sea reflections, delicate hair strands, emotional color script, 8k key visual, NOT photoreal；圆角玻璃卡片+半透明磨砂控件+柔和阴影+清晰信息层级+手机竖屏；统一视觉系统：背景沿用「夜海+银河+月光倒影」母题；角色为第一视觉，UI 半透明轻量低干扰；界面分层清晰，柔和阴影，精致图标，圆润字体，可直接用于产品原型评审，无水印",
+    "element_prompts": {
+      "as/flow": "toast 控件：打字指示动画",
+      "as/send": "toast 控件：追加 AI 气泡"
+    }
+  },
+  "03-call": {
+    "function": "半身角色 70% 画面+磨砂控制栏",
+    "goals": [
+      "半身角色 70% 画面+磨砂控制栏"
+    ],
+    "page_prompt": "一张高品质手机竖屏 APP UI 原型设计稿，星海对话视频通话页面，半身角色 70% 画面+磨砂控制栏；布局：全屏角色半身+虚化海星背景；底部磨砂钮：麦克风/摄像头/挂断/表情；控件：as/mic(toggle)、as/end(toast)；Makoto Shinkai film style 2.5D anime, clean transparent cinematic light, tyndall beams, luminous sky and sea reflections, delicate hair strands, emotional color script, 8k key visual, NOT photoreal；圆角玻璃卡片+半透明磨砂控件+柔和阴影+清晰信息层级+手机竖屏；统一视觉系统：背景沿用「夜海+银河+月光倒影」母题；角色为第一视觉，UI 半透明轻量低干扰；界面分层清晰，柔和阴影，精致图标，圆润字体，可直接用于产品原型评审，无水印",
+    "element_prompts": {
+      "as/mic": "toggle 控件：波形静止",
+      "as/end": "toast 控件：计时结束"
+    }
+  },
+  "04-settings": {
+    "function": "形象预览+音色四档+背景切换",
+    "goals": [
+      "形象预览+音色四档+背景切换"
+    ],
+    "page_prompt": "一张高品质手机竖屏 APP UI 原型设计稿，星海对话设置·形象音色页面，形象预览+音色四档+背景切换；布局：形象立绘预览卡；音色列表 少年/少女/清冷/暖阳；背景切换 星空/晴空；控件：as/voices(radio)、as/bgs(radio)；Makoto Shinkai film style 2.5D anime, clean transparent cinematic light, tyndall beams, luminous sky and sea reflections, delicate hair strands, emotional color script, 8k key visual, NOT photoreal；圆角玻璃卡片+半透明磨砂控件+柔和阴影+清晰信息层级+手机竖屏；统一视觉系统：背景沿用「夜海+银河+月光倒影」母题；角色为第一视觉，UI 半透明轻量低干扰；界面分层清晰，柔和阴影，精致图标，圆润字体，可直接用于产品原型评审，无水印",
+    "element_prompts": {
+      "as/voices": "radio 控件：音色标签高亮",
+      "as/bgs": "radio 控件：背景层切换"
+    }
+  }
+}

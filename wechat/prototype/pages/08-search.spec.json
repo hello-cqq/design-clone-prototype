@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "page_id": "08-search",
+    "page_name": "搜索",
+    "surface": "c_mobile",
+    "page_type": "c_list",
+    "canvas": {
+      "width": 390,
+      "height": 844
+    },
+    "evidence": [
+      "capture/screens/08-search.png"
+    ],
+    "fidelity": "high",
+    "product": {
+      "function": "（克隆时按 vlm-analysis 补 product 三要素）",
+      "goals": [],
+      "page_prompt": "",
+      "element_prompts": {}
+    },
+    "spec_version": 1,
+    "change_log": [
+      {
+        "at": "2026-09-14T15:44:20.162Z",
+        "by": "clone",
+        "note": "collect-design 初始/重采集（computed 真值）"
+      }
+    ]
+  },
+  "regions": [
+    {
+      "id": "r_pl_plusicon",
+      "type": "custom",
+      "label": ""
+    },
+    {
+      "id": "r_pl_menu",
+      "type": "modal",
+      "label": "发起群聊\n添加朋友\n扫一扫\n收付款",
+      "components": [
+        {
+          "kind": "button",
+          "label": "发起群聊",
+          "interaction": {
+            "act": "goto",
+            "to": "12-group-chat"
+          },
+          "sample_value": "发起群聊"
+        },
+        {
+          "kind": "button",
+          "label": "添加朋友",
+          "interaction": {
+            "act": "goto",
+            "to": "02-contacts"
+          },
+          "sample_value": "添加朋友"
+        },
+        {
+          "kind": "button",
+          "label": "扫一扫",
+          "interaction": {
+            "act": "goto",
+            "to": "08-search"
+          },
+          "sample_value": "扫一扫"
+        },
+        {
+          "kind": "button",
+          "label": "收付款",
+          "interaction": {
+            "act": "goto",
+            "to": "05-services"
+          },
+          "sample_value": "收付款"
+        }
+      ]
+    },
+    {
+      "id": "r_pl_group",
+      "type": "custom",
+      "label": "发起群聊"
+    },
+    {
+      "id": "r_pl_add",
+      "type": "custom",
+      "label": "添加朋友"
+    },
+    {
+      "id": "r_pl_scan",
+      "type": "custom",
+      "label": "扫一扫"
+    },
+    {
+      "id": "r_pl_pay",
+      "type": "custom",
+      "label": "收付款"
+    }
+  ]
+}

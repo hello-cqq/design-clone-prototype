@@ -1,0 +1,35 @@
+<style>
+  .xh-c{position:relative;min-height:100%;overflow:hidden;font-family:ui-rounded,-apple-system,"PingFang SC","Segoe UI",sans-serif;color:#eaf4ff;background:#0b1e33}
+  .xh-c .far{position:absolute;inset:0;background:url(assets/xh-bg-night.png) center/cover;opacity:.8;animation:kb 40s ease-in-out infinite alternate}
+  @keyframes kb{from{transform:scale(1.1)}to{transform:scale(1.02)}}
+  .xh-c .char{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);width:70%;max-width:330px}
+  .xh-c .char img{display:block;width:100%;height:380px;object-fit:cover;object-position:50% 18%;border-radius:26px;box-shadow:0 24px 60px rgba(3,12,24,.6), 0 0 0 1.5px rgba(143,208,255,.35), 0 0 46px rgba(110,231,255,.18);animation:breathe 4.4s ease-in-out infinite}
+  @keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.014)}}
+  .xh-c .hud{position:absolute;left:0;right:0;top:48px;z-index:6;text-align:center}
+  .xh-c .hud .nm{font-size:17px;font-weight:600;text-shadow:0 2px 12px rgba(3,12,24,.7)}
+  .xh-c .hud .tm{font-size:11px;color:#9fd0ef;font-variant-numeric:tabular-nums;margin-top:3px}
+  .xh-c .wave{position:absolute;left:50%;transform:translateX(-50%);bottom:150px;display:flex;gap:4px;align-items:flex-end;height:30px;z-index:6}
+  .xh-c .wave i{width:4px;border-radius:2px;background:linear-gradient(180deg,#8fd0ff,#3fb899);animation:wv 1s ease-in-out infinite}
+  .xh-c .wave i:nth-child(1){height:30%}.xh-c .wave i:nth-child(2){height:60%;animation-delay:.1s}.xh-c .wave i:nth-child(3){height:90%;animation-delay:.2s}.xh-c .wave i:nth-child(4){height:50%;animation-delay:.3s}.xh-c .wave i:nth-child(5){height:75%;animation-delay:.15s}.xh-c .wave i:nth-child(6){height:100%;animation-delay:.05s}.xh-c .wave i:nth-child(7){height:65%;animation-delay:.25s}.xh-c .wave i:nth-child(8){height:85%;animation-delay:.35s}.xh-c .wave i:nth-child(9){height:45%;animation-delay:.12s}.xh-c .wave i:nth-child(10){height:70%;animation-delay:.28s}
+  @keyframes wv{0%,100%{transform:scaleY(.55)}50%{transform:scaleY(1)}}
+  .xh-c .wave.off i{animation:none;transform:scaleY(.3);opacity:.4}
+  .xh-c .bar{position:absolute;left:22px;right:22px;bottom:44px;z-index:8;display:flex;justify-content:space-around;padding:12px 10px;background:rgba(14,42,74,.42);backdrop-filter:blur(16px) saturate(1.2);-webkit-backdrop-filter:blur(16px) saturate(1.2);border:1px solid rgba(143,208,255,.28);border-radius:999px;box-shadow:0 16px 40px rgba(2,12,22,.5)}
+  .xh-c .bar .c{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;cursor:pointer;background:rgba(255,255,255,.12);border:1px solid rgba(143,208,255,.3);transition:transform .16s ease}
+  .xh-c .bar .c:active{transform:scale(.92)}
+  .xh-c .bar .c.on{background:rgba(143,208,255,.28)}
+  .xh-c .bar .c.end{background:linear-gradient(140deg,#ff7a68,#e0483a);border-color:rgba(255,180,170,.5);box-shadow:0 10px 24px rgba(224,72,58,.45)}
+  @media (prefers-reduced-motion: reduce){.xh-c .far,.xh-c .char img,.xh-c .wave i{animation:none}}
+</style>
+<div data-dc="as/root" class="xh-c">
+  <div class="far" data-fx-parallax="0.4"></div>
+  <canvas data-fx="particles" data-fx-kind="sparkles" data-fx-n="24" data-fx-colors="#ffffff,#8fd0ff,#c792ff"></canvas>
+  <div class="hud"><div class="nm">星海</div><div class="tm">12:36 · 高清 · 眼神正在看向你</div></div>
+  <div class="char" data-dc="as/call" data-fx-parallax="1.2"><img src="assets/xh-xinghai.png" alt=""></div>
+  <div class="wave" data-dc="as/wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="bar" data-dc="as/ctrls">
+    <span class="c" data-dc="as/mic" data-act="toggle" data-target="[data-dc='as/wave']" title="麦克风"><svg width="19" height="19" viewBox="0 0 24 24" style="fill:none;stroke:#eaf4ff;stroke-width:2.2;stroke-linecap:round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></span>
+    <span class="c" data-act="toast" data-msg="已切换摄像头（演示）"><svg width="19" height="19" viewBox="0 0 24 24" style="fill:none;stroke:#eaf4ff;stroke-width:2.2;stroke-linecap:round"><rect x="3" y="6" width="13" height="12" rx="3"/><path d="m16 10 5-3v10l-5-3"/></svg></span>
+    <span class="c end" data-dc="as/end" data-act="toast" data-msg="通话已结束 12:36（演示）"><svg width="19" height="19" viewBox="0 0 24 24" style="fill:none;stroke:#fff;stroke-width:2.4;stroke-linecap:round"><path d="M4 13c5-5 11-5 16 0l-3 3-3-2v-3c-2-.6-4-.6-6 0v3l-3 2z"/></svg></span>
+    <span class="c" data-act="toast" data-msg="星海回了你一个表情 ✦（演示）"><svg width="19" height="19" viewBox="0 0 24 24" style="fill:none;stroke:#eaf4ff;stroke-width:2.2;stroke-linecap:round"><circle cx="12" cy="12" r="9"/><path d="M9 10h.01M15 10h.01M9 15c1 1 2 1.5 3 1.5s2-.5 3-1.5"/></svg></span>
+  </div>
+</div>

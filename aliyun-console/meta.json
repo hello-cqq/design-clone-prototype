@@ -1,0 +1,29 @@
+{
+ "name": {
+  "en": "Aliyun",
+  "zh": "阿里云"
+ },
+ "description": {
+  "en": "Study replica of Aliyun marketing/console: hub nav, ECS pages, pricing.",
+  "zh": "阿里云官网/控制台学习复刻：枢纽导航、ECS 产品页、价格表。"
+ },
+ "tags": [
+  "cloud",
+  "console",
+  "web",
+  "study"
+ ],
+ "category": "cloud",
+ "shell": "c_browser",
+ "source": {
+  "kind": "original",
+  "ref": "web-aliyun"
+ },
+ "license": "CC-BY-4.0",
+ "ip_attestation": "public-material",
+ "attestation_note": "M86: 视图重渲染后选中框重画外壳",
+ "version": "1.6.2",
+ "created_at": "2026-09-14T15:48:26.546Z",
+ "brand_disclaimer": "Unofficial study replica of Aliyun; trademarks belong to their owners; no affiliation or endorsement implied.",
+ "platform": "web"
+}

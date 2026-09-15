@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "page_id": "12-group-chat",
+    "page_name": "群聊·家",
+    "surface": "c_mobile",
+    "page_type": "c_chat",
+    "canvas": {
+      "width": 390,
+      "height": 844
+    },
+    "evidence": [
+      "capture/screens/12-group-chat.png"
+    ],
+    "fidelity": "high",
+    "product": {
+      "function": "（克隆时按 vlm-analysis 补 product 三要素）",
+      "goals": [],
+      "page_prompt": "",
+      "element_prompts": {}
+    },
+    "spec_version": 1,
+    "change_log": [
+      {
+        "at": "2026-09-14T15:44:20.162Z",
+        "by": "clone",
+        "note": "collect-design 初始/重采集（computed 真值）"
+      }
+    ]
+  },
+  "regions": [
+    {
+      "id": "r_gc_back",
+      "type": "custom",
+      "label": ""
+    },
+    {
+      "id": "r_gc_more",
+      "type": "custom",
+      "label": "⋯"
+    },
+    {
+      "id": "r_gc_b1",
+      "type": "custom",
+      "label": "周末回来吃饭吗"
+    },
+    {
+      "id": "r_gc_b2",
+      "type": "custom",
+      "label": "我钓了条大的"
+    },
+    {
+      "id": "r_gc_b3",
+      "type": "custom",
+      "label": "回！我带新茶"
+    },
+    {
+      "id": "r_gc_b4",
+      "type": "custom",
+      "label": "好"
+    },
+    {
+      "id": "r_gc_voice",
+      "type": "custom",
+      "label": ""
+    },
+    {
+      "id": "r_gc_input",
+      "type": "custom",
+      "label": ""
+    },
+    {
+      "id": "r_gc_plus",
+      "type": "custom",
+      "label": ""
+    }
+  ]
+}

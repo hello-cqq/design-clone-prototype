@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "page_id": "01-chatlist",
+    "page_name": "会话列表",
+    "surface": "c_mobile",
+    "page_type": "c_chat",
+    "canvas": {
+      "width": 390,
+      "height": 844
+    },
+    "evidence": [
+      "capture/screens/01-chatlist.png"
+    ],
+    "fidelity": "high",
+    "product": {
+      "function": "冒烟：产品说明可写",
+      "goals": [
+        "进入会话",
+        "发起新会话/搜索"
+      ],
+      "page_prompt": "灰底会话列表：头像方块+昵称+摘要+时间，底部四 tab，微信绿高亮当前 tab",
+      "element_prompts": {}
+    },
+    "spec_version": 1,
+    "change_log": [
+      {
+        "at": "2026-09-14T15:44:20.162Z",
+        "by": "clone",
+        "note": "collect-design 初始/重采集（computed 真值）"
+      }
+    ]
+  },
+  "regions": [
+    {
+      "id": "r_wx_search",
+      "type": "search_bar",
+      "label": ""
+    },
+    {
+      "id": "r_wx_plus",
+      "type": "custom",
+      "label": ""
+    },
+    {
+      "id": "r_wx_macbar",
+      "type": "toolbar",
+      "label": "Mac 微信已登录"
+    },
+    {
+      "id": "r_wx_row",
+      "type": "custom",
+      "label": "文件传输助手这版原型控件都是真的11:55",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_wx_row",
+      "type": "custom",
+      "label": "阿澜照片收到，拍得真好昨天",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_wx_row",
+      "type": "custom",
+      "label": "家妈: 周末回来吃饭吗昨天",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_wx_row",
+      "type": "custom",
+      "label": "公众号[7条] 快讯14:21",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_wx_row",
+      "type": "custom",
+      "label": "服务号[1条通知] 交易完成通知11:27",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    }
+  ]
+}
