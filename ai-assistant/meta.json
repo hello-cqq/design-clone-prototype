@@ -4,8 +4,8 @@
   "zh": "星海对话"
  },
  "description": {
-  "en": "Interactive social prototype (mobile): full UI flows, live controls, design specs and user paths — cloned from a real source by design-clone.",
-  "zh": "社交类应用原型：世界观第一印象：双角色隔海相望+标题+开始按钮。由 design-clone 自真实来源克隆，全控件可交互、含设计规格与路径。"
+  "en": "Xinghai Dialogue — an AI chat companion prototype: full conversation flows with live controls, design specs and user paths, cloned from a real source by design-clone.",
+  "zh": "星海对话——AI 聊天伙伴原型：完整会话流程、全控件可交互、含设计规格与用户路径，由 design-clone 自真实来源克隆。"
  },
  "tags": [
   "ai-companion",

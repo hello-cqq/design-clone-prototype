@@ -5,6 +5,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
+import { execSync } from "node:child_process";
 import { listApps, readMeta, contributors, lastCommitInfo } from "./lib.mjs";
 
 const root = path.resolve(".");
@@ -51,7 +52,6 @@ for (const t of listApps(root)) {
     source: meta.source || {},
     ip_attestation: meta.ip_attestation || "original",
     brand_disclaimer: meta.brand_disclaimer || null,
-    icon: fs.existsSync(path.join(t.dir, "icon.png")) ? `${t.app}/icon.png` : fs.existsSync(path.join(t.dir, "icon.svg")) ? `${t.app}/icon.svg` : null,
     cover: fs.existsSync(path.join(t.dir, "cover.png")) ? `${t.app}/cover.png` : null,
     url: `${PAGES}/${t.app}/prototype/`,
     repo_dir: `https://github.com/hello-cqq/design-clone-prototype/tree/main/${t.app}`,
@@ -76,7 +76,9 @@ for (const t of listApps(root)) {
       return null;
     })(),
     icon: fs.existsSync(path.join(t.dir, "prototype", "appicon", "icon-256.png")) ? `${t.app}/prototype/appicon/icon-256.png`
-      : (fs.existsSync(path.join(t.dir, "icon.png")) ? `${t.app}/icon.png` : (fs.existsSync(path.join(t.dir, "cover.png")) ? `${t.app}/cover.png` : null)),
+      : (fs.existsSync(path.join(t.dir, "icon.png")) ? `${t.app}/icon.png`
+      : (fs.existsSync(path.join(t.dir, "icon.svg")) ? `${t.app}/icon.svg`
+      : (fs.existsSync(path.join(t.dir, "cover.png")) ? `${t.app}/cover.png` : null))),
     contributors: contrib.filter((c) => !(c.login || "").includes("[")),
     commits: contrib.reduce((a, b) => a + b.commits, 0),
     updated: lastCommitInfo(root, t.app),
