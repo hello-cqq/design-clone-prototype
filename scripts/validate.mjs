@@ -48,10 +48,13 @@ let targets = listApps(root);
 if (base) {
   let changed = [];
   try { changed = execSync(`git diff --name-only ${base} HEAD`, { encoding: "utf8" }).split("\n").filter(Boolean); } catch { changed = null; }
-  if (changed === null) { console.log("validate: base diff 不可用——全量校验（防 0 app 空转）"); }
-  else { const touched = new Set(changed.map((c) => (c.split("/")[0] || "")).filter(Boolean));
-  targets = targets.filter((t) => touched.has(t.app)); }
-  console.log(`validate: 变更 app ${touched.size} 个，命中完整 app 目录 ${targets.length} 个`);
+  if (changed === null) {
+    console.log("validate: base diff 不可用——全量校验（防 0 app 空转）");
+  } else {
+    const touched = new Set(changed.map((c) => (c.split("/")[0] || "")).filter(Boolean));
+    targets = targets.filter((t) => touched.has(t.app));
+    console.log(`validate: 变更 app ${touched.size} 个，命中完整 app 目录 ${targets.length} 个`);
+  }
 }
 
 const PII = [/1[3-9]\d{9}/, /\b\d{6}(19|20)\d{2}(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])\b/];
