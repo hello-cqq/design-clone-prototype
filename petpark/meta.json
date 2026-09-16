@@ -1,19 +1,16 @@
 {
  "name": {
-  "en": "PetPark",
+  "en": "Animal Paradise",
   "zh": "动物乐园"
  },
  "description": {
-  "en": "Animal Paradise — an original 3D plush-cute pet park prototype: full UI flows with live controls, design specs and user paths, built end-to-end by design-clone.",
-  "zh": "动物乐园——原创 3D 萌宠乐园原型：完整界面流程、全控件可交互、含设计规格与用户路径，由 design-clone 端到端生成。"
+  "en": "Interactive game prototype (mobile): full UI flows, live controls, design specs and user paths — cloned from a real source by design-clone.",
+  "zh": "游戏类应用原型：动物城全景+群像挥手+开始冒险。由 design-clone 自真实来源克隆，全控件可交互、含设计规格与路径。"
  },
  "tags": [
-  "3d",
   "mobile",
   "original",
-  "build",
-  "dashboard",
-  "player"
+  "3d"
  ],
  "category": "game",
  "shell": "c_mobile",
@@ -23,8 +20,8 @@
  },
  "license": "CC-BY-4.0",
  "ip_attestation": "original",
- "attestation_note": "Original concept; all art and UI generated with the operator's own generation tools via design-clone.",
- "version": "3.0.5",
- "created_at": "2026-09-14T15:47:39.127Z",
+ "attestation_note": "M103: full-bleed fennec icon v2, cinematic meadow cover",
+ "version": "3.1.0",
+ "created_at": "2026-09-16T12:19:36.066Z",
  "platform": "mobile"
 }
