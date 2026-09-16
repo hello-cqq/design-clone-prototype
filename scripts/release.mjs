@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * release.mjs —— main 推送后：检测 meta.version 变化的 flavor → 打 tag <app>-<flavor>-<version>
+ * release.mjs —— main 推送后：检测 meta.version 变化的 flavor → 打 tag <app>-<version>
  * 并发布 GitHub Release（资产=该 flavor prototype 离线 zip，正文=PROVENANCE 变更段+贡献者）。
  * 用法: node scripts/release.mjs [--from <ref>]   （CI: --from ${{ github.event.before }}）
  */

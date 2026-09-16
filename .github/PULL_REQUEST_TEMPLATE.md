@@ -1,5 +1,5 @@
 ## What
-- app / flavor:
+- app:
 - source (app/site/video/link + ref):
 - skill gates summary (paste publish.mjs output):
 
@@ -13,4 +13,4 @@
 - [ ] chat & sample text fictionalized; uploader nicknames anonymized
 
 ## Spec
-- [ ] follows SPEC.md (whitelist, ≤80MB, flavor vocabulary, version bumped if prototype/** changed)
+- [ ] follows SPEC.md (whitelist, ≤80MB, tags 3-6, version bumped if prototype/** changed)

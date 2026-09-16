@@ -1,6 +1,6 @@
 {
  "version": 3,
- "updated_at": "2026-09-15T13:11:38.281Z",
+ "updated_at": "2026-09-15T23:56:02.129Z",
  "apps": [
   {
    "app": "wechat",
@@ -20,10 +20,10 @@
    ],
    "category": "social",
    "shell": "c_mobile",
-   "version": "1.6.2",
+   "version": "1.6.3",
    "license": "CC-BY-4.0",
    "source": {
-    "kind": "device",
+    "kind": "app",
     "ref": "wechat-full"
    },
    "ip_attestation": "public-material",
@@ -114,17 +114,12 @@
    "icon": "wechat/prototype/appicon/icon-256.png",
    "contributors": [
     {
-     "name": "AhahahQ",
-     "login": "AhahahQ",
-     "commits": 8
-    },
-    {
      "name": "cqq",
      "login": "hello-cqq",
-     "commits": 7
+     "commits": 1
     }
    ],
-   "commits": 16,
+   "commits": 1,
    "updated": "2026-09-15T21:10:39+08:00"
   },
   {
@@ -134,8 +129,8 @@
     "zh": "星海对话"
    },
    "description": {
-    "en": "Xinghai Dialogue — an AI chat companion prototype: full conversation flows with live controls, design specs and user paths, cloned from a real source by design-clone.",
-    "zh": "星海对话——AI 聊天伙伴原型：完整会话流程、全控件可交互、含设计规格与用户路径，由 design-clone 自真实来源克隆。"
+    "en": "Xinghai Dialogue — an original AI chat companion prototype: full conversation flows with live controls, design specs and user paths, built end-to-end by design-clone.",
+    "zh": "星海对话——原创 AI 聊天伙伴原型：完整会话流程、全控件可交互、含设计规格与用户路径，由 design-clone 端到端生成。"
    },
    "tags": [
     "ai-companion",
@@ -147,7 +142,7 @@
    ],
    "category": "social",
    "shell": "c_mobile",
-   "version": "2.1.2",
+   "version": "3.0.2",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -185,17 +180,12 @@
    "icon": "ai-assistant/prototype/appicon/icon-256.png",
    "contributors": [
     {
-     "name": "AhahahQ",
-     "login": "AhahahQ",
-     "commits": 9
-    },
-    {
      "name": "cqq",
      "login": "hello-cqq",
      "commits": 1
     }
    ],
-   "commits": 10,
+   "commits": 1,
    "updated": "2026-09-15T21:10:39+08:00"
   },
   {
@@ -216,10 +206,10 @@
    ],
    "category": "cloud",
    "shell": "c_browser",
-   "version": "1.6.2",
+   "version": "1.6.3",
    "license": "CC-BY-4.0",
    "source": {
-    "kind": "original",
+    "kind": "web",
     "ref": "web-aliyun"
    },
    "ip_attestation": "public-material",
@@ -264,15 +254,10 @@
     {
      "name": "cqq",
      "login": "hello-cqq",
-     "commits": 7
-    },
-    {
-     "name": "AhahahQ",
-     "login": "AhahahQ",
-     "commits": 7
+     "commits": 1
     }
    ],
-   "commits": 15,
+   "commits": 1,
    "updated": "2026-09-15T21:10:39+08:00"
   },
   {
@@ -294,10 +279,10 @@
    ],
    "category": "office",
    "shell": "c_desktop",
-   "version": "1.6.2",
+   "version": "1.6.3",
    "license": "CC-BY-4.0",
    "source": {
-    "kind": "original",
+    "kind": "app",
     "ref": "mac-lark"
    },
    "ip_attestation": "public-material",
@@ -368,17 +353,12 @@
    "icon": "lark/prototype/appicon/icon-256.png",
    "contributors": [
     {
-     "name": "AhahahQ",
-     "login": "AhahahQ",
-     "commits": 8
-    },
-    {
      "name": "cqq",
      "login": "hello-cqq",
-     "commits": 7
+     "commits": 1
     }
    ],
-   "commits": 16,
+   "commits": 1,
    "updated": "2026-09-15T21:10:39+08:00"
   },
   {
@@ -388,8 +368,8 @@
     "zh": "动物乐园"
    },
    "description": {
-    "en": "Interactive game prototype (mobile): full UI flows, live controls, design specs and user paths — cloned from a real source by design-clone.",
-    "zh": "游戏类应用原型：动物城全景+群像挥手+开始冒险。由 design-clone 自真实来源克隆，全控件可交互、含设计规格与路径。"
+    "en": "Animal Paradise — an original 3D plush-cute pet park prototype: full UI flows with live controls, design specs and user paths, built end-to-end by design-clone.",
+    "zh": "动物乐园——原创 3D 萌宠乐园原型：完整界面流程、全控件可交互、含设计规格与用户路径，由 design-clone 端到端生成。"
    },
    "tags": [
     "3d",
@@ -401,7 +381,7 @@
    ],
    "category": "game",
    "shell": "c_mobile",
-   "version": "2.2.2",
+   "version": "3.0.2",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -451,17 +431,12 @@
    "icon": "petpark/prototype/appicon/icon-256.png",
    "contributors": [
     {
-     "name": "AhahahQ",
-     "login": "AhahahQ",
-     "commits": 10
-    },
-    {
      "name": "cqq",
      "login": "hello-cqq",
-     "commits": 9
+     "commits": 1
     }
    ],
-   "commits": 20,
+   "commits": 1,
    "updated": "2026-09-15T21:10:39+08:00"
   }
  ]

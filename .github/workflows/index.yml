@@ -16,17 +16,16 @@ jobs:
         with: { node-version: "22" }
       - run: npm ci --no-audit --no-fund || npm i --no-audit --no-fund
       - run: npx playwright install chromium --with-deps
-      - run: node scripts/thumb.mjs
       - run: node scripts/index.mjs
       - name: commit back index + thumbs
         run: |
           git config user.name "dc-index-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A -- index.json || true
-          git add -A -- '*/thumb.png' '*/cover.png' || true
+          git add -A -- '*/files.json' || true
           git status --porcelain || true
           if ! git diff --cached --quiet; then
-            git commit -m "chore(index): rebuild index.json + thumbnails"
+            git commit -m "chore(index): rebuild index.json + files.json"
             git push
           else
             echo "nothing to commit"
