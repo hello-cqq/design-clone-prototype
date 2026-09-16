@@ -1,6 +1,6 @@
 {
  "version": 3,
- "updated_at": "2026-09-16T10:11:17.717Z",
+ "updated_at": "2026-09-16T12:22:04.660Z",
  "apps": [
   {
    "app": "aliyun-console",
@@ -207,24 +207,21 @@
   {
    "app": "petpark",
    "name": {
-    "en": "PetPark",
+    "en": "Animal Paradise",
     "zh": "动物乐园"
    },
    "description": {
-    "en": "Animal Paradise — an original 3D plush-cute pet park prototype: full UI flows with live controls, design specs and user paths, built end-to-end by design-clone.",
-    "zh": "动物乐园——原创 3D 萌宠乐园原型：完整界面流程、全控件可交互、含设计规格与用户路径，由 design-clone 端到端生成。"
+    "en": "Interactive game prototype (mobile): full UI flows, live controls, design specs and user paths — cloned from a real source by design-clone.",
+    "zh": "游戏类应用原型：动物城全景+群像挥手+开始冒险。由 design-clone 自真实来源克隆，全控件可交互、含设计规格与路径。"
    },
    "tags": [
-    "3d",
     "mobile",
     "original",
-    "build",
-    "dashboard",
-    "player"
+    "3d"
    ],
    "category": "game",
    "shell": "c_mobile",
-   "version": "3.0.5",
+   "version": "3.1.0",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -281,33 +278,31 @@
     {
      "name": "cqq",
      "login": "hello-cqq",
-     "commits": 10
+     "commits": 11
     }
    ],
-   "commits": 29,
-   "updated": "2026-09-16T18:10:44+08:00"
+   "commits": 31,
+   "updated": "2026-09-16T20:19:41+08:00"
   },
   {
    "app": "ai-assistant",
    "name": {
-    "en": "AI Assistant",
+    "en": "Starsea Talk",
     "zh": "星海对话"
    },
    "description": {
-    "en": "Xinghai Dialogue — an original AI chat companion prototype: full conversation flows with live controls, design specs and user paths, built end-to-end by design-clone.",
-    "zh": "星海对话——原创 AI 聊天伙伴原型：完整会话流程、全控件可交互、含设计规格与用户路径，由 design-clone 端到端生成。"
+    "en": "Interactive social prototype (mobile): full UI flows, live controls, design specs and user paths — cloned from a real source by design-clone.",
+    "zh": "社交类应用原型：世界观第一印象：双角色隔海相望+标题+开始按钮。由 design-clone 自真实来源克隆，全控件可交互、含设计规格与路径。"
    },
    "tags": [
-    "ai-companion",
-    "assistant",
-    "anime",
-    "voice",
+    "mobile",
     "original",
-    "chat"
+    "ai-companion",
+    "anime"
    ],
    "category": "social",
    "shell": "c_mobile",
-   "version": "3.0.7",
+   "version": "3.1.0",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -352,11 +347,11 @@
     {
      "name": "cqq",
      "login": "hello-cqq",
-     "commits": 2
+     "commits": 3
     }
    ],
-   "commits": 19,
-   "updated": "2026-09-16T10:04:59Z"
+   "commits": 20,
+   "updated": "2026-09-16T20:19:06+08:00"
   },
   {
    "app": "lark",
