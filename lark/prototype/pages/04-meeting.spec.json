@@ -6,7 +6,7 @@
     "page_type": "b_detail_page",
     "canvas": {
       "width": 1280,
-      "height": 827
+      "height": 800
     },
     "evidence": [
       "capture/screens/04-meeting.png"
@@ -21,7 +21,7 @@
     "spec_version": 1,
     "change_log": [
       {
-        "at": "2026-09-14T15:27:54.305Z",
+        "at": "2026-09-16T12:59:49.595Z",
         "by": "clone",
         "note": "collect-design 初始/重采集（computed 真值）"
       }
@@ -29,7 +29,7 @@
   },
   "regions": [
     {
-      "id": "r_doc_side",
+      "id": "r_mt_side",
       "type": "sidebar",
       "label": "搜索 (⌘K)\n    \n      消息\n      豆包工作\n      日",
       "components": [
@@ -97,8 +97,8 @@
           "kind": "button",
           "label": "云文档",
           "interaction": {
-            "act": "toast",
-            "msg": "（演示）"
+            "act": "goto",
+            "to": "03-docs"
           },
           "sample_value": "云文档"
         },
@@ -123,8 +123,8 @@
           "kind": "button",
           "label": "视频会议",
           "interaction": {
-            "act": "goto",
-            "to": "04-meeting"
+            "act": "toast",
+            "msg": "（演示）"
           },
           "sample_value": "视频会议"
         },
@@ -239,7 +239,7 @@
       ]
     },
     {
-      "id": "r_doc_n_msg",
+      "id": "r_mt_n_msg",
       "type": "custom",
       "label": "消息",
       "components": [
@@ -250,7 +250,7 @@
       ]
     },
     {
-      "id": "r_doc_n_doubao",
+      "id": "r_mt_n_doubao",
       "type": "custom",
       "label": "豆包工作",
       "components": [
@@ -261,7 +261,7 @@
       ]
     },
     {
-      "id": "r_doc_n_cal",
+      "id": "r_mt_n_cal",
       "type": "custom",
       "label": "日历",
       "components": [
@@ -272,7 +272,7 @@
       ]
     },
     {
-      "id": "r_doc_n_docs",
+      "id": "r_mt_n_docs",
       "type": "custom",
       "label": "云文档",
       "components": [
@@ -283,7 +283,7 @@
       ]
     },
     {
-      "id": "r_doc_n_bitable",
+      "id": "r_mt_n_bitable",
       "type": "custom",
       "label": "多维表格",
       "components": [
@@ -294,7 +294,7 @@
       ]
     },
     {
-      "id": "r_doc_n_meet",
+      "id": "r_mt_n_meet",
       "type": "custom",
       "label": "视频会议",
       "components": [
@@ -305,7 +305,7 @@
       ]
     },
     {
-      "id": "r_doc_n_fly",
+      "id": "r_mt_n_fly",
       "type": "custom",
       "label": "飞行社",
       "components": [
@@ -316,7 +316,7 @@
       ]
     },
     {
-      "id": "r_doc_n_wb",
+      "id": "r_mt_n_wb",
       "type": "custom",
       "label": "工作台",
       "components": [
@@ -327,7 +327,7 @@
       ]
     },
     {
-      "id": "r_doc_n_appc",
+      "id": "r_mt_n_appc",
       "type": "custom",
       "label": "应用中心",
       "components": [
@@ -338,7 +338,7 @@
       ]
     },
     {
-      "id": "r_doc_n_contacts",
+      "id": "r_mt_n_contacts",
       "type": "custom",
       "label": "通讯录",
       "components": [
@@ -349,7 +349,7 @@
       ]
     },
     {
-      "id": "r_doc_n_vip",
+      "id": "r_mt_n_vip",
       "type": "custom",
       "label": "权益升级",
       "components": [
@@ -360,7 +360,7 @@
       ]
     },
     {
-      "id": "r_doc_n_task",
+      "id": "r_mt_n_task",
       "type": "custom",
       "label": "任务",
       "components": [
@@ -371,7 +371,7 @@
       ]
     },
     {
-      "id": "r_doc_n_star",
+      "id": "r_mt_n_star",
       "type": "custom",
       "label": "收藏",
       "components": [
@@ -382,7 +382,7 @@
       ]
     },
     {
-      "id": "r_doc_n_kb",
+      "id": "r_mt_n_kb",
       "type": "custom",
       "label": "知识库",
       "components": [
@@ -393,72 +393,361 @@
       ]
     },
     {
-      "id": "r_doc_col",
+      "id": "r_mt_col",
       "type": "custom",
-      "label": "主页\n    云盘\n    知识库\n    离线",
+      "label": "视频会议\n      \n        \n        \n      \n   ",
       "components": [
         {
           "kind": "button",
-          "label": "主页",
+          "label": "",
           "interaction": {
             "act": "toast",
-            "msg": "主页（演示）"
-          },
-          "sample_value": "主页"
+            "msg": "搜索（演示）"
+          }
         },
         {
           "kind": "button",
-          "label": "云盘",
+          "label": "",
           "interaction": {
             "act": "toast",
-            "msg": "云盘（演示）"
-          },
-          "sample_value": "云盘"
+            "msg": "设置（演示）"
+          }
         },
         {
           "kind": "button",
-          "label": "知识库",
+          "label": "开启设置",
           "interaction": {
-            "act": "goto",
-            "to": "08-kb"
+            "act": "toast",
+            "msg": "开启设置（演示）"
           },
-          "sample_value": "知识库"
+          "sample_value": "开启设置"
+        },
+        {
+          "kind": "image",
+          "label": ""
         },
         {
           "kind": "button",
-          "label": "离线",
+          "label": "发起会议",
           "interaction": {
             "act": "toast",
-            "msg": "离线（演示）"
+            "msg": "发起会议（演示）"
           },
-          "sample_value": "离线"
+          "sample_value": "发起会议"
+        },
+        {
+          "kind": "image",
+          "label": ""
+        },
+        {
+          "kind": "button",
+          "label": "加入会议",
+          "interaction": {
+            "act": "toast",
+            "msg": "加入会议（演示）"
+          },
+          "sample_value": "加入会议"
+        },
+        {
+          "kind": "image",
+          "label": ""
+        },
+        {
+          "kind": "button",
+          "label": "预约会议",
+          "interaction": {
+            "act": "toast",
+            "msg": "预约会议（演示）"
+          },
+          "sample_value": "预约会议"
+        },
+        {
+          "kind": "image",
+          "label": ""
+        },
+        {
+          "kind": "button",
+          "label": "会议室投屏",
+          "interaction": {
+            "act": "toast",
+            "msg": "会议室投屏（演示）"
+          },
+          "sample_value": "会议室投屏"
+        },
+        {
+          "kind": "image",
+          "label": ""
+        },
+        {
+          "kind": "button",
+          "label": "妙记",
+          "interaction": {
+            "act": "toast",
+            "msg": "妙记（演示）"
+          },
+          "sample_value": "妙记"
+        },
+        {
+          "kind": "image",
+          "label": ""
+        },
+        {
+          "kind": "button",
+          "label": "智能纪要",
+          "interaction": {
+            "act": "toast",
+            "msg": "智能纪要（演示）"
+          },
+          "sample_value": "智能纪要"
+        },
+        {
+          "kind": "image",
+          "label": ""
+        },
+        {
+          "kind": "button",
+          "label": "直播",
+          "interaction": {
+            "act": "toast",
+            "msg": "直播（演示）"
+          },
+          "sample_value": "直播"
+        },
+        {
+          "kind": "image",
+          "label": ""
+        },
+        {
+          "kind": "button",
+          "label": "电话",
+          "interaction": {
+            "act": "toast",
+            "msg": "电话（演示）"
+          },
+          "sample_value": "电话"
+        },
+        {
+          "kind": "image",
+          "label": ""
         }
       ]
     },
     {
-      "id": "r_doc_i_home",
+      "id": "r_mt_promo",
       "type": "custom",
-      "label": "主页"
+      "label": "入会时，同步开启录音转写\n      生成智能纪要，沉淀个人工作上下文\n    ",
+      "components": [
+        {
+          "kind": "button",
+          "label": "开启设置",
+          "interaction": {
+            "act": "toast",
+            "msg": "开启设置（演示）"
+          },
+          "sample_value": "开启设置"
+        },
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
     },
     {
-      "id": "r_doc_i_drive",
+      "id": "r_mt_c1",
       "type": "custom",
-      "label": "云盘"
+      "label": "发起会议",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
     },
     {
-      "id": "r_doc_i_kb",
+      "id": "r_mt_c2",
       "type": "custom",
-      "label": "知识库"
+      "label": "加入会议",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
     },
     {
-      "id": "r_doc_i_off",
+      "id": "r_mt_c3",
       "type": "custom",
-      "label": "离线"
+      "label": "预约会议",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
     },
     {
-      "id": "r_doc_main",
+      "id": "r_mt_c4",
       "type": "custom",
-      "label": "知识库\n    \n    置顶知识库\n    \n      \n      \n  "
+      "label": "会议室投屏",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_mt_c5",
+      "type": "custom",
+      "label": "妙记",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_mt_c6",
+      "type": "custom",
+      "label": "智能纪要",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_mt_c7",
+      "type": "custom",
+      "label": "直播",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_mt_c8",
+      "type": "custom",
+      "label": "电话",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_mt_right",
+      "type": "custom",
+      "label": "线下聊天也能自动记要点线下交谈实时收录，历史音视频一键上传，AI 帮你整理归纳成",
+      "components": [
+        {
+          "kind": "button",
+          "label": "上传",
+          "interaction": {
+            "act": "toast",
+            "msg": "上传（演示）"
+          },
+          "sample_value": "上传"
+        },
+        {
+          "kind": "button",
+          "label": "录音",
+          "interaction": {
+            "act": "toast",
+            "msg": "录音（演示）"
+          },
+          "sample_value": "录音"
+        },
+        {
+          "kind": "button",
+          "label": "视频面试-复试-阿Q-AIOS架构师外部4月13日 20:31智能纪要：视频面试",
+          "interaction": {
+            "act": "toast",
+            "msg": "（演示）"
+          },
+          "sample_value": "视频面试-复试-阿Q-AIOS架构师外部4月13日 20:31智能纪要：视频面试"
+        },
+        {
+          "kind": "button",
+          "label": "视频面试-复试-阿Q-AIOS架构师4月13日 20:30",
+          "interaction": {
+            "act": "toast",
+            "msg": "（演示）"
+          },
+          "sample_value": "视频面试-复试-阿Q-AIOS架构师4月13日 20:30"
+        },
+        {
+          "kind": "button",
+          "label": "视频面试-复试-阿Q-AIOS架构师外部4月8日 18:58智能纪要：视频面试-",
+          "interaction": {
+            "act": "toast",
+            "msg": "（演示）"
+          },
+          "sample_value": "视频面试-复试-阿Q-AIOS架构师外部4月8日 18:58智能纪要：视频面试-"
+        },
+        {
+          "kind": "button",
+          "label": "视频面试-复试-阿Q-AIOS架构师4月8日 18:18",
+          "interaction": {
+            "act": "toast",
+            "msg": "（演示）"
+          },
+          "sample_value": "视频面试-复试-阿Q-AIOS架构师4月8日 18:18"
+        },
+        {
+          "kind": "button",
+          "label": "视频面试-初试-阿Q-AIOS架构师外部4月2日 18:58智能纪要：视频面试-",
+          "interaction": {
+            "act": "toast",
+            "msg": "（演示）"
+          },
+          "sample_value": "视频面试-初试-阿Q-AIOS架构师外部4月2日 18:58智能纪要：视频面试-"
+        },
+        {
+          "kind": "button",
+          "label": "视频面试-初试-阿Q-AIOS架构师4月2日 18:30",
+          "interaction": {
+            "act": "toast",
+            "msg": "（演示）"
+          },
+          "sample_value": "视频面试-初试-阿Q-AIOS架构师4月2日 18:30"
+        }
+      ]
+    },
+    {
+      "id": "r_mt_h1",
+      "type": "custom",
+      "label": "视频面试-复试-阿Q-AIOS架构师外部4月13日 20:31智能纪要：视频面试"
+    },
+    {
+      "id": "r_mt_h2",
+      "type": "custom",
+      "label": "视频面试-复试-阿Q-AIOS架构师4月13日 20:30"
+    },
+    {
+      "id": "r_mt_h3",
+      "type": "custom",
+      "label": "视频面试-复试-阿Q-AIOS架构师外部4月8日 18:58智能纪要：视频面试-"
+    },
+    {
+      "id": "r_mt_h4",
+      "type": "custom",
+      "label": "视频面试-复试-阿Q-AIOS架构师4月8日 18:18"
+    },
+    {
+      "id": "r_mt_h5",
+      "type": "custom",
+      "label": "视频面试-初试-阿Q-AIOS架构师外部4月2日 18:58智能纪要：视频面试-"
+    },
+    {
+      "id": "r_mt_h6",
+      "type": "custom",
+      "label": "视频面试-初试-阿Q-AIOS架构师4月2日 18:30"
     }
   ]
 }

@@ -21,7 +21,7 @@
     "spec_version": 1,
     "change_log": [
       {
-        "at": "2026-09-14T15:27:54.305Z",
+        "at": "2026-09-16T12:59:49.595Z",
         "by": "clone",
         "note": "collect-design 初始/重采集（computed 真值）"
       }
@@ -29,7 +29,7 @@
   },
   "regions": [
     {
-      "id": "r_cal_side",
+      "id": "r_msg_side",
       "type": "sidebar",
       "label": "搜索 (⌘K)\n    \n      消息\n      豆包工作\n      日",
       "components": [
@@ -58,8 +58,8 @@
           "kind": "button",
           "label": "消息",
           "interaction": {
-            "act": "goto",
-            "to": "01-messages"
+            "act": "toast",
+            "msg": "（演示）"
           },
           "sample_value": "消息"
         },
@@ -239,7 +239,7 @@
       ]
     },
     {
-      "id": "r_cal_n_msg",
+      "id": "r_msg_n_msg",
       "type": "custom",
       "label": "消息",
       "components": [
@@ -250,7 +250,7 @@
       ]
     },
     {
-      "id": "r_cal_n_doubao",
+      "id": "r_msg_n_doubao",
       "type": "custom",
       "label": "豆包工作",
       "components": [
@@ -261,7 +261,7 @@
       ]
     },
     {
-      "id": "r_cal_n_cal",
+      "id": "r_msg_n_cal",
       "type": "custom",
       "label": "日历",
       "components": [
@@ -272,7 +272,7 @@
       ]
     },
     {
-      "id": "r_cal_n_docs",
+      "id": "r_msg_n_docs",
       "type": "custom",
       "label": "云文档",
       "components": [
@@ -283,7 +283,7 @@
       ]
     },
     {
-      "id": "r_cal_n_bitable",
+      "id": "r_msg_n_bitable",
       "type": "custom",
       "label": "多维表格",
       "components": [
@@ -294,7 +294,7 @@
       ]
     },
     {
-      "id": "r_cal_n_meet",
+      "id": "r_msg_n_meet",
       "type": "custom",
       "label": "视频会议",
       "components": [
@@ -305,7 +305,7 @@
       ]
     },
     {
-      "id": "r_cal_n_fly",
+      "id": "r_msg_n_fly",
       "type": "custom",
       "label": "飞行社",
       "components": [
@@ -316,7 +316,7 @@
       ]
     },
     {
-      "id": "r_cal_n_wb",
+      "id": "r_msg_n_wb",
       "type": "custom",
       "label": "工作台",
       "components": [
@@ -327,7 +327,7 @@
       ]
     },
     {
-      "id": "r_cal_n_appc",
+      "id": "r_msg_n_appc",
       "type": "custom",
       "label": "应用中心",
       "components": [
@@ -338,7 +338,7 @@
       ]
     },
     {
-      "id": "r_cal_n_contacts",
+      "id": "r_msg_n_contacts",
       "type": "custom",
       "label": "通讯录",
       "components": [
@@ -349,7 +349,7 @@
       ]
     },
     {
-      "id": "r_cal_n_vip",
+      "id": "r_msg_n_vip",
       "type": "custom",
       "label": "权益升级",
       "components": [
@@ -360,7 +360,7 @@
       ]
     },
     {
-      "id": "r_cal_n_task",
+      "id": "r_msg_n_task",
       "type": "custom",
       "label": "任务",
       "components": [
@@ -371,7 +371,7 @@
       ]
     },
     {
-      "id": "r_cal_n_star",
+      "id": "r_msg_n_star",
       "type": "custom",
       "label": "收藏",
       "components": [
@@ -382,7 +382,7 @@
       ]
     },
     {
-      "id": "r_cal_n_kb",
+      "id": "r_msg_n_kb",
       "type": "custom",
       "label": "知识库",
       "components": [
@@ -393,54 +393,201 @@
       ]
     },
     {
-      "id": "r_lk_side",
-      "type": "sidebar",
-      "label": "搜索 (⌘K)\n    设计评审群14:03\n    自动化测试14:01\n  ",
+      "id": "r_msg_list",
+      "type": "list",
+      "label": "消息\n    \n      豆包帮我总结一下今天的会议纪要8月18日\n     ",
       "components": [
         {
           "kind": "button",
-          "label": "设计评审群14:03",
-          "interaction": {
-            "act": "goto",
-            "to": "14-group-chat"
-          },
-          "sample_value": "设计评审群14:03"
-        },
-        {
-          "kind": "button",
-          "label": "自动化测试14:01",
-          "interaction": {
-            "act": "goto",
-            "to": "14-group-chat"
-          },
-          "sample_value": "自动化测试14:01"
-        },
-        {
-          "kind": "button",
-          "label": "林晓13:51",
+          "label": "豆包帮我总结一下今天的会议纪要8月18日",
           "interaction": {
             "act": "goto",
             "to": "11-chat"
           },
-          "sample_value": "林晓13:51"
+          "sample_value": "豆包帮我总结一下今天的会议纪要8月18日"
+        },
+        {
+          "kind": "image",
+          "label": ""
         },
         {
           "kind": "button",
-          "label": "陈默13:33",
+          "label": "桃桃的飞书助手官方飞书助手：用 豆包 + 飞书，把 AI 真正变为工作生产力",
           "interaction": {
             "act": "goto",
             "to": "11-chat"
           },
-          "sample_value": "陈默13:33"
+          "sample_value": "桃桃的飞书助手官方飞书助手：用 豆包 + 飞书，把 AI 真正变为工作生产力"
+        },
+        {
+          "kind": "image",
+          "label": ""
         },
         {
           "kind": "button",
-          "label": "文件传输助手11:55",
+          "label": "管理员小助手机器人你已安装豆包8月5日",
+          "interaction": {
+            "act": "toast",
+            "msg": "管理员小助手（演示）"
+          },
+          "sample_value": "管理员小助手机器人你已安装豆包8月5日"
+        },
+        {
+          "kind": "image",
+          "label": ""
+        },
+        {
+          "kind": "button",
+          "label": "Q的智能伙伴智能体真懂工作、主动帮忙：你的 ally 智能伙伴已上线6月29日",
+          "interaction": {
+            "act": "toast",
+            "msg": "Q的智能伙伴（演示）"
+          },
+          "sample_value": "Q的智能伙伴智能体真懂工作、主动帮忙：你的 ally 智能伙伴已上线6月29日"
+        },
+        {
+          "kind": "image",
+          "label": ""
+        },
+        {
+          "kind": "button",
+          "label": "桃桃你好6月28日",
           "interaction": {
             "act": "goto",
             "to": "11-chat"
           },
-          "sample_value": "文件传输助手11:55"
+          "sample_value": "桃桃你好6月28日"
+        },
+        {
+          "kind": "image",
+          "label": ""
+        },
+        {
+          "kind": "button",
+          "label": "账号安全中心机器人授权操作通知6月22日",
+          "interaction": {
+            "act": "toast",
+            "msg": "账号安全中心（演示）"
+          },
+          "sample_value": "账号安全中心机器人授权操作通知6月22日"
+        },
+        {
+          "kind": "image",
+          "label": ""
+        },
+        {
+          "kind": "button",
+          "label": "大耳朵阿Q机器人[链接]西区精品公寓转租（个人再减免150元）6月18日",
+          "interaction": {
+            "act": "toast",
+            "msg": "大耳朵阿Q（演示）"
+          },
+          "sample_value": "大耳朵阿Q机器人[链接]西区精品公寓转租（个人再减免150元）6月18日"
+        },
+        {
+          "kind": "image",
+          "label": ""
+        },
+        {
+          "kind": "button",
+          "label": "云文档助手机器人点赞提醒5月6日",
+          "interaction": {
+            "act": "goto",
+            "to": "03-docs"
+          },
+          "sample_value": "云文档助手机器人点赞提醒5月6日"
+        },
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_msg_r1",
+      "type": "custom",
+      "label": "豆包帮我总结一下今天的会议纪要8月18日",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_msg_r2",
+      "type": "custom",
+      "label": "桃桃的飞书助手官方飞书助手：用 豆包 + 飞书，把 AI 真正变为工作生产力",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_msg_r3",
+      "type": "custom",
+      "label": "管理员小助手机器人你已安装豆包8月5日",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_msg_r4",
+      "type": "custom",
+      "label": "Q的智能伙伴智能体真懂工作、主动帮忙：你的 ally 智能伙伴已上线6月29日",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_msg_r5",
+      "type": "custom",
+      "label": "桃桃你好6月28日",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_msg_r6",
+      "type": "custom",
+      "label": "账号安全中心机器人授权操作通知6月22日",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_msg_r7",
+      "type": "custom",
+      "label": "大耳朵阿Q机器人[链接]西区精品公寓转租（个人再减免150元）6月18日",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_msg_r8",
+      "type": "custom",
+      "label": "云文档助手机器人点赞提醒5月6日",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
         }
       ]
     }
