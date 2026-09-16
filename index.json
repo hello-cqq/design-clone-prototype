@@ -1,6 +1,6 @@
 {
  "version": 3,
- "updated_at": "2026-09-16T12:22:04.660Z",
+ "updated_at": "2026-09-16T12:27:53.895Z",
  "apps": [
   {
    "app": "aliyun-console",
@@ -281,8 +281,8 @@
      "commits": 11
     }
    ],
-   "commits": 31,
-   "updated": "2026-09-16T20:19:41+08:00"
+   "commits": 32,
+   "updated": "2026-09-16T12:22:04Z"
   },
   {
    "app": "ai-assistant",
@@ -350,8 +350,8 @@
      "commits": 3
     }
    ],
-   "commits": 20,
-   "updated": "2026-09-16T20:19:06+08:00"
+   "commits": 21,
+   "updated": "2026-09-16T12:22:04Z"
   },
   {
    "app": "lark",
