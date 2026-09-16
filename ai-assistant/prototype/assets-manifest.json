@@ -83,7 +83,64 @@
    "source": "genimg",
    "prompt": "海西 bust",
    "at": "2026-09-16T00:00:00.000Z"
+  },
+  "xh-xinghai-full.png": {
+   "file": "xh-xinghai-full.png",
+   "source": "agent-media",
+   "engine": "agent-native",
+   "consent": "session-approved",
+   "checks": {
+    "size": "1152x1536",
+    "stddev": 55.1,
+    "vlm": {
+     "relevance": 4,
+     "texture": 5,
+     "beauty": 5,
+     "usability": 4,
+     "note": "画风清新治愈，视觉表现力佳",
+     "engine": "agent-plan:volcengine-agent-plan/doubao-seed-2.1-turbo"
+    }
+   },
+   "at": "2026-09-16T07:54:47.818Z"
+  },
+  "xh-xinghai-layer.png": {
+   "file": "xh-xinghai-layer.png",
+   "source": "agent-media",
+   "engine": "agent-native",
+   "consent": "session-approved",
+   "checks": {
+    "size": "508x1035",
+    "stddev": 32.8,
+    "vlm": {
+     "relevance": 4,
+     "texture": 4,
+     "beauty": 5,
+     "usability": 4,
+     "note": "清新治愈立绘，适配多类应用场景",
+     "engine": "agent-plan:volcengine-agent-plan/doubao-seed-2.1-turbo"
+    }
+   },
+   "at": "2026-09-16T07:55:09.798Z"
+  },
+  "xh-haixi-layer.png": {
+   "file": "xh-haixi-layer.png",
+   "source": "agent-media",
+   "engine": "agent-native",
+   "consent": "session-approved",
+   "checks": {
+    "size": "345x1167",
+    "stddev": 45.4,
+    "vlm": {
+     "relevance": 4,
+     "texture": 4,
+     "beauty": 4,
+     "usability": 3,
+     "note": "清新日系风，适配青春类应用",
+     "engine": "agent-plan:volcengine-agent-plan/doubao-seed-2.1-turbo"
+    }
+   },
+   "at": "2026-09-16T07:58:33.179Z"
   }
  },
- "generated_at": "2026-09-16T00:00:00.000Z"
+ "generated_at": "2026-09-16T07:58:33.180Z"
 }
