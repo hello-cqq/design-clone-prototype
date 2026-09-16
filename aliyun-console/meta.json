@@ -22,7 +22,7 @@
  "license": "CC-BY-4.0",
  "ip_attestation": "public-material",
  "attestation_note": "Brand icon sourced from official brand CDN for study-replica curation (see main repo docs/THIRD-PARTY.md §Curated official icons); all UI text anonymized or fictional; no affiliation or endorsement implied.",
- "version": "1.6.4",
+ "version": "1.6.5",
  "created_at": "2026-09-14T15:48:26.546Z",
  "brand_disclaimer": "Unofficial study replica of Aliyun; trademarks belong to their owners; no affiliation or endorsement implied.",
  "platform": "web"
