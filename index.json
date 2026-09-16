@@ -1,6 +1,6 @@
 {
  "version": 3,
- "updated_at": "2026-09-16T05:35:24.800Z",
+ "updated_at": "2026-09-16T08:10:55.858Z",
  "apps": [
   {
    "app": "aliyun-console",
@@ -68,15 +68,15 @@
     {
      "name": "AhahahQ",
      "login": "AhahahQ",
-     "commits": 11
+     "commits": 4
     },
     {
      "name": "cqq",
      "login": "hello-cqq",
-     "commits": 7
+     "commits": 1
     }
    ],
-   "commits": 19,
+   "commits": 5,
    "updated": "2026-09-16T09:40:12+08:00"
   },
   {
@@ -193,15 +193,15 @@
     {
      "name": "AhahahQ",
      "login": "AhahahQ",
-     "commits": 12
+     "commits": 4
     },
     {
      "name": "cqq",
      "login": "hello-cqq",
-     "commits": 7
+     "commits": 1
     }
    ],
-   "commits": 20,
+   "commits": 5,
    "updated": "2026-09-16T09:40:12+08:00"
   },
   {
@@ -276,15 +276,15 @@
     {
      "name": "AhahahQ",
      "login": "AhahahQ",
-     "commits": 15
+     "commits": 5
     },
     {
      "name": "cqq",
      "login": "hello-cqq",
-     "commits": 9
+     "commits": 1
     }
    ],
-   "commits": 25,
+   "commits": 6,
    "updated": "2026-09-16T13:34:45+08:00"
   },
   {
@@ -307,7 +307,7 @@
    ],
    "category": "social",
    "shell": "c_mobile",
-   "version": "3.0.5",
+   "version": "3.0.6",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -347,16 +347,16 @@
     {
      "name": "AhahahQ",
      "login": "AhahahQ",
-     "commits": 14
+     "commits": 5
     },
     {
      "name": "cqq",
      "login": "hello-cqq",
-     "commits": 1
+     "commits": 2
     }
    ],
-   "commits": 15,
-   "updated": "2026-09-16T13:34:45+08:00"
+   "commits": 7,
+   "updated": "2026-09-16T16:06:33+08:00"
   },
   {
    "app": "lark",
@@ -453,15 +453,15 @@
     {
      "name": "AhahahQ",
      "login": "AhahahQ",
-     "commits": 12
+     "commits": 4
     },
     {
      "name": "cqq",
      "login": "hello-cqq",
-     "commits": 7
+     "commits": 1
     }
    ],
-   "commits": 20,
+   "commits": 5,
    "updated": "2026-09-16T09:40:12+08:00"
   }
  ]
