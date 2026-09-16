@@ -33,10 +33,10 @@
 <div data-dc="as/root" class="xh-c">
   <div class="far" data-fx-parallax="0.4"></div>
   <video class="vhvid" muted loop playsinline preload="metadata" poster="assets/xinghai-idle-poster.png" data-dc="as/call-vid" aria-label="星海通话动态背景"><source src="assets/xinghai-idle.webm" type="video/webm"><source src="assets/xinghai-idle.mp4" type="video/mp4"></video>
-  <span class="vidctl" data-dc="as/vid-ctl" data-act="toast" data-msg="通话动态背景：点击视频可暂停/播放（演示）" role="button" tabindex="0">⏯ 动态背景</span>
-  <div class="vh" data-dc="as/vh"><img src="assets/xh-xinghai-layer.png" alt="" data-dc="as/vh-xinghai" data-act="toast" data-msg="星海正在听你说话（演示）" style="width:60%;max-height:300px"></div>
+  <span class="vidctl" data-dc="as/vid-ctl" data-act="vid-replay" data-target="[data-dc='as/call-vid']" data-msg="星海的动态背景从头重播了一遍（演示）" role="button" tabindex="0">⏯ 动态背景</span>
+  <div class="vh" data-dc="as/vh"><img src="assets/xh-xinghai-layer.png" alt="" data-dc="as/vh-xinghai" data-act="vid-replay" data-target="[data-dc='as/call-vid']" data-msg="星海朝你挥了挥手，通话影像从头重播（演示）" style="width:60%;max-height:300px;cursor:pointer"></div>
   <canvas data-fx="particles" data-fx-kind="sparkles" data-fx-n="24" data-fx-colors="#ffffff,#8fd0ff,#c792ff"></canvas>
-  <div class="hud"><div class="nm">星海</div><div class="tm">12:36 · 高清 · 眼神正在看向你</div></div>
+  <div class="hud"><div class="nm">星海</div><div class="tm" data-fx="lipstate" data-fx-states="12:36 · 高清 · 眼神正在看向你|12:36 · 高清 · 正在听你说|12:36 · 高清 · 轻声回应中|12:36 · 高清 · 眨了眨眼">12:36 · 高清 · 眼神正在看向你</div></div>
   <div class="char" data-dc="as/call" data-fx-parallax="1.2"><img src="assets/xh-xinghai.png" alt=""></div>
   <div class="wave" data-dc="as/wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
   <div class="bar" data-dc="as/ctrls">

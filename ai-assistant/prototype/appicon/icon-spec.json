@@ -1,8 +1,8 @@
 {
  "source": "cloned",
- "icon_how": "cloned:manual-src",
- "mode": "auto",
- "base": "/Users/cqq/Project/design-clone/repo/design-clone-prototype/ai-assistant/icon.png",
+ "icon_how": "cloned:manual-bbox",
+ "mode": "cloned",
+ "base": "/Users/cqq/Project/design-clone/repo/design-clone/design-clone-runs/demo-assistant/prototype/appicon/_base.png",
  "radius": 0.22,
- "generated_at": "2026-09-15T23:44:35.450Z"
+ "generated_at": "2026-09-16T11:44:48.589Z"
 }
