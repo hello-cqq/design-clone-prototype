@@ -140,7 +140,26 @@
     }
    },
    "at": "2026-09-16T07:58:33.179Z"
+  },
+  "xinghai-idle.mp4": {
+   "file": "xinghai-idle.mp4",
+   "source": "agent-media",
+   "engine": "agent-native",
+   "consent": "session-approved",
+   "checks": {
+    "codec": "h264",
+    "duration": 4,
+    "bytes": 518304,
+    "final": "/tmp/m102-video/xinghai-idle.mp4",
+    "also": [
+     "webm",
+     "poster"
+    ],
+    "loop_diff": 25.1,
+    "loop_ok": false
+   },
+   "at": "2026-09-16T09:48:16.396Z"
   }
  },
- "generated_at": "2026-09-16T07:58:33.180Z"
+ "generated_at": "2026-09-16T09:48:16.396Z"
 }
