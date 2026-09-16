@@ -21,7 +21,7 @@
     "spec_version": 1,
     "change_log": [
       {
-        "at": "2026-09-14T15:44:20.162Z",
+        "at": "2026-09-16T13:16:13.736Z",
         "by": "clone",
         "note": "collect-design 初始/重采集（computed 真值）"
       }
@@ -29,216 +29,66 @@
   },
   "regions": [
     {
-      "id": "r_gs_back",
-      "type": "custom",
-      "label": ""
-    },
-    {
-      "id": "r_gs_search",
-      "type": "search_bar",
-      "label": ""
-    },
-    {
-      "id": "r_gs_members",
-      "type": "custom",
-      "label": "桃桃\n  爸\n  姐\n  妈妈\n  柚子\n  ＋\n  －",
+      "id": "r_lp_menu",
+      "type": "modal",
+      "label": "标为未读置顶聊天消息免打扰删除该聊天",
       "components": [
         {
           "kind": "button",
-          "label": "桃桃",
-          "interaction": {
-            "act": "goto",
-            "to": "14-friend-settings"
-          },
-          "sample_value": "桃桃"
-        },
-        {
-          "kind": "button",
-          "label": "爸",
-          "interaction": {
-            "act": "goto",
-            "to": "14-friend-settings"
-          },
-          "sample_value": "爸"
-        },
-        {
-          "kind": "button",
-          "label": "姐",
-          "interaction": {
-            "act": "goto",
-            "to": "14-friend-settings"
-          },
-          "sample_value": "姐"
-        },
-        {
-          "kind": "button",
-          "label": "妈妈",
-          "interaction": {
-            "act": "goto",
-            "to": "14-friend-settings"
-          },
-          "sample_value": "妈妈"
-        },
-        {
-          "kind": "button",
-          "label": "柚子",
-          "interaction": {
-            "act": "goto",
-            "to": "14-friend-settings"
-          },
-          "sample_value": "柚子"
-        },
-        {
-          "kind": "sheet",
-          "label": "＋",
-          "interaction": {
-            "act": "sheet"
-          },
-          "sample_value": "＋"
-        },
-        {
-          "kind": "sheet",
-          "label": "－",
-          "interaction": {
-            "act": "sheet"
-          },
-          "sample_value": "－"
-        }
-      ]
-    },
-    {
-      "id": "r_gs_m_lu",
-      "type": "custom",
-      "label": "桃桃"
-    },
-    {
-      "id": "r_gs_m_ba",
-      "type": "custom",
-      "label": "爸"
-    },
-    {
-      "id": "r_gs_m_jie",
-      "type": "custom",
-      "label": "姐"
-    },
-    {
-      "id": "r_gs_m_ma",
-      "type": "custom",
-      "label": "妈妈"
-    },
-    {
-      "id": "r_gs_m_sun",
-      "type": "custom",
-      "label": "柚子"
-    },
-    {
-      "id": "r_gs_m_add",
-      "type": "custom",
-      "label": "＋"
-    },
-    {
-      "id": "r_gs_m_del",
-      "type": "custom",
-      "label": "－"
-    },
-    {
-      "id": "r_gs_name",
-      "type": "custom",
-      "label": "群聊名称家"
-    },
-    {
-      "id": "r_gs_qr",
-      "type": "custom",
-      "label": "群二维码"
-    },
-    {
-      "id": "r_gs_notice",
-      "type": "custom",
-      "label": "群公告"
-    },
-    {
-      "id": "r_gs_admin",
-      "type": "custom",
-      "label": "群管理"
-    },
-    {
-      "id": "r_gs_remark",
-      "type": "custom",
-      "label": "备注"
-    },
-    {
-      "id": "r_gs_history",
-      "type": "custom",
-      "label": "查找聊天记录"
-    },
-    {
-      "id": "r_gs_mute",
-      "type": "custom",
-      "label": "消息免打扰",
-      "components": [
-        {
-          "kind": "button",
-          "label": "消息免打扰",
+          "label": "标为未读",
           "interaction": {
             "act": "toast",
-            "msg": "消息免打扰（演示）"
+            "msg": "已标为未读"
           },
-          "sample_value": "消息免打扰"
+          "sample_value": "标为未读"
         },
-        {
-          "kind": "switch",
-          "label": "",
-          "interaction": {
-            "act": "toggle"
-          }
-        }
-      ]
-    },
-    {
-      "id": "r_gs_pin",
-      "type": "custom",
-      "label": "置顶聊天",
-      "components": [
         {
           "kind": "button",
           "label": "置顶聊天",
           "interaction": {
             "act": "toast",
-            "msg": "置顶聊天（演示）"
+            "msg": "已置顶聊天"
           },
           "sample_value": "置顶聊天"
         },
         {
-          "kind": "switch",
-          "label": "",
+          "kind": "button",
+          "label": "消息免打扰",
           "interaction": {
-            "act": "toggle"
-          }
+            "act": "toast",
+            "msg": "已开启消息免打扰"
+          },
+          "sample_value": "消息免打扰"
+        },
+        {
+          "kind": "dialog",
+          "label": "删除该聊天",
+          "interaction": {
+            "act": "dialog"
+          },
+          "sample_value": "删除该聊天"
         }
       ]
     },
     {
-      "id": "r_gs_save",
+      "id": "r_lp_unread",
       "type": "custom",
-      "label": "保存到通讯录",
-      "components": [
-        {
-          "kind": "button",
-          "label": "保存到通讯录",
-          "interaction": {
-            "act": "toast",
-            "msg": "保存到通讯录（演示）"
-          },
-          "sample_value": "保存到通讯录"
-        },
-        {
-          "kind": "switch",
-          "label": "",
-          "interaction": {
-            "act": "toggle"
-          }
-        }
-      ]
+      "label": "标为未读"
+    },
+    {
+      "id": "r_lp_pin",
+      "type": "custom",
+      "label": "置顶聊天"
+    },
+    {
+      "id": "r_lp_mute",
+      "type": "custom",
+      "label": "消息免打扰"
+    },
+    {
+      "id": "r_lp_del",
+      "type": "custom",
+      "label": "删除该聊天"
     }
   ]
 }
