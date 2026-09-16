@@ -1,7 +1,7 @@
 <style>
   .xh-c{position:relative;min-height:100%;overflow:hidden;font-family:ui-rounded,-apple-system,"PingFang SC","Segoe UI",sans-serif;color:#eaf4ff;background:#0b1e33}
-  .xh-c .far{position:absolute;inset:0;background:url(assets/xh-bg-night.png) center/cover;opacity:.8;animation:kb 40s ease-in-out infinite alternate}
-  @keyframes kb{from{transform:scale(1.1)}to{transform:scale(1.02)}}
+  .xh-c .far{position:absolute;inset:0;background:url(assets/xh-bg-night.png) center/cover no-repeat;opacity:.8;animation:kb 40s ease-in-out infinite alternate}
+  @keyframes kb{from{background-size:110% auto}to{background-size:102% auto}}
   .xh-c .char{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);width:70%;max-width:330px}
   .xh-c .char img{display:block;width:100%;height:380px;object-fit:cover;object-position:50% 18%;border-radius:26px;box-shadow:0 24px 60px rgba(3,12,24,.6), 0 0 0 1.5px rgba(143,208,255,.35), 0 0 46px rgba(110,231,255,.18);animation:breathe 4.4s ease-in-out infinite}
   @keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.014)}}
@@ -19,9 +19,16 @@
   .xh-c .bar .c.on{background:rgba(143,208,255,.28)}
   .xh-c .bar .c.end{background:linear-gradient(140deg,#ff7a68,#e0483a);border-color:rgba(255,180,170,.5);box-shadow:0 10px 24px rgba(224,72,58,.45)}
   @media (prefers-reduced-motion: reduce){.xh-c .far,.xh-c .char img,.xh-c .wave i{animation:none}}
+
+  .xh .vh{position:absolute;left:50%;transform:translateX(-50%);bottom:92px;width:min(320px,76%);z-index:3;display:flex;justify-content:center;align-items:flex-end;gap:4px}
+  .xh .vh img{width:47%;max-height:225px;object-fit:contain;pointer-events:auto;cursor:pointer;filter:drop-shadow(0 14px 26px rgba(23,54,79,.3));animation:vhb 4.6s ease-in-out infinite;transform-origin:50% 96%}
+  .xh .vh img + img{width:47%;max-height:238px;animation-delay:.7s}
+  @keyframes vhb{0%,100%{transform:translateY(0) rotate(-.6deg)}50%{transform:translateY(-7px) rotate(.6deg)}}
+  @media (prefers-reduced-motion: reduce){.xh .vh img{animation:none}}
 </style>
 <div data-dc="as/root" class="xh-c">
   <div class="far" data-fx-parallax="0.4"></div>
+  <div class="vh" data-dc="as/vh"><img src="assets/assistant-girl.png" alt="" data-dc="as/vh-xinghai" data-act="toast" data-msg="星海正在听你说话（演示）" style="width:60%;max-height:300px"></div>
   <canvas data-fx="particles" data-fx-kind="sparkles" data-fx-n="24" data-fx-colors="#ffffff,#8fd0ff,#c792ff"></canvas>
   <div class="hud"><div class="nm">星海</div><div class="tm">12:36 · 高清 · 眼神正在看向你</div></div>
   <div class="char" data-dc="as/call" data-fx-parallax="1.2"><img src="assets/xh-xinghai.png" alt=""></div>

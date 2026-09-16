@@ -1,0 +1,78 @@
+{
+ "01-home": [
+  {
+   "target": "pp/start",
+   "label": "开始冒险入口",
+   "notes": [
+    {
+     "event": "tap",
+     "response": "进入 02-interact"
+    }
+   ],
+   "note": "M99-4C 补标注"
+  }
+ ],
+ "02-interact": [
+  {
+   "target": "pp/pet-fox",
+   "label": "耳廓狐（可摸/互动主体）",
+   "notes": [
+    {
+     "event": "tap",
+     "response": "toast 互动反馈"
+    }
+   ],
+   "note": "M99-4C"
+  },
+  {
+   "target": "pp/acts",
+   "label": "互动动作组（唱/跳/摸/喂）",
+   "notes": [
+    {
+     "event": "tap",
+     "response": "toast/sheet 演示反馈"
+    }
+   ],
+   "note": "M99-4C"
+  }
+ ],
+ "03-band": [
+  {
+   "target": "pp/band",
+   "label": "乐队成员缩略列",
+   "notes": [
+    {
+     "event": "tap",
+     "response": "切换主舞台成员"
+    }
+   ],
+   "note": "M99-4C"
+  }
+ ],
+ "06-dex": [
+  {
+   "target": "pp/dex",
+   "label": "图鉴宫格",
+   "notes": [
+    {
+     "event": "tap",
+     "response": "打开成员详情 sheet"
+    }
+   ],
+   "note": "M99-4C"
+  }
+ ],
+ "07-tasks": [
+  {
+   "target": "pp/tasks",
+   "label": "任务清单行",
+   "notes": [
+    {
+     "event": "tap",
+     "response": "勾选/详情"
+    }
+   ],
+   "note": "M99-4C"
+  }
+ ]
+}
