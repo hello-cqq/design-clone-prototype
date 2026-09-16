@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 /**
  * index.mjs —— 重建 index.json（v3 平铺：apps[]），贡献者 git 聚合 + Release 下载量（热度）。
+ * 语义（M103-W5 定案）：顶层 version=索引 schema 版本（固定 3，仅格式变更才 bump）；
+ * apps[].version=各 app 的发布 semver（每次 publish 递增）。两者不得混称。
  * 用法: node scripts/index.mjs
  */
 import fs from "node:fs";
