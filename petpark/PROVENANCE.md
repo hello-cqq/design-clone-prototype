@@ -12,3 +12,4 @@
 - v3.0.4: export/all.zip actually committed (prior PR copied to wrong path)
 - v3.0.5: inspector shell M98 (static export pack first-path, deterministic offline export)
 - v3.0.5: M99-4BC — 视图活控件化+全身虚拟人 idle 层+far 背景约定+annotations/spec 卫生+孤儿视图清退+shell 选中语义升级
+- v3.0.5: M102 耳廓狐 idle 视频替换静态立绘（同上）
