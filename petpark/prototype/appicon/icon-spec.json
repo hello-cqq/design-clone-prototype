@@ -1,8 +1,8 @@
 {
  "source": "cloned",
- "icon_how": "cloned:manual-src",
- "mode": "auto",
- "base": "/Users/cqq/Project/design-clone/repo/design-clone-prototype/petpark/icon.png",
+ "icon_how": "cloned:manual-bbox",
+ "mode": "cloned",
+ "base": "/Users/cqq/Project/design-clone/repo/design-clone/design-clone-runs/demo-petpark/prototype/appicon/_base.png",
  "radius": 0.22,
- "generated_at": "2026-09-15T23:44:38.455Z"
+ "generated_at": "2026-09-16T11:44:45.370Z"
 }
