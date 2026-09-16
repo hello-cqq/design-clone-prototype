@@ -20,12 +20,15 @@
   .pz .nav span{background:rgba(255,255,255,.9);border-radius:16px;padding:9px 2px 8px;display:grid;place-items:center;font-size:10.5px;color:#8a6440;cursor:pointer;box-shadow:0 8px 20px rgba(91,58,30,.14)}
   .pz .nav span.on{color:#e8862f;font-weight:600}
   @media (prefers-reduced-motion: reduce){.pz .stage img{animation:none}}
+.pz .petvid{display:block;width:68%;margin:0 auto;border-radius:22px;box-shadow:0 16px 36px rgba(91,58,30,.22), 0 0 0 4px rgba(255,255,255,.8);cursor:pointer}
+@media (prefers-reduced-motion: reduce){.pz .petvid{display:none}.pz .stage::before{content:'';display:block;width:68%;margin:0 auto;aspect-ratio:4/5;background:url(assets/fox-idle-poster.png) center/contain no-repeat;border-radius:22px;box-shadow:0 16px 36px rgba(91,58,30,.22), 0 0 0 4px rgba(255,255,255,.8)}}
+
 </style>
 <div data-dc="pp/root" class="pz">
   <div class="far" data-fx-parallax="0.4"></div>
   <canvas data-fx="particles" data-fx-kind="petals" data-fx-n="14" data-fx-colors="#ffd6e2,#ffffff,#ffe9a8"></canvas>
   <div class="top"><span class="back" data-goto="01-home">‹ 返回</span><span class="sp"></span><span class="res">金币 1280</span></div>
-  <div class="stage" data-dc="pp/petstage" data-fx-parallax="1.2"><img src="assets/pp-fox.png" alt="" data-act="toast" data-msg="耳廓狐蹭了蹭你的手（演示）"><span class="disc"></span></div>
+  <div class="stage" data-dc="pp/petstage"><video class="petvid" muted loop playsinline preload="metadata" poster="assets/fox-idle-poster.png" data-dc="pp/pet-fox" data-act="toast" data-msg="耳廓狐蹭了蹭你的手（演示）" aria-label="耳廓狐动态立绘"><source src="assets/fox-idle.webm" type="video/webm"><source src="assets/fox-idle.mp4" type="video/mp4"></video><span class="disc"></span></div>
   <div class="acts">
     <span class="a" data-dc="pp/pet" data-act="toast" data-msg="抚摸：好感 +2，尾巴摇起来了（演示）"><svg width="16" height="16" viewBox="0 0 24 24" style="fill:none;stroke:#b0552f;stroke-width:2.1;stroke-linecap:round"><path d="M12 21s-7-4.6-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.4-7 10-7 10z"/></svg>抚摸</span>
     <span class="a" data-dc="pp/feed" data-act="toast" data-msg="喂食：冻干一枚，好感 +1（演示）"><svg width="16" height="16" viewBox="0 0 24 24" style="fill:none;stroke:#b0552f;stroke-width:2.1;stroke-linecap:round"><path d="M4 12h16M6 12c0 4 3 7 6 7s6-3 6-7M9 8c0-2 1.4-3 3-3s3 1 3 3"/></svg>喂食</span>
@@ -33,4 +36,5 @@
   </div>
   <div class="panel"><button class="main" data-act="toast" data-msg="开始互动：摸摸头→击掌→转圈（演示）">开始互动</button><span class="sub" data-act="toast" data-msg="好感 Lv.4：72/100（演示）">查看好感</span></div>
   <div class="nav" data-dc="pp/tabs"><span data-dc="pp/tab-home" data-goto="01-home">乐园</span><span class="on" data-goto="02-interact">动物</span><span data-goto="03-band">乐队</span><span data-goto="05-build">家园</span><span data-goto="07-tasks">任务</span></div>
+<script>(()=>{const v=document.querySelector(".petvid");if(!v)return;const mq=matchMedia("(prefers-reduced-motion: reduce)");const f=()=>{if(mq.matches){v.pause();v.currentTime=0;}else v.play().catch(()=>{});};f();mq.addEventListener("change",f);})();</script>
 </div>

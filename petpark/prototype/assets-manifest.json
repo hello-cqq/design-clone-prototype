@@ -113,7 +113,26 @@
    "source": "genimg",
    "prompt": "舞台背景",
    "at": "2026-09-16T00:00:00.000Z"
+  },
+  "fox-idle.mp4": {
+   "file": "fox-idle.mp4",
+   "source": "agent-media",
+   "engine": "agent-native",
+   "consent": "session-approved",
+   "checks": {
+    "codec": "h264",
+    "duration": 4,
+    "bytes": 593303,
+    "final": "/tmp/m102-video/fox-idle.mp4",
+    "also": [
+     "webm",
+     "poster"
+    ],
+    "loop_diff": 34.5,
+    "loop_ok": false
+   },
+   "at": "2026-09-16T09:50:35.262Z"
   }
  },
- "generated_at": "2026-09-16T00:00:00.000Z"
+ "generated_at": "2026-09-16T09:50:35.262Z"
 }
