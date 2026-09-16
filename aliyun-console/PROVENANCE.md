@@ -10,3 +10,4 @@
 - v1.0.0: initial publish
 - v1.6.3: M98 asset normalization — appicon set re-derived from curated icon, cover recomposed (cover.mjs), orphan hashed shells removed, PROVENANCE regenerated with real gate values
 - v1.6.4: ship prototype/export/all.zip (M84 offline export pack, M98 SPEC whitelist exception)
+- v1.6.5: export/all.zip actually committed (prior PR copied to wrong path)

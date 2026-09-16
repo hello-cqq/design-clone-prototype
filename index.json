@@ -1,6 +1,6 @@
 {
  "version": 3,
- "updated_at": "2026-09-16T00:32:56.816Z",
+ "updated_at": "2026-09-16T01:09:35.287Z",
  "apps": [
   {
    "app": "ai-assistant",
@@ -55,23 +55,23 @@
      "name": "设置·形象音色"
     }
    ],
-   "downloads": 5,
+   "downloads": 6,
    "creator": "hello-cqq",
    "icon": "ai-assistant/prototype/appicon/icon-256.png",
    "contributors": [
     {
-     "name": "AhahahQ",
-     "login": "AhahahQ",
-     "commits": 11
-    },
-    {
      "name": "cqq",
      "login": "hello-cqq",
-     "commits": 1
+     "commits": 2
+    },
+    {
+     "name": "AhahahQ",
+     "login": "AhahahQ",
+     "commits": 2
     }
    ],
-   "commits": 12,
-   "updated": "2026-09-16T08:32:23+08:00"
+   "commits": 4,
+   "updated": "2026-09-16T08:56:58+08:00"
   },
   {
    "app": "wechat",
@@ -180,23 +180,23 @@
      "name": "加载态"
     }
    ],
-   "downloads": 5,
+   "downloads": 6,
    "creator": "hello-cqq",
    "icon": "wechat/prototype/appicon/icon-256.png",
    "contributors": [
     {
-     "name": "AhahahQ",
-     "login": "AhahahQ",
-     "commits": 10
-    },
-    {
      "name": "cqq",
      "login": "hello-cqq",
-     "commits": 7
+     "commits": 2
+    },
+    {
+     "name": "AhahahQ",
+     "login": "AhahahQ",
+     "commits": 2
     }
    ],
-   "commits": 18,
-   "updated": "2026-09-16T08:32:23+08:00"
+   "commits": 4,
+   "updated": "2026-09-16T08:56:58+08:00"
   },
   {
    "app": "aliyun-console",
@@ -257,23 +257,23 @@
      "name": "定价详情"
     }
    ],
-   "downloads": 4,
+   "downloads": 5,
    "creator": "hello-cqq",
    "icon": "aliyun-console/prototype/appicon/icon-256.png",
    "contributors": [
     {
-     "name": "AhahahQ",
-     "login": "AhahahQ",
-     "commits": 9
-    },
-    {
      "name": "cqq",
      "login": "hello-cqq",
-     "commits": 7
+     "commits": 2
+    },
+    {
+     "name": "AhahahQ",
+     "login": "AhahahQ",
+     "commits": 2
     }
    ],
-   "commits": 17,
-   "updated": "2026-09-16T08:32:23+08:00"
+   "commits": 4,
+   "updated": "2026-09-16T08:56:58+08:00"
   },
   {
    "app": "petpark",
@@ -340,23 +340,23 @@
      "name": "任务与活动"
     }
    ],
-   "downloads": 4,
+   "downloads": 5,
    "creator": "hello-cqq",
    "icon": "petpark/prototype/appicon/icon-256.png",
    "contributors": [
     {
-     "name": "AhahahQ",
-     "login": "AhahahQ",
-     "commits": 12
-    },
-    {
      "name": "cqq",
      "login": "hello-cqq",
-     "commits": 9
+     "commits": 2
+    },
+    {
+     "name": "AhahahQ",
+     "login": "AhahahQ",
+     "commits": 2
     }
    ],
-   "commits": 22,
-   "updated": "2026-09-16T08:32:23+08:00"
+   "commits": 4,
+   "updated": "2026-09-16T08:56:58+08:00"
   },
   {
    "app": "lark",
@@ -446,23 +446,23 @@
      "name": "联系人卡片"
     }
    ],
-   "downloads": 3,
+   "downloads": 4,
    "creator": "hello-cqq",
    "icon": "lark/prototype/appicon/icon-256.png",
    "contributors": [
     {
-     "name": "AhahahQ",
-     "login": "AhahahQ",
-     "commits": 10
-    },
-    {
      "name": "cqq",
      "login": "hello-cqq",
-     "commits": 7
+     "commits": 2
+    },
+    {
+     "name": "AhahahQ",
+     "login": "AhahahQ",
+     "commits": 2
     }
    ],
-   "commits": 18,
-   "updated": "2026-09-16T08:32:23+08:00"
+   "commits": 4,
+   "updated": "2026-09-16T08:56:58+08:00"
   }
  ]
 }
