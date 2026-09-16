@@ -23,7 +23,7 @@
     "spec_version": 1,
     "change_log": [
       {
-        "at": "2026-09-16T05:24:15.996Z",
+        "at": "2026-09-16T12:17:09.213Z",
         "by": "clone",
         "note": "collect-design 初始/重采集（computed 真值）"
       }
@@ -31,34 +31,74 @@
   },
   "regions": [
     {
-      "id": "r_pp_petstage",
+      "id": "r_pp_tk1",
       "type": "custom",
-      "label": "",
+      "label": "和耳廓狐唱歌奖励 120 金币去完成",
       "components": [
         {
           "kind": "image",
-          "label": "",
+          "label": ""
+        },
+        {
+          "kind": "button",
+          "label": "去完成",
           "interaction": {
             "act": "toast",
-            "msg": "耳廓狐蹭了蹭你的手（演示）"
-          }
+            "msg": "进度 +10%（演示）"
+          },
+          "sample_value": "去完成"
         }
       ]
     },
     {
-      "id": "r_pp_pet",
+      "id": "r_pp_go",
       "type": "custom",
-      "label": "抚摸"
+      "label": "去完成"
     },
     {
-      "id": "r_pp_feed",
-      "type": "list",
-      "label": "喂食"
+      "id": "r_pp_tk2",
+      "type": "custom",
+      "label": "组建 3 人乐队奖励 80 钻石去完成",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        },
+        {
+          "kind": "button",
+          "label": "去完成",
+          "interaction": {
+            "act": "goto",
+            "to": "03-band"
+          },
+          "sample_value": "去完成"
+        }
+      ]
     },
     {
-      "id": "r_pp_sing",
+      "id": "r_pp_tk3",
       "type": "custom",
-      "label": "唱歌"
+      "label": "装饰家园奖励 家具券去完成",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        },
+        {
+          "kind": "button",
+          "label": "去完成",
+          "interaction": {
+            "act": "goto",
+            "to": "05-build"
+          },
+          "sample_value": "去完成"
+        }
+      ]
+    },
+    {
+      "id": "r_pp_ev",
+      "type": "custom",
+      "label": "周末音乐节完成乐队表演，得限定舞台皮肤"
     },
     {
       "id": "r_pp_tabs",
