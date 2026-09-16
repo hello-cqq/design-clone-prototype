@@ -24,13 +24,46 @@
     "spec_version": 1,
     "change_log": [
       {
-        "at": "2026-09-14T15:47:13.967Z",
+        "at": "2026-09-16T05:22:12.252Z",
         "by": "clone",
         "note": "collect-design 初始/重采集（computed 真值）"
       }
     ]
   },
   "regions": [
+    {
+      "id": "r_as_vh",
+      "type": "custom",
+      "label": "",
+      "components": [
+        {
+          "kind": "image",
+          "label": "",
+          "interaction": {
+            "act": "toast",
+            "msg": "星海朝你挥了挥手（演示）"
+          }
+        },
+        {
+          "kind": "image",
+          "label": "",
+          "interaction": {
+            "act": "toast",
+            "msg": "海西比了个 OK（演示）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "r_as_vh_xinghai",
+      "type": "custom",
+      "label": ""
+    },
+    {
+      "id": "r_as_vh_haixi",
+      "type": "custom",
+      "label": ""
+    },
     {
       "id": "r_as_personas",
       "type": "grid",

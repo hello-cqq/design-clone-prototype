@@ -1,15 +1,41 @@
 {
-  "00-launch": [
+ "01-home": [
+  {
+   "target": "as/vh-xinghai",
+   "label": "星海全身虚拟人（idle 动效层）",
+   "notes": [
     {
-      "target": "as/root",
-      "label": "冒烟标注",
-      "note": "",
-      "notes": [
-        {
-          "event": "点击",
-          "response": "跳转到详情"
-        }
-      ]
+     "event": "tap",
+     "response": "toast 挥手"
     }
-  ]
+   ],
+   "note": "M99-4C"
+  }
+ ],
+ "02-chat": [
+  {
+   "target": "as/send",
+   "label": "发送按钮",
+   "notes": [
+    {
+     "event": "tap",
+     "response": "toast 演示回复"
+    }
+   ],
+   "note": "M99-4C"
+  }
+ ],
+ "03-call": [
+  {
+   "target": "as/vh-xinghai",
+   "label": "通话中的星海（全身层）",
+   "notes": [
+    {
+     "event": "tap",
+     "response": "toast 倾听反馈"
+    }
+   ],
+   "note": "M99-4C"
+  }
+ ]
 }

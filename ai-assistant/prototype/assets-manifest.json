@@ -1,0 +1,89 @@
+{
+ "assets": {
+  "as-bg-day.png": {
+   "file": "as-bg-day.png",
+   "source": "genimg",
+   "prompt": "wide empty background band only, ghibli-grade day sea horizon, towering cumulus clouds, sun glitter path on water, volumetric god rays, layered atmospheric depth, no people, no text, no watermark",
+   "style": "anime-cel",
+   "seed": 42,
+   "at": "2026-09-13T02:12:30.413Z"
+  },
+  "as-bg-night.png": {
+   "file": "as-bg-night.png",
+   "source": "genimg",
+   "prompt": "wide empty background band only, night sea horizon, dense starfield and milky way, moon glitter path, deep indigo teal palette, layered atmospheric depth, no people, no text",
+   "style": "anime-cel",
+   "seed": 42,
+   "at": "2026-09-13T02:13:15.593Z"
+  },
+  "as-home.png": {
+   "file": "as-home.png",
+   "source": "genimg",
+   "prompt": "young woman with black bob hair and white shirt standing at day sea horizon, waving gently with warm smile, strong rim light, hair strand highlights, cel shading 2-3 tone steps, vertical composition, clouds behind, studio key visual",
+   "style": "anime-cel",
+   "seed": 42,
+   "at": "2026-09-13T02:14:00.753Z"
+  },
+  "as-call.png": {
+   "file": "as-call.png",
+   "source": "genimg",
+   "prompt": "young woman with black bob hair inside a glowing holographic call ring at night sea, soft teal hologram light on face, sparkles floating, cel shading, rim light, vertical composition, studio key visual",
+   "style": "anime-cel",
+   "seed": 42,
+   "at": "2026-09-13T02:14:03.658Z"
+  },
+  "as-persona.png": {
+   "file": "as-persona.png",
+   "source": "genimg",
+   "prompt": "two anime characters side by side, left young woman black bob hair day sky background, right young man black hair night starry background, split composition down middle, cel shading, rim light, studio key visual, no text",
+   "style": "anime-cel",
+   "seed": 42,
+   "at": "2026-09-13T02:14:46.152Z"
+  },
+  "as-me.png": {
+   "file": "as-me.png",
+   "source": "genimg",
+   "prompt": "bust portrait of young woman black bob hair white shirt, soft day light, sea bokeh behind, gentle confident expression, cel shading with subsurface glow, square crop",
+   "style": "anime-cel",
+   "seed": 42,
+   "at": "2026-09-13T02:15:29.072Z"
+  },
+  "assistant-girl.png": {
+   "file": "assistant-girl.png",
+   "source": "genimg",
+   "prompt": "site character 星海 full-body (M96/M99)",
+   "at": "2026-09-16T00:00:00.000Z"
+  },
+  "assistant-boy.png": {
+   "file": "assistant-boy.png",
+   "source": "genimg",
+   "prompt": "site character 海西 full-body (M96/M99)",
+   "at": "2026-09-16T00:00:00.000Z"
+  },
+  "xh-bg-day.png": {
+   "file": "xh-bg-day.png",
+   "source": "genimg",
+   "prompt": "shinkai sea-sky day band",
+   "at": "2026-09-16T00:00:00.000Z"
+  },
+  "xh-bg-night.png": {
+   "file": "xh-bg-night.png",
+   "source": "genimg",
+   "prompt": "shinkai star-sea night band",
+   "at": "2026-09-16T00:00:00.000Z"
+  },
+  "xh-xinghai.png": {
+   "file": "xh-xinghai.png",
+   "source": "genimg",
+   "prompt": "星海 bust",
+   "at": "2026-09-16T00:00:00.000Z"
+  },
+  "xh-haixi.png": {
+   "file": "xh-haixi.png",
+   "source": "genimg",
+   "prompt": "海西 bust",
+   "at": "2026-09-16T00:00:00.000Z"
+  }
+ },
+ "generated_at": "2026-09-16T00:00:00.000Z"
+}
