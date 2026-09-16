@@ -15,7 +15,7 @@ export const VIEWPORT = { c_mobile: [390, 844], c_tablet: [834, 1194], c_desktop
 export const LICENSES_OK = /^(CC-BY-4\.0|CC-BY-SA-4\.0|CC-BY-NC-4\.0|CC0-1\.0|MIT|Apache-2\.0)$/;
 export const ATTEST = ["original", "licensed", "public-material"];
 export const FORBIDDEN = [
-  /(^|\/)node_modules\//, /(^|\/)export\//, /(^|\/)qa\//, /(^|\/)capture\//, /(^|\/)\.cache\//,
+  /(^|\/)node_modules\//, /(^|\/)export\/(?!all\.zip$)/, // M98: 唯一例外=prototype/export/all.zip 离线导出包（M84 功能真上线） /(^|\/)qa\//, /(^|\/)capture\//, /(^|\/)\.cache\//,
   /\.(mp4|webm|mov|avi)$/i, /\.map$/i, /\.(ttf|otf|woff2?)$/i,
 ];
 export const MAX_BYTES = 80 * 1024 * 1024;
