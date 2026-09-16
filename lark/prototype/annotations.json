@@ -1,1 +1,27 @@
-{"14-group-chat": [{"target": "lk/head", "label": "群设置入口", "notes": [{"event": "tap", "response": "打开群设置模态"}]}]}
+{
+  "14-group-chat": [
+    {
+      "target": "lk/head",
+      "label": "群设置入口",
+      "notes": [
+        {
+          "event": "tap",
+          "response": "打开群设置模态"
+        }
+      ]
+    }
+  ],
+  "01-messages": [
+    {
+      "target": "msg/root",
+      "label": "冒烟标注",
+      "note": "",
+      "notes": [
+        {
+          "event": "点击",
+          "response": "跳转到详情"
+        }
+      ]
+    }
+  ]
+}
