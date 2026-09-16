@@ -84,7 +84,8 @@ for (const t of targets) {
   if (bytes > MAX_BYTES) fail(`${tag}: ${Math.round(bytes / 1e6)}MB 超 80MB 上限`);
   for (const rel of walkRel(t.dir)) {
     const norm = rel.split(path.sep).join("/");
-    if (FORBIDDEN.some((r) => r.test("/" + norm))) fail(`${tag}: 禁名单文件 ${norm}`);
+    if (FORBIDDEN.some((r) => r.test("/" + norm)) && !/^prototype\/assets\/[^/]+\.(mp4|webm)$/.test(norm)) fail(`${tag}: 禁名单文件 ${norm}`); // M102/ADR-M99-video: video hero 资产豁免
+    if (/^prototype\/assets\/[^/]+\.(mp4|webm)$/.test(norm) && fs.statSync(path.join(t.dir, norm)).size > 2 * 1024 * 1024) fail(`${tag}: video hero 单件 >2MB ${norm}`);
     if (/^prototype\/views\//.test(norm) === false && /(^|\/)(mobile|tablet|desktop|web)(-android|-ios|-ipad|-mac|-win|-linux)?(-cn|-global)?\/prototype\//.test("/" + norm)) fail(`${tag}: 检测到 flavor 子目录残留（v2 已废）`);
   }
   try {
