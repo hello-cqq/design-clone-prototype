@@ -1,6 +1,6 @@
 {
  "version": 3,
- "updated_at": "2026-09-16T01:09:35.287Z",
+ "updated_at": "2026-09-16T01:14:30.689Z",
  "apps": [
   {
    "app": "ai-assistant",
@@ -22,7 +22,7 @@
    ],
    "category": "social",
    "shell": "c_mobile",
-   "version": "3.0.3",
+   "version": "3.0.4",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -60,18 +60,18 @@
    "icon": "ai-assistant/prototype/appicon/icon-256.png",
    "contributors": [
     {
-     "name": "cqq",
-     "login": "hello-cqq",
-     "commits": 2
-    },
-    {
      "name": "AhahahQ",
      "login": "AhahahQ",
-     "commits": 2
+     "commits": 12
+    },
+    {
+     "name": "cqq",
+     "login": "hello-cqq",
+     "commits": 1
     }
    ],
-   "commits": 4,
-   "updated": "2026-09-16T08:56:58+08:00"
+   "commits": 13,
+   "updated": "2026-09-16T09:14:00+08:00"
   },
   {
    "app": "wechat",
@@ -91,7 +91,7 @@
    ],
    "category": "social",
    "shell": "c_mobile",
-   "version": "1.6.4",
+   "version": "1.6.5",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "app",
@@ -185,18 +185,18 @@
    "icon": "wechat/prototype/appicon/icon-256.png",
    "contributors": [
     {
-     "name": "cqq",
-     "login": "hello-cqq",
-     "commits": 2
-    },
-    {
      "name": "AhahahQ",
      "login": "AhahahQ",
-     "commits": 2
+     "commits": 11
+    },
+    {
+     "name": "cqq",
+     "login": "hello-cqq",
+     "commits": 7
     }
    ],
-   "commits": 4,
-   "updated": "2026-09-16T08:56:58+08:00"
+   "commits": 19,
+   "updated": "2026-09-16T09:14:00+08:00"
   },
   {
    "app": "aliyun-console",
@@ -216,7 +216,7 @@
    ],
    "category": "cloud",
    "shell": "c_browser",
-   "version": "1.6.4",
+   "version": "1.6.5",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "web",
@@ -262,18 +262,18 @@
    "icon": "aliyun-console/prototype/appicon/icon-256.png",
    "contributors": [
     {
-     "name": "cqq",
-     "login": "hello-cqq",
-     "commits": 2
-    },
-    {
      "name": "AhahahQ",
      "login": "AhahahQ",
-     "commits": 2
+     "commits": 10
+    },
+    {
+     "name": "cqq",
+     "login": "hello-cqq",
+     "commits": 7
     }
    ],
-   "commits": 4,
-   "updated": "2026-09-16T08:56:58+08:00"
+   "commits": 18,
+   "updated": "2026-09-16T09:14:00+08:00"
   },
   {
    "app": "petpark",
@@ -295,7 +295,7 @@
    ],
    "category": "game",
    "shell": "c_mobile",
-   "version": "3.0.3",
+   "version": "3.0.4",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -345,18 +345,18 @@
    "icon": "petpark/prototype/appicon/icon-256.png",
    "contributors": [
     {
-     "name": "cqq",
-     "login": "hello-cqq",
-     "commits": 2
-    },
-    {
      "name": "AhahahQ",
      "login": "AhahahQ",
-     "commits": 2
+     "commits": 13
+    },
+    {
+     "name": "cqq",
+     "login": "hello-cqq",
+     "commits": 9
     }
    ],
-   "commits": 4,
-   "updated": "2026-09-16T08:56:58+08:00"
+   "commits": 23,
+   "updated": "2026-09-16T09:14:00+08:00"
   },
   {
    "app": "lark",
@@ -377,7 +377,7 @@
    ],
    "category": "office",
    "shell": "c_desktop",
-   "version": "1.6.4",
+   "version": "1.6.5",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "app",
@@ -451,18 +451,18 @@
    "icon": "lark/prototype/appicon/icon-256.png",
    "contributors": [
     {
-     "name": "cqq",
-     "login": "hello-cqq",
-     "commits": 2
-    },
-    {
      "name": "AhahahQ",
      "login": "AhahahQ",
-     "commits": 2
+     "commits": 11
+    },
+    {
+     "name": "cqq",
+     "login": "hello-cqq",
+     "commits": 7
     }
    ],
-   "commits": 4,
-   "updated": "2026-09-16T08:56:58+08:00"
+   "commits": 19,
+   "updated": "2026-09-16T09:14:00+08:00"
   }
  ]
 }
