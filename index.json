@@ -1,6 +1,6 @@
 {
  "version": 3,
- "updated_at": "2026-09-15T23:56:02.129Z",
+ "updated_at": "2026-09-16T00:00:45.963Z",
  "apps": [
   {
    "app": "wechat",
@@ -114,13 +114,18 @@
    "icon": "wechat/prototype/appicon/icon-256.png",
    "contributors": [
     {
+     "name": "AhahahQ",
+     "login": "AhahahQ",
+     "commits": 9
+    },
+    {
      "name": "cqq",
      "login": "hello-cqq",
-     "commits": 1
+     "commits": 7
     }
    ],
-   "commits": 1,
-   "updated": "2026-09-15T21:10:39+08:00"
+   "commits": 17,
+   "updated": "2026-09-16T08:00:13+08:00"
   },
   {
    "app": "ai-assistant",
@@ -180,13 +185,18 @@
    "icon": "ai-assistant/prototype/appicon/icon-256.png",
    "contributors": [
     {
+     "name": "AhahahQ",
+     "login": "AhahahQ",
+     "commits": 10
+    },
+    {
      "name": "cqq",
      "login": "hello-cqq",
      "commits": 1
     }
    ],
-   "commits": 1,
-   "updated": "2026-09-15T21:10:39+08:00"
+   "commits": 11,
+   "updated": "2026-09-16T08:00:13+08:00"
   },
   {
    "app": "aliyun-console",
@@ -252,13 +262,18 @@
    "icon": "aliyun-console/prototype/appicon/icon-256.png",
    "contributors": [
     {
+     "name": "AhahahQ",
+     "login": "AhahahQ",
+     "commits": 8
+    },
+    {
      "name": "cqq",
      "login": "hello-cqq",
-     "commits": 1
+     "commits": 7
     }
    ],
-   "commits": 1,
-   "updated": "2026-09-15T21:10:39+08:00"
+   "commits": 16,
+   "updated": "2026-09-16T08:00:13+08:00"
   },
   {
    "app": "lark",
@@ -353,13 +368,18 @@
    "icon": "lark/prototype/appicon/icon-256.png",
    "contributors": [
     {
+     "name": "AhahahQ",
+     "login": "AhahahQ",
+     "commits": 9
+    },
+    {
      "name": "cqq",
      "login": "hello-cqq",
-     "commits": 1
+     "commits": 7
     }
    ],
-   "commits": 1,
-   "updated": "2026-09-15T21:10:39+08:00"
+   "commits": 17,
+   "updated": "2026-09-16T08:00:13+08:00"
   },
   {
    "app": "petpark",
@@ -431,13 +451,18 @@
    "icon": "petpark/prototype/appicon/icon-256.png",
    "contributors": [
     {
+     "name": "AhahahQ",
+     "login": "AhahahQ",
+     "commits": 11
+    },
+    {
      "name": "cqq",
      "login": "hello-cqq",
-     "commits": 1
+     "commits": 9
     }
    ],
-   "commits": 1,
-   "updated": "2026-09-15T21:10:39+08:00"
+   "commits": 21,
+   "updated": "2026-09-16T08:00:13+08:00"
   }
  ]
 }
