@@ -29,10 +29,10 @@ Every app MUST carry, at app root:
 
 ## 2. `prototype/` content whitelist
 
-Allowed: `index.html`, `views/`, `assets/`, `inspector.*`, `runtime.*`, `zipstore.*`,
+Allowed: `index.html`, `views/`, `assets/`, `inspector.*`, `runtime.*`, `zipstore.*`, `export/all.zip` (offline export pack, M84/M98),
 `utilities.css`, `paths.json`, `journeys.json`, `products.json`, `annotations.json`,
 `variants/`, `design/`, `pages/`, `version.json`, `appicon/`.
-Forbidden (CI fails): `node_modules/`, `export/`, `qa/`, `capture/`, videos, `.cache/`,
+Forbidden (CI fails): `node_modules/`, `export/` (except the single `export/all.zip`), `qa/`, `capture/`, videos, `.cache/`,
 `*.map`, font binaries, any third-party runtime CDN reference (must work fully offline).
 
 ## 3. `meta.json` schema (v2)
