@@ -1,7 +1,7 @@
 {
   "meta": {
     "generator": "design-clone collect-design",
-    "generated_at": "2026-09-14T15:47:13.967Z",
+    "generated_at": "2026-09-16T12:15:03.482Z",
     "source_run": "demo-assistant",
     "schema": "figma-source/v1"
   },
@@ -84,6 +84,66 @@
             "y": 0,
             "w": 390,
             "h": 844
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(234, 244, 255)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/vh",
+          "kind": "frame",
+          "rect": {
+            "x": 47,
+            "y": 514,
+            "w": 296,
+            "h": 238
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(234, 244, 255)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/vh-xinghai",
+          "kind": "image",
+          "rect": {
+            "x": 52,
+            "y": 525,
+            "w": 141,
+            "h": 226
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(234, 244, 255)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/vh-haixi",
+          "kind": "image",
+          "rect": {
+            "x": 197,
+            "y": 514,
+            "w": 139,
+            "h": 238
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(234, 244, 255)",
@@ -247,6 +307,66 @@
           "text": ""
         },
         {
+          "dc": "as/vh",
+          "kind": "frame",
+          "rect": {
+            "x": 47,
+            "y": 514,
+            "w": 296,
+            "h": 238
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(234, 244, 255)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/vh-xinghai",
+          "kind": "image",
+          "rect": {
+            "x": 52,
+            "y": 525,
+            "w": 141,
+            "h": 226
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(234, 244, 255)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/vh-haixi",
+          "kind": "image",
+          "rect": {
+            "x": 197,
+            "y": 514,
+            "w": 139,
+            "h": 238
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(234, 244, 255)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
           "dc": "as/personas",
           "kind": "frame",
           "rect": {
@@ -373,7 +493,7 @@
       "name": "视频通话",
       "frame": {
         "width": 390,
-        "height": 844
+        "height": 848
       },
       "nodes": [
         {
@@ -383,9 +503,9 @@
             "x": 0,
             "y": 0,
             "w": 390,
-            "h": 844
+            "h": 848
           },
-          "fill": "rgba(0, 0, 0, 0)",
+          "fill": "rgb(11, 30, 51)",
           "color": "rgb(234, 244, 255)",
           "cornerRadius": 0,
           "font": {
@@ -397,13 +517,13 @@
           "text": ""
         },
         {
-          "dc": "as/personas",
+          "dc": "as/call-vid",
           "kind": "frame",
           "rect": {
-            "x": 16,
-            "y": 96,
-            "w": 358,
-            "h": 323
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 524
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(234, 244, 255)",
@@ -417,13 +537,33 @@
           "text": ""
         },
         {
-          "dc": "as/tabs",
+          "dc": "as/vid-ctl",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 525,
+            "w": 83,
+            "h": 22
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(234, 244, 255)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": "⏯ 动态背景"
+        },
+        {
+          "dc": "as/vh",
           "kind": "frame",
           "rect": {
-            "x": 14,
-            "y": 766,
-            "w": 362,
-            "h": 57
+            "x": 0,
+            "y": 548,
+            "w": 390,
+            "h": 300
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(234, 244, 255)",
@@ -437,82 +577,122 @@
           "text": ""
         },
         {
-          "dc": "as/tab-home",
-          "kind": "button",
+          "dc": "as/vh-xinghai",
+          "kind": "image",
           "rect": {
-            "x": 14,
-            "y": 766,
-            "w": 83,
-            "h": 57
+            "x": 0,
+            "y": 548,
+            "w": 234,
+            "h": 300
           },
-          "fill": "rgba(14, 42, 74, 0.6)",
-          "color": "rgb(143, 208, 255)",
-          "cornerRadius": 18,
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(234, 244, 255)",
+          "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
-            "size": 11,
-            "weight": 600,
-            "lineHeight": 17
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
           },
           "text": ""
         },
         {
-          "dc": "as/tab-chat",
-          "kind": "button",
+          "dc": "as/call",
+          "kind": "frame",
           "rect": {
-            "x": 107,
-            "y": 766,
-            "w": 83,
-            "h": 57
+            "x": 59,
+            "y": 183,
+            "w": 273,
+            "h": 380
           },
-          "fill": "rgba(14, 42, 74, 0.6)",
-          "color": "rgb(188, 216, 242)",
-          "cornerRadius": 18,
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(234, 244, 255)",
+          "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
-            "size": 11,
+            "size": 16,
             "weight": 400,
-            "lineHeight": 17
+            "lineHeight": 24
           },
           "text": ""
         },
         {
-          "dc": "as/tab-call",
-          "kind": "button",
+          "dc": "as/wave",
+          "kind": "frame",
           "rect": {
-            "x": 200,
-            "y": 766,
-            "w": 83,
-            "h": 57
+            "x": 157,
+            "y": 668,
+            "w": 76,
+            "h": 30
           },
-          "fill": "rgba(14, 42, 74, 0.6)",
-          "color": "rgb(188, 216, 242)",
-          "cornerRadius": 18,
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(234, 244, 255)",
+          "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
-            "size": 11,
+            "size": 16,
             "weight": 400,
-            "lineHeight": 17
+            "lineHeight": 24
           },
           "text": ""
         },
         {
-          "dc": "as/voice-entry",
-          "kind": "button",
+          "dc": "as/ctrls",
+          "kind": "frame",
           "rect": {
-            "x": 293,
-            "y": 766,
-            "w": 83,
-            "h": 57
+            "x": 22,
+            "y": 730,
+            "w": 346,
+            "h": 74
           },
-          "fill": "rgba(14, 42, 74, 0.6)",
-          "color": "rgb(188, 216, 242)",
-          "cornerRadius": 18,
+          "fill": "rgba(14, 42, 74, 0.42)",
+          "color": "rgb(234, 244, 255)",
+          "cornerRadius": 999,
           "font": {
             "family": "ui-rounded",
-            "size": 11,
+            "size": 16,
             "weight": 400,
-            "lineHeight": 17
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/mic",
+          "kind": "button",
+          "rect": {
+            "x": 50,
+            "y": 743,
+            "w": 48,
+            "h": 48
+          },
+          "fill": "rgba(255, 255, 255, 0.12)",
+          "color": "rgb(234, 244, 255)",
+          "cornerRadius": 50,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/end",
+          "kind": "button",
+          "rect": {
+            "x": 212,
+            "y": 743,
+            "w": 48,
+            "h": 48
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(234, 244, 255)",
+          "cornerRadius": 50,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
           },
           "text": ""
         }
@@ -536,7 +716,7 @@
             "h": 844
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(234, 244, 255)",
+          "color": "rgb(23, 54, 79)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -551,12 +731,52 @@
           "kind": "frame",
           "rect": {
             "x": 16,
-            "y": 96,
+            "y": 90,
             "w": 358,
-            "h": 323
+            "h": 134
+          },
+          "fill": "rgba(255, 255, 255, 0.68)",
+          "color": "rgb(23, 54, 79)",
+          "cornerRadius": 22,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/voices",
+          "kind": "frame",
+          "rect": {
+            "x": 33,
+            "y": 280,
+            "w": 324,
+            "h": 35
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(234, 244, 255)",
+          "color": "rgb(23, 54, 79)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/bgs",
+          "kind": "frame",
+          "rect": {
+            "x": 33,
+            "y": 387,
+            "w": 324,
+            "h": 35
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(23, 54, 79)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -576,7 +796,7 @@
             "h": 57
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(234, 244, 255)",
+          "color": "rgb(23, 54, 79)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -595,13 +815,13 @@
             "w": 83,
             "h": 57
           },
-          "fill": "rgba(14, 42, 74, 0.6)",
-          "color": "rgb(143, 208, 255)",
+          "fill": "rgba(255, 255, 255, 0.85)",
+          "color": "rgb(63, 108, 143)",
           "cornerRadius": 18,
           "font": {
             "family": "ui-rounded",
             "size": 11,
-            "weight": 600,
+            "weight": 400,
             "lineHeight": 17
           },
           "text": ""
@@ -615,8 +835,8 @@
             "w": 83,
             "h": 57
           },
-          "fill": "rgba(14, 42, 74, 0.6)",
-          "color": "rgb(188, 216, 242)",
+          "fill": "rgba(255, 255, 255, 0.85)",
+          "color": "rgb(63, 108, 143)",
           "cornerRadius": 18,
           "font": {
             "family": "ui-rounded",
@@ -635,28 +855,8 @@
             "w": 83,
             "h": 57
           },
-          "fill": "rgba(14, 42, 74, 0.6)",
-          "color": "rgb(188, 216, 242)",
-          "cornerRadius": 18,
-          "font": {
-            "family": "ui-rounded",
-            "size": 11,
-            "weight": 400,
-            "lineHeight": 17
-          },
-          "text": ""
-        },
-        {
-          "dc": "as/voice-entry",
-          "kind": "button",
-          "rect": {
-            "x": 293,
-            "y": 766,
-            "w": 83,
-            "h": 57
-          },
-          "fill": "rgba(14, 42, 74, 0.6)",
-          "color": "rgb(188, 216, 242)",
+          "fill": "rgba(255, 255, 255, 0.85)",
+          "color": "rgb(63, 108, 143)",
           "cornerRadius": 18,
           "font": {
             "family": "ui-rounded",
