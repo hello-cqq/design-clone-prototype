@@ -1,7 +1,7 @@
 {
   "meta": {
     "generator": "design-clone collect-design",
-    "generated_at": "2026-09-14T14:57:50.033Z",
+    "generated_at": "2026-09-16T12:17:09.213Z",
     "source_run": "demo-petpark",
     "schema": "figma-source/v1"
   },
@@ -153,11 +153,31 @@
             "x": 0,
             "y": 64,
             "w": 300,
-            "h": 434
+            "h": 274
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(91, 58, 30)",
           "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/pet-fox",
+          "kind": "button",
+          "rect": {
+            "x": 48,
+            "y": 64,
+            "w": 204,
+            "h": 274
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(91, 58, 30)",
+          "cornerRadius": 22,
           "font": {
             "family": "ui-rounded",
             "size": 16,
@@ -303,11 +323,31 @@
             "x": 0,
             "y": 64,
             "w": 300,
-            "h": 434
+            "h": 274
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(91, 58, 30)",
           "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/pet-fox",
+          "kind": "button",
+          "rect": {
+            "x": 48,
+            "y": 64,
+            "w": 204,
+            "h": 274
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(91, 58, 30)",
+          "cornerRadius": 22,
           "font": {
             "family": "ui-rounded",
             "size": 16,
@@ -453,11 +493,31 @@
             "x": 0,
             "y": 64,
             "w": 300,
-            "h": 434
+            "h": 274
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(91, 58, 30)",
           "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/pet-fox",
+          "kind": "button",
+          "rect": {
+            "x": 48,
+            "y": 64,
+            "w": 204,
+            "h": 274
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(91, 58, 30)",
+          "cornerRadius": 22,
           "font": {
             "family": "ui-rounded",
             "size": 16,
@@ -603,11 +663,31 @@
             "x": 0,
             "y": 64,
             "w": 300,
-            "h": 434
+            "h": 274
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(91, 58, 30)",
           "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/pet-fox",
+          "kind": "button",
+          "rect": {
+            "x": 48,
+            "y": 64,
+            "w": 204,
+            "h": 274
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(91, 58, 30)",
+          "cornerRadius": 22,
           "font": {
             "family": "ui-rounded",
             "size": 16,
@@ -753,11 +833,31 @@
             "x": 0,
             "y": 64,
             "w": 300,
-            "h": 434
+            "h": 274
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(91, 58, 30)",
           "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/pet-fox",
+          "kind": "button",
+          "rect": {
+            "x": 48,
+            "y": 64,
+            "w": 204,
+            "h": 274
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(91, 58, 30)",
+          "cornerRadius": 22,
           "font": {
             "family": "ui-rounded",
             "size": 16,
@@ -897,17 +997,17 @@
           "text": ""
         },
         {
-          "dc": "pp/petstage",
+          "dc": "pp/tk1",
           "kind": "frame",
           "rect": {
-            "x": 0,
-            "y": 64,
-            "w": 300,
-            "h": 434
+            "x": 14,
+            "y": 90,
+            "w": 362,
+            "h": 68
           },
-          "fill": "rgba(0, 0, 0, 0)",
+          "fill": "rgba(255, 255, 255, 0.9)",
           "color": "rgb(91, 58, 30)",
-          "cornerRadius": 0,
+          "cornerRadius": 18,
           "font": {
             "family": "ui-rounded",
             "size": 16,
@@ -917,62 +1017,82 @@
           "text": ""
         },
         {
-          "dc": "pp/pet",
+          "dc": "pp/go",
           "kind": "button",
           "rect": {
-            "x": 324,
-            "y": 321,
-            "w": 52,
-            "h": 52
+            "x": 307,
+            "y": 109,
+            "w": 58,
+            "h": 30
           },
-          "fill": "rgba(255, 255, 255, 0.92)",
-          "color": "rgb(176, 85, 47)",
-          "cornerRadius": 50,
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "cornerRadius": 999,
           "font": {
             "family": "ui-rounded",
-            "size": 10,
+            "size": 11,
             "weight": 600,
-            "lineHeight": 14
+            "lineHeight": 16
+          },
+          "text": "去完成"
+        },
+        {
+          "dc": "pp/tk2",
+          "kind": "frame",
+          "rect": {
+            "x": 14,
+            "y": 168,
+            "w": 362,
+            "h": 68
+          },
+          "fill": "rgba(255, 255, 255, 0.9)",
+          "color": "rgb(91, 58, 30)",
+          "cornerRadius": 18,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
           },
           "text": ""
         },
         {
-          "dc": "pp/feed",
-          "kind": "button",
+          "dc": "pp/tk3",
+          "kind": "frame",
           "rect": {
-            "x": 324,
-            "y": 383,
-            "w": 52,
-            "h": 52
+            "x": 14,
+            "y": 246,
+            "w": 362,
+            "h": 68
           },
-          "fill": "rgba(255, 255, 255, 0.92)",
-          "color": "rgb(176, 85, 47)",
-          "cornerRadius": 50,
+          "fill": "rgba(255, 255, 255, 0.9)",
+          "color": "rgb(91, 58, 30)",
+          "cornerRadius": 18,
           "font": {
             "family": "ui-rounded",
-            "size": 10,
-            "weight": 600,
-            "lineHeight": 14
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
           },
           "text": ""
         },
         {
-          "dc": "pp/sing",
-          "kind": "button",
+          "dc": "pp/ev",
+          "kind": "frame",
           "rect": {
-            "x": 324,
-            "y": 445,
-            "w": 52,
-            "h": 52
+            "x": 14,
+            "y": 324,
+            "w": 362,
+            "h": 67
           },
-          "fill": "rgba(255, 255, 255, 0.92)",
-          "color": "rgb(176, 85, 47)",
-          "cornerRadius": 50,
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(107, 68, 9)",
+          "cornerRadius": 20,
           "font": {
             "family": "ui-rounded",
-            "size": 10,
-            "weight": 600,
-            "lineHeight": 14
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
           },
           "text": ""
         },
