@@ -1,38 +1,23 @@
 #!/usr/bin/env node
 /**
- * thumb.mjs —— 为缺缩略图的 flavor 生成 cover.png（playwright 截 #dc-stage 首屏）。
- * 用法: node scripts/thumb.mjs [app/flavor ...]（无参=全部缺失者）
+ * thumb.mjs —— v2（M98）：由策展 cover.png 派生 thumb.png（640×400 jpg q78）。
+ * v1 曾裸截视口当封面（既不合 3:2 也无场景合成），已废；cover 缺失时跳过并提示跑 skill cover.mjs。
+ * 用法: node scripts/thumb.mjs [app ...]（无参=全部 app）
  */
 import fs from "node:fs";
 import path from "node:path";
 import { createRequire } from "node:module";
-import { listFlavors, readMeta, VIEWPORT, serve } from "./lib.mjs";
+import { listApps } from "./lib.mjs";
 
 const require = createRequire(import.meta.url);
+const sharp = require("sharp");
 const root = path.resolve(".");
-const args = process.argv.slice(2).filter((a) => a.includes("/"));
-let targets = listFlavors(root);
-if (args.length) targets = targets.filter((t) => args.includes(t.app + "/" + t.flavor));
-else targets = targets.filter((t) => !fs.existsSync(path.join(t.dir, "cover.png")));
-if (!targets.length) { console.log("cover: 无缺失"); process.exit(0); }
-
-const { chromium } = require("playwright");
-const browser = await chromium.launch();
+const args = process.argv.slice(2);
+let targets = listApps(root);
+if (args.length) targets = targets.filter((t) => args.includes(t.app));
 for (const t of targets) {
-  const meta = readMeta(t.dir);
-  const [w, h] = VIEWPORT[meta.shell] || VIEWPORT.c_mobile;
-  const { srv, base } = await serve(path.join(t.dir, "prototype"));
-  const page = await browser.newPage({ viewport: { width: w, height: h } });
-  try {
-    await page.goto(base + "/index.html?chrome=0", { waitUntil: "networkidle", timeout: 30000 });
-    await page.waitForTimeout(1500);
-    const el = page.locator("#dc-stage");
-    await (await el.count() ? el : page.locator("body")).screenshot({ path: path.join(t.dir, "cover.png") });
-    console.log("cover:", t.app + "/" + t.flavor);
-  } catch (e) {
-    console.log("thumb FAIL:", t.app + "/" + t.flavor, String(e.message).slice(0, 80));
-  }
-  await page.close();
-  srv.close();
+  const cover = path.join(t.dir, "cover.png");
+  if (!fs.existsSync(cover)) { console.log(`thumb skip ${t.app}: 缺 cover.png（跑 skill gen/cover.mjs）`); continue; }
+  await sharp(cover).resize(640, 400, { fit: "cover" }).jpeg({ quality: 78 }).toFile(path.join(t.dir, "thumb.png"));
+  console.log("thumb:", t.app);
 }
-await browser.close();

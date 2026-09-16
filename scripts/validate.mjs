@@ -47,10 +47,14 @@ const fail = (m) => fails.push(m);
 let targets = listApps(root);
 if (base) {
   let changed = [];
-  try { changed = execSync(`git diff --name-only ${base} HEAD`, { encoding: "utf8" }).split("\n").filter(Boolean); } catch { changed = []; }
-  const touched = new Set(changed.map((c) => (c.split("/")[0] || "")).filter(Boolean));
-  targets = targets.filter((t) => touched.has(t.app));
-  console.log(`validate: 变更 app ${touched.size} 个，命中完整 app 目录 ${targets.length} 个`);
+  try { changed = execSync(`git diff --name-only ${base} HEAD`, { encoding: "utf8" }).split("\n").filter(Boolean); } catch { changed = null; }
+  if (changed === null) {
+    console.log("validate: base diff 不可用——全量校验（防 0 app 空转）");
+  } else {
+    const touched = new Set(changed.map((c) => (c.split("/")[0] || "")).filter(Boolean));
+    targets = targets.filter((t) => touched.has(t.app));
+    console.log(`validate: 变更 app ${touched.size} 个，命中完整 app 目录 ${targets.length} 个`);
+  }
 }
 
 const PII = [/1[3-9]\d{9}/, /\b\d{6}(19|20)\d{2}(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])\b/];
@@ -63,7 +67,7 @@ for (const t of targets) {
   const meta = readMeta(t.dir);
   if (!bi(meta.name)) fail(`${tag}: meta.name 需 {en,zh} 双语非空`);
   if (!bi(meta.description)) fail(`${tag}: meta.description 需 {en,zh} 双语非空`);
-  if (!Array.isArray(meta.tags) || !meta.tags.length) fail(`${tag}: meta.tags 至少 1 个（画廊筛选/搜索依赖）`);
+  if (!Array.isArray(meta.tags) || meta.tags.length < 3 || meta.tags.length > 6) fail(`${tag}: meta.tags 需 3-6 个（SPEC §3 单口径）`);
   if (!SHELLS.includes(meta.shell)) fail(`${tag}: meta.shell 缺失或非法（${SHELLS.join("|")}）`);
   if (!semver(meta.version)) fail(`${tag}: meta.version 非 SemVer`);
   if (!meta.license) warns.push(`${tag}: 缺 license，按 CC-BY-4.0 处理`);
@@ -71,6 +75,11 @@ for (const t of targets) {
   if (!ATTEST.includes(meta.ip_attestation)) fail(`${tag}: ip_attestation 必须为 ${ATTEST.join("|")}`);
   if (meta.ip_attestation !== "original" && !meta.brand_disclaimer) fail(`${tag}: 非原创必须带 brand_disclaimer`);
   if (!meta.source || !meta.source.kind) fail(`${tag}: 缺 source{kind}`);
+  if (!meta.created_at) fail(`${tag}: 缺 meta.created_at（SPEC §3）`);
+  for (const hf of fs.existsSync(path.join(t.dir, "prototype")) ? fs.readdirSync(path.join(t.dir, "prototype")).filter((x) => x.endsWith(".html")) : []) {
+    const h = fs.readFileSync(path.join(t.dir, "prototype", hf), "utf8");
+    if (/<(script|link)[^>]+(src|href)="https?:/i.test(h)) fail(`${tag}: prototype/${hf} 含运行时 CDN 引用（SPEC §2 离线红线）`);
+  }
   const bytes = dirBytes(t.dir);
   if (bytes > MAX_BYTES) fail(`${tag}: ${Math.round(bytes / 1e6)}MB 超 80MB 上限`);
   for (const rel of walkRel(t.dir)) {

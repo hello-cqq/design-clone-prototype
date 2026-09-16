@@ -9,12 +9,13 @@ Machine-checkable rules are enforced by CI (`pr-gate.yml`); the rest by maintain
 
 ```
 <app_name>/meta.json        app meta (bilingual name/description, tags, shell, license, version…)
-<app_name>/icon.png|svg     app icon (optional, 256px+; CI falls back to the site mark)
-<app_name>/cover.png        gallery cover (CI generates from the prototype if missing)
+<app_name>/icon.png|svg     app icon (REQUIRED, 256px+ square; pr-gate fails when missing)
+<app_name>/cover.png        gallery cover (REQUIRED before merge: 1200×800 strict 3:2, ≤300KB, scene-matched composite via skill cover.mjs; CI never auto-generates)
 <app_name>/prototype/       the standard design-clone prototype output (playable on Pages)
 <app_name>/PROVENANCE.md    source & change log
 ```
 
+- `files.json` / `knowledge/` are generated runtime companions (registered here, M98).
 - `app_name`: kebab-case `^[a-z0-9][a-z0-9-]{1,39}$`. Variants are separate apps:
   `wechat` (phone), `wechat-pad`, `wechat-desktop`, `wechat-ios`, …
 - One current version per app. No multi-version directories — history = git + Releases.
@@ -36,7 +37,7 @@ Forbidden (CI fails): `node_modules/`, `export/`, `qa/`, `capture/`, videos, `.c
 
 ## 3. `meta.json` schema (v2)
 
-Required: `name {en, zh}`, `description {en, zh}`, `tags[]` (≥1, lowercase kebab; used by
+Required: `name {en, zh}`, `description {en, zh}`, `tags[]` (3–6, lowercase kebab; used by
 gallery search & filters), `shell` ∈ {c_mobile, c_tablet, c_desktop, c_browser},
 `source {kind: app|web|video|link|original, ref}`, `license` (default CC-BY-4.0),
 `ip_attestation` ∈ {original, licensed, public-material} (+ `attestation_note`),

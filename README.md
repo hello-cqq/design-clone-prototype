@@ -13,8 +13,8 @@ open one and it behaves like the real app (tap through pages, play journeys, exp
 
 ```
 <app_name>/meta.json        app meta (bilingual name/description, tags, shell, license, version…)
-<app_name>/icon.png|svg     app icon (optional, 256px+; CI falls back to the site mark)
-<app_name>/cover.png        gallery cover (strict 3:2, ≤300KB; CI generates from the prototype if missing)
+<app_name>/icon.png|svg     app icon (REQUIRED, 256px+ square)
+<app_name>/cover.png        gallery cover (REQUIRED before merge, cover.mjs composite)
 <app_name>/prototype/       the standard design-clone prototype output (playable on Pages)
 <app_name>/PROVENANCE.md    source & change log
 ```

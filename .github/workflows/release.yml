@@ -15,7 +15,7 @@ jobs:
         run: |
           git config user.name "dc-release-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-      - name: tag + release changed flavors
+      - name: tag + release changed apps
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/release.mjs --from ${{ github.event.before }}
