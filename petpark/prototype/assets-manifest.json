@@ -1,0 +1,119 @@
+{
+ "assets": {
+  "pet-corgi.png": {
+   "file": "pet-corgi.png",
+   "source": "genimg",
+   "prompt": "fluffy corgi puppy sitting full body, plush pixar 3d render, big round head, tiny legs, tongue out, blush cheeks, soft volumetric lighting, solid plain background color #FFF6E9, no human, no text",
+   "style": "pixar-3d",
+   "seed": 5,
+   "at": "2026-09-11T11:24:57.786Z"
+  },
+  "pet-cat.png": {
+   "file": "pet-cat.png",
+   "source": "genimg",
+   "prompt": "grey british shorthair cat sitting full body, plush pixar 3d render, round cheeks, sleepy smile, soft volumetric lighting, solid plain background color #FFF6E9, no human, no text",
+   "style": "pixar-3d",
+   "seed": 9,
+   "at": "2026-09-11T11:25:44.849Z"
+  },
+  "pet-bunny.png": {
+   "file": "pet-bunny.png",
+   "source": "genimg",
+   "prompt": "white lop-eared bunny sitting full body, plush pixar 3d render, long floppy ears, blush cheeks, soft volumetric lighting, solid plain background color #FFF6E9, no human, no text",
+   "style": "pixar-3d",
+   "seed": 14,
+   "at": "2026-09-11T11:26:29.294Z"
+  },
+  "pp-bg.png": {
+   "file": "pp-bg.png",
+   "source": "genimg",
+   "prompt": "wide empty background band only, sunlit forest meadow park, tall trees bokeh, light shafts through leaves, floating pollen motes, layered depth, no animals, no people, no text",
+   "style": "anime-cel",
+   "seed": 42,
+   "at": "2026-09-13T02:16:15.982Z"
+  },
+  "pp-home.png": {
+   "file": "pp-home.png",
+   "source": "genimg",
+   "prompt": "happy corgi puppy sitting on grass hill in sunlit park, butterflies around, strong rim light, cel shading with soft fur tones, vertical composition, studio key visual, no text",
+   "style": "anime-cel",
+   "seed": 42,
+   "at": "2026-09-13T02:17:00.472Z"
+  },
+  "pp-pets.png": {
+   "file": "pp-pets.png",
+   "source": "genimg",
+   "prompt": "three pets lineup on a fallen log: corgi, shiba inu, lop rabbit, sunlit meadow, cel shading, rim light, playful expressions, horizontal composition, no text",
+   "style": "anime-cel",
+   "seed": 42,
+   "at": "2026-09-13T02:17:45.805Z"
+  },
+  "pp-map.png": {
+   "file": "pp-map.png",
+   "source": "genimg",
+   "prompt": "stylized illustrated island park map top-down, winding paths, pond, flower beds, tiny trees, soft painterly colors, game map quality, no text, no labels",
+   "style": "anime-cel",
+   "seed": 42,
+   "at": "2026-09-13T02:17:49.129Z"
+  },
+  "pp-community.png": {
+   "file": "pp-community.png",
+   "source": "genimg",
+   "prompt": "park scene with pets playing frisbee on lawn, corgi mid-jump, shiba watching, golden hour light shafts, cel shading, vertical composition, no text",
+   "style": "anime-cel",
+   "seed": 42,
+   "at": "2026-09-13T02:18:33.787Z"
+  },
+  "pp-me.png": {
+   "file": "pp-me.png",
+   "source": "genimg",
+   "prompt": "close-up corgi head portrait, warm golden light, tongue out smile, soft bokeh meadow behind, cel shading with fur strand highlights, square crop",
+   "style": "anime-cel",
+   "seed": 42,
+   "at": "2026-09-13T02:18:34.902Z"
+  },
+  "pp-fox.png": {
+   "file": "pp-fox.png",
+   "source": "genimg",
+   "prompt": "耳廓狐全身立绘",
+   "at": "2026-09-16T00:00:00.000Z"
+  },
+  "pp-dog.png": {
+   "file": "pp-dog.png",
+   "source": "genimg",
+   "prompt": "柯基全身立绘",
+   "at": "2026-09-16T00:00:00.000Z"
+  },
+  "pp-golden.png": {
+   "file": "pp-golden.png",
+   "source": "genimg",
+   "prompt": "金毛全身立绘",
+   "at": "2026-09-16T00:00:00.000Z"
+  },
+  "pp-ragdoll.png": {
+   "file": "pp-ragdoll.png",
+   "source": "genimg",
+   "prompt": "布偶猫全身立绘",
+   "at": "2026-09-16T00:00:00.000Z"
+  },
+  "pp-slider.png": {
+   "file": "pp-slider.png",
+   "source": "genimg",
+   "prompt": "雪貂全身立绘",
+   "at": "2026-09-16T00:00:00.000Z"
+  },
+  "pp-grass.png": {
+   "file": "pp-grass.png",
+   "source": "genimg",
+   "prompt": "草丘远景带",
+   "at": "2026-09-16T00:00:00.000Z"
+  },
+  "pp-stage.png": {
+   "file": "pp-stage.png",
+   "source": "genimg",
+   "prompt": "舞台背景",
+   "at": "2026-09-16T00:00:00.000Z"
+  }
+ },
+ "generated_at": "2026-09-16T00:00:00.000Z"
+}

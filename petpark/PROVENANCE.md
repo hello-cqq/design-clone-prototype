@@ -11,3 +11,4 @@
 - v3.0.3: ship prototype/export/all.zip (M84 offline export pack, M98 SPEC whitelist exception)
 - v3.0.4: export/all.zip actually committed (prior PR copied to wrong path)
 - v3.0.5: inspector shell M98 (static export pack first-path, deterministic offline export)
+- v3.0.5: M99-4BC — 视图活控件化+全身虚拟人 idle 层+far 背景约定+annotations/spec 卫生+孤儿视图清退+shell 选中语义升级
