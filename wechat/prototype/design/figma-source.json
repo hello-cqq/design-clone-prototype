@@ -1,7 +1,7 @@
 {
   "meta": {
     "generator": "design-clone collect-design",
-    "generated_at": "2026-09-16T13:16:13.736Z",
+    "generated_at": "2026-09-17T05:50:57.383Z",
     "source_run": "wechat-full",
     "schema": "figma-source/v1"
   },
@@ -950,7 +950,7 @@
       },
       "nodes": [
         {
-          "dc": "dc/root",
+          "dc": "sv/root",
           "kind": "frame",
           "rect": {
             "x": 0,
@@ -970,11 +970,11 @@
           "text": ""
         },
         {
-          "dc": "dc/search",
+          "dc": "sv/back",
           "kind": "button",
           "rect": {
-            "x": 318,
-            "y": 17,
+            "x": 16,
+            "y": 18,
             "w": 20,
             "h": 20
           },
@@ -990,36 +990,36 @@
           "text": ""
         },
         {
-          "dc": "dc/plus",
+          "dc": "sv/more",
           "kind": "button",
           "rect": {
-            "x": 354,
-            "y": 17,
-            "w": 20,
-            "h": 20
+            "x": 356,
+            "y": 14,
+            "w": 18,
+            "h": 27
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(26, 26, 26)",
           "cornerRadius": 0,
           "font": {
             "family": "system-ui",
-            "size": 16,
+            "size": 18,
             "weight": 400,
-            "lineHeight": 24
+            "lineHeight": 27
           },
-          "text": ""
+          "text": "⋯"
         },
         {
-          "dc": "dc/row-朋友圈",
+          "dc": "sv/pay",
           "kind": "button",
           "rect": {
-            "x": 0,
-            "y": 50,
-            "w": 390,
-            "h": 52
+            "x": 36,
+            "y": 83,
+            "w": 147,
+            "h": 57
           },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(26, 26, 26)",
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
           "cornerRadius": 0,
           "font": {
             "family": "system-ui",
@@ -1030,176 +1030,16 @@
           "text": ""
         },
         {
-          "dc": "dc/row-视频号",
+          "dc": "sv/wallet",
           "kind": "button",
           "rect": {
-            "x": 0,
-            "y": 102,
-            "w": 390,
-            "h": 72
+            "x": 207,
+            "y": 83,
+            "w": 147,
+            "h": 57
           },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(26, 26, 26)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "dc/row-直播",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 173,
-            "w": 390,
-            "h": 72
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(26, 26, 26)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "dc/row-扫一扫",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 245,
-            "w": 390,
-            "h": 53
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(26, 26, 26)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "dc/row-听一听",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 298,
-            "w": 390,
-            "h": 53
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(26, 26, 26)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "dc/row-看一看",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 351,
-            "w": 390,
-            "h": 53
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(26, 26, 26)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "dc/row-搜一搜",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 404,
-            "w": 390,
-            "h": 53
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(26, 26, 26)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "dc/row-附近的人",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 457,
-            "w": 390,
-            "h": 53
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(26, 26, 26)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "dc/row-游戏",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 510,
-            "w": 390,
-            "h": 72
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(26, 26, 26)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "dc/row-小程序",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 581,
-            "w": 390,
-            "h": 53
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(26, 26, 26)",
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
           "cornerRadius": 0,
           "font": {
             "family": "system-ui",
@@ -1220,7 +1060,7 @@
       },
       "nodes": [
         {
-          "dc": "dc/root",
+          "dc": "sv/root",
           "kind": "frame",
           "rect": {
             "x": 0,
@@ -1240,11 +1080,11 @@
           "text": ""
         },
         {
-          "dc": "dc/search",
+          "dc": "sv/back",
           "kind": "button",
           "rect": {
-            "x": 318,
-            "y": 17,
+            "x": 16,
+            "y": 18,
             "w": 20,
             "h": 20
           },
@@ -1260,36 +1100,36 @@
           "text": ""
         },
         {
-          "dc": "dc/plus",
+          "dc": "sv/more",
           "kind": "button",
           "rect": {
-            "x": 354,
-            "y": 17,
-            "w": 20,
-            "h": 20
+            "x": 356,
+            "y": 14,
+            "w": 18,
+            "h": 27
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(26, 26, 26)",
           "cornerRadius": 0,
           "font": {
             "family": "system-ui",
-            "size": 16,
+            "size": 18,
             "weight": 400,
-            "lineHeight": 24
+            "lineHeight": 27
           },
-          "text": ""
+          "text": "⋯"
         },
         {
-          "dc": "dc/row-朋友圈",
+          "dc": "sv/pay",
           "kind": "button",
           "rect": {
-            "x": 0,
-            "y": 50,
-            "w": 390,
-            "h": 52
+            "x": 36,
+            "y": 83,
+            "w": 147,
+            "h": 57
           },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(26, 26, 26)",
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
           "cornerRadius": 0,
           "font": {
             "family": "system-ui",
@@ -1300,176 +1140,16 @@
           "text": ""
         },
         {
-          "dc": "dc/row-视频号",
+          "dc": "sv/wallet",
           "kind": "button",
           "rect": {
-            "x": 0,
-            "y": 102,
-            "w": 390,
-            "h": 72
+            "x": 207,
+            "y": 83,
+            "w": 147,
+            "h": 57
           },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(26, 26, 26)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "dc/row-直播",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 173,
-            "w": 390,
-            "h": 72
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(26, 26, 26)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "dc/row-扫一扫",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 245,
-            "w": 390,
-            "h": 53
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(26, 26, 26)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "dc/row-听一听",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 298,
-            "w": 390,
-            "h": 53
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(26, 26, 26)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "dc/row-看一看",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 351,
-            "w": 390,
-            "h": 53
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(26, 26, 26)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "dc/row-搜一搜",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 404,
-            "w": 390,
-            "h": 53
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(26, 26, 26)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "dc/row-附近的人",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 457,
-            "w": 390,
-            "h": 53
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(26, 26, 26)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "dc/row-游戏",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 510,
-            "w": 390,
-            "h": 72
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(26, 26, 26)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "dc/row-小程序",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 581,
-            "w": 390,
-            "h": 53
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(26, 26, 26)",
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
           "cornerRadius": 0,
           "font": {
             "family": "system-ui",
@@ -1980,7 +1660,7 @@
       },
       "nodes": [
         {
-          "dc": "wa/root",
+          "dc": "ch/root",
           "kind": "frame",
           "rect": {
             "x": 0,
@@ -2000,7 +1680,7 @@
           "text": ""
         },
         {
-          "dc": "wa/back",
+          "dc": "ch/back",
           "kind": "button",
           "rect": {
             "x": 16,
@@ -2020,7 +1700,7 @@
           "text": ""
         },
         {
-          "dc": "wa/more",
+          "dc": "ch/more",
           "kind": "button",
           "rect": {
             "x": 356,
@@ -2040,17 +1720,77 @@
           "text": "⋯"
         },
         {
-          "dc": "wa/balance",
+          "dc": "ch/b1",
           "kind": "button",
           "rect": {
-            "x": 16,
-            "y": 59,
-            "w": 358,
-            "h": 104
+            "x": 62,
+            "y": 63,
+            "w": 174,
+            "h": 43
           },
           "fill": "rgb(255, 255, 255)",
           "color": "rgb(26, 26, 26)",
-          "cornerRadius": 12,
+          "cornerRadius": 10,
+          "font": {
+            "family": "system-ui",
+            "size": 15,
+            "weight": 400,
+            "lineHeight": 23
+          },
+          "text": "稿子收到了，整体很顺"
+        },
+        {
+          "dc": "ch/b2",
+          "kind": "button",
+          "rect": {
+            "x": 169,
+            "y": 118,
+            "w": 159,
+            "h": 43
+          },
+          "fill": "rgb(149, 236, 105)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 10,
+          "font": {
+            "family": "system-ui",
+            "size": 15,
+            "weight": 400,
+            "lineHeight": 23
+          },
+          "text": "好，我明早改下细节"
+        },
+        {
+          "dc": "ch/b3",
+          "kind": "button",
+          "rect": {
+            "x": 62,
+            "y": 172,
+            "w": 234,
+            "h": 43
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 10,
+          "font": {
+            "family": "system-ui",
+            "size": 15,
+            "weight": 400,
+            "lineHeight": 23
+          },
+          "text": "第二版的动效比第一版自然多了"
+        },
+        {
+          "dc": "ch/voice",
+          "kind": "button",
+          "rect": {
+            "x": 16,
+            "y": 803,
+            "w": 22,
+            "h": 22
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
           "font": {
             "family": "system-ui",
             "size": 16,
@@ -2060,24 +1800,44 @@
           "text": ""
         },
         {
-          "dc": "wa/records",
-          "kind": "button",
+          "dc": "ch/input",
+          "kind": "frame",
           "rect": {
-            "x": 16,
-            "y": 285,
-            "w": 358,
-            "h": 52
+            "x": 50,
+            "y": 795,
+            "w": 290,
+            "h": 37
           },
           "fill": "rgb(255, 255, 255)",
-          "color": "rgb(118, 118, 118)",
-          "cornerRadius": 12,
+          "color": "rgb(25, 25, 25)",
+          "cornerRadius": 8,
           "font": {
             "family": "system-ui",
-            "size": 13,
+            "size": 14,
             "weight": 400,
-            "lineHeight": 20
+            "lineHeight": 21
           },
-          "text": "交易记录（演示数据）"
+          "text": ""
+        },
+        {
+          "dc": "ch/plus",
+          "kind": "button",
+          "rect": {
+            "x": 352,
+            "y": 803,
+            "w": 22,
+            "h": 22
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
         }
       ]
     },
@@ -2280,7 +2040,7 @@
       },
       "nodes": [
         {
-          "dc": "gc/root",
+          "dc": "sc/root",
           "kind": "frame",
           "rect": {
             "x": 0,
@@ -2300,7 +2060,7 @@
           "text": ""
         },
         {
-          "dc": "gc/back",
+          "dc": "sc/back",
           "kind": "button",
           "rect": {
             "x": 16,
@@ -2320,7 +2080,7 @@
           "text": ""
         },
         {
-          "dc": "gc/more",
+          "dc": "sc/more",
           "kind": "button",
           "rect": {
             "x": 356,
@@ -2333,94 +2093,74 @@
           "cornerRadius": 0,
           "font": {
             "family": "system-ui",
-            "size": 16,
+            "size": 18,
             "weight": 400,
-            "lineHeight": 24
+            "lineHeight": 27
           },
-          "text": ""
+          "text": "⋯"
         },
         {
-          "dc": "gc/b1",
+          "dc": "sc/b1",
           "kind": "button",
           "rect": {
             "x": 62,
-            "y": 63,
-            "w": 129,
+            "y": 100,
+            "w": 114,
             "h": 43
           },
           "fill": "rgb(255, 255, 255)",
           "color": "rgb(26, 26, 26)",
-          "cornerRadius": 10,
+          "cornerRadius": 0,
           "font": {
             "family": "system-ui",
             "size": 15,
             "weight": 400,
             "lineHeight": 23
           },
-          "text": "周末回来吃饭吗"
+          "text": "周末去爬山吗"
         },
         {
-          "dc": "gc/b2",
+          "dc": "sc/b2",
           "kind": "button",
           "rect": {
-            "x": 62,
-            "y": 118,
-            "w": 114,
-            "h": 43
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(26, 26, 26)",
-          "cornerRadius": 10,
-          "font": {
-            "family": "system-ui",
-            "size": 15,
-            "weight": 400,
-            "lineHeight": 23
-          },
-          "text": "我钓了条大的"
-        },
-        {
-          "dc": "gc/b3",
-          "kind": "button",
-          "rect": {
-            "x": 210,
-            "y": 172,
-            "w": 114,
+            "x": 169,
+            "y": 154,
+            "w": 159,
             "h": 43
           },
           "fill": "rgb(149, 236, 105)",
           "color": "rgb(26, 26, 26)",
-          "cornerRadius": 10,
+          "cornerRadius": 8,
           "font": {
             "family": "system-ui",
             "size": 15,
             "weight": 400,
             "lineHeight": 23
           },
-          "text": "回！我带新茶"
+          "text": "照片收到，拍得真好"
         },
         {
-          "dc": "gc/b4",
+          "dc": "sc/b3",
           "kind": "button",
           "rect": {
             "x": 62,
-            "y": 227,
-            "w": 39,
+            "y": 209,
+            "w": 99,
             "h": 43
           },
           "fill": "rgb(255, 255, 255)",
           "color": "rgb(26, 26, 26)",
-          "cornerRadius": 10,
+          "cornerRadius": 0,
           "font": {
             "family": "system-ui",
             "size": 15,
             "weight": 400,
             "lineHeight": 23
           },
-          "text": "好"
+          "text": "好，早出发"
         },
         {
-          "dc": "gc/voice",
+          "dc": "sc/voice",
           "kind": "button",
           "rect": {
             "x": 16,
@@ -2440,7 +2180,7 @@
           "text": ""
         },
         {
-          "dc": "gc/input",
+          "dc": "sc/input",
           "kind": "frame",
           "rect": {
             "x": 52,
@@ -2460,7 +2200,7 @@
           "text": ""
         },
         {
-          "dc": "gc/plus",
+          "dc": "sc/plus",
           "kind": "button",
           "rect": {
             "x": 350,
@@ -2490,7 +2230,7 @@
       },
       "nodes": [
         {
-          "dc": "gc/root",
+          "dc": "gs/root",
           "kind": "frame",
           "rect": {
             "x": 0,
@@ -2510,11 +2250,11 @@
           "text": ""
         },
         {
-          "dc": "gc/back",
+          "dc": "gs/back",
           "kind": "button",
           "rect": {
             "x": 16,
-            "y": 18,
+            "y": 17,
             "w": 20,
             "h": 20
           },
@@ -2530,13 +2270,13 @@
           "text": ""
         },
         {
-          "dc": "gc/more",
+          "dc": "gs/search",
           "kind": "button",
           "rect": {
-            "x": 356,
-            "y": 14,
-            "w": 18,
-            "h": 27
+            "x": 354,
+            "y": 17,
+            "w": 20,
+            "h": 20
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(26, 26, 26)",
@@ -2550,135 +2290,335 @@
           "text": ""
         },
         {
-          "dc": "gc/b1",
-          "kind": "button",
-          "rect": {
-            "x": 62,
-            "y": 63,
-            "w": 129,
-            "h": 43
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(26, 26, 26)",
-          "cornerRadius": 10,
-          "font": {
-            "family": "system-ui",
-            "size": 15,
-            "weight": 400,
-            "lineHeight": 23
-          },
-          "text": "周末回来吃饭吗"
-        },
-        {
-          "dc": "gc/b2",
-          "kind": "button",
-          "rect": {
-            "x": 62,
-            "y": 118,
-            "w": 114,
-            "h": 43
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(26, 26, 26)",
-          "cornerRadius": 10,
-          "font": {
-            "family": "system-ui",
-            "size": 15,
-            "weight": 400,
-            "lineHeight": 23
-          },
-          "text": "我钓了条大的"
-        },
-        {
-          "dc": "gc/b3",
-          "kind": "button",
-          "rect": {
-            "x": 210,
-            "y": 172,
-            "w": 114,
-            "h": 43
-          },
-          "fill": "rgb(149, 236, 105)",
-          "color": "rgb(26, 26, 26)",
-          "cornerRadius": 10,
-          "font": {
-            "family": "system-ui",
-            "size": 15,
-            "weight": 400,
-            "lineHeight": 23
-          },
-          "text": "回！我带新茶"
-        },
-        {
-          "dc": "gc/b4",
-          "kind": "button",
-          "rect": {
-            "x": 62,
-            "y": 227,
-            "w": 39,
-            "h": 43
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(26, 26, 26)",
-          "cornerRadius": 10,
-          "font": {
-            "family": "system-ui",
-            "size": 15,
-            "weight": 400,
-            "lineHeight": 23
-          },
-          "text": "好"
-        },
-        {
-          "dc": "gc/voice",
-          "kind": "button",
-          "rect": {
-            "x": 16,
-            "y": 803,
-            "w": 24,
-            "h": 24
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(26, 26, 26)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "gc/input",
+          "dc": "gs/members",
           "kind": "frame",
           "rect": {
-            "x": 52,
-            "y": 796,
-            "w": 286,
-            "h": 39
+            "x": 0,
+            "y": 50,
+            "w": 390,
+            "h": 189
           },
           "fill": "rgb(255, 255, 255)",
-          "color": "rgb(25, 25, 25)",
-          "cornerRadius": 6,
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
           "font": {
             "family": "system-ui",
-            "size": 15,
+            "size": 16,
             "weight": 400,
-            "lineHeight": 23
+            "lineHeight": 24
           },
           "text": ""
         },
         {
-          "dc": "gc/plus",
+          "dc": "gs/m-lu",
           "kind": "button",
           "rect": {
-            "x": 350,
-            "y": 803,
-            "w": 24,
-            "h": 24
+            "x": 20,
+            "y": 70,
+            "w": 56,
+            "h": 77
           },
           "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 11,
+            "weight": 400,
+            "lineHeight": 17
+          },
+          "text": ""
+        },
+        {
+          "dc": "gs/m-ba",
+          "kind": "button",
+          "rect": {
+            "x": 92,
+            "y": 70,
+            "w": 56,
+            "h": 77
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 11,
+            "weight": 400,
+            "lineHeight": 17
+          },
+          "text": ""
+        },
+        {
+          "dc": "gs/m-jie",
+          "kind": "button",
+          "rect": {
+            "x": 164,
+            "y": 70,
+            "w": 56,
+            "h": 77
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 11,
+            "weight": 400,
+            "lineHeight": 17
+          },
+          "text": ""
+        },
+        {
+          "dc": "gs/m-ma",
+          "kind": "button",
+          "rect": {
+            "x": 236,
+            "y": 70,
+            "w": 56,
+            "h": 77
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 11,
+            "weight": 400,
+            "lineHeight": 17
+          },
+          "text": ""
+        },
+        {
+          "dc": "gs/m-sun",
+          "kind": "button",
+          "rect": {
+            "x": 308,
+            "y": 70,
+            "w": 56,
+            "h": 77
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 11,
+            "weight": 400,
+            "lineHeight": 17
+          },
+          "text": ""
+        },
+        {
+          "dc": "gs/m-add",
+          "kind": "button",
+          "rect": {
+            "x": 20,
+            "y": 162,
+            "w": 56,
+            "h": 56
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(118, 118, 118)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "gs/m-del",
+          "kind": "button",
+          "rect": {
+            "x": 92,
+            "y": 162,
+            "w": 56,
+            "h": 56
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(118, 118, 118)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "gs/name",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 246,
+            "w": 390,
+            "h": 57
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "gs/qr",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 303,
+            "w": 390,
+            "h": 57
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "gs/notice",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 360,
+            "w": 390,
+            "h": 57
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "gs/admin",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 417,
+            "w": 390,
+            "h": 57
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "gs/remark",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 474,
+            "w": 390,
+            "h": 57
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "gs/history",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 539,
+            "w": 390,
+            "h": 57
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "gs/mute",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 604,
+            "w": 390,
+            "h": 61
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "gs/pin",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 665,
+            "w": 390,
+            "h": 61
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "gs/save",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 726,
+            "w": 390,
+            "h": 61
+          },
+          "fill": "rgb(255, 255, 255)",
           "color": "rgb(26, 26, 26)",
           "cornerRadius": 0,
           "font": {
@@ -2700,7 +2640,7 @@
       },
       "nodes": [
         {
-          "dc": "fs/root",
+          "dc": "gs/root",
           "kind": "frame",
           "rect": {
             "x": 0,
@@ -2720,11 +2660,11 @@
           "text": ""
         },
         {
-          "dc": "fs/back",
+          "dc": "gs/back",
           "kind": "button",
           "rect": {
             "x": 16,
-            "y": 18,
+            "y": 17,
             "w": 20,
             "h": 20
           },
@@ -2740,33 +2680,33 @@
           "text": ""
         },
         {
-          "dc": "fs/more",
+          "dc": "gs/search",
           "kind": "button",
           "rect": {
-            "x": 356,
-            "y": 14,
-            "w": 18,
-            "h": 27
+            "x": 354,
+            "y": 17,
+            "w": 20,
+            "h": 20
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(26, 26, 26)",
           "cornerRadius": 0,
           "font": {
             "family": "system-ui",
-            "size": 18,
+            "size": 16,
             "weight": 400,
-            "lineHeight": 27
+            "lineHeight": 24
           },
-          "text": "⋯"
+          "text": ""
         },
         {
-          "dc": "fs/profile",
+          "dc": "gs/members",
           "kind": "frame",
           "rect": {
             "x": 0,
-            "y": 51,
+            "y": 50,
             "w": 390,
-            "h": 128
+            "h": 189
           },
           "fill": "rgb(255, 255, 255)",
           "color": "rgb(26, 26, 26)",
@@ -2780,56 +2720,116 @@
           "text": ""
         },
         {
-          "dc": "fs/ava",
-          "kind": "image",
+          "dc": "gs/m-lu",
+          "kind": "button",
           "rect": {
             "x": 20,
-            "y": 71,
-            "w": 64,
-            "h": 64
+            "y": 70,
+            "w": 56,
+            "h": 77
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(26, 26, 26)",
-          "cornerRadius": 8,
+          "cornerRadius": 0,
           "font": {
             "family": "system-ui",
-            "size": 16,
+            "size": 11,
             "weight": 400,
-            "lineHeight": 24
+            "lineHeight": 17
           },
           "text": ""
         },
         {
-          "dc": "fs/remark",
+          "dc": "gs/m-ba",
           "kind": "button",
           "rect": {
-            "x": 100,
-            "y": 133,
-            "w": 100,
-            "h": 26
+            "x": 92,
+            "y": 70,
+            "w": 56,
+            "h": 77
           },
-          "fill": "rgb(242, 242, 242)",
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 11,
+            "weight": 400,
+            "lineHeight": 17
+          },
+          "text": ""
+        },
+        {
+          "dc": "gs/m-jie",
+          "kind": "button",
+          "rect": {
+            "x": 164,
+            "y": 70,
+            "w": 56,
+            "h": 77
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 11,
+            "weight": 400,
+            "lineHeight": 17
+          },
+          "text": ""
+        },
+        {
+          "dc": "gs/m-ma",
+          "kind": "button",
+          "rect": {
+            "x": 236,
+            "y": 70,
+            "w": 56,
+            "h": 77
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 11,
+            "weight": 400,
+            "lineHeight": 17
+          },
+          "text": ""
+        },
+        {
+          "dc": "gs/m-sun",
+          "kind": "button",
+          "rect": {
+            "x": 308,
+            "y": 70,
+            "w": 56,
+            "h": 77
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 11,
+            "weight": 400,
+            "lineHeight": 17
+          },
+          "text": ""
+        },
+        {
+          "dc": "gs/m-add",
+          "kind": "button",
+          "rect": {
+            "x": 20,
+            "y": 162,
+            "w": 56,
+            "h": 56
+          },
+          "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(118, 118, 118)",
-          "cornerRadius": 4,
-          "font": {
-            "family": "system-ui",
-            "size": 12,
-            "weight": 400,
-            "lineHeight": 18
-          },
-          "text": "设置备注和标签"
-        },
-        {
-          "dc": "fs/perm",
-          "kind": "frame",
-          "rect": {
-            "x": 0,
-            "y": 187,
-            "w": 390,
-            "h": 150
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(26, 26, 26)",
           "cornerRadius": 0,
           "font": {
             "family": "system-ui",
@@ -2840,16 +2840,16 @@
           "text": ""
         },
         {
-          "dc": "fs/perm-chat",
-          "kind": "frame",
+          "dc": "gs/m-del",
+          "kind": "button",
           "rect": {
-            "x": 16,
-            "y": 233,
-            "w": 358,
-            "h": 23
+            "x": 92,
+            "y": 162,
+            "w": 56,
+            "h": 56
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(26, 26, 26)",
+          "color": "rgb(118, 118, 118)",
           "cornerRadius": 0,
           "font": {
             "family": "system-ui",
@@ -2860,91 +2860,11 @@
           "text": ""
         },
         {
-          "dc": "fs/perm-mm",
-          "kind": "frame",
-          "rect": {
-            "x": 16,
-            "y": 268,
-            "w": 358,
-            "h": 23
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(26, 26, 26)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "fs/perm-none",
-          "kind": "frame",
-          "rect": {
-            "x": 16,
-            "y": 302,
-            "w": 358,
-            "h": 23
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(26, 26, 26)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "fs/mute",
-          "kind": "frame",
-          "rect": {
-            "x": 0,
-            "y": 345,
-            "w": 390,
-            "h": 61
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(26, 26, 26)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "fs/pin",
-          "kind": "frame",
-          "rect": {
-            "x": 0,
-            "y": 406,
-            "w": 390,
-            "h": 61
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(26, 26, 26)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "fs/mm",
+          "dc": "gs/name",
           "kind": "button",
           "rect": {
             "x": 0,
-            "y": 475,
+            "y": 246,
             "w": 390,
             "h": 57
           },
@@ -2960,44 +2880,164 @@
           "text": ""
         },
         {
-          "dc": "fs/msg",
+          "dc": "gs/qr",
           "kind": "button",
           "rect": {
-            "x": 20,
-            "y": 548,
-            "w": 350,
-            "h": 47
-          },
-          "fill": "rgb(42, 127, 79)",
-          "color": "rgb(255, 255, 255)",
-          "cornerRadius": 8,
-          "font": {
-            "family": "system-ui",
-            "size": 15,
-            "weight": 400,
-            "lineHeight": 23
-          },
-          "text": "发消息"
-        },
-        {
-          "dc": "fs/del",
-          "kind": "button",
-          "rect": {
-            "x": 20,
-            "y": 610,
-            "w": 350,
-            "h": 47
+            "x": 0,
+            "y": 303,
+            "w": 390,
+            "h": 57
           },
           "fill": "rgb(255, 255, 255)",
-          "color": "rgb(250, 81, 81)",
-          "cornerRadius": 8,
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
           "font": {
             "family": "system-ui",
-            "size": 15,
+            "size": 16,
             "weight": 400,
-            "lineHeight": 23
+            "lineHeight": 24
           },
-          "text": "删除"
+          "text": ""
+        },
+        {
+          "dc": "gs/notice",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 360,
+            "w": 390,
+            "h": 57
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "gs/admin",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 417,
+            "w": 390,
+            "h": 57
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "gs/remark",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 474,
+            "w": 390,
+            "h": 57
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "gs/history",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 539,
+            "w": 390,
+            "h": 57
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "gs/mute",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 604,
+            "w": 390,
+            "h": 61
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "gs/pin",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 665,
+            "w": 390,
+            "h": 61
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "gs/save",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 726,
+            "w": 390,
+            "h": 61
+          },
+          "fill": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
         }
       ]
     },
@@ -3140,7 +3180,7 @@
       },
       "nodes": [
         {
-          "dc": "mt/root",
+          "dc": "lp/root",
           "kind": "frame",
           "rect": {
             "x": 0,
@@ -3148,7 +3188,7 @@
             "w": 390,
             "h": 844
           },
-          "fill": "rgba(20, 20, 28, 0.92)",
+          "fill": "rgb(237, 237, 237)",
           "color": "rgb(26, 26, 26)",
           "cornerRadius": 0,
           "font": {
@@ -3160,124 +3200,104 @@
           "text": ""
         },
         {
-          "dc": "mt/search",
-          "kind": "button",
+          "dc": "lp/menu",
+          "kind": "frame",
           "rect": {
-            "x": 24,
-            "y": 79,
-            "w": 342,
-            "h": 45
+            "x": 31,
+            "y": 186,
+            "w": 328,
+            "h": 221
           },
-          "fill": "rgba(255, 255, 255, 0.12)",
-          "color": "rgba(255, 255, 255, 0.7)",
-          "cornerRadius": 8,
+          "fill": "rgb(247, 247, 247)",
+          "color": "rgb(26, 26, 26)",
+          "cornerRadius": 12,
           "font": {
             "family": "system-ui",
-            "size": 14,
+            "size": 16,
             "weight": 400,
-            "lineHeight": 21
-          },
-          "text": "搜索小程序"
-        },
-        {
-          "dc": "mt/m1",
-          "kind": "button",
-          "rect": {
-            "x": 24,
-            "y": 182,
-            "w": 71,
-            "h": 81
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(255, 255, 255)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 11,
-            "weight": 400,
-            "lineHeight": 17
+            "lineHeight": 24
           },
           "text": ""
         },
         {
-          "dc": "mt/m2",
+          "dc": "lp/unread",
           "kind": "button",
           "rect": {
-            "x": 115,
-            "y": 182,
-            "w": 71,
-            "h": 81
+            "x": 31,
+            "y": 186,
+            "w": 328,
+            "h": 55
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
           "cornerRadius": 0,
           "font": {
             "family": "system-ui",
-            "size": 11,
+            "size": 15,
             "weight": 400,
-            "lineHeight": 17
+            "lineHeight": 23
           },
-          "text": ""
+          "text": "标为未读"
         },
         {
-          "dc": "mt/m3",
+          "dc": "lp/pin",
           "kind": "button",
           "rect": {
-            "x": 205,
-            "y": 182,
-            "w": 71,
-            "h": 81
+            "x": 31,
+            "y": 240,
+            "w": 328,
+            "h": 56
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
           "cornerRadius": 0,
           "font": {
             "family": "system-ui",
-            "size": 11,
+            "size": 15,
             "weight": 400,
-            "lineHeight": 17
+            "lineHeight": 23
           },
-          "text": ""
+          "text": "置顶聊天"
         },
         {
-          "dc": "mt/m4",
+          "dc": "lp/mute",
           "kind": "button",
           "rect": {
-            "x": 296,
-            "y": 182,
-            "w": 71,
-            "h": 81
+            "x": 31,
+            "y": 296,
+            "w": 328,
+            "h": 56
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(255, 255, 255)",
+          "color": "rgb(26, 26, 26)",
           "cornerRadius": 0,
           "font": {
             "family": "system-ui",
-            "size": 11,
+            "size": 15,
             "weight": 400,
-            "lineHeight": 17
+            "lineHeight": 23
           },
-          "text": ""
+          "text": "消息免打扰"
         },
         {
-          "dc": "mt/back",
+          "dc": "lp/del",
           "kind": "button",
           "rect": {
-            "x": 0,
-            "y": 777,
-            "w": 390,
-            "h": 68
+            "x": 31,
+            "y": 351,
+            "w": 328,
+            "h": 56
           },
-          "fill": "rgba(255, 255, 255, 0.08)",
-          "color": "rgba(255, 255, 255, 0.8)",
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(194, 60, 60)",
           "cornerRadius": 0,
           "font": {
             "family": "system-ui",
-            "size": 13,
+            "size": 15,
             "weight": 400,
-            "lineHeight": 20
+            "lineHeight": 23
           },
-          "text": "微信(38)"
+          "text": "删除该聊天"
         }
       ]
     },
