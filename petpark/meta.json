@@ -22,8 +22,8 @@
  },
  "license": "CC-BY-4.0",
  "ip_attestation": "original",
- "attestation_note": "M104: zootopia-3d art rebuild, full-bleed map, video hero, dead-end/orphan fixed, anchor-aligned cover/icon",
- "version": "3.2.0",
- "created_at": "2026-09-17T06:42:42.087Z",
+ "attestation_note": "M105: shell nav-state sync fix",
+ "version": "3.2.1",
+ "created_at": "2026-09-17T09:47:31.907Z",
  "platform": "mobile"
 }
