@@ -21,7 +21,7 @@
     "spec_version": 1,
     "change_log": [
       {
-        "at": "2026-09-17T05:50:57.383Z",
+        "at": "2026-09-17T09:33:54.492Z",
         "by": "clone",
         "note": "collect-design 初始/重采集（computed 真值）"
       }
@@ -29,44 +29,72 @@
   },
   "regions": [
     {
-      "id": "r_ch_back",
+      "id": "r_pl_plusicon",
       "type": "custom",
       "label": ""
     },
     {
-      "id": "r_ch_more",
-      "type": "custom",
-      "label": "⋯"
+      "id": "r_pl_menu",
+      "type": "modal",
+      "label": "发起群聊\n添加朋友\n扫一扫\n收付款",
+      "components": [
+        {
+          "kind": "button",
+          "label": "发起群聊",
+          "interaction": {
+            "act": "goto",
+            "to": "12-group-chat"
+          },
+          "sample_value": "发起群聊"
+        },
+        {
+          "kind": "button",
+          "label": "添加朋友",
+          "interaction": {
+            "act": "goto",
+            "to": "02-contacts"
+          },
+          "sample_value": "添加朋友"
+        },
+        {
+          "kind": "button",
+          "label": "扫一扫",
+          "interaction": {
+            "act": "goto",
+            "to": "08-search"
+          },
+          "sample_value": "扫一扫"
+        },
+        {
+          "kind": "button",
+          "label": "收付款",
+          "interaction": {
+            "act": "goto",
+            "to": "05-services"
+          },
+          "sample_value": "收付款"
+        }
+      ]
     },
     {
-      "id": "r_ch_b1",
+      "id": "r_pl_group",
       "type": "custom",
-      "label": "稿子收到了，整体很顺"
+      "label": "发起群聊"
     },
     {
-      "id": "r_ch_b2",
+      "id": "r_pl_add",
       "type": "custom",
-      "label": "好，我明早改下细节"
+      "label": "添加朋友"
     },
     {
-      "id": "r_ch_b3",
+      "id": "r_pl_scan",
       "type": "custom",
-      "label": "第二版的动效比第一版自然多了"
+      "label": "扫一扫"
     },
     {
-      "id": "r_ch_voice",
+      "id": "r_pl_pay",
       "type": "custom",
-      "label": ""
-    },
-    {
-      "id": "r_ch_input",
-      "type": "custom",
-      "label": ""
-    },
-    {
-      "id": "r_ch_plus",
-      "type": "custom",
-      "label": ""
+      "label": "收付款"
     }
   ]
 }
