@@ -5,7 +5,7 @@
 - source: device / wechat-full
 - retire: —
 - skill version: 0.6.0
-- gates: interact dead=0 | inspect fail=0 pass=47 | ui-smoke fail=0 pass=28
+- gates: interact dead=0 | inspect fail=0 pass=50 | ui-smoke fail=0 pass=28
 
 ## Changes
-- v1.7.0: initial publish
+- v1.7.1: initial publish
