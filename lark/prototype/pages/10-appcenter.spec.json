@@ -21,7 +21,7 @@
     "spec_version": 1,
     "change_log": [
       {
-        "at": "2026-09-16T12:59:49.595Z",
+        "at": "2026-09-17T06:39:32.544Z",
         "by": "clone",
         "note": "collect-design 初始/重采集（computed 真值）"
       }
@@ -29,7 +29,7 @@
   },
   "regions": [
     {
-      "id": "r_ac_side",
+      "id": "r_bt_side",
       "type": "sidebar",
       "label": "搜索 (⌘K)\n    \n      消息\n      豆包工作\n      日",
       "components": [
@@ -110,8 +110,8 @@
           "kind": "button",
           "label": "多维表格",
           "interaction": {
-            "act": "goto",
-            "to": "09-bitable"
+            "act": "toast",
+            "msg": "（演示）"
           },
           "sample_value": "多维表格"
         },
@@ -162,8 +162,8 @@
           "kind": "button",
           "label": "应用中心",
           "interaction": {
-            "act": "toast",
-            "msg": "（演示）"
+            "act": "goto",
+            "to": "10-appcenter"
           },
           "sample_value": "应用中心"
         },
@@ -239,7 +239,7 @@
       ]
     },
     {
-      "id": "r_ac_n_msg",
+      "id": "r_bt_n_msg",
       "type": "custom",
       "label": "消息",
       "components": [
@@ -250,7 +250,7 @@
       ]
     },
     {
-      "id": "r_ac_n_doubao",
+      "id": "r_bt_n_doubao",
       "type": "custom",
       "label": "豆包工作",
       "components": [
@@ -261,7 +261,7 @@
       ]
     },
     {
-      "id": "r_ac_n_cal",
+      "id": "r_bt_n_cal",
       "type": "custom",
       "label": "日历",
       "components": [
@@ -272,7 +272,7 @@
       ]
     },
     {
-      "id": "r_ac_n_docs",
+      "id": "r_bt_n_docs",
       "type": "custom",
       "label": "云文档",
       "components": [
@@ -283,7 +283,7 @@
       ]
     },
     {
-      "id": "r_ac_n_bitable",
+      "id": "r_bt_n_bitable",
       "type": "custom",
       "label": "多维表格",
       "components": [
@@ -294,7 +294,7 @@
       ]
     },
     {
-      "id": "r_ac_n_meet",
+      "id": "r_bt_n_meet",
       "type": "custom",
       "label": "视频会议",
       "components": [
@@ -305,7 +305,7 @@
       ]
     },
     {
-      "id": "r_ac_n_fly",
+      "id": "r_bt_n_fly",
       "type": "custom",
       "label": "飞行社",
       "components": [
@@ -316,7 +316,7 @@
       ]
     },
     {
-      "id": "r_ac_n_wb",
+      "id": "r_bt_n_wb",
       "type": "custom",
       "label": "工作台",
       "components": [
@@ -327,7 +327,7 @@
       ]
     },
     {
-      "id": "r_ac_n_appc",
+      "id": "r_bt_n_appc",
       "type": "custom",
       "label": "应用中心",
       "components": [
@@ -338,7 +338,7 @@
       ]
     },
     {
-      "id": "r_ac_n_contacts",
+      "id": "r_bt_n_contacts",
       "type": "custom",
       "label": "通讯录",
       "components": [
@@ -349,7 +349,7 @@
       ]
     },
     {
-      "id": "r_ac_n_vip",
+      "id": "r_bt_n_vip",
       "type": "custom",
       "label": "权益升级",
       "components": [
@@ -360,7 +360,7 @@
       ]
     },
     {
-      "id": "r_ac_n_task",
+      "id": "r_bt_n_task",
       "type": "custom",
       "label": "任务",
       "components": [
@@ -371,7 +371,7 @@
       ]
     },
     {
-      "id": "r_ac_n_star",
+      "id": "r_bt_n_star",
       "type": "custom",
       "label": "收藏",
       "components": [
@@ -382,7 +382,7 @@
       ]
     },
     {
-      "id": "r_ac_n_kb",
+      "id": "r_bt_n_kb",
       "type": "custom",
       "label": "知识库",
       "components": [
@@ -393,476 +393,86 @@
       ]
     },
     {
-      "id": "r_ac_wrap",
+      "id": "r_bt_col",
       "type": "custom",
-      "label": "‹›⟳飞书应用中心 - 探索解决方案，激发团队灵感☺⊘⧉⋯✕\n    \n    ",
+      "label": "搜索\n    主页\n    工作动态\n    应用市场\n    模板中心\n   ",
       "components": [
         {
           "kind": "button",
-          "label": "‹",
+          "label": "主页",
           "interaction": {
             "act": "toast",
-            "msg": "后退（演示）"
+            "msg": "（演示）"
           },
-          "sample_value": "‹"
+          "sample_value": "主页"
         },
         {
           "kind": "button",
-          "label": "›",
+          "label": "工作动态",
           "interaction": {
             "act": "toast",
-            "msg": "前进（演示）"
+            "msg": "工作动态（演示）"
           },
-          "sample_value": "›"
+          "sample_value": "工作动态"
         },
         {
           "kind": "button",
-          "label": "⟳",
+          "label": "应用市场",
           "interaction": {
             "act": "toast",
-            "msg": "刷新（演示）"
+            "msg": "应用市场（演示）"
           },
-          "sample_value": "⟳"
+          "sample_value": "应用市场"
         },
         {
           "kind": "button",
-          "label": "✕",
+          "label": "模板中心",
           "interaction": {
             "act": "toast",
-            "msg": "关闭（演示）"
+            "msg": "模板中心（演示）"
           },
-          "sample_value": "✕"
-        },
-        {
-          "kind": "image",
-          "label": ""
-        },
-        {
-          "kind": "tab",
-          "label": "首页",
-          "interaction": {
-            "act": "tab"
-          },
-          "sample_value": "首页"
-        },
-        {
-          "kind": "tab",
-          "label": "应用",
-          "interaction": {
-            "act": "tab"
-          },
-          "sample_value": "应用"
-        },
-        {
-          "kind": "tab",
-          "label": "解决方案",
-          "interaction": {
-            "act": "tab"
-          },
-          "sample_value": "解决方案"
-        },
-        {
-          "kind": "tab",
-          "label": "AI 产品推荐",
-          "interaction": {
-            "act": "tab"
-          },
-          "sample_value": "AI 产品推荐"
-        },
-        {
-          "kind": "tab",
-          "label": "模板",
-          "interaction": {
-            "act": "tab"
-          },
-          "sample_value": "模板"
+          "sample_value": "模板中心"
         },
         {
           "kind": "button",
-          "label": "⚙ 管理应用",
+          "label": "全部多维表格",
           "interaction": {
             "act": "toast",
-            "msg": "管理应用（演示）"
+            "msg": "全部多维表格（演示）"
           },
-          "sample_value": "⚙ 管理应用"
-        },
-        {
-          "kind": "button",
-          "label": "✎ 创建应用",
-          "interaction": {
-            "act": "toast",
-            "msg": "创建应用（演示）"
-          },
-          "sample_value": "✎ 创建应用"
-        },
-        {
-          "kind": "button",
-          "label": "⇄ 偏好设置",
-          "interaction": {
-            "act": "toast",
-            "msg": "偏好设置（演示）"
-          },
-          "sample_value": "⇄ 偏好设置"
-        },
-        {
-          "kind": "button",
-          "label": "搜索",
-          "interaction": {
-            "act": "toast",
-            "msg": "搜索（演示）"
-          },
-          "sample_value": "搜索"
-        },
-        {
-          "kind": "button",
-          "label": "为你推荐 ⓘ",
-          "interaction": {
-            "act": "toast",
-            "msg": "为你推荐（演示）"
-          },
-          "sample_value": "为你推荐 ⓘ"
-        },
-        {
-          "kind": "button",
-          "label": "项目管理",
-          "interaction": {
-            "act": "toast",
-            "msg": "项目管理（演示）"
-          },
-          "sample_value": "项目管理"
-        },
-        {
-          "kind": "button",
-          "label": "敏捷研发",
-          "interaction": {
-            "act": "toast",
-            "msg": "敏捷研发（演示）"
-          },
-          "sample_value": "敏捷研发"
-        },
-        {
-          "kind": "button",
-          "label": "业财一体",
-          "interaction": {
-            "act": "toast",
-            "msg": "业财一体（演示）"
-          },
-          "sample_value": "业财一体"
-        },
-        {
-          "kind": "button",
-          "label": "综合人事",
-          "interaction": {
-            "act": "toast",
-            "msg": "综合人事（演示）"
-          },
-          "sample_value": "综合人事"
-        },
-        {
-          "kind": "button",
-          "label": "招聘管理",
-          "interaction": {
-            "act": "toast",
-            "msg": "招聘管理（演示）"
-          },
-          "sample_value": "招聘管理"
-        },
-        {
-          "kind": "button",
-          "label": "更多筛选 ⌄",
-          "interaction": {
-            "act": "toast",
-            "msg": "更多筛选（演示）"
-          },
-          "sample_value": "更多筛选 ⌄"
-        },
-        {
-          "kind": "button",
-          "label": "查看全部",
-          "interaction": {
-            "act": "toast",
-            "msg": "查看全部（演示）"
-          },
-          "sample_value": "查看全部"
-        },
-        {
-          "kind": "button",
-          "label": "AI驱动企业培训与人才发展免费咨询将AI培训能力嵌入飞书工作流，实现从课程生产到",
-          "interaction": {
-            "act": "toast",
-            "msg": "AI驱动企业培训（演示）"
-          },
-          "sample_value": "AI驱动企业培训与人才发展免费咨询将AI培训能力嵌入飞书工作流，实现从课程生产到"
-        },
-        {
-          "kind": "image",
-          "label": ""
-        },
-        {
-          "kind": "button",
-          "label": "项目成本利润双管控方案免费咨询AI 贯穿战略制定、目标管理、项目任务、绩效管理与",
-          "interaction": {
-            "act": "toast",
-            "msg": "战略目标管理（演示）"
-          },
-          "sample_value": "项目成本利润双管控方案免费咨询AI 贯穿战略制定、目标管理、项目任务、绩效管理与"
-        },
-        {
-          "kind": "image",
-          "label": ""
-        },
-        {
-          "kind": "button",
-          "label": "项目成本利润双管控免费咨询直击「项目成本算不清、跨区域管不住、财务效率低」的多项",
-          "interaction": {
-            "act": "toast",
-            "msg": "项目成本管控（演示）"
-          },
-          "sample_value": "项目成本利润双管控免费咨询直击「项目成本算不清、跨区域管不住、财务效率低」的多项"
-        },
-        {
-          "kind": "image",
-          "label": ""
-        },
-        {
-          "kind": "button",
-          "label": "HR 全流程电子签约免费咨询入职、合同、证明全线上签署，合规存证一键归档上海某信",
-          "interaction": {
-            "act": "toast",
-            "msg": "HR 电子签约（演示）"
-          },
-          "sample_value": "HR 全流程电子签约免费咨询入职、合同、证明全线上签署，合规存证一键归档上海某信"
-        },
-        {
-          "kind": "image",
-          "label": ""
-        },
-        {
-          "kind": "button",
-          "label": "固定资产全生命周期管理免费咨询采购、领用、盘点、报废全流程数字化，账实相符深圳某",
-          "interaction": {
-            "act": "toast",
-            "msg": "固定资产管理（演示）"
-          },
-          "sample_value": "固定资产全生命周期管理免费咨询采购、领用、盘点、报废全流程数字化，账实相符深圳某"
-        },
-        {
-          "kind": "image",
-          "label": ""
-        },
-        {
-          "kind": "button",
-          "label": "AI无代码生产进销存免费咨询轻流无代码搭建，业务人员自助配置进销存系统上海易校信",
-          "interaction": {
-            "act": "toast",
-            "msg": "AI无代码进销存（演示）"
-          },
-          "sample_value": "AI无代码生产进销存免费咨询轻流无代码搭建，业务人员自助配置进销存系统上海易校信"
-        },
-        {
-          "kind": "image",
-          "label": ""
+          "sample_value": "全部多维表格"
         }
       ]
     },
     {
-      "id": "r_ac_s1",
+      "id": "r_bt_i_home",
       "type": "custom",
-      "label": "AI驱动企业培训与人才发展免费咨询将AI培训能力嵌入飞书工作流，实现从课程生产到",
-      "components": [
-        {
-          "kind": "image",
-          "label": ""
-        }
-      ]
+      "label": "主页"
     },
     {
-      "id": "r_ac_s2",
-      "type": "custom",
-      "label": "项目成本利润双管控方案免费咨询AI 贯穿战略制定、目标管理、项目任务、绩效管理与",
-      "components": [
-        {
-          "kind": "image",
-          "label": ""
-        }
-      ]
+      "id": "r_bt_i_feed",
+      "type": "list",
+      "label": "工作动态"
     },
     {
-      "id": "r_ac_s3",
+      "id": "r_bt_i_market",
       "type": "custom",
-      "label": "项目成本利润双管控免费咨询直击「项目成本算不清、跨区域管不住、财务效率低」的多项",
-      "components": [
-        {
-          "kind": "image",
-          "label": ""
-        }
-      ]
+      "label": "应用市场"
     },
     {
-      "id": "r_ac_s4",
+      "id": "r_bt_i_tpl",
       "type": "custom",
-      "label": "HR 全流程电子签约免费咨询入职、合同、证明全线上签署，合规存证一键归档上海某信",
-      "components": [
-        {
-          "kind": "image",
-          "label": ""
-        }
-      ]
+      "label": "模板中心"
     },
     {
-      "id": "r_ac_s5",
+      "id": "r_bt_i_all",
       "type": "custom",
-      "label": "固定资产全生命周期管理免费咨询采购、领用、盘点、报废全流程数字化，账实相符深圳某",
-      "components": [
-        {
-          "kind": "image",
-          "label": ""
-        }
-      ]
+      "label": "全部多维表格"
     },
     {
-      "id": "r_ac_s6",
+      "id": "r_bt_main",
       "type": "custom",
-      "label": "AI无代码生产进销存免费咨询轻流无代码搭建，业务人员自助配置进销存系统上海易校信",
-      "components": [
-        {
-          "kind": "image",
-          "label": ""
-        }
-      ]
-    },
-    {
-      "id": "r_ac_modal",
-      "type": "modal",
-      "label": "👋 Hi Q，你想看到哪些应用和解决方案？✕\n      为了把最合适的内容推",
-      "components": [
-        {
-          "kind": "dialog",
-          "label": "✕",
-          "interaction": {
-            "act": "dialog",
-            "msg": "close"
-          },
-          "sample_value": "✕"
-        },
-        {
-          "kind": "button",
-          "label": "市场营销",
-          "interaction": {
-            "act": "toast",
-            "msg": "市场营销（演示）"
-          },
-          "sample_value": "市场营销"
-        },
-        {
-          "kind": "button",
-          "label": "电商经营",
-          "interaction": {
-            "act": "toast",
-            "msg": "电商经营（演示）"
-          },
-          "sample_value": "电商经营"
-        },
-        {
-          "kind": "button",
-          "label": "达人直播",
-          "interaction": {
-            "act": "toast",
-            "msg": "达人直播（演示）"
-          },
-          "sample_value": "达人直播"
-        },
-        {
-          "kind": "button",
-          "label": "财务费控",
-          "interaction": {
-            "act": "toast",
-            "msg": "财务费控（演示）"
-          },
-          "sample_value": "财务费控"
-        },
-        {
-          "kind": "button",
-          "label": "组织绩效",
-          "interaction": {
-            "act": "toast",
-            "msg": "组织绩效（演示）"
-          },
-          "sample_value": "组织绩效"
-        },
-        {
-          "kind": "button",
-          "label": "人才发展",
-          "interaction": {
-            "act": "toast",
-            "msg": "人才发展（演示）"
-          },
-          "sample_value": "人才发展"
-        },
-        {
-          "kind": "button",
-          "label": "IT管理",
-          "interaction": {
-            "act": "toast",
-            "msg": "IT管理（演示）"
-          },
-          "sample_value": "IT管理"
-        },
-        {
-          "kind": "button",
-          "label": "效率工具",
-          "interaction": {
-            "act": "toast",
-            "msg": "效率工具（演示）"
-          },
-          "sample_value": "效率工具"
-        },
-        {
-          "kind": "button",
-          "label": "生产制造",
-          "interaction": {
-            "act": "toast",
-            "msg": "生产制造（演示）"
-          },
-          "sample_value": "生产制造"
-        },
-        {
-          "kind": "button",
-          "label": "行政差旅",
-          "interaction": {
-            "act": "toast",
-            "msg": "行政差旅（演示）"
-          },
-          "sample_value": "行政差旅"
-        },
-        {
-          "kind": "button",
-          "label": "软件研发",
-          "interaction": {
-            "act": "toast",
-            "msg": "软件研发（演示）"
-          },
-          "sample_value": "软件研发"
-        },
-        {
-          "kind": "dialog",
-          "label": "下次再说",
-          "interaction": {
-            "act": "dialog",
-            "msg": "close"
-          },
-          "sample_value": "下次再说"
-        },
-        {
-          "kind": "dialog",
-          "label": "完成配置",
-          "interaction": {
-            "act": "dialog",
-            "msg": "close"
-          },
-          "sample_value": "完成配置"
-        }
-      ]
+      "label": "最近访问\n      标题所有者最近访问"
     }
   ]
 }
