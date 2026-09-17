@@ -22,8 +22,8 @@
  },
  "license": "CC-BY-4.0",
  "ip_attestation": "original",
- "attestation_note": "M105: shell nav-state sync fix",
- "version": "3.2.1",
- "created_at": "2026-09-17T09:47:31.907Z",
+ "attestation_note": "M106: residual rename cleanup",
+ "version": "3.2.2",
+ "created_at": "2026-09-17T12:19:12.918Z",
  "platform": "mobile"
 }
