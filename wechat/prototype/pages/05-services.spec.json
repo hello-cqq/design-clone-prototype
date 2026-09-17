@@ -23,7 +23,7 @@
     "spec_version": 1,
     "change_log": [
       {
-        "at": "2026-09-17T05:50:57.383Z",
+        "at": "2026-09-17T09:33:54.492Z",
         "by": "clone",
         "note": "collect-design 初始/重采集（computed 真值）"
       }
@@ -31,24 +31,58 @@
   },
   "regions": [
     {
-      "id": "r_sv_back",
+      "id": "r_me_card",
+      "type": "custom",
+      "label": "Q阿Q微信号: demo_001",
+      "components": [
+        {
+          "kind": "sheet",
+          "label": "",
+          "interaction": {
+            "act": "sheet"
+          }
+        }
+      ]
+    },
+    {
+      "id": "r_me_qr",
       "type": "custom",
       "label": ""
     },
     {
-      "id": "r_sv_more",
+      "id": "r_me_cell",
       "type": "custom",
-      "label": "⋯"
+      "label": "服务"
     },
     {
-      "id": "r_sv_pay",
+      "id": "r_me_cell",
       "type": "custom",
-      "label": "收付款"
+      "label": "收藏"
     },
     {
-      "id": "r_sv_wallet",
+      "id": "r_me_cell",
       "type": "custom",
-      "label": "钱包"
+      "label": "朋友圈"
+    },
+    {
+      "id": "r_me_cell",
+      "type": "custom",
+      "label": "作品"
+    },
+    {
+      "id": "r_me_cell",
+      "type": "custom",
+      "label": "小店与卡包"
+    },
+    {
+      "id": "r_me_cell",
+      "type": "custom",
+      "label": "表情"
+    },
+    {
+      "id": "r_me_cell",
+      "type": "custom",
+      "label": "设置"
     }
   ]
 }
