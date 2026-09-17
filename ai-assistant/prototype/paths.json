@@ -1,66 +1,125 @@
 {
-  "generated_at": "2026-09-13T06:39:44.348Z",
+  "generated_at": "2026-09-16T18:21:43.998Z",
   "version": 3,
-  "flowsUsed": true,
+  "flowsUsed": false,
   "nodes": {
     "00-launch": {
-      "title": "启动页"
+      "title": "启动页",
+      "index": "00"
     },
     "01-home": {
-      "title": "首页·角色选择"
+      "title": "首页·角色选择",
+      "index": "01"
     },
     "02-chat": {
-      "title": "文字聊天"
+      "title": "文字聊天",
+      "index": "02"
     },
     "03-call": {
-      "title": "视频通话"
+      "title": "视频通话",
+      "index": "03"
     },
     "04-settings": {
-      "title": "设置·形象音色"
+      "title": "设置·形象音色",
+      "index": "04"
     }
   },
   "edges": [
     {
+      "i": 0,
       "from": "00-launch",
       "to": "01-home",
-      "kind": "flow",
-      "label": "启动页 → 首页·角色选择：双角色大"
+      "label": "tap · 01-home",
+      "kind": "navigate",
+      "role": "module"
     },
     {
-      "from": "00-launch",
-      "to": "02-chat",
-      "kind": "flow",
-      "label": "启动页 → 文字聊天：问答对话：气泡"
+      "i": 1,
+      "from": "01-home",
+      "to": "00-launch",
+      "label": "tap · 00-launch",
+      "kind": "navigate",
+      "role": "back"
     },
     {
-      "from": "00-launch",
-      "to": "03-call",
-      "kind": "flow",
-      "label": "启动页 → 视频通话：半身角色 70"
-    },
-    {
-      "from": "00-launch",
-      "to": "04-settings",
-      "kind": "flow",
-      "label": "启动页 → 设置·形象音色：形象预览"
-    },
-    {
+      "i": 2,
       "from": "01-home",
       "to": "02-chat",
-      "kind": "flow",
-      "label": "首页·角色选择 → 文字聊天 主链路"
+      "label": "tap · 02-chat",
+      "kind": "navigate",
+      "role": "task"
     },
     {
+      "i": 3,
+      "from": "01-home",
+      "to": "03-call",
+      "label": "tap · 03-call",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 4,
+      "from": "01-home",
+      "to": "04-settings",
+      "label": "tap · 04-settings",
+      "kind": "navigate",
+      "role": "task"
+    },
+    {
+      "i": 5,
+      "from": "02-chat",
+      "to": "01-home",
+      "label": "tap · 01-home",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 6,
+      "from": "02-chat",
+      "to": "04-settings",
+      "label": "tap · 04-settings",
+      "kind": "navigate",
+      "role": "task"
+    },
+    {
+      "i": 7,
       "from": "02-chat",
       "to": "03-call",
-      "kind": "flow",
-      "label": "文字聊天 → 视频通话 主链路"
+      "label": "tap · 03-call",
+      "kind": "navigate",
+      "role": "module"
     },
     {
+      "i": 8,
       "from": "03-call",
-      "to": "04-settings",
-      "kind": "flow",
-      "label": "视频通话 → 设置·形象音色 主链路"
+      "to": "01-home",
+      "label": "tap · 麦克风",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 9,
+      "from": "04-settings",
+      "to": "01-home",
+      "label": "tap · 01-home",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 10,
+      "from": "04-settings",
+      "to": "02-chat",
+      "label": "tap · 02-chat",
+      "kind": "navigate",
+      "role": "task"
+    },
+    {
+      "i": 11,
+      "from": "04-settings",
+      "to": "03-call",
+      "label": "tap · 03-call",
+      "kind": "navigate",
+      "role": "module"
     }
   ],
   "roots": [
@@ -69,60 +128,14 @@
   "depths": {
     "00-launch": 0,
     "01-home": 1,
-    "02-chat": 1,
-    "03-call": 1,
-    "04-settings": 1
+    "02-chat": 2,
+    "03-call": 2,
+    "04-settings": 2
   },
   "perNode": {
     "00-launch": {
-      "paths": [
-        [
-          0,
-          4,
-          5,
-          6
-        ],
-        [
-          1,
-          5,
-          6
-        ],
-        [
-          2,
-          6
-        ],
-        [
-          3
-        ]
-      ],
-      "pathInfo": [
-        {
-          "source": "brief",
-          "flow": "b1",
-          "name": "启动页 链路 1"
-        },
-        {
-          "source": "brief",
-          "flow": "b2",
-          "name": "启动页 链路 2"
-        },
-        {
-          "source": "brief",
-          "flow": "b3",
-          "name": "启动页 链路 3"
-        },
-        {
-          "source": "brief",
-          "flow": "b4",
-          "name": "启动页 链路 4"
-        }
-      ],
-      "nav": [
-        "01-home",
-        "02-chat",
-        "03-call",
-        "04-settings"
-      ],
+      "paths": [],
+      "pathInfo": [],
       "tree": {
         "node": "00-launch",
         "children": [
@@ -132,61 +145,21 @@
               "node": "01-home",
               "children": [
                 {
-                  "edge": 4,
+                  "edge": 2,
                   "child": {
                     "node": "02-chat",
-                    "children": [
-                      {
-                        "edge": 5,
-                        "child": {
-                          "node": "03-call",
-                          "children": [
-                            {
-                              "edge": 6,
-                              "child": {
-                                "node": "04-settings",
-                                "children": []
-                              }
-                            }
-                          ]
-                        }
-                      }
-                    ]
+                    "children": []
                   }
-                }
-              ]
-            }
-          },
-          {
-            "edge": 1,
-            "child": {
-              "node": "02-chat",
-              "children": [
+                },
                 {
-                  "edge": 5,
+                  "edge": 3,
                   "child": {
                     "node": "03-call",
-                    "children": [
-                      {
-                        "edge": 6,
-                        "child": {
-                          "node": "04-settings",
-                          "children": []
-                        }
-                      }
-                    ]
+                    "children": []
                   }
-                }
-              ]
-            }
-          },
-          {
-            "edge": 2,
-            "child": {
-              "node": "03-call",
-              "children": [
+                },
                 {
-                  "edge": 6,
+                  "edge": 4,
                   "child": {
                     "node": "04-settings",
                     "children": []
@@ -194,139 +167,108 @@
                 }
               ]
             }
-          },
-          {
-            "edge": 3,
-            "child": {
-              "node": "04-settings",
-              "children": []
-            }
           }
         ]
-      }
+      },
+      "nav": [
+        "01-home"
+      ]
     },
     "01-home": {
       "paths": [
         [
-          4,
-          5,
+          2,
           6
+        ],
+        [
+          4,
+          10
         ]
       ],
       "pathInfo": [
         {
-          "source": "brief",
-          "flow": "b1",
-          "name": "首页·角色选择 链路 1"
+          "source": "derived"
+        },
+        {
+          "source": "derived"
         }
-      ],
-      "nav": [
-        "02-chat"
       ],
       "tree": {
         "node": "01-home",
         "children": [
           {
-            "edge": 4,
+            "edge": 2,
             "child": {
               "node": "02-chat",
-              "children": [
-                {
-                  "edge": 5,
-                  "child": {
-                    "node": "03-call",
-                    "children": [
-                      {
-                        "edge": 6,
-                        "child": {
-                          "node": "04-settings",
-                          "children": []
-                        }
-                      }
-                    ]
-                  }
-                }
-              ]
+              "children": []
             }
-          }
-        ]
-      }
-    },
-    "02-chat": {
-      "paths": [
-        [
-          5,
-          6
-        ]
-      ],
-      "pathInfo": [
-        {
-          "source": "brief",
-          "flow": "b1",
-          "name": "文字聊天 链路 1"
-        }
-      ],
-      "nav": [
-        "03-call"
-      ],
-      "tree": {
-        "node": "02-chat",
-        "children": [
+          },
           {
-            "edge": 5,
+            "edge": 3,
             "child": {
               "node": "03-call",
-              "children": [
-                {
-                  "edge": 6,
-                  "child": {
-                    "node": "04-settings",
-                    "children": []
-                  }
-                }
-              ]
+              "children": []
             }
-          }
-        ]
-      }
-    },
-    "03-call": {
-      "paths": [
-        [
-          6
-        ]
-      ],
-      "pathInfo": [
-        {
-          "source": "brief",
-          "flow": "b1",
-          "name": "视频通话 链路 1"
-        }
-      ],
-      "nav": [
-        "04-settings"
-      ],
-      "tree": {
-        "node": "03-call",
-        "children": [
+          },
           {
-            "edge": 6,
+            "edge": 4,
             "child": {
               "node": "04-settings",
               "children": []
             }
           }
         ]
-      }
+      },
+      "nav": [
+        "03-call"
+      ]
     },
-    "04-settings": {
+    "02-chat": {
+      "paths": [
+        [
+          6
+        ]
+      ],
+      "pathInfo": [
+        {
+          "source": "derived"
+        }
+      ],
+      "tree": {
+        "node": "02-chat",
+        "children": []
+      },
+      "nav": [
+        "03-call"
+      ]
+    },
+    "03-call": {
       "paths": [],
       "pathInfo": [],
-      "nav": [],
+      "tree": {
+        "node": "03-call",
+        "children": []
+      },
+      "nav": []
+    },
+    "04-settings": {
+      "paths": [
+        [
+          10
+        ]
+      ],
+      "pathInfo": [
+        {
+          "source": "derived"
+        }
+      ],
       "tree": {
         "node": "04-settings",
         "children": []
-      }
+      },
+      "nav": [
+        "03-call"
+      ]
     }
   }
 }
