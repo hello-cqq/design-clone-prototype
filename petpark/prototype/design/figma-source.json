@@ -1,7 +1,7 @@
 {
   "meta": {
     "generator": "design-clone collect-design",
-    "generated_at": "2026-09-17T08:58:37.230Z",
+    "generated_at": "2026-09-17T12:00:10.631Z",
     "source_run": "demo-petpark",
     "schema": "figma-source/v1"
   },
@@ -235,7 +235,7 @@
             "w": 390,
             "h": 844
           },
-          "fill": "rgba(0, 0, 0, 0)",
+          "fill": "rgb(255, 246, 233)",
           "color": "rgb(91, 58, 30)",
           "cornerRadius": 0,
           "font": {
@@ -247,13 +247,13 @@
           "text": ""
         },
         {
-          "dc": "pp/petstage",
+          "dc": "pp/res",
           "kind": "frame",
           "rect": {
-            "x": 0,
-            "y": 0,
-            "w": 390,
-            "h": 844
+            "x": 14,
+            "y": 50,
+            "w": 362,
+            "h": 29
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(91, 58, 30)",
@@ -267,53 +267,53 @@
           "text": ""
         },
         {
-          "dc": "pp/pet-fox",
+          "dc": "pp/task-daily",
+          "kind": "frame",
+          "rect": {
+            "x": 14,
+            "y": 89,
+            "w": 362,
+            "h": 57
+          },
+          "fill": "rgba(255, 255, 255, 0.92)",
+          "color": "rgb(91, 58, 30)",
+          "cornerRadius": 18,
+          "font": {
+            "family": "ui-rounded",
+            "size": 13,
+            "weight": 600,
+            "lineHeight": 19
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/start",
           "kind": "button",
           "rect": {
-            "x": 0,
-            "y": 0,
-            "w": 390,
-            "h": 844
+            "x": 297,
+            "y": 101,
+            "w": 65,
+            "h": 33
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(91, 58, 30)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/pet-name",
-          "kind": "text",
-          "rect": {
-            "x": 126,
-            "y": 96,
-            "w": 138,
-            "h": 32
-          },
-          "fill": "rgba(255, 255, 255, 0.9)",
-          "color": "rgb(176, 85, 47)",
+          "color": "rgb(255, 255, 255)",
           "cornerRadius": 999,
           "font": {
             "family": "ui-rounded",
-            "size": 12,
+            "size": 11,
             "weight": 600,
-            "lineHeight": 18
+            "lineHeight": 17
           },
-          "text": "耳廓狐 · 好感 Lv.4"
+          "text": "去完成"
         },
         {
-          "dc": "pp/acts",
+          "dc": "pp/entries",
           "kind": "frame",
           "rect": {
-            "x": 324,
-            "y": 338,
-            "w": 52,
-            "h": 176
+            "x": 14,
+            "y": 155,
+            "w": 362,
+            "h": 301
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(91, 58, 30)",
@@ -323,66 +323,6 @@
             "size": 16,
             "weight": 400,
             "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/pet",
-          "kind": "button",
-          "rect": {
-            "x": 324,
-            "y": 338,
-            "w": 52,
-            "h": 52
-          },
-          "fill": "rgba(255, 255, 255, 0.92)",
-          "color": "rgb(176, 85, 47)",
-          "cornerRadius": 50,
-          "font": {
-            "family": "ui-rounded",
-            "size": 10,
-            "weight": 600,
-            "lineHeight": 14
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/feed",
-          "kind": "button",
-          "rect": {
-            "x": 324,
-            "y": 400,
-            "w": 52,
-            "h": 52
-          },
-          "fill": "rgba(255, 255, 255, 0.92)",
-          "color": "rgb(176, 85, 47)",
-          "cornerRadius": 50,
-          "font": {
-            "family": "ui-rounded",
-            "size": 10,
-            "weight": 600,
-            "lineHeight": 14
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/sing",
-          "kind": "button",
-          "rect": {
-            "x": 324,
-            "y": 462,
-            "w": 52,
-            "h": 52
-          },
-          "fill": "rgba(255, 255, 255, 0.92)",
-          "color": "rgb(176, 85, 47)",
-          "cornerRadius": 50,
-          "font": {
-            "family": "ui-rounded",
-            "size": 10,
-            "weight": 600,
-            "lineHeight": 14
           },
           "text": ""
         },
@@ -416,12 +356,12 @@
             "h": 33
           },
           "fill": "rgba(255, 255, 255, 0.92)",
-          "color": "rgb(138, 100, 64)",
+          "color": "rgb(232, 134, 47)",
           "cornerRadius": 16,
           "font": {
             "family": "ui-rounded",
             "size": 11,
-            "weight": 400,
+            "weight": 600,
             "lineHeight": 16
           },
           "text": "乐园"
@@ -445,7 +385,7 @@
             "w": 390,
             "h": 844
           },
-          "fill": "rgba(0, 0, 0, 0)",
+          "fill": "rgb(255, 246, 233)",
           "color": "rgb(91, 58, 30)",
           "cornerRadius": 0,
           "font": {
@@ -457,13 +397,13 @@
           "text": ""
         },
         {
-          "dc": "pp/petstage",
+          "dc": "pp/res",
           "kind": "frame",
           "rect": {
-            "x": 0,
-            "y": 0,
-            "w": 390,
-            "h": 844
+            "x": 14,
+            "y": 50,
+            "w": 362,
+            "h": 29
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(91, 58, 30)",
@@ -477,53 +417,53 @@
           "text": ""
         },
         {
-          "dc": "pp/pet-fox",
+          "dc": "pp/task-daily",
+          "kind": "frame",
+          "rect": {
+            "x": 14,
+            "y": 89,
+            "w": 362,
+            "h": 57
+          },
+          "fill": "rgba(255, 255, 255, 0.92)",
+          "color": "rgb(91, 58, 30)",
+          "cornerRadius": 18,
+          "font": {
+            "family": "ui-rounded",
+            "size": 13,
+            "weight": 600,
+            "lineHeight": 19
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/start",
           "kind": "button",
           "rect": {
-            "x": 0,
-            "y": 0,
-            "w": 390,
-            "h": 844
+            "x": 297,
+            "y": 101,
+            "w": 65,
+            "h": 33
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(91, 58, 30)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/pet-name",
-          "kind": "text",
-          "rect": {
-            "x": 126,
-            "y": 96,
-            "w": 138,
-            "h": 32
-          },
-          "fill": "rgba(255, 255, 255, 0.9)",
-          "color": "rgb(176, 85, 47)",
+          "color": "rgb(255, 255, 255)",
           "cornerRadius": 999,
           "font": {
             "family": "ui-rounded",
-            "size": 12,
+            "size": 11,
             "weight": 600,
-            "lineHeight": 18
+            "lineHeight": 17
           },
-          "text": "耳廓狐 · 好感 Lv.4"
+          "text": "去完成"
         },
         {
-          "dc": "pp/acts",
+          "dc": "pp/entries",
           "kind": "frame",
           "rect": {
-            "x": 324,
-            "y": 338,
-            "w": 52,
-            "h": 176
+            "x": 14,
+            "y": 155,
+            "w": 362,
+            "h": 301
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(91, 58, 30)",
@@ -533,66 +473,6 @@
             "size": 16,
             "weight": 400,
             "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/pet",
-          "kind": "button",
-          "rect": {
-            "x": 324,
-            "y": 338,
-            "w": 52,
-            "h": 52
-          },
-          "fill": "rgba(255, 255, 255, 0.92)",
-          "color": "rgb(176, 85, 47)",
-          "cornerRadius": 50,
-          "font": {
-            "family": "ui-rounded",
-            "size": 10,
-            "weight": 600,
-            "lineHeight": 14
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/feed",
-          "kind": "button",
-          "rect": {
-            "x": 324,
-            "y": 400,
-            "w": 52,
-            "h": 52
-          },
-          "fill": "rgba(255, 255, 255, 0.92)",
-          "color": "rgb(176, 85, 47)",
-          "cornerRadius": 50,
-          "font": {
-            "family": "ui-rounded",
-            "size": 10,
-            "weight": 600,
-            "lineHeight": 14
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/sing",
-          "kind": "button",
-          "rect": {
-            "x": 324,
-            "y": 462,
-            "w": 52,
-            "h": 52
-          },
-          "fill": "rgba(255, 255, 255, 0.92)",
-          "color": "rgb(176, 85, 47)",
-          "cornerRadius": 50,
-          "font": {
-            "family": "ui-rounded",
-            "size": 10,
-            "weight": 600,
-            "lineHeight": 14
           },
           "text": ""
         },
@@ -626,12 +506,12 @@
             "h": 33
           },
           "fill": "rgba(255, 255, 255, 0.92)",
-          "color": "rgb(138, 100, 64)",
+          "color": "rgb(232, 134, 47)",
           "cornerRadius": 16,
           "font": {
             "family": "ui-rounded",
             "size": 11,
-            "weight": 400,
+            "weight": 600,
             "lineHeight": 16
           },
           "text": "乐园"
@@ -655,7 +535,7 @@
             "w": 390,
             "h": 844
           },
-          "fill": "rgba(0, 0, 0, 0)",
+          "fill": "rgb(255, 246, 233)",
           "color": "rgb(91, 58, 30)",
           "cornerRadius": 0,
           "font": {
@@ -667,13 +547,13 @@
           "text": ""
         },
         {
-          "dc": "pp/petstage",
+          "dc": "pp/res",
           "kind": "frame",
           "rect": {
-            "x": 0,
-            "y": 0,
-            "w": 390,
-            "h": 844
+            "x": 14,
+            "y": 50,
+            "w": 362,
+            "h": 29
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(91, 58, 30)",
@@ -687,53 +567,53 @@
           "text": ""
         },
         {
-          "dc": "pp/pet-fox",
+          "dc": "pp/task-daily",
+          "kind": "frame",
+          "rect": {
+            "x": 14,
+            "y": 89,
+            "w": 362,
+            "h": 57
+          },
+          "fill": "rgba(255, 255, 255, 0.92)",
+          "color": "rgb(91, 58, 30)",
+          "cornerRadius": 18,
+          "font": {
+            "family": "ui-rounded",
+            "size": 13,
+            "weight": 600,
+            "lineHeight": 19
+          },
+          "text": ""
+        },
+        {
+          "dc": "pp/start",
           "kind": "button",
           "rect": {
-            "x": 0,
-            "y": 0,
-            "w": 390,
-            "h": 844
+            "x": 297,
+            "y": 101,
+            "w": 65,
+            "h": 33
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(91, 58, 30)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/pet-name",
-          "kind": "text",
-          "rect": {
-            "x": 126,
-            "y": 96,
-            "w": 138,
-            "h": 32
-          },
-          "fill": "rgba(255, 255, 255, 0.9)",
-          "color": "rgb(176, 85, 47)",
+          "color": "rgb(255, 255, 255)",
           "cornerRadius": 999,
           "font": {
             "family": "ui-rounded",
-            "size": 12,
+            "size": 11,
             "weight": 600,
-            "lineHeight": 18
+            "lineHeight": 17
           },
-          "text": "耳廓狐 · 好感 Lv.4"
+          "text": "去完成"
         },
         {
-          "dc": "pp/acts",
+          "dc": "pp/entries",
           "kind": "frame",
           "rect": {
-            "x": 324,
-            "y": 338,
-            "w": 52,
-            "h": 176
+            "x": 14,
+            "y": 155,
+            "w": 362,
+            "h": 301
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(91, 58, 30)",
@@ -743,66 +623,6 @@
             "size": 16,
             "weight": 400,
             "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/pet",
-          "kind": "button",
-          "rect": {
-            "x": 324,
-            "y": 338,
-            "w": 52,
-            "h": 52
-          },
-          "fill": "rgba(255, 255, 255, 0.92)",
-          "color": "rgb(176, 85, 47)",
-          "cornerRadius": 50,
-          "font": {
-            "family": "ui-rounded",
-            "size": 10,
-            "weight": 600,
-            "lineHeight": 14
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/feed",
-          "kind": "button",
-          "rect": {
-            "x": 324,
-            "y": 400,
-            "w": 52,
-            "h": 52
-          },
-          "fill": "rgba(255, 255, 255, 0.92)",
-          "color": "rgb(176, 85, 47)",
-          "cornerRadius": 50,
-          "font": {
-            "family": "ui-rounded",
-            "size": 10,
-            "weight": 600,
-            "lineHeight": 14
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/sing",
-          "kind": "button",
-          "rect": {
-            "x": 324,
-            "y": 462,
-            "w": 52,
-            "h": 52
-          },
-          "fill": "rgba(255, 255, 255, 0.92)",
-          "color": "rgb(176, 85, 47)",
-          "cornerRadius": 50,
-          "font": {
-            "family": "ui-rounded",
-            "size": 10,
-            "weight": 600,
-            "lineHeight": 14
           },
           "text": ""
         },
@@ -836,12 +656,12 @@
             "h": 33
           },
           "fill": "rgba(255, 255, 255, 0.92)",
-          "color": "rgb(138, 100, 64)",
+          "color": "rgb(232, 134, 47)",
           "cornerRadius": 16,
           "font": {
             "family": "ui-rounded",
             "size": 11,
-            "weight": 400,
+            "weight": 600,
             "lineHeight": 16
           },
           "text": "乐园"
@@ -865,8 +685,8 @@
             "w": 390,
             "h": 844
           },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(91, 58, 30)",
+          "fill": "rgb(234, 246, 216)",
+          "color": "rgb(74, 58, 28)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -877,16 +697,16 @@
           "text": ""
         },
         {
-          "dc": "pp/petstage",
+          "dc": "pp/tray",
           "kind": "frame",
           "rect": {
-            "x": 0,
-            "y": 0,
-            "w": 390,
-            "h": 844
+            "x": 14,
+            "y": 96,
+            "w": 362,
+            "h": 56
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(91, 58, 30)",
+          "color": "rgb(74, 58, 28)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -897,122 +717,42 @@
           "text": ""
         },
         {
-          "dc": "pp/pet-fox",
+          "dc": "pp/plot",
           "kind": "button",
           "rect": {
-            "x": 0,
-            "y": 0,
-            "w": 390,
-            "h": 844
+            "x": 70,
+            "y": 507,
+            "w": 250,
+            "h": 187
           },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(91, 58, 30)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/pet-name",
-          "kind": "text",
-          "rect": {
-            "x": 126,
-            "y": 96,
-            "w": 138,
-            "h": 32
-          },
-          "fill": "rgba(255, 255, 255, 0.9)",
-          "color": "rgb(176, 85, 47)",
-          "cornerRadius": 999,
+          "fill": "rgba(255, 255, 255, 0.35)",
+          "color": "rgb(255, 255, 255)",
+          "cornerRadius": 24,
           "font": {
             "family": "ui-rounded",
             "size": 12,
             "weight": 600,
             "lineHeight": 18
           },
-          "text": "耳廓狐 · 好感 Lv.4"
+          "text": "3×3 空地块"
         },
         {
-          "dc": "pp/acts",
+          "dc": "pp/tools",
           "kind": "frame",
           "rect": {
-            "x": 324,
-            "y": 338,
-            "w": 52,
-            "h": 176
+            "x": 114,
+            "y": 712,
+            "w": 162,
+            "h": 46
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(91, 58, 30)",
+          "color": "rgb(74, 58, 28)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
             "size": 16,
             "weight": 400,
             "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/pet",
-          "kind": "button",
-          "rect": {
-            "x": 324,
-            "y": 338,
-            "w": 52,
-            "h": 52
-          },
-          "fill": "rgba(255, 255, 255, 0.92)",
-          "color": "rgb(176, 85, 47)",
-          "cornerRadius": 50,
-          "font": {
-            "family": "ui-rounded",
-            "size": 10,
-            "weight": 600,
-            "lineHeight": 14
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/feed",
-          "kind": "button",
-          "rect": {
-            "x": 324,
-            "y": 400,
-            "w": 52,
-            "h": 52
-          },
-          "fill": "rgba(255, 255, 255, 0.92)",
-          "color": "rgb(176, 85, 47)",
-          "cornerRadius": 50,
-          "font": {
-            "family": "ui-rounded",
-            "size": 10,
-            "weight": 600,
-            "lineHeight": 14
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/sing",
-          "kind": "button",
-          "rect": {
-            "x": 324,
-            "y": 462,
-            "w": 52,
-            "h": 52
-          },
-          "fill": "rgba(255, 255, 255, 0.92)",
-          "color": "rgb(176, 85, 47)",
-          "cornerRadius": 50,
-          "font": {
-            "family": "ui-rounded",
-            "size": 10,
-            "weight": 600,
-            "lineHeight": 14
           },
           "text": ""
         },
@@ -1026,7 +766,7 @@
             "h": 33
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(91, 58, 30)",
+          "color": "rgb(74, 58, 28)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -1075,8 +815,8 @@
             "w": 390,
             "h": 844
           },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(91, 58, 30)",
+          "fill": "rgb(234, 246, 216)",
+          "color": "rgb(74, 58, 28)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -1087,16 +827,16 @@
           "text": ""
         },
         {
-          "dc": "pp/petstage",
+          "dc": "pp/tray",
           "kind": "frame",
           "rect": {
-            "x": 0,
-            "y": 0,
-            "w": 390,
-            "h": 844
+            "x": 14,
+            "y": 96,
+            "w": 362,
+            "h": 56
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(91, 58, 30)",
+          "color": "rgb(74, 58, 28)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -1107,122 +847,42 @@
           "text": ""
         },
         {
-          "dc": "pp/pet-fox",
+          "dc": "pp/plot",
           "kind": "button",
           "rect": {
-            "x": 0,
-            "y": 0,
-            "w": 390,
-            "h": 844
+            "x": 70,
+            "y": 507,
+            "w": 250,
+            "h": 187
           },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(91, 58, 30)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/pet-name",
-          "kind": "text",
-          "rect": {
-            "x": 126,
-            "y": 96,
-            "w": 138,
-            "h": 32
-          },
-          "fill": "rgba(255, 255, 255, 0.9)",
-          "color": "rgb(176, 85, 47)",
-          "cornerRadius": 999,
+          "fill": "rgba(255, 255, 255, 0.35)",
+          "color": "rgb(255, 255, 255)",
+          "cornerRadius": 24,
           "font": {
             "family": "ui-rounded",
             "size": 12,
             "weight": 600,
             "lineHeight": 18
           },
-          "text": "耳廓狐 · 好感 Lv.4"
+          "text": "3×3 空地块"
         },
         {
-          "dc": "pp/acts",
+          "dc": "pp/tools",
           "kind": "frame",
           "rect": {
-            "x": 324,
-            "y": 338,
-            "w": 52,
-            "h": 176
+            "x": 114,
+            "y": 712,
+            "w": 162,
+            "h": 46
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(91, 58, 30)",
+          "color": "rgb(74, 58, 28)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
             "size": 16,
             "weight": 400,
             "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/pet",
-          "kind": "button",
-          "rect": {
-            "x": 324,
-            "y": 338,
-            "w": 52,
-            "h": 52
-          },
-          "fill": "rgba(255, 255, 255, 0.92)",
-          "color": "rgb(176, 85, 47)",
-          "cornerRadius": 50,
-          "font": {
-            "family": "ui-rounded",
-            "size": 10,
-            "weight": 600,
-            "lineHeight": 14
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/feed",
-          "kind": "button",
-          "rect": {
-            "x": 324,
-            "y": 400,
-            "w": 52,
-            "h": 52
-          },
-          "fill": "rgba(255, 255, 255, 0.92)",
-          "color": "rgb(176, 85, 47)",
-          "cornerRadius": 50,
-          "font": {
-            "family": "ui-rounded",
-            "size": 10,
-            "weight": 600,
-            "lineHeight": 14
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/sing",
-          "kind": "button",
-          "rect": {
-            "x": 324,
-            "y": 462,
-            "w": 52,
-            "h": 52
-          },
-          "fill": "rgba(255, 255, 255, 0.92)",
-          "color": "rgb(176, 85, 47)",
-          "cornerRadius": 50,
-          "font": {
-            "family": "ui-rounded",
-            "size": 10,
-            "weight": 600,
-            "lineHeight": 14
           },
           "text": ""
         },
@@ -1236,7 +896,7 @@
             "h": 33
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(91, 58, 30)",
+          "color": "rgb(74, 58, 28)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -1285,8 +945,8 @@
             "w": 390,
             "h": 844
           },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(91, 58, 30)",
+          "fill": "rgb(234, 246, 216)",
+          "color": "rgb(74, 58, 28)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -1297,16 +957,16 @@
           "text": ""
         },
         {
-          "dc": "pp/petstage",
+          "dc": "pp/tray",
           "kind": "frame",
           "rect": {
-            "x": 0,
-            "y": 0,
-            "w": 390,
-            "h": 844
+            "x": 14,
+            "y": 96,
+            "w": 362,
+            "h": 56
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(91, 58, 30)",
+          "color": "rgb(74, 58, 28)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
@@ -1317,122 +977,42 @@
           "text": ""
         },
         {
-          "dc": "pp/pet-fox",
+          "dc": "pp/plot",
           "kind": "button",
           "rect": {
-            "x": 0,
-            "y": 0,
-            "w": 390,
-            "h": 844
+            "x": 70,
+            "y": 507,
+            "w": 250,
+            "h": 187
           },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(91, 58, 30)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/pet-name",
-          "kind": "text",
-          "rect": {
-            "x": 126,
-            "y": 96,
-            "w": 138,
-            "h": 32
-          },
-          "fill": "rgba(255, 255, 255, 0.9)",
-          "color": "rgb(176, 85, 47)",
-          "cornerRadius": 999,
+          "fill": "rgba(255, 255, 255, 0.35)",
+          "color": "rgb(255, 255, 255)",
+          "cornerRadius": 24,
           "font": {
             "family": "ui-rounded",
             "size": 12,
             "weight": 600,
             "lineHeight": 18
           },
-          "text": "耳廓狐 · 好感 Lv.4"
+          "text": "3×3 空地块"
         },
         {
-          "dc": "pp/acts",
+          "dc": "pp/tools",
           "kind": "frame",
           "rect": {
-            "x": 324,
-            "y": 338,
-            "w": 52,
-            "h": 176
+            "x": 114,
+            "y": 712,
+            "w": 162,
+            "h": 46
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(91, 58, 30)",
+          "color": "rgb(74, 58, 28)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
             "size": 16,
             "weight": 400,
             "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/pet",
-          "kind": "button",
-          "rect": {
-            "x": 324,
-            "y": 338,
-            "w": 52,
-            "h": 52
-          },
-          "fill": "rgba(255, 255, 255, 0.92)",
-          "color": "rgb(176, 85, 47)",
-          "cornerRadius": 50,
-          "font": {
-            "family": "ui-rounded",
-            "size": 10,
-            "weight": 600,
-            "lineHeight": 14
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/feed",
-          "kind": "button",
-          "rect": {
-            "x": 324,
-            "y": 400,
-            "w": 52,
-            "h": 52
-          },
-          "fill": "rgba(255, 255, 255, 0.92)",
-          "color": "rgb(176, 85, 47)",
-          "cornerRadius": 50,
-          "font": {
-            "family": "ui-rounded",
-            "size": 10,
-            "weight": 600,
-            "lineHeight": 14
-          },
-          "text": ""
-        },
-        {
-          "dc": "pp/sing",
-          "kind": "button",
-          "rect": {
-            "x": 324,
-            "y": 462,
-            "w": 52,
-            "h": 52
-          },
-          "fill": "rgba(255, 255, 255, 0.92)",
-          "color": "rgb(176, 85, 47)",
-          "cornerRadius": 50,
-          "font": {
-            "family": "ui-rounded",
-            "size": 10,
-            "weight": 600,
-            "lineHeight": 14
           },
           "text": ""
         },
@@ -1446,7 +1026,7 @@
             "h": 33
           },
           "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(91, 58, 30)",
+          "color": "rgb(74, 58, 28)",
           "cornerRadius": 0,
           "font": {
             "family": "ui-rounded",
