@@ -6,7 +6,7 @@
     "page_type": "web_other",
     "canvas": {
       "width": 1280,
-      "height": 930
+      "height": 993
     },
     "evidence": [
       "capture/screens/03-price.png"
@@ -21,7 +21,7 @@
     "spec_version": 1,
     "change_log": [
       {
-        "at": "2026-09-17T09:40:11.565Z",
+        "at": "2026-09-17T12:11:24.930Z",
         "by": "clone",
         "note": "collect-design 初始/重采集（computed 真值）"
       }
@@ -199,203 +199,90 @@
       ]
     },
     {
-      "id": "r_sn_bar",
-      "type": "toolbar",
-      "label": "云服务器 ECS产品概述产品功能选型与定价入门与试用技术解决方案相关资源 文档 ",
-      "components": [
-        {
-          "kind": "button",
-          "label": "产品概述",
-          "interaction": {
-            "act": "goto",
-            "to": "08-ecs-overview"
-          },
-          "sample_value": "产品概述"
-        },
-        {
-          "kind": "button",
-          "label": "产品功能",
-          "interaction": {
-            "act": "goto",
-            "to": "05-ecs-features"
-          },
-          "sample_value": "产品功能"
-        },
-        {
-          "kind": "button",
-          "label": "选型与定价",
-          "interaction": {
-            "act": "goto",
-            "to": "06-ecs-pricing"
-          },
-          "sample_value": "选型与定价"
-        },
-        {
-          "kind": "button",
-          "label": "入门与试用",
-          "interaction": {
-            "act": "toast",
-            "msg": "入门与试用（演示）"
-          },
-          "sample_value": "入门与试用"
-        },
-        {
-          "kind": "button",
-          "label": "技术解决方案",
-          "interaction": {
-            "act": "toast",
-            "msg": "技术解决方案（演示）"
-          },
-          "sample_value": "技术解决方案"
-        },
-        {
-          "kind": "button",
-          "label": "相关资源",
-          "interaction": {
-            "act": "toast",
-            "msg": "相关资源（演示）"
-          },
-          "sample_value": "相关资源"
-        },
-        {
-          "kind": "button",
-          "label": "文档",
-          "interaction": {
-            "act": "toast",
-            "msg": "文档（演示）"
-          },
-          "sample_value": "文档"
-        },
-        {
-          "kind": "button",
-          "label": "选型与购买",
-          "interaction": {
-            "act": "toast",
-            "msg": "选型与购买（演示）"
-          },
-          "sample_value": "选型与购买"
-        },
-        {
-          "kind": "button",
-          "label": "云服务器 ECS控制台",
-          "interaction": {
-            "act": "toast",
-            "msg": "ECS控制台（演示）"
-          },
-          "sample_value": "云服务器 ECS控制台"
-        }
-      ]
-    },
-    {
-      "id": "r_ec_hero",
+      "id": "r_hm_hero",
       "type": "banner",
-      "label": "云服务器 ECS\n    性能卓越、稳定可靠、弹性扩展的 IaaS 级云计算服务",
+      "label": "Wan3.0 限时 7 折\n    生成时长、全能创作、全能参考与真实感上全面升",
       "components": [
         {
           "kind": "button",
-          "label": "立即购买",
+          "label": "立即查看 ↗",
           "interaction": {
             "act": "toast",
-            "msg": "立即购买（演示）"
+            "msg": "立即查看（演示）"
           },
-          "sample_value": "立即购买"
+          "sample_value": "立即查看 ↗"
         },
         {
           "kind": "button",
-          "label": "免费试用",
+          "label": "在线咨询",
           "interaction": {
             "act": "toast",
-            "msg": "免费试用（演示）"
+            "msg": "在线咨询（演示）"
           },
-          "sample_value": "免费试用"
+          "sample_value": "在线咨询"
         }
       ]
     },
     {
-      "id": "r_ec_specs",
+      "id": "r_hm_promos",
       "type": "custom",
-      "label": "经济型 e 实例共享算力，性价比之选，适合轻量应用与开发测试选型 ›\n     ",
+      "label": "AI多模态 MOE 模型 Qwen3.8-Flash支持百万级上下文窗口，能一次",
       "components": [
         {
           "kind": "button",
-          "label": "经济型 e 实例共享算力，性价比之选，适合轻量应用与开发测试选型 ›\n     ",
+          "label": "AI多模态 MOE 模型 Qwen3.8-Flash支持百万级上下文窗口，能一次",
+          "interaction": {
+            "act": "toast",
+            "msg": "Qwen3.8-Flash（演示）"
+          },
+          "sample_value": "AI多模态 MOE 模型 Qwen3.8-Flash支持百万级上下文窗口，能一次"
+        },
+        {
+          "kind": "button",
+          "label": "AI万小智 AI 建站，首月低至 9.9 元配套三级域名、数据库和基础云资源，新",
+          "interaction": {
+            "act": "toast",
+            "msg": "AI 建站（演示）"
+          },
+          "sample_value": "AI万小智 AI 建站，首月低至 9.9 元配套三级域名、数据库和基础云资源，新"
+        },
+        {
+          "kind": "button",
+          "label": "AI云服务器 99 元/年，续费不涨价2 核 2G 3M不限流量，一口价锁至 2",
+          "interaction": {
+            "act": "toast",
+            "msg": "云服务器特惠（演示）"
+          },
+          "sample_value": "AI云服务器 99 元/年，续费不涨价2 核 2G 3M不限流量，一口价锁至 2"
+        },
+        {
+          "kind": "button",
+          "label": "TPToken Plan 订阅方案，全家桶个人版上线，团队版降价，一个 Key，",
+          "interaction": {
+            "act": "toast",
+            "msg": "Token Plan（演示）"
+          },
+          "sample_value": "TPToken Plan 订阅方案，全家桶个人版上线，团队版降价，一个 Key，"
+        }
+      ]
+    },
+    {
+      "id": "r_hm_models",
+      "type": "custom",
+      "label": "更强模型、更新能力、热门 AI 应用免费体验\n      ▣大语言模型千问大模型",
+      "components": [
+        {
+          "kind": "button",
+          "label": "▣大语言模型千问大模型｜达到领域SOTA水平",
           "interaction": {
             "act": "toast",
             "msg": "（演示）"
           },
-          "sample_value": "经济型 e 实例共享算力，性价比之选，适合轻量应用与开发测试选型 ›\n     "
+          "sample_value": "▣大语言模型千问大模型｜达到领域SOTA水平"
         },
         {
-          "kind": "button",
-          "label": "经济型 e 实例共享算力，性价比之选，适合轻量应用与开发测试选型 ›",
-          "interaction": {
-            "act": "toast",
-            "msg": "（演示）"
-          },
-          "sample_value": "经济型 e 实例共享算力，性价比之选，适合轻量应用与开发测试选型 ›"
-        },
-        {
-          "kind": "button",
-          "label": "选型 ›",
-          "interaction": {
-            "act": "goto",
-            "to": "06-ecs-pricing"
-          },
-          "sample_value": "选型 ›"
-        },
-        {
-          "kind": "button",
-          "label": "通用型 g9i均衡计算/内存/网络，适合企业级综合业务选型 ›",
-          "interaction": {
-            "act": "toast",
-            "msg": "（演示）"
-          },
-          "sample_value": "通用型 g9i均衡计算/内存/网络，适合企业级综合业务选型 ›"
-        },
-        {
-          "kind": "button",
-          "label": "选型 ›",
-          "interaction": {
-            "act": "goto",
-            "to": "06-ecs-pricing"
-          },
-          "sample_value": "选型 ›"
-        },
-        {
-          "kind": "button",
-          "label": "计算型 c9i高主频与稳定算力，适合批处理与游戏服务器选型 ›",
-          "interaction": {
-            "act": "toast",
-            "msg": "（演示）"
-          },
-          "sample_value": "计算型 c9i高主频与稳定算力，适合批处理与游戏服务器选型 ›"
-        },
-        {
-          "kind": "button",
-          "label": "选型 ›",
-          "interaction": {
-            "act": "goto",
-            "to": "06-ecs-pricing"
-          },
-          "sample_value": "选型 ›"
-        },
-        {
-          "kind": "button",
-          "label": "内存型 r9i大内存配比，适合内存数据库与缓存集群选型 ›",
-          "interaction": {
-            "act": "toast",
-            "msg": "（演示）"
-          },
-          "sample_value": "内存型 r9i大内存配比，适合内存数据库与缓存集群选型 ›"
-        },
-        {
-          "kind": "button",
-          "label": "选型 ›",
-          "interaction": {
-            "act": "goto",
-            "to": "06-ecs-pricing"
-          },
-          "sample_value": "选型 ›"
+          "kind": "image",
+          "label": ""
         }
       ]
     },

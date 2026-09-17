@@ -1,7 +1,7 @@
 {
   "meta": {
     "generator": "design-clone collect-design",
-    "generated_at": "2026-09-17T09:40:11.565Z",
+    "generated_at": "2026-09-17T12:11:24.930Z",
     "source_run": "web-aliyun",
     "schema": "figma-source/v1"
   },
@@ -152,17 +152,17 @@
       "name": "ECS",
       "frame": {
         "width": 1280,
-        "height": 930
+        "height": 993
       },
       "nodes": [
         {
-          "dc": "ec/root",
+          "dc": "hm/root",
           "kind": "frame",
           "rect": {
             "x": 0,
             "y": 0,
             "w": 1280,
-            "h": 930
+            "h": 993
           },
           "fill": "rgb(255, 255, 255)",
           "color": "rgb(31, 35, 41)",
@@ -196,33 +196,13 @@
           "text": ""
         },
         {
-          "dc": "sn/bar",
-          "kind": "button",
+          "dc": "hm/hero",
+          "kind": "frame",
           "rect": {
             "x": 0,
             "y": 50,
             "w": 1280,
-            "h": 44
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(61, 73, 82)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "-apple-system",
-            "size": 13,
-            "weight": 400,
-            "lineHeight": 20
-          },
-          "text": ""
-        },
-        {
-          "dc": "ec/hero",
-          "kind": "frame",
-          "rect": {
-            "x": 0,
-            "y": 94,
-            "w": 1280,
-            "h": 225
+            "h": 259
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(31, 35, 41)",
@@ -236,13 +216,33 @@
           "text": ""
         },
         {
-          "dc": "ec/specs",
+          "dc": "hm/promos",
           "kind": "frame",
           "rect": {
             "x": 0,
-            "y": 319,
+            "y": 309,
             "w": 1280,
-            "h": 318
+            "h": 165
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "hm/models",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 474,
+            "w": 1280,
+            "h": 225
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(31, 35, 41)",
@@ -260,7 +260,7 @@
           "kind": "frame",
           "rect": {
             "x": 0,
-            "y": 677,
+            "y": 739,
             "w": 1280,
             "h": 254
           },
@@ -282,17 +282,17 @@
       "name": "定价",
       "frame": {
         "width": 1280,
-        "height": 930
+        "height": 993
       },
       "nodes": [
         {
-          "dc": "ec/root",
+          "dc": "hm/root",
           "kind": "frame",
           "rect": {
             "x": 0,
             "y": 0,
             "w": 1280,
-            "h": 930
+            "h": 993
           },
           "fill": "rgb(255, 255, 255)",
           "color": "rgb(31, 35, 41)",
@@ -326,33 +326,13 @@
           "text": ""
         },
         {
-          "dc": "sn/bar",
-          "kind": "button",
+          "dc": "hm/hero",
+          "kind": "frame",
           "rect": {
             "x": 0,
             "y": 50,
             "w": 1280,
-            "h": 44
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(61, 73, 82)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "-apple-system",
-            "size": 13,
-            "weight": 400,
-            "lineHeight": 20
-          },
-          "text": ""
-        },
-        {
-          "dc": "ec/hero",
-          "kind": "frame",
-          "rect": {
-            "x": 0,
-            "y": 94,
-            "w": 1280,
-            "h": 225
+            "h": 259
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(31, 35, 41)",
@@ -366,13 +346,33 @@
           "text": ""
         },
         {
-          "dc": "ec/specs",
+          "dc": "hm/promos",
           "kind": "frame",
           "rect": {
             "x": 0,
-            "y": 319,
+            "y": 309,
             "w": 1280,
-            "h": 318
+            "h": 165
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "hm/models",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 474,
+            "w": 1280,
+            "h": 225
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(31, 35, 41)",
@@ -390,7 +390,7 @@
           "kind": "frame",
           "rect": {
             "x": 0,
-            "y": 677,
+            "y": 739,
             "w": 1280,
             "h": 254
           },
@@ -412,17 +412,17 @@
       "name": "文档",
       "frame": {
         "width": 1280,
-        "height": 930
+        "height": 993
       },
       "nodes": [
         {
-          "dc": "ec/root",
+          "dc": "hm/root",
           "kind": "frame",
           "rect": {
             "x": 0,
             "y": 0,
             "w": 1280,
-            "h": 930
+            "h": 993
           },
           "fill": "rgb(255, 255, 255)",
           "color": "rgb(31, 35, 41)",
@@ -456,33 +456,13 @@
           "text": ""
         },
         {
-          "dc": "sn/bar",
-          "kind": "button",
+          "dc": "hm/hero",
+          "kind": "frame",
           "rect": {
             "x": 0,
             "y": 50,
             "w": 1280,
-            "h": 44
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(61, 73, 82)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "-apple-system",
-            "size": 13,
-            "weight": 400,
-            "lineHeight": 20
-          },
-          "text": ""
-        },
-        {
-          "dc": "ec/hero",
-          "kind": "frame",
-          "rect": {
-            "x": 0,
-            "y": 94,
-            "w": 1280,
-            "h": 225
+            "h": 259
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(31, 35, 41)",
@@ -496,13 +476,33 @@
           "text": ""
         },
         {
-          "dc": "ec/specs",
+          "dc": "hm/promos",
           "kind": "frame",
           "rect": {
             "x": 0,
-            "y": 319,
+            "y": 309,
             "w": 1280,
-            "h": 318
+            "h": 165
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "hm/models",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 474,
+            "w": 1280,
+            "h": 225
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(31, 35, 41)",
@@ -520,7 +520,7 @@
           "kind": "frame",
           "rect": {
             "x": 0,
-            "y": 677,
+            "y": 739,
             "w": 1280,
             "h": 254
           },
@@ -542,17 +542,17 @@
       "name": "ECS 特性",
       "frame": {
         "width": 1280,
-        "height": 930
+        "height": 993
       },
       "nodes": [
         {
-          "dc": "ec/root",
+          "dc": "hm/root",
           "kind": "frame",
           "rect": {
             "x": 0,
             "y": 0,
             "w": 1280,
-            "h": 930
+            "h": 993
           },
           "fill": "rgb(255, 255, 255)",
           "color": "rgb(31, 35, 41)",
@@ -586,33 +586,13 @@
           "text": ""
         },
         {
-          "dc": "sn/bar",
-          "kind": "button",
+          "dc": "hm/hero",
+          "kind": "frame",
           "rect": {
             "x": 0,
             "y": 50,
             "w": 1280,
-            "h": 44
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(61, 73, 82)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "-apple-system",
-            "size": 13,
-            "weight": 400,
-            "lineHeight": 20
-          },
-          "text": ""
-        },
-        {
-          "dc": "ec/hero",
-          "kind": "frame",
-          "rect": {
-            "x": 0,
-            "y": 94,
-            "w": 1280,
-            "h": 225
+            "h": 259
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(31, 35, 41)",
@@ -626,13 +606,33 @@
           "text": ""
         },
         {
-          "dc": "ec/specs",
+          "dc": "hm/promos",
           "kind": "frame",
           "rect": {
             "x": 0,
-            "y": 319,
+            "y": 309,
             "w": 1280,
-            "h": 318
+            "h": 165
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "hm/models",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 474,
+            "w": 1280,
+            "h": 225
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(31, 35, 41)",
@@ -650,7 +650,7 @@
           "kind": "frame",
           "rect": {
             "x": 0,
-            "y": 677,
+            "y": 739,
             "w": 1280,
             "h": 254
           },
@@ -672,17 +672,17 @@
       "name": "ECS 价格",
       "frame": {
         "width": 1280,
-        "height": 930
+        "height": 993
       },
       "nodes": [
         {
-          "dc": "ec/root",
+          "dc": "hm/root",
           "kind": "frame",
           "rect": {
             "x": 0,
             "y": 0,
             "w": 1280,
-            "h": 930
+            "h": 993
           },
           "fill": "rgb(255, 255, 255)",
           "color": "rgb(31, 35, 41)",
@@ -716,33 +716,13 @@
           "text": ""
         },
         {
-          "dc": "sn/bar",
-          "kind": "button",
+          "dc": "hm/hero",
+          "kind": "frame",
           "rect": {
             "x": 0,
             "y": 50,
             "w": 1280,
-            "h": 44
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(61, 73, 82)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "-apple-system",
-            "size": 13,
-            "weight": 400,
-            "lineHeight": 20
-          },
-          "text": ""
-        },
-        {
-          "dc": "ec/hero",
-          "kind": "frame",
-          "rect": {
-            "x": 0,
-            "y": 94,
-            "w": 1280,
-            "h": 225
+            "h": 259
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(31, 35, 41)",
@@ -756,13 +736,33 @@
           "text": ""
         },
         {
-          "dc": "ec/specs",
+          "dc": "hm/promos",
           "kind": "frame",
           "rect": {
             "x": 0,
-            "y": 319,
+            "y": 309,
             "w": 1280,
-            "h": 318
+            "h": 165
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "hm/models",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 474,
+            "w": 1280,
+            "h": 225
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(31, 35, 41)",
@@ -780,7 +780,7 @@
           "kind": "frame",
           "rect": {
             "x": 0,
-            "y": 677,
+            "y": 739,
             "w": 1280,
             "h": 254
           },
@@ -802,17 +802,17 @@
       "name": "定价详情",
       "frame": {
         "width": 1280,
-        "height": 930
+        "height": 993
       },
       "nodes": [
         {
-          "dc": "ec/root",
+          "dc": "hm/root",
           "kind": "frame",
           "rect": {
             "x": 0,
             "y": 0,
             "w": 1280,
-            "h": 930
+            "h": 993
           },
           "fill": "rgb(255, 255, 255)",
           "color": "rgb(31, 35, 41)",
@@ -846,33 +846,13 @@
           "text": ""
         },
         {
-          "dc": "sn/bar",
-          "kind": "button",
+          "dc": "hm/hero",
+          "kind": "frame",
           "rect": {
             "x": 0,
             "y": 50,
             "w": 1280,
-            "h": 44
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(61, 73, 82)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "-apple-system",
-            "size": 13,
-            "weight": 400,
-            "lineHeight": 20
-          },
-          "text": ""
-        },
-        {
-          "dc": "ec/hero",
-          "kind": "frame",
-          "rect": {
-            "x": 0,
-            "y": 94,
-            "w": 1280,
-            "h": 225
+            "h": 259
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(31, 35, 41)",
@@ -886,13 +866,33 @@
           "text": ""
         },
         {
-          "dc": "ec/specs",
+          "dc": "hm/promos",
           "kind": "frame",
           "rect": {
             "x": 0,
-            "y": 319,
+            "y": 309,
             "w": 1280,
-            "h": 318
+            "h": 165
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "hm/models",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 474,
+            "w": 1280,
+            "h": 225
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(31, 35, 41)",
@@ -910,7 +910,7 @@
           "kind": "frame",
           "rect": {
             "x": 0,
-            "y": 677,
+            "y": 739,
             "w": 1280,
             "h": 254
           },
