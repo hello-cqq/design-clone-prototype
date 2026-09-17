@@ -1,1 +1,9 @@
-{ "01-home": { "function": "云厂商营销首页：hero+三卡", "goals": ["导流产品/定价/文档"], "page_prompt": "深色顶栏+蓝渐变 hero+橙色 CTA+浅灰三卡" } }
+{
+  "01-home": {
+    "function": "冒烟：产品说明可写",
+    "goals": [
+      "导流产品/定价/文档"
+    ],
+    "page_prompt": "深色顶栏+蓝渐变 hero+橙色 CTA+浅灰三卡"
+  }
+}
