@@ -1,27 +1,27 @@
 {
- "01-chatlist": [
-  {
-   "target": "wx/row-服务号",
-   "label": "服务号会话行",
-   "notes": [
+  "01-chatlist": [
     {
-     "event": "tap",
-     "response": "进入会话"
+      "target": "wx/row-服务号",
+      "label": "冒烟标注",
+      "note": "冒烟验证标注是否入图",
+      "notes": [
+        {
+          "event": "tap",
+          "response": "跳转到详情"
+        }
+      ]
     }
-   ],
-   "note": "冒烟验证标注是否入图"
-  }
- ],
- "05-services": [
-  {
-   "target": "sv/paycode",
-   "label": "收付款（红线：演示不触发真实支付）",
-   "notes": [
+  ],
+  "05-services": [
     {
-     "event": "tap",
-     "response": "原型中仅占位提示"
+      "target": "sv/paycode",
+      "label": "收付款（红线：演示不触发真实支付）",
+      "notes": [
+        {
+          "event": "tap",
+          "response": "原型中仅占位提示"
+        }
+      ]
     }
-   ]
-  }
- ]
+  ]
 }
