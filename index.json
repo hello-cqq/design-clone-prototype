@@ -1,12 +1,12 @@
 {
  "version": 3,
- "updated_at": "2026-09-17T12:01:25.900Z",
+ "updated_at": "2026-09-17T12:23:01.680Z",
  "apps": [
   {
    "app": "aliyun-console",
    "name": {
-    "en": "Aliyun Console",
-    "zh": "阿里云控制台"
+    "en": "Aliyun",
+    "zh": "阿里云"
    },
    "description": {
     "en": "Study replica of Aliyun marketing/console: hub nav, ECS pages, pricing.",
@@ -19,7 +19,7 @@
    ],
    "category": "cloud",
    "shell": "c_browser",
-   "version": "1.7.2",
+   "version": "1.8.0",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -67,11 +67,11 @@
     {
      "name": "hello-cqq",
      "login": "hello-cqq",
-     "commits": 21
+     "commits": 22
     }
    ],
-   "commits": 24,
-   "updated": "2026-09-17T17:48:17+08:00"
+   "commits": 25,
+   "updated": "2026-09-17T20:20:00+08:00"
   },
   {
    "app": "wechat",
@@ -90,7 +90,7 @@
    ],
    "category": "social",
    "shell": "c_mobile",
-   "version": "1.7.2",
+   "version": "1.7.3",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "device",
@@ -186,11 +186,11 @@
     {
      "name": "hello-cqq",
      "login": "hello-cqq",
-     "commits": 22
+     "commits": 23
     }
    ],
-   "commits": 25,
-   "updated": "2026-09-17T17:47:51+08:00"
+   "commits": 26,
+   "updated": "2026-09-17T20:19:31+08:00"
   },
   {
    "app": "petpark",
@@ -211,7 +211,7 @@
    ],
    "category": "game",
    "shell": "c_mobile",
-   "version": "3.2.1",
+   "version": "3.2.2",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -263,11 +263,11 @@
     {
      "name": "hello-cqq",
      "login": "hello-cqq",
-     "commits": 31
+     "commits": 32
     }
    ],
-   "commits": 37,
-   "updated": "2026-09-17T09:51:21Z"
+   "commits": 38,
+   "updated": "2026-09-17T20:19:18+08:00"
   },
   {
    "app": "lark",
@@ -286,7 +286,7 @@
    ],
    "category": "office",
    "shell": "c_desktop",
-   "version": "1.7.2",
+   "version": "1.7.3",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -362,17 +362,17 @@
     {
      "name": "hello-cqq",
      "login": "hello-cqq",
-     "commits": 22
+     "commits": 23
     }
    ],
-   "commits": 25,
-   "updated": "2026-09-17T17:48:04+08:00"
+   "commits": 26,
+   "updated": "2026-09-17T20:19:45+08:00"
   },
   {
    "app": "ai-assistant",
    "name": {
-    "en": "Starsea Talk",
-    "zh": "星海对话"
+    "en": "Dislocated Spacetime",
+    "zh": "错位时空"
    },
    "description": {
     "en": "Interactive social prototype (mobile): full UI flows, live controls, design specs and user paths — cloned from a real source by design-clone.",
@@ -386,7 +386,7 @@
    ],
    "category": "social",
    "shell": "c_mobile",
-   "version": "3.2.1",
+   "version": "3.3.0",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -426,11 +426,11 @@
     {
      "name": "hello-cqq",
      "login": "hello-cqq",
-     "commits": 21
+     "commits": 22
     }
    ],
-   "commits": 25,
-   "updated": "2026-09-17T09:51:21Z"
+   "commits": 26,
+   "updated": "2026-09-17T20:19:05+08:00"
   }
  ]
 }
