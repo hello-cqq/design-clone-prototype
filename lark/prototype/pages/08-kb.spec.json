@@ -21,7 +21,7 @@
     "spec_version": 1,
     "change_log": [
       {
-        "at": "2026-09-17T09:37:54.971Z",
+        "at": "2026-09-17T12:18:13.251Z",
         "by": "clone",
         "note": "collect-design 初始/重采集（computed 真值）"
       }
@@ -29,7 +29,7 @@
   },
   "regions": [
     {
-      "id": "r_kb_side",
+      "id": "r_ct_side",
       "type": "sidebar",
       "label": "搜索 (⌘K)\n    \n      消息\n      豆包工作\n      日",
       "components": [
@@ -227,8 +227,8 @@
           "kind": "button",
           "label": "知识库",
           "interaction": {
-            "act": "toast",
-            "msg": "（演示）"
+            "act": "goto",
+            "to": "08-kb"
           },
           "sample_value": "知识库"
         },
@@ -239,7 +239,7 @@
       ]
     },
     {
-      "id": "r_kb_n_msg",
+      "id": "r_ct_n_msg",
       "type": "custom",
       "label": "消息",
       "components": [
@@ -250,7 +250,7 @@
       ]
     },
     {
-      "id": "r_kb_n_doubao",
+      "id": "r_ct_n_doubao",
       "type": "custom",
       "label": "豆包工作",
       "components": [
@@ -261,7 +261,7 @@
       ]
     },
     {
-      "id": "r_kb_n_cal",
+      "id": "r_ct_n_cal",
       "type": "custom",
       "label": "日历",
       "components": [
@@ -272,7 +272,7 @@
       ]
     },
     {
-      "id": "r_kb_n_docs",
+      "id": "r_ct_n_docs",
       "type": "custom",
       "label": "云文档",
       "components": [
@@ -283,7 +283,7 @@
       ]
     },
     {
-      "id": "r_kb_n_bitable",
+      "id": "r_ct_n_bitable",
       "type": "custom",
       "label": "多维表格",
       "components": [
@@ -294,7 +294,7 @@
       ]
     },
     {
-      "id": "r_kb_n_meet",
+      "id": "r_ct_n_meet",
       "type": "custom",
       "label": "视频会议",
       "components": [
@@ -305,7 +305,7 @@
       ]
     },
     {
-      "id": "r_kb_n_fly",
+      "id": "r_ct_n_fly",
       "type": "custom",
       "label": "飞行社",
       "components": [
@@ -316,7 +316,7 @@
       ]
     },
     {
-      "id": "r_kb_n_wb",
+      "id": "r_ct_n_wb",
       "type": "custom",
       "label": "工作台",
       "components": [
@@ -327,7 +327,7 @@
       ]
     },
     {
-      "id": "r_kb_n_appc",
+      "id": "r_ct_n_appc",
       "type": "custom",
       "label": "应用中心",
       "components": [
@@ -338,7 +338,7 @@
       ]
     },
     {
-      "id": "r_kb_n_contacts",
+      "id": "r_ct_n_contacts",
       "type": "custom",
       "label": "通讯录",
       "components": [
@@ -349,7 +349,7 @@
       ]
     },
     {
-      "id": "r_kb_n_vip",
+      "id": "r_ct_n_vip",
       "type": "custom",
       "label": "权益升级",
       "components": [
@@ -360,7 +360,7 @@
       ]
     },
     {
-      "id": "r_kb_n_task",
+      "id": "r_ct_n_task",
       "type": "custom",
       "label": "任务",
       "components": [
@@ -371,7 +371,7 @@
       ]
     },
     {
-      "id": "r_kb_n_star",
+      "id": "r_ct_n_star",
       "type": "custom",
       "label": "收藏",
       "components": [
@@ -382,74 +382,9 @@
       ]
     },
     {
-      "id": "r_kb_n_kb",
+      "id": "r_ct_n_kb",
       "type": "custom",
       "label": "知识库",
-      "components": [
-        {
-          "kind": "image",
-          "label": ""
-        }
-      ]
-    },
-    {
-      "id": "r_kb_main",
-      "type": "custom",
-      "label": "知识库\n      \n      \n        新建知识库\n        ",
-      "components": [
-        {
-          "kind": "button",
-          "label": "",
-          "interaction": {
-            "act": "toast",
-            "msg": "管理（演示）"
-          }
-        },
-        {
-          "kind": "button",
-          "label": "新建知识库",
-          "interaction": {
-            "act": "toast",
-            "msg": "新建知识库（演示）"
-          },
-          "sample_value": "新建知识库"
-        },
-        {
-          "kind": "button",
-          "label": "新建",
-          "interaction": {
-            "act": "toast",
-            "msg": "新建（演示）"
-          },
-          "sample_value": "新建"
-        },
-        {
-          "kind": "button",
-          "label": "",
-          "interaction": {
-            "act": "toast",
-            "msg": "筛选（演示）"
-          }
-        },
-        {
-          "kind": "button",
-          "label": "企业公开大模型",
-          "interaction": {
-            "act": "toast",
-            "msg": "大模型知识库（演示）"
-          },
-          "sample_value": "企业公开大模型"
-        },
-        {
-          "kind": "image",
-          "label": ""
-        }
-      ]
-    },
-    {
-      "id": "r_kb_c1",
-      "type": "custom",
-      "label": "企业公开大模型",
       "components": [
         {
           "kind": "image",
