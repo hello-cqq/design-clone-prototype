@@ -21,7 +21,7 @@
     "spec_version": 1,
     "change_log": [
       {
-        "at": "2026-09-16T12:59:49.595Z",
+        "at": "2026-09-17T06:39:32.544Z",
         "by": "clone",
         "note": "collect-design 初始/重采集（computed 真值）"
       }
@@ -29,7 +29,7 @@
   },
   "regions": [
     {
-      "id": "r_gs_side",
+      "id": "r_gc_side",
       "type": "sidebar",
       "label": "搜索 (⌘K)\n    \n      消息\n      豆包工作\n      日",
       "components": [
@@ -239,7 +239,7 @@
       ]
     },
     {
-      "id": "r_gs_n_msg",
+      "id": "r_gc_n_msg",
       "type": "custom",
       "label": "消息",
       "components": [
@@ -250,7 +250,7 @@
       ]
     },
     {
-      "id": "r_gs_n_doubao",
+      "id": "r_gc_n_doubao",
       "type": "custom",
       "label": "豆包工作",
       "components": [
@@ -261,7 +261,7 @@
       ]
     },
     {
-      "id": "r_gs_n_cal",
+      "id": "r_gc_n_cal",
       "type": "custom",
       "label": "日历",
       "components": [
@@ -272,7 +272,7 @@
       ]
     },
     {
-      "id": "r_gs_n_docs",
+      "id": "r_gc_n_docs",
       "type": "custom",
       "label": "云文档",
       "components": [
@@ -283,7 +283,7 @@
       ]
     },
     {
-      "id": "r_gs_n_bitable",
+      "id": "r_gc_n_bitable",
       "type": "custom",
       "label": "多维表格",
       "components": [
@@ -294,7 +294,7 @@
       ]
     },
     {
-      "id": "r_gs_n_meet",
+      "id": "r_gc_n_meet",
       "type": "custom",
       "label": "视频会议",
       "components": [
@@ -305,7 +305,7 @@
       ]
     },
     {
-      "id": "r_gs_n_fly",
+      "id": "r_gc_n_fly",
       "type": "custom",
       "label": "飞行社",
       "components": [
@@ -316,7 +316,7 @@
       ]
     },
     {
-      "id": "r_gs_n_wb",
+      "id": "r_gc_n_wb",
       "type": "custom",
       "label": "工作台",
       "components": [
@@ -327,7 +327,7 @@
       ]
     },
     {
-      "id": "r_gs_n_appc",
+      "id": "r_gc_n_appc",
       "type": "custom",
       "label": "应用中心",
       "components": [
@@ -338,7 +338,7 @@
       ]
     },
     {
-      "id": "r_gs_n_contacts",
+      "id": "r_gc_n_contacts",
       "type": "custom",
       "label": "通讯录",
       "components": [
@@ -349,7 +349,7 @@
       ]
     },
     {
-      "id": "r_gs_n_vip",
+      "id": "r_gc_n_vip",
       "type": "custom",
       "label": "权益升级",
       "components": [
@@ -360,7 +360,7 @@
       ]
     },
     {
-      "id": "r_gs_n_task",
+      "id": "r_gc_n_task",
       "type": "custom",
       "label": "任务",
       "components": [
@@ -371,7 +371,7 @@
       ]
     },
     {
-      "id": "r_gs_n_star",
+      "id": "r_gc_n_star",
       "type": "custom",
       "label": "收藏",
       "components": [
@@ -382,7 +382,7 @@
       ]
     },
     {
-      "id": "r_gs_n_kb",
+      "id": "r_gc_n_kb",
       "type": "custom",
       "label": "知识库",
       "components": [
@@ -393,56 +393,68 @@
       ]
     },
     {
-      "id": "r_lk_side",
+      "id": "r_ag_side",
       "type": "sidebar",
-      "label": "搜索 (⌘K)\n    设计评审群14:03\n    自动化测试14:01\n  ",
+      "label": "搜索 (⌘K)\n    消息\n    文件传输助手\n    Q的智能伙伴6月29",
       "components": [
         {
           "kind": "button",
-          "label": "设计评审群14:03",
+          "label": "消息",
           "interaction": {
             "act": "goto",
-            "to": "14-group-chat"
+            "to": "01-messages"
           },
-          "sample_value": "设计评审群14:03"
+          "sample_value": "消息"
         },
         {
           "kind": "button",
-          "label": "自动化测试14:01",
-          "interaction": {
-            "act": "goto",
-            "to": "14-group-chat"
-          },
-          "sample_value": "自动化测试14:01"
-        },
-        {
-          "kind": "button",
-          "label": "林晓13:51",
+          "label": "文件传输助手",
           "interaction": {
             "act": "goto",
             "to": "11-chat"
           },
-          "sample_value": "林晓13:51"
+          "sample_value": "文件传输助手"
         },
         {
           "kind": "button",
-          "label": "陈默13:33",
+          "label": "Q的智能伙伴6月29日",
           "interaction": {
-            "act": "goto",
-            "to": "11-chat"
+            "act": "toast",
+            "msg": "Q的智能伙伴6月29日（演示）"
           },
-          "sample_value": "陈默13:33"
+          "sample_value": "Q的智能伙伴6月29日"
         },
         {
           "kind": "button",
-          "label": "文件传输助手11:55",
+          "label": "视频会议",
           "interaction": {
             "act": "goto",
-            "to": "11-chat"
+            "to": "04-meeting"
           },
-          "sample_value": "文件传输助手11:55"
+          "sample_value": "视频会议"
         }
       ]
+    },
+    {
+      "id": "r_ag_card",
+      "type": "custom",
+      "label": "真懂工作、主动帮忙：你的 aily 智能伙伴已上线\n            飞书"
+    },
+    {
+      "id": "r_ag_panels",
+      "type": "custom",
+      "label": "你的工作画像梳理日常点滴生成你工作画像\n            周报日报一键搞定",
+      "components": [
+        {
+          "kind": "image",
+          "label": ""
+        }
+      ]
+    },
+    {
+      "id": "r_ag_input",
+      "type": "custom",
+      "label": "发送给 Q的智能伙伴"
     }
   ]
 }
