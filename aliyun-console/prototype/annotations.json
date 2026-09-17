@@ -1,1 +1,25 @@
-{ "01-home": [ { "target": "home/cta-ecs", "label": "ECS CTA", "notes": [ { "event": "tap", "response": "进入 ECS 产品页" } ] } ] }
+{
+  "01-home": [
+    {
+      "target": "home/cta-ecs",
+      "label": "ECS CTA",
+      "notes": [
+        {
+          "event": "tap",
+          "response": "进入 ECS 产品页"
+        }
+      ]
+    },
+    {
+      "target": "hm/models",
+      "label": "冒烟标注",
+      "note": "",
+      "notes": [
+        {
+          "event": "点击",
+          "response": "跳转到详情"
+        }
+      ]
+    }
+  ]
+}
