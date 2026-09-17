@@ -8,4 +8,4 @@
 - gates: interact dead=0 | inspect fail=0 pass=50 | ui-smoke fail=0 pass=29
 
 ## Changes
-- v1.7.2: initial publish
+- v1.7.3: initial publish
