@@ -3,7 +3,7 @@
 - source: original / demo-petpark
 - retire: —
 - skill version: 0.6.0
-- gates: interact dead=0 | inspect fail=0 pass=47 | ui-smoke fail=0 pass=28
+- gates: interact dead=0 | inspect fail=0 pass=50 | ui-smoke fail=0 pass=28
 
 ## Changes
-- v3.1.1: initial publish
+- v3.2.0: initial publish

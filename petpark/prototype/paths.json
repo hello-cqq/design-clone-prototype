@@ -1,111 +1,305 @@
 {
-  "generated_at": "2026-09-13T07:16:52.840Z",
+  "generated_at": "2026-09-16T18:21:12.644Z",
   "version": 3,
-  "flowsUsed": true,
+  "flowsUsed": false,
   "nodes": {
     "00-launch": {
-      "title": "启动页"
+      "title": "启动页",
+      "index": "00"
     },
     "01-home": {
-      "title": "首页·大世界"
+      "title": "首页·大世界",
+      "index": "01"
     },
     "02-interact": {
-      "title": "单动物互动"
+      "title": "单动物互动",
+      "index": "02"
     },
     "03-band": {
-      "title": "动物乐队"
+      "title": "动物乐队",
+      "index": "03"
     },
     "04-map": {
-      "title": "地图导游"
+      "title": "地图导游",
+      "index": "04"
     },
     "05-build": {
-      "title": "家园搭建"
+      "title": "家园搭建",
+      "index": "05"
     },
     "06-dex": {
-      "title": "动物图鉴"
+      "title": "动物图鉴",
+      "index": "06"
     },
     "07-tasks": {
-      "title": "任务与活动"
+      "title": "任务与活动",
+      "index": "07"
     }
   },
   "edges": [
     {
+      "i": 0,
       "from": "00-launch",
       "to": "01-home",
-      "kind": "flow",
-      "label": "启动页 → 首页·大世界：开放场景总"
+      "label": "tap · 01-home",
+      "kind": "navigate",
+      "role": "module"
     },
     {
-      "from": "00-launch",
-      "to": "02-interact",
-      "kind": "flow",
-      "label": "启动页 → 单动物互动：圆形互动舞台"
-    },
-    {
-      "from": "00-launch",
-      "to": "03-band",
-      "kind": "flow",
-      "label": "启动页 → 动物乐队：五人乐队舞台+"
-    },
-    {
-      "from": "00-launch",
-      "to": "04-map",
-      "kind": "flow",
-      "label": "启动页 → 地图导游：3D 城市地图"
-    },
-    {
-      "from": "00-launch",
-      "to": "05-build",
-      "kind": "flow",
-      "label": "启动页 → 家园搭建：素材栏+3D "
-    },
-    {
-      "from": "00-launch",
-      "to": "06-dex",
-      "kind": "flow",
-      "label": "启动页 → 动物图鉴：三列卡片网格："
-    },
-    {
-      "from": "00-launch",
-      "to": "07-tasks",
-      "kind": "flow",
-      "label": "启动页 → 任务与活动：任务卡+进度"
-    },
-    {
+      "i": 1,
       "from": "01-home",
       "to": "02-interact",
-      "kind": "flow",
-      "label": "首页·大世界 → 单动物互动 主链路"
+      "label": "tap · 02-interact",
+      "kind": "navigate",
+      "role": "module"
     },
     {
+      "i": 2,
+      "from": "01-home",
+      "to": "05-build",
+      "label": "tap · 05-build",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 3,
+      "from": "01-home",
+      "to": "03-band",
+      "label": "tap · 03-band",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 4,
+      "from": "01-home",
+      "to": "04-map",
+      "label": "tap · 04-map",
+      "kind": "navigate",
+      "role": "task"
+    },
+    {
+      "i": 5,
+      "from": "01-home",
+      "to": "06-dex",
+      "label": "tap · 06-dex",
+      "kind": "navigate",
+      "role": "task"
+    },
+    {
+      "i": 6,
+      "from": "01-home",
+      "to": "07-tasks",
+      "label": "tap · 07-tasks",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 7,
+      "from": "02-interact",
+      "to": "01-home",
+      "label": "tap · 01-home",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 8,
       "from": "02-interact",
       "to": "03-band",
-      "kind": "flow",
-      "label": "单动物互动 → 动物乐队 主链路"
+      "label": "tap · 03-band",
+      "kind": "navigate",
+      "role": "module"
     },
     {
+      "i": 9,
+      "from": "02-interact",
+      "to": "05-build",
+      "label": "tap · 05-build",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 10,
+      "from": "02-interact",
+      "to": "07-tasks",
+      "label": "tap · 07-tasks",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 11,
       "from": "03-band",
-      "to": "04-map",
-      "kind": "flow",
-      "label": "动物乐队 → 地图导游 主链路"
+      "to": "01-home",
+      "label": "tap · 01-home",
+      "kind": "navigate",
+      "role": "back"
     },
     {
+      "i": 12,
+      "from": "03-band",
+      "to": "02-interact",
+      "label": "tap · 02-interact",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 13,
+      "from": "03-band",
+      "to": "05-build",
+      "label": "tap · 05-build",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 14,
+      "from": "03-band",
+      "to": "07-tasks",
+      "label": "tap · 07-tasks",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 15,
+      "from": "04-map",
+      "to": "07-tasks",
+      "label": "tap · 07-tasks",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 16,
+      "from": "04-map",
+      "to": "01-home",
+      "label": "tap · 01-home",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 17,
+      "from": "04-map",
+      "to": "02-interact",
+      "label": "tap · 02-interact",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 18,
+      "from": "04-map",
+      "to": "03-band",
+      "label": "tap · 03-band",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 19,
       "from": "04-map",
       "to": "05-build",
-      "kind": "flow",
-      "label": "地图导游 → 家园搭建 主链路"
+      "label": "tap · 05-build",
+      "kind": "navigate",
+      "role": "module"
     },
     {
+      "i": 20,
       "from": "05-build",
-      "to": "06-dex",
-      "kind": "flow",
-      "label": "家园搭建 → 动物图鉴 主链路"
+      "to": "01-home",
+      "label": "tap · 01-home",
+      "kind": "navigate",
+      "role": "back"
     },
     {
+      "i": 21,
+      "from": "05-build",
+      "to": "02-interact",
+      "label": "tap · 02-interact",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 22,
+      "from": "05-build",
+      "to": "03-band",
+      "label": "tap · 03-band",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 23,
+      "from": "05-build",
+      "to": "07-tasks",
+      "label": "tap · 07-tasks",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 24,
+      "from": "06-dex",
+      "to": "01-home",
+      "label": "tap · 01-home",
+      "kind": "navigate",
+      "role": "back"
+    },
+    {
+      "i": 25,
+      "from": "06-dex",
+      "to": "02-interact",
+      "label": "tap · 02-interact",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 26,
+      "from": "06-dex",
+      "to": "03-band",
+      "label": "tap · 03-band",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 27,
+      "from": "06-dex",
+      "to": "05-build",
+      "label": "tap · 05-build",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 28,
       "from": "06-dex",
       "to": "07-tasks",
-      "kind": "flow",
-      "label": "动物图鉴 → 任务与活动 主链路"
+      "label": "tap · 07-tasks",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 29,
+      "from": "07-tasks",
+      "to": "02-interact",
+      "label": "tap · 02-interact",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 30,
+      "from": "07-tasks",
+      "to": "03-band",
+      "label": "tap · 03-band",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 31,
+      "from": "07-tasks",
+      "to": "05-build",
+      "label": "tap · 05-build",
+      "kind": "navigate",
+      "role": "module"
+    },
+    {
+      "i": 32,
+      "from": "07-tasks",
+      "to": "01-home",
+      "label": "tap · 01-home",
+      "kind": "navigate",
+      "role": "back"
     }
   ],
   "roots": [
@@ -114,105 +308,17 @@
   "depths": {
     "00-launch": 0,
     "01-home": 1,
-    "02-interact": 1,
-    "03-band": 1,
-    "04-map": 1,
-    "05-build": 1,
-    "06-dex": 1,
-    "07-tasks": 1
+    "02-interact": 2,
+    "05-build": 2,
+    "03-band": 2,
+    "04-map": 2,
+    "06-dex": 2,
+    "07-tasks": 2
   },
   "perNode": {
     "00-launch": {
-      "paths": [
-        [
-          0,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12
-        ],
-        [
-          1,
-          8,
-          9,
-          10,
-          11,
-          12
-        ],
-        [
-          2,
-          9,
-          10,
-          11,
-          12
-        ],
-        [
-          3,
-          10,
-          11,
-          12
-        ],
-        [
-          4,
-          11,
-          12
-        ],
-        [
-          5,
-          12
-        ],
-        [
-          6
-        ]
-      ],
-      "pathInfo": [
-        {
-          "source": "brief",
-          "flow": "b1",
-          "name": "启动页 链路 1"
-        },
-        {
-          "source": "brief",
-          "flow": "b2",
-          "name": "启动页 链路 2"
-        },
-        {
-          "source": "brief",
-          "flow": "b3",
-          "name": "启动页 链路 3"
-        },
-        {
-          "source": "brief",
-          "flow": "b4",
-          "name": "启动页 链路 4"
-        },
-        {
-          "source": "brief",
-          "flow": "b5",
-          "name": "启动页 链路 5"
-        },
-        {
-          "source": "brief",
-          "flow": "b6",
-          "name": "启动页 链路 6"
-        },
-        {
-          "source": "brief",
-          "flow": "b7",
-          "name": "启动页 链路 7"
-        }
-      ],
-      "nav": [
-        "01-home",
-        "02-interact",
-        "03-band",
-        "04-map",
-        "05-build",
-        "06-dex",
-        "07-tasks"
-      ],
+      "paths": [],
+      "pathInfo": [],
       "tree": {
         "node": "00-launch",
         "children": [
@@ -222,208 +328,109 @@
               "node": "01-home",
               "children": [
                 {
-                  "edge": 7,
+                  "edge": 1,
                   "child": {
                     "node": "02-interact",
-                    "children": [
-                      {
-                        "edge": 8,
-                        "child": {
-                          "node": "03-band",
-                          "children": [
-                            {
-                              "edge": 9,
-                              "child": {
-                                "node": "04-map",
-                                "children": [
-                                  {
-                                    "edge": 10,
-                                    "child": {
-                                      "node": "05-build",
-                                      "children": [
-                                        {
-                                          "edge": 11,
-                                          "child": {
-                                            "node": "06-dex",
-                                            "children": [
-                                              {
-                                                "edge": 12,
-                                                "child": {
-                                                  "node": "07-tasks",
-                                                  "children": []
-                                                }
-                                              }
-                                            ]
-                                          }
-                                        }
-                                      ]
-                                    }
-                                  }
-                                ]
-                              }
-                            }
-                          ]
-                        }
-                      }
-                    ]
+                    "children": []
                   }
-                }
-              ]
-            }
-          },
-          {
-            "edge": 1,
-            "child": {
-              "node": "02-interact",
-              "children": [
+                },
                 {
-                  "edge": 8,
-                  "child": {
-                    "node": "03-band",
-                    "children": [
-                      {
-                        "edge": 9,
-                        "child": {
-                          "node": "04-map",
-                          "children": [
-                            {
-                              "edge": 10,
-                              "child": {
-                                "node": "05-build",
-                                "children": [
-                                  {
-                                    "edge": 11,
-                                    "child": {
-                                      "node": "06-dex",
-                                      "children": [
-                                        {
-                                          "edge": 12,
-                                          "child": {
-                                            "node": "07-tasks",
-                                            "children": []
-                                          }
-                                        }
-                                      ]
-                                    }
-                                  }
-                                ]
-                              }
-                            }
-                          ]
-                        }
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "edge": 2,
-            "child": {
-              "node": "03-band",
-              "children": [
-                {
-                  "edge": 9,
-                  "child": {
-                    "node": "04-map",
-                    "children": [
-                      {
-                        "edge": 10,
-                        "child": {
-                          "node": "05-build",
-                          "children": [
-                            {
-                              "edge": 11,
-                              "child": {
-                                "node": "06-dex",
-                                "children": [
-                                  {
-                                    "edge": 12,
-                                    "child": {
-                                      "node": "07-tasks",
-                                      "children": []
-                                    }
-                                  }
-                                ]
-                              }
-                            }
-                          ]
-                        }
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "edge": 3,
-            "child": {
-              "node": "04-map",
-              "children": [
-                {
-                  "edge": 10,
+                  "edge": 2,
                   "child": {
                     "node": "05-build",
-                    "children": [
-                      {
-                        "edge": 11,
-                        "child": {
-                          "node": "06-dex",
-                          "children": [
-                            {
-                              "edge": 12,
-                              "child": {
-                                "node": "07-tasks",
-                                "children": []
-                              }
-                            }
-                          ]
-                        }
-                      }
-                    ]
+                    "children": []
                   }
-                }
-              ]
-            }
-          },
-          {
-            "edge": 4,
-            "child": {
-              "node": "05-build",
-              "children": [
+                },
                 {
-                  "edge": 11,
+                  "edge": 3,
+                  "child": {
+                    "node": "03-band",
+                    "children": []
+                  }
+                },
+                {
+                  "edge": 4,
+                  "child": {
+                    "node": "04-map",
+                    "children": []
+                  }
+                },
+                {
+                  "edge": 5,
                   "child": {
                     "node": "06-dex",
-                    "children": [
-                      {
-                        "edge": 12,
-                        "child": {
-                          "node": "07-tasks",
-                          "children": []
-                        }
-                      }
-                    ]
+                    "children": []
                   }
-                }
-              ]
-            }
-          },
-          {
-            "edge": 5,
-            "child": {
-              "node": "06-dex",
-              "children": [
+                },
                 {
-                  "edge": 12,
+                  "edge": 6,
                   "child": {
                     "node": "07-tasks",
                     "children": []
                   }
                 }
               ]
+            }
+          }
+        ]
+      },
+      "nav": [
+        "01-home"
+      ]
+    },
+    "01-home": {
+      "paths": [
+        [
+          4
+        ],
+        [
+          5
+        ]
+      ],
+      "pathInfo": [
+        {
+          "source": "derived"
+        },
+        {
+          "source": "derived"
+        }
+      ],
+      "tree": {
+        "node": "01-home",
+        "children": [
+          {
+            "edge": 1,
+            "child": {
+              "node": "02-interact",
+              "children": []
+            }
+          },
+          {
+            "edge": 2,
+            "child": {
+              "node": "05-build",
+              "children": []
+            }
+          },
+          {
+            "edge": 3,
+            "child": {
+              "node": "03-band",
+              "children": []
+            }
+          },
+          {
+            "edge": 4,
+            "child": {
+              "node": "04-map",
+              "children": []
+            }
+          },
+          {
+            "edge": 5,
+            "child": {
+              "node": "06-dex",
+              "children": []
             }
           },
           {
@@ -434,325 +441,93 @@
             }
           }
         ]
-      }
-    },
-    "01-home": {
-      "paths": [
-        [
-          7,
-          8,
-          9,
-          10,
-          11,
-          12
-        ]
-      ],
-      "pathInfo": [
-        {
-          "source": "brief",
-          "flow": "b1",
-          "name": "首页·大世界 链路 1"
-        }
-      ],
+      },
       "nav": [
-        "02-interact"
-      ],
-      "tree": {
-        "node": "01-home",
-        "children": [
-          {
-            "edge": 7,
-            "child": {
-              "node": "02-interact",
-              "children": [
-                {
-                  "edge": 8,
-                  "child": {
-                    "node": "03-band",
-                    "children": [
-                      {
-                        "edge": 9,
-                        "child": {
-                          "node": "04-map",
-                          "children": [
-                            {
-                              "edge": 10,
-                              "child": {
-                                "node": "05-build",
-                                "children": [
-                                  {
-                                    "edge": 11,
-                                    "child": {
-                                      "node": "06-dex",
-                                      "children": [
-                                        {
-                                          "edge": 12,
-                                          "child": {
-                                            "node": "07-tasks",
-                                            "children": []
-                                          }
-                                        }
-                                      ]
-                                    }
-                                  }
-                                ]
-                              }
-                            }
-                          ]
-                        }
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
-          }
-        ]
-      }
+        "02-interact",
+        "05-build",
+        "03-band",
+        "07-tasks"
+      ]
     },
     "02-interact": {
-      "paths": [
-        [
-          8,
-          9,
-          10,
-          11,
-          12
-        ]
-      ],
-      "pathInfo": [
-        {
-          "source": "brief",
-          "flow": "b1",
-          "name": "单动物互动 链路 1"
-        }
-      ],
-      "nav": [
-        "03-band"
-      ],
+      "paths": [],
+      "pathInfo": [],
       "tree": {
         "node": "02-interact",
-        "children": [
-          {
-            "edge": 8,
-            "child": {
-              "node": "03-band",
-              "children": [
-                {
-                  "edge": 9,
-                  "child": {
-                    "node": "04-map",
-                    "children": [
-                      {
-                        "edge": 10,
-                        "child": {
-                          "node": "05-build",
-                          "children": [
-                            {
-                              "edge": 11,
-                              "child": {
-                                "node": "06-dex",
-                                "children": [
-                                  {
-                                    "edge": 12,
-                                    "child": {
-                                      "node": "07-tasks",
-                                      "children": []
-                                    }
-                                  }
-                                ]
-                              }
-                            }
-                          ]
-                        }
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
-          }
-        ]
-      }
+        "children": []
+      },
+      "nav": [
+        "03-band",
+        "05-build",
+        "07-tasks"
+      ]
     },
     "03-band": {
-      "paths": [
-        [
-          9,
-          10,
-          11,
-          12
-        ]
-      ],
-      "pathInfo": [
-        {
-          "source": "brief",
-          "flow": "b1",
-          "name": "动物乐队 链路 1"
-        }
-      ],
-      "nav": [
-        "04-map"
-      ],
+      "paths": [],
+      "pathInfo": [],
       "tree": {
         "node": "03-band",
-        "children": [
-          {
-            "edge": 9,
-            "child": {
-              "node": "04-map",
-              "children": [
-                {
-                  "edge": 10,
-                  "child": {
-                    "node": "05-build",
-                    "children": [
-                      {
-                        "edge": 11,
-                        "child": {
-                          "node": "06-dex",
-                          "children": [
-                            {
-                              "edge": 12,
-                              "child": {
-                                "node": "07-tasks",
-                                "children": []
-                              }
-                            }
-                          ]
-                        }
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
-          }
-        ]
-      }
+        "children": []
+      },
+      "nav": [
+        "02-interact",
+        "05-build",
+        "07-tasks"
+      ]
     },
     "04-map": {
-      "paths": [
-        [
-          10,
-          11,
-          12
-        ]
-      ],
-      "pathInfo": [
-        {
-          "source": "brief",
-          "flow": "b1",
-          "name": "地图导游 链路 1"
-        }
-      ],
-      "nav": [
-        "05-build"
-      ],
+      "paths": [],
+      "pathInfo": [],
       "tree": {
         "node": "04-map",
-        "children": [
-          {
-            "edge": 10,
-            "child": {
-              "node": "05-build",
-              "children": [
-                {
-                  "edge": 11,
-                  "child": {
-                    "node": "06-dex",
-                    "children": [
-                      {
-                        "edge": 12,
-                        "child": {
-                          "node": "07-tasks",
-                          "children": []
-                        }
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
-          }
-        ]
-      }
+        "children": []
+      },
+      "nav": [
+        "07-tasks",
+        "02-interact",
+        "03-band",
+        "05-build"
+      ]
     },
     "05-build": {
-      "paths": [
-        [
-          11,
-          12
-        ]
-      ],
-      "pathInfo": [
-        {
-          "source": "brief",
-          "flow": "b1",
-          "name": "家园搭建 链路 1"
-        }
-      ],
-      "nav": [
-        "06-dex"
-      ],
+      "paths": [],
+      "pathInfo": [],
       "tree": {
         "node": "05-build",
-        "children": [
-          {
-            "edge": 11,
-            "child": {
-              "node": "06-dex",
-              "children": [
-                {
-                  "edge": 12,
-                  "child": {
-                    "node": "07-tasks",
-                    "children": []
-                  }
-                }
-              ]
-            }
-          }
-        ]
-      }
+        "children": []
+      },
+      "nav": [
+        "02-interact",
+        "03-band",
+        "07-tasks"
+      ]
     },
     "06-dex": {
-      "paths": [
-        [
-          12
-        ]
-      ],
-      "pathInfo": [
-        {
-          "source": "brief",
-          "flow": "b1",
-          "name": "动物图鉴 链路 1"
-        }
-      ],
-      "nav": [
-        "07-tasks"
-      ],
+      "paths": [],
+      "pathInfo": [],
       "tree": {
         "node": "06-dex",
-        "children": [
-          {
-            "edge": 12,
-            "child": {
-              "node": "07-tasks",
-              "children": []
-            }
-          }
-        ]
-      }
+        "children": []
+      },
+      "nav": [
+        "02-interact",
+        "03-band",
+        "05-build",
+        "07-tasks"
+      ]
     },
     "07-tasks": {
       "paths": [],
       "pathInfo": [],
-      "nav": [],
       "tree": {
         "node": "07-tasks",
         "children": []
-      }
+      },
+      "nav": [
+        "02-interact",
+        "03-band",
+        "05-build"
+      ]
     }
   }
 }
