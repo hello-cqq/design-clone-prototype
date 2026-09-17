@@ -21,8 +21,8 @@
  },
  "license": "CC-BY-4.0",
  "ip_attestation": "original",
- "attestation_note": "M103: full-bleed icon v2, cinematic cover, lively call (vid-replay + lipstate)",
- "version": "3.1.0",
- "created_at": "2026-09-16T12:18:48.967Z",
+ "attestation_note": "M104: view rebuild (single-representation, height-chain, video-hero), anchor-aligned cover/icon, paths DOM-truth",
+ "version": "3.2.0",
+ "created_at": "2026-09-17T06:42:23.124Z",
  "platform": "mobile"
 }
