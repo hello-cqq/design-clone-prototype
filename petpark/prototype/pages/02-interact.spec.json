@@ -25,7 +25,7 @@
     "spec_version": 1,
     "change_log": [
       {
-        "at": "2026-09-17T06:07:30.613Z",
+        "at": "2026-09-17T08:58:37.230Z",
         "by": "clone",
         "note": "collect-design 初始/重采集（computed 真值）"
       }
@@ -33,89 +33,79 @@
   },
   "regions": [
     {
-      "id": "r_pp_res",
+      "id": "r_pp_petstage",
       "type": "custom",
-      "label": "金币 1280钻石 56体力 92"
-    },
-    {
-      "id": "r_pp_task_daily",
-      "type": "custom",
-      "label": "今天和 3 只动物互动去完成",
+      "label": "",
       "components": [
         {
           "kind": "button",
-          "label": "去完成",
+          "label": "耳廓狐动态立绘",
           "interaction": {
-            "act": "goto",
-            "to": "02-interact"
-          },
-          "sample_value": "去完成"
+            "act": "vid-replay",
+            "msg": "耳廓狐又蹦又转地重新打招呼（演示）",
+            "target": "[data-dc='pp/pet-fox']"
+          }
         }
       ]
     },
     {
-      "id": "r_pp_start",
+      "id": "r_pp_pet_fox",
       "type": "custom",
-      "label": "去完成"
+      "label": ""
     },
     {
-      "id": "r_pp_entries",
+      "id": "r_pp_pet_name",
       "type": "custom",
-      "label": "我的家园空地待搭建 · 4 类素材\n      乐队舞台星光耀耀中 · 5 卡槽",
+      "label": "耳廓狐 · 好感 Lv.4"
+    },
+    {
+      "id": "r_pp_acts",
+      "type": "custom",
+      "label": "抚摸\n    喂食\n    唱歌",
       "components": [
         {
           "kind": "button",
-          "label": "我的家园空地待搭建 · 4 类素材",
+          "label": "抚摸",
           "interaction": {
-            "act": "goto",
-            "to": "05-build"
+            "act": "toast",
+            "msg": "抚摸：好感 +2，尾巴摇起来了（演示）"
           },
-          "sample_value": "我的家园空地待搭建 · 4 类素材"
-        },
-        {
-          "kind": "image",
-          "label": ""
+          "sample_value": "抚摸"
         },
         {
           "kind": "button",
-          "label": "乐队舞台星光耀耀中 · 5 卡槽",
+          "label": "喂食",
           "interaction": {
-            "act": "goto",
-            "to": "03-band"
+            "act": "toast",
+            "msg": "喂食：冻干一枚，好感 +1（演示）"
           },
-          "sample_value": "乐队舞台星光耀耀中 · 5 卡槽"
-        },
-        {
-          "kind": "image",
-          "label": ""
+          "sample_value": "喂食"
         },
         {
           "kind": "button",
-          "label": "地图导游6 分区 · 向导耳廓狐",
+          "label": "唱歌",
           "interaction": {
-            "act": "goto",
-            "to": "04-map"
+            "act": "toast",
+            "msg": "唱歌：耳廓狐清了清嗓子♪（演示）"
           },
-          "sample_value": "地图导游6 分区 · 向导耳廓狐"
-        },
-        {
-          "kind": "image",
-          "label": ""
-        },
-        {
-          "kind": "button",
-          "label": "动物图鉴已解锁 3 / 5",
-          "interaction": {
-            "act": "goto",
-            "to": "06-dex"
-          },
-          "sample_value": "动物图鉴已解锁 3 / 5"
-        },
-        {
-          "kind": "image",
-          "label": ""
+          "sample_value": "唱歌"
         }
       ]
+    },
+    {
+      "id": "r_pp_pet",
+      "type": "custom",
+      "label": "抚摸"
+    },
+    {
+      "id": "r_pp_feed",
+      "type": "list",
+      "label": "喂食"
+    },
+    {
+      "id": "r_pp_sing",
+      "type": "custom",
+      "label": "唱歌"
     },
     {
       "id": "r_pp_tabs",
