@@ -4,11 +4,13 @@
   .xh .far::before{content:"";position:absolute;inset:-7%;background:url(assets/xh-bg-day.png) center/cover no-repeat;opacity:.32;animation:kb 36s ease-in-out infinite alternate}
   @keyframes kb{from{transform:scale(1.08)}to{transform:scale(1.02)}}
   .xh .scroll{position:relative;z-index:4;flex:1;min-height:0;display:flex;flex-direction:column;padding:0 14px 84px;box-sizing:border-box}
-  .xh .top{position:sticky;top:0;z-index:6;display:flex;gap:10px;align-items:center;padding:46px 4px 10px;background:linear-gradient(180deg,rgba(246,251,255,.92),rgba(246,251,255,.55));backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:0 0 16px 16px}
+  .xh .top{position:sticky;top:0;z-index:6;display:flex;gap:10px;align-items:center;padding:46px 4px 14px;background:linear-gradient(180deg,rgba(246,251,255,.94) 55%,rgba(246,251,255,0));backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);-webkit-mask-image:linear-gradient(180deg,#000 72%,transparent);mask-image:linear-gradient(180deg,#000 72%,transparent)} /* M105-W0：去玻璃板硬边，渐变羽化融入背景 */
   .xh .top img{width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:50% 22%;box-shadow:0 4px 12px rgba(23,54,79,.25), 0 0 0 2px #fff}
   .xh .top .nm{font-size:14.5px;font-weight:600;flex:1}
   .xh .top .vs{font-size:10.5px;color:#2b76c8;background:rgba(255,255,255,.8);border-radius:999px;padding:6px 11px;cursor:pointer;box-shadow:0 4px 10px rgba(23,54,79,.12)}
-  .xh .flow{flex:1;min-height:0;overflow-y:auto;display:flex;flex-direction:column;justify-content:flex-end;gap:10px;padding:6px 2px}
+  .xh .flow{flex:1;min-height:0;overflow-y:auto;display:flex;flex-direction:column;justify-content:flex-start;gap:10px;padding:6px 2px}
+  .xh .flow.packed{justify-content:flex-end} /* 消息溢出才压底；不足时顶部起排，避免中部大空区 */
+  .xh .dayline{align-self:center;margin:10px 0 14px;font-size:10px;letter-spacing:.18em;color:#7d99b2;background:rgba(255,255,255,.55);border-radius:999px;padding:5px 14px}
   .xh .msg{max-width:80%;padding:10px 13px;font-size:12.5px;line-height:1.75;border-radius:16px;display:flex;gap:8px;align-items:flex-end}
   .xh .msg img{width:22px;height:22px;border-radius:50%;object-fit:cover;object-position:50% 22%;flex:none}
   .xh .msg.ai{align-self:flex-start;background:rgba(255,255,255,.85);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.9);border-bottom-left-radius:5px;box-shadow:0 8px 20px rgba(23,54,79,.12)}
@@ -31,6 +33,7 @@
   <div class="scroll">
     <div class="top" data-dc="as/top"><img src="assets/xh-xinghai.png" alt="" data-goto="01-home"><span class="nm">星海 · 正在倾听</span><span class="vs" data-dc="as/voice-entry" data-goto="04-settings">音色 · 清冷</span></div>
     <div class="flow" data-dc="as/flow">
+      <div class="dayline">夜 · 23:47</div>
       <div class="msg ai"><img src="assets/xh-xinghai.png" alt="">夜了。今天的评审要点我按三条线理好了，先听哪一条？</div>
       <div class="msg me">先看设计走查部分</div>
       <div class="msg ai"><img src="assets/xh-xinghai.png" alt="">走查 7 条，高优 2：图标对比度、空态插画统一。已排进 14:00 评审。</div>
@@ -39,4 +42,5 @@
     <div class="input" data-dc="as/input"><span class="ph">继续对话…</span><span class="send" data-dc="as/send" data-act="toast" data-msg="星海：收到，我想想（演示）"><svg width="15" height="15" viewBox="0 0 24 24" style="fill:none;stroke:#fff;stroke-width:2.4;stroke-linecap:round"><path d="m4 12 16-8-6 16-2-6z"/></svg></span></div>
   </div>
   <div class="nav" data-dc="as/tabs"><span data-dc="as/tab-home" data-goto="01-home"><svg width="17" height="17" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2.1;stroke-linecap:round"><path d="m4 11 8-7 8 7v9a1 1 0 0 1-1 1h-5v-6h-4v6H5a1 1 0 0 1-1-1z"/></svg>首页</span><span class="on" data-dc="as/tab-chat" data-goto="02-chat"><svg width="17" height="17" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2.1;stroke-linecap:round"><rect x="4" y="4" width="16" height="13" rx="3"/><path d="M9 21l3-4 3 4"/></svg>对话</span><span data-dc="as/tab-call" data-goto="03-call"><svg width="17" height="17" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2.1;stroke-linecap:round"><rect x="3" y="6" width="13" height="12" rx="3"/><path d="m16 10 5-3v10l-5-3"/></svg>视频</span><span data-goto="04-settings"><svg width="17" height="17" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:2.1;stroke-linecap:round"><circle cx="12" cy="12" r="3.2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/></svg>设置</span></div>
+<script>(()=>{const f=document.querySelector(".xh .flow");if(!f)return;const u=()=>{f.classList.toggle("packed", f.scrollHeight > f.clientHeight + 8);};u();new ResizeObserver(u).observe(f);f.addEventListener("DOMNodeInserted",u);})();</script>
 </div>

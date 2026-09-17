@@ -1,7 +1,7 @@
 {
  "app": "ai-assistant",
- "version": "3.2.0",
- "published_at": "2026-09-17T06:42:23.119Z",
+ "version": "3.2.1",
+ "published_at": "2026-09-17T09:47:09.138Z",
  "skill_version": "0.6.0",
  "skill_channel": "stable"
 }

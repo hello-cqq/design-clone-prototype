@@ -1,7 +1,7 @@
 {
   "meta": {
     "generator": "design-clone collect-design",
-    "generated_at": "2026-09-17T06:05:20.924Z",
+    "generated_at": "2026-09-17T08:56:22.721Z",
     "source_run": "demo-assistant",
     "schema": "figma-source/v1"
   },
@@ -505,7 +505,27 @@
             "w": 390,
             "h": 844
           },
-          "fill": "rgb(11, 30, 51)",
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(234, 244, 255)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/vh",
+          "kind": "frame",
+          "rect": {
+            "x": 39,
+            "y": 496,
+            "w": 312,
+            "h": 252
+          },
+          "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(234, 244, 255)",
           "cornerRadius": 0,
           "font": {
@@ -518,12 +538,12 @@
         },
         {
           "dc": "as/vh-xinghai",
-          "kind": "frame",
+          "kind": "image",
           "rect": {
-            "x": 0,
-            "y": 0,
-            "w": 390,
-            "h": 844
+            "x": 76,
+            "y": 494,
+            "w": 134,
+            "h": 253
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(234, 244, 255)",
@@ -537,122 +557,142 @@
           "text": ""
         },
         {
-          "dc": "as/vid-ctl",
+          "dc": "as/vh-haixi",
+          "kind": "image",
+          "rect": {
+            "x": 216,
+            "y": 496,
+            "w": 96,
+            "h": 252
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(234, 244, 255)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/personas",
+          "kind": "frame",
+          "rect": {
+            "x": 16,
+            "y": 96,
+            "w": 358,
+            "h": 128
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(234, 244, 255)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/tabs",
+          "kind": "frame",
+          "rect": {
+            "x": 14,
+            "y": 766,
+            "w": 362,
+            "h": 57
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(234, 244, 255)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/tab-home",
           "kind": "button",
           "rect": {
-            "x": 297,
-            "y": 720,
-            "w": 81,
-            "h": 29
+            "x": 14,
+            "y": 766,
+            "w": 83,
+            "h": 57
           },
-          "fill": "rgba(255, 255, 255, 0.85)",
-          "color": "rgb(43, 92, 134)",
-          "cornerRadius": 999,
+          "fill": "rgba(14, 42, 74, 0.6)",
+          "color": "rgb(143, 208, 255)",
+          "cornerRadius": 18,
+          "font": {
+            "family": "ui-rounded",
+            "size": 11,
+            "weight": 600,
+            "lineHeight": 17
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/tab-chat",
+          "kind": "button",
+          "rect": {
+            "x": 107,
+            "y": 766,
+            "w": 83,
+            "h": 57
+          },
+          "fill": "rgba(14, 42, 74, 0.6)",
+          "color": "rgb(188, 216, 242)",
+          "cornerRadius": 18,
           "font": {
             "family": "ui-rounded",
             "size": 11,
             "weight": 400,
             "lineHeight": 17
           },
-          "text": "⏯ 重播影像"
+          "text": ""
         },
         {
-          "dc": "as/hud-tm",
-          "kind": "text",
+          "dc": "as/tab-call",
+          "kind": "button",
           "rect": {
-            "x": 0,
-            "y": 82,
-            "w": 390,
-            "h": 16
+            "x": 200,
+            "y": 766,
+            "w": 83,
+            "h": 57
           },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(234, 244, 255)",
-          "cornerRadius": 0,
+          "fill": "rgba(14, 42, 74, 0.6)",
+          "color": "rgb(188, 216, 242)",
+          "cornerRadius": 18,
           "font": {
             "family": "ui-rounded",
             "size": 11,
             "weight": 400,
-            "lineHeight": 16
-          },
-          "text": "12:36 · 高清 · 眼神正在看向你"
-        },
-        {
-          "dc": "as/wave",
-          "kind": "frame",
-          "rect": {
-            "x": 162,
-            "y": 668,
-            "w": 66,
-            "h": 26
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(234, 244, 255)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
+            "lineHeight": 17
           },
           "text": ""
         },
         {
-          "dc": "as/ctrls",
-          "kind": "frame",
-          "rect": {
-            "x": 48,
-            "y": 730,
-            "w": 294,
-            "h": 70
-          },
-          "fill": "rgba(10, 24, 40, 0.55)",
-          "color": "rgb(234, 244, 255)",
-          "cornerRadius": 999,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "as/mic",
+          "dc": "as/voice-entry",
           "kind": "button",
           "rect": {
-            "x": 70,
-            "y": 742,
-            "w": 46,
-            "h": 46
+            "x": 293,
+            "y": 766,
+            "w": 83,
+            "h": 57
           },
-          "fill": "rgba(255, 255, 255, 0.14)",
-          "color": "rgb(234, 244, 255)",
-          "cornerRadius": 50,
+          "fill": "rgba(14, 42, 74, 0.6)",
+          "color": "rgb(188, 216, 242)",
+          "cornerRadius": 18,
           "font": {
             "family": "ui-rounded",
-            "size": 16,
+            "size": 11,
             "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "as/end",
-          "kind": "button",
-          "rect": {
-            "x": 206,
-            "y": 742,
-            "w": 46,
-            "h": 46
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(234, 244, 255)",
-          "cornerRadius": 50,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
+            "lineHeight": 17
           },
           "text": ""
         }
@@ -675,7 +715,27 @@
             "w": 390,
             "h": 844
           },
-          "fill": "rgb(11, 30, 51)",
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(234, 244, 255)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/vh",
+          "kind": "frame",
+          "rect": {
+            "x": 39,
+            "y": 496,
+            "w": 312,
+            "h": 252
+          },
+          "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(234, 244, 255)",
           "cornerRadius": 0,
           "font": {
@@ -688,12 +748,12 @@
         },
         {
           "dc": "as/vh-xinghai",
-          "kind": "frame",
+          "kind": "image",
           "rect": {
-            "x": 0,
-            "y": 0,
-            "w": 390,
-            "h": 844
+            "x": 76,
+            "y": 494,
+            "w": 134,
+            "h": 253
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(234, 244, 255)",
@@ -707,122 +767,142 @@
           "text": ""
         },
         {
-          "dc": "as/vid-ctl",
+          "dc": "as/vh-haixi",
+          "kind": "image",
+          "rect": {
+            "x": 216,
+            "y": 496,
+            "w": 96,
+            "h": 252
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(234, 244, 255)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/personas",
+          "kind": "frame",
+          "rect": {
+            "x": 16,
+            "y": 96,
+            "w": 358,
+            "h": 128
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(234, 244, 255)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/tabs",
+          "kind": "frame",
+          "rect": {
+            "x": 14,
+            "y": 766,
+            "w": 362,
+            "h": 57
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(234, 244, 255)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "ui-rounded",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/tab-home",
           "kind": "button",
           "rect": {
-            "x": 297,
-            "y": 720,
-            "w": 81,
-            "h": 29
+            "x": 14,
+            "y": 766,
+            "w": 83,
+            "h": 57
           },
-          "fill": "rgba(255, 255, 255, 0.85)",
-          "color": "rgb(43, 92, 134)",
-          "cornerRadius": 999,
+          "fill": "rgba(14, 42, 74, 0.6)",
+          "color": "rgb(143, 208, 255)",
+          "cornerRadius": 18,
+          "font": {
+            "family": "ui-rounded",
+            "size": 11,
+            "weight": 600,
+            "lineHeight": 17
+          },
+          "text": ""
+        },
+        {
+          "dc": "as/tab-chat",
+          "kind": "button",
+          "rect": {
+            "x": 107,
+            "y": 766,
+            "w": 83,
+            "h": 57
+          },
+          "fill": "rgba(14, 42, 74, 0.6)",
+          "color": "rgb(188, 216, 242)",
+          "cornerRadius": 18,
           "font": {
             "family": "ui-rounded",
             "size": 11,
             "weight": 400,
             "lineHeight": 17
           },
-          "text": "⏯ 重播影像"
+          "text": ""
         },
         {
-          "dc": "as/hud-tm",
-          "kind": "text",
+          "dc": "as/tab-call",
+          "kind": "button",
           "rect": {
-            "x": 0,
-            "y": 82,
-            "w": 390,
-            "h": 16
+            "x": 200,
+            "y": 766,
+            "w": 83,
+            "h": 57
           },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(234, 244, 255)",
-          "cornerRadius": 0,
+          "fill": "rgba(14, 42, 74, 0.6)",
+          "color": "rgb(188, 216, 242)",
+          "cornerRadius": 18,
           "font": {
             "family": "ui-rounded",
             "size": 11,
             "weight": 400,
-            "lineHeight": 16
-          },
-          "text": "12:36 · 高清 · 眼神正在看向你"
-        },
-        {
-          "dc": "as/wave",
-          "kind": "frame",
-          "rect": {
-            "x": 162,
-            "y": 668,
-            "w": 66,
-            "h": 26
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(234, 244, 255)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
+            "lineHeight": 17
           },
           "text": ""
         },
         {
-          "dc": "as/ctrls",
-          "kind": "frame",
-          "rect": {
-            "x": 48,
-            "y": 730,
-            "w": 294,
-            "h": 70
-          },
-          "fill": "rgba(10, 24, 40, 0.55)",
-          "color": "rgb(234, 244, 255)",
-          "cornerRadius": 999,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "as/mic",
+          "dc": "as/voice-entry",
           "kind": "button",
           "rect": {
-            "x": 70,
-            "y": 742,
-            "w": 46,
-            "h": 46
+            "x": 293,
+            "y": 766,
+            "w": 83,
+            "h": 57
           },
-          "fill": "rgba(255, 255, 255, 0.14)",
-          "color": "rgb(234, 244, 255)",
-          "cornerRadius": 50,
+          "fill": "rgba(14, 42, 74, 0.6)",
+          "color": "rgb(188, 216, 242)",
+          "cornerRadius": 18,
           "font": {
             "family": "ui-rounded",
-            "size": 16,
+            "size": 11,
             "weight": 400,
-            "lineHeight": 24
-          },
-          "text": ""
-        },
-        {
-          "dc": "as/end",
-          "kind": "button",
-          "rect": {
-            "x": 206,
-            "y": 742,
-            "w": 46,
-            "h": 46
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(234, 244, 255)",
-          "cornerRadius": 50,
-          "font": {
-            "family": "ui-rounded",
-            "size": 16,
-            "weight": 400,
-            "lineHeight": 24
+            "lineHeight": 17
           },
           "text": ""
         }
