@@ -1,4 +1,4 @@
-# Aliyun Console (aliyun-console)
+# Aliyun (aliyun-console)
 
 > Unofficial study replica generated with design-clone. All trademarks and brand assets belong to their respective owners; no affiliation or endorsement implied.
 
@@ -8,4 +8,4 @@
 - gates: interact dead=0 | inspect fail=0 pass=50 | ui-smoke fail=0 pass=29
 
 ## Changes
-- v1.7.2: initial publish
+- v1.8.0: initial publish
