@@ -1,7 +1,7 @@
 {
  "name": {
-  "en": "Starsea Talk",
-  "zh": "星海对话"
+  "en": "Dislocated Spacetime",
+  "zh": "错位时空"
  },
  "description": {
   "en": "Interactive social prototype (mobile): full UI flows, live controls, design specs and user paths — cloned from a real source by design-clone.",
@@ -21,8 +21,8 @@
  },
  "license": "CC-BY-4.0",
  "ip_attestation": "original",
- "attestation_note": "M105: shell nav-state sync fix, chat topbar feathered, flow aligns selection",
- "version": "3.2.1",
- "created_at": "2026-09-17T09:47:09.142Z",
+ "attestation_note": "M106: renamed 错位时空/Dislocated Spacetime; narrative site integration",
+ "version": "3.3.0",
+ "created_at": "2026-09-17T12:18:59.523Z",
  "platform": "mobile"
 }
