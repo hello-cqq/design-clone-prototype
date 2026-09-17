@@ -78,12 +78,22 @@ export function contributors(root, rel) {
   for (const line of log.split("\n")) {
     if (!line.trim()) continue;
     const [name, email] = line.split("\t");
-    const LOGIN_OVERRIDE = { cqq: "hello-cqq", AhahahQ: "AhahahQ" }; // M62: 本地 git 身份非 noreply 时的 login 映射
+    const LOGIN_OVERRIDE = { cqq: "hello-cqq", AhahahQ: "hello-cqq" }; // M62+M106: 同一自然人的多 git 身份（含旧账号）按邮箱聚合归一为 owner login，不展示机器人/旧马甲
     const m = /@users\.noreply\.github\.com$/.test(email || "") ? (email || "").split("@")[0].replace(/^\d+\+/, "") : (LOGIN_OVERRIDE[(name || "").trim()] || null);
-    const k = name || email;
-    const e = map.get(k) || { name, login: m, commits: 0 };
-    e.commits++; e.login = e.login || m;
+    const k = (email || name || "").toLowerCase() || name;
+    const e = map.get(k) || { name: m || name, login: m, commits: 0 };
+    e.commits++; e.login = e.login || m; if (m === "hello-cqq") e.name = "hello-cqq";
     map.set(k, e);
+  }
+  // M106: 同 login 多邮箱键合并（noreply 与个人邮箱同属一人）
+  {
+    const byLogin = new Map();
+    for (const e of map.values()) {
+      const k2 = e.login || e.name;
+      const t = byLogin.get(k2) || { ...e, commits: 0 };
+      t.commits += e.commits; byLogin.set(k2, t);
+    }
+    map.clear(); for (const [k2, v] of byLogin) map.set(k2, v);
   }
   // M76-W2c: 仓库 owner 恒为贡献者（ squash-merge 只记 author，owner 无 path commit 也要展示）
   try {
