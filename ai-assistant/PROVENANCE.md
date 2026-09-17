@@ -1,4 +1,4 @@
-# Starsea Talk (ai-assistant)
+# Dislocated Spacetime (ai-assistant)
 
 - source: original / demo-assistant
 - retire: —
@@ -6,4 +6,4 @@
 - gates: interact dead=0 | inspect fail=0 pass=50 | ui-smoke fail=0 pass=29
 
 ## Changes
-- v3.2.1: initial publish
+- v3.3.0: initial publish
