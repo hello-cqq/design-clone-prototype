@@ -1,7 +1,7 @@
 {
   "meta": {
     "generator": "design-clone collect-design",
-    "generated_at": "2026-09-17T06:39:32.544Z",
+    "generated_at": "2026-09-17T09:37:54.971Z",
     "source_run": "mac-lark",
     "schema": "figma-source/v1"
   },
@@ -535,7 +535,7 @@
       },
       "nodes": [
         {
-          "dc": "lk/root",
+          "dc": "msg/root",
           "kind": "frame",
           "rect": {
             "x": 0,
@@ -555,7 +555,7 @@
           "text": ""
         },
         {
-          "dc": "cal/side",
+          "dc": "msg/side",
           "kind": "frame",
           "rect": {
             "x": 0,
@@ -575,17 +575,17 @@
           "text": ""
         },
         {
-          "dc": "cal/n-msg",
+          "dc": "msg/n-msg",
           "kind": "button",
           "rect": {
-            "x": 0,
+            "x": 8,
             "y": 114,
-            "w": 239,
+            "w": 223,
             "h": 39
           },
-          "fill": "rgba(0, 0, 0, 0)",
+          "fill": "rgb(227, 235, 255)",
           "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
+          "cornerRadius": 8,
           "font": {
             "family": "system-ui",
             "size": 14,
@@ -595,7 +595,7 @@
           "text": ""
         },
         {
-          "dc": "cal/n-doubao",
+          "dc": "msg/n-doubao",
           "kind": "button",
           "rect": {
             "x": 0,
@@ -615,707 +615,7 @@
           "text": ""
         },
         {
-          "dc": "cal/n-cal",
-          "kind": "button",
-          "rect": {
-            "x": 8,
-            "y": 192,
-            "w": 223,
-            "h": 39
-          },
-          "fill": "rgb(227, 235, 255)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 8,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "cal/n-docs",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 231,
-            "w": 239,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "cal/n-bitable",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 270,
-            "w": 239,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "cal/n-meet",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 309,
-            "w": 239,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "cal/n-fly",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 348,
-            "w": 239,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "cal/n-wb",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 387,
-            "w": 239,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "cal/n-appc",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 426,
-            "w": 239,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "cal/n-contacts",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 465,
-            "w": 239,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "cal/n-vip",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 504,
-            "w": 239,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "cal/n-task",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 575,
-            "w": 239,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "cal/n-star",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 614,
-            "w": 239,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "cal/n-kb",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 653,
-            "w": 239,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "lk/side",
-          "kind": "frame",
-          "rect": {
-            "x": 240,
-            "y": 0,
-            "w": 240,
-            "h": 800
-          },
-          "fill": "rgb(247, 248, 250)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        }
-      ]
-    },
-    {
-      "id": "03-docs",
-      "name": "云文档",
-      "frame": {
-        "width": 1280,
-        "height": 800
-      },
-      "nodes": [
-        {
-          "dc": "lk/root",
-          "kind": "frame",
-          "rect": {
-            "x": 0,
-            "y": 0,
-            "w": 1280,
-            "h": 800
-          },
-          "fill": "rgb(245, 246, 247)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "cal/side",
-          "kind": "frame",
-          "rect": {
-            "x": 0,
-            "y": 0,
-            "w": 240,
-            "h": 800
-          },
-          "fill": "rgb(247, 248, 250)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "cal/n-msg",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 114,
-            "w": 239,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "cal/n-doubao",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 153,
-            "w": 239,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "cal/n-cal",
-          "kind": "button",
-          "rect": {
-            "x": 8,
-            "y": 192,
-            "w": 223,
-            "h": 39
-          },
-          "fill": "rgb(227, 235, 255)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 8,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "cal/n-docs",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 231,
-            "w": 239,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "cal/n-bitable",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 270,
-            "w": 239,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "cal/n-meet",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 309,
-            "w": 239,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "cal/n-fly",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 348,
-            "w": 239,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "cal/n-wb",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 387,
-            "w": 239,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "cal/n-appc",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 426,
-            "w": 239,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "cal/n-contacts",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 465,
-            "w": 239,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "cal/n-vip",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 504,
-            "w": 239,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "cal/n-task",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 575,
-            "w": 239,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "cal/n-star",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 614,
-            "w": 239,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "cal/n-kb",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 653,
-            "w": 239,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "lk/side",
-          "kind": "frame",
-          "rect": {
-            "x": 240,
-            "y": 0,
-            "w": 240,
-            "h": 800
-          },
-          "fill": "rgb(247, 248, 250)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        }
-      ]
-    },
-    {
-      "id": "04-meeting",
-      "name": "视频会议",
-      "frame": {
-        "width": 1280,
-        "height": 800
-      },
-      "nodes": [
-        {
-          "dc": "mt/root",
-          "kind": "frame",
-          "rect": {
-            "x": 0,
-            "y": 0,
-            "w": 1280,
-            "h": 800
-          },
-          "fill": "rgb(245, 246, 247)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "mt/side",
-          "kind": "frame",
-          "rect": {
-            "x": 0,
-            "y": 0,
-            "w": 240,
-            "h": 800
-          },
-          "fill": "rgb(247, 248, 250)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "mt/n-msg",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 114,
-            "w": 239,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "mt/n-doubao",
-          "kind": "button",
-          "rect": {
-            "x": 0,
-            "y": 153,
-            "w": 239,
-            "h": 39
-          },
-          "fill": "rgba(0, 0, 0, 0)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "mt/n-cal",
+          "dc": "msg/n-cal",
           "kind": "button",
           "rect": {
             "x": 0,
@@ -1335,7 +635,7 @@
           "text": ""
         },
         {
-          "dc": "mt/n-docs",
+          "dc": "msg/n-docs",
           "kind": "button",
           "rect": {
             "x": 0,
@@ -1355,7 +655,7 @@
           "text": ""
         },
         {
-          "dc": "mt/n-bitable",
+          "dc": "msg/n-bitable",
           "kind": "button",
           "rect": {
             "x": 0,
@@ -1375,17 +675,17 @@
           "text": ""
         },
         {
-          "dc": "mt/n-meet",
+          "dc": "msg/n-meet",
           "kind": "button",
           "rect": {
-            "x": 8,
+            "x": 0,
             "y": 309,
-            "w": 223,
+            "w": 239,
             "h": 39
           },
-          "fill": "rgb(227, 235, 255)",
+          "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(31, 35, 41)",
-          "cornerRadius": 8,
+          "cornerRadius": 0,
           "font": {
             "family": "system-ui",
             "size": 14,
@@ -1395,7 +695,7 @@
           "text": ""
         },
         {
-          "dc": "mt/n-fly",
+          "dc": "msg/n-fly",
           "kind": "button",
           "rect": {
             "x": 0,
@@ -1415,7 +715,7 @@
           "text": ""
         },
         {
-          "dc": "mt/n-wb",
+          "dc": "msg/n-wb",
           "kind": "button",
           "rect": {
             "x": 0,
@@ -1435,7 +735,7 @@
           "text": ""
         },
         {
-          "dc": "mt/n-appc",
+          "dc": "msg/n-appc",
           "kind": "button",
           "rect": {
             "x": 0,
@@ -1455,7 +755,7 @@
           "text": ""
         },
         {
-          "dc": "mt/n-contacts",
+          "dc": "msg/n-contacts",
           "kind": "button",
           "rect": {
             "x": 0,
@@ -1475,7 +775,7 @@
           "text": ""
         },
         {
-          "dc": "mt/n-vip",
+          "dc": "msg/n-vip",
           "kind": "button",
           "rect": {
             "x": 0,
@@ -1495,7 +795,7 @@
           "text": ""
         },
         {
-          "dc": "mt/n-task",
+          "dc": "msg/n-task",
           "kind": "button",
           "rect": {
             "x": 0,
@@ -1515,7 +815,7 @@
           "text": ""
         },
         {
-          "dc": "mt/n-star",
+          "dc": "msg/n-star",
           "kind": "button",
           "rect": {
             "x": 0,
@@ -1535,7 +835,7 @@
           "text": ""
         },
         {
-          "dc": "mt/n-kb",
+          "dc": "msg/n-kb",
           "kind": "button",
           "rect": {
             "x": 0,
@@ -1555,7 +855,7 @@
           "text": ""
         },
         {
-          "dc": "mt/col",
+          "dc": "msg/list",
           "kind": "frame",
           "rect": {
             "x": 240,
@@ -1575,195 +875,185 @@
           "text": ""
         },
         {
-          "dc": "mt/promo",
+          "dc": "msg/r1",
+          "kind": "button",
+          "rect": {
+            "x": 248,
+            "y": 47,
+            "w": 323,
+            "h": 62
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 10,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "msg/r2",
+          "kind": "button",
+          "rect": {
+            "x": 248,
+            "y": 109,
+            "w": 323,
+            "h": 62
+          },
+          "fill": "rgb(227, 235, 255)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 10,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "msg/r3",
+          "kind": "button",
+          "rect": {
+            "x": 248,
+            "y": 171,
+            "w": 323,
+            "h": 62
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 10,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "msg/r4",
+          "kind": "button",
+          "rect": {
+            "x": 248,
+            "y": 233,
+            "w": 323,
+            "h": 62
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 10,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "msg/r5",
+          "kind": "button",
+          "rect": {
+            "x": 248,
+            "y": 295,
+            "w": 323,
+            "h": 62
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 10,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "msg/r6",
+          "kind": "button",
+          "rect": {
+            "x": 248,
+            "y": 357,
+            "w": 323,
+            "h": 62
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 10,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "msg/r7",
+          "kind": "button",
+          "rect": {
+            "x": 248,
+            "y": 419,
+            "w": 323,
+            "h": 62
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 10,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "msg/r8",
+          "kind": "button",
+          "rect": {
+            "x": 248,
+            "y": 481,
+            "w": 323,
+            "h": 62
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 10,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "03-docs",
+      "name": "云文档",
+      "frame": {
+        "width": 1280,
+        "height": 827
+      },
+      "nodes": [
+        {
+          "dc": "doc/root",
           "kind": "frame",
           "rect": {
-            "x": 256,
-            "y": 56,
-            "w": 307,
-            "h": 108
-          },
-          "fill": "rgb(255, 255, 255)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 12,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "mt/c1",
-          "kind": "button",
-          "rect": {
-            "x": 256,
-            "y": 177,
-            "w": 147,
-            "h": 108
-          },
-          "fill": "rgb(232, 236, 248)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 12,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "mt/c2",
-          "kind": "button",
-          "rect": {
-            "x": 417,
-            "y": 177,
-            "w": 147,
-            "h": 108
-          },
-          "fill": "rgb(232, 236, 248)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 12,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "mt/c3",
-          "kind": "button",
-          "rect": {
-            "x": 256,
-            "y": 299,
-            "w": 147,
-            "h": 108
-          },
-          "fill": "rgb(251, 232, 212)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 12,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "mt/c4",
-          "kind": "button",
-          "rect": {
-            "x": 417,
-            "y": 299,
-            "w": 147,
-            "h": 108
-          },
-          "fill": "rgb(217, 242, 221)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 12,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "mt/c5",
-          "kind": "button",
-          "rect": {
-            "x": 256,
-            "y": 420,
-            "w": 147,
-            "h": 108
-          },
-          "fill": "rgb(232, 228, 246)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 12,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "mt/c6",
-          "kind": "button",
-          "rect": {
-            "x": 417,
-            "y": 420,
-            "w": 147,
-            "h": 108
-          },
-          "fill": "rgb(232, 236, 248)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 12,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "mt/c7",
-          "kind": "button",
-          "rect": {
-            "x": 256,
-            "y": 542,
-            "w": 147,
-            "h": 108
-          },
-          "fill": "rgb(232, 236, 248)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 12,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "mt/c8",
-          "kind": "button",
-          "rect": {
-            "x": 417,
-            "y": 542,
-            "w": 147,
-            "h": 108
-          },
-          "fill": "rgb(232, 236, 248)",
-          "color": "rgb(31, 35, 41)",
-          "cornerRadius": 12,
-          "font": {
-            "family": "system-ui",
-            "size": 14,
-            "weight": 400,
-            "lineHeight": 21
-          },
-          "text": ""
-        },
-        {
-          "dc": "mt/right",
-          "kind": "frame",
-          "rect": {
-            "x": 580,
+            "x": 0,
             "y": 0,
-            "w": 700,
-            "h": 800
+            "w": 1280,
+            "h": 827
           },
-          "fill": "rgb(242, 243, 245)",
+          "fill": "rgb(245, 246, 247)",
           "color": "rgb(31, 35, 41)",
           "cornerRadius": 0,
           "font": {
@@ -1775,13 +1065,33 @@
           "text": ""
         },
         {
-          "dc": "mt/h1",
+          "dc": "doc/side",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 240,
+            "h": 827
+          },
+          "fill": "rgb(247, 248, 250)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/n-msg",
           "kind": "button",
           "rect": {
-            "x": 600,
-            "y": 139,
-            "w": 660,
-            "h": 103
+            "x": 0,
+            "y": 114,
+            "w": 239,
+            "h": 39
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(31, 35, 41)",
@@ -1795,13 +1105,13 @@
           "text": ""
         },
         {
-          "dc": "mt/h2",
+          "dc": "doc/n-doubao",
           "kind": "button",
           "rect": {
-            "x": 600,
-            "y": 242,
-            "w": 660,
-            "h": 103
+            "x": 0,
+            "y": 153,
+            "w": 239,
+            "h": 39
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(31, 35, 41)",
@@ -1815,13 +1125,13 @@
           "text": ""
         },
         {
-          "dc": "mt/h3",
+          "dc": "doc/n-cal",
           "kind": "button",
           "rect": {
-            "x": 600,
-            "y": 345,
-            "w": 660,
-            "h": 103
+            "x": 0,
+            "y": 192,
+            "w": 239,
+            "h": 39
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(31, 35, 41)",
@@ -1835,13 +1145,33 @@
           "text": ""
         },
         {
-          "dc": "mt/h4",
+          "dc": "doc/n-docs",
           "kind": "button",
           "rect": {
-            "x": 600,
-            "y": 448,
-            "w": 660,
-            "h": 103
+            "x": 8,
+            "y": 231,
+            "w": 223,
+            "h": 39
+          },
+          "fill": "rgb(227, 235, 255)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 8,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/n-bitable",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 270,
+            "w": 239,
+            "h": 39
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(31, 35, 41)",
@@ -1855,13 +1185,13 @@
           "text": ""
         },
         {
-          "dc": "mt/h5",
+          "dc": "doc/n-meet",
           "kind": "button",
           "rect": {
-            "x": 600,
-            "y": 551,
-            "w": 660,
-            "h": 103
+            "x": 0,
+            "y": 309,
+            "w": 239,
+            "h": 39
           },
           "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(31, 35, 41)",
@@ -1875,15 +1205,725 @@
           "text": ""
         },
         {
-          "dc": "mt/h6",
+          "dc": "doc/n-fly",
           "kind": "button",
           "rect": {
-            "x": 600,
-            "y": 654,
-            "w": 660,
-            "h": 103
+            "x": 0,
+            "y": 348,
+            "w": 239,
+            "h": 39
           },
           "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/n-wb",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 387,
+            "w": 239,
+            "h": 39
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/n-appc",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 426,
+            "w": 239,
+            "h": 39
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/n-contacts",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 465,
+            "w": 239,
+            "h": 39
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/n-vip",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 504,
+            "w": 239,
+            "h": 39
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/n-task",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 575,
+            "w": 239,
+            "h": 39
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/n-star",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 614,
+            "w": 239,
+            "h": 39
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/n-kb",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 653,
+            "w": 239,
+            "h": 39
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/col",
+          "kind": "frame",
+          "rect": {
+            "x": 240,
+            "y": 0,
+            "w": 250,
+            "h": 827
+          },
+          "fill": "rgb(247, 248, 250)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/i-home",
+          "kind": "button",
+          "rect": {
+            "x": 252,
+            "y": 26,
+            "w": 225,
+            "h": 40
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 8,
+          "font": {
+            "family": "system-ui",
+            "size": 13,
+            "weight": 400,
+            "lineHeight": 20
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/i-drive",
+          "kind": "button",
+          "rect": {
+            "x": 252,
+            "y": 70,
+            "w": 225,
+            "h": 40
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 8,
+          "font": {
+            "family": "system-ui",
+            "size": 13,
+            "weight": 400,
+            "lineHeight": 20
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/i-kb",
+          "kind": "button",
+          "rect": {
+            "x": 252,
+            "y": 113,
+            "w": 225,
+            "h": 40
+          },
+          "fill": "rgb(220, 229, 251)",
+          "color": "rgb(51, 112, 255)",
+          "cornerRadius": 8,
+          "font": {
+            "family": "system-ui",
+            "size": 13,
+            "weight": 500,
+            "lineHeight": 20
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/i-off",
+          "kind": "button",
+          "rect": {
+            "x": 252,
+            "y": 157,
+            "w": 225,
+            "h": 40
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 8,
+          "font": {
+            "family": "system-ui",
+            "size": 13,
+            "weight": 400,
+            "lineHeight": 20
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/main",
+          "kind": "frame",
+          "rect": {
+            "x": 490,
+            "y": 0,
+            "w": 790,
+            "h": 827
+          },
+          "fill": "rgb(247, 248, 250)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "04-meeting",
+      "name": "视频会议",
+      "frame": {
+        "width": 1280,
+        "height": 827
+      },
+      "nodes": [
+        {
+          "dc": "doc/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 1280,
+            "h": 827
+          },
+          "fill": "rgb(245, 246, 247)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/side",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 240,
+            "h": 827
+          },
+          "fill": "rgb(247, 248, 250)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/n-msg",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 114,
+            "w": 239,
+            "h": 39
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/n-doubao",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 153,
+            "w": 239,
+            "h": 39
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/n-cal",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 192,
+            "w": 239,
+            "h": 39
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/n-docs",
+          "kind": "button",
+          "rect": {
+            "x": 8,
+            "y": 231,
+            "w": 223,
+            "h": 39
+          },
+          "fill": "rgb(227, 235, 255)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 8,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/n-bitable",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 270,
+            "w": 239,
+            "h": 39
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/n-meet",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 309,
+            "w": 239,
+            "h": 39
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/n-fly",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 348,
+            "w": 239,
+            "h": 39
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/n-wb",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 387,
+            "w": 239,
+            "h": 39
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/n-appc",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 426,
+            "w": 239,
+            "h": 39
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/n-contacts",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 465,
+            "w": 239,
+            "h": 39
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/n-vip",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 504,
+            "w": 239,
+            "h": 39
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/n-task",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 575,
+            "w": 239,
+            "h": 39
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/n-star",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 614,
+            "w": 239,
+            "h": 39
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/n-kb",
+          "kind": "button",
+          "rect": {
+            "x": 0,
+            "y": 653,
+            "w": 239,
+            "h": 39
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/col",
+          "kind": "frame",
+          "rect": {
+            "x": 240,
+            "y": 0,
+            "w": 250,
+            "h": 827
+          },
+          "fill": "rgb(247, 248, 250)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/i-home",
+          "kind": "button",
+          "rect": {
+            "x": 252,
+            "y": 26,
+            "w": 225,
+            "h": 40
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 8,
+          "font": {
+            "family": "system-ui",
+            "size": 13,
+            "weight": 400,
+            "lineHeight": 20
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/i-drive",
+          "kind": "button",
+          "rect": {
+            "x": 252,
+            "y": 70,
+            "w": 225,
+            "h": 40
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 8,
+          "font": {
+            "family": "system-ui",
+            "size": 13,
+            "weight": 400,
+            "lineHeight": 20
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/i-kb",
+          "kind": "button",
+          "rect": {
+            "x": 252,
+            "y": 113,
+            "w": 225,
+            "h": 40
+          },
+          "fill": "rgb(220, 229, 251)",
+          "color": "rgb(51, 112, 255)",
+          "cornerRadius": 8,
+          "font": {
+            "family": "system-ui",
+            "size": 13,
+            "weight": 500,
+            "lineHeight": 20
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/i-off",
+          "kind": "button",
+          "rect": {
+            "x": 252,
+            "y": 157,
+            "w": 225,
+            "h": 40
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 8,
+          "font": {
+            "family": "system-ui",
+            "size": 13,
+            "weight": 400,
+            "lineHeight": 20
+          },
+          "text": ""
+        },
+        {
+          "dc": "doc/main",
+          "kind": "frame",
+          "rect": {
+            "x": 490,
+            "y": 0,
+            "w": 790,
+            "h": 827
+          },
+          "fill": "rgb(247, 248, 250)",
           "color": "rgb(31, 35, 41)",
           "cornerRadius": 0,
           "font": {
@@ -4685,7 +4725,7 @@
       },
       "nodes": [
         {
-          "dc": "lk/root",
+          "dc": "bt/root",
           "kind": "frame",
           "rect": {
             "x": 0,
@@ -4705,7 +4745,7 @@
           "text": ""
         },
         {
-          "dc": "ch/side",
+          "dc": "bt/side",
           "kind": "frame",
           "rect": {
             "x": 0,
@@ -4725,17 +4765,17 @@
           "text": ""
         },
         {
-          "dc": "ch/n-msg",
+          "dc": "bt/n-msg",
           "kind": "button",
           "rect": {
-            "x": 8,
+            "x": 0,
             "y": 114,
-            "w": 223,
+            "w": 239,
             "h": 39
           },
-          "fill": "rgb(227, 235, 255)",
+          "fill": "rgba(0, 0, 0, 0)",
           "color": "rgb(31, 35, 41)",
-          "cornerRadius": 8,
+          "cornerRadius": 0,
           "font": {
             "family": "system-ui",
             "size": 14,
@@ -4745,7 +4785,7 @@
           "text": ""
         },
         {
-          "dc": "ch/n-doubao",
+          "dc": "bt/n-doubao",
           "kind": "button",
           "rect": {
             "x": 0,
@@ -4765,7 +4805,7 @@
           "text": ""
         },
         {
-          "dc": "ch/n-cal",
+          "dc": "bt/n-cal",
           "kind": "button",
           "rect": {
             "x": 0,
@@ -4785,7 +4825,7 @@
           "text": ""
         },
         {
-          "dc": "ch/n-docs",
+          "dc": "bt/n-docs",
           "kind": "button",
           "rect": {
             "x": 0,
@@ -4805,17 +4845,17 @@
           "text": ""
         },
         {
-          "dc": "ch/n-bitable",
+          "dc": "bt/n-bitable",
           "kind": "button",
           "rect": {
-            "x": 0,
+            "x": 8,
             "y": 270,
-            "w": 239,
+            "w": 223,
             "h": 39
           },
-          "fill": "rgba(0, 0, 0, 0)",
+          "fill": "rgb(227, 235, 255)",
           "color": "rgb(31, 35, 41)",
-          "cornerRadius": 0,
+          "cornerRadius": 8,
           "font": {
             "family": "system-ui",
             "size": 14,
@@ -4825,7 +4865,7 @@
           "text": ""
         },
         {
-          "dc": "ch/n-meet",
+          "dc": "bt/n-meet",
           "kind": "button",
           "rect": {
             "x": 0,
@@ -4845,7 +4885,7 @@
           "text": ""
         },
         {
-          "dc": "ch/n-fly",
+          "dc": "bt/n-fly",
           "kind": "button",
           "rect": {
             "x": 0,
@@ -4865,7 +4905,7 @@
           "text": ""
         },
         {
-          "dc": "ch/n-wb",
+          "dc": "bt/n-wb",
           "kind": "button",
           "rect": {
             "x": 0,
@@ -4885,7 +4925,7 @@
           "text": ""
         },
         {
-          "dc": "ch/n-appc",
+          "dc": "bt/n-appc",
           "kind": "button",
           "rect": {
             "x": 0,
@@ -4905,7 +4945,7 @@
           "text": ""
         },
         {
-          "dc": "ch/n-contacts",
+          "dc": "bt/n-contacts",
           "kind": "button",
           "rect": {
             "x": 0,
@@ -4925,7 +4965,7 @@
           "text": ""
         },
         {
-          "dc": "ch/n-vip",
+          "dc": "bt/n-vip",
           "kind": "button",
           "rect": {
             "x": 0,
@@ -4945,7 +4985,7 @@
           "text": ""
         },
         {
-          "dc": "ch/n-task",
+          "dc": "bt/n-task",
           "kind": "button",
           "rect": {
             "x": 0,
@@ -4965,7 +5005,7 @@
           "text": ""
         },
         {
-          "dc": "ch/n-star",
+          "dc": "bt/n-star",
           "kind": "button",
           "rect": {
             "x": 0,
@@ -4985,7 +5025,7 @@
           "text": ""
         },
         {
-          "dc": "ch/n-kb",
+          "dc": "bt/n-kb",
           "kind": "button",
           "rect": {
             "x": 0,
@@ -5005,15 +5045,135 @@
           "text": ""
         },
         {
-          "dc": "lk/side",
+          "dc": "bt/col",
           "kind": "frame",
           "rect": {
             "x": 240,
             "y": 0,
-            "w": 240,
+            "w": 250,
             "h": 800
           },
           "fill": "rgb(247, 248, 250)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "system-ui",
+            "size": 14,
+            "weight": 400,
+            "lineHeight": 21
+          },
+          "text": ""
+        },
+        {
+          "dc": "bt/i-home",
+          "kind": "button",
+          "rect": {
+            "x": 252,
+            "y": 62,
+            "w": 225,
+            "h": 38
+          },
+          "fill": "rgb(229, 230, 232)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 8,
+          "font": {
+            "family": "system-ui",
+            "size": 13,
+            "weight": 600,
+            "lineHeight": 20
+          },
+          "text": ""
+        },
+        {
+          "dc": "bt/i-feed",
+          "kind": "button",
+          "rect": {
+            "x": 252,
+            "y": 101,
+            "w": 225,
+            "h": 38
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 8,
+          "font": {
+            "family": "system-ui",
+            "size": 13,
+            "weight": 400,
+            "lineHeight": 20
+          },
+          "text": ""
+        },
+        {
+          "dc": "bt/i-market",
+          "kind": "button",
+          "rect": {
+            "x": 252,
+            "y": 141,
+            "w": 225,
+            "h": 38
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 8,
+          "font": {
+            "family": "system-ui",
+            "size": 13,
+            "weight": 400,
+            "lineHeight": 20
+          },
+          "text": ""
+        },
+        {
+          "dc": "bt/i-tpl",
+          "kind": "button",
+          "rect": {
+            "x": 252,
+            "y": 180,
+            "w": 225,
+            "h": 38
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 8,
+          "font": {
+            "family": "system-ui",
+            "size": 13,
+            "weight": 400,
+            "lineHeight": 20
+          },
+          "text": ""
+        },
+        {
+          "dc": "bt/i-all",
+          "kind": "button",
+          "rect": {
+            "x": 252,
+            "y": 220,
+            "w": 225,
+            "h": 38
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 35, 41)",
+          "cornerRadius": 8,
+          "font": {
+            "family": "system-ui",
+            "size": 13,
+            "weight": 400,
+            "lineHeight": 20
+          },
+          "text": ""
+        },
+        {
+          "dc": "bt/main",
+          "kind": "frame",
+          "rect": {
+            "x": 490,
+            "y": 0,
+            "w": 790,
+            "h": 800
+          },
+          "fill": "rgb(242, 243, 245)",
           "color": "rgb(31, 35, 41)",
           "cornerRadius": 0,
           "font": {
