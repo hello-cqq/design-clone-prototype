@@ -1,0 +1,71 @@
+<style>
+  .sf{position:absolute;inset:0;overflow:auto hidden;background:linear-gradient(165deg,#f2eef5 0%,#f8eef1 55%,#f6f5f4 100%);color:#26272c;font-family:-apple-system,"Nimbus Sans","Helvetica Neue","PingFang SC",sans-serif;-webkit-font-smoothing:antialiased;text-align:center}
+  .sf *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  .sf .top{display:flex;align-items:center;gap:10px;padding:16px 18px 6px;text-align:left}
+  .sf .top .bk{width:30px;height:30px;border:0;border-radius:50%;background:rgba(255,255,255,.8);color:#26272c;font-size:14px;cursor:pointer;box-shadow:0 4px 12px rgba(38,39,44,.08)}
+  .sf .top .tt{flex:1;text-align:center;font-size:12px;font-weight:600;margin-right:8px}
+  .sf .top .sd{width:30px;height:30px;border:0;border-radius:50%;background:transparent;color:#7a6c7e;font-size:13px;cursor:pointer}
+  .sf .soft{margin:16px 0 4px;font-size:11px;color:#7a6c7e}
+  .sf h1{margin:0 22px 26px;font-family:Georgia,"Times New Roman","Songti SC",serif;font-weight:500;font-size:27px;line-height:32px}
+  .sf .stage{position:relative;margin:0 auto;width:250px;height:240px}
+  .sf .stage img{width:250px;-webkit-mask-image:radial-gradient(closest-side,#000 62%,transparent 98%);mask-image:radial-gradient(closest-side,#000 62%,transparent 98%);;transition:transform 4s cubic-bezier(.4,0,.4,1)}
+  .sf .stage.out img{transition-duration:6s;transform:scale(.9)}
+  .sf .stage.in img{transform:scale(1.1)}
+  .sf .count{position:absolute;left:47%;top:42%;transform:translate(-50%,-50%);text-align:center}
+  .sf .count b{display:block;font-family:Georgia,"Times New Roman","Songti SC",serif;font-weight:500;font-size:40px;color:#3c3a52}
+  .sf .count span{display:block;font-size:8px;letter-spacing:.2em;color:#7a6c7e;text-transform:uppercase;margin-top:2px}
+  .sf .clock{margin:18px 0 4px;font-family:Georgia,"Times New Roman","Songti SC",serif;font-size:17px;color:#3c3a52}
+  .sf .cyc{margin:0 0 16px;font-size:9px;color:#a99fae}
+  .sf .pause{width:52px;height:52px;border:0;border-radius:50%;background:#26272c;color:#f6f5f4;font-size:14px;cursor:pointer;box-shadow:0 12px 26px rgba(38,39,44,.22)}
+  .sf .pause + span{display:block;font-size:9px;color:#7a6c7e;margin-top:6px}
+  .sf .end{display:inline-block;margin:18px 0 24px;border:0;background:transparent;color:#7a6c7e;font-size:11px;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.sf::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;opacity:.35;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.22'/%3E%3C/svg%3E")}
+@keyframes sf-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes sf-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+.sf .count b{animation:sf-pulse 2s ease-in-out infinite}
+</style>
+<div class="sf" data-dc="sf05/root">
+  <div class="top">
+    <button class="bk" data-act="goto" data-goto="04-practice" aria-label="返回">‹</button>
+    <span class="tt">Soft reset</span>
+    <button class="sd" data-act="toast" data-msg="环境音（演示：静音切换）" aria-label="声音">🔊</button>
+  </div>
+  <p class="soft">Let your shoulders soften.</p>
+  <h1 id="sf-phase">Breathe in</h1>
+  <div class="stage in" id="sf-stage">
+    <img src="assets/torus.png" alt="呼吸环">
+    <div class="count"><b id="sf-num">4</b><span>seconds</span></div>
+  </div>
+  <p class="clock"><span id="sf-clock">03:00</span></p>
+  <p class="cyc">remaining · Cycle <span id="sf-cyc">1</span> of 10</p>
+  <button class="pause" id="sf-pause" data-act="toggle" data-target="sf-pause" aria-label="暂停">❚❚</button>
+  <span id="sf-plabel">Pause</span>
+  <br>
+  <button class="end" data-act="goto" data-goto="06-reflect">End session</button>
+</div>
+<script>
+  (function () {
+    var IN = 4, OUT = 6, total = 180, left = total, phase = "in", sec = IN, cyc = 1, paused = false;
+    var el = function (id) { return document.getElementById(id); };
+    var stage = el("sf-stage"), num = el("sf-num"), clock = el("sf-clock"), cycEl = el("sf-cyc"), ph = el("sf-phase");
+    function fmt(s) { var m = Math.floor(s / 60), r = s % 60; return (m < 10 ? "0" : "") + m + ":" + (r < 10 ? "0" : "") + r; }
+    function tick() {
+      if (paused) return;
+      sec--; left--;
+      if (left <= 0) { location.hash = ""; var b = document.querySelector('[data-goto="06-reflect"]'); if (b) b.click(); return; }
+      if (sec <= 0) {
+        if (phase === "in") { phase = "out"; sec = OUT; stage.className = "stage out"; ph.textContent = "Breathe out"; }
+        else { phase = "in"; sec = IN; stage.className = "stage in"; ph.textContent = "Breathe in"; cyc = Math.min(10, cyc + 1); cycEl.textContent = cyc; }
+      }
+      num.textContent = sec;
+      clock.textContent = fmt(left);
+    }
+    setInterval(tick, 1000);
+    var pb = el("sf-pause"), pl = el("sf-plabel");
+    pb.addEventListener("click", function () {
+      paused = !paused;
+      pb.textContent = paused ? "▶" : "❚❚";
+      pl.textContent = paused ? "Resume" : "Pause";
+    });
+  })();
+</script>

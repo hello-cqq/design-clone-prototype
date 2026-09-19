@@ -1,0 +1,21 @@
+/* SOFTER tokens — 源：capture/frames/img-09（SOFTER System 页 COLOR TOKENS / TYPE & RHYTHM） */
+:root {
+  --sf-ink: #26272c;
+  --sf-mauve: #7a6c7e;
+  --sf-pearl: #f6f5f4;
+  --sf-iris: #5f65d9;
+  --sf-iris-soft: #8b90e6;
+  --sf-blush: #f3dfe6;
+  --sf-lilac: #eceaf3;
+  --sf-card: rgba(255, 255, 255, 0.72);
+  --sf-line: rgba(38, 39, 44, 0.08);
+  --sf-serif: Georgia, "Times New Roman", "Songti SC", serif;
+  --sf-sans: -apple-system, "Nimbus Sans", "Helvetica Neue", "PingFang SC", sans-serif;
+  --sf-r-card: 22px;
+  --sf-r-pill: 999px;
+  --color-bg: var(--sf-pearl);
+  --color-text-primary: var(--sf-ink);
+  --color-text-secondary: var(--sf-mauve);
+  --color-primary: var(--sf-iris);
+  --color-border: var(--sf-line);
+}
