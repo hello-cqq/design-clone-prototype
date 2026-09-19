@@ -1,6 +1,6 @@
 {
  "version": 3,
- "updated_at": "2026-09-19T00:47:00.829Z",
+ "updated_at": "2026-09-19T01:30:29.227Z",
  "apps": [
   {
    "app": "aliyun-console",
@@ -60,17 +60,17 @@
      "name": "定价详情"
     }
    ],
-   "downloads": 14,
+   "downloads": 23,
    "creator": "hello-cqq",
    "icon": "aliyun-console/prototype/appicon/icon-256.png",
    "contributors": [
     {
      "name": "hello-cqq",
      "login": "hello-cqq",
-     "commits": 22
+     "commits": 9
     }
    ],
-   "commits": 25,
+   "commits": 11,
    "updated": "2026-09-17T20:20:00+08:00"
   },
   {
@@ -159,17 +159,17 @@
      "name": "联系人卡片"
     }
    ],
-   "downloads": 10,
+   "downloads": 20,
    "creator": "hello-cqq",
    "icon": "lark/prototype/appicon/icon-256.png",
    "contributors": [
     {
      "name": "hello-cqq",
      "login": "hello-cqq",
-     "commits": 23
+     "commits": 9
     }
    ],
-   "commits": 26,
+   "commits": 11,
    "updated": "2026-09-17T20:19:45+08:00"
   },
   {
@@ -278,17 +278,17 @@
      "name": "加载态"
     }
    ],
-   "downloads": 10,
+   "downloads": 20,
    "creator": "hello-cqq",
    "icon": "wechat/prototype/appicon/icon-256.png",
    "contributors": [
     {
      "name": "hello-cqq",
      "login": "hello-cqq",
-     "commits": 23
+     "commits": 9
     }
    ],
-   "commits": 26,
+   "commits": 11,
    "updated": "2026-09-17T20:19:31+08:00"
   },
   {
@@ -355,17 +355,17 @@
      "name": "任务与活动"
     }
    ],
-   "downloads": 10,
+   "downloads": 13,
    "creator": "hello-cqq",
    "icon": "petpark/prototype/appicon/icon-256.png",
    "contributors": [
     {
      "name": "hello-cqq",
      "login": "hello-cqq",
-     "commits": 32
+     "commits": 14
     }
    ],
-   "commits": 38,
+   "commits": 19,
    "updated": "2026-09-17T20:19:18+08:00"
   },
   {
@@ -419,86 +419,18 @@
      "name": "设置·形象音色"
     }
    ],
-   "downloads": 7,
+   "downloads": 11,
    "creator": "hello-cqq",
    "icon": "ai-assistant/prototype/appicon/icon-256.png",
    "contributors": [
     {
      "name": "hello-cqq",
      "login": "hello-cqq",
-     "commits": 22
+     "commits": 13
     }
    ],
-   "commits": 26,
+   "commits": 17,
    "updated": "2026-09-17T20:19:05+08:00"
-  },
-  {
-   "app": "softer",
-   "name": {
-    "en": "SOFTER",
-    "zh": "SOFTER 情绪记录"
-   },
-   "description": {
-    "en": "Study replica of the SOFTER emotional-wellbeing app concept posted on Xiaohongshu: daily check-in, journal, guided breathing and reflection — fully interactive.",
-    "zh": "小红书笔记所示 SOFTER 情绪记录 App 概念的学习复刻：每日 check-in、日记、呼吸引导与反思，全控件可交互。"
-   },
-   "tags": [
-    "mobile",
-    "wellness",
-    "breathing",
-    "study"
-   ],
-   "category": "",
-   "shell": "c_mobile",
-   "version": "1.0.0",
-   "license": "CC-BY-4.0",
-   "source": {
-    "kind": "link",
-    "ref": "xhs-6aab53a2"
-   },
-   "ip_attestation": "public-material",
-   "brand_disclaimer": "Unofficial study replica of the SOFTER UI concept posted by UI设计师-Troy on Xiaohongshu; trademarks belong to their owners; no affiliation or endorsement implied.",
-   "cover": "softer/cover.png",
-   "url": "https://hello-cqq.github.io/design-clone-prototype/softer/prototype/",
-   "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/softer",
-   "pages": [
-    {
-     "id": "01-today",
-     "name": "Today 首页"
-    },
-    {
-     "id": "02-checkin",
-     "name": "Daily check-in"
-    },
-    {
-     "id": "03-journal",
-     "name": "Journal 周历+saved"
-    },
-    {
-     "id": "04-practice",
-     "name": "Practice·Soft reset"
-    },
-    {
-     "id": "05-breathe",
-     "name": "Breathe 会话"
-    },
-    {
-     "id": "06-reflect",
-     "name": "Reflect 完成"
-    }
-   ],
-   "downloads": 0,
-   "creator": "hello-cqq",
-   "icon": "softer/icon.png",
-   "contributors": [
-    {
-     "name": "hello-cqq",
-     "login": "hello-cqq",
-     "commits": 1
-    }
-   ],
-   "commits": 1,
-   "updated": "2026-09-19T08:46:20+08:00"
   },
   {
    "app": "everytrace",
@@ -567,7 +499,7 @@
      "name": "通知设置"
     }
    ],
-   "downloads": 0,
+   "downloads": 1,
    "creator": "hello-cqq",
    "icon": "everytrace/prototype/appicon/icon-256.png",
    "contributors": [
@@ -577,8 +509,76 @@
      "commits": 1
     }
    ],
-   "commits": 1,
-   "updated": "2026-09-19T08:46:16+08:00"
+   "commits": 2,
+   "updated": "2026-09-19T00:47:01Z"
+  },
+  {
+   "app": "softer",
+   "name": {
+    "en": "SOFTER",
+    "zh": "SOFTER 情绪记录"
+   },
+   "description": {
+    "en": "Study replica of the SOFTER emotional-wellbeing app concept posted on Xiaohongshu: daily check-in, journal, guided breathing and reflection — fully interactive.",
+    "zh": "小红书笔记所示 SOFTER 情绪记录 App 概念的学习复刻：每日 check-in、日记、呼吸引导与反思，全控件可交互。"
+   },
+   "tags": [
+    "mobile",
+    "wellness",
+    "breathing",
+    "study"
+   ],
+   "category": "",
+   "shell": "c_mobile",
+   "version": "1.0.0",
+   "license": "CC-BY-4.0",
+   "source": {
+    "kind": "link",
+    "ref": "xhs-6aab53a2"
+   },
+   "ip_attestation": "public-material",
+   "brand_disclaimer": "Unofficial study replica of the SOFTER UI concept posted by UI设计师-Troy on Xiaohongshu; trademarks belong to their owners; no affiliation or endorsement implied.",
+   "cover": "softer/cover.png",
+   "url": "https://hello-cqq.github.io/design-clone-prototype/softer/prototype/",
+   "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/softer",
+   "pages": [
+    {
+     "id": "01-today",
+     "name": "Today 首页"
+    },
+    {
+     "id": "02-checkin",
+     "name": "Daily check-in"
+    },
+    {
+     "id": "03-journal",
+     "name": "Journal 周历+saved"
+    },
+    {
+     "id": "04-practice",
+     "name": "Practice·Soft reset"
+    },
+    {
+     "id": "05-breathe",
+     "name": "Breathe 会话"
+    },
+    {
+     "id": "06-reflect",
+     "name": "Reflect 完成"
+    }
+   ],
+   "downloads": 1,
+   "creator": "hello-cqq",
+   "icon": "softer/icon.png",
+   "contributors": [
+    {
+     "name": "hello-cqq",
+     "login": "hello-cqq",
+     "commits": 1
+    }
+   ],
+   "commits": 2,
+   "updated": "2026-09-19T00:47:01Z"
   }
  ]
 }

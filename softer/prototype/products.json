@@ -1,0 +1,43 @@
+{
+  "01-today": {
+    "function": "Today 首页：daily moment 卡+Soft reset 行+四 tab",
+    "goals": [
+      "check-in 可达",
+      "practice 可达"
+    ]
+  },
+  "02-checkin": {
+    "function": "Daily check-in：五情绪脸+energy 1-5+note",
+    "goals": [
+      "选择有反馈",
+      "保存可达"
+    ]
+  },
+  "03-journal": {
+    "function": "Journal：九月周历+check-in saved 卡",
+    "goals": [
+      "周历可切",
+      "saved 呈现"
+    ]
+  },
+  "04-practice": {
+    "function": "Practice·Soft reset：torus hero+rhythm 卡",
+    "goals": [
+      "Start breathing 可达"
+    ]
+  },
+  "05-breathe": {
+    "function": "Breathe 会话：相位文案+秒数+计时+暂停",
+    "goals": [
+      "暂停可逆",
+      "结束可达 reflect"
+    ]
+  },
+  "06-reflect": {
+    "function": "Reflect 完成：统计+feel-now chips+save",
+    "goals": [
+      "save 回 journal",
+      "skip 回 today"
+    ]
+  }
+}
