@@ -1,0 +1,52 @@
+<style>
+  .mp{position:absolute;inset:0;overflow-y:auto;overflow-x:clip;background:#f2f3f5;color:#17181c;font-family:-apple-system,"PingFang SC",sans-serif}
+  .mp .hd{display:flex;align-items:center;gap:10px;padding:14px 16px 8px}
+  .mp .hd .mi{width:30px;height:30px;border:0;background:transparent;font-size:16px;cursor:pointer}
+  .mp .hd .wm{display:flex;align-items:center;gap:7px;font-size:16px;font-weight:600}
+  .mp .hd .wm img{width:22px;height:22px;border-radius:6px}
+  .mp .chips{display:flex;gap:8px;padding:4px 16px 12px}
+  .mp .chips button{border:0;border-radius:999px;padding:8px 15px;font-size:12.5px;background:#fff;color:#3d4046;cursor:pointer}
+  .mp .chips button.on{background:#17181c;color:#fff}
+  .mp .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:0 16px 30px}
+  .mp .pl{background:#fff;border-radius:16px;padding:14px;border:0;text-align:left;cursor:pointer;position:relative;animation:rin .4s ease both}
+  .mp .pl b{display:block;font-size:12.5px;font-weight:600;padding-right:30px}
+  .mp .pl .n{font-size:24px;font-weight:600;margin:6px 0 0}
+  .mp .pl .n small{font-size:11px;font-weight:400}
+  .mp .pl .emo{position:absolute;right:10px;bottom:10px;width:36px;height:36px;display:grid;place-items:center}
+  .mp .pl .emo svg{width:27px;height:27px;stroke:#3d4046;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+  .mp .pl .pg{display:block;height:5px;border-radius:3px;background:#eef0f3;margin-top:10px;overflow:hidden}
+  .mp .pl .pg i{display:block;height:100%;background:linear-gradient(90deg,#8f7de8,#5b8def)}
+  .mp .fab{position:absolute;right:18px;bottom:24px;width:46px;height:46px;border:0;border-radius:50%;background:#17181c;color:#fff;font-size:20px;cursor:pointer;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+  @keyframes rin{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion: reduce){.mp .pl{animation:none}}
+  .tex{height:16px;margin:8px 16px 6px;border-radius:8px;background:url(assets/grain.png) repeat,#eceef1;opacity:.8}
+  .done{margin:0 16px 22px;background:#fff;border-radius:16px;padding:14px 16px}
+  .done b{font-size:13px;font-weight:600}
+  .done u{display:flex;justify-content:space-between;text-decoration:line-through;color:#9aa0aa;font-size:12.5px;padding:9px 0;border-bottom:1px solid #eef0f2}
+  .done u:last-child{border-bottom:0}
+  .done u i{font-style:normal;color:#67c48a;text-decoration:none}
+</style>
+<div data-dc="mp/root" class="mp">
+  <canvas data-fx="particles" data-fx-kind="sparkles" data-fx-n="10" data-fx-colors="#8f7de8,#67c48a,#ffffff"></canvas>
+  <div class="hd">
+    <button class="mi" data-act="back">‹</button>
+    <span class="wm"><img src="assets/cat-logo.png" alt="">每一迹</span>
+    <button class="mi" style="margin-left:auto" data-act="toast" data-msg="设置（演示）">设</button>
+  </div>
+  <div class="chips">
+    <button class="on" data-act="radio" data-group="pl">全部</button>
+    <button data-act="radio" data-group="pl">旅行</button>
+    <button data-act="radio" data-group="pl">愿望单</button>
+  </div>
+  <div class="grid">
+    <button class="pl" data-act="dialog" data-title="电子产品愿望清单" data-body="5 项 · 已完成 2（演示）" data-ok="打开清单" data-ok-toast="清单已打开（演示）"><b>电子产品愿望清单</b><div class="n">5<small> 项</small></div><span class="pg"><i style="width:40%"></i></span><span class="emo"><svg viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M9 3v2M15 3v2M9 19v2M15 19v2M3 9h2M3 15h2M19 9h2M19 15h2"/></svg></span></button>
+    <button class="pl" data-act="dialog" data-title="搬家前准备" data-body="5 项 · 已完成 1（演示）" data-ok="打开清单" data-ok-toast="清单已打开（演示）"><b>搬家前准备 100 件事</b><div class="n">5<small> 项</small></div><span class="pg"><i style="width:20%"></i></span><span class="emo"><svg viewBox="0 0 24 24"><path d="M4 11 12 4l8 7M7 10v9h10v-9"/></svg></span></button>
+    <button class="pl" data-act="dialog" data-title="关于云南" data-body="6 项 · 攻略与清单（演示）" data-ok="打开清单" data-ok-toast="清单已打开（演示）"><b>关于云南</b><div class="n">6<small> 项</small></div><span class="pg"><i style="width:55%"></i></span><span class="emo"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span></button>
+    <button class="pl" data-act="dialog" data-title="关于北京" data-body="30 项 · 去的每个地方都记下来（演示）" data-ok="打开清单" data-ok-toast="清单已打开（演示）"><b>关于北京</b><div class="n">30<small> 项</small></div><span class="pg"><i style="width:70%"></i></span><span class="emo"><svg viewBox="0 0 24 24"><path d="M5 20h14M7 20V9l5-4 5 4v11M10 20v-5h4v5"/></svg></span></button>
+    <button class="pl" data-act="dialog" data-title="软件开发计划" data-body="5 项 · 进行中 2（演示）" data-ok="打开清单" data-ok-toast="清单已打开（演示）"><b>软件开发计划</b><div class="n">5<small> 项</small></div><span class="pg"><i style="width:45%"></i></span><span class="emo"><svg viewBox="0 0 24 24"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M13 5l-2 14"/></svg></span></button>
+    <button class="pl" data-act="dialog" data-title="2025 年度计划" data-body="2 项 · 年度回顾（演示）" data-ok="打开清单" data-ok-toast="清单已打开（演示）"><b>2025 年度计划</b><div class="n">2<small> 项</small></div><span class="pg"><i style="width:60%"></i></span><span class="emo"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></svg></span></button>
+  </div>
+  <div class="done"><b>今年已完成</b><u><span>大理环洱海骑行</span><i>✓ 9 项</i></u><u><span>新家软装清单</span><i>✓ 14 项</i></u><u><span>2024 年度回顾</span><i>✓ 6 项</i></u></div>
+<div class="tex" aria-hidden="true"></div>
+  <button class="fab" data-act="dialog" data-title="新增计划" data-body="标题 / 清单项 / 分类（演示）" data-ok="保存" data-ok-toast="已加入计划（演示）">+</button>
+</div>

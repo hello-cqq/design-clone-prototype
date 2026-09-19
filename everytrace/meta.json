@@ -1,0 +1,29 @@
+{
+ "name": {
+  "en": "EveryTrace",
+  "zh": "每一迹"
+ },
+ "description": {
+  "en": "Study replica of the EveryTrace life-logging app shown in a Douyin note: home menu, countdown grid, assets, subscriptions, plans and check-ins — fully interactive.",
+  "zh": "抖音笔记所示「每一迹」生活记录 App 的学习复刻：首页菜单、倒数日、资产、订阅、计划与打卡，全控件可交互。"
+ },
+ "tags": [
+  "mobile",
+  "record",
+  "life-log",
+  "study"
+ ],
+ "category": "lifestyle",
+ "shell": "c_mobile",
+ "source": {
+  "kind": "link",
+  "ref": "douyin-jZdqp9nYTMs"
+ },
+ "license": "CC-BY-4.0",
+ "ip_attestation": "public-material",
+ "attestation_note": "Replica of UI concepts shown in a public Douyin note by 一颗晚熟橘; study use only.",
+ "version": "1.0.0",
+ "created_at": "2026-09-19T00:44:33.821Z",
+ "brand_disclaimer": "Unofficial study replica of UI concepts shown in a public Douyin note by 一颗晚熟橘; trademarks belong to their owners; no affiliation or endorsement implied.",
+ "platform": "web"
+}

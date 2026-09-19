@@ -1,0 +1,58 @@
+<style>
+  .myd{position:absolute;inset:0;width:100%;max-width:100%;overflow-y:auto;overflow-x:clip;background:#e9eaec;color:#17181c;font-family:-apple-system,"PingFang SC",sans-serif}
+  .myd .sheet{display:block;margin:10px 6px 6px;width:auto;max-width:calc(100% - 12px);background:#f6f7f8;border-radius:22px;padding:16px;overflow:auto;animation:up .4s cubic-bezier(.3,.8,.3,1) both}
+  @keyframes up{from{transform:translateY(14px);opacity:.4}to{transform:none;opacity:1}}
+  @media (prefers-reduced-motion: reduce){.myd .sheet{animation:none}}
+  .myd .x{width:30px;height:30px;border:0;background:transparent;font-size:16px;cursor:pointer}
+  .myd .top{background:#fbfcfd;border-radius:16px;padding:16px;display:flex;gap:14px;align-items:center;margin-top:6px}
+  .myd .top b{font-size:15px;font-weight:600}
+  .myd .top .age{font-size:19px;font-weight:600;margin:8px 0 4px}
+  .myd .top .age small{font-size:12px;font-weight:400}
+  .myd .top .dots{display:flex;gap:4px;margin:6px 0}
+  .myd .top .dots i{width:5px;height:5px;border-radius:50%;background:#c9ccd2}
+  .myd .top .dots i.on{width:14px;border-radius:3px;background:#17181c}
+  .myd .top .buy{font-size:11.5px;color:#9aa0aa}
+  .myd .top .ph{margin-left:auto;width:64px;height:64px;border-radius:12px;background:#eef0f3;display:grid;place-items:center}
+  .myd .top .ph u{width:26px;height:44px;border:2px solid #17181c;border-radius:6px;position:relative}
+  .myd .top .ph u::after{content:"";position:absolute;left:50%;bottom:3px;width:6px;height:6px;margin-left:-3px;border-radius:50%;background:#17181c}
+  .myd .rows{background:#fbfcfd;border-radius:16px;margin-top:12px;padding:4px 16px}
+  .myd .rows .r{display:flex;justify-content:space-between;align-items:center;padding:15px 0;border-bottom:1px solid #eef0f2;font-size:13.5px}
+  .myd .rows .r:last-child{border-bottom:0}
+  .myd .rows .r span{color:#3d4046;display:flex;gap:8px;align-items:center}
+  .myd .rows .r span i{font-style:normal;width:18px;height:18px;border:1px solid #c9ccd2;border-radius:50%;display:grid;place-items:center;font-size:10px;color:#6b7280}
+  .myd .rows .r b{font-weight:500;color:#17181c}
+  .myd .cat{background:#fbfcfd;border-radius:16px;margin-top:12px;padding:15px 16px;display:flex;justify-content:space-between;font-size:13.5px}
+  .myd .edit{display:block;width:100%;margin:16px 0 10px;border:0;border-radius:14px;background:#17181c;color:#fff;padding:13px;font-size:14px;cursor:pointer}
+  .myd .home{display:block;margin:0 auto 14px;border:0;background:transparent;color:#6b7280;font-size:12.5px;cursor:pointer}
+  .tex{height:70px;background:url(assets/grain.png) repeat;opacity:.5}
+  .tex2{height:46px;border-radius:12px;margin:4px 8px}
+  .myd .tl{background:#fbfcfd;border-radius:16px;margin-top:12px;padding:14px 16px}
+  .myd .tl b{font-size:13px;font-weight:600}
+  .myd .tl u{text-decoration:none;display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #eef0f2;font-size:12.5px;color:#3d4046}
+  .myd .tl u:last-child{border-bottom:0}
+  .myd .tl u i{font-style:normal;color:#9aa0aa}
+</style>
+<div data-dc="myd/root" class="myd"><canvas data-fx="particles" data-fx-kind="sparkles" data-fx-n="10" data-fx-colors="#8a5cff,#e14fd0,#ffffff"></canvas>
+  <div class="sheet">
+    <button class="x" data-act="back">✕</button>
+    <div class="top">
+      <div>
+        <b>iPhone 12 Pro</b>
+        <div class="age">4<small> 年 </small>114<small> 天</small></div>
+        <div class="dots"><i></i><i></i><i></i><i class="on"></i></div>
+        <div class="buy">购买时间： 2020-11-10</div>
+      </div>
+      <span class="ph"><u></u></span>
+    </div>
+    <div class="rows">
+      <div class="r"><span><i>¥</i>购入价格</span><b>9299 元</b></div>
+      <div class="r"><span><i>÷</i>日均</span><b>5.91 元 / 天</b></div>
+      <div class="r"><span><i>◔</i>使用状态</span><b>使用中</b></div>
+    </div>
+    <div class="cat"><span style="display:flex;gap:8px;align-items:center"><i style="font-style:normal;width:18px;height:18px;border:1px solid #c9ccd2;border-radius:50%;display:grid;place-items:center;font-size:10px;color:#6b7280">≡</i>分类</span><b>电子产品</b></div>
+    <button class="edit" data-act="dialog" data-title="编辑资产" data-body="价格 / 状态 / 分类（演示编辑）" data-ok="保存" data-ok-toast="已保存修改（演示）">编辑</button>
+    <div class="tl"><b>使用轨迹</b><u><span>2026-09 系统升级 iOS 26</span><i>+</i></u><u><span>2025-11 更换电池</span><i>¥</i></u><u><span>2024-03 贴膜 / 换壳</span><i>¥</i></u><u><span>2022-01 购入保护壳</span><i>¥</i></u><u><span>2020-11 开箱启用</span><i>★</i></u></div>
+    <div class="tex" style="height:56px;border-radius:12px;margin:12px 0" aria-hidden="true"></div>
+    <button class="home" data-act="goto" data-goto="04-assets">返回资产清单</button>
+  </div>
+</div>

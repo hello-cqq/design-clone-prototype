@@ -1,0 +1,56 @@
+<style>
+  .mn2{position:absolute;inset:0;overflow-y:auto;overflow-x:clip;background:url(assets/grain.png) repeat,rgba(20,22,26,.35);color:#17181c;font-family:-apple-system,"PingFang SC",sans-serif}
+  .mn2 .sheet{position:absolute;left:0;right:0;bottom:0;background:#f6f7f8;border-radius:22px 22px 0 0;padding:18px 16px 26px;animation:up .4s cubic-bezier(.3,.8,.3,1) both}
+  @keyframes up{from{transform:translateY(30%);opacity:.4}to{transform:none;opacity:1}}
+  @media (prefers-reduced-motion: reduce){.mn2 .sheet{animation:none}}
+  .mn2 .grab{width:56px;height:4px;border-radius:2px;background:#d5d8dc;margin:0 auto 14px}
+  .mn2 h2{margin:0 0 4px;font-size:16px;font-weight:600;text-align:center}
+  .mn2 .grp{margin-top:16px}
+  .mn2 .grp b{font-size:13px;font-weight:600}
+  .mn2 .seg{display:flex;gap:8px;margin-top:8px}
+  .mn2 .seg button{flex:1;border:0;border-radius:12px;background:#eceef1;padding:11px 0;font-size:13px;color:#3d4046;cursor:pointer}
+  .mn2 .seg button.on{background:#17181c;color:#fff}
+  .mn2 .time{display:flex;gap:8px;margin-top:8px}
+  .mn2 .time button{border:0;border-radius:12px;background:#eceef1;padding:10px 18px;font-size:13px;color:#3d4046;cursor:pointer}
+  .mn2 .time button.on{background:#17181c;color:#fff}
+  .mn2 .sw{display:flex;justify-content:space-between;align-items:center;margin-top:14px;background:#fff;border-radius:14px;padding:13px 16px}
+  .mn2 .sw span{font-size:13.5px}
+  .mn2 .sw u{width:44px;height:26px;border-radius:999px;background:#67c48a;position:relative;text-decoration:none;transition:background .25s}
+  .mn2 .sw u::after{content:"";position:absolute;top:3px;right:3px;width:20px;height:20px;border-radius:50%;background:#fff;transition:left .25s,right .25s}
+  .mn2 .sw u.off{background:#d5d8dc}
+  .mn2 .sw u.off::after{right:auto;left:3px}
+  .mn2 .close{display:block;width:100%;margin-top:18px;border:0;border-radius:14px;background:#eceef1;color:#3d4046;padding:13px;font-size:14px;cursor:pointer}
+</style>
+<div data-dc="mn2/root" class="mn2"><canvas data-fx="particles" data-fx-kind="sparkles" data-fx-n="8" data-fx-colors="#5b8def,#67c48a,#ffffff"></canvas>
+  <div class="sheet">
+    <div class="grab"></div>
+    <h2>通知提醒</h2>
+    <div class="sw"><span>开启通知</span><u data-act="toggle"></u></div>
+    <div class="grp"><b>通知提醒（提前通知天数）</b>
+      <div class="seg">
+        <button data-act="radio" data-group="nd">不开启</button>
+        <button class="on" data-act="radio" data-group="nd">开启</button>
+      </div>
+      <div class="seg" style="margin-top:8px">
+        <button class="on" data-act="radio" data-group="dd">当天</button>
+        <button data-act="radio" data-group="dd">1 天</button>
+        <button data-act="radio" data-group="dd">2 天</button>
+        <button data-act="radio" data-group="dd">3 天</button>
+      </div>
+    </div>
+    <div class="grp"><b>通知提醒时间</b>
+      <div class="time">
+        <button data-act="radio" data-group="tt">08:00</button>
+        <button class="on" data-act="radio" data-group="tt">10:00</button>
+        <button data-act="radio" data-group="tt">20:00</button>
+      </div>
+    </div>
+    <div class="grp"><b>通知方式</b>
+      <div class="seg">
+        <button class="on" data-act="radio" data-group="ch">APP</button>
+        <button data-act="radio" data-group="ch">公众号</button>
+      </div>
+    </div>
+    <button class="close" data-act="back">关闭</button>
+  </div>
+</div>

@@ -1,0 +1,66 @@
+<style>
+  .msu{position:absolute;inset:0;overflow-y:auto;overflow-x:clip;background:#f2f3f5;color:#17181c;font-family:-apple-system,"PingFang SC",sans-serif}
+  .msu .hd{display:flex;align-items:center;gap:10px;padding:14px 16px 8px}
+  .msu .hd .mi{width:30px;height:30px;border:0;background:transparent;font-size:16px;cursor:pointer}
+  .msu .hd .wm{display:flex;align-items:center;gap:7px;font-size:16px;font-weight:600}
+  .msu .hd .wm img{width:22px;height:22px;border-radius:6px}
+  .msu .sum{margin:6px 16px 12px;background:#17181c;color:#f4f5f7;border-radius:16px;padding:16px}
+  .msu .sum b{font-size:15px;font-weight:600}
+  .msu .sum .tag{display:inline-block;margin-left:8px;font-size:10px;color:#17181c;background:#f4f5f7;border-radius:999px;padding:2px 8px;font-weight:500}
+  .msu .sum .row{display:flex;gap:26px;margin-top:12px}
+  .msu .sum .row u{text-decoration:none}
+  .msu .sum .row u span{display:block;font-size:11px;color:#9aa0aa}
+  .msu .sum .row u b{display:block;font-size:17px;margin-top:4px}
+  .msu .chips{display:flex;gap:8px;padding:0 16px 12px}
+  .msu .chips button{border:0;border-radius:999px;padding:8px 15px;font-size:12.5px;background:#fff;color:#3d4046;cursor:pointer}
+  .msu .chips button.on{background:#17181c;color:#fff}
+  .msu .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:0 16px 30px}
+  .msu .sb2{background:#fff;border-radius:16px;padding:14px;position:relative;border:0;text-align:left;cursor:pointer;animation:rin .4s ease both}
+  .msu .sb2 b{display:block;font-size:12.5px;font-weight:600;padding-right:34px}
+  .msu .sb2 .n{font-size:22px;font-weight:600;margin:6px 0 0}
+  .msu .sb2 .n small{font-size:11px;font-weight:400}
+  .msu .sb2 .sub{display:block;color:#b6bac1;font-size:10.5px;margin-top:8px}
+  .msu .sb2 .ic{position:absolute;right:10px;bottom:10px;width:34px;height:34px;border-radius:9px;display:grid;place-items:center;color:#fff;font-size:12px;font-weight:600}
+  .msu .i1{background:linear-gradient(140deg,#7db6f2,#2f7bd8)}.msu .i2{background:linear-gradient(140deg,#7f8ea6,#4a5b74)}.msu .i3{background:linear-gradient(140deg,#8fd0e8,#3f9ec4)}.msu .i4{background:linear-gradient(140deg,#6f7d8f,#39424e)}.msu .i5{background:linear-gradient(140deg,#f2b06a,#d8842f)}.msu .i6{background:linear-gradient(140deg,#b98ae8,#7b4fc4)}
+  .msu .fab{position:absolute;right:18px;bottom:24px;width:46px;height:46px;border:0;border-radius:50%;background:#17181c;color:#fff;font-size:20px;cursor:pointer;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+  @keyframes rin{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion: reduce){.msu .sb2{animation:none}}
+  .tex{height:20px;margin:10px 16px 6px;border-radius:10px;background:url(assets/grain.png) repeat,#eceef1;opacity:.8}
+  .chart{margin:0 16px 24px;background:#fff;border-radius:16px;padding:16px}
+  .chart b{font-size:13px;font-weight:600}
+  .chart .bars{display:flex;align-items:flex-end;gap:10px;height:110px;margin-top:12px}
+  .chart .bars u{flex:1;text-decoration:none;position:relative;background:linear-gradient(180deg,#5b8def,#8f7de8);border-radius:6px 6px 0 0}
+  .chart .bars u::after{content:attr(data-m);position:absolute;left:0;right:0;bottom:-18px;text-align:center;font-size:9.5px;color:#9aa0aa}
+</style>
+<div data-dc="msu/root" class="msu">
+  <canvas data-fx="particles" data-fx-kind="sparkles" data-fx-n="10" data-fx-colors="#2f7bd8,#d8842f,#ffffff"></canvas>
+  <div class="hd">
+    <button class="mi" data-act="back">‹</button>
+    <span class="wm"><img src="assets/cat-logo.png" alt="">每一迹</span>
+    <button class="mi" style="margin-left:auto" data-act="toast" data-msg="设置（演示）">设</button>
+  </div>
+  <div class="sum">
+    <b>我的订阅</b><span class="tag">共 845.52 / 年</span>
+    <div class="row">
+      <u><span>月均支出</span><b>404.38</b></u>
+      <u><span>订阅数</span><b>7</b></u>
+      <u><span>日均</span><b>13.04</b></u>
+    </div>
+  </div>
+  <div class="chips">
+    <button class="on" data-act="radio" data-group="su">全部</button>
+    <button data-act="radio" data-group="su">工作</button>
+    <button data-act="radio" data-group="su">生活</button>
+  </div>
+  <div class="grid">
+    <button class="sb2" data-act="dialog" data-title="iCloud 订阅" data-body="29 元 / 月 · 下次 2026-10-01（演示）" data-ok="编辑" data-ok-toast="已打开编辑（演示）"><b>iCloud 还有</b><div class="n">29<small> 天</small></div><span class="sub">2026-10-01 续订</span><span class="ic i1">iC</span></button>
+    <button class="sb2" data-act="dialog" data-title="123 云盘" data-body="7 天后续订（演示）" data-ok="编辑" data-ok-toast="已打开编辑（演示）"><b>123 云盘还有</b><div class="n">7<small> 天</small></div><span class="sub">年付 198 元</span><span class="ic i2">123</span></button>
+    <button class="sb2" data-act="dialog" data-title="百度网盘" data-body="2 天后续订（演示）" data-ok="编辑" data-ok-toast="已打开编辑（演示）"><b>百度网盘还有</b><div class="n">2<small> 天</small></div><span class="sub">月付 30 元</span><span class="ic i3">网</span></button>
+    <button class="sb2" data-act="dialog" data-title="Apple 开发者" data-body="89 天后续订 · 688 元 / 年（演示）" data-ok="编辑" data-ok-toast="已打开编辑（演示）"><b>Apple 开发者还有</b><div class="n">89<small> 天</small></div><span class="sub">688 元 / 年</span><span class="ic i4">A</span></button>
+    <button class="sb2" data-act="dialog" data-title="网络加速" data-body="62 天后续订（演示）" data-ok="编辑" data-ok-toast="已打开编辑（演示）"><b>网络加速还有</b><div class="n">62<small> 天</small></div><span class="sub">季付 90 元</span><span class="ic i5">加</span></button>
+    <button class="sb2" data-act="dialog" data-title="MidJourney" data-body="252 元 / 月 · 工作（演示）" data-ok="编辑" data-ok-toast="已打开编辑（演示）"><b>MidJourney 还有</b><div class="n">15<small> 天</small></div><span class="sub">252 元 / 月</span><span class="ic i6">MJ</span></button>
+  </div>
+  <div class="chart"><b>年度支出分布</b><div class="bars"><u style="height:38%" data-m="1月"></u><u style="height:52%" data-m="2月"></u><u style="height:44%" data-m="3月"></u><u style="height:70%" data-m="4月"></u><u style="height:58%" data-m="5月"></u><u style="height:82%" data-m="6月"></u><u style="height:47%" data-m="7月"></u><u style="height:63%" data-m="8月"></u></div></div>
+<div class="tex" aria-hidden="true"></div>
+  <button class="fab" data-act="dialog" data-title="新增订阅" data-body="名称 / 价格 / 周期 / 下次续订（演示）" data-ok="保存" data-ok-toast="已加入订阅（演示）">+</button>
+</div>
