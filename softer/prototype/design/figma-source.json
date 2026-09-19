@@ -1,0 +1,210 @@
+{
+  "meta": {
+    "generator": "design-clone collect-design",
+    "generated_at": "2026-09-19T00:45:31.868Z",
+    "source_run": "softer-xhs",
+    "schema": "figma-source/v1"
+  },
+  "variables": {
+    "sf-ink": "#26272c",
+    "sf-mauve": "#7a6c7e",
+    "sf-pearl": "#f6f5f4",
+    "sf-iris": "#5f65d9",
+    "sf-iris-soft": "#8b90e6",
+    "sf-blush": "#f3dfe6",
+    "sf-lilac": "#eceaf3",
+    "sf-card": "rgba(255, 255, 255, 0.72)",
+    "sf-line": "rgba(38, 39, 44, 0.08)",
+    "sf-serif": "Georgia, \"Times New Roman\", \"Songti SC\", serif",
+    "sf-sans": "-apple-system, \"Nimbus Sans\", \"Helvetica Neue\", \"PingFang SC\", sans-serif",
+    "sf-r-card": "22px",
+    "sf-r-pill": "999px",
+    "color-bg": "var(--sf-pearl)",
+    "color-text-primary": "var(--sf-ink)",
+    "color-text-secondary": "var(--sf-mauve)",
+    "color-primary": "var(--sf-iris)",
+    "color-border": "var(--sf-line)"
+  },
+  "pages": [
+    {
+      "id": "01-today",
+      "name": "Today 首页",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "sf01/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(38, 39, 44)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "02-checkin",
+      "name": "Daily check-in",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "sf01/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(38, 39, 44)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "03-journal",
+      "name": "Journal 周历+saved",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "sf01/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(38, 39, 44)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "04-practice",
+      "name": "Practice·Soft reset",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "sf01/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(38, 39, 44)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "05-breathe",
+      "name": "Breathe 会话",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "sf01/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(38, 39, 44)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "06-reflect",
+      "name": "Reflect 完成",
+      "frame": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "dc": "sf01/root",
+          "kind": "frame",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 390,
+            "h": 844
+          },
+          "fill": "rgba(0, 0, 0, 0)",
+          "color": "rgb(38, 39, 44)",
+          "cornerRadius": 0,
+          "font": {
+            "family": "-apple-system",
+            "size": 16,
+            "weight": 400,
+            "lineHeight": 24
+          },
+          "text": ""
+        }
+      ]
+    }
+  ]
+}

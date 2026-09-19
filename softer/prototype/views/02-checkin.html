@@ -1,0 +1,77 @@
+<style>
+  .sf{position:absolute;inset:0;overflow:auto hidden;background:linear-gradient(165deg,#f2eef5 0%,#f8eef1 55%,#f6f5f4 100%);color:#26272c;font-family:-apple-system,"Nimbus Sans","Helvetica Neue","PingFang SC",sans-serif;-webkit-font-smoothing:antialiased}
+  .sf *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  .sf .top{display:flex;align-items:center;gap:10px;padding:16px 18px 6px}
+  .sf .top .bk{width:30px;height:30px;border:0;border-radius:50%;background:rgba(255,255,255,.8);color:#26272c;font-size:14px;cursor:pointer;box-shadow:0 4px 12px rgba(38,39,44,.08)}
+  .sf .top .tt{flex:1;text-align:center;font-size:12px;font-weight:600;margin-right:30px}
+  .sf h1{margin:14px 22px 4px;font-family:Georgia,"Times New Roman","Songti SC",serif;font-weight:500;font-size:27px;line-height:32px}
+  .sf .sub{margin:0 22px 18px;font-size:12px;color:#7a6c7e}
+  .sf .moods{display:flex;justify-content:space-between;margin:0 26px 14px}
+  .sf .moods button{width:46px;height:46px;padding:0;border:0;border-radius:50%;background:transparent;cursor:pointer;position:relative}
+  .sf .moods button img{width:46px;height:46px;border-radius:50%;display:block;transition:transform .25s}
+  .sf .moods button[aria-checked="true"] img{transform:scale(1.12)}
+  .sf .moods button[aria-checked="true"]::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:1.5px solid #5f65d9}
+  .sf .feel{text-align:center;margin:0 0 16px}
+  .sf .feel b{display:block;font-family:Georgia,"Times New Roman","Songti SC",serif;font-weight:500;font-size:20px}
+  .sf .feel span{display:block;font-size:10px;color:#7a6c7e;margin-top:4px}
+  .sf .card{margin:0 16px 12px;background:rgba(255,255,255,.72);border-radius:22px;padding:16px 18px;box-shadow:0 10px 30px rgba(38,39,44,.06);backdrop-filter:blur(8px)}
+  .sf .card .hd{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px}
+  .sf .card .hd b{font-size:13px;font-weight:600}
+  .sf .card .hd span{font-size:10px;color:#7a6c7e}
+  .sf .nums{display:flex;gap:8px}
+  .sf .nums button{flex:1;border:0;border-radius:14px;background:#f1eff4;color:#7a6c7e;font-size:13px;padding:12px 0;cursor:pointer;transition:background .2s,color .2s}
+  .sf .nums button[aria-checked="true"]{background:#5f65d9;color:#f6f5f4}
+  .sf .note textarea{width:100%;border:0;background:transparent;resize:none;font:inherit;font-size:12px;color:#26272c;min-height:52px;outline:none}
+  .sf .note textarea::placeholder{color:#a99fae}
+  .sf .cta{display:flex;justify-content:center;padding:6px 0 22px}
+  .sf .pill{display:inline-flex;align-items:center;border:0;border-radius:999px;background:#26272c;color:#f6f5f4;font-size:12px;padding:13px 26px;cursor:pointer;width:calc(100% - 32px);justify-content:center}
+.sf::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;opacity:.35;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.22'/%3E%3C/svg%3E")}
+@keyframes sf-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes sf-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+.sf .moods button[aria-checked="true"]{animation:sf-pulse 2.6s ease-in-out infinite}
+</style>
+<div class="sf" data-dc="sf02/root">
+  <div class="top">
+    <button class="bk" data-act="goto" data-goto="01-today" aria-label="返回">‹</button>
+    <span class="tt">Daily check-in</span>
+  </div>
+  <h1>What's here<br>for you today?</h1>
+  <p class="sub">There's no right way to feel.</p>
+  <div class="moods" role="radiogroup" aria-label="今日感受">
+    <button data-act="radio" data-group="mood" data-label="A little heavy" aria-checked="false"><img src="assets/mood-1.png" alt="A little heavy"></button>
+    <button data-act="radio" data-group="mood" data-label="A little tense" aria-checked="true"><img src="assets/mood-2.png" alt="A little tense"></button>
+    <button data-act="radio" data-group="mood" data-label="Level" aria-checked="false"><img src="assets/mood-3.png" alt="Level"></button>
+    <button data-act="radio" data-group="mood" data-label="A little soft" aria-checked="false"><img src="assets/mood-4.png" alt="A little soft"></button>
+    <button data-act="radio" data-group="mood" data-label="A little bright" aria-checked="false"><img src="assets/mood-5.png" alt="A little bright"></button>
+  </div>
+  <div class="feel"><b id="sf-feel">A little tense</b><span>Selected feeling</span></div>
+  <section class="card">
+    <div class="hd"><b>Your energy</b><span id="sf-elabel">Low</span></div>
+    <div class="nums" role="radiogroup" aria-label="能量值">
+      <button data-act="radio" data-group="energy" data-label="Very low" aria-checked="false">1</button>
+      <button data-act="radio" data-group="energy" data-label="Low" aria-checked="true">2</button>
+      <button data-act="radio" data-group="energy" data-label="Steady" aria-checked="false">3</button>
+      <button data-act="radio" data-group="energy" data-label="High" aria-checked="false">4</button>
+      <button data-act="radio" data-group="energy" data-label="Very high" aria-checked="false">5</button>
+    </div>
+  </section>
+  <section class="card note">
+    <div class="hd"><b>A note to yourself</b><span>Optional</span></div>
+    <textarea placeholder="A busy morning. I need a little space." aria-label="给自己的一句话"></textarea>
+    <div class="hd" style="margin:6px 0 0"><span></span><span>16 / 240</span></div>
+  </section>
+  <div class="cta"><button class="pill" data-act="goto" data-goto="03-journal">Save check-in</button></div>
+</div>
+<script>
+  (function () {
+    var bind = function (group, target) {
+      document.querySelectorAll('[data-group="' + group + '"]').forEach(function (b) {
+        b.addEventListener("click", function () {
+          var t = document.querySelector(target);
+          if (t) t.textContent = b.dataset.label || b.textContent.trim();
+        });
+      });
+    };
+    bind("mood", "#sf-feel"); bind("energy", "#sf-elabel");
+  })();
+</script>

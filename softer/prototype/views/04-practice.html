@@ -1,0 +1,48 @@
+<style>
+  .sf{position:absolute;inset:0;overflow:auto hidden;background:linear-gradient(165deg,#f2eef5 0%,#f8eef1 55%,#f6f5f4 100%);color:#26272c;font-family:-apple-system,"Nimbus Sans","Helvetica Neue","PingFang SC",sans-serif;-webkit-font-smoothing:antialiased;text-align:center}
+  .sf *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  .sf .top{display:flex;align-items:center;gap:10px;padding:16px 18px 6px;text-align:left}
+  .sf .top .bk{width:30px;height:30px;border:0;border-radius:50%;background:rgba(255,255,255,.8);color:#26272c;font-size:14px;cursor:pointer;box-shadow:0 4px 12px rgba(38,39,44,.08)}
+  .sf .top .tt{flex:1;text-align:center;font-size:12px;font-weight:600;margin-right:8px}
+  .sf .top .bm{width:30px;height:30px;border:0;border-radius:50%;background:transparent;color:#7a6c7e;font-size:14px;cursor:pointer}
+  .sf .eyebrow{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#7a6c7e;margin:18px 0 8px}
+  .sf h1{margin:0 22px 6px;font-family:Georgia,"Times New Roman","Songti SC",serif;font-weight:500;font-size:28px;line-height:33px}
+  .sf .sub{margin:0 22px 10px;font-size:11px;color:#7a6c7e}
+  .sf .stage{position:relative;margin:6px auto 10px;width:230px;height:210px}
+  .sf .stage img{width:230px;-webkit-mask-image:radial-gradient(closest-side,#000 62%,transparent 98%);mask-image:radial-gradient(closest-side,#000 62%,transparent 98%);}
+  .sf .stage .min{position:absolute;left:50%;bottom:6px;transform:translateX(-50%);display:flex;align-items:center;gap:6px;font-size:10px;color:#7a6c7e;background:rgba(255,255,255,.7);border-radius:999px;padding:5px 12px}
+  .sf .card{margin:0 16px 12px;background:rgba(255,255,255,.72);border-radius:22px;padding:16px 18px;box-shadow:0 10px 30px rgba(38,39,44,.06);backdrop-filter:blur(8px);text-align:left}
+  .sf .card b{font-size:13px;font-weight:600;display:block}
+  .sf .rhythm{display:flex;justify-content:space-between;margin:10px 0 8px;font-size:11px;color:#5c5563}
+  .sf .rhythm span{display:flex;flex-direction:column;gap:3px;align-items:center}
+  .sf .rhythm i{font-style:normal;color:#7a6c7e;font-size:9px}
+  .sf .card .fine{margin:6px 0 0;font-size:9px;color:#a99fae}
+  .sf .cta{padding:4px 16px 10px}
+  .sf .pill{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:999px;background:#26272c;color:#f6f5f4;font-size:12px;padding:13px 26px;cursor:pointer;width:100%}
+.sf::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;opacity:.35;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.22'/%3E%3C/svg%3E")}
+@keyframes sf-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes sf-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+.sf .stage img{animation:sf-float 6s ease-in-out infinite}
+</style>
+<div class="sf" data-dc="sf04/root">
+  <div class="top">
+    <button class="bk" data-act="goto" data-goto="01-today" aria-label="返回">‹</button>
+    <span class="tt">Practice</span>
+    <button class="bm" data-act="toast" data-msg="已收藏（演示）" aria-label="收藏">⌲</button>
+  </div>
+  <p class="eyebrow">Guided breathing</p>
+  <h1>Soft reset</h1>
+  <p class="sub">A little room between you and the rush.</p>
+  <div class="stage">
+    <img src="assets/torus.png" alt="呼吸环">
+    <span class="min"><span aria-hidden="true">◷</span> 3 minutes</span>
+  </div>
+  <section class="card">
+    <b>A gentle rhythm</b>
+    <div class="rhythm">
+      <span>Inhale 4s</span><span><i>3 min · no breath holds</i></span><span>Exhale 6s</span>
+    </div>
+    <p class="fine">Sit comfortably. Follow at your own pace.</p>
+  </section>
+  <div class="cta"><button class="pill" data-act="goto" data-goto="05-breathe">Start breathing</button></div>
+</div>
