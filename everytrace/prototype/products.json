@@ -1,0 +1,59 @@
+{
+  "01-home": {
+    "function": "首页菜单：六类记录入口+新建 FAB",
+    "goals": [
+      "入口齐全",
+      "新建可达"
+    ]
+  },
+  "02-life": {
+    "function": "我的生活：倒数日网格+汇总",
+    "goals": [
+      "列表可读",
+      "详情可达"
+    ]
+  },
+  "03-bday-detail": {
+    "function": "生日详情 sheet：生肖/星座/重复/提醒",
+    "goals": [
+      "表单可交互"
+    ]
+  },
+  "04-assets": {
+    "function": "资产清单+汇总卡+分类筛选",
+    "goals": [
+      "筛选生效",
+      "详情可达"
+    ]
+  },
+  "05-asset-detail": {
+    "function": "资产详情 sheet：折旧/备注",
+    "goals": [
+      "字段可编辑感"
+    ]
+  },
+  "06-checkin": {
+    "function": "打卡·习惯网格+连击",
+    "goals": [
+      "打卡有反馈"
+    ]
+  },
+  "07-subs": {
+    "function": "订阅清单+月费汇总",
+    "goals": [
+      "汇总正确感"
+    ]
+  },
+  "08-plans": {
+    "function": "计划清单+进度",
+    "goals": [
+      "进度可见"
+    ]
+  },
+  "09-notify": {
+    "function": "通知设置 sheet：开关矩阵",
+    "goals": [
+      "开关可拨"
+    ]
+  }
+}
