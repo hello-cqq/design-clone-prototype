@@ -1,0 +1,50 @@
+<style>
+  .ml{position:absolute;inset:0;overflow-y:auto;overflow-x:clip;background:#f2f3f5;color:#17181c;font-family:-apple-system,"PingFang SC",sans-serif}
+  .ml .hd{display:flex;align-items:center;gap:10px;padding:14px 16px 8px}
+  .ml .hd .mi{width:30px;height:30px;border:0;background:transparent;font-size:16px;cursor:pointer}
+  .ml .hd .wm{display:flex;align-items:center;gap:7px;font-size:16px;font-weight:600}
+  .ml .hd .wm img{width:22px;height:22px;border-radius:6px}
+  .ml .chips{display:flex;gap:8px;padding:4px 16px 12px;overflow:hidden}
+  .ml .chips button{border:0;border-radius:999px;padding:8px 15px;font-size:12.5px;background:#fff;color:#3d4046;cursor:pointer;flex:0 0 auto}
+  .ml .chips button.on{background:#17181c;color:#fff}
+  .ml .chips button.love{background:#fde8ef;color:#e05586}
+  .ml .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:0 16px 30px}
+  .ml .cd{background:#fff;border-radius:16px;padding:14px;position:relative;border:0;text-align:left;cursor:pointer;animation:rin .4s ease both}
+  .ml .cd b{display:block;font-size:12.5px;font-weight:600}
+  .ml .cd .n{font-size:26px;font-weight:600;margin:6px 0 0}
+  .ml .cd .n small{font-size:11px;font-weight:400;color:#3d4046}
+  .ml .cd .sub{display:block;color:#b6bac1;font-size:10.5px;margin-top:8px}
+  .ml .cd .av{position:absolute;right:10px;bottom:10px;width:40px;height:40px;border-radius:10px;object-fit:cover}
+  .ml .cd .emo{position:absolute;right:10px;bottom:10px;width:40px;height:40px;display:grid;place-items:center}
+  .ml .cd .emo svg{width:30px;height:30px;stroke:#3d4046;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+  .ml .fab{position:absolute;right:18px;bottom:24px;width:46px;height:46px;border:0;border-radius:50%;background:#17181c;color:#fff;font-size:20px;cursor:pointer;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+  @keyframes rin{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion: reduce){.ml .cd{animation:none}}
+  .tex{height:120px;margin:10px 16px 20px;border-radius:14px;background:url(assets/grain.png) repeat,#eceef1;opacity:.8}
+</style>
+<div data-dc="ml/root" class="ml">
+  <canvas data-fx="particles" data-fx-kind="sparkles" data-fx-n="10" data-fx-colors="#5b8def,#e05586,#ffffff"></canvas>
+  <div class="hd">
+    <button class="mi" data-act="back">‹</button>
+    <span class="wm"><img src="assets/cat-logo.png" alt="">每一迹</span>
+    <button class="mi" style="margin-left:auto" data-act="toast" data-msg="设置（演示）">设</button>
+  </div>
+  <div class="chips">
+    <button data-act="radio" data-group="lf">全部</button>
+    <button class="on" data-act="radio" data-group="lf">我的生活</button>
+    <button data-act="radio" data-group="lf">生活</button>
+    <button class="love" data-act="radio" data-group="lf">我们的</button>
+  </div>
+  <div class="grid">
+    <button class="cd" data-act="toast" data-msg="下班倒计时详情（演示）"><b>距离下班还有</b><div class="n">33<small> 分 33 秒</small></div><span class="sub">每天 19:00</span><span class="emo"><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7h8v3M8 20v1.5M16 20v1.5"/></svg></span></button>
+    <button class="cd" data-act="toast" data-msg="睡觉倒计时详情（演示）"><b>睡觉还有</b><div class="n">4<small> 时 33 分 33 秒</small></div><span class="sub">每天 23:00</span><span class="emo"><svg viewBox="0 0 24 24"><path d="M4 18h16M6 18v-6h12v6M9 8h6M12 8V5"/></svg></span></button>
+    <button class="cd" data-act="toast" data-msg="周五倒计时详情（演示）"><b>周五还有</b><div class="n">4<small> 天</small></div><span class="sub">每周五</span><span class="emo"><svg viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M8 3v4M16 3v4M5 10h14M9 14l2 2 4-4"/></svg></span></button>
+    <button class="cd" data-act="toast" data-msg="房租倒计时详情（演示）"><b>交房租还有</b><div class="n">12<small> 天</small></div><span class="sub">每月 15 日</span><span class="emo"><svg viewBox="0 0 24 24"><path d="M4 11 12 4l8 7M7 10v9h10v-9M10 19v-5h4v5"/></svg></span></button>
+    <button class="cd" data-act="goto" data-goto="03-bday-detail"><b>老妈生日还有</b><div class="n">22<small> 天</small></div><span class="sub">2025 年 03 月 25 日</span><img class="av" src="assets/ava-mom.png" alt=""></button>
+    <button class="cd" data-act="goto" data-goto="03-bday-detail"><b>老爸生日还有</b><div class="n">81<small> 天</small></div><span class="sub">2025 年 05 月 23 日</span><img class="av" src="assets/ava-dad.png" alt=""></button>
+    <button class="cd" data-act="goto" data-goto="03-bday-detail"><b>对象生日还有</b><div class="n">4<small> 月 19 天</small></div><span class="sub">2025 年 09 月 12 日</span><img class="av" src="assets/ava-mom.png" alt=""></button>
+    <button class="cd" data-act="goto" data-goto="03-bday-detail"><b>小迹生日还有</b><div class="n">284<small> 天</small></div><span class="sub">2026 年 06 月 01 日</span><img class="av" src="assets/cat-logo.png" alt=""></button>
+  </div>
+  <div class="tex" aria-hidden="true"></div>
+  <button class="fab" data-act="dialog" data-title="新增倒数日" data-body="标题 / 日期 / 重复周期 / 头像（演示）" data-ok="保存" data-ok-toast="已加入我的生活（演示）">+</button>
+</div>

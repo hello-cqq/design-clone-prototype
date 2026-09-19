@@ -1,0 +1,58 @@
+<style>
+  .mk{position:absolute;inset:0;overflow-y:auto;overflow-x:clip;background:#f2f3f5;color:#17181c;font-family:-apple-system,"PingFang SC",sans-serif}
+  .mk .hd{display:flex;align-items:center;gap:10px;padding:14px 16px 8px}
+  .mk .hd .mi{width:30px;height:30px;border:0;background:transparent;font-size:16px;cursor:pointer}
+  .mk .hd .wm{display:flex;align-items:center;gap:7px;font-size:16px;font-weight:600}
+  .mk .hd .wm img{width:22px;height:22px;border-radius:6px}
+  .mk .chips{display:flex;gap:8px;padding:4px 16px 12px}
+  .mk .chips button{border:0;border-radius:999px;padding:8px 15px;font-size:12.5px;background:#fff;color:#3d4046;cursor:pointer}
+  .mk .chips button.on{background:#17181c;color:#fff}
+  .mk .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:0 16px 26px}
+  .mk .ck{background:#fff;border-radius:16px;padding:14px;position:relative;border:0;text-align:left;cursor:pointer;animation:rin .4s ease both}
+  .mk .ck b{display:block;font-size:12.5px;font-weight:600}
+  .mk .ck .n{font-size:24px;font-weight:600;margin:6px 0 0}
+  .mk .ck .n small{font-size:11px;font-weight:400}
+  .mk .ck .bar{display:block;height:5px;border-radius:3px;background:#eef0f3;margin-top:10px;overflow:hidden}
+  .mk .ck .bar i{display:block;height:100%;border-radius:3px;background:linear-gradient(90deg,#67c48a,#5b8def)}
+  .mk .ck .emo{position:absolute;right:10px;bottom:10px;width:38px;height:38px;display:grid;place-items:center}
+  .mk .ck .emo svg{width:28px;height:28px;stroke:#3d4046;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+  .mk .ck .done{position:absolute;right:10px;top:10px;width:20px;height:20px;border-radius:50%;border:1.6px solid #c9ccd2;display:grid;place-items:center;color:#fff;font-size:11px}
+  .mk .ck .done.y{background:#67c48a;border-color:#67c48a}
+  .mk .wall{margin:0 16px 26px;background:#fff;border-radius:16px;padding:14px}
+  .mk .wall b{font-size:13px;font-weight:600}
+  .mk .wall .ph{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:10px}
+  .mk .wall .ph u{text-decoration:none;height:52px;border-radius:8px;background:url(assets/grain.png) repeat,radial-gradient(60% 50% at 30% 25%,rgba(255,255,255,.75),transparent 70%),linear-gradient(140deg,#cfd9e4,#9fb0c2);position:relative}
+  .mk .wall .ph u::after{content:"";position:absolute;left:8px;bottom:8px;width:14px;height:14px;border-radius:50%;background:rgba(255,255,255,.8);box-shadow:22px -18px 0 rgba(255,255,255,.5)}
+  .mk .wall .ph u:nth-child(2n){background:url(assets/grain.png) repeat,radial-gradient(60% 50% at 30% 25%,rgba(255,255,255,.75),transparent 70%),linear-gradient(140deg,#e4c8cf,#c2a0ab)}
+  .mk .wall .ph u:nth-child(3n){background:url(assets/grain.png) repeat,radial-gradient(60% 50% at 30% 25%,rgba(255,255,255,.75),transparent 70%),linear-gradient(140deg,#d8cfb8,#b3a888)}
+  .mk .fab{position:absolute;right:18px;bottom:24px;width:46px;height:46px;border:0;border-radius:50%;background:#17181c;color:#fff;font-size:20px;cursor:pointer;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+  @keyframes rin{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion: reduce){.mk .ck{animation:none}}
+  .tex{height:210px;margin:10px 16px 20px;border-radius:14px;background:url(assets/grain.png) repeat,#eceef1;opacity:.8}
+</style>
+<div data-dc="mk/root" class="mk">
+  <canvas data-fx="particles" data-fx-kind="sparkles" data-fx-n="10" data-fx-colors="#67c48a,#5b8def,#ffffff"></canvas>
+  <div class="hd">
+    <button class="mi" data-act="back">‹</button>
+    <span class="wm"><img src="assets/cat-logo.png" alt="">每一迹</span>
+    <button class="mi" style="margin-left:auto" data-act="toast" data-msg="图表统计（演示）">图</button>
+  </div>
+  <div class="chips">
+    <button data-act="radio" data-group="ck">全部</button>
+    <button class="on" data-act="radio" data-group="ck">我的生活</button>
+    <button data-act="radio" data-group="ck">习惯</button>
+  </div>
+  <div class="grid">
+    <button class="ck" data-act="dialog" data-title="看剧 打卡" data-body="今日已打卡 1 次 · 累计 11 次（演示）" data-ok="打卡" data-ok-toast="打卡成功 +1（演示）"><b>看剧</b><div class="n">11<small> 次</small></div><span class="bar"><i style="width:44%"></i></span><span class="emo"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M10 9.5v5l4-2.5z"/></svg></span><span class="done y">✓</span></button>
+    <button class="ck" data-act="dialog" data-title="打扫卫生 打卡" data-body="累计 22 次（演示）" data-ok="打卡" data-ok-toast="打卡成功 +1（演示）"><b>打扫卫生</b><div class="n">22<small> 次</small></div><span class="bar"><i style="width:70%"></i></span><span class="emo"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><path d="M12 5V3M12 21v-2M5 12H3M21 12h-2"/></svg></span><span class="done"></span></button>
+    <button class="ck" data-act="dialog" data-title="换洗床单 打卡" data-body="累计 10 次（演示）" data-ok="打卡" data-ok-toast="打卡成功 +1（演示）"><b>换洗床单</b><div class="n">10<small> 次</small></div><span class="bar"><i style="width:38%"></i></span><span class="emo"><svg viewBox="0 0 24 24"><path d="M4 18h16M6 18v-6h12v6M9 8h6"/></svg></span><span class="done"></span></button>
+    <button class="ck" data-act="dialog" data-title="羽毛球 打卡" data-body="累计 50 次（演示）" data-ok="打卡" data-ok-toast="打卡成功 +1（演示）"><b>羽毛球</b><div class="n">50<small> 次</small></div><span class="bar"><i style="width:88%"></i></span><span class="emo"><svg viewBox="0 0 24 24"><path d="M14 4l6 6-8 8-6-6zM10 12l-4 8 8-4"/></svg></span><span class="done y">✓</span></button>
+    <button class="ck" data-act="dialog" data-title="喝水 打卡" data-body="今日 6 / 8 杯（演示）" data-ok="打卡" data-ok-toast="喝水 +1 杯（演示）"><b>喝水</b><div class="n">12<small> 次</small></div><span class="bar"><i style="width:52%"></i></span><span class="emo"><svg viewBox="0 0 24 24"><path d="M8 3h8l-1 18H9zM8 10h8"/></svg></span><span class="done"></span></button>
+    <button class="ck" data-act="dialog" data-title="吃吃猫粮 打卡" data-body="糖蒜今日已喂（演示）" data-ok="打卡" data-ok-toast="喂食记录 +1（演示）"><b>吃吃猫粮</b><div class="n">38<small> 次</small></div><span class="bar"><i style="width:64%"></i></span><span class="emo"><svg viewBox="0 0 24 24"><path d="M5 12a7 7 0 0 1 14 0v6H5z"/><path d="M9 8 7 4M15 8l2-4"/></svg></span><span class="done y">✓</span></button>
+    <button class="ck" data-act="dialog" data-title="抹抹脸 打卡" data-body="累计 49 次（演示）" data-ok="打卡" data-ok-toast="打卡成功 +1（演示）"><b>抹抹脸</b><div class="n">49<small> 次</small></div><span class="bar"><i style="width:80%"></i></span><span class="emo"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><path d="M9 10c1 1 5 1 6 0M10 14c1 .8 3 .8 4 0"/></svg></span><span class="done"></span></button>
+    <button class="ck" data-act="dialog" data-title="理发 打卡" data-body="累计 56 次（演示）" data-ok="打卡" data-ok-toast="打卡成功 +1（演示）"><b>理发</b><div class="n">56<small> 次</small></div><span class="bar"><i style="width:92%"></i></span><span class="emo"><svg viewBox="0 0 24 24"><circle cx="7" cy="17" r="3"/><circle cx="17" cy="17" r="3"/><path d="M9 15 19 4M15 15 5 4"/></svg></span><span class="done"></span></button>
+  </div>
+  <div class="wall"><b>照片墙 · 最近打卡</b><div class="ph"><u></u><u></u><u></u><u></u><u></u><u></u><u></u><u></u></div></div>
+  <div class="tex" aria-hidden="true"></div>
+  <button class="fab" data-act="dialog" data-title="新增打卡" data-body="名称 / 目标次数 / 提醒（演示）" data-ok="保存" data-ok-toast="已加入打卡（演示）">+</button>
+</div>

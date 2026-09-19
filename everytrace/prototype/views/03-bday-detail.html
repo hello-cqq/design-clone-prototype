@@ -1,0 +1,52 @@
+<style>
+  .mb{position:absolute;inset:0;overflow-y:auto;overflow-x:clip;background:#e9eaec;color:#17181c;font-family:-apple-system,"PingFang SC",sans-serif}
+  .mb .sheet{display:block;margin:10px 6px 6px;background:#f6f7f8;border-radius:22px;padding:16px;animation:up .4s cubic-bezier(.3,.8,.3,1) both}
+  @keyframes up{from{transform:translateY(14px);opacity:.4}to{transform:none;opacity:1}}
+  @media (prefers-reduced-motion: reduce){.mb .sheet{animation:none}}
+  .mb .x{width:30px;height:30px;border:0;background:transparent;font-size:16px;cursor:pointer}
+  .mb .top{background:#fbfcfd;border-radius:16px;padding:16px;display:flex;gap:14px;align-items:center;margin-top:6px}
+  .mb .top b{font-size:15px;font-weight:600}
+  .mb .top .age{font-size:21px;font-weight:600;margin:8px 0 4px}
+  .mb .top .age small{font-size:12px;font-weight:400}
+  .mb .top .dots{display:flex;gap:4px;margin:6px 0}
+  .mb .top .dots i{width:5px;height:5px;border-radius:50%;background:#c9ccd2}
+  .mb .top .dots i.on{width:14px;border-radius:3px;background:#17181c}
+  .mb .top .buy{font-size:11.5px;color:#9aa0aa}
+  .mb .top img{margin-left:auto;width:64px;height:64px;border-radius:14px;object-fit:cover}
+  .mb .rows{background:#fbfcfd;border-radius:16px;margin-top:12px;padding:4px 16px}
+  .mb .rows .r{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid #eef0f2;font-size:13.5px}
+  .mb .rows .r:last-child{border-bottom:0}
+  .mb .rows .r span{color:#3d4046;display:flex;gap:9px;align-items:center}
+  .mb .rows .r span svg{width:16px;height:16px;stroke:#8b9098;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+  .mb .rows .r b{font-weight:500}
+  .mb .rows .r b.mut{color:#9aa0aa;font-weight:400}
+  .mb .edit{display:block;width:100%;margin:16px 0 8px;border:0;border-radius:14px;background:#17181c;color:#fff;padding:13px;font-size:14px;cursor:pointer}
+  .mb .home{display:block;margin:0 auto 14px;border:0;background:transparent;color:#6b7280;font-size:12.5px;cursor:pointer}
+  .tex{height:210px;margin:12px 0;border-radius:14px;background:url(assets/grain.png) repeat,#eceef1;opacity:.8}
+</style>
+<div data-dc="mb/root" class="mb">
+  <canvas data-fx="particles" data-fx-kind="sparkles" data-fx-n="8" data-fx-colors="#e05586,#5b8def,#ffffff"></canvas>
+  <div class="sheet">
+    <button class="x" data-act="back">✕</button>
+    <div class="top">
+      <div>
+        <b>老爸生日还有</b>
+        <div class="age">81<small> 天</small></div>
+        <div class="dots"><i></i><i></i><i></i><i class="on"></i></div>
+        <div class="buy">2025 年 05 月 23 日</div>
+      </div>
+      <img src="assets/ava-dad.png" alt="">
+    </div>
+    <div class="rows">
+      <div class="r"><span><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="16" rx="3"/><path d="M8 3v4M16 3v4M4 10h16"/></svg>出生日期</span><b>1963 年四月廿六</b></div>
+      <div class="r"><span><svg viewBox="0 0 24 24"><path d="M12 8c-3 0-5 2-5 5s2 5 5 5 5-2 5-5M12 8V4M12 8h5"/></svg>年龄</span><b>61 岁</b></div>
+      <div class="r"><span><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 4v16M4 12h16"/></svg>生肖</span><b>兔</b></div>
+      <div class="r"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="m8 14 3-2 2 3 3-4"/></svg>星座</span><b>金牛座</b></div>
+      <div class="r"><span><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 16 0M4 12h16M12 4v2"/></svg>重复周期</span><b>每年</b></div>
+      <div class="r"><span><svg viewBox="0 0 24 24"><path d="M6 9a6 6 0 0 1 12 0c0 5 2 6 2 6H4s2-1 2-6M10 19a2 2 0 0 0 4 0"/></svg>提醒</span><b class="mut">当天、1 天前、2 天前、3 天前</b></div>
+    </div>
+  <div class="tex" aria-hidden="true"></div>
+  <button class="edit" data-act="dialog" data-title="编辑倒数日" data-body="日期 / 头像 / 提醒模式（演示编辑）" data-ok="保存" data-ok-toast="已保存修改（演示）">编辑</button>
+    <button class="home" data-act="goto" data-goto="02-life">返回我的生活</button>
+  </div>
+</div>

@@ -1,0 +1,66 @@
+<style>
+  .myj{position:absolute;inset:0;overflow-y:auto;overflow-x:clip;background:#f2f3f5;color:#17181c;font-family:-apple-system,"PingFang SC",sans-serif}
+  .myj .hd{display:flex;align-items:center;gap:10px;padding:14px 16px 8px}
+  .myj .hd .mi{width:30px;height:30px;border:0;background:transparent;font-size:17px;cursor:pointer}
+  .myj .hd .wm{font-size:16px;font-weight:600;display:flex;align-items:center;gap:6px}
+  .myj .hd .wm i{font-style:normal;width:20px;height:20px;border-radius:50%;background:#17181c;display:inline-block;position:relative}
+  .myj .hd .wm i::before,.myj .hd .wm i::after{content:"";position:absolute;top:7px;width:3px;height:3px;border-radius:50%;background:#fff}
+  .myj .hd .wm i::before{left:6px}.myj .hd .wm i::after{left:11px}
+  .myj .sum{margin:6px 16px 12px;background:#17181c;color:#f4f5f7;border-radius:16px;padding:16px}
+  .myj .sum b{font-size:15px;font-weight:600}
+  .myj .sum .row{display:flex;gap:26px;margin-top:12px}
+  .myj .sum .row u{text-decoration:none}
+  .myj .sum .row u span{display:block;font-size:11px;color:#9aa0aa}
+  .myj .sum .row u b{display:block;font-size:17px;margin-top:4px}
+  .myj .chips{display:flex;gap:8px;padding:0 16px 12px}
+  .myj .chips button{border:0;border-radius:999px;padding:8px 16px;font-size:12.5px;background:#fff;color:#3d4046;cursor:pointer}
+  .myj .chips button.on{background:#17181c;color:#fff}
+  .myj .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:0 16px 70px}
+  .myj .it{background:#fff;border-radius:14px;padding:14px;cursor:pointer;position:relative;border:0;text-align:left}
+  .myj .it b{display:block;font-size:13.5px;font-weight:600}
+  .myj .it .d{font-size:17px;font-weight:600;margin:6px 0 2px}
+  .myj .it .d small{font-size:11px;font-weight:400}
+  .myj .it .p{font-size:11px;color:#9aa0aa;line-height:1.6}
+  .myj .it .ic{position:absolute;right:12px;bottom:12px;width:34px;height:34px;border-radius:9px;background:#eef0f3;display:grid;place-items:center;font-size:16px}
+  .myj .fabrow{position:static;display:block;margin:0 16px 18px;width:calc(100% - 32px);height:44px;border:0;border-radius:50%;background:#17181c;color:#fff;font-size:20px;cursor:pointer;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+  
+  .myj .it,.myj .sum{animation:fadein .45s ease both}
+  @keyframes fadein{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion: reduce){.myj .it,.myj .sum{animation:none}}
+  .tex{height:70px;background:url(assets/grain.png) repeat;opacity:.5}
+  .tex2{height:46px;border-radius:12px;margin:4px 8px}
+</style>
+<div data-dc="myj/root" class="myj"><canvas data-fx="particles" data-fx-kind="sparkles" data-fx-n="8" data-fx-colors="#5b8def,#67c48a,#ffffff"></canvas>
+  <div class="hd">
+    <button class="mi" data-act="toast" data-msg="菜单（演示）">≡</button>
+    <span class="wm"><i></i>每一迹<i></i></span>
+    <button class="mi" style="margin-left:auto" data-act="toast" data-msg="设置（演示）">设</button>
+  </div>
+  <div class="sum">
+    <b>我的资产</b>
+    <div class="row">
+      <u><span>资产价值</span><b>3万3962.77</b></u>
+      <u><span>资产数量</span><b>9</b></u>
+      <u><span>每日成本</span><b>58.84</b></u>
+    </div>
+  </div>
+  <div class="chips">
+    <button class="on" data-act="radio" data-group="cat">全部</button>
+    <button data-act="radio" data-group="cat">生活</button>
+    <button data-act="radio" data-group="cat">电子产品</button>
+  </div>
+  <div class="grid">
+    <button class="it" data-act="goto" data-goto="05-asset-detail"><b>扫拖地机器人</b><span class="d">5<small>月19天</small></span><span class="p">2499元<br>14.79元 / 天</span><span class="ic" style="font-size:11px;color:#6b7280">家</span></button>
+    <button class="it" data-act="goto" data-goto="05-asset-detail"><b>洗碗机</b><span class="d">3<small>月29天</small></span><span class="p">1255.96元<br>10.55元 / 天</span><span class="ic" style="font-size:11px;color:#6b7280">碗</span></button>
+    <button class="it" data-act="goto" data-goto="05-asset-detail"><b>投影仪</b><span class="d">10<small>月5天</small></span><span class="p">3770元<br>12.36元 / 天</span><span class="ic" style="font-size:11px;color:#6b7280">投</span></button>
+    <button class="it" data-act="goto" data-goto="05-asset-detail"><b>iPad Air 3</b><span class="d">4<small>年195天</small></span><span class="p">3701元<br>2.24元 / 天</span><span class="ic" style="font-size:11px;color:#6b7280">Pad</span></button>
+    <button class="it" data-act="goto" data-goto="05-asset-detail"><b>Apple Watch SE</b><span class="d">3<small>年251天</small></span><span class="p">2699元<br>2.42元 / 天</span><span class="ic" style="font-size:11px;color:#6b7280">W</span></button>
+    <button class="it" data-act="goto" data-goto="05-asset-detail"><b>Mac mini</b><span class="d">3<small>年342天</small></span><span class="p">5299元<br>3.98元 / 天</span><span class="ic" style="font-size:11px;color:#6b7280">M</span></button>
+  </div>
+  <button class="fabrow" data-act="dialog" data-title="新增资产" data-body="名称 / 价格 / 分类（演示录入）" data-ok="保存" data-ok-toast="已加入资产清单（演示）">+</button>
+  
+  <div class="tex" aria-hidden="true"></div>
+</div>
+  <button data-act="toast" data-msg="已加入资产清单（演示）" style="margin-top:12px;width:100%;border:0;border-radius:12px;background:#17181c;color:#fff;padding:12px;font-size:14px;cursor:pointer">保存</button>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<style>
+  .mj{position:absolute;inset:0;overflow-y:auto;overflow-x:clip;background:#f2f3f5;color:#17181c;font-family:-apple-system,"PingFang SC",sans-serif}
+  .mj .hd{display:flex;align-items:center;gap:10px;padding:14px 16px 8px}
+  .mj .hd .mi{width:30px;height:30px;border:0;background:transparent;font-size:16px;cursor:pointer;color:#17181c}
+  .mj .hd .wm{display:flex;align-items:center;gap:7px;font-size:16px;font-weight:600}
+  .mj .hd .wm img{width:22px;height:22px;border-radius:6px}
+  .mj .hero{margin:4px 16px 14px;background:#fff;border-radius:18px;padding:18px;box-shadow:0 8px 24px rgba(20,22,30,.05)}
+  .mj .hero b{font-size:17px;font-weight:600}
+  .mj .hero p{margin:6px 0 0;color:#9aa0aa;font-size:12px}
+  .mj .list{padding:0 16px 30px;display:flex;flex-direction:column;gap:10px}
+  .mj .row{display:flex;align-items:center;gap:12px;background:#fff;border-radius:16px;padding:14px;border:0;cursor:pointer;text-align:left;transition:transform .22s}
+  .mj .row:active{transform:scale(.985)}
+  .mj .row .ic{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;flex:0 0 38px}
+  .mj .row .ic svg{width:19px;height:19px;stroke:#fff;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+  .mj .row .tx{flex:1}
+  .mj .row .tx b{display:block;font-size:14px;font-weight:600}
+  .mj .row .tx span{display:block;color:#9aa0aa;font-size:11px;margin-top:3px}
+  .mj .row .ch{color:#c9ccd2;font-size:14px}
+  .mj .c1{background:#5b8def}.mj .c2{background:#ef7d9b}.mj .c3{background:#67c48a}.mj .c4{background:#f0b453}.mj .c5{background:#8f7de8}.mj .c6{background:#5fc4c0}
+  .mj .fab{position:absolute;right:18px;bottom:24px;width:46px;height:46px;border:0;border-radius:50%;background:#17181c;color:#fff;font-size:20px;cursor:pointer;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+  .mj .row{animation:rin .4s ease both}
+  @keyframes rin{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion: reduce){.mj .row{animation:none;transition:none}}
+</style>
+<div data-dc="mj/root" class="mj">
+  <canvas data-fx="particles" data-fx-kind="sparkles" data-fx-n="10" data-fx-colors="#5b8def,#ef7d9b,#ffffff"></canvas>
+  <div class="hd">
+    <button class="mi" data-act="toast" data-msg="菜单（演示）">≡</button>
+    <span class="wm"><img src="assets/cat-logo.png" alt="">每一迹</span>
+    <button class="mi" style="margin-left:auto" data-act="toast" data-msg="设置（演示）">设</button>
+  </div>
+  <div class="hero"><b>生活值得被记录</b><p>六类记录，一个地方收纳所有生活碎片</p></div>
+  <div class="list">
+    <button class="row" data-act="goto" data-goto="02-life"><span class="ic c1"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg></span><span class="tx"><b>倒正数日 / 计时</b><span>生日、纪念日、下班倒计时</span></span><span class="ch">›</span></button>
+    <button class="row" data-act="goto" data-goto="03-bday-detail"><span class="ic c2"><svg viewBox="0 0 24 24"><path d="M4 20h16M6 20v-8h12v8M12 4v4M9 6c0 1.6 6 1.6 6 0"/></svg></span><span class="tx"><b>生日</b><span>年龄、生肖、星座一眼看到</span></span><span class="ch">›</span></button>
+    <button class="row" data-act="goto" data-goto="06-checkin"><span class="ic c3"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="16" rx="3"/><path d="m8 13 3 3 5-6"/></svg></span><span class="tx"><b>打卡记录</b><span>习惯、次数、图表与照片墙</span></span><span class="ch">›</span></button>
+    <button class="row" data-act="toast" data-msg="日记记录（演示）"><span class="ic c4"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6zM9 9h7M9 13h7M9 17h4"/></svg></span><span class="tx"><b>日记</b><span>想法、心情、碎碎念与统计</span></span><span class="ch">›</span></button>
+    <button class="row" data-act="goto" data-goto="04-assets"><span class="ic c5"><svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="12" rx="3"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></svg></span><span class="tx"><b>资产记录</b><span>统一价值、自动计算每日成本</span></span><span class="ch">›</span></button>
+    <button class="row" data-act="goto" data-goto="07-subs"><span class="ic c6"><svg viewBox="0 0 24 24"><path d="M4 11a8 8 0 0 1 16 0M8 15a4 4 0 0 1 8 0M12 19h.01"/></svg></span><span class="tx"><b>订阅记录</b><span>汇总后才知道订阅花了这么多</span></span><span class="ch">›</span></button>
+    <button class="row" data-act="goto" data-goto="08-plans"><span class="ic c1"><svg viewBox="0 0 24 24"><path d="M9 6h10M9 12h10M9 18h10M4 6h.01M4 12h.01M4 18h.01"/></svg></span><span class="tx"><b>计划记录</b><span>旅游、愿望、清单等等</span></span><span class="ch">›</span></button>
+  </div>
+  <button class="fab" data-act="dialog" data-title="新增记录" data-body="选择类型：倒数日 / 打卡 / 资产 / 订阅 / 计划（演示）" data-ok="下一步" data-ok-toast="已进入新建流程（演示）">+</button>
+</div>
