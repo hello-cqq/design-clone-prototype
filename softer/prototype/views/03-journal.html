@@ -1,0 +1,77 @@
+<style>
+  .sf{position:absolute;inset:0;overflow:auto hidden;background:linear-gradient(165deg,#f2eef5 0%,#f8eef1 55%,#f6f5f4 100%);color:#26272c;font-family:-apple-system,"Nimbus Sans","Helvetica Neue","PingFang SC",sans-serif;-webkit-font-smoothing:antialiased}
+  .sf *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  .sf .top{display:flex;align-items:center;gap:10px;padding:16px 20px 6px}
+  .sf .top .mi{border:0;background:transparent;padding:4px;cursor:pointer;color:#26272c;font-size:15px;line-height:1}
+  .sf .top .tt{flex:1;text-align:center;font-family:Georgia,"Times New Roman","Songti SC",serif;font-weight:500;font-size:15px;margin-right:8px}
+  .sf .top .add{width:30px;height:30px;border:0;border-radius:50%;background:rgba(255,255,255,.8);color:#26272c;font-size:15px;cursor:pointer;box-shadow:0 4px 12px rgba(38,39,44,.08)}
+  .sf .mon{margin:10px 22px 6px;font-size:9px;letter-spacing:.16em;color:#7a6c7e;text-transform:uppercase}
+  .sf .week{display:flex;gap:6px;margin:0 18px 16px}
+  .sf .week button{flex:1;border:0;background:transparent;border-radius:12px;padding:6px 0 7px;cursor:pointer;color:#7a6c7e;font-size:9px;display:flex;flex-direction:column;align-items:center;gap:4px}
+  .sf .week button i{font-style:normal;font-size:12px;color:#26272c}
+  .sf .week button[aria-checked="true"]{background:#5f65d9}
+  .sf .week button[aria-checked="true"] i,.sf .week button[aria-checked="true"]{color:#f6f5f4}
+  .sf h1{margin:0 22px 2px;font-family:Georgia,"Times New Roman","Songti SC",serif;font-weight:500;font-size:24px;line-height:29px}
+  .sf .sub{margin:0 22px 14px;font-size:11px;color:#7a6c7e}
+  .sf .card{margin:0 16px 12px;background:rgba(255,255,255,.72);border-radius:22px;padding:16px 18px;box-shadow:0 10px 30px rgba(38,39,44,.06);backdrop-filter:blur(8px)}
+  .sf .saved{display:flex;align-items:center;gap:6px;font-size:9px;letter-spacing:.12em;color:#5f65d9;text-transform:uppercase}
+  .sf .saved .tm{margin-left:auto;color:#a99fae;letter-spacing:0}
+  .sf .card h2{margin:10px 0 4px;font-family:Georgia,"Times New Roman","Songti SC",serif;font-weight:500;font-size:19px}
+  .sf .card .en{margin:0 0 12px;font-size:10px;color:#7a6c7e}
+  .sf .quote{border-left:2px solid #d9d4e6;padding:2px 0 2px 10px;margin:0 0 10px;font-size:11px;color:#5c5563;font-style:italic}
+  .sf .edit{border:0;background:transparent;cursor:pointer;color:#7a6c7e;font-size:12px;padding:2px}
+  .sf .sechead{display:flex;align-items:baseline;justify-content:space-between;margin:4px 22px 8px}
+  .sf .sechead b{font-family:Georgia,"Times New Roman","Songti SC",serif;font-weight:500;font-size:16px}
+  .sf .row{display:flex;align-items:center;gap:12px;margin:0 16px;background:rgba(255,255,255,.72);border:0;border-radius:18px;padding:12px 14px;cursor:pointer;text-align:left;width:calc(100% - 32px)}
+  .sf .row .th{width:44px;height:44px;border-radius:14px;background:#eceaf3;object-fit:cover;-webkit-mask-image:radial-gradient(closest-side,#000 62%,transparent 98%);mask-image:radial-gradient(closest-side,#000 62%,transparent 98%);}
+  .sf .row .tx{flex:1}
+  .sf .row .tx b{display:block;font-size:13px;font-weight:600}
+  .sf .row .tx span{display:block;font-size:10px;color:#7a6c7e;margin-top:3px}
+  .sf .row .ch{color:#b9b2bd;font-size:14px}
+  .sf .tabs{position:sticky;bottom:10px;margin:14px 16px 14px;display:flex;background:rgba(255,255,255,.8);border-radius:20px;padding:8px 6px;backdrop-filter:blur(10px);box-shadow:0 10px 26px rgba(38,39,44,.08)}
+  .sf .tabs button{flex:1;border:0;background:transparent;border-radius:14px;padding:8px 0 6px;cursor:pointer;color:#9a91a0;font-size:9px;display:flex;flex-direction:column;align-items:center;gap:4px}
+  .sf .tabs button svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+  .sf .tabs button.on{background:#eceaf3;color:#5f65d9}
+.sf::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;opacity:.35;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.22'/%3E%3C/svg%3E")}
+@keyframes sf-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes sf-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+.sf .row .th{animation:sf-float 7s ease-in-out infinite}
+</style>
+<div class="sf" data-dc="sf03/root">
+  <div class="top">
+    <button class="mi" data-act="toast" data-msg="菜单（演示）" aria-label="菜单">☰</button>
+    <span class="tt">Your journal</span>
+    <button class="add" data-act="toast" data-msg="新建记录（演示）" aria-label="新建">+</button>
+  </div>
+  <p class="mon">September 2025</p>
+  <div class="week" role="radiogroup" aria-label="九月第三周">
+    <button data-act="radio" data-group="day" data-label="14" aria-checked="false"><span>M</span><i>14</i></button>
+    <button data-act="radio" data-group="day" data-label="15" aria-checked="true"><span>T</span><i>15</i></button>
+    <button data-act="radio" data-group="day" data-label="16" aria-checked="false"><span>W</span><i>16</i></button>
+    <button data-act="radio" data-group="day" data-label="17" aria-checked="false"><span>T</span><i>17</i></button>
+    <button data-act="radio" data-group="day" data-label="18" aria-checked="false"><span>F</span><i>18</i></button>
+    <button data-act="radio" data-group="day" data-label="19" aria-checked="false"><span>S</span><i>19</i></button>
+    <button data-act="radio" data-group="day" data-label="20" aria-checked="false"><span>S</span><i>20</i></button>
+  </div>
+  <h1>Today, held gently.</h1>
+  <p class="sub">One moment at a time.</p>
+  <section class="card">
+    <p class="saved"><span aria-hidden="true">✓</span> Check-in saved <span class="tm">09:41</span></p>
+    <h2>A little tense</h2>
+    <p class="en">Energy 2 / 5</p>
+    <p class="quote">"A busy morning. I need a little space."</p>
+    <button class="edit" data-act="toast" data-msg="编辑这条 check-in（演示）" aria-label="编辑">✎</button>
+  </section>
+  <div class="sechead"><b>Make a little space</b></div>
+  <button class="row" data-act="goto" data-goto="04-practice">
+    <img class="th" src="assets/torus.png" alt="">
+    <span class="tx"><b>Soft reset</b><span>Guided breathing · 3 min</span></span>
+    <span class="ch" aria-hidden="true">→</span>
+  </button>
+  <nav class="tabs" aria-label="主导航">
+    <button data-act="goto" data-goto="01-today"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l2.5 2.5"/></svg>Today</button>
+    <button class="on" data-act="toast" data-msg="已在 Journal"><svg viewBox="0 0 24 24"><rect x="6" y="4" width="12" height="16" rx="2"/><path d="M9 9h6M9 13h6"/></svg>Journal</button>
+    <button data-act="goto" data-goto="04-practice"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/></svg>Practice</button>
+    <button data-act="toast" data-msg="Patterns（演示：无捕获屏）"><svg viewBox="0 0 24 24"><path d="M6 16v-5M10 16V8M14 16v-3M18 16V6"/></svg>Patterns</button>
+  </nav>
+</div>
