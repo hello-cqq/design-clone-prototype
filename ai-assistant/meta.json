@@ -1,28 +1,28 @@
 {
- "name": {
-  "en": "Dislocated Spacetime",
-  "zh": "错位时空"
- },
- "description": {
-  "en": "Interactive social prototype (mobile): full UI flows, live controls, design specs and user paths — cloned from a real source by design-clone.",
-  "zh": "社交类应用原型：世界观第一印象：双角色隔海相望+标题+开始按钮。由 design-clone 自真实来源克隆，全控件可交互、含设计规格与路径。"
- },
- "tags": [
-  "mobile",
-  "original",
-  "ai-companion",
-  "anime"
- ],
- "category": "social",
- "shell": "c_mobile",
- "source": {
-  "kind": "original",
-  "ref": "demo-assistant"
- },
- "license": "CC-BY-4.0",
- "ip_attestation": "original",
- "attestation_note": "M106: renamed 错位时空/Dislocated Spacetime; narrative site integration",
- "version": "3.3.0",
- "created_at": "2026-09-17T12:18:59.523Z",
- "platform": "mobile"
+  "name": {
+    "en": "Dislocated Spacetime",
+    "zh": "错位时空"
+  },
+  "description": {
+    "en": "Interactive social prototype (mobile): full UI flows, live controls, design specs and user paths — cloned from a real source by design-clone.",
+    "zh": "社交类应用原型：世界观第一印象：双角色隔海相望+标题+开始按钮。由 design-clone 自真实来源克隆，全控件可交互、含设计规格与路径。"
+  },
+  "tags": [
+    "mobile",
+    "original",
+    "ai-companion",
+    "anime"
+  ],
+  "category": "social",
+  "shell": "c_mobile",
+  "source": {
+    "kind": "original",
+    "ref": "demo-assistant"
+  },
+  "license": "CC-BY-4.0",
+  "ip_attestation": "original",
+  "attestation_note": "M106: renamed 错位时空/Dislocated Spacetime; narrative site integration",
+  "version": "3.3.1",
+  "created_at": "2026-09-17T12:18:59.523Z",
+  "platform": "mobile"
 }

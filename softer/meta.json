@@ -1,34 +1,34 @@
 {
- "url": "https://www.xiaohongshu.com/explore/6aab53a2000000002a006980",
- "share_url": "https://xhslink.cn/o/6YswIkYJJaw (已过期，经登录态搜索定位)",
- "title": "SOFTER｜情绪记录 App UI 设计",
- "author": "UI 设计师-Troy",
- "desc": "这次为 SOFTER 设计了一套情绪记录与呼吸练习 App 概念案例。产品围绕日常情绪觉察展开，希望用更轻柔、低压力的方式，陪伴用户记录当下感受，而不是把界面做成冰冷的数据工具。\n\t\n六张核心界面按照「今日概览—情绪记录—日记填写—练习选择—呼吸过程—完成反馈」连续展开。视觉上以低饱和粉紫色为主，结合雾面玻璃、柔和光影和衬线标题，建立安静、克制的情绪氛围；同时统一练习时长、呼吸节奏与前后记录，让每一步操作都能自然衔接。\n\t\n如果你正在规划情绪陪伴、健康生活类产品，也可以承接从功能梳理到 App UI 视觉设计的相关需求。\n\t\n这套方案更关注视觉氛围与信息清晰度之间的平衡：疗愈感不等于堆叠梦幻装",
- "extracted_at": "2026-09-18T08:30:11.650Z",
- "name": {
-  "en": "SOFTER",
-  "zh": "SOFTER 情绪记录"
- },
- "description": {
-  "en": "Study replica of the SOFTER emotional-wellbeing app concept posted on Xiaohongshu: daily check-in, journal, guided breathing and reflection — fully interactive.",
-  "zh": "小红书笔记所示 SOFTER 情绪记录 App 概念的学习复刻：每日 check-in、日记、呼吸引导与反思，全控件可交互。"
- },
- "tags": [
-  "mobile",
-  "wellness",
-  "breathing",
-  "study"
- ],
- "source": {
-  "kind": "link",
-  "ref": "xhs-6aab53a2"
- },
- "brand_disclaimer": "Unofficial study replica of the SOFTER UI concept posted by UI设计师-Troy on Xiaohongshu; trademarks belong to their owners; no affiliation or endorsement implied.",
- "shell": "c_mobile",
- "platform": "",
- "license": "CC-BY-4.0",
- "ip_attestation": "public-material",
- "attestation_note": "Replica of the SOFTER UI concept posted by UI设计师-Troy on Xiaohongshu; study use only.",
- "version": "1.0.0",
- "created_at": "2026-09-19T00:45:36.796Z"
+  "url": "https://www.xiaohongshu.com/explore/6aab53a2000000002a006980",
+  "share_url": "https://xhslink.cn/o/6YswIkYJJaw (已过期，经登录态搜索定位)",
+  "title": "SOFTER｜情绪记录 App UI 设计",
+  "author": "UI 设计师-Troy",
+  "desc": "这次为 SOFTER 设计了一套情绪记录与呼吸练习 App 概念案例。产品围绕日常情绪觉察展开，希望用更轻柔、低压力的方式，陪伴用户记录当下感受，而不是把界面做成冰冷的数据工具。\n\t\n六张核心界面按照「今日概览—情绪记录—日记填写—练习选择—呼吸过程—完成反馈」连续展开。视觉上以低饱和粉紫色为主，结合雾面玻璃、柔和光影和衬线标题，建立安静、克制的情绪氛围；同时统一练习时长、呼吸节奏与前后记录，让每一步操作都能自然衔接。\n\t\n如果你正在规划情绪陪伴、健康生活类产品，也可以承接从功能梳理到 App UI 视觉设计的相关需求。\n\t\n这套方案更关注视觉氛围与信息清晰度之间的平衡：疗愈感不等于堆叠梦幻装",
+  "extracted_at": "2026-09-18T08:30:11.650Z",
+  "name": {
+    "en": "SOFTER",
+    "zh": "SOFTER 情绪记录"
+  },
+  "description": {
+    "en": "Study replica of the SOFTER emotional-wellbeing app concept posted on Xiaohongshu: daily check-in, journal, guided breathing and reflection — fully interactive.",
+    "zh": "小红书笔记所示 SOFTER 情绪记录 App 概念的学习复刻：每日 check-in、日记、呼吸引导与反思，全控件可交互。"
+  },
+  "tags": [
+    "mobile",
+    "wellness",
+    "breathing",
+    "study"
+  ],
+  "source": {
+    "kind": "link",
+    "ref": "xhs-6aab53a2"
+  },
+  "brand_disclaimer": "Unofficial study replica of the SOFTER UI concept posted by UI设计师-Troy on Xiaohongshu; trademarks belong to their owners; no affiliation or endorsement implied.",
+  "shell": "c_mobile",
+  "platform": "",
+  "license": "CC-BY-4.0",
+  "ip_attestation": "public-material",
+  "attestation_note": "Replica of the SOFTER UI concept posted by UI设计师-Troy on Xiaohongshu; study use only.",
+  "version": "1.0.1",
+  "created_at": "2026-09-19T00:45:36.796Z"
 }
