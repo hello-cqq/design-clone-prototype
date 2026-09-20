@@ -1,6 +1,6 @@
 {
  "version": 3,
- "updated_at": "2026-09-20T17:06:30.623Z",
+ "updated_at": "2026-09-20T17:12:15.398Z",
  "apps": [
   {
    "app": "aliyun-console",
@@ -19,7 +19,7 @@
    ],
    "category": "cloud",
    "shell": "c_browser",
-   "version": "1.8.1",
+   "version": "1.8.2",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -67,11 +67,11 @@
     {
      "name": "hello-cqq",
      "login": "hello-cqq",
-     "commits": 12
+     "commits": 13
     }
    ],
-   "commits": 15,
-   "updated": "2026-09-21T01:04:11+08:00"
+   "commits": 16,
+   "updated": "2026-09-21T01:11:38+08:00"
   },
   {
    "app": "lark",
@@ -90,7 +90,7 @@
    ],
    "category": "office",
    "shell": "c_desktop",
-   "version": "1.7.4",
+   "version": "1.7.5",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -166,11 +166,11 @@
     {
      "name": "hello-cqq",
      "login": "hello-cqq",
-     "commits": 12
+     "commits": 13
     }
    ],
-   "commits": 15,
-   "updated": "2026-09-21T01:04:11+08:00"
+   "commits": 16,
+   "updated": "2026-09-21T01:11:38+08:00"
   },
   {
    "app": "wechat",
@@ -189,7 +189,7 @@
    ],
    "category": "social",
    "shell": "c_mobile",
-   "version": "1.7.4",
+   "version": "1.7.5",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "device",
@@ -285,11 +285,11 @@
     {
      "name": "hello-cqq",
      "login": "hello-cqq",
-     "commits": 12
+     "commits": 13
     }
    ],
-   "commits": 15,
-   "updated": "2026-09-21T01:04:11+08:00"
+   "commits": 16,
+   "updated": "2026-09-21T01:11:38+08:00"
   },
   {
    "app": "petpark",
@@ -310,7 +310,7 @@
    ],
    "category": "game",
    "shell": "c_mobile",
-   "version": "3.2.3",
+   "version": "3.2.4",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -378,11 +378,11 @@
     {
      "name": "hello-cqq",
      "login": "hello-cqq",
-     "commits": 17
+     "commits": 18
     }
    ],
-   "commits": 23,
-   "updated": "2026-09-21T01:04:11+08:00"
+   "commits": 24,
+   "updated": "2026-09-21T01:11:38+08:00"
   },
   {
    "app": "ai-assistant",
@@ -402,7 +402,7 @@
    ],
    "category": "social",
    "shell": "c_mobile",
-   "version": "3.3.1",
+   "version": "3.3.2",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -450,11 +450,11 @@
     {
      "name": "hello-cqq",
      "login": "hello-cqq",
-     "commits": 16
+     "commits": 17
     }
    ],
-   "commits": 21,
-   "updated": "2026-09-21T01:04:11+08:00"
+   "commits": 22,
+   "updated": "2026-09-21T01:11:38+08:00"
   },
   {
    "app": "everytrace",
@@ -474,7 +474,7 @@
    ],
    "category": "lifestyle",
    "shell": "c_mobile",
-   "version": "1.0.1",
+   "version": "1.0.2",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "link",
@@ -530,11 +530,11 @@
     {
      "name": "hello-cqq",
      "login": "hello-cqq",
-     "commits": 5
+     "commits": 6
     }
    ],
-   "commits": 7,
-   "updated": "2026-09-21T01:04:11+08:00"
+   "commits": 8,
+   "updated": "2026-09-21T01:11:38+08:00"
   },
   {
    "app": "softer",
@@ -554,7 +554,7 @@
    ],
    "category": "",
    "shell": "c_mobile",
-   "version": "1.0.1",
+   "version": "1.0.2",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "link",
@@ -598,11 +598,11 @@
     {
      "name": "hello-cqq",
      "login": "hello-cqq",
-     "commits": 5
+     "commits": 6
     }
    ],
-   "commits": 7,
-   "updated": "2026-09-21T01:04:11+08:00"
+   "commits": 8,
+   "updated": "2026-09-21T01:11:38+08:00"
   }
  ]
 }
