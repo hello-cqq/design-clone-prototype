@@ -1,29 +1,29 @@
 {
- "name": {
-  "en": "Animal Paradise",
-  "zh": "动物乐园"
- },
- "description": {
-  "en": "Interactive game prototype (mobile): full UI flows, live controls, design specs and user paths — cloned from a real source by design-clone.",
-  "zh": "游戏类应用原型：动物城全景+群像挥手+开始冒险。由 design-clone 自真实来源克隆，全控件可交互、含设计规格与路径。"
- },
- "tags": [
-  "mobile",
-  "original",
-  "3d",
-  "pets",
-  "anime"
- ],
- "category": "game",
- "shell": "c_mobile",
- "source": {
-  "kind": "original",
-  "ref": "demo-petpark"
- },
- "license": "CC-BY-4.0",
- "ip_attestation": "original",
- "attestation_note": "M106: residual rename cleanup",
- "version": "3.2.2",
- "created_at": "2026-09-17T12:19:12.918Z",
- "platform": "mobile"
+  "name": {
+    "en": "Animal Paradise",
+    "zh": "动物乐园"
+  },
+  "description": {
+    "en": "Interactive game prototype (mobile): full UI flows, live controls, design specs and user paths — cloned from a real source by design-clone.",
+    "zh": "游戏类应用原型：动物城全景+群像挥手+开始冒险。由 design-clone 自真实来源克隆，全控件可交互、含设计规格与路径。"
+  },
+  "tags": [
+    "mobile",
+    "original",
+    "3d",
+    "pets",
+    "anime"
+  ],
+  "category": "game",
+  "shell": "c_mobile",
+  "source": {
+    "kind": "original",
+    "ref": "demo-petpark"
+  },
+  "license": "CC-BY-4.0",
+  "ip_attestation": "original",
+  "attestation_note": "M106: residual rename cleanup",
+  "version": "3.2.3",
+  "created_at": "2026-09-17T12:19:12.918Z",
+  "platform": "mobile"
 }

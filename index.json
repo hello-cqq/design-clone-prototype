@@ -1,6 +1,6 @@
 {
  "version": 3,
- "updated_at": "2026-09-19T01:44:30.192Z",
+ "updated_at": "2026-09-20T16:03:53.517Z",
  "apps": [
   {
    "app": "aliyun-console",
@@ -19,7 +19,7 @@
    ],
    "category": "cloud",
    "shell": "c_browser",
-   "version": "1.8.0",
+   "version": "1.8.1",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -67,11 +67,11 @@
     {
      "name": "hello-cqq",
      "login": "hello-cqq",
-     "commits": 23
+     "commits": 10
     }
    ],
-   "commits": 26,
-   "updated": "2026-09-19T09:43:13+08:00"
+   "commits": 13,
+   "updated": "2026-09-19T01:44:30Z"
   },
   {
    "app": "lark",
@@ -90,7 +90,7 @@
    ],
    "category": "office",
    "shell": "c_desktop",
-   "version": "1.7.3",
+   "version": "1.7.4",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -166,11 +166,11 @@
     {
      "name": "hello-cqq",
      "login": "hello-cqq",
-     "commits": 24
+     "commits": 10
     }
    ],
-   "commits": 27,
-   "updated": "2026-09-19T09:43:13+08:00"
+   "commits": 13,
+   "updated": "2026-09-19T01:44:30Z"
   },
   {
    "app": "wechat",
@@ -189,7 +189,7 @@
    ],
    "category": "social",
    "shell": "c_mobile",
-   "version": "1.7.3",
+   "version": "1.7.4",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "device",
@@ -285,11 +285,11 @@
     {
      "name": "hello-cqq",
      "login": "hello-cqq",
-     "commits": 24
+     "commits": 10
     }
    ],
-   "commits": 27,
-   "updated": "2026-09-19T09:43:13+08:00"
+   "commits": 13,
+   "updated": "2026-09-19T01:44:30Z"
   },
   {
    "app": "petpark",
@@ -310,7 +310,7 @@
    ],
    "category": "game",
    "shell": "c_mobile",
-   "version": "3.2.2",
+   "version": "3.2.3",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -335,8 +335,20 @@
      "name": "单动物互动"
     },
     {
+     "id": "02-pets",
+     "name": "萌宠档案"
+    },
+    {
      "id": "03-band",
      "name": "动物乐队"
+    },
+    {
+     "id": "03-map",
+     "name": "乐园地图"
+    },
+    {
+     "id": "04-community",
+     "name": "乐园社区"
     },
     {
      "id": "04-map",
@@ -345,6 +357,10 @@
     {
      "id": "05-build",
      "name": "家园搭建"
+    },
+    {
+     "id": "05-me",
+     "name": "我的"
     },
     {
      "id": "06-dex",
@@ -362,11 +378,11 @@
     {
      "name": "hello-cqq",
      "login": "hello-cqq",
-     "commits": 33
+     "commits": 15
     }
    ],
-   "commits": 39,
-   "updated": "2026-09-19T09:43:13+08:00"
+   "commits": 21,
+   "updated": "2026-09-19T01:44:30Z"
   },
   {
    "app": "ai-assistant",
@@ -386,7 +402,7 @@
    ],
    "category": "social",
    "shell": "c_mobile",
-   "version": "3.3.0",
+   "version": "3.3.1",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "original",
@@ -415,8 +431,16 @@
      "name": "视频通话"
     },
     {
+     "id": "04-persona",
+     "name": "形象与音色"
+    },
+    {
      "id": "04-settings",
      "name": "设置·形象音色"
+    },
+    {
+     "id": "05-me",
+     "name": "我的"
     }
    ],
    "downloads": 11,
@@ -426,11 +450,11 @@
     {
      "name": "hello-cqq",
      "login": "hello-cqq",
-     "commits": 23
+     "commits": 14
     }
    ],
-   "commits": 27,
-   "updated": "2026-09-19T09:43:13+08:00"
+   "commits": 19,
+   "updated": "2026-09-19T01:44:30Z"
   },
   {
    "app": "everytrace",
@@ -450,7 +474,7 @@
    ],
    "category": "lifestyle",
    "shell": "c_mobile",
-   "version": "1.0.0",
+   "version": "1.0.1",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "link",
@@ -509,8 +533,8 @@
      "commits": 3
     }
    ],
-   "commits": 4,
-   "updated": "2026-09-19T09:43:13+08:00"
+   "commits": 5,
+   "updated": "2026-09-19T01:44:30Z"
   },
   {
    "app": "softer",
@@ -530,7 +554,7 @@
    ],
    "category": "",
    "shell": "c_mobile",
-   "version": "1.0.0",
+   "version": "1.0.1",
    "license": "CC-BY-4.0",
    "source": {
     "kind": "link",
@@ -577,8 +601,8 @@
      "commits": 3
     }
    ],
-   "commits": 4,
-   "updated": "2026-09-19T09:43:13+08:00"
+   "commits": 5,
+   "updated": "2026-09-19T01:44:30Z"
   }
  ]
 }
