@@ -1,6 +1,6 @@
 {
  "version": 3,
- "updated_at": "2026-09-21T02:51:02.769Z",
+ "updated_at": "2026-09-21T02:51:41.888Z",
  "apps": [
   {
    "app": "aliyun-console",
@@ -60,108 +60,9 @@
      "name": "定价详情"
     }
    ],
-   "downloads": 23,
-   "creator": "hello-cqq",
-   "icon": "aliyun-console/prototype/appicon/icon-256.png",
-   "contributors": [
-    {
-     "name": "hello-cqq",
-     "login": "hello-cqq",
-     "commits": 14
-    }
-   ],
-   "commits": 17,
-   "updated": "2026-09-21T10:50:33+08:00"
-  },
-  {
-   "app": "lark",
-   "name": {
-    "en": "Lark",
-    "zh": "飞书"
-   },
-   "description": {
-    "en": "Study replica of Lark desktop: messages, calendar, docs, app center — fictional text.",
-    "zh": "飞书桌面端学习复刻：消息、日历、文档、应用中心——文本全虚构。"
-   },
-   "tags": [
-    "office",
-    "desktop",
-    "collab"
-   ],
-   "category": "office",
-   "shell": "c_desktop",
-   "version": "1.7.6",
-   "license": "CC-BY-4.0",
-   "source": {
-    "kind": "original",
-    "ref": "mac-lark"
-   },
-   "ip_attestation": "public-material",
-   "brand_disclaimer": "Unofficial study replica of Lark; trademarks belong to their owners; no affiliation or endorsement implied.",
-   "cover": "lark/cover.png",
-   "url": "https://hello-cqq.github.io/design-clone-prototype/lark/prototype/",
-   "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/lark",
-   "pages": [
-    {
-     "id": "01-messages",
-     "name": "消息"
-    },
-    {
-     "id": "02-calendar",
-     "name": "日历"
-    },
-    {
-     "id": "03-docs",
-     "name": "云文档"
-    },
-    {
-     "id": "04-meeting",
-     "name": "视频会议"
-    },
-    {
-     "id": "05-workbench",
-     "name": "工作台"
-    },
-    {
-     "id": "06-contacts",
-     "name": "通讯录"
-    },
-    {
-     "id": "07-tasks",
-     "name": "任务"
-    },
-    {
-     "id": "08-kb",
-     "name": "知识库"
-    },
-    {
-     "id": "09-bitable",
-     "name": "多维表格"
-    },
-    {
-     "id": "10-appcenter",
-     "name": "应用中心"
-    },
-    {
-     "id": "11-chat",
-     "name": "聊天窗"
-    },
-    {
-     "id": "14-group-chat",
-     "name": "群聊"
-    },
-    {
-     "id": "15-group-settings",
-     "name": "群设置"
-    },
-    {
-     "id": "16-contact",
-     "name": "联系人卡片"
-    }
-   ],
    "downloads": 20,
    "creator": "hello-cqq",
-   "icon": "lark/prototype/appicon/icon-256.png",
+   "icon": "aliyun-console/prototype/appicon/icon-256.png",
    "contributors": [
     {
      "name": "hello-cqq",
@@ -281,6 +182,105 @@
    "downloads": 20,
    "creator": "hello-cqq",
    "icon": "wechat/prototype/appicon/icon-256.png",
+   "contributors": [
+    {
+     "name": "hello-cqq",
+     "login": "hello-cqq",
+     "commits": 14
+    }
+   ],
+   "commits": 17,
+   "updated": "2026-09-21T10:50:33+08:00"
+  },
+  {
+   "app": "lark",
+   "name": {
+    "en": "Lark",
+    "zh": "飞书"
+   },
+   "description": {
+    "en": "Study replica of Lark desktop: messages, calendar, docs, app center — fictional text.",
+    "zh": "飞书桌面端学习复刻：消息、日历、文档、应用中心——文本全虚构。"
+   },
+   "tags": [
+    "office",
+    "desktop",
+    "collab"
+   ],
+   "category": "office",
+   "shell": "c_desktop",
+   "version": "1.7.6",
+   "license": "CC-BY-4.0",
+   "source": {
+    "kind": "original",
+    "ref": "mac-lark"
+   },
+   "ip_attestation": "public-material",
+   "brand_disclaimer": "Unofficial study replica of Lark; trademarks belong to their owners; no affiliation or endorsement implied.",
+   "cover": "lark/cover.png",
+   "url": "https://hello-cqq.github.io/design-clone-prototype/lark/prototype/",
+   "repo_dir": "https://github.com/hello-cqq/design-clone-prototype/tree/main/lark",
+   "pages": [
+    {
+     "id": "01-messages",
+     "name": "消息"
+    },
+    {
+     "id": "02-calendar",
+     "name": "日历"
+    },
+    {
+     "id": "03-docs",
+     "name": "云文档"
+    },
+    {
+     "id": "04-meeting",
+     "name": "视频会议"
+    },
+    {
+     "id": "05-workbench",
+     "name": "工作台"
+    },
+    {
+     "id": "06-contacts",
+     "name": "通讯录"
+    },
+    {
+     "id": "07-tasks",
+     "name": "任务"
+    },
+    {
+     "id": "08-kb",
+     "name": "知识库"
+    },
+    {
+     "id": "09-bitable",
+     "name": "多维表格"
+    },
+    {
+     "id": "10-appcenter",
+     "name": "应用中心"
+    },
+    {
+     "id": "11-chat",
+     "name": "聊天窗"
+    },
+    {
+     "id": "14-group-chat",
+     "name": "群聊"
+    },
+    {
+     "id": "15-group-settings",
+     "name": "群设置"
+    },
+    {
+     "id": "16-contact",
+     "name": "联系人卡片"
+    }
+   ],
+   "downloads": 17,
+   "creator": "hello-cqq",
+   "icon": "lark/prototype/appicon/icon-256.png",
    "contributors": [
     {
      "name": "hello-cqq",
