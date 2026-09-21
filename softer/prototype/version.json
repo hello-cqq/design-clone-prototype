@@ -1,7 +1,7 @@
 {
- "app": "softer",
- "version": "1.0.0",
- "published_at": "2026-09-19T00:45:36.793Z",
- "skill_version": "0.6.0",
- "skill_channel": "stable"
+  "app": "softer",
+  "version": "1.0.3",
+  "published_at": "2026-09-19T00:45:36.793Z",
+  "skill_version": "0.6.0",
+  "skill_channel": "stable"
 }

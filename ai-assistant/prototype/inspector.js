@@ -247,6 +247,7 @@
     if (!res.ok) throw new Error(`view ${id} 不存在`);
     S.lastHTML = await res.text();
     W.stage.innerHTML = S.lastHTML;
+    S.selected = null; // M114.3: 先清跨页悬空选中，再 redraw（旧序：redraw 先于清空 → 新页 el() 落空 → 裸选择器回退抛 SyntaxError）
     // M105-W0：状态同步（当前页/列表高亮/crumb/详情）先于任何可能抛错的下游（脚本重执行/enhance/redraw），失同步根因修因
     S.view = id;
     $$("#dc-pages [data-nav]").forEach((b) => b.classList.toggle("on", b.dataset.nav === id));
@@ -390,7 +391,9 @@
     if (cnt) cnt.textContent = (list.length - orphans.length) || "";
   }
   function drawSelection() {
-    const t = el(S.selected) || W.stage.querySelector(S.selected); if (!t) return;
+    let t = el(S.selected);
+    if (!t && S.selected) { try { t = W.stage.querySelector(S.selected); } catch { t = null; } } // M114.3: 裸选择器回退吞 SyntaxError（data-dc 含 / 等非法裸选择器值）
+    if (!t) return;
     const r = toWS(t.getBoundingClientRect());
     const box = document.createElement("div"); box.className = "dc-sel";
     Object.assign(box.style, { left: r.x + "px", top: r.y + "px", width: r.w + "px", height: r.h + "px" });

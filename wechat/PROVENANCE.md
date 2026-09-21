@@ -9,3 +9,5 @@
 
 ## Changes
 - v1.7.3: initial publish
+
+- M114.4: cover hero re-shot from fictionalized prototype views (--hero live); capture-derived cover retired (privacy).

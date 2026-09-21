@@ -1,7 +1,7 @@
 {
- "app": "lark",
- "version": "1.7.3",
- "published_at": "2026-09-17T12:19:40.563Z",
- "skill_version": "0.6.0",
- "skill_channel": "stable"
+  "app": "lark",
+  "version": "1.7.6",
+  "published_at": "2026-09-17T12:19:40.563Z",
+  "skill_version": "0.6.0",
+  "skill_channel": "stable"
 }
